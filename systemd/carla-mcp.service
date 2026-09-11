@@ -6,7 +6,7 @@ After=network.target carla-control-center.service
 Type=simple
 WorkingDirectory=/mnt/simulations/control-center
 Environment=CARLA_WEBUI_URL=http://127.0.0.1:8095
-Environment=CARLA_WEBUI_PUBLIC_URL=http://128.175.213.232:8095
+Environment=CARLA_WEBUI_PUBLIC_URL=http://127.0.0.1:8095
 ExecStart=/mnt/simulations/control-center/run-mcp.sh --transport streamable-http --host 127.0.0.1 --port 8096
 Restart=on-failure
 RestartSec=3

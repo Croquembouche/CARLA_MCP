@@ -26,7 +26,7 @@
 <p>Implementation: <code>mcp_bridge/server.py</code>; tool schemas: <code>mcp_bridge/catalog.py</code>; launcher: <code>run-mcp.sh</code>. The machine-readable schemas and examples are available through <code>carla_capabilities</code> and <code>carla://capabilities</code>. The complete generated tool reference is <a href="/mcp-tools.html">mcp-tools.md</a>. Examples use placeholder actor/group/sensor IDs and coordinates: discover current values before submitting a mutation.</p>
 <h2 id="connect">Connect</h2>
 <h3 id="local-stdio-recommended-for-a-client-on-the-simulator-host">Local stdio (recommended for a client on the simulator host)</h3>
-<p>Configure an MCP client with:</p>
+<p>Install the adapter using <a href="https://github.com/Croquembouche/CARLA_MCP/blob/main/docs/SETUP.md">the setup guide</a> first. Replace the absolute launcher path if you used an MCP-only checkout outside <code>/mnt/simulations/control-center</code>. Configure an MCP client with:</p>
 <pre><code class="language-json">{
   &quot;mcpServers&quot;: {
     &quot;carla&quot;: {
@@ -34,7 +34,7 @@
       &quot;args&quot;: [],
       &quot;env&quot;: {
         &quot;CARLA_WEBUI_URL&quot;: &quot;http://127.0.0.1:8095&quot;,
-        &quot;CARLA_WEBUI_PUBLIC_URL&quot;: &quot;http://128.175.213.232:8095&quot;
+        &quot;CARLA_WEBUI_PUBLIC_URL&quot;: &quot;http://127.0.0.1:8095&quot;
       }
     }
   }
@@ -42,25 +42,25 @@
 </code></pre>
 <p><code>mcpServers</code> is a common client configuration shape; clients with a different settings format need the same command, arguments and environment. The process writes only MCP protocol messages to stdout; diagnostics go to stderr. No ROS environment or GPU access is needed by the adapter.</p>
 <h3 id="streamable-http">Streamable HTTP</h3>
-<p>The installed user service is <code>carla-mcp.service</code>, bound to <strong>127.0.0.1:8096</strong>. Its MCP endpoint is <strong>http://127.0.0.1:8096/mcp</strong>, using stateless Streamable HTTP with JSON responses. <code>/health</code> describes the adapter itself; use <code>carla_status</code> to check CARLA. An HTTP GET in a normal browser is not an MCP initialization request.</p>
+<p>The supplied full-stack user-service template is <code>carla-mcp.service</code>, bound to <strong>127.0.0.1:8096</strong>. Its MCP endpoint is <strong>http://127.0.0.1:8096/mcp</strong>, using stateless Streamable HTTP with JSON responses. <code>/health</code> describes the adapter itself; use <code>carla_status</code> to check CARLA. An HTTP GET in a normal browser is not an MCP initialization request.</p>
 <pre><code class="language-bash">systemctl --user status carla-mcp.service
 systemctl --user restart carla-mcp.service
 journalctl --user -u carla-mcp.service -n 50
 </code></pre>
-<p>For another computer, forward this port over SSH and configure that computer's MCP client with <code>http://127.0.0.1:8096/mcp</code>:</p>
-<pre><code class="language-bash">ssh -N -L 8096:127.0.0.1:8096 william@128.175.213.232
+<p>Replace <code>USER</code> and <code>SERVER_IP</code> in the SSH examples with the server login and address. For another computer, forward this port over SSH and configure that computer's MCP client with <code>http://127.0.0.1:8096/mcp</code>:</p>
+<pre><code class="language-bash">ssh -N -L 8096:127.0.0.1:8096 USER@SERVER_IP
 </code></pre>
 <p>Alternatively, a remote-capable stdio client can launch:</p>
 <pre><code class="language-json">{
   &quot;mcpServers&quot;: {
     &quot;carla&quot;: {
       &quot;command&quot;: &quot;ssh&quot;,
-      &quot;args&quot;: [&quot;-T&quot;, &quot;william@128.175.213.232&quot;, &quot;env&quot;, &quot;CARLA_WEBUI_PUBLIC_URL=http://128.175.213.232:8095&quot;, &quot;/mnt/simulations/control-center/run-mcp.sh&quot;]
+      &quot;args&quot;: [&quot;-T&quot;, &quot;USER@SERVER_IP&quot;, &quot;env&quot;, &quot;CARLA_WEBUI_PUBLIC_URL=http://SERVER_IP:8095&quot;, &quot;/mnt/simulations/control-center/run-mcp.sh&quot;]
     }
   }
 }
 </code></pre>
-<p>SSH authentication is configured by the user. The installed service does not open a new unauthenticated LAN control port. Direct LAN hosting is supported by <code>run-mcp.sh --transport streamable-http --host 128.175.213.232 --port 8096</code>, but requires <code>CARLA_MCP_TOKEN</code> and clients supplying <code>Authorization: Bearer &lt;token&gt;</code>. Use HTTPS at a trusted reverse proxy or an SSH tunnel when credentials cross a network. Static bearer tokens are preconfigured credentials, not OAuth discovery; clients that require OAuth should use the SSH/local transport instead. Non-loopback startup without a token fails. For a proxy or wildcard bind, set <code>CARLA_MCP_ALLOWED_HOSTS</code> to comma-separated exact external <code>host:port</code> values. Browser Origin requests are rejected. The existing WebUI's access model is unchanged.</p>
+<p>SSH authentication is configured by the user. The installed service does not open a new unauthenticated LAN control port. Direct LAN hosting is supported by <code>run-mcp.sh --transport streamable-http --host SERVER_IP --port 8096</code>, but requires <code>CARLA_MCP_TOKEN</code> and clients supplying <code>Authorization: Bearer &lt;token&gt;</code>. Use HTTPS at a trusted reverse proxy or an SSH tunnel when credentials cross a network. Static bearer tokens are preconfigured credentials, not OAuth discovery; clients that require OAuth should use the SSH/local transport instead. Non-loopback startup without a token fails. For a proxy or wildcard bind, set <code>CARLA_MCP_ALLOWED_HOSTS</code> to comma-separated exact external <code>host:port</code> values. Browser Origin requests are rejected. The existing WebUI's access model is unchanged.</p>
 <p>Environment:</p>
 <table>
 <thead>
@@ -79,7 +79,7 @@ journalctl --user -u carla-mcp.service -n 50
 <tr>
 <td><code>CARLA_WEBUI_PUBLIC_URL</code></td>
 <td>Same as upstream</td>
-<td>Reachable links for downloads/mesh manifests. Installed service uses the LAN WebUI address.</td>
+<td>Reachable links for downloads/mesh manifests. Set this to a WebUI address reachable from the MCP client when using remote downloads.</td>
 </tr>
 <tr>
 <td><code>CARLA_MCP_TIMEOUT</code></td>
@@ -100,8 +100,7 @@ journalctl --user -u carla-mcp.service -n 50
 </table>
 <p>Install from the pinned, separate environment without changing CARLA's dependencies:</p>
 <pre><code class="language-bash">cd /mnt/simulations/control-center
-python3 -m venv .mcp-venv
-.mcp-venv/bin/pip install -r mcp_bridge/requirements.lock.txt
+bash scripts/setup-python.sh mcp
 ./run-mcp.sh --transport streamable-http
 </code></pre>
 <p>The adapter uses the <a href="https://github.com/modelcontextprotocol/python-sdk/tree/v1.30.0">official MCP Python SDK</a>; protocol implementation and transport validation come from that SDK. The bridge has no automatic command retries and no background preview subscriptions.</p>

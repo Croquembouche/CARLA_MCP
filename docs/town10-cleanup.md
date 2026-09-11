@@ -7,7 +7,7 @@ The exact names, native mesh assets, poses and reasons are recorded in
 `map-revisions/Town10HD_Opt.json`.
 
 The read/validate/delete/save/reload editor script and portable map update live at
-`/mnt/simulations/maps/Town10HD_Opt-cleaned/`. The editor verified that the actor
+`/mnt/simulations/carla/carlab/maps/Town10HD_Opt-cleaned/`. The editor verified that the actor
 name set changed by exactly these ten entries (2,932 to 2,922). The original map
 is backed up under that folder's `backup/Carla/Maps/`. The ZIP excludes this backup.
 
@@ -48,7 +48,7 @@ complete ten-removal revision, or the fully cleaned map; other partial states
 fail validation. Restore migration skips these source identities in old scenarios.
 
 The reusable map and scenario are updated under
-`/mnt/simulations/maps/Town10HD_Opt-cleaned/`; evidence and the previous portable
+`/mnt/simulations/carla/carlab/maps/Town10HD_Opt-cleaned/`; evidence and the previous portable
 archive are retained in `data/offroad-persistent-cleanup/`. The replacement
 scenario retains the current 28 actors and six ego sensors, including the cabin
 camera. Parking annotations, weather and user destinations are preserved.

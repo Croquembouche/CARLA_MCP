@@ -5,7 +5,7 @@ After=network-online.target
 [Service]
 Type=simple
 WorkingDirectory=/mnt/simulations/control-center
-ExecCondition=/usr/bin/mountpoint -q /mnt/simulations
+ExecCondition=/usr/bin/test -x /mnt/simulations/control-center/.venv/bin/python
 ExecStart=/mnt/simulations/control-center/run.sh
 Restart=on-failure
 RestartSec=5

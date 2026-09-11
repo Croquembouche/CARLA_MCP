@@ -22,21 +22,15 @@ Read the [complete WebUI/MCP guide](docs/mcp.md), [tool schemas](docs/mcp-tools.
 
 The full WebUI expects the matched native CARLA build, Python 3.10 and ROS 2 Humble on Ubuntu 22.04. The standalone MCP bridge can connect to an already running WebUI without importing CARLA or ROS.
 
-```bash
-git clone https://github.com/Croquembouche/CARLA_MCP.git /mnt/simulations/control-center
-cd /mnt/simulations/control-center
-git lfs install --local
-git lfs pull
-bash scripts/setup-python.sh mcp
-./run-mcp.sh                         # stdio transport
-# For the complete UI, after building the companion simulator:
-bash scripts/setup-python.sh all
-./run.sh
-```
+Start with [docs/SETUP.md](docs/SETUP.md), which separates the two installation paths:
 
-WebUI: `http://SERVER_IP:8095/`. Browsable MCP guide: `/mcp.html`.
-HTTP MCP: `./run-mcp.sh --transport streamable-http --host 127.0.0.1 --port 8096`.
-MCP defaults to local access; remote access, SSH tunneling and optional bearer authentication are covered by the guide. The WebUI's client header is not a substitute for network authentication; deploy it on the intended trusted network.
+- **MCP-only:** clone to any writable directory (LFS downloads can be skipped), run `bash scripts/setup-python.sh mcp`, set `CARLA_WEBUI_URL`, and configure the client to launch the absolute `run-mcp.sh` path. ROS, Node and a local simulator are unnecessary.
+- **Full WebUI + MCP:** finish the companion native build, install ROS 2 Humble and Node.js 22/npm, restore LFS assets, then run `bash scripts/setup-python.sh all` in `/mnt/simulations/control-center`. Start the UI with `./run.sh` and use its Start action for CARLA.
+
+WebUI: `http://SERVER_IP:8095/`. Readiness/status: `/api/status`. Browsable MCP guide: `/mcp.html`.
+For local HTTP MCP, run `./run-mcp.sh --transport streamable-http --host 127.0.0.1 --port 8096`; the protocol endpoint is `/mcp` and adapter health is `/health`.
+
+The stdio launcher waits for MCP protocol input and does not start a WebUI by itself. Remote access, SSH forwarding, optional bearer authentication and service installation are covered by the [setup guide](docs/SETUP.md) and [MCP connection guide](docs/mcp.md). The WebUI's client header is not login authentication; deploy it on the intended trusted network.
 
 ## Data and reproducibility
 

@@ -4,16 +4,15 @@ A separate LAN web application for the locally compiled CARLA UE5 simulator.
 Designed first in `design/DESIGN.md` and `design/preview.html`, then implemented
 as a FastAPI service with a browser canvas map and optional Three.js view.
 
-Open **http://128.175.213.232:8095** or **http://10.100.100.7:8095** from a computer
-that can route to that host interface. The service listens on `0.0.0.0:8095`.
-Both addresses are checked locally; reachability from a particular remote network
-also depends on that network's routing. No other web service was replaced.
+Open `http://SERVER_IP:8095/` using the address of your installation. The service listens on `0.0.0.0:8095` and is intended for a trusted network. Follow [SETUP.md](SETUP.md) to install it; cloning does not enable the service.
+
+Historical validation sections below describe the publication workstation and their recorded test scenes. They do not describe the current state of a new installation. Relative source/data paths in prose are relative to the repository root unless stated otherwise.
 
 ## MCP integration
 
 The separate MCP service exposes 49 tools and 9 resources over the current WebUI API.
-Read the [complete WebUI capability guide](docs/mcp.md) and [generated tool schemas](docs/mcp-tools.md),
-or open [the browsable MCP guide](http://128.175.213.232:8095/mcp.html).
+Read the [complete WebUI capability guide](mcp.md) and [generated tool schemas](mcp-tools.md),
+or open the browsable MCP guide at `http://SERVER_IP:8095/mcp.html`.
 Local stdio: `./run-mcp.sh`. Installed HTTP: `http://127.0.0.1:8096/mcp`
 (`carla-mcp.service`); remote access uses the documented SSH tunnel. MCP never owns a second simulation clock.
 
@@ -119,7 +118,7 @@ are Three/glTF X = CARLA X, Y = CARLA Z, Z = CARLA Y, in metres.
 To rebuild the detailed map package without changing or saving Unreal assets:
 
 ```bash
-source /media/william/mist1/Simulations/env.sh
+source /mnt/simulations/carla/carlab/host-setup/env.sh
 cd /mnt/simulations/control-center
 # Optional: export CARLA_SCENE_MAP=/Game/Carla/Maps/AnotherMap
 for script in export_scene export_scene_splines export_scene_textures; do
@@ -162,7 +161,7 @@ The UI camera preview is a small JPEG; the recording retains original full-size
 sensor bytes. There is no claim that replaying physics or regenerating GPU sensor
 images gives bit-identical original sensor measurements. Use the archived samples
 for exact data replay. The GPU render-versus-collision geometry limits documented
-in `/media/william/mist1/Simulations/GPU-SENSORS.md` still apply.
+in `/mnt/simulations/carla/carlab/host-setup/GPU-SENSORS.md` still apply.
 
 This is a shared trusted-network workspace, with no per-user accounts or access
 roles. Cross-origin browser controls are rejected; API controls require the
@@ -212,7 +211,7 @@ destination and planned route, then send:
 
 ```python
 import requests
-requests.post('http://128.175.213.232:8095/api/command/control',
+requests.post('http://SERVER_IP:8095/api/command/control',
     headers={'X-Control-Client': 'carla-control-center'},
     json={'id': 25, 'throttle': 0.25, 'steer': 0.0, 'brake': 0.0}).raise_for_status()
 ```
@@ -232,14 +231,12 @@ journalctl --user -u carla-control-center -f
 systemctl --user restart carla-control-center
 ```
 
-The service is enabled at user startup, with lingering already enabled on this
-host. A Linux mount condition prevents launch on the wrong backing filesystem.
+After enabling the optional service it starts at user login. Lingering and any separate filesystem mount dependencies must be configured for the target host; see [SETUP.md](SETUP.md).
 The web process starts independently; expensive CARLA workers start only when
 requested. It owns and stops only the simulator group it creates. It restores
 prior world settings when disconnecting from an existing server.
 
-Source: `/mnt/simulations/control-center` (the same files are accessible under
-`/media/william/mist1/Simulations/linux/control-center`). Backend dependencies are
+Source for the documented full-stack layout: `/mnt/simulations/control-center`. Backend dependencies are
 in `.venv`; browser dependencies are local, so clients do not need a CDN.
 
 ```bash
@@ -261,11 +258,11 @@ The instance-segmentation camera also received the subscriber check used by the
 other camera types, so headless primaries and unassigned replicas do not enqueue
 image readbacks. A missing render resource is now checked before dereferencing
 it. These changes are included in
-`/media/william/mist1/Simulations/scripts/carla-local-changes.patch`.
+`/mnt/simulations/carla/carlab/host-setup/scripts/carla-local-changes.patch`.
 
 ## Verified deployment
 
-The final acceptance report is `data/acceptance-report.json`. The active scene is
+The final acceptance report is `data/acceptance-report.json`. That historical test scene was
 Town10HD_Opt with four GPU workers, paused with one ego, one background vehicle,
 one pedestrian, and the five default ego sensors. These are reviewable test
 actors; they can be removed from the Scenario panel.
@@ -465,7 +462,7 @@ sensor replay; native rerendering is not promised to be bit-identical.
 The movement material is reproducible with `diagnostics/create_signal_material.py`
 through UnrealEditor-Cmd. The generator verifies all graph connections before
 saving. Its deployed asset is also saved under
-`/media/william/mist1/Simulations/scripts/assets/M_MovementSignal.uasset`; copy it
+`/mnt/simulations/carla/carlab/host-setup/scripts/assets/M_MovementSignal.uasset`; copy it
 to `CarlaUnreal/Content/Carla/Static/TrafficSignal/` alongside the native source patch.
 Returning from native replay restarts the control-center owner process and its
 simulator group together, avoiding stale CARLA client threads from the old episode.
@@ -480,4 +477,4 @@ grouped by intersection, and phase-table columns use full direction names.
 
 ## Traffic authoring workspace
 
-The **Plans** tab provides signal phase editing, repeated vehicle flows, scenario timelines, and coordinated/adaptive network timing. See [the traffic authoring guide](docs/traffic-authoring.md) for operation, APIs, recording behavior, and import/export. Screenshots, example files, and live-test evidence are available at `/authoring-review/index.html`.
+The **Plans** tab provides signal phase editing, repeated vehicle flows, scenario timelines, and coordinated/adaptive network timing. See [the traffic authoring guide](traffic-authoring.md) for operation, APIs, recording behavior, and import/export. Screenshots, example files, and live-test evidence are available at `/authoring-review/index.html`.

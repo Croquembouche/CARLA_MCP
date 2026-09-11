@@ -23648,8 +23648,8 @@
     },
     {
       "path": "docs/OPERATIONS.md",
-      "bytes": 28573,
-      "sha256": "1401065d4e0e1606f28eb6e0d6100a641f500728a48114b37688b8f4191eceb5"
+      "bytes": 28733,
+      "sha256": "baae9f9a1ce7d129ca060d694ba1a605e8c2c3b1fcf4998c9fad7b8d9df22893"
     },
     {
       "path": "docs/RESTRICTED-ENGINE-FILES.md",
@@ -23658,8 +23658,8 @@
     },
     {
       "path": "docs/SETUP.md",
-      "bytes": 1942,
-      "sha256": "cdefc177c8e55fe5364676433dd5b5e4173a8be3beabe62a6b19aaed10b1f75e"
+      "bytes": 7728,
+      "sha256": "e4d82930b00405a3a008adcad2c6b895125b1f2060b7d246f165c2a8121bfe6c"
     },
     {
       "path": "docs/actor-models.md",
@@ -23678,8 +23678,8 @@
     },
     {
       "path": "docs/mcp.md",
-      "bytes": 30110,
-      "sha256": "2bad8899eacc06c57f5f1730aa55918977d42cc07a59a483eea8e7d4bb420b07"
+      "bytes": 30395,
+      "sha256": "a57c52f8affcedf30ccdf3e8cf5feadef70827d2c097a7f7d19c7c5f6a0e87f8"
     },
     {
       "path": "docs/parallel-gpu-acceptance.md",
@@ -23688,8 +23688,8 @@
     },
     {
       "path": "docs/parallel-gpu-processing.md",
-      "bytes": 4783,
-      "sha256": "334852ecc90c8858b67a5fde21fcf717128d04de4fadf45c3ce2e2ce2c335550"
+      "bytes": 4885,
+      "sha256": "c5c52a4fccd046acb0846f3aca2c5bd44228596b3fb3530bbe848f49200b23df"
     },
     {
       "path": "docs/parking-driving.md",
@@ -23748,8 +23748,8 @@
     },
     {
       "path": "docs/town10-cleanup.md",
-      "bytes": 3255,
-      "sha256": "e593f6b496f353645f62238c95fe9e6f63fccf550aa900720d64ae2fdcdaa295"
+      "bytes": 3281,
+      "sha256": "5274c2999e69bd96750110a4f53f5772270c290b7f1d7e36d71f9ef5d95f45ea"
     },
     {
       "path": "docs/traffic-authoring.md",
@@ -23792,21 +23792,6 @@
       "sha256": "4954541773365e1db9bafd359a769efc1cca5e2cd0f5a5e9904044ffc2c21cc1"
     },
     {
-      "path": "mcp_bridge/__pycache__/__init__.cpython-310.pyc",
-      "bytes": 202,
-      "sha256": "6d1c4ac65c73eb3cec4c04cdaba6e46a37cd8a3d942ef129b731c14af20eb444"
-    },
-    {
-      "path": "mcp_bridge/__pycache__/catalog.cpython-310.pyc",
-      "bytes": 15192,
-      "sha256": "72197489a31da2cabbdbc279a14644e1785995d1681f90c39c90170e61769a4b"
-    },
-    {
-      "path": "mcp_bridge/__pycache__/server.cpython-310.pyc",
-      "bytes": 15707,
-      "sha256": "2d65404b962c4b053b94d4bde2860d38a87b890f4cd826e7fb2cbba5c17b8669"
-    },
-    {
       "path": "mcp_bridge/build_docs.py",
       "bytes": 4599,
       "sha256": "f8a1036586c6733d7ce876fb10ce95246a27c8fe55001e59df2b1df1d4948569"
@@ -23845,11 +23830,6 @@
       "path": "mcp_bridge/smoke.py",
       "bytes": 3795,
       "sha256": "98abfa90c1bb538329724b83fc137b9b1c92a464a999d5e3006e322e4c0a506e"
-    },
-    {
-      "path": "mcp_bridge/tests/__pycache__/test_bridge.cpython-310.pyc",
-      "bytes": 9609,
-      "sha256": "15b60b38d46dff088ae8f533a5f6457c61de323ae640529bf444c3f98c2c1f85"
     },
     {
       "path": "mcp_bridge/tests/test_bridge.py",
@@ -23973,8 +23953,8 @@
     },
     {
       "path": "scripts/setup-python.sh",
-      "bytes": 524,
-      "sha256": "080d50686482edf9d2407c4bd9ed0c9af141ea8a6fcb780098c4d6e7ee274850"
+      "bytes": 1497,
+      "sha256": "b241a4b4bab1dc8f6c2fbfadea19bdd5dd70b0a474191ce064561395d76816ee"
     },
     {
       "path": "scripts/setup_sensor_view_test.py",
@@ -26218,8 +26198,8 @@
     },
     {
       "path": "static/mcp-guide.md",
-      "bytes": 30110,
-      "sha256": "2bad8899eacc06c57f5f1730aa55918977d42cc07a59a483eea8e7d4bb420b07"
+      "bytes": 30395,
+      "sha256": "a57c52f8affcedf30ccdf3e8cf5feadef70827d2c097a7f7d19c7c5f6a0e87f8"
     },
     {
       "path": "static/mcp-tools.html",
@@ -26233,8 +26213,8 @@
     },
     {
       "path": "static/mcp.html",
-      "bytes": 39909,
-      "sha256": "3e4dac8d79508f4603bb95ffecec92ac112e61c4ed4f36e891181edf9ec024b9"
+      "bytes": 40238,
+      "sha256": "bcc263f71cebc1ef0e77d2dfb0845a1af23f369cb5097843629e0fc1bd759c8d"
     },
     {
       "path": "static/movement-review/acceptance-report.json",
@@ -28113,13 +28093,13 @@
     },
     {
       "path": "systemd/carla-control-center.service",
-      "bytes": 401,
-      "sha256": "aeed8a51648c03643cae002c783fe2770b1924e688b9106656351a51df1beb6f"
+      "bytes": 427,
+      "sha256": "486177ed25900898fced6594f4335d1bba12557e777f23ac864258355dab1da2"
     },
     {
       "path": "systemd/carla-mcp.service",
-      "bytes": 495,
-      "sha256": "fba38f54ef394786214bcabd233217f4778e1b25ade6100b877dcc1a8dca8616"
+      "bytes": 489,
+      "sha256": "683057b483ee3c5b56faf356f1a20b863938943e3460a6a1dff9de0c09f81284"
     }
   ],
   "note": "Custom files present before the manifest itself was written; generated dependencies and transient process files are excluded."

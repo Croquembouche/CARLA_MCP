@@ -1,0 +1,94 @@
+{
+  "tested_frames": 1002,
+  "wall_seconds": 170.54,
+  "maximum_observed_advance_interval_s": 1.0085012599884067,
+  "sampling_interval_s": 0.8,
+  "median_frame_ms": 161.17208602372557,
+  "p95_frame_ms": 195.6206800241489,
+  "median_status_http_ms": 20.84,
+  "final_worker_rss_gib": {
+    "3": 12.479724884033203,
+    "2": 12.712646484375,
+    "1": 12.7037353515625,
+    "0": 12.682456970214844
+  },
+  "service_memory_gib": 53.806968688964844,
+  "running": true,
+  "managed_actors": 31,
+  "sensors": 6,
+  "worker_count": 4,
+  "native_profile_ages_seconds": [
+    0.4,
+    0.3,
+    0.3,
+    0.5
+  ],
+  "headlight_checks": [
+    {
+      "condition": "night",
+      "frame": 383,
+      "ego": 55,
+      "lights": 11,
+      "weather": {
+        "cloudiness": 10.0,
+        "precipitation": 0.0,
+        "precipitation_deposits": 0.0,
+        "wind_intensity": 10.0,
+        "sun_azimuth_angle": 0.0,
+        "sun_altitude_angle": -35.0,
+        "fog_density": 0.0,
+        "fog_distance": 100.0,
+        "wetness": 0.0,
+        "dust_storm": 0.0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0.0,
+        "mie_scattering_scale": 0.0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    },
+    {
+      "condition": "day",
+      "frame": 416,
+      "ego": 55,
+      "lights": 8,
+      "weather": {
+        "cloudiness": 5.0,
+        "precipitation": 0.0,
+        "precipitation_deposits": 0.0,
+        "wind_intensity": 10.0,
+        "sun_azimuth_angle": 0.0,
+        "sun_altitude_angle": 65.0,
+        "fog_density": 0.0,
+        "fog_distance": 100.0,
+        "wetness": 0.0,
+        "dust_storm": 0.0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0.0,
+        "mie_scattering_scale": 0.0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    },
+    {
+      "condition": "rain",
+      "frame": 449,
+      "ego": 55,
+      "lights": 8,
+      "weather": {
+        "cloudiness": 95.0,
+        "precipitation": 70.0,
+        "precipitation_deposits": 0.0,
+        "wind_intensity": 10.0,
+        "sun_azimuth_angle": 0.0,
+        "sun_altitude_angle": 35.0,
+        "fog_density": 0.0,
+        "fog_distance": 100.0,
+        "wetness": 80.0,
+        "dust_storm": 0.0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0.0,
+        "mie_scattering_scale": 0.0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    }
+  ]
+}

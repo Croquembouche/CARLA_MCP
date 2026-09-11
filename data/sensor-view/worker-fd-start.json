@@ -1,0 +1,30 @@
+[
+  {
+    "adapter": 0,
+    "pid": 2357973,
+    "initialized": true,
+    "open_fds": 464,
+    "limit": "Max open files            65536                65536                files     "
+  },
+  {
+    "adapter": 1,
+    "pid": 2357974,
+    "initialized": true,
+    "open_fds": 608,
+    "limit": "Max open files            65536                65536                files     "
+  },
+  {
+    "adapter": 2,
+    "pid": 2357975,
+    "initialized": true,
+    "open_fds": 630,
+    "limit": "Max open files            65536                65536                files     "
+  },
+  {
+    "adapter": 3,
+    "pid": 2357976,
+    "initialized": true,
+    "open_fds": 634,
+    "limit": "Max open files            65536                65536                files     "
+  }
+]

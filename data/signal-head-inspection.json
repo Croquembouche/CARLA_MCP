@@ -1,0 +1,2248 @@
+[
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc11_13",
+    "pose": "<Struct 'Transform' (0x7f5b4c129140) {rotation: {x: -0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4617.157715, y: -7355.661621, z: 25.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c128a80) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4617.157715, y: -7355.661621, z: 430.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c130c40) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c132b80) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c128ba0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -4617.157715, y: -7355.661621, z: 135.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c132b80) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c15dd70) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c128ba0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4617.157715, y: -7355.661621, z: 25.425385}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15dd70) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c15ddc0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c128ba0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -4617.157715, y: -7355.661621, z: 25.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ddc0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c15de10) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c128c30) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4574.155361, y: -6425.661730, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15de10) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15de60) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c128cc0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4574.156323, y: -6805.661730, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15de60) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15deb0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c128d50) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4612.157842, y: -7405.661634, z: 440.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15deb0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15df00) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c128de0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4574.155361, y: -6425.661730, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15df00) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15df50) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c128e70) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4574.156323, y: -6805.661730, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15df50) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15dfa0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c128f00) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4612.157842, y: -7405.661634, z: 370.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15dfa0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15dff0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c128f90) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4574.155361, y: -6425.661730, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15dff0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e040) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129020) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4574.156323, y: -6805.661730, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e040) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e090) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1290b0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4612.157842, y: -7405.661634, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e090) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e0e0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129140) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4617.157715, y: -7355.661621, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e0e0) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c15e130) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129140) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4617.155817, y: -6605.661621, z: 522.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e130) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c15e180) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c129140) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -4617.157715, y: -7355.661621, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e180) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15e1d0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c129140) {rotation: {x: 0.000000, y: 0.000000, z: -1.000000, w: -0.000001}, translation: {x: -4617.157715, y: -7355.661621, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e1d0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15e220) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129140) {rotation: {x: 0.000000, y: 0.000000, z: -1.000000, w: -0.000001}, translation: {x: -4617.157715, y: -7355.661621, z: 365.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e220) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c15e270) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129140) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -4617.157715, y: -7355.661621, z: 575.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e270) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c15e2c0) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc12_14",
+    "pose": "<Struct 'Transform' (0x7f5b4c129770) {rotation: {x: -0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3444.915527, y: -5102.048828, z: 25.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129140) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3444.915527, y: -5102.048828, z: 430.425507}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e2c0) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c15e310) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1291d0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707103, w: 0.707110}, translation: {x: -3444.915527, y: -5102.048828, z: 135.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e310) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c15e360) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1291d0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3444.915527, y: -5102.048828, z: 25.425507}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e360) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c15e3b0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c1291d0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707103, w: 0.707110}, translation: {x: -3444.915527, y: -5102.048828, z: 25.425507}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e3b0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c15e400) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129260) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -4374.915115, y: -5059.039917, z: 550.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e400) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e450) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1292f0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3994.915115, y: -5059.043558, z: 550.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e450) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e4a0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129380) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3394.915479, y: -5097.049307, z: 440.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e4a0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e4f0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129410) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -4374.915115, y: -5059.039917, z: 480.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e4f0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e540) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1294a0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3994.915115, y: -5059.043558, z: 480.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e540) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e590) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129530) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3394.915479, y: -5097.049307, z: 370.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e590) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e5e0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1295c0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -4374.915115, y: -5059.039917, z: 515.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e5e0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e630) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129650) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3994.915115, y: -5059.043558, z: 515.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e630) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e680) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1296e0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3394.915479, y: -5097.049307, z: 405.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e680) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15e6d0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129770) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3444.915527, y: -5102.048828, z: 405.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e6d0) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c15e720) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129770) {rotation: {x: 0.000000, y: 0.000000, z: 0.707103, w: 0.707110}, translation: {x: -4194.915527, y: -5102.041642, z: 522.425507}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e720) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c15e770) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c129770) {rotation: {x: 0.000000, y: 0.000000, z: 0.707103, w: 0.707110}, translation: {x: -3444.915527, y: -5102.048828, z: 145.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e770) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15e7c0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c129770) {rotation: {x: 0.000000, y: 0.000000, z: -0.707110, w: 0.707103}, translation: {x: -3444.915527, y: -5102.048828, z: 145.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e7c0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15e810) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129770) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000005}, translation: {x: -3444.915527, y: -5102.048828, z: 325.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e810) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c15e860) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129770) {rotation: {x: 0.000000, y: 0.000000, z: -0.000005, w: 1.000000}, translation: {x: -3444.915527, y: -5102.048828, z: 575.425507}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e860) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c15e8b0) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc13_15",
+    "pose": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: -0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11445.189453, y: 2119.600342, z: 25.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129770) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11445.189453, y: 2119.600342, z: 430.420013}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e8b0) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c15e900) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129800) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: 0.707107}, translation: {x: 11445.189453, y: 2119.600342, z: 135.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e900) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c15e950) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129800) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11445.189453, y: 2119.600342, z: 25.420013}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e950) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c15e9a0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c129800) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: 0.707107}, translation: {x: 11445.189453, y: 2119.600342, z: 25.420013}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e9a0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c15e9f0) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129890) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 10515.189476, y: 2162.600845, z: 550.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15e9f0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ea40) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129920) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 10895.189476, y: 2162.600640, z: 550.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ea40) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ea90) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1299b0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11495.189456, y: 2124.600315, z: 440.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ea90) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15eae0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129a40) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 10515.189476, y: 2162.600845, z: 480.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15eae0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15eb30) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129ad0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 10895.189476, y: 2162.600640, z: 480.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15eb30) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15eb80) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129b60) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11495.189456, y: 2124.600315, z: 370.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15eb80) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ebd0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129bf0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 10515.189476, y: 2162.600845, z: 515.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ebd0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ec20) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129c80) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 10895.189476, y: 2162.600640, z: 515.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ec20) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ec70) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129d10) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11495.189456, y: 2124.600315, z: 405.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ec70) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ecc0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11445.189453, y: 2119.600342, z: 405.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ecc0) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c15ed10) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707106, w: 0.707107}, translation: {x: 10695.189453, y: 2119.600748, z: 522.420013}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ed10) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c15ed60) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11070.189453, y: 2119.600545, z: 522.420013}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ed60) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c15edb0) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: 0.707107}, translation: {x: 11445.189453, y: 2119.600342, z: 145.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15edb0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15ee00) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707107}, translation: {x: 11445.189453, y: 2119.600342, z: 145.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ee00) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15ee50) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707107}, translation: {x: 11445.189453, y: 2119.600342, z: 385.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ee50) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c15eea0) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: 11445.189453, y: 2119.600342, z: 365.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15eea0) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c15eef0) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc14_16",
+    "pose": "<Struct 'Transform' (0x7f5b4c12a460) {rotation: {x: 0.000000, y: -0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8979.188477, y: 2092.214600, z: 25.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129da0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8979.188477, y: 2092.214600, z: 430.420013}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15eef0) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c15ef40) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129e30) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: -0.707105}, translation: {x: 8979.188477, y: 2092.214600, z: 135.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ef40) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c15ef90) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c129e30) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8979.188477, y: 2092.214600, z: 25.420013}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ef90) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c15efe0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c129e30) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: -0.707105}, translation: {x: 8979.188477, y: 2092.214600, z: 25.420013}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15efe0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c15f030) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129ec0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 9909.188294, y: 2049.210639, z: 550.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f030) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f080) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129f50) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 9529.188294, y: 2049.212258, z: 550.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f080) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f0d0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c129fe0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8929.188456, y: 2087.214813, z: 440.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f0d0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f120) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a070) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 9909.188294, y: 2049.210639, z: 480.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f120) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f170) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a100) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 9529.188294, y: 2049.212258, z: 480.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f170) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f1c0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a190) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8929.188456, y: 2087.214813, z: 370.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f1c0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f210) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a220) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 9909.188294, y: 2049.210639, z: 515.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f210) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f260) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a2b0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 9529.188294, y: 2049.212258, z: 515.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f260) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f2b0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a340) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8929.188456, y: 2087.214813, z: 405.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f2b0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f300) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a3d0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8979.188477, y: 2092.214600, z: 405.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f300) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c15f350) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a3d0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 9379.188477, y: 2092.212897, z: 522.420013}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f350) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c15f3a0) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a3d0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: -0.707105}, translation: {x: 9729.188477, y: 2092.211406, z: 522.420013}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f3a0) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c15f3f0) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a3d0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: -0.707105}, translation: {x: 8979.188477, y: 2092.214600, z: 145.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f3f0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15f440) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a3d0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707105, w: 0.707108}, translation: {x: 8979.188477, y: 2092.214600, z: 145.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f440) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15f490) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02L.SM_OneWay02L",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a460) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: -1.000000}, translation: {x: 8979.188477, y: 2092.214600, z: 315.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f490) {x: -37.733192, y: -11.942454, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c15f4e0) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a460) {rotation: {x: 0.000000, y: 0.000000, z: 0.707105, w: 0.707108}, translation: {x: 8979.188477, y: 2092.214600, z: 385.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f4e0) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c15f530) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a460) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8979.188477, y: 2092.214600, z: 365.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f530) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c15f580) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_4",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a460) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: 8979.188477, y: 2092.214600, z: 575.420013}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f580) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c15f5d0) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc2_17",
+    "pose": "<Struct 'Transform' (0x7f5b4c12abb0) {rotation: {x: -0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3193.084229, y: 2030.195557, z: 25.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a460) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3193.084229, y: 2030.195557, z: 430.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f5d0) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c15f620) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a4f0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: 0.707107}, translation: {x: -3193.084229, y: 2030.195557, z: 135.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f620) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c15f670) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a4f0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3193.084229, y: 2030.195557, z: 25.425385}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f670) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c15f6c0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a4f0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: 0.707107}, translation: {x: -3193.084229, y: 2030.195557, z: 25.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f6c0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c15f710) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a580) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -4123.084206, y: 2073.196060, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f710) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f760) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a610) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3743.084206, y: 2073.195855, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f760) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f7b0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a6a0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3143.084226, y: 2035.195530, z: 440.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f7b0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f800) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a730) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -4123.084206, y: 2073.196060, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f800) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f850) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a7c0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3743.084206, y: 2073.195855, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f850) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f8a0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a850) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3143.084226, y: 2035.195530, z: 370.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f8a0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f8f0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a8e0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -4123.084206, y: 2073.196060, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f8f0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f940) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12a970) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3743.084206, y: 2073.195855, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f940) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f990) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12aa00) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3143.084226, y: 2035.195530, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f990) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15f9e0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12aa90) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3193.084229, y: 2030.195557, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15f9e0) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c15fa30) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12aa90) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3943.084229, y: 2030.195963, z: 522.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fa30) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c15fa80) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12aa90) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: 0.707107}, translation: {x: -3568.084229, y: 2030.195760, z: 522.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fa80) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c15fad0) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12aa90) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: 0.707107}, translation: {x: -3193.084229, y: 2030.195557, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fad0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15fb20) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12aa90) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707107}, translation: {x: -3193.084229, y: 2030.195557, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fb20) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c15fb70) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02L.SM_OneWay02L",
+        "transform": "<Struct 'Transform' (0x7f5b4c12ab20) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -3193.084229, y: 2030.195557, z: 275.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fb70) {x: -37.733192, y: -11.942454, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c15fbc0) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02_R.SM_OneWay02_R",
+        "transform": "<Struct 'Transform' (0x7f5b4c12abb0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3193.084229, y: 2030.195557, z: 275.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fbc0) {x: -37.733192, y: -11.804161, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c15fc10) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12abb0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707107}, translation: {x: -3193.084229, y: 2030.195557, z: 385.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fc10) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c15fc60) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_4",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12abb0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3193.084229, y: 2030.195557, z: 365.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fc60) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c15fcb0) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_5",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12abb0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000000, w: 1.000000}, translation: {x: -3193.084229, y: 2030.195557, z: 575.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fcb0) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c15fd00) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc3_18",
+    "pose": "<Struct 'Transform' (0x7f5b4c12b270) {rotation: {x: -0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6426.418945, y: 706.330933, z: 25.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12abb0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6426.418945, y: 706.330933, z: 430.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fd00) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c15fd50) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12ac40) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -6426.418945, y: 706.330933, z: 135.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fd50) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c15fda0) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12ac40) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6426.418945, y: 706.330933, z: 25.425385}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fda0) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c15fdf0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c12ac40) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -6426.418945, y: 706.330933, z: 25.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fdf0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c15fe40) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12acd0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6383.417095, y: 1636.330847, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fe40) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15fe90) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12ad60) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6383.417851, y: 1256.330847, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fe90) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15fee0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12adf0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6421.419044, y: 656.330923, z: 440.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15fee0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ff30) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12ae80) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6383.417095, y: 1636.330847, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ff30) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ff80) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12af10) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6383.417851, y: 1256.330847, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ff80) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c15ffd0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12afa0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6421.419044, y: 656.330923, z: 370.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c15ffd0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188060) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b030) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6383.417095, y: 1636.330847, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188060) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1880b0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b0c0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6383.417851, y: 1256.330847, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1880b0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188100) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b150) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6421.419044, y: 656.330923, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188100) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188150) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b1e0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6426.418945, y: 706.330933, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188150) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c1881a0) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b1e0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -6426.417453, y: 1456.330933, z: 522.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1881a0) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c1881f0) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b1e0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6426.418199, y: 1081.330933, z: 522.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1881f0) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c188240) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b1e0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -6426.418945, y: 706.330933, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188240) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c188290) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b1e0) {rotation: {x: 0.000000, y: 0.000000, z: -1.000000, w: -0.000001}, translation: {x: -6426.418945, y: 706.330933, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188290) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c1882e0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02_R.SM_OneWay02_R",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b270) {rotation: {x: 0.000000, y: 0.000000, z: -1.000000, w: -0.000001}, translation: {x: -6426.418945, y: 706.330933, z: 325.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1882e0) {x: -37.733192, y: -11.804161, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c188330) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b270) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6426.418945, y: 706.330933, z: 385.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188330) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c188380) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b270) {rotation: {x: 0.000000, y: 0.000000, z: -0.707107, w: 0.707106}, translation: {x: -6426.418945, y: 706.330933, z: 575.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188380) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c1883d0) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc4_19",
+    "pose": "<Struct 'Transform' (0x7f5b4c12b930) {rotation: {x: 0.000000, y: -0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6235.207031, y: 2019.690918, z: 25.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b270) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6235.207031, y: 2019.690918, z: 430.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1883d0) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c188420) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b300) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: -0.707105}, translation: {x: -6235.207031, y: 2019.690918, z: 135.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188420) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c188470) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b300) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6235.207031, y: 2019.690918, z: 25.425385}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188470) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c1884c0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b300) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: -0.707105}, translation: {x: -6235.207031, y: 2019.690918, z: 25.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1884c0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c188510) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b390) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -5305.207192, y: 1976.687444, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188510) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188560) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b420) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -5685.207192, y: 1976.688864, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188560) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1885b0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b4b0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6285.207050, y: 2014.691105, z: 440.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1885b0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188600) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b540) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -5305.207192, y: 1976.687444, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188600) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188650) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b5d0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -5685.207192, y: 1976.688864, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188650) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1886a0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b660) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6285.207050, y: 2014.691105, z: 370.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1886a0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1886f0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b6f0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -5305.207192, y: 1976.687444, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1886f0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188740) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b780) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -5685.207192, y: 1976.688864, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188740) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188790) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b810) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6285.207050, y: 2014.691105, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188790) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1887e0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b8a0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6235.207031, y: 2019.690918, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1887e0) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c188830) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b8a0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -5485.207031, y: 2019.688117, z: 522.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188830) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c188880) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b8a0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: -0.707105}, translation: {x: -5860.207031, y: 2019.689517, z: 522.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188880) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c1888d0) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b8a0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: -0.707105}, translation: {x: -6235.207031, y: 2019.690918, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1888d0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c188920) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b8a0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707105, w: 0.707108}, translation: {x: -6235.207031, y: 2019.690918, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188920) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c188970) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02L.SM_OneWay02L",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b930) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: -1.000000}, translation: {x: -6235.207031, y: 2019.690918, z: 275.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188970) {x: -37.733192, y: -11.942454, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c1889c0) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b930) {rotation: {x: 0.000000, y: 0.000000, z: 0.707105, w: 0.707108}, translation: {x: -6235.207031, y: 2019.690918, z: 385.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1889c0) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c188a10) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b930) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6235.207031, y: 2019.690918, z: 365.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188a10) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c188a60) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_4",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b930) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000002}, translation: {x: -6235.207031, y: 2019.690918, z: 575.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188a60) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c188ab0) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc5_20",
+    "pose": "<Struct 'Transform' (0x7f5b4c1900f0) {rotation: {x: 0.000000, y: -0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9492.822266, y: 2033.482300, z: 25.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b930) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9492.822266, y: 2033.482300, z: 430.425598}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188ab0) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c188b00) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b9c0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707105}, translation: {x: -9492.822266, y: 2033.482300, z: 135.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188b00) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c188b50) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b9c0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9492.822266, y: 2033.482300, z: 25.425598}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188b50) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c188ba0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c12b9c0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707105}, translation: {x: -9492.822266, y: 2033.482300, z: 25.425598}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188ba0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c188bf0) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12ba50) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -10422.822425, y: 2076.478859, z: 550.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188bf0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188c40) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bae0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -10042.822425, y: 2076.480265, z: 550.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188c40) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188c90) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bb70) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9442.822285, y: 2038.482485, z: 440.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188c90) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188ce0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bc00) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -10422.822425, y: 2076.478859, z: 480.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188ce0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188d30) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bc90) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -10042.822425, y: 2076.480265, z: 480.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188d30) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188d80) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bd20) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9442.822285, y: 2038.482485, z: 370.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188d80) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188dd0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bdb0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -10422.822425, y: 2076.478859, z: 515.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188dd0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188e20) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12be40) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -10042.822425, y: 2076.480265, z: 515.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188e20) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188e70) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bed0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9442.822285, y: 2038.482485, z: 405.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188e70) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c188ec0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bf60) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9492.822266, y: 2033.482300, z: 405.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188ec0) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c188f10) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bf60) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9867.822266, y: 2033.480912, z: 522.425598}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188f10) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c188f60) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bf60) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707105}, translation: {x: -10292.822266, y: 2033.479340, z: 522.425598}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188f60) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c188fb0) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bf60) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707105}, translation: {x: -9492.822266, y: 2033.482300, z: 145.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c188fb0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c189000) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c12bf60) {rotation: {x: 0.000000, y: 0.000000, z: -0.707105, w: 0.707108}, translation: {x: -9492.822266, y: 2033.482300, z: 145.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189000) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c189050) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02L.SM_OneWay02L",
+        "transform": "<Struct 'Transform' (0x7f5b4c190060) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000002}, translation: {x: -9492.822266, y: 2033.482300, z: 325.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189050) {x: -37.733192, y: -11.942454, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c1890a0) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02_R.SM_OneWay02_R",
+        "transform": "<Struct 'Transform' (0x7f5b4c1900f0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9492.822266, y: 2033.482300, z: 325.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1890a0) {x: -37.733192, y: -11.804161, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c1890f0) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1900f0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707105, w: 0.707108}, translation: {x: -9492.822266, y: 2033.482300, z: 385.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1890f0) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c189140) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_4",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c1900f0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9492.822266, y: 2033.482300, z: 365.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189140) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c189190) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_5",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1900f0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000002, w: 1.000000}, translation: {x: -9492.822266, y: 2033.482300, z: 575.425598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189190) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c1891e0) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc6_21",
+    "pose": "<Struct 'Transform' (0x7f5b4c1907b0) {rotation: {x: 0.000000, y: -0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5924.225098, y: -5149.837402, z: 25.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1900f0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5924.225098, y: -5149.837402, z: 430.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1891e0) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c189230) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c190180) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000003}, translation: {x: -5924.225098, y: -5149.837402, z: 135.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189230) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c189280) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c190180) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5924.225098, y: -5149.837402, z: 25.425385}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189280) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c1892d0) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c190180) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000003}, translation: {x: -5924.225098, y: -5149.837402, z: 25.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1892d0) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c189320) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190210) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5967.231542, y: -6079.837104, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189320) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189370) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1902a0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5967.228909, y: -5699.837104, z: 550.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189370) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1893c0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190330) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5929.224752, y: -5099.837367, z: 440.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1893c0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189410) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1903c0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5967.231542, y: -6079.837104, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189410) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189460) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190450) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5967.228909, y: -5699.837104, z: 480.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189460) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1894b0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1904e0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5929.224752, y: -5099.837367, z: 370.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1894b0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189500) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190570) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5967.231542, y: -6079.837104, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189500) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189550) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190600) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5967.228909, y: -5699.837104, z: 515.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189550) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1895a0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190690) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5929.224752, y: -5099.837367, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1895a0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1895f0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c190720) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5924.225098, y: -5149.837402, z: 405.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1895f0) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c189640) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c190720) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5924.227696, y: -5524.837402, z: 522.425385}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189640) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c189690) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c190720) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000003}, translation: {x: -5924.225098, y: -5149.837402, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189690) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c1896e0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c190720) {rotation: {x: 0.000000, y: 0.000000, z: -0.000003, w: 1.000000}, translation: {x: -5924.225098, y: -5149.837402, z: 145.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1896e0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c189730) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_C.SM_TrafficLight_Pedestrian01_C",
+        "transform": "<Struct 'Transform' (0x7f5b4c1907b0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000003}, translation: {x: -5924.225098, y: -5149.837402, z: 290.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189730) {x: -9.848766, y: -9.839056, z: -25.467546}>, <Struct 'Vector' (0x7f5b4c189780) {x: 61.978664, y: 9.839056, z: 25.691259}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c1907b0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000003, w: 1.000000}, translation: {x: -5924.225098, y: -5149.837402, z: 365.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189780) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c1897d0) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1907b0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707104, w: 0.707109}, translation: {x: -5924.225098, y: -5149.837402, z: 575.425385}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1897d0) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c189820) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc7_22",
+    "pose": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: -0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11923.818359, y: 1900.446899, z: 25.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1907b0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11923.818359, y: 1900.446899, z: 430.425262}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189820) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c189870) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c190840) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: -0.707106}, translation: {x: -11923.818359, y: 1900.446899, z: 135.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189870) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c1898c0) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c190840) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11923.818359, y: 1900.446899, z: 25.425262}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1898c0) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c189910) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c190840) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: -0.707106}, translation: {x: -11923.818359, y: 1900.446899, z: 25.425262}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189910) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c189960) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1908d0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -10993.818394, y: 1857.446152, z: 550.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189960) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c1899b0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190960) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11373.818394, y: 1857.446457, z: 550.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c1899b0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189a00) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1909f0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11973.818363, y: 1895.446939, z: 440.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189a00) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189a50) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190a80) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -10993.818394, y: 1857.446152, z: 480.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189a50) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189aa0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190b10) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11373.818394, y: 1857.446457, z: 480.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189aa0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189af0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190ba0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11973.818363, y: 1895.446939, z: 370.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189af0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189b40) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190c30) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -10993.818394, y: 1857.446152, z: 515.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189b40) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189b90) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190cc0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11373.818394, y: 1857.446457, z: 515.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189b90) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189be0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190d50) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11973.818363, y: 1895.446939, z: 405.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189be0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189c30) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11923.818359, y: 1900.446899, z: 405.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189c30) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c189c80) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11103.818359, y: 1900.446241, z: 522.425262}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189c80) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c189cd0) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: -0.707106}, translation: {x: -11548.818359, y: 1900.446598, z: 522.425262}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189cd0) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c189d20) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: -0.707106}, translation: {x: -11923.818359, y: 1900.446899, z: 145.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189d20) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c189d70) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707106, w: 0.707107}, translation: {x: -11923.818359, y: 1900.446899, z: 145.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189d70) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c189dc0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707106, w: 0.707107}, translation: {x: -11923.818359, y: 1900.446899, z: 385.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189dc0) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c189e10) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -11923.818359, y: 1900.446899, z: 365.425262}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189e10) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c189e60) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc8_23",
+    "pose": "<Struct 'Transform' (0x7f5b4c191530) {rotation: {x: 0.000000, y: -0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5871.536133, y: 14582.458008, z: 25.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c190de0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5871.536133, y: 14582.458008, z: 430.418793}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189e60) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c189eb0) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c190e70) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: -0.707106}, translation: {x: -5871.536133, y: 14582.458008, z: 135.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189eb0) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c189f00) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c190e70) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5871.536133, y: 14582.458008, z: 25.418793}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189f00) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c189f50) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c190e70) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: -0.707106}, translation: {x: -5871.536133, y: 14582.458008, z: 25.418793}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189f50) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c189fa0) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190f00) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -4941.536168, y: 14539.457261, z: 550.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189fa0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c189ff0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c190f90) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5321.536168, y: 14539.457566, z: 550.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c189ff0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a040) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191020) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5921.536137, y: 14577.458048, z: 440.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a040) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a090) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1910b0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -4941.536168, y: 14539.457261, z: 480.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a090) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a0e0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191140) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5321.536168, y: 14539.457566, z: 480.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a0e0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a130) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1911d0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5921.536137, y: 14577.458048, z: 370.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a130) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a180) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191260) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -4941.536168, y: 14539.457261, z: 515.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a180) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a1d0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1912f0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5321.536168, y: 14539.457566, z: 515.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a1d0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a220) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191380) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5921.536137, y: 14577.458048, z: 405.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a220) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a270) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "Sign_03",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_CleanPet01.SM_CleanPet01",
+        "transform": "<Struct 'Transform' (0x7f5b4c191410) {rotation: {x: 0.000000, y: 0.000000, z: 0.707106, w: 0.707108}, translation: {x: -5880.600582, y: 14582.453126, z: 193.943848}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a220) {x: -25.790466, y: -0.500000, z: -38.099995}>, <Struct 'Vector' (0x7f5b4c18a270) {x: 25.790466, y: 0.500000, z: 38.099995}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c1914a0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5871.536133, y: 14582.458008, z: 405.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a270) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c18a2c0) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c1914a0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5496.536133, y: 14582.457707, z: 522.418793}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a2c0) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c18a310) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c1914a0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: -0.707106}, translation: {x: -5871.536133, y: 14582.458008, z: 145.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a310) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18a360) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c1914a0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707106, w: 0.707107}, translation: {x: -5871.536133, y: 14582.458008, z: 145.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a360) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18a3b0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_C.SM_TrafficLight_Pedestrian01_C",
+        "transform": "<Struct 'Transform' (0x7f5b4c191530) {rotation: {x: 0.000000, y: 0.000000, z: 0.707107, w: -0.707106}, translation: {x: -5871.536133, y: 14582.458008, z: 290.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a3b0) {x: -9.848766, y: -9.839056, z: -25.467546}>, <Struct 'Vector' (0x7f5b4c18a400) {x: 61.978664, y: 9.839056, z: 25.691259}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c191530) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: 0.000000}, translation: {x: -5871.536133, y: 14582.458008, z: 365.418793}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a400) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c18a450) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc9_24",
+    "pose": "<Struct 'Transform' (0x7f5b4c191b60) {rotation: {x: -0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6209.930664, y: 12375.550781, z: 28.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c191530) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6209.930664, y: 12375.550781, z: 433.308559}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a450) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c18a4a0) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1915c0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -6209.930664, y: 12375.550781, z: 138.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a4a0) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c18a4f0) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1915c0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6209.930664, y: 12375.550781, z: 28.308559}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a4f0) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c18a540) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c1915c0) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -6209.930664, y: 12375.550781, z: 28.308559}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a540) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c18a590) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191650) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6166.928684, y: 13305.550689, z: 553.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a590) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a5e0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1916e0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6166.929493, y: 12925.550689, z: 553.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a5e0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a630) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191770) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6204.930770, y: 12325.550770, z: 443.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a630) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a680) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191800) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6166.928684, y: 13305.550689, z: 483.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a680) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a6d0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191890) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6166.929493, y: 12925.550689, z: 483.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a6d0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a720) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191920) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6204.930770, y: 12325.550770, z: 373.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a720) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a770) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1919b0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6166.928684, y: 13305.550689, z: 518.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a770) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a7c0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191a40) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6166.929493, y: 12925.550689, z: 518.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a7c0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a810) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191ad0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6204.930770, y: 12325.550770, z: 408.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a810) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18a860) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c191b60) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6209.930664, y: 12375.550781, z: 408.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a860) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c18a8b0) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c191b60) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6209.929866, y: 12750.550781, z: 525.308559}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a8b0) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c18a900) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c191b60) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -6209.930664, y: 12375.550781, z: 148.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a900) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18a950) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c191b60) {rotation: {x: 0.000000, y: 0.000000, z: -1.000000, w: -0.000001}, translation: {x: -6209.930664, y: 12375.550781, z: 148.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a950) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18a9a0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c191b60) {rotation: {x: 0.000000, y: 0.000000, z: -0.000001, w: 1.000000}, translation: {x: -6209.930664, y: 12375.550781, z: 318.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a9a0) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c18a9f0) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c191b60) {rotation: {x: 0.000000, y: 0.000000, z: -0.707108, w: 0.707106}, translation: {x: -6209.930664, y: 12375.550781, z: 578.308559}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18a9f0) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c18aa40) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_largeBIG_rsc_25",
+    "pose": "<Struct 'Transform' (0x7f5b4c192220) {rotation: {x: 0.000000, y: -0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3163.635783, y: 3378.076491, z: 25.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Long",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01",
+        "transform": "<Struct 'Transform' (0x7f5b4c191b60) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3163.635783, y: 3378.076491, z: 430.425384}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18aa40) {x: -814.462585, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c18aa90) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c191bf0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000001}, translation: {x: -3163.635783, y: 3378.076491, z: 135.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18aa90) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c18aae0) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c191bf0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3163.635783, y: 3378.076491, z: 25.425384}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18aae0) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c18ab30) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c191bf0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000001}, translation: {x: -3163.635783, y: 3378.076491, z: 25.425384}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ab30) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c18ab80) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191c80) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3206.633803, y: 2448.076399, z: 550.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ab80) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18abd0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191d10) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3206.634612, y: 2828.076399, z: 550.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18abd0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18ac20) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_7",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191da0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3168.635889, y: 3428.076480, z: 440.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ac20) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18ac70) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191e30) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3206.633803, y: 2448.076399, z: 480.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ac70) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18acc0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191ec0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3206.634612, y: 2828.076399, z: 480.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18acc0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18ad10) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_5",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191f50) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3168.635889, y: 3428.076480, z: 370.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ad10) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18ad60) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c191fe0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3206.633803, y: 2448.076399, z: 515.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ad60) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18adb0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192070) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3206.634612, y: 2828.076399, z: 515.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18adb0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18ae00) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_6",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192100) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3168.635889, y: 3428.076480, z: 405.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ae00) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18ae50) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c192190) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3163.635783, y: 3378.076491, z: 405.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ae50) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c18aea0) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192190) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000001}, translation: {x: -3163.634186, y: 2628.076491, z: 522.425384}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18aea0) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c18aef0) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c192190) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3163.634984, y: 3003.076491, z: 522.425384}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18aef0) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c18af40) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c192190) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000001}, translation: {x: -3163.635783, y: 3378.076491, z: 145.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18af40) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18af90) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c192190) {rotation: {x: 0.000000, y: 0.000000, z: 0.000001, w: 1.000000}, translation: {x: -3163.635783, y: 3378.076491, z: 145.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18af90) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18afe0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02_R.SM_OneWay02_R",
+        "transform": "<Struct 'Transform' (0x7f5b4c192220) {rotation: {x: 0.000000, y: 0.000000, z: 0.000001, w: 1.000000}, translation: {x: -3163.635783, y: 3378.076491, z: 275.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18afe0) {x: -37.733192, y: -11.804161, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c18b030) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192220) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3163.635783, y: 3378.076491, z: 385.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b030) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c18b080) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c192220) {rotation: {x: 0.000000, y: 0.000000, z: 0.000001, w: 1.000000}, translation: {x: -3163.635783, y: 3378.076491, z: 365.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b080) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c18b0d0) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_4",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c192220) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: -3163.635783, y: 3378.076491, z: 575.425384}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b0d0) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c18b120) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_mediumBIG_rsc2_2",
+    "pose": "<Struct 'Transform' (0x7f5b4c192730) {rotation: {x: -0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11923.003906, y: 509.315216, z: 26.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Mid",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole02.SM_TrafficLightPole02",
+        "transform": "<Struct 'Transform' (0x7f5b4c192220) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11923.003906, y: 509.315216, z: 431.276955}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b120) {x: -562.656311, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c18b170) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1922b0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000003, w: 1.000000}, translation: {x: -11923.003906, y: 509.315216, z: 136.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b170) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c18b1c0) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1922b0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11923.003906, y: 509.315216, z: 26.276955}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b1c0) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c18b210) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c1922b0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000003, w: 1.000000}, translation: {x: -11923.003906, y: 509.315216, z: 26.276955}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b210) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c18b260) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192340) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11880.007717, y: 1059.315514, z: 551.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b260) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b2b0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1923d0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11918.003560, y: 459.315251, z: 441.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b2b0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b300) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192460) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11880.007717, y: 1059.315514, z: 481.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b300) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b350) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1924f0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11918.003560, y: 459.315251, z: 371.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b350) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b3a0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192580) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11880.007717, y: 1059.315514, z: 516.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b3a0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b3f0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192610) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11918.003560, y: 459.315251, z: 406.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b3f0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b440) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c1926a0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11923.003906, y: 509.315216, z: 406.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b440) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c18b490) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c1926a0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11923.007024, y: 959.315216, z: 523.276955}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b490) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c18b4e0) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c1926a0) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11923.003906, y: 509.315216, z: 146.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b4e0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18b530) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c1926a0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707109, w: 0.707104}, translation: {x: -11923.003906, y: 509.315216, z: 146.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b530) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18b580) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_C.SM_TrafficLight_Pedestrian01_C",
+        "transform": "<Struct 'Transform' (0x7f5b4c192730) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11923.003906, y: 509.315216, z: 291.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b580) {x: -9.848766, y: -9.839056, z: -25.467546}>, <Struct 'Vector' (0x7f5b4c18b5d0) {x: 61.978664, y: 9.839056, z: 25.691259}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c192730) {rotation: {x: 0.000000, y: 0.000000, z: -1.000000, w: 0.000003}, translation: {x: -11923.003906, y: 509.315216, z: 366.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b5d0) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c18b620) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c192730) {rotation: {x: 0.000000, y: 0.000000, z: -0.707104, w: 0.707109}, translation: {x: -11923.003906, y: 509.315216, z: 576.276955}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b620) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c18b670) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  },
+  {
+    "actor": "BP_TrafficLightNew_T10_master_mediumBIG_rsc_3",
+    "pose": "<Struct 'Transform' (0x7f5b4c192d60) {rotation: {x: 0.000000, y: -0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.983398, y: 3504.494385, z: 22.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "parts": [
+      {
+        "name": "SM_TrafficLight__HPole01_Mid",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightPole02.SM_TrafficLightPole02",
+        "transform": "<Struct 'Transform' (0x7f5b4c192730) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.983398, y: 3504.494385, z: 427.272598}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b670) {x: -562.656311, y: -58.695934, z: -6.908356}>, <Struct 'Vector' (0x7f5b4c18b6c0) {x: 8.955383, y: 58.677029, z: 202.487152}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Push_Letter",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1927c0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000001}, translation: {x: 11544.983398, y: 3504.494385, z: 132.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b6c0) {x: 6.009199, y: -5.000000, z: -12.115074}>, <Struct 'Vector' (0x7f5b4c18b710) {x: 12.352428, y: 5.000000, z: 8.024475}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__Ground_base",
+        "mesh": "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01",
+        "transform": "<Struct 'Transform' (0x7f5b4c1927c0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.983398, y: 3504.494385, z: 22.272598}, scale3d: {x: 1.400000, y: 1.400000, z: 1.400000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b710) {x: -20.000000, y: -20.000000, z: -12.999996}>, <Struct 'Vector' (0x7f5b4c18b760) {x: 20.000000, y: 20.000000, z: 46.428280}>)",
+        "stencil": 0
+      },
+      {
+        "name": "SM_TrafficLight__VPole_Main",
+        "mesh": "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09",
+        "transform": "<Struct 'Transform' (0x7f5b4c1927c0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000001}, translation: {x: 11544.983398, y: 3504.494385, z: 22.272598}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b760) {x: -8.573762, y: -8.573761, z: 46.428223}>, <Struct 'Vector' (0x7f5b4c18b7b0) {x: 8.573762, y: 8.573761, z: 630.746094}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192850) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11501.984569, y: 2954.494293, z: 547.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b7b0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b800) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_4",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c1928e0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11539.983292, y: 3554.494374, z: 437.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b800) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b850) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192970) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11501.984569, y: 2954.494293, z: 477.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b850) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b8a0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_2",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192a00) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11539.983292, y: 3554.494374, z: 367.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b8a0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b8f0) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192a90) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11501.984569, y: 2954.494293, z: 512.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b8f0) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b940) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-2_3",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192b20) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11539.983292, y: 3554.494374, z: 402.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b940) {x: -18.375000, y: -20.050703, z: -24.344856}>, <Struct 'Vector' (0x7f5b4c18b990) {x: 18.375000, y: 20.050699, z: 24.344803}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_0",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c192bb0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.983398, y: 3504.494385, z: 402.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b990) {x: -10.666420, y: -10.666415, z: -70.402077}>, <Struct 'Vector' (0x7f5b4c18b9e0) {x: 86.088318, y: 10.666419, z: 70.402077}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_1",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192bb0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000001}, translation: {x: 11544.984814, y: 2839.494385, z: 519.272598}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18b9e0) {x: -2.738562, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c18ba30) {x: 2.738562, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-1_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c192bb0) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.984196, y: 3129.494385, z: 519.272598}, scale3d: {x: 1.200000, y: 1.200000, z: 1.200000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ba30) {x: -2.712468, y: -52.922028, z: -26.598053}>, <Struct 'Vector' (0x7f5b4c18ba80) {x: 2.712468, y: 52.782616, z: 10.705597}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c192bb0) {rotation: {x: 0.000000, y: 0.000000, z: 1.000000, w: -0.000001}, translation: {x: 11544.983398, y: 3504.494385, z: 142.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18ba80) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18bad0) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_0",
+        "mesh": "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05",
+        "transform": "<Struct 'Transform' (0x7f5b4c192bb0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000001, w: 1.000000}, translation: {x: 11544.983398, y: 3504.494385, z: 142.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18bad0) {x: -11.768747, y: -0.496994, z: 612.844757}>, <Struct 'Vector' (0x7f5b4c18bb20) {x: 11.768747, y: 227.967026, z: 692.926727}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_1",
+        "mesh": "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_C.SM_TrafficLight_Pedestrian01_C",
+        "transform": "<Struct 'Transform' (0x7f5b4c192c40) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.983398, y: 3504.494385, z: 287.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18bb20) {x: -9.848766, y: -9.839056, z: -25.467546}>, <Struct 'Vector' (0x7f5b4c18bb70) {x: 61.978664, y: 9.839056, z: 25.691259}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_2",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02L.SM_OneWay02L",
+        "transform": "<Struct 'Transform' (0x7f5b4c192cd0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000001, w: 1.000000}, translation: {x: 11544.983398, y: 3504.494385, z: 332.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18bb70) {x: -37.733192, y: -11.942454, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c18bbc0) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_3",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02_R.SM_OneWay02_R",
+        "transform": "<Struct 'Transform' (0x7f5b4c192d60) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.983398, y: 3504.494385, z: 407.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18bbc0) {x: -37.733192, y: -11.804161, z: -12.583834}>, <Struct 'Vector' (0x7f5b4c18bc10) {x: 37.824738, y: 9.839056, z: 12.675382}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_4",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A",
+        "transform": "<Struct 'Transform' (0x7f5b4c192d60) {rotation: {x: 0.000000, y: 0.000000, z: 0.000001, w: 1.000000}, translation: {x: 11544.983398, y: 3504.494385, z: 382.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18bc10) {x: -9.839056, y: -65.319534, z: -9.175677}>, <Struct 'Vector' (0x7f5b4c18bc60) {x: 9.839056, y: 9.839058, z: 9.175656}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_5",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B",
+        "transform": "<Struct 'Transform' (0x7f5b4c192d60) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.983398, y: 3504.494385, z: 362.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18bc60) {x: -9.839056, y: -65.319534, z: -9.175674}>, <Struct 'Vector' (0x7f5b4c18bcb0) {x: 9.839056, y: 9.839058, z: 9.175652}>)",
+        "stencil": 0
+      },
+      {
+        "name": "NODE_AddStaticMeshComponent-4_6",
+        "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01",
+        "transform": "<Struct 'Transform' (0x7f5b4c192d60) {rotation: {x: 0.000000, y: 0.000000, z: 0.707108, w: 0.707106}, translation: {x: 11544.983398, y: 3504.494385, z: 572.272598}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "bounds": "(<Struct 'Vector' (0x7f5b4c18bcb0) {x: -30.049992, y: -7.711926, z: -22.048862}>, <Struct 'Vector' (0x7f5b4c18bd00) {x: 30.049992, y: 8.661949, z: 22.048874}>)",
+        "stencil": 0
+      }
+    ]
+  }
+]

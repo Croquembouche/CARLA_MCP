@@ -1,0 +1,57 @@
+{
+  "SunIntensity": {
+    "-90": 5.0,
+    "-35": 5.0,
+    "0": 7143.61572265625,
+    "8": 100000.0,
+    "35": 100000.0,
+    "65": 100000.0,
+    "90": 100000.0
+  },
+  "SkylightIntensity": {
+    "-90": 0.0,
+    "-35": 0.0,
+    "0": 1.0,
+    "8": 1.0,
+    "35": 1.0,
+    "65": 1.0,
+    "90": 1.0
+  },
+  "FogIntensity": {
+    "-90": 1.0,
+    "-35": 1.0,
+    "0": 1.0,
+    "8": 0.0,
+    "35": 0.0,
+    "65": 0.0,
+    "90": 0.0
+  },
+  "cloud_scalars": [
+    "Weather UV Scale",
+    "PhaseG",
+    "PhaseG2",
+    "PhaseBlend",
+    "MultiScatteringContribution",
+    "MultiScatteringOcclusion",
+    "MultiScatteringEccentricity",
+    "ExtinctionScale",
+    "World Position Scaling",
+    "Base Noise Scale",
+    "ErosionMax",
+    "BaseNoiseExp",
+    "ErosionNewMin",
+    "ErosionScale",
+    "ErosionStength",
+    "NoiseHeightExp",
+    "ErosionExp",
+    "NoiseHeightRange",
+    "BeerPowder",
+    "BeerPowderPower",
+    "Perlin Noise FBM Octave Count",
+    "Conservative Density Scaling",
+    "Perlin Noise Bias",
+    "Norm Altitude In Layer Exponent",
+    "Perlin Noise Seed",
+    "Perlin FBM Domain Warp Count"
+  ]
+}

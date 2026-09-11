@@ -1,0 +1,5 @@
+RESTART {'started': True, 'restarting_live_scene': True}
+RESTORE 25 25
+RESTORE 31 31
+RESTORE 32 32
+RESTORED

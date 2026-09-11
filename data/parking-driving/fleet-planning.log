@@ -1,0 +1,48 @@
+REJECT 723 Vehicle is obstructed at its current position; clear nearby objects before driving
+REJECT 724 Vehicle is obstructed at its current position; clear nearby objects before driving
+PLAN 725 vehicle.carlacola.actors 307
+PLAN 726 vehicle.carlacola.actors 307
+REJECT 727 Parking maneuver crosses a junction; a clear connection to a non-junction road is required
+REJECT 728 Vehicle is obstructed at its current position; clear nearby objects before driving
+REJECT 729 Parking maneuver crosses a junction; a clear connection to a non-junction road is required
+REJECT 730 Vehicle is obstructed at its current position; clear nearby objects before driving
+REJECT 731 Vehicle is obstructed at its current position; clear nearby objects before driving
+PLAN 732 vehicle.carlacola.actors 307
+PLAN 733 vehicle.ue4.ford.crown 241
+PLAN 734 vehicle.ue4.ford.crown 250
+PLAN 735 vehicle.lincoln.mkz 213
+PLAN 736 vehicle.lincoln.mkz 94
+PLAN 737 vehicle.sprinter.mercedes 200
+PLAN 738 vehicle.sprinter.mercedes 182
+REJECT 739 Parking maneuver crosses a junction; a clear connection to a non-junction road is required
+PLAN 740 vehicle.sprinter.mercedes 270
+PLAN 741 vehicle.mini.cooper 401
+PLAN 742 vehicle.mini.cooper 107
+PLAN 743 vehicle.fuso.mitsubishi 46
+PLAN 744 vehicle.ue4.ford.mustang 103
+PLAN 745 vehicle.nissan.patrol 234
+PLAN 746 vehicle.nissan.patrol 143
+PLAN 747 vehicle.nissan.patrol 113
+PLAN 748 vehicle.lincoln.mkz 260
+PLAN 749 vehicle.carlacola.actors 140
+PLAN 750 vehicle.dodge.charger 121
+PLAN 751 vehicle.harley.low_rider 323
+PLAN 752 vehicle.harley.low_rider 287
+PLAN 753 vehicle.harley.low_rider 263
+REJECT 754 Vehicle is obstructed at its current position; clear nearby objects before driving
+PLAN 755 vehicle.ue4.ford.mustang 263
+PLAN 756 vehicle.ue4.ford.mustang 307
+REJECT 757 Vehicle is obstructed at its current position; clear nearby objects before driving
+PLAN 758 vehicle.vespa.zx125 148
+PLAN 759 vehicle.vespa.zx125 295
+PLAN 760 vehicle.yamaha.yzf 288
+PLAN 761 vehicle.lincoln.mkz 252
+PLAN 762 vehicle.lincoln.mkz 50
+PLAN 763 vehicle.lincoln.mkz 82
+PLAN 764 vehicle.kawasaki.ninja 152
+PLAN 765 vehicle.lincoln.mkz 244
+PLAN 766 vehicle.lincoln.mkz 176
+PLAN 767 vehicle.lincoln.mkz 132
+PLAN 768 vehicle.lincoln.mkz 394
+PLAN 769 vehicle.lincoln.mkz 208
+PLAN 770 vehicle.vespa.zx125 103

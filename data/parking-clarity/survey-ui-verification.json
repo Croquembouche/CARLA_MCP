@@ -1,0 +1,8 @@
+{
+  "noBuildingsOrVegetation": true,
+  "selectable": 46,
+  "restricted": 115,
+  "panZoomControls": true,
+  "overlayToggle": true,
+  "errors": []
+}

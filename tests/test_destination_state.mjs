@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const source=await readFile(new URL('../static/destination-state.js',import.meta.url),'utf8');
+const {DestinationState}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const d=new DestinationState();
+const actor={role:'ego',planner:'tm',destination:{x:10},route_update:{revision:1}};
+d.begin(28);assert.match(d.describe(28,actor,true),/Updating/);
+const result={destination:{x:50},route:[{x:20},{x:50}],route_update:{revision:2},arrived:false};
+d.accept(28,result);
+// An old, slow poll must not erase the route already acknowledged by the command.
+const stale=d.merge({managed:{28:actor}});assert.equal(stale.managed[28].destination.x,50);
+const current=d.merge({managed:{28:{...actor,...result,arrived:true}}});assert.equal(current.managed[28].arrived,true);assert.equal(d.accepted.size,0);
+assert.match(d.describe(28,current.managed[28],true),/Arrived/);
+d.fail(28,new Error('No drivable route'));assert.match(d.describe(28,actor,true),/Previous route remains active/);
+d.begin(28);d.accept(28,result);assert.match(d.describe(28,{...actor,planner:'external'},true),/external planner/);
+d.merge({managed:{}});assert.equal(d.accepted.size,0);
+d.reset();assert.equal(d.errors.size,0);assert.equal(d.pending.size,0);
+console.log('Destination acknowledgement, stale poll, failure and external planner checks passed');
+assert.match(d.describe(1,{parking_trip:{stage:'entering',bay:'P025',motion:'reversing'}},true),/Backing into P025/);
+assert.match(d.describe(1,{parking_trip:{stage:'stopping',bay:'P025'}},true),/Stopping before reverse parking/);
+assert.match(d.describe(1,{parking_trip:{stage:'entering',bay:'P025',motion:'changing_gear'}},true),/Stopping to change gear/);
+assert.match(d.describe(1,{parking_trip:{stage:'entering',bay:'P025',motion:'forward'}},true),/Pulling forward/);

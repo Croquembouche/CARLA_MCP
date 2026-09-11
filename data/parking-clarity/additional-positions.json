@@ -1,0 +1,686 @@
+[
+  {
+    "x": 113.00285497583762,
+    "y": -19.12610861157966,
+    "z": 0.0,
+    "yaw": 270.3022155761719,
+    "lane": [
+      0,
+      0,
+      -3
+    ],
+    "id": "R121",
+    "length": 6.0,
+    "width": 2.0836068603167326,
+    "polygon": [
+      [
+        111.94524214098638,
+        -16.131645474613762
+      ],
+      [
+        111.97688993536511,
+        -22.131562008792464
+      ],
+      [
+        114.06046781068886,
+        -22.120571748545558
+      ],
+      [
+        114.02882001631014,
+        -16.120655214366856
+      ]
+    ],
+    "curb_strip": "C002",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": 70.27103303234384,
+    "y": 127.15543294472039,
+    "z": 0.0,
+    "yaw": 168.9047393798828,
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "id": "R122",
+    "length": 5.5,
+    "width": 1.929166423313972,
+    "polygon": [
+      [
+        73.15525680340384,
+        127.57277454420806
+      ],
+      [
+        67.75805958246387,
+        128.63119891953104
+      ],
+      [
+        67.38680926128383,
+        126.73809134523272
+      ],
+      [
+        72.7840064822238,
+        125.67966696990972
+      ]
+    ],
+    "curb_strip": "C003",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": 75.9750021371365,
+    "y": 125.39439804460926,
+    "z": 0.0,
+    "yaw": 156.66696166992188,
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "id": "R123",
+    "length": 5.5,
+    "width": 1.9477468470752408,
+    "polygon": [
+      [
+        78.88582899274137,
+        125.19941993875545
+      ],
+      [
+        73.83562918866924,
+        127.3778326496415
+      ],
+      [
+        73.06417528153163,
+        125.58937615046307
+      ],
+      [
+        78.11437508560375,
+        123.41096343957702
+      ]
+    ],
+    "curb_strip": "C003",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": 95.75307769049277,
+    "y": 85.75013344834406,
+    "z": 0.0,
+    "yaw": 90.3907470703125,
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "id": "R124",
+    "length": 5.0,
+    "width": 2.143135090191,
+    "polygon": [
+      [
+        96.84166974152636,
+        83.25749942985509
+      ],
+      [
+        96.80757089125326,
+        88.25738315534413
+      ],
+      [
+        94.66448563945919,
+        88.24276746683303
+      ],
+      [
+        94.69858448973228,
+        83.24288374134399
+      ]
+    ],
+    "curb_strip": "C004",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -74.63994253310796,
+    "y": 124.44669568298276,
+    "z": 0.0,
+    "yaw": -158.54049682617188,
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "id": "R125",
+    "length": 6.0,
+    "width": 1.9270551232963096,
+    "polygon": [
+      [
+        -72.20041370235249,
+        126.44095856584664
+      ],
+      [
+        -77.78447198058466,
+        124.24589748576096
+      ],
+      [
+        -77.07947136386342,
+        122.45243280011888
+      ],
+      [
+        -71.49541308563126,
+        124.64749388020456
+      ]
+    ],
+    "curb_strip": "C018",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -85.85681315581625,
+    "y": 117.19456210341639,
+    "z": 0.0,
+    "yaw": -135.7109832763672,
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "id": "R126",
+    "length": 5.5,
+    "width": 1.9287185921690744,
+    "polygon": [
+      [
+        -84.56168095421208,
+        119.80514085769917
+      ],
+      [
+        -88.49872726965123,
+        115.96461142673692
+      ],
+      [
+        -87.15194535742043,
+        114.5839833491336
+      ],
+      [
+        -83.21489904198128,
+        118.42451278009585
+      ]
+    ],
+    "curb_strip": "C019",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -82.92123216817899,
+    "y": -70.007873219694,
+    "z": 0.0,
+    "yaw": 163.71725463867188,
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "id": "R127",
+    "length": 5.0,
+    "width": 1.9858356953247849,
+    "polygon": [
+      [
+        -80.24311576656862,
+        -69.75572566045126
+      ],
+      [
+        -85.04256462307907,
+        -68.35383740750792
+      ],
+      [
+        -85.59934856978936,
+        -70.26002077893675
+      ],
+      [
+        -80.7998997132789,
+        -71.66190903188009
+      ]
+    ],
+    "curb_strip": "C026",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -69.90363996894473,
+    "y": -71.74642880734157,
+    "z": 0.0,
+    "yaw": 180.59674072265625,
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "id": "R128",
+    "length": 5.5,
+    "width": 2.052509842273573,
+    "polygon": [
+      [
+        -67.1644774640255,
+        -70.69158856597703
+      ],
+      [
+        -72.66417916292541,
+        -70.74887052751326
+      ],
+      [
+        -72.64280247386397,
+        -72.80126904870612
+      ],
+      [
+        -67.14310077496405,
+        -72.74398708716988
+      ]
+    ],
+    "curb_strip": "C027",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -96.69580918428133,
+    "y": -36.879116616251544,
+    "z": 0.0,
+    "yaw": -65.9418716430664,
+    "lane": [
+      6,
+      0,
+      -3
+    ],
+    "id": "R129",
+    "length": 6.0,
+    "width": 1.9588440250569004,
+    "polygon": [
+      [
+        -98.81314086090646,
+        -34.53899395925573
+      ],
+      [
+        -96.36716133702433,
+        -40.01778800254203
+      ],
+      [
+        -94.5784775076562,
+        -39.21923927324736
+      ],
+      [
+        -97.02445703153833,
+        -33.74044522996106
+      ]
+    ],
+    "curb_strip": "C029",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": 95.13503089215486,
+    "y": -32.19010553797571,
+    "z": 0.0,
+    "yaw": 73.32721710205078,
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "id": "R130",
+    "length": 6.0,
+    "width": 1.9233509379845437,
+    "polygon": [
+      [
+        95.19555997331045,
+        -35.33989218757533
+      ],
+      [
+        96.916992942706,
+        -29.59213884110351
+      ],
+      [
+        95.07450181099927,
+        -29.040318888376095
+      ],
+      [
+        93.35306884160372,
+        -34.78807223484792
+      ]
+    ],
+    "curb_strip": "C038",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": 96.32594739498839,
+    "y": -25.996997688136467,
+    "z": 0.0,
+    "yaw": 84.9571762084961,
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "id": "R131",
+    "length": 5.5,
+    "width": 1.9242669972611723,
+    "polygon": [
+      [
+        97.0426309440817,
+        -28.820925017167117
+      ],
+      [
+        97.52608254100768,
+        -23.34221398687635
+      ],
+      [
+        95.60926384589509,
+        -23.173070359105818
+      ],
+      [
+        95.1258122489691,
+        -28.651781389396586
+      ]
+    ],
+    "curb_strip": "C038",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": 11.015340155643955,
+    "y": -54.375624582575604,
+    "z": 0.0,
+    "yaw": 359.9765625,
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "id": "R132",
+    "length": 6.0,
+    "width": 2.14746631194158,
+    "polygon": [
+      [
+        8.0149011837112,
+        -55.44813046411571
+      ],
+      [
+        14.014900681717169,
+        -55.45058483330787
+      ],
+      [
+        14.01577912757671,
+        -53.3031187010355
+      ],
+      [
+        8.01577962957074,
+        -53.300664331843336
+      ]
+    ],
+    "curb_strip": "C041",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": 3.333680619363107,
+    "y": 73.00507336666524,
+    "z": 0.0,
+    "yaw": 0.073272705078125,
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "id": "R133",
+    "length": 6.0,
+    "width": 2.6946618626719063,
+    "polygon": [
+      [
+        0.3354061061804506,
+        71.65390698825956
+      ],
+      [
+        6.335401199809494,
+        71.6615800859008
+      ],
+      [
+        6.3319551325457635,
+        74.35623974507092
+      ],
+      [
+        0.3319600389167196,
+        74.34856664742969
+      ]
+    ],
+    "curb_strip": "C048",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -23.91629559401983,
+    "y": 72.96970619239175,
+    "z": 0.0,
+    "yaw": 0.073272705078125,
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "id": "R134",
+    "length": 5.5,
+    "width": 2.6957014466052724,
+    "polygon": [
+      [
+        -26.66456964689886,
+        71.61833973484616
+      ],
+      [
+        -21.164574144405567,
+        71.62537340768395
+      ],
+      [
+        -21.1680215411408,
+        74.32107264993735
+      ],
+      [
+        -26.66801704363409,
+        74.31403897709956
+      ]
+    ],
+    "curb_strip": "C049",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -55.37868134838892,
+    "y": -14.362423578225997,
+    "z": 0.0,
+    "yaw": 450.0865173339844,
+    "lane": [
+      16,
+      0,
+      3
+    ],
+    "id": "R135",
+    "length": 5.5,
+    "width": 2.0460965405461105,
+    "polygon": [
+      [
+        -54.35148171210924,
+        -17.110875628114364
+      ],
+      [
+        -54.359786776812534,
+        -11.610881898490641
+      ],
+      [
+        -56.405880984668606,
+        -11.613971528337627
+      ],
+      [
+        -56.39757591996531,
+        -17.113965257961354
+      ]
+    ],
+    "curb_strip": "C057",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -38.82576874261113,
+    "y": -14.091815001170357,
+    "z": 0.0,
+    "yaw": 270.0561218261719,
+    "lane": [
+      16,
+      0,
+      -3
+    ],
+    "id": "R136",
+    "length": 5.0,
+    "width": 2.144242795887396,
+    "polygon": [
+      [
+        -39.90033840246695,
+        -11.592866354629955
+      ],
+      [
+        -39.89544085000545,
+        -16.59286395602737
+      ],
+      [
+        -37.75119908275531,
+        -16.590763647710755
+      ],
+      [
+        -37.756096635216814,
+        -11.590766046313345
+      ]
+    ],
+    "curb_strip": "C058",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -2.260560788530284,
+    "y": -54.48999073262502,
+    "z": 0.0,
+    "yaw": 0.8404693603515625,
+    "lane": [
+      17,
+      0,
+      3
+    ],
+    "id": "R137",
+    "length": 5.5,
+    "width": 2.0536294452019654,
+    "polygon": [
+      [
+        -4.995203162194812,
+        -55.557033169788866
+      ],
+      [
+        0.5042051080439537,
+        -55.47635679636109
+      ],
+      [
+        0.47408158513424453,
+        -53.42294829546117
+      ],
+      [
+        -5.025326685104522,
+        -53.503624668888946
+      ]
+    ],
+    "curb_strip": "C059",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -38.790986588445264,
+    "y": -19.978891433353084,
+    "z": 0.0,
+    "yaw": 270.43231201171875,
+    "lane": [
+      22,
+      0,
+      3
+    ],
+    "id": "R138",
+    "length": 5.0,
+    "width": 2.1435412442904234,
+    "polygon": [
+      [
+        -39.88158969322962,
+        -17.487049316699576
+      ],
+      [
+        -39.84386371119336,
+        -22.486906989701815
+      ],
+      [
+        -37.70038348366091,
+        -22.470733550006592
+      ],
+      [
+        -37.73810946569717,
+        -17.470875877004353
+      ]
+    ],
+    "curb_strip": "C071",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  {
+    "x": -55.343936425986726,
+    "y": -20.10379469702409,
+    "z": 0.0,
+    "yaw": 90.43231964111328,
+    "lane": [
+      22,
+      0,
+      -3
+    ],
+    "id": "R139",
+    "length": 5.0,
+    "width": 2.1479338477123977,
+    "polygon": [
+      [
+        -54.25113675020335,
+        -22.595620096634764
+      ],
+      [
+        -54.28886339801094,
+        -17.595762428656084
+      ],
+      [
+        -56.4367361017701,
+        -17.611969297413413
+      ],
+      [
+        -56.39900945396251,
+        -22.611826965392094
+      ]
+    ],
+    "curb_strip": "C072",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  }
+]

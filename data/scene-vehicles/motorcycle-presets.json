@@ -1,0 +1,30 @@
+{
+  "Harley": {
+    "blueprint": "/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_HarleyBackground.BP_HarleyBackground_C",
+    "support_wheels": 4,
+    "mass_kg": 250,
+    "max_torque_nm": 100,
+    "note": "Approximate background driving preset, four virtual support wheels; not calibrated motorcycle dynamics"
+  },
+  "Vespa": {
+    "blueprint": "/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_VespaBackground.BP_VespaBackground_C",
+    "support_wheels": 4,
+    "mass_kg": 150,
+    "max_torque_nm": 15,
+    "note": "Approximate background driving preset, four virtual support wheels; not calibrated motorcycle dynamics"
+  },
+  "Yamaha": {
+    "blueprint": "/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_YamahaBackground.BP_YamahaBackground_C",
+    "support_wheels": 4,
+    "mass_kg": 200,
+    "max_torque_nm": 80,
+    "note": "Approximate background driving preset, four virtual support wheels; not calibrated motorcycle dynamics"
+  },
+  "KawasakiNinja": {
+    "blueprint": "/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_KawasakiNinjaBackground.BP_KawasakiNinjaBackground_C",
+    "support_wheels": 4,
+    "mass_kg": 200,
+    "max_torque_nm": 80,
+    "note": "Approximate background driving preset, four virtual support wheels; not calibrated motorcycle dynamics"
+  }
+}

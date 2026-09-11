@@ -1,0 +1,16 @@
+{
+  "id": "20260909-115616-400128",
+  "checked_at": 1788969497.3063323,
+  "status": "failed",
+  "frames": 0,
+  "sensor_samples": 0,
+  "rosbag_topic_counts": {},
+  "files_checked": 8,
+  "errors": [
+    "No complete frames"
+  ],
+  "warnings": [
+    "Session status: failed"
+  ],
+  "scope": "Stored bytes, frame index, sensor coverage and simulation timestamps; not proof of identical re-simulation"
+}

@@ -1,0 +1,171 @@
+Version: 1
+Map: Town10HD_Opt
+Date: 09/08/26 23:18:51
+
+Frame 1 at 0 seconds
+ Create 1: spectator (0) at (-17219.7, 18385.9, 2763.81)
+ Create 2: traffic.stop (4) at (5745, 6115, 15)
+ Create 3: traffic.stop (4) at (2610, 7515, 15)
+ Create 4: traffic.stop (4) at (3535, 5360, 15)
+ Create 5: traffic.yield (4) at (4960, 3850, 15)
+ Create 6: traffic.unknown (4) at (4315, 6645, 0)
+ Create 7: traffic.unknown (4) at (4404.62, 3779.89, 0)
+ Create 8: traffic.traffic_light (3) at (-4617.16, -7355.66, 25.4254)
+ Create 9: traffic.traffic_light (3) at (-3444.92, -5102.05, 25.4255)
+ Create 10: traffic.traffic_light (3) at (11445.2, 2119.6, 25.42)
+ Create 11: traffic.traffic_light (3) at (8979.19, 2092.21, 25.42)
+ Create 12: traffic.traffic_light (3) at (-3193.08, 2030.2, 25.4254)
+ Create 13: traffic.traffic_light (3) at (-6426.42, 706.331, 25.4254)
+ Create 14: traffic.traffic_light (3) at (-6235.21, 2019.69, 25.4254)
+ Create 15: traffic.traffic_light (3) at (-9492.82, 2033.48, 25.4256)
+ Create 16: traffic.traffic_light (3) at (-5924.23, -5149.84, 25.4254)
+ Create 17: traffic.traffic_light (3) at (-11923.8, 1900.45, 25.4253)
+ Create 18: traffic.traffic_light (3) at (-5871.54, 14582.5, 25.4188)
+ Create 19: traffic.traffic_light (3) at (-6209.93, 12375.6, 28.3086)
+ Create 20: traffic.traffic_light (3) at (-3163.64, 3378.08, 25.4254)
+ Create 21: traffic.traffic_light (3) at (-11923, 509.315, 26.277)
+ Create 22: traffic.traffic_light (3) at (11545, 3504.49, 22.2726)
+ Create 23: traffic.yield (4) at (4960, 3850, 15)
+ Create 24: traffic.unknown (4) at (-2815, 6602.97, 0)
+ Create 25: walker.pedestrian.0043 (2) at (-9901.19, -6437.81, 107.466)
+  gender = female
+  age = adult
+  generation = 2
+  is_invincible = true
+  ros_name = walker.pedestrian.0043
+  speed = 0.0
+  role_name = pedestrian
+ Create 26: controller.ai.walker (0) at (-9901.19, -6437.81, 107.466)
+  ros_name = controller.ai.walker
+  role_name = default
+ Create 27: vehicle.ambulance.ford (1) at (5487.15, -6450.9, -6.97006)
+  has_lights = true
+  generation = 3
+  number_of_wheels = 4
+  object_type = 
+  special_type = 
+  ros2_ackermann_control = false
+  terramechanics = false
+  sticky_control = true
+  color = 255,255,255
+  has_dynamic_doors = true
+  base_type = truck
+  ros_name = vehicle.ambulance.ford
+  role_name = background
+ Create 28: vehicle.ambulance.ford (1) at (-4881.08, -4574.89, -16.9761)
+  has_lights = true
+  generation = 3
+  number_of_wheels = 4
+  object_type = 
+  special_type = 
+  ros2_ackermann_control = false
+  terramechanics = false
+  sticky_control = true
+  color = 255,255,255
+  has_dynamic_doors = true
+  base_type = truck
+  ros_name = vehicle.ambulance.ford
+  role_name = hero
+ Create 29: sensor.camera.rgb (5) at (-4889.12, -4422.44, 201.186)
+  enable_postprocess_effects = true
+  use_ray_tracing = true
+  lens_x_size = 0.08
+  lens_k = -1.0
+  lens_kcube = 0.0
+  lens_circle_multiplier = 0.0
+  post_process_profile = Default
+  fov = 90
+  image_size_x = 640
+  lens_y_size = 0.08
+  image_size_y = 360
+  sensor_tick = 0.0
+  ros_name = sensor.camera.rgb
+  lens_circle_falloff = 5.0
+  role_name = front
+ Create 30: sensor.lidar.ray_cast (5) at (-4879.14, -4571.73, 232.996)
+  noise_stddev = 0.0
+  dropoff_zero_intensity = 0.4
+  dropoff_general_rate = 0.45
+  noise_seed = 0
+  atmosphere_attenuation_rate = 0.004
+  upper_fov = 10.0
+  horizontal_fov = 360.0
+  points_per_second = 200000
+  dropoff_intensity_limit = 0.8
+  lower_fov = -30.0
+  channels = 32
+  sensor_tick = 0.0
+  range = 80
+  ros_name = sensor.lidar.ray_cast
+  rotation_frequency = 20
+  role_name = front
+ Create 31: sensor.other.radar (5) at (-4893.3, -4374.06, 80.5947)
+  points_per_second = 10000
+  vertical_fov = 30
+  horizontal_fov = 30
+  noise_seed = 0
+  sensor_tick = 0.0
+  range = 80
+  ros_name = sensor.other.radar
+  role_name = default
+ Create 32: sensor.other.imu (5) at (-4881.08, -4574.89, -16.9761)
+  noise_gyro_bias_z = 0.0
+  noise_gyro_bias_y = 0.0
+  noise_gyro_bias_x = 0.0
+  noise_gyro_stddev_z = 0.0
+  noise_gyro_stddev_y = 0.0
+  noise_gyro_stddev_x = 0.0
+  noise_accel_stddev_x = 0.0
+  noise_accel_stddev_y = 0.0
+  noise_seed = 0
+  sensor_tick = 0.0
+  noise_accel_stddev_z = 0.0
+  ros_name = sensor.other.imu
+  role_name = default
+ Create 33: sensor.other.gnss (5) at (-4881.08, -4574.89, -16.9761)
+  noise_lon_bias = 0.0
+  noise_lon_stddev = 0.0
+  noise_alt_stddev = 0.0
+  noise_lat_stddev = 0.0
+  noise_lat_bias = 0.0
+  sensor_tick = 0.0
+  noise_seed = 0
+  ros_name = sensor.other.gnss
+  noise_alt_bias = 0.0
+  role_name = default
+ Weathers: 1
+  Cloudiness: 95 Precipitation: 70 PrecipitationDeposits: 60 WindIntensity: 10 SunAzimuthAngle: 0 SunAltitudeAngle: 35 FogDensity: 0 FogDistance: 100 FogFalloff: 0.2 Wetness: 80 ScatteringIntensity: 0 MieScatteringScale: 0 RayleighScatteringScale: 0.0331 DustStorm: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Frames: 30
+Duration: 1.45 seconds

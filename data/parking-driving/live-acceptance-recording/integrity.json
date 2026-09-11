@@ -1,0 +1,285 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "map.xodr": {
+      "bytes": 1857682,
+      "sha256": "5d883b799f634030af92be1e9d79d107845540ba04338e8c60e095be1aef7be7"
+    },
+    "states.jsonl": {
+      "bytes": 2835784,
+      "sha256": "727e585ea8872a4360e36c5b5433c06d3b8d19d6d8775ba42d933841e17f4016"
+    },
+    "configuration.json": {
+      "bytes": 242532,
+      "sha256": "404d0c2e9f0f330a044800cdcbe2bf77165329d53e07e376e044f474385ff5b1"
+    },
+    "frames.idx": {
+      "bytes": 96,
+      "sha256": "eeab3f57c4cc7e80e964fbd00967e9afc7b79dbe4c825077335060622a3ae0b0"
+    },
+    "provenance.json": {
+      "bytes": 2315,
+      "sha256": "d3554ef4ac709052fe4e4d61e0b8c140097a18f5de061612f4e0aade91a21983"
+    },
+    "carla.log": {
+      "bytes": 223394,
+      "sha256": "f3ddc965933256615fde905025686571922a7b0d31cfb49851b47c004d85a076"
+    },
+    "events.jsonl": {
+      "bytes": 1005,
+      "sha256": "0e70bdcad029ef54734c190ab2dcfe1e222b21e5bed6af5750e62369c76f2bcf"
+    },
+    "map.json": {
+      "bytes": 2290248,
+      "sha256": "58f23acb51b632c3671cad183ecc018850fca9bb06bf335e98aeeac5f543aebf"
+    },
+    "sensors/ego_28/gnss/0000000276.json": {
+      "bytes": 115,
+      "sha256": "8bfefd8bcadc76cc40f68a87710d98a4f26e05cae53bd739062f746a692796d7"
+    },
+    "sensors/ego_28/gnss/0000000280.json": {
+      "bytes": 115,
+      "sha256": "6d4e3ba7146b7abdb5635c1d2a59bf667e8a8e1249937310ab7c5b28283054fa"
+    },
+    "sensors/ego_28/gnss/0000000274.json": {
+      "bytes": 116,
+      "sha256": "e541eee48860e1d24bfb1a9175c6743d036514ab1925d07df7a9e0aa9ff957c4"
+    },
+    "sensors/ego_28/gnss/0000000284.json": {
+      "bytes": 115,
+      "sha256": "bc6e72578b5a197b13d108852c4a839f981e1f28131dc46ef49935d285773727"
+    },
+    "sensors/ego_28/gnss/0000000278.json": {
+      "bytes": 114,
+      "sha256": "3d204ef44148c9e41457edb71b31e0435478569076999db2fe68084cbee39c3d"
+    },
+    "sensors/ego_28/gnss/0000000277.json": {
+      "bytes": 113,
+      "sha256": "cf00d52f9ef15f13289ee5b923c2f1fca5a67d34f49984ec39c7c6a0942d29e2"
+    },
+    "sensors/ego_28/gnss/0000000283.json": {
+      "bytes": 114,
+      "sha256": "64864b9ada2b20529e2d39746a8b3e43b2fb819acf609667adfe3715457ed0ff"
+    },
+    "sensors/ego_28/gnss/0000000279.json": {
+      "bytes": 113,
+      "sha256": "d130ef68cacaecc711565c821634254d8b30bb8100ae2fc494a9aeb0b52dc10d"
+    },
+    "sensors/ego_28/gnss/0000000282.json": {
+      "bytes": 114,
+      "sha256": "e3904b4ffb5feddc25549bff27683df2de7bfce561e15c6dca9d099b6ac9fe65"
+    },
+    "sensors/ego_28/gnss/0000000273.json": {
+      "bytes": 113,
+      "sha256": "e0606c9925c72a2b1b43829ceff2cc7d28570a06cb66db9503e0a6334920e4f5"
+    },
+    "sensors/ego_28/gnss/0000000281.json": {
+      "bytes": 113,
+      "sha256": "328728ad71efd48f480ea8c66ab714fe0bc381c77a3e91c1e7f5ab8feafa0357"
+    },
+    "sensors/ego_28/gnss/0000000275.json": {
+      "bytes": 113,
+      "sha256": "53dfe88cdf7cafae7e08e889c3b788e0802605ac8de13f795a5c908688c3687a"
+    },
+    "sensors/ego_28/front_rgb/0000000274.bin": {
+      "bytes": 921600,
+      "sha256": "3ab52fde662a007284596e053858970d68cc889d7946a9466f25dc4d214fc94a"
+    },
+    "sensors/ego_28/front_rgb/0000000282.bin": {
+      "bytes": 921600,
+      "sha256": "905610bd9d8ccb3211327f4d0118592d5570c399c798c203af9f46d6c53f11b6"
+    },
+    "sensors/ego_28/front_rgb/0000000275.bin": {
+      "bytes": 921600,
+      "sha256": "18fb7b9dd9df1d0e8de30a49da51f6166ab6fda2cd266bf5fa574c76eca3bdbe"
+    },
+    "sensors/ego_28/front_rgb/0000000279.bin": {
+      "bytes": 921600,
+      "sha256": "799f624b86b828e9e70c5a9b66bfd3b650a301447ca13f443fe16ffad2f1690b"
+    },
+    "sensors/ego_28/front_rgb/0000000281.bin": {
+      "bytes": 921600,
+      "sha256": "4b7d16934b482e26dbd783ff437b4dd91d8d9ad27902f1b34feae50eb36e29dd"
+    },
+    "sensors/ego_28/front_rgb/0000000283.bin": {
+      "bytes": 921600,
+      "sha256": "63bde5f621c266485833dd7b44e939a333a5829efe748167ba1307e79f5bbd18"
+    },
+    "sensors/ego_28/front_rgb/0000000280.bin": {
+      "bytes": 921600,
+      "sha256": "4f23b494da846893f243109a36eba250e9a52ae805cadd89adba7e800b85a045"
+    },
+    "sensors/ego_28/front_rgb/0000000273.bin": {
+      "bytes": 921600,
+      "sha256": "4fa134984e2ebda8ecbfd253ea8da177e47a342f95e771a213f736cff2abed0b"
+    },
+    "sensors/ego_28/front_rgb/0000000284.bin": {
+      "bytes": 921600,
+      "sha256": "316dd256f29894f27a339d35c891635cefbe2698327f5144efe62c099e91be9c"
+    },
+    "sensors/ego_28/front_rgb/0000000277.bin": {
+      "bytes": 921600,
+      "sha256": "b68e269ecae68c316f35619e67112d646026933825875cefff650166b30e3caa"
+    },
+    "sensors/ego_28/front_rgb/0000000276.bin": {
+      "bytes": 921600,
+      "sha256": "258db222ec1ffdf9eee67dfb9b25c46e6bcf9e6c09d897c6de1b337b73537440"
+    },
+    "sensors/ego_28/front_rgb/0000000278.bin": {
+      "bytes": 921600,
+      "sha256": "e00ed0e163ab49d7883fd146237e0d1c75682cc24357a4f7e1546ab66c893655"
+    },
+    "sensors/ego_28/imu/0000000276.json": {
+      "bytes": 232,
+      "sha256": "c282ee554ba6b73201fd300f87347e24d89bf9580f80faf8556ff1c8145cfcaf"
+    },
+    "sensors/ego_28/imu/0000000280.json": {
+      "bytes": 233,
+      "sha256": "1102d02fda7ffc595e893a2271cf4a8d816180cc4a71cae5c6d9d1197496b575"
+    },
+    "sensors/ego_28/imu/0000000274.json": {
+      "bytes": 235,
+      "sha256": "8e3e5b3aa8e0a3cab52980b5e0ccbf4d9ecf6cbd9c946ef94c3abb35920c8c98"
+    },
+    "sensors/ego_28/imu/0000000284.json": {
+      "bytes": 235,
+      "sha256": "26f8454d20601b823df02f8b480294888f240c9eb2fcadb384e6d352323fd2ca"
+    },
+    "sensors/ego_28/imu/0000000278.json": {
+      "bytes": 232,
+      "sha256": "7bf20c479ae1ffb4aebf0ada4557a6ccebfa2bee65af9ee1e96691f64de46e45"
+    },
+    "sensors/ego_28/imu/0000000277.json": {
+      "bytes": 232,
+      "sha256": "f33ad1d1c5929fe5f2e74433ed1d83ea706d4275ed74a3e84f239b018590e37d"
+    },
+    "sensors/ego_28/imu/0000000283.json": {
+      "bytes": 234,
+      "sha256": "20b47ca248e3e173456764dd591d3d43f15f89330a70ed6a6055eddc41f4d547"
+    },
+    "sensors/ego_28/imu/0000000279.json": {
+      "bytes": 231,
+      "sha256": "e53b686c89f2a3ec26d4f7b0c37243e3380f7628ab3846053308ddd468ef09fa"
+    },
+    "sensors/ego_28/imu/0000000282.json": {
+      "bytes": 233,
+      "sha256": "b81166bf470a2040f67491e91ce3d55e29032d4d9de53caaba75a7f878daa8a2"
+    },
+    "sensors/ego_28/imu/0000000273.json": {
+      "bytes": 233,
+      "sha256": "f39c5ab43e65ccda3641d4a0ffb33a12ace6dc840cdb089b62f5029522328138"
+    },
+    "sensors/ego_28/imu/0000000281.json": {
+      "bytes": 229,
+      "sha256": "344bc7c817a6776e891e8478f9faca58a996654081ec5601a2b1071275448fda"
+    },
+    "sensors/ego_28/imu/0000000275.json": {
+      "bytes": 234,
+      "sha256": "92caace636b42f9ffd1642bdfafa8d20d5febefe0c9f12a4ac0de45bf859b73b"
+    },
+    "sensors/ego_28/roof_lidar/0000000274.bin": {
+      "bytes": 681664,
+      "sha256": "55daa5763200388e08fb193c451debce038a7504b8c0cdfba235405fefc59ee3"
+    },
+    "sensors/ego_28/roof_lidar/0000000282.bin": {
+      "bytes": 389920,
+      "sha256": "eb45a89d4b57534f471cd45da76d7e5c35180e832d730847146d2eaf75f35036"
+    },
+    "sensors/ego_28/roof_lidar/0000000275.bin": {
+      "bytes": 678704,
+      "sha256": "8a643e0d648abdc216d86159a12b80559af3b96ba1f19ef9dac40f0d37c701a2"
+    },
+    "sensors/ego_28/roof_lidar/0000000279.bin": {
+      "bytes": 397712,
+      "sha256": "100a86a3d0646335d5f7637468706021bffcc3b7edc09718f9cccb004204e7ce"
+    },
+    "sensors/ego_28/roof_lidar/0000000281.bin": {
+      "bytes": 353616,
+      "sha256": "0965f921b3d0e7b18d6de72a5b5141d9a55cd54610f70a60419b173bd280fabc"
+    },
+    "sensors/ego_28/roof_lidar/0000000283.bin": {
+      "bytes": 359232,
+      "sha256": "660e6d9c8d2311ba11db8307a579cbc5cb7674e1c4ff7bfc893d337ad50831cc"
+    },
+    "sensors/ego_28/roof_lidar/0000000280.bin": {
+      "bytes": 369120,
+      "sha256": "842e5d8ca895c1b86ab6ebef484ee6f9575a84fdeb3ce82b08559126cd835295"
+    },
+    "sensors/ego_28/roof_lidar/0000000273.bin": {
+      "bytes": 431088,
+      "sha256": "9a7c6259847c01b3d6bff33f0dd885aefd123115ffb3e6b3fcdd86680a2ceec0"
+    },
+    "sensors/ego_28/roof_lidar/0000000284.bin": {
+      "bytes": 452128,
+      "sha256": "c29186c7fcb31b3d71d4a6b51a20233024b5add22e7d4de28405d157f6ef3d86"
+    },
+    "sensors/ego_28/roof_lidar/0000000277.bin": {
+      "bytes": 394432,
+      "sha256": "273fde40ed1262704421f2e9ebd8e5fbc721e0b5cf5d07b1e0ba4aaf5187dbff"
+    },
+    "sensors/ego_28/roof_lidar/0000000276.bin": {
+      "bytes": 395696,
+      "sha256": "f886fddb43ce0c16930473400c7d1e5eb95ab5437e6a726bfa4ce826b277ba70"
+    },
+    "sensors/ego_28/roof_lidar/0000000278.bin": {
+      "bytes": 364576,
+      "sha256": "0ebf65c04bb1ed0d5ca3d0c1ee55734006a66d14727bee11fb9777177b0b2d60"
+    },
+    "sensors/ego_28/front_radar/0000000274.bin": {
+      "bytes": 63280,
+      "sha256": "50669c02c5d3685e3f5f092b52a8d76905b5c22a0f816a7eb0671b0cd9908ccb"
+    },
+    "sensors/ego_28/front_radar/0000000282.bin": {
+      "bytes": 36480,
+      "sha256": "9ac0175c1db1cd681e1ee95876896b3252e0e3f3a2d18b2c4bef09eb448dbf2d"
+    },
+    "sensors/ego_28/front_radar/0000000275.bin": {
+      "bytes": 63440,
+      "sha256": "e32450e15a3ac1713d01bdb9c9fa54d9c51508215adaf2d7da117eb475a046f2"
+    },
+    "sensors/ego_28/front_radar/0000000279.bin": {
+      "bytes": 37264,
+      "sha256": "9daf8afcfe1275c6de8dba2675b7fdac99bf8bca7fa98463679d84a7aee85bd4"
+    },
+    "sensors/ego_28/front_radar/0000000281.bin": {
+      "bytes": 33216,
+      "sha256": "ab832d08a33e98e99892aa201981bdcb8f558ae8f0c6acc052eb22d5979547fa"
+    },
+    "sensors/ego_28/front_radar/0000000283.bin": {
+      "bytes": 33696,
+      "sha256": "335c27d074735238a52391e460c629567f889173e60559e0b7e886531d497c2e"
+    },
+    "sensors/ego_28/front_radar/0000000280.bin": {
+      "bytes": 34704,
+      "sha256": "eb503916a6785ea6a6cecd047a3ffebd995cabd1225d1d265b4569fd3bc603a2"
+    },
+    "sensors/ego_28/front_radar/0000000273.bin": {
+      "bytes": 39824,
+      "sha256": "15f8b0fd58bec0da2ec1716c47d583ae7150a411aed8432e0506ee58108eb01f"
+    },
+    "sensors/ego_28/front_radar/0000000284.bin": {
+      "bytes": 42672,
+      "sha256": "21071abb593e64061c6eb655ad87ab7e81c7b904af2bb1df51839d0f17fbf103"
+    },
+    "sensors/ego_28/front_radar/0000000277.bin": {
+      "bytes": 36560,
+      "sha256": "41d5cfdaf07e5cf70c98dd619a511b9564d66660e077eb82114619a905441417"
+    },
+    "sensors/ego_28/front_radar/0000000276.bin": {
+      "bytes": 36880,
+      "sha256": "c7271b6a964147873c321eaa29ecb8cf03ef04e445dc0d6814cb12494d1812c8"
+    },
+    "sensors/ego_28/front_radar/0000000278.bin": {
+      "bytes": 34224,
+      "sha256": "c5b578f2cd52ca3f5c58b7e216cd0e27d8cb404272a12d95cf5d0b99d18dc73a"
+    },
+    "rosbag2/rosbag2_0.db3": {
+      "bytes": 18112512,
+      "sha256": "d64b1f73912ff3988de3fd93ff8bf7e8404cd6200f58f6e62dd64b27ae5c1686"
+    },
+    "rosbag2/metadata.yaml": {
+      "bytes": 3329,
+      "sha256": "82fd236056b3e8dc3957c5bd86305aeff22dd761223a77122270b591153a92dc"
+    }
+  }
+}

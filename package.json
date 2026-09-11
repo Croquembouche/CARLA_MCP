@@ -1,0 +1,1 @@
+{"name":"carla-control-center","private":true,"dependencies":{"three":"^0.184.0"},"devDependencies":{"@playwright/test":"^1.58.2","meshoptimizer":"^1.2.0"}}

@@ -1,0 +1,55 @@
+{
+  "backend": "gpu",
+  "primary_port": 2000,
+  "manager_pid": 4081912,
+  "ready": true,
+  "pool": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "requested_gpus": [
+    3
+  ],
+  "request_id": "38f3d5fcff7e4483aa2a43b48c6efcbf",
+  "error": null,
+  "children": [
+    {
+      "role": "primary",
+      "pid": 4081913,
+      "command": [
+        "/mnt/simulations/bin/carla-sim",
+        "-unattended",
+        "-nosound",
+        "-log",
+        "-carla-rpc-port=2000",
+        "-nullrhi",
+        "-abslog=/media/william/mist1/Simulations/logs/multigpu-20260908-214325/primary.log"
+      ],
+      "initialized": true
+    },
+    {
+      "role": "gpu-3",
+      "pid": 4085266,
+      "command": [
+        "/mnt/simulations/bin/carla-sim",
+        "-unattended",
+        "-nosound",
+        "-log",
+        "-carla-rpc-port=2010",
+        "-carla-primary-host=127.0.0.1",
+        "-carla-primary-port=2002",
+        "-graphicsadapter=3",
+        "-RenderOffScreen",
+        "-ResX=160",
+        "-ResY=90",
+        "-quality-level=High",
+        "-ExecCmds=r.Streaming.PoolSize 2000,r.RayTracing.UseReferenceBasedResidency 1,r.RayTracing.NumAlwaysResidentLODs 0,r.RayTracing.ResidentGeometryMemoryPoolSizeInMB 2048,carla.Sensors.GpuRayTracing 1,r.RayTracing.ExternalQueries 1,r.RayTracing.ExternalQueryBounds 1,r.RayTracing.ForceAllRayTracingEffects 0,r.RayTracing.Culling 0,r.RayTracing.Geometry.InstancedStaticMeshes.Culling 0",
+        "-abslog=/media/william/mist1/Simulations/logs/multigpu-20260908-214325/gpu-3.log"
+      ],
+      "initialized": true
+    }
+  ],
+  "resizing": false
+}

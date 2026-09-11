@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "temporary_actor": 60,
+  "paused_dropdown_changes": 2,
+  "route_revisions": [
+    1,
+    2
+  ],
+  "stage": "leaving",
+  "distance_m": 0.04252844365264002,
+  "ego_sensors_preserved": 6,
+  "errors": []
+}

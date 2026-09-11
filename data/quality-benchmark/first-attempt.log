@@ -1,0 +1,9 @@
+baseline-high {"frame": 42932, "ram": 53.827640533447266, "vram": [6278.0, 5875.0, 7183.0, 7660.0], "gpu": [15.0, 32.0, 18.0, 34.0]}
+baseline-high {"frame": 42999, "ram": 53.82915496826172, "vram": [6276.0, 5875.0, 7183.0, 7660.0], "gpu": [15.0, 36.0, 34.0, 35.0]}
+baseline-high {"frame": 43071, "ram": 53.8255729675293, "vram": [6277.0, 5875.0, 7183.0, 7660.0], "gpu": [15.0, 34.0, 30.0, 35.0]}
+baseline-high {"frame": 43142, "ram": 53.828125, "vram": [6277.0, 5875.0, 7183.0, 7660.0], "gpu": [15.0, 32.0, 21.0, 33.0]}
+COMPLETE baseline-high 258
+BENCHMARK FAILURE TimeoutError('timed out')
+RESTORING original scene and quality
+SAVED_SCENE_RESTORED {"frame": 326, "actors": ["25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55"], "sensors": 6, "workers": 4}
+RESTORED

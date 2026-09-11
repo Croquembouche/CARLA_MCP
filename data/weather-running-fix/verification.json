@@ -1,0 +1,170 @@
+{
+  "verified": true,
+  "report": [
+    {
+      "preset": "clear-start",
+      "applied_while_running": true,
+      "applied_frame": 327,
+      "captured_frame": 373,
+      "weather": {
+        "cloudiness": 5,
+        "precipitation": 0,
+        "precipitation_deposits": 0,
+        "wind_intensity": 10,
+        "sun_azimuth_angle": 0,
+        "sun_altitude_angle": 65,
+        "fog_density": 0,
+        "fog_distance": 100,
+        "wetness": 0,
+        "dust_storm": 0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0,
+        "mie_scattering_scale": 0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    },
+    {
+      "preset": "rain",
+      "applied_while_running": true,
+      "applied_frame": 375,
+      "captured_frame": 421,
+      "weather": {
+        "cloudiness": 95,
+        "precipitation": 70,
+        "precipitation_deposits": 60,
+        "wind_intensity": 10,
+        "sun_azimuth_angle": 0,
+        "sun_altitude_angle": 35,
+        "fog_density": 0,
+        "fog_distance": 100,
+        "wetness": 80,
+        "dust_storm": 0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0,
+        "mie_scattering_scale": 0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    },
+    {
+      "preset": "clear-after-rain",
+      "applied_while_running": true,
+      "applied_frame": 425,
+      "captured_frame": 471,
+      "weather": {
+        "cloudiness": 5,
+        "precipitation": 0,
+        "precipitation_deposits": 0,
+        "wind_intensity": 10,
+        "sun_azimuth_angle": 0,
+        "sun_altitude_angle": 65,
+        "fog_density": 0,
+        "fog_distance": 100,
+        "wetness": 0,
+        "dust_storm": 0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0,
+        "mie_scattering_scale": 0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    },
+    {
+      "preset": "night",
+      "applied_while_running": true,
+      "applied_frame": 473,
+      "captured_frame": 519,
+      "weather": {
+        "cloudiness": 10,
+        "precipitation": 0,
+        "precipitation_deposits": 0,
+        "wind_intensity": 10,
+        "sun_azimuth_angle": 0,
+        "sun_altitude_angle": -35,
+        "fog_density": 0,
+        "fog_distance": 100,
+        "wetness": 0,
+        "dust_storm": 0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0,
+        "mie_scattering_scale": 0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    }
+  ],
+  "errors": [],
+  "worker_checks": {
+    "logs": "/media/william/mist1/Simulations/logs/multigpu-20260910-094645",
+    "workers": [
+      {
+        "gpu": 0,
+        "clear_delivered": 2,
+        "rain_delivered": 3,
+        "night_delivered": 1,
+        "overcast_direct_sun_disabled": true,
+        "clear_direct_sun_enabled": true,
+        "sky_scene_capture": true
+      },
+      {
+        "gpu": 1,
+        "clear_delivered": 2,
+        "rain_delivered": 3,
+        "night_delivered": 1,
+        "overcast_direct_sun_disabled": true,
+        "clear_direct_sun_enabled": true,
+        "sky_scene_capture": true
+      },
+      {
+        "gpu": 2,
+        "clear_delivered": 2,
+        "rain_delivered": 3,
+        "night_delivered": 1,
+        "overcast_direct_sun_disabled": true,
+        "clear_direct_sun_enabled": true,
+        "sky_scene_capture": true
+      },
+      {
+        "gpu": 3,
+        "clear_delivered": 2,
+        "rain_delivered": 3,
+        "night_delivered": 1,
+        "overcast_direct_sun_disabled": true,
+        "clear_direct_sun_enabled": true,
+        "sky_scene_capture": true
+      }
+    ]
+  },
+  "image_mean_absolute_change": {
+    "front_rgb": {
+      "rain": 61.960018157958984,
+      "night": 119.20106506347656,
+      "clear-after-rain": 4.206017017364502
+    },
+    "cabin_overview": {
+      "rain": 33.702110290527344,
+      "night": 85.31285095214844,
+      "clear-after-rain": 1.5691672563552856
+    }
+  },
+  "visual_review": "Accepted: rain has diffuse cabin illumination, daytime overcast sky and wet street; clear restores sharp shadows and dry street; night darkens both views.",
+  "final_scene": {
+    "frame": 552,
+    "running": false,
+    "sensors": 6,
+    "actors": 31,
+    "weather": {
+      "cloudiness": 95.0,
+      "precipitation": 70.0,
+      "precipitation_deposits": 60.0,
+      "wind_intensity": 10.0,
+      "sun_azimuth_angle": 0.0,
+      "sun_altitude_angle": 35.0,
+      "fog_density": 0.0,
+      "fog_distance": 100.0,
+      "wetness": 80.0,
+      "dust_storm": 0.0,
+      "fog_falloff": 0.20000000298023224,
+      "scattering_intensity": 0.0,
+      "mie_scattering_scale": 0.0,
+      "rayleigh_scattering_scale": 0.03310000151395798
+    }
+  }
+}

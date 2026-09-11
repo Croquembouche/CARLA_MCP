@@ -1,0 +1,82 @@
+{
+  "bay": {
+    "x": -38.82576874261113,
+    "y": -14.091815001170357,
+    "z": 0.0,
+    "yaw": 270.0561218261719,
+    "lane": [
+      16,
+      0,
+      -3
+    ],
+    "id": "R136",
+    "length": 5.0,
+    "width": 2.144242795887396,
+    "polygon": [
+      [
+        -39.90033840246695,
+        -11.592866354629955
+      ],
+      [
+        -39.89544085000545,
+        -16.59286395602737
+      ],
+      [
+        -37.75119908275531,
+        -16.590763647710755
+      ],
+      [
+        -37.756096635216814,
+        -11.590766046313345
+      ]
+    ],
+    "curb_strip": "C058",
+    "source": "surveyed_curb_position",
+    "estimated": true,
+    "boundary_note": "Additional individual planning position, not a painted stall; full footprint fits surveyed pavement and curb area"
+  },
+  "actor_pose": {
+    "x": -38.78904724121094,
+    "y": -14.125754356384277,
+    "z": 0.03844168409705162,
+    "yaw": -89.09671783447266,
+    "pitch": -0.23360832035541534,
+    "roll": 2.1706862449645996
+  },
+  "half_footprint_projection": {
+    "longitudinal": 2.4932632189697683,
+    "lateral": 0.9905753068471511
+  },
+  "containment_margin_m": {
+    "longitudinal": 0.0067367810302316755,
+    "lateral": 0.08154609109654698
+  },
+  "parking_spaces": 180,
+  "excluded": 0,
+  "managed_actors": 29,
+  "sensors": 6,
+  "workers": 4,
+  "regression_tests_passed": 76,
+  "empty_road_geometry_paths": 180,
+  "live_completed_bays": [
+    "R135",
+    "R136"
+  ],
+  "weather": {
+    "cloudiness": 95.0,
+    "precipitation": 100.0,
+    "precipitation_deposits": 60.0,
+    "wind_intensity": 10.0,
+    "sun_azimuth_angle": 0.0,
+    "sun_altitude_angle": 0.0,
+    "fog_density": 0.0,
+    "fog_distance": 100.0,
+    "wetness": 80.0,
+    "dust_storm": 0.0,
+    "fog_falloff": 0.20000000298023224,
+    "scattering_intensity": 0.0,
+    "mie_scattering_scale": 0.0,
+    "rayleigh_scattering_scale": 0.03310000151395798
+  },
+  "running": true
+}

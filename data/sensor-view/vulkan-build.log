@@ -1,0 +1,57 @@
+Setting up bundled DotNet SDK
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll CarlaUnrealEditor Linux Development -Project=/mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -Module=VulkanRHI -NoUBA -MaxParallelActions=6
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Invalidating makefile for CarlaUnrealEditor (working set of source files changed)
+Unity build is enabled.
+Slate UI is disabled.
+Online Subsystem is disabled.
+CarSim support is disabled.
+Chrono support is disabled.
+PyTorch support is disabled.
+OSM2ODR support is disabled.
+Ros2 support is enabled.
+Ros2 demo is disabled.
+Dynamic Library Added: /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/../../Binaries/Linux/libcarla-ros2-native.so
+Unknown option "ROS2".
+OSM2ODR support is disabled.
+------- Build details --------
+Using toolchain located at '/mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu'.
+Using clang (/mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++) version 'clang version 18.1.0rc (github.com/llvm/llvm-project 461274b81d8641eab64d494accddc81d7db8a09e)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin' (string), 18 (major), 1 (minor), 0 (patch)
+Using bundled libc++ standard C++ library.
+Using lld linker
+Using llvm-ar (/mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/llvm-ar) version 'LLVM (http://llvm.org/):
+  LLVM version 18.1.0rc
+  Optimized build. (string)'
+Using fast way to relink  circularly dependent libraries (no FixDeps).
+Compressing debug files
+Targeted minimum CPU architecture: None
+------------------------------
+Building CarlaUnrealEditor...
+[Adaptive Build] Excluded from Renderer unity file: DeferredShadingRenderer.cpp, SceneRendering.cpp, RayTracingInstanceCulling.cpp
+[Adaptive Build] Excluded from VulkanRHI unity file: VulkanMemory.cpp
+[Adaptive Build] Excluded from Engine unity file: RayTracingGeometryManager.cpp
+Executing up to 6 actions based on MaxProcessorCount override
+Using Unreal Build Accelerator local executor to run 12 action(s)
+  Storage capacity 40Gb
+---- Starting trace ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 12 action(s) started ------
+[1/12] Compile Module.VirtualFileCache.cpp
+[2/12] Link (lld) libUnrealEditor-VirtualFileCache.so (UBA disabled)
+[3/12] Compile Module.RHICore.cpp
+[4/12] Link (lld) libUnrealEditor-RHICore.so (UBA disabled)
+[5/12] Compile Module.VulkanRHI.2.cpp
+[6/12] Compile VulkanMemory.cpp
+[7/12] Compile Module.BuildPatchServices.1.cpp
+[8/12] Compile Module.BuildPatchServices.2.cpp
+[9/12] Compile Module.BuildPatchServices.3.cpp
+[10/12] Link (lld) libUnrealEditor-BuildPatchServices.so (UBA disabled)
+[11/12] Link (lld) libUnrealEditor-PreLoadScreen.so (UBA disabled)
+[12/12] Link (lld) libUnrealEditor-VulkanRHI.so (UBA disabled)
+Trace file written to /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.uba with size 7.2kb
+Total time in Unreal Build Accelerator local executor: 74.19 seconds
+Total execution time: 98.06 seconds

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "recording": "20260908-155147-9dbab7",
+  "frames": 40,
+  "topic_messages": {
+    "/carla/ego_25/front_radar/metadata": 40,
+    "/carla/ego_25/front_radar/points": 40,
+    "/carla/ego_25/front_rgb/camera_info": 40,
+    "/carla/ego_25/front_rgb/image": 40,
+    "/carla/ego_25/front_rgb/metadata": 40,
+    "/carla/ego_25/gnss/data": 40,
+    "/carla/ego_25/gnss/metadata": 40,
+    "/carla/ego_25/imu/data": 40,
+    "/carla/ego_25/imu/metadata": 40,
+    "/carla/ego_25/odometry": 40,
+    "/carla/ego_25/roof_lidar/metadata": 40,
+    "/carla/ego_25/roof_lidar/points": 40,
+    "/carla/traffic_signals": 40,
+    "/clock": 40,
+    "/tf": 40
+  },
+  "runtime_events_in_recorded_frames": true
+}

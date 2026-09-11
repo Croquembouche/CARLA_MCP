@@ -1,0 +1,12 @@
+{
+  "format": "carla-network-timing",
+  "version": 1,
+  "map": "Carla/Maps/Town10HD_Opt",
+  "config": {
+    "mode": "adaptive",
+    "min_green": 5,
+    "max_green": 30,
+    "gap": 2,
+    "distance": 40
+  }
+}

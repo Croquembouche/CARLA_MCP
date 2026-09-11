@@ -1,0 +1,11 @@
+# Pedestrian destinations in the OpenDRIVE view
+
+The live map exports OpenDRIVE sidewalk centerlines with their lane widths and elevation, plus CARLA's crosswalk outlines. Town10HD_Opt contains 74 sidewalk sections and 16 crossing outlines. Sidewalks are bidirectional and have blue surfaces with dashed centerlines; they do not inherit vehicle turn arrows. The layer is enabled by default and can be toggled under Map options > Sidewalks & crossings.
+
+Selecting a pedestrian changes the destination selector to sampled navigation points. Choosing the Pedestrian creation role changes both spawn and destination selectors and clears the previously selected actor. Map picks project onto nearby sidewalk segments, preserving elevation, or onto an existing sampled navigation point. Distant clicks are rejected in the browser and server. Vehicle picks retain their existing driving-lane behavior. Existing navigation-point indices are preserved for saved schedules.
+
+Select a pedestrian, press Destination, and click a blue sidewalk to apply its new goal. Alternatively select a walk point in the destination dropdown and press Apply destination. For a new actor, choose Pedestrian under Spawn an actor and choose a sidewalk spawn. CARLA's walker controller determines the actual navigation route. Dashed pedestrian route lines are destination guides, not a computed navigation path. Crosswalks show where crossings exist; they do not guarantee that every visible surface belongs to the navigation mesh.
+
+The existing arrival threshold is three metres. An arrived pedestrian's AI controller is restarted before accepting a new destination. Tests cover geometry from the actual OpenDRIVE file, segment interpolation/elevation, role-sensitive picks, off-map rejection and controller restart. The live test script removes its temporary walker after testing outbound and return destinations.
+
+During the first full-scene walking test, the existing GPU ray dispatcher stopped a renderer after exceeding 256 collision-filter retraces. That failure is outside the sidewalk rendering changes and is not fixed here. The scene was recovered; pedestrian movement was tested separately without GPU sensors, and the saved actor/sensor configuration restored afterward. See data/pedestrian-live-test.json for the walking results.

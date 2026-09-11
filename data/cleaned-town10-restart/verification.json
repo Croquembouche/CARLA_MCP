@@ -1,0 +1,13 @@
+{
+  "ready": true,
+  "map": "Carla/Maps/Town10HD_Opt",
+  "actors": 28,
+  "sensors": 6,
+  "workers": 4,
+  "frame": 280,
+  "paused": true,
+  "permanently_removed_sources": 13,
+  "remote_trucks_absent": true,
+  "weather_sensors_and_destinations_preserved": true,
+  "parking_positions": 180
+}

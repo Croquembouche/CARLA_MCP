@@ -1,0 +1,146 @@
+[
+  {
+    "id": 65,
+    "type": "vehicle.kawasaki.ninja",
+    "base_type": "motorcycle",
+    "lane_type": null,
+    "road_distance": 5.32,
+    "parking_distance": 83.47,
+    "source": "StaticMeshActor_39",
+    "parked": true,
+    "pose": {
+      "x": 23.215131759643555,
+      "y": -73.21890258789062,
+      "z": 0.17218203842639923,
+      "yaw": 4.769747734069824,
+      "pitch": 0.0,
+      "roll": -0.0
+    }
+  },
+  {
+    "id": 61,
+    "type": "vehicle.yamaha.yzf",
+    "base_type": "motorcycle",
+    "lane_type": "Sidewalk",
+    "road_distance": 5.89,
+    "parking_distance": 57.89,
+    "source": "SM_Yamaha_424",
+    "parked": true,
+    "pose": {
+      "x": 100.35052490234375,
+      "y": 131.1437225341797,
+      "z": 0.1692875772714615,
+      "yaw": 10.000014305114746,
+      "pitch": 0.0,
+      "roll": -0.0
+    }
+  },
+  {
+    "id": 60,
+    "type": "vehicle.vespa.zx125",
+    "base_type": "motorcycle",
+    "lane_type": null,
+    "road_distance": 5.35,
+    "parking_distance": 56.22,
+    "source": "SM_Vespa_425",
+    "parked": true,
+    "pose": {
+      "x": 98.8284683227539,
+      "y": 132.01251220703125,
+      "z": 0.1574065387248993,
+      "yaw": -170.0000457763672,
+      "pitch": 0.0,
+      "roll": 0.0
+    }
+  },
+  {
+    "id": 59,
+    "type": "vehicle.vespa.zx125",
+    "base_type": "motorcycle",
+    "lane_type": null,
+    "road_distance": 4.94,
+    "parking_distance": 4.28,
+    "source": "SM_Vespa2_428",
+    "parked": true,
+    "pose": {
+      "x": 27.89624786376953,
+      "y": 125.57213592529297,
+      "z": 0.18614068627357483,
+      "yaw": 149.9999237060547,
+      "pitch": 0.0,
+      "roll": -0.0
+    }
+  },
+  {
+    "id": 56,
+    "type": "vehicle.harley.low_rider",
+    "base_type": "motorcycle",
+    "lane_type": null,
+    "road_distance": 5.62,
+    "parking_distance": 12.32,
+    "source": "SM_Harley_410",
+    "parked": true,
+    "pose": {
+      "x": -21.086191177368164,
+      "y": 75.33867645263672,
+      "z": 0.15452852845191956,
+      "yaw": 60.000221252441406,
+      "pitch": 0.0,
+      "roll": -0.0
+    }
+  },
+  {
+    "id": 55,
+    "type": "vehicle.harley.low_rider",
+    "base_type": "motorcycle",
+    "lane_type": null,
+    "road_distance": 5.34,
+    "parking_distance": 55.1,
+    "source": "SM_Harley3_426",
+    "parked": true,
+    "pose": {
+      "x": 97.88387298583984,
+      "y": 132.9687957763672,
+      "z": 0.16496238112449646,
+      "yaw": 10.000611305236816,
+      "pitch": 0.0,
+      "roll": -0.0
+    }
+  },
+  {
+    "id": 54,
+    "type": "vehicle.harley.low_rider",
+    "base_type": "motorcycle",
+    "lane_type": "Shoulder",
+    "road_distance": 3.16,
+    "parking_distance": 1.18,
+    "source": "SM_Harley2_423",
+    "parked": true,
+    "pose": {
+      "x": 3.7692668437957764,
+      "y": 143.90048217773438,
+      "z": 0.05172690749168396,
+      "yaw": 30.000207901000977,
+      "pitch": 0.0,
+      "roll": -0.0
+    }
+  },
+  {
+    "id": 71,
+    "type": "vehicle.vespa.zx125",
+    "base_type": "motorcycle",
+    "lane_type": null,
+    "road_distance": 5.92,
+    "parking_distance": 3.66,
+    "source": "VespaRig_412",
+    "parked": true,
+    "pose": {
+      "x": -21.046171188354492,
+      "y": 60.29959487915039,
+      "z": 0.1837346851825714,
+      "yaw": -119.99964141845703,
+      "pitch": 0.0,
+      "roll": 0.0
+    }
+  }
+]

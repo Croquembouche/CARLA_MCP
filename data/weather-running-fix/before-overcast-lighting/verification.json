@@ -1,0 +1,128 @@
+{
+  "verified": true,
+  "report": [
+    {
+      "preset": "clear-start",
+      "applied_while_running": true,
+      "applied_frame": 281,
+      "captured_frame": 327,
+      "weather": {
+        "cloudiness": 5,
+        "precipitation": 0,
+        "precipitation_deposits": 0,
+        "wind_intensity": 10,
+        "sun_azimuth_angle": 0,
+        "sun_altitude_angle": 65,
+        "fog_density": 0,
+        "fog_distance": 100,
+        "wetness": 0,
+        "dust_storm": 0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0,
+        "mie_scattering_scale": 0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    },
+    {
+      "preset": "rain",
+      "applied_while_running": true,
+      "applied_frame": 331,
+      "captured_frame": 377,
+      "weather": {
+        "cloudiness": 95,
+        "precipitation": 70,
+        "precipitation_deposits": 60,
+        "wind_intensity": 10,
+        "sun_azimuth_angle": 0,
+        "sun_altitude_angle": 35,
+        "fog_density": 0,
+        "fog_distance": 100,
+        "wetness": 80,
+        "dust_storm": 0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0,
+        "mie_scattering_scale": 0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    },
+    {
+      "preset": "clear-after-rain",
+      "applied_while_running": true,
+      "applied_frame": 379,
+      "captured_frame": 425,
+      "weather": {
+        "cloudiness": 5,
+        "precipitation": 0,
+        "precipitation_deposits": 0,
+        "wind_intensity": 10,
+        "sun_azimuth_angle": 0,
+        "sun_altitude_angle": 65,
+        "fog_density": 0,
+        "fog_distance": 100,
+        "wetness": 0,
+        "dust_storm": 0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0,
+        "mie_scattering_scale": 0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    },
+    {
+      "preset": "night",
+      "applied_while_running": true,
+      "applied_frame": 427,
+      "captured_frame": 472,
+      "weather": {
+        "cloudiness": 10,
+        "precipitation": 0,
+        "precipitation_deposits": 0,
+        "wind_intensity": 10,
+        "sun_azimuth_angle": 0,
+        "sun_altitude_angle": -35,
+        "fog_density": 0,
+        "fog_distance": 100,
+        "wetness": 0,
+        "dust_storm": 0,
+        "fog_falloff": 0.20000000298023224,
+        "scattering_intensity": 0,
+        "mie_scattering_scale": 0,
+        "rayleigh_scattering_scale": 0.03310000151395798
+      }
+    }
+  ],
+  "errors": [],
+  "workers": {
+    "gpu-0": {
+      "clear_applications": 2,
+      "rain_applications": 3,
+      "night_applications": 1
+    },
+    "gpu-1": {
+      "clear_applications": 2,
+      "rain_applications": 3,
+      "night_applications": 1
+    },
+    "gpu-2": {
+      "clear_applications": 2,
+      "rain_applications": 3,
+      "night_applications": 1
+    },
+    "gpu-3": {
+      "clear_applications": 2,
+      "rain_applications": 3,
+      "night_applications": 1
+    }
+  },
+  "image_comparison": {
+    "front_rgb": {
+      "rain": 81.14862413194444,
+      "clear-after-rain": 4.235525173611111,
+      "night": 109.87787037037037
+    },
+    "cabin_overview": {
+      "rain": 39.46745023148148,
+      "clear-after-rain": 1.63259375,
+      "night": 93.96330671296296
+    }
+  }
+}

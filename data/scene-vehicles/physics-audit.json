@@ -1,0 +1,863 @@
+{
+  "vehicle.lincoln.mkz": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/LincolnMKZ/BP_LincolnMKZ_FLW.BP_LincolnMKZ_FLW_C' (0xa1575fc6900) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/LincolnMKZ/BP_LincolnMKZ_FRW.BP_LincolnMKZ_FRW_C' (0xa1575fc7000) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/LincolnMKZ/BP_LincolnMKZ_RLW.BP_LincolnMKZ_RLW_C' (0xa1575fc7e00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/LincolnMKZ/BP_LincolnMKZ_RRW.BP_LincolnMKZ_RRW_C' (0xa1575fc8c00) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 550.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_Front_Right",
+      "Door_Front_Left",
+      "Door_Rear_Right",
+      "Door_Rear_Left"
+    ]
+  },
+  "vehicle.mini.cooper": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MiniCooper/BP_MiniCooper_FLW.BP_MiniCooper_FLW_C' (0xa1576ff2a00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MiniCooper/BP_MiniCooper_FRW.BP_MiniCooper_FRW_C' (0xa1576ff3800) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MiniCooper/BP_MiniCooper_RLW.BP_MiniCooper_RLW_C' (0xa1576ff4600) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MiniCooper/BP_MiniCooper_RRW.BP_MiniCooper_RRW_C' (0xa1576ff5400) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 275.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_L",
+      "Door_R"
+    ]
+  },
+  "vehicle.dodge.charger": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/DodgeCharger/BP_DodgeCharger_FLW.BP_DodgeCharger_FLW_C' (0xa1593038c00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/DodgeCharger/BP_DodgeCharger_FRW.BP_DodgeCharger_FRW_C' (0xa1593039a00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/DodgeCharger/BP_DodgeCharger_RLW.BP_DodgeCharger_RLW_C' (0xa159303a800) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/DodgeCharger/BP_DodgeCharger_RRW.BP_DodgeCharger_RRW_C' (0xa159303b600) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 300.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_FL",
+      "Door_FR",
+      "Door_RL",
+      "Door_RR"
+    ]
+  },
+  "vehicle.dodgecop.charger": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/DodgeChargerCop/BP_DodgeChargerCop_FLW.BP_DodgeChargerCop_FLW_C' (0xa15936ea100) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/DodgeChargerCop/BP_DodgeChargerCop_FRW.BP_DodgeChargerCop_FRW_C' (0xa15936eaf00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/DodgeChargerCop/BP_DodgeChargerCop_RLW.BP_DodgeChargerCop_RLW_C' (0xa15936ebd00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/DodgeChargerCop/BP_DodgeChargerCop_RRW.BP_DodgeChargerCop_RRW_C' (0xa15936ecb00) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 300.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_FL",
+      "Door_FR",
+      "Door_RL",
+      "Door_RR"
+    ]
+  },
+  "vehicle.nissan.patrol": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/NissanPatrol/BP_NissanPatrol_FLW.BP_NissanPatrol_FLW_C' (0xa15c286e000) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/NissanPatrol/BP_NissanPatrol_FRW.BP_NissanPatrol_FRW_C' (0xa15c286ee00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/NissanPatrol/BP_NissanPatrol_RLW.BP_NissanPatrol_RLW_C' (0xa15c2ee0000) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/NissanPatrol/BP_NissanPatrol_RRW.BP_NissanPatrol_RRW_C' (0xa15c2ee0e00) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 550.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_FL",
+      "Door_FR",
+      "Door_RL",
+      "Door_RR"
+    ]
+  },
+  "vehicle.ambulance.ford": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/Ambulance/BP_Ambulance_FLW.BP_Ambulance_FLW_C' (0xa15d7ca4d00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/Ambulance/BP_Ambulance_FRW.BP_Ambulance_FRW_C' (0xa15d7ca5b00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/Ambulance/BP_Ambulance_RLW.BP_Ambulance_RLW_C' (0xa15d7ca6900) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/Ambulance/BP_Ambulance_RRW.BP_Ambulance_RRW_C' (0xa15d7ca7700) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 600.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_L",
+      "Door_R"
+    ]
+  },
+  "vehicle.sprinter.mercedes": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MercedesSprinter/BP_MercedesSprinter_FLW.BP_MercedesSprinter_FLW_C' (0xa15d840a800) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MercedesSprinter/BP_MercedesSprinter_FRW.BP_MercedesSprinter_FRW_C' (0xa15d840b600) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MercedesSprinter/BP_MercedesSprinter_RLW.BP_MercedesSprinter_RLW_C' (0xa15d840c400) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MercedesSprinter/BP_MercedesSprinter_RRW.BP_MercedesSprinter_RRW_C' (0xa15d840d200) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 450.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_L",
+      "Door_R"
+    ]
+  },
+  "vehicle.fuso.mitsubishi": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MitsubishiFusoRosa/BP_MitsubishiFusoRosa_FLW.BP_MitsubishiFusoRosa_FLW_C' (0xa15e57ff500) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MitsubishiFusoRosa/BP_MitsubishiFusoRosa_FRW.BP_MitsubishiFusoRosa_FRW_C' (0xa15e5620000) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MitsubishiFusoRosa/BP_MitsubishiFusoRosa_RLW.BP_MitsubishiFusoRosa_RLW_C' (0xa15e5620e00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MitsubishiFusoRosa/BP_MitsubishiFusoRosa_RRW.BP_MitsubishiFusoRosa_RRW_C' (0xa15e5621c00) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 600.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "VehicleBase",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Left",
+      "Wheel_Rear_Right"
+    ]
+  },
+  "vehicle.ue4.ford.mustang": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/Mustang/BP_Mustang_FLW.BP_Mustang_FLW_C' (0xa15e9bdf500) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/Mustang/BP_Mustang_FRW.BP_Mustang_FRW_C' (0xa15e9af0700) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/Mustang/BP_Mustang_RLW.BP_Mustang_RLW_C' (0xa15e9af1500) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/Mustang/BP_Mustang_RRW.BP_Mustang_RRW_C' (0xa15e9af2300) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 350.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left"
+    ]
+  },
+  "vehicle.ue4.ford.crown": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/FordCrown01/BP_FordCrown01_FLW.BP_FordCrown01_FLW_C' (0xa15f0b78500) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/FordCrown01/BP_FordCrown01_FRW.BP_FordCrown01_FRW_C' (0xa15f0b79300) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/FordCrown01/BP_FordCrown01_RLW.BP_FordCrown01_RLW_C' (0xa15f0b7a100) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/FordCrown01/BP_FordCrown01_RRW.BP_FordCrown01_RRW_C' (0xa15f0b7af00) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 375.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_Front_Right",
+      "Door_Front_Left",
+      "Door_Rear_Right",
+      "Door_Rear_Left"
+    ]
+  },
+  "vehicle.ue4.bmw.grantourer": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/BmwGrandTourer/BP_BMWGrandTourer_FLW.BP_BMWGrandTourer_FLW_C' (0xa15f60ce700) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/BmwGrandTourer/BP_BMWGrandTourer_FRW.BP_BMWGrandTourer_FRW_C' (0xa15f60cf500) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/BmwGrandTourer/BP_BmwGrandTourer_RLW.BP_BMWGrandTourer_RLW_C' (0xa15f6190700) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/BmwGrandTourer/BP_BmwGrandTourer_RRW.BP_BMWGrandTourer_RRW_C' (0xa15f6191500) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 275.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left"
+    ]
+  },
+  "vehicle.ue4.audi.tt": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/AudiTT/BP_AudiTT_FLW.BP_AudiTT_FLW_C' (0xa15f60c7700) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/AudiTT/BP_AudiTT_FRW.BP_AudiTT_FRW_C' (0xa15f60c6900) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/AudiTT/BP_AudiTT_RLW.BP_AudiTT_RLW_C' (0xa15f60c5b00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/AudiTT/BP_AudiTT_RRW.BP_AudiTT_RRW_C' (0xa15f60c4d00) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 300.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left"
+    ]
+  },
+  "vehicle.ue4.mercedes.ccc": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MercedesCCC/BP_MercedesCCC_FLW.BP_MercedesCCC_FLW_C' (0xa15f7eabd00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MercedesCCC/BP_MercedesCCC_FRW.BP_MercedesCCC_FRW_C' (0xa15f7eacb00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MercedesCCC/BP_MercedesCCC_RLW.BP_MercedesCCC_RLW_C' (0xa15f7ead900) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/MercedesCCC/BP_MercedesCCC_RRW.BP_MercedesCCC_RRW_C' (0xa15f7eae700) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 550.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_L",
+      "Door_R"
+    ]
+  },
+  "vehicle.ue4.chevrolet.impala": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/ChevroletImpala/BP_ChevroletImpala_FLW.BP_ChevroletImpala_FLW_C' (0xa15f9e67e00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/ChevroletImpala/BP_ChevroletImpala_FRW.BP_ChevroletImpala_FRW_C' (0xa15f9e68c00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/ChevroletImpala/BP_ChevroletImpala_RLW.BP_ChevroletImpala_RLW_C' (0xa15f9e69a00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/ChevroletImpala/BP_ChevroletImpala_RRW.BP_ChevroletImpala_RRW_C' (0xa15f9e6a800) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 450.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left"
+    ]
+  },
+  "vehicle.firetruck.actors": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/ActrosFiretruck/BP_ActrosFiretruck_FLW.BP_ActrosFiretruck_FLW_C' (0xa15f9964600) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/ActrosFiretruck/BP_ActrosFiretruck_FRW.BP_ActrosFiretruck_FRW_C' (0xa15f9965400) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/ActrosFiretruck/BP_ActrosFiretruck_RLW.BP_ActrosFiretruck_RLW_C' (0xa15f9966200) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/ActrosFiretruck/BP_ActrosFiretruck_RRW.BP_ActrosFiretruck_RRW_C' (0xa15f9967000) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 600.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_R",
+      "Door_L"
+    ]
+  },
+  "vehicle.carlacola.actors": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/CarlaCola/BP_CarlaCola_FLW.BP_CarlaCola_FLW_C' (0xa15fe0e8c00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/CarlaCola/BP_CarlaCola_FRW.BP_CarlaCola_FRW_C' (0xa15fe0e7700) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/CarlaCola/BP_CarlaCola_RLW.BP_CarlaCola_RLW_C' (0xa15fe0e9300) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/CarlaCola/BP_CarlaCola_RRW.BP_CarlaCola_RRW_C' (0xa15fe0ea100) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 500.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_R",
+      "Door_L"
+    ]
+  },
+  "vehicle.taxi.ford": {
+    "wheels": [
+      {
+        "bone": "Wheel_Front_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/FordCrown02/BP_FordCrown02_FLW.BP_FordCrown02_FLW_C' (0xa15fdf07e00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Front_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/FordCrown02/BP_FordCrown02_FRW.BP_FordCrown02_FRW_C' (0xa15fdf08c00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Left",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/FordCrown02/BP_FordCrown02_RLW.BP_FordCrown02_RLW_C' (0xa15fdf09a00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_Rear_Right",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/FordCrown02/BP_FordCrown02_RRW.BP_FordCrown02_RRW_C' (0xa15fdf0a800) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 350.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left",
+      "Door_Front_Right",
+      "Door_Front_Left",
+      "Door_Rear_Right",
+      "Door_Rear_Left"
+    ]
+  },
+  "vehicle.audit.harley": {
+    "wheels": [],
+    "max_torque": 300.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[]"
+      }
+    ],
+    "bones": [
+      "Bike_Rig",
+      "BikeBodyGeo",
+      "RearWheelGeo",
+      "PedalsGeo",
+      "RightPedalGeo",
+      "LeftPedalGeo",
+      "HandlerGeo",
+      "FrontWheelGeo",
+      "HandlerRightSocket",
+      "HandlerLeftSocket",
+      "Seat",
+      "Wheel_R_R",
+      "Wheel_R_L",
+      "Wheel_F_R",
+      "Wheel_F_L"
+    ]
+  },
+  "vehicle.audit.vespa": {
+    "wheels": [],
+    "max_torque": 300.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[]"
+      }
+    ],
+    "bones": [
+      "Bike_Rig",
+      "BikeBodyGeo",
+      "RearWheelGeo",
+      "PedalsGeo",
+      "RightPedalGeo",
+      "LeftPedalGeo",
+      "HandlerGeo",
+      "FrontWheelGeo",
+      "HandlerRightSocket",
+      "HandlerLeftSocket",
+      "Seat",
+      "Wheel_R_R",
+      "Wheel_R_L",
+      "Wheel_F_R",
+      "Wheel_F_L"
+    ]
+  },
+  "vehicle.audit.tesla": {
+    "wheels": [],
+    "max_torque": 300.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[]"
+      }
+    ],
+    "bones": [
+      "Vehicle_Base",
+      "Wheel_Front_Left",
+      "Wheel_Front_Right",
+      "Wheel_Rear_Right",
+      "Wheel_Rear_Left"
+    ]
+  },
+  "vehicle.verified.harley": {
+    "wheels": [
+      {
+        "bone": "Wheel_F_L",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Harley_FW.BP_Harley_FW_C' (0xa160bd0bd00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_F_R",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Harley_FW.BP_Harley_FW_C' (0xa160bd0bd00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_R_L",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Harley_RW.BP_Harley_RW_C' (0xa160bd0cb00) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_R_R",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Harley_RW.BP_Harley_RW_C' (0xa160bd0cb00) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 100.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Bike_Rig",
+      "BikeBodyGeo",
+      "RearWheelGeo",
+      "PedalsGeo",
+      "RightPedalGeo",
+      "LeftPedalGeo",
+      "HandlerGeo",
+      "FrontWheelGeo",
+      "HandlerRightSocket",
+      "HandlerLeftSocket",
+      "Seat",
+      "Wheel_R_R",
+      "Wheel_R_L",
+      "Wheel_F_R",
+      "Wheel_F_L"
+    ]
+  },
+  "vehicle.verified.vespa": {
+    "wheels": [
+      {
+        "bone": "Wheel_F_L",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Vespa_FW.BP_Vespa_FW_C' (0xa160bcd9300) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_F_R",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Vespa_FW.BP_Vespa_FW_C' (0xa160bcd9300) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_R_L",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Vespa_RW.BP_Vespa_RW_C' (0xa160bcda100) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_R_R",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Vespa_RW.BP_Vespa_RW_C' (0xa160bcda100) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 15.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Bike_Rig",
+      "BikeBodyGeo",
+      "RearWheelGeo",
+      "PedalsGeo",
+      "RightPedalGeo",
+      "LeftPedalGeo",
+      "HandlerGeo",
+      "FrontWheelGeo",
+      "HandlerRightSocket",
+      "HandlerLeftSocket",
+      "Seat",
+      "Wheel_R_R",
+      "Wheel_R_L",
+      "Wheel_F_R",
+      "Wheel_F_L"
+    ]
+  },
+  "vehicle.verified.yamaha": {
+    "wheels": [
+      {
+        "bone": "Wheel_F_L",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Yamaha_FW.BP_Yamaha_FW_C' (0xa160c3c1500) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_F_R",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Yamaha_FW.BP_Yamaha_FW_C' (0xa160c3c1500) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_R_L",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Yamaha_RW.BP_Yamaha_RW_C' (0xa160c3c2300) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_R_R",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_Yamaha_RW.BP_Yamaha_RW_C' (0xa160c3c2300) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 80.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Bike_Rig",
+      "BikeBodyGeo",
+      "RearWheelGeo",
+      "PedalsGeo",
+      "RightPedalGeo",
+      "LeftPedalGeo",
+      "HandlerGeo",
+      "FrontWheelGeo",
+      "HandlerRightSocket",
+      "HandlerLeftSocket",
+      "Seat",
+      "Wheel_R_R",
+      "Wheel_R_L",
+      "Wheel_F_R",
+      "Wheel_F_L"
+    ]
+  },
+  "vehicle.verified.kawasakininja": {
+    "wheels": [
+      {
+        "bone": "Wheel_F_L",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_KawasakiNinja_FW.BP_KawasakiNinja_FW_C' (0xa160d3dd200) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_F_R",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_KawasakiNinja_FW.BP_KawasakiNinja_FW_C' (0xa160d3dd200) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_R_L",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_KawasakiNinja_RW.BP_KawasakiNinja_RW_C' (0xa160d3de000) Class 'BlueprintGeneratedClass'>"
+      },
+      {
+        "bone": "Wheel_R_R",
+        "class": "<Object '/Game/Carla/Blueprints/Vehicles/SceneControllable/BP_KawasakiNinja_RW.BP_KawasakiNinja_RW_C' (0xa160d3de000) Class 'BlueprintGeneratedClass'>"
+      }
+    ],
+    "max_torque": 80.0,
+    "components": [
+      {
+        "name": "VehicleMovementComp",
+        "wheels": "[{}, {}, {}, {}]"
+      }
+    ],
+    "bones": [
+      "Bike_Rig",
+      "BikeBodyGeo",
+      "RearWheelGeo",
+      "PedalsGeo",
+      "RightPedalGeo",
+      "LeftPedalGeo",
+      "HandlerGeo",
+      "FrontWheelGeo",
+      "HandlerRightSocket",
+      "HandlerLeftSocket",
+      "Seat",
+      "Wheel_R_R",
+      "Wheel_R_L",
+      "Wheel_F_R",
+      "Wheel_F_L"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "20260909-143337-b42359",
+  "checked_at": 1788978823.8666735,
+  "status": "verified",
+  "frames": 12,
+  "sensor_samples": 60,
+  "rosbag_topic_counts": {
+    "/clock": 12,
+    "/carla/ego_28/odometry": 12,
+    "/carla/ego_28/front_rgb/image": 12,
+    "/carla/ego_28/front_rgb/metadata": 12,
+    "/carla/ego_28/front_rgb/camera_info": 12,
+    "/carla/ego_28/roof_lidar/points": 12,
+    "/carla/ego_28/roof_lidar/metadata": 12,
+    "/carla/ego_28/front_radar/points": 12,
+    "/carla/ego_28/front_radar/metadata": 12,
+    "/carla/ego_28/imu/data": 12,
+    "/carla/ego_28/imu/metadata": 12,
+    "/carla/ego_28/gnss/data": 12,
+    "/carla/ego_28/gnss/metadata": 12,
+    "/tf": 12,
+    "/carla/traffic_signals": 12
+  },
+  "files_checked": 70,
+  "errors": [],
+  "warnings": [],
+  "scope": "Stored bytes, frame index, sensor coverage and simulation timestamps; not proof of identical re-simulation",
+  "temporary_actor": 82,
+  "parking_trip": {
+    "stage": "entering",
+    "bay": "P017",
+    "blocked": null
+  },
+  "distance_m": 0.651467821099406,
+  "worker_count": 1,
+  "ego_sensor_count": 5
+}

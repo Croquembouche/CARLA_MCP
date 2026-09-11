@@ -1,0 +1,19 @@
+Setting up bundled DotNet SDK
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll CarlaUnrealEditor Linux Development -project=/mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -Module=Carla -WaitMutex -MaxParallelActions=8
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Building CarlaUnrealEditor...
+[Adaptive Build] Excluded from Renderer unity file: DeferredShadingRenderer.cpp, SceneRendering.cpp, RayTracingInstanceCulling.cpp
+[Adaptive Build] Excluded from VulkanRHI unity file: VulkanMemory.cpp
+[Adaptive Build] Excluded from Engine unity file: RayTracingGeometryManager.cpp
+Executing up to 8 actions based on MaxProcessorCount override
+Using Unreal Build Accelerator local executor to run 2 action(s)
+  Storage capacity 40Gb
+---- Starting trace ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 2 action(s) started ------
+[1/2] Compile Module.Carla.14.cpp
+[2/2] Link (lld) libUnrealEditor-Carla.so (UBA disabled)
+Trace file written to /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.uba with size 3.6kb
+Total time in Unreal Build Accelerator local executor: 37.04 seconds
+Total execution time: 41.23 seconds

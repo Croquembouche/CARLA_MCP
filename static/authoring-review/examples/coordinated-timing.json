@@ -1,0 +1,16 @@
+{
+  "format": "carla-network-timing",
+  "version": 1,
+  "map": "Carla/Maps/Town10HD_Opt",
+  "config": {
+    "mode": "coordinated",
+    "cycle_time": 120,
+    "offsets": {
+      "8": 0,
+      "10": 5,
+      "12": 10,
+      "15": 15,
+      "18": 20
+    }
+  }
+}

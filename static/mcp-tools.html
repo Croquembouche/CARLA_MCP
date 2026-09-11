@@ -1,0 +1,1836 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CARLA MCP documentation</title><style>
+:root{color-scheme:light dark;--bg:#f5f7fa;--fg:#182a3c;--panel:#fff;--line:#d8e1ea;--accent:#285fc3}*{box-sizing:border-box}body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,sans-serif}header{padding:18px 28px;background:var(--panel);border-bottom:1px solid var(--line);display:flex;gap:24px;flex-wrap:wrap}a{color:var(--accent)}.layout{display:grid;grid-template-columns:260px minmax(0,1080px);max-width:1450px;margin:auto;gap:30px;padding:28px}nav{min-width:0;position:sticky;top:18px;align-self:start;max-height:92vh;overflow:auto;font-size:13px}nav ul{list-style:none;padding-left:12px}nav li{margin:5px 0}main{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:36px}h1,h2,h3{overflow-wrap:anywhere}h1{font-size:32px;line-height:1.2}h2{margin-top:42px;border-bottom:1px solid var(--line);padding-bottom:8px}h3{margin-top:30px}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:18px;background:var(--bg);border:1px solid var(--line);border-radius:8px;overflow:auto;font-size:13px}code{font-size:.9em;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;font-size:14px;display:block;overflow:auto}td,th{padding:12px;text-align:left;vertical-align:top;border:1px solid var(--line)}th{background:var(--bg)}@media(prefers-color-scheme:dark){:root{--bg:#101923;--fg:#d9e6f1;--panel:#172433;--line:#354354;--accent:#87b8ff}}@media(max-width:800px){.layout{display:block;padding:12px}nav{position:static;max-height:240px;margin-bottom:18px}main{padding:18px}h1{font-size:26px}}@media print{nav,header{display:none}.layout{display:block}main{border:0}pre{white-space:pre-wrap}}
+</style></head><body><header><strong>CARLA · MCP</strong><a href="/">Simulation workspace</a><a href="/parking-review.html">Parking survey</a><a href="/mcp.html">Capability guide</a><a href="/mcp-tools.html">49 tool schemas</a><a href="/mcp-guide.md" download>Download guide</a><a href="/mcp-tools.md" download>Download schemas</a></header><div class="layout"><nav aria-label="Contents"><div class="toc">
+<ul>
+<li><a href="#mcp-tool-reference">MCP tool reference</a><ul>
+<li><a href="#carla_status">carla_status</a></li>
+<li><a href="#carla_catalog">carla_catalog</a></li>
+<li><a href="#carla_map">carla_map</a></li>
+<li><a href="#carla_configuration">carla_configuration</a></li>
+<li><a href="#carla_sessions">carla_sessions</a></li>
+<li><a href="#carla_log">carla_log</a></li>
+<li><a href="#carla_opendrive">carla_opendrive</a></li>
+<li><a href="#carla_capabilities">carla_capabilities</a></li>
+<li><a href="#carla_latency">carla_latency</a></li>
+<li><a href="#carla_start">carla_start</a></li>
+<li><a href="#carla_connect">carla_connect</a></li>
+<li><a href="#carla_shutdown">carla_shutdown</a></li>
+<li><a href="#carla_run">carla_run</a></li>
+<li><a href="#carla_pause">carla_pause</a></li>
+<li><a href="#carla_step">carla_step</a></li>
+<li><a href="#carla_spawn">carla_spawn</a></li>
+<li><a href="#carla_delete_actor">carla_delete_actor</a></li>
+<li><a href="#carla_destination">carla_destination</a></li>
+<li><a href="#carla_pedestrian_path">carla_pedestrian_path</a></li>
+<li><a href="#carla_control">carla_control</a></li>
+<li><a href="#carla_convert_scene_vehicles">carla_convert_scene_vehicles</a></li>
+<li><a href="#carla_move_parked_to_road">carla_move_parked_to_road</a></li>
+<li><a href="#carla_reload_parking">carla_reload_parking</a></li>
+<li><a href="#carla_configure_sensors">carla_configure_sensors</a></li>
+<li><a href="#carla_weather">carla_weather</a></li>
+<li><a href="#carla_traffic_light">carla_traffic_light</a></li>
+<li><a href="#carla_movement_program">carla_movement_program</a></li>
+<li><a href="#carla_network_timing">carla_network_timing</a></li>
+<li><a href="#carla_configure_schedule">carla_configure_schedule</a></li>
+<li><a href="#carla_start_schedule">carla_start_schedule</a></li>
+<li><a href="#carla_stop_schedule">carla_stop_schedule</a></li>
+<li><a href="#carla_gpu_profile">carla_gpu_profile</a></li>
+<li><a href="#carla_gpu_benchmark">carla_gpu_benchmark</a></li>
+<li><a href="#carla_record_start">carla_record_start</a></li>
+<li><a href="#carla_record_stop">carla_record_stop</a></li>
+<li><a href="#carla_replay_native">carla_replay_native</a></li>
+<li><a href="#carla_replay_stop">carla_replay_stop</a></li>
+<li><a href="#carla_restore_configuration">carla_restore_configuration</a></li>
+<li><a href="#carla_recover">carla_recover</a></li>
+<li><a href="#carla_session_frame">carla_session_frame</a></li>
+<li><a href="#carla_session_files">carla_session_files</a></li>
+<li><a href="#carla_verify_session">carla_verify_session</a></li>
+<li><a href="#carla_compare_sessions">carla_compare_sessions</a></li>
+<li><a href="#carla_sensor_preview">carla_sensor_preview</a></li>
+<li><a href="#carla_recorded_preview">carla_recorded_preview</a></li>
+<li><a href="#carla_session_file">carla_session_file</a></li>
+<li><a href="#carla_download_links">carla_download_links</a></li>
+<li><a href="#carla_scene_manifest">carla_scene_manifest</a></li>
+<li><a href="#carla_inspect">carla_inspect</a></li>
+<li><a href="#cabin-preset-objects">Cabin preset objects</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav><main><h1 id="mcp-tool-reference">MCP tool reference</h1>
+<p>49 tools. Schemas are generated from <code>mcp_bridge/catalog.py</code>. Required fields are explicit; omitted optional values use upstream defaults. IDs and coordinates in examples are placeholders. See <a href="/mcp.html">the full capability guide</a> before making changes.</p>
+<h2 id="carla_status">carla_status</h2>
+<p>Read live runtime, actors, routes, vehicle controls, weather, signals, sensors, occupancy, GPU timings and operation progress.</p>
+<p>Access: read-only. Route: <code>/api/status</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_catalog">carla_catalog</h2>
+<p>Read installed vehicle/pedestrian models and sensor blueprint attributes.</p>
+<p>Access: read-only. Route: <code>/api/catalog</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_map">carla_map</h2>
+<p>Read OpenDRIVE-derived roads, lane directions/turns, sidewalks, walking points, spawn points and surveyed parking including exclusions.</p>
+<p>Access: read-only. Route: <code>/api/map</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_configuration">carla_configuration</h2>
+<p>Export the complete reusable scenario configuration. This request is serialized with simulator operations.</p>
+<p>Access: read-only. Route: <code>/api/configuration</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_sessions">carla_sessions</h2>
+<p>List recording manifests, frame counts, status and ROS bag availability.</p>
+<p>Access: read-only. Route: <code>/api/sessions</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_log">carla_log</h2>
+<p>Read the last 6 KB of simulator output.</p>
+<p>Access: read-only. Route: <code>/api/log</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_opendrive">carla_opendrive</h2>
+<p>Read the original OpenDRIVE XML. Surveyed parking and pedestrian overlays are in carla_map, not written into this XML.</p>
+<p>Access: read-only. Route: <code>/api/map.xodr</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_capabilities">carla_capabilities</h2>
+<p>Read the WebUI feature mapping, tool schemas and examples.</p>
+<p>Access: read-only. Route: <code>adapter operation</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_latency">carla_latency</h2>
+<p>Measure one MCP-bridge-to-WebUI status round trip in milliseconds; this is not browser latency or simulation speed.</p>
+<p>Access: read-only. Route: <code>adapter operation</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_start">carla_start</h2>
+<p>Start the owned CARLA simulator group asynchronously. Poll carla_status until connected; do not repeat start.</p>
+<p>Access: mutation. Route: <code>/api/command/start</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;gpus&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;auto&quot;,
+        &quot;3&quot;,
+        &quot;0,1,2,3&quot;
+      ]
+    }
+  },
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;gpus&quot;: &quot;auto&quot;
+}
+</code></pre>
+<h2 id="carla_connect">carla_connect</h2>
+<p>Connect to the existing local CARLA on port 2000. No other client may own its clock.</p>
+<p>Access: mutation. Route: <code>/api/command/connect</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_shutdown">carla_shutdown</h2>
+<p>Stop the owned CARLA group and workers, or disconnect an external simulator. This destroys the current owned runtime; export configuration first if needed.</p>
+<p>Access: mutation. Route: <code>/api/command/shutdown</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_run">carla_run</h2>
+<p>Advance the shared synchronous simulation continuously, or resume native replay.</p>
+<p>Access: mutation. Route: <code>/api/command/run</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_pause">carla_pause</h2>
+<p>Pause the shared simulation clock; sensor previews may still read the last completed sample.</p>
+<p>Access: mutation. Route: <code>/api/command/pause</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_step">carla_step</h2>
+<p>Advance one synchronous frame. Do this while paused for controlled stepping; setup operations may also advance frames.</p>
+<p>Access: mutation. Route: <code>/api/command/step</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_spawn">carla_spawn</h2>
+<p>Spawn an ego, background vehicle or pedestrian. Ego omission of sensors adds six defaults. For parked placement use background role and parking_space; spawn may be omitted in that case. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/spawn</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;role&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;ego&quot;,
+        &quot;background&quot;,
+        &quot;pedestrian&quot;
+      ]
+    },
+    &quot;model&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;minLength&quot;: 1
+    },
+    &quot;planner&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;tm&quot;,
+        &quot;external&quot;
+      ]
+    },
+    &quot;spawn&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;x&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;y&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;z&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;yaw&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;pitch&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;roll&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;parking_space&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        }
+      },
+      &quot;required&quot;: [
+        &quot;x&quot;,
+        &quot;y&quot;
+      ],
+      &quot;additionalProperties&quot;: false
+    },
+    &quot;destination&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;x&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            },
+            &quot;y&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            },
+            &quot;z&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            },
+            &quot;yaw&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            },
+            &quot;pitch&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            },
+            &quot;roll&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            },
+            &quot;parking_space&quot;: {
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;minLength&quot;: 1
+            }
+          },
+          &quot;required&quot;: [
+            &quot;x&quot;,
+            &quot;y&quot;
+          ],
+          &quot;additionalProperties&quot;: false
+        },
+        {
+          &quot;type&quot;: &quot;null&quot;
+        }
+      ]
+    },
+    &quot;parking_space&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;minLength&quot;: 1
+    },
+    &quot;sensors&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;name&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;pattern&quot;: &quot;^[a-z][a-z0-9_]{0,39}$&quot;
+          },
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;sensor.camera.rgb&quot;,
+              &quot;sensor.camera.depth&quot;,
+              &quot;sensor.camera.semantic_segmentation&quot;,
+              &quot;sensor.camera.instance_segmentation&quot;,
+              &quot;sensor.camera.normals&quot;,
+              &quot;sensor.camera.optical_flow&quot;,
+              &quot;sensor.lidar.ray_cast&quot;,
+              &quot;sensor.lidar.ray_cast_semantic&quot;,
+              &quot;sensor.other.radar&quot;,
+              &quot;sensor.other.imu&quot;,
+              &quot;sensor.other.gnss&quot;
+            ]
+          },
+          &quot;mount&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;x&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;y&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;z&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;yaw&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;pitch&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;roll&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              }
+            },
+            &quot;required&quot;: [],
+            &quot;additionalProperties&quot;: false
+          },
+          &quot;attributes&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;additionalProperties&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;required&quot;: [
+          &quot;name&quot;,
+          &quot;type&quot;,
+          &quot;mount&quot;,
+          &quot;attributes&quot;
+        ],
+        &quot;additionalProperties&quot;: false
+      },
+      &quot;maxItems&quot;: 16
+    }
+  },
+  &quot;required&quot;: [
+    &quot;role&quot;,
+    &quot;model&quot;
+  ],
+  &quot;additionalProperties&quot;: false,
+  &quot;anyOf&quot;: [
+    {
+      &quot;required&quot;: [
+        &quot;spawn&quot;
+      ]
+    },
+    {
+      &quot;required&quot;: [
+        &quot;parking_space&quot;
+      ]
+    }
+  ]
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;role&quot;: &quot;ego&quot;,
+  &quot;model&quot;: &quot;vehicle.lincoln.mkz_interior&quot;,
+  &quot;planner&quot;: &quot;tm&quot;,
+  &quot;spawn&quot;: {
+    &quot;x&quot;: 0,
+    &quot;y&quot;: 0
+  }
+}
+</code></pre>
+<h2 id="carla_delete_actor">carla_delete_actor</h2>
+<p>Remove a managed actor and its attached sensors/walker controller. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/delete</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    }
+  },
+  &quot;required&quot;: [
+    &quot;id&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 52
+}
+</code></pre>
+<h2 id="carla_destination">carla_destination</h2>
+<p>Replace the active goal immediately, including during recording. Road points snap to lanes; parking_space selects a validated bay. TM drives reverse parking; external ego receives an exact goal without control takeover. Pedestrians use walkable points. Rejects native replay.</p>
+<p>Access: mutation. Route: <code>/api/command/destination</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;point&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;x&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;y&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;z&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;yaw&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;pitch&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;roll&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;parking_space&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        }
+      },
+      &quot;required&quot;: [
+        &quot;x&quot;,
+        &quot;y&quot;
+      ],
+      &quot;additionalProperties&quot;: false
+    },
+    &quot;arrival_tolerance&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.25,
+      &quot;maximum&quot;: 3
+    }
+  },
+  &quot;required&quot;: [
+    &quot;id&quot;,
+    &quot;point&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 52,
+  &quot;point&quot;: {
+    &quot;x&quot;: 8,
+    &quot;y&quot;: 63,
+    &quot;parking_space&quot;: &quot;P024&quot;
+  }
+}
+</code></pre>
+<h2 id="carla_pedestrian_path">carla_pedestrian_path</h2>
+<p>Check pedestrian route reachability without changing the destination.</p>
+<p>Access: read-only. Route: <code>/api/command/pedestrian-path</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;point&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;x&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;y&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;z&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;yaw&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;pitch&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;roll&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;parking_space&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        }
+      },
+      &quot;required&quot;: [
+        &quot;x&quot;,
+        &quot;y&quot;
+      ],
+      &quot;additionalProperties&quot;: false
+    }
+  },
+  &quot;required&quot;: [
+    &quot;id&quot;,
+    &quot;point&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 60,
+  &quot;point&quot;: {
+    &quot;x&quot;: 0,
+    &quot;y&quot;: 0
+  }
+}
+</code></pre>
+<h2 id="carla_control">carla_control</h2>
+<p>Apply external ego throttle, steer, brake and reverse through vehicle physics. Existing external control watchdog brakes after one wall-clock second. Use a dedicated HTTP/ROS control loop for continuous driving; MCP is not a real-time controller.</p>
+<p>Access: mutation. Route: <code>/api/command/control</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;throttle&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 1
+    },
+    &quot;steer&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: -1,
+      &quot;maximum&quot;: 1
+    },
+    &quot;brake&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 1
+    },
+    &quot;reverse&quot;: {
+      &quot;type&quot;: &quot;boolean&quot;
+    }
+  },
+  &quot;required&quot;: [
+    &quot;id&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 52,
+  &quot;throttle&quot;: 0,
+  &quot;steer&quot;: 0,
+  &quot;brake&quot;: 1,
+  &quot;reverse&quot;: false
+}
+</code></pre>
+<h2 id="carla_convert_scene_vehicles">carla_convert_scene_vehicles</h2>
+<p>Convert remaining native scenery vehicles to managed background actors; reports substitutions and failures. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/convert-scene-vehicles</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_move_parked_to_road">carla_move_parked_to_road</h2>
+<p>Explicitly reposition a parked scene vehicle onto a road and enable Traffic Manager. This is placement, not a driven departure; use destination for physical departure. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/parked-to-road</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;point&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;x&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;y&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;z&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;yaw&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;pitch&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;roll&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;parking_space&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        }
+      },
+      &quot;required&quot;: [
+        &quot;x&quot;,
+        &quot;y&quot;
+      ],
+      &quot;additionalProperties&quot;: false
+    }
+  },
+  &quot;required&quot;: [
+    &quot;id&quot;,
+    &quot;point&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 34,
+  &quot;point&quot;: {
+    &quot;x&quot;: 0,
+    &quot;y&quot;: 0
+  }
+}
+</code></pre>
+<h2 id="carla_reload_parking">carla_reload_parking</h2>
+<p>Reload validated on-disk parking annotations without restarting the world. Stop recording and replay first.</p>
+<p>Access: mutation. Route: <code>/api/command/reload-parking</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_configure_sensors">carla_configure_sensors</h2>
+<p>Replace the entire ego loadout; empty list removes all sensors. Mount is vehicle-local metres/degrees; attributes are strings. May allocate GPU workers and warm cameras for 30 frames. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/sensors</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;sensors&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;name&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;pattern&quot;: &quot;^[a-z][a-z0-9_]{0,39}$&quot;
+          },
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;sensor.camera.rgb&quot;,
+              &quot;sensor.camera.depth&quot;,
+              &quot;sensor.camera.semantic_segmentation&quot;,
+              &quot;sensor.camera.instance_segmentation&quot;,
+              &quot;sensor.camera.normals&quot;,
+              &quot;sensor.camera.optical_flow&quot;,
+              &quot;sensor.lidar.ray_cast&quot;,
+              &quot;sensor.lidar.ray_cast_semantic&quot;,
+              &quot;sensor.other.radar&quot;,
+              &quot;sensor.other.imu&quot;,
+              &quot;sensor.other.gnss&quot;
+            ]
+          },
+          &quot;mount&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;x&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;y&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;z&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;yaw&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;pitch&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              },
+              &quot;roll&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: -360,
+                &quot;maximum&quot;: 360
+              }
+            },
+            &quot;required&quot;: [],
+            &quot;additionalProperties&quot;: false
+          },
+          &quot;attributes&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;additionalProperties&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;required&quot;: [
+          &quot;name&quot;,
+          &quot;type&quot;,
+          &quot;mount&quot;,
+          &quot;attributes&quot;
+        ],
+        &quot;additionalProperties&quot;: false
+      },
+      &quot;maxItems&quot;: 16
+    }
+  },
+  &quot;required&quot;: [
+    &quot;id&quot;,
+    &quot;sensors&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 52,
+  &quot;sensors&quot;: []
+}
+</code></pre>
+<h2 id="carla_weather">carla_weather</h2>
+<p>Apply any subset of the supported weather fields to the synchronized scene. Works running or paused; stop recording and native replay first. Advances a synchronization frame.</p>
+<p>Access: mutation. Route: <code>/api/command/weather</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;cloudiness&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;precipitation&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;precipitation_deposits&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;wind_intensity&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;fog_density&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;wetness&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;dust_storm&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;fog_falloff&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;scattering_intensity&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;mie_scattering_scale&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;rayleigh_scattering_scale&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 100
+    },
+    &quot;sun_azimuth_angle&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 360
+    },
+    &quot;sun_altitude_angle&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: -90,
+      &quot;maximum&quot;: 90
+    },
+    &quot;fog_distance&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 10000
+    }
+  },
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false,
+  &quot;minProperties&quot;: 1
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;sun_altitude_angle&quot;: -25,
+  &quot;cloudiness&quot;: 20,
+  &quot;precipitation&quot;: 0
+}
+</code></pre>
+<h2 id="carla_traffic_light">carla_traffic_light</h2>
+<p>Set native approach colour, hold its intersection, resume cycle, or edit durations. Movement programs must be disabled and clearance finished first. Holding sets other approaches red. Works running or paused; stop recording and native replay first. Advances a synchronization frame.</p>
+<p>Access: mutation. Route: <code>/api/command/traffic-light</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;operation&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;state&quot;,
+        &quot;timing&quot;,
+        &quot;resume&quot;
+      ]
+    },
+    &quot;state&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;Red&quot;,
+        &quot;Yellow&quot;,
+        &quot;Green&quot;,
+        &quot;Off&quot;
+      ]
+    },
+    &quot;hold&quot;: {
+      &quot;type&quot;: &quot;boolean&quot;
+    },
+    &quot;scope&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;signal&quot;,
+        &quot;intersection&quot;
+      ]
+    },
+    &quot;green_time&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.1,
+      &quot;maximum&quot;: 600
+    },
+    &quot;yellow_time&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.1,
+      &quot;maximum&quot;: 600
+    },
+    &quot;red_time&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.1,
+      &quot;maximum&quot;: 600
+    }
+  },
+  &quot;required&quot;: [
+    &quot;id&quot;,
+    &quot;operation&quot;
+  ],
+  &quot;additionalProperties&quot;: false,
+  &quot;allOf&quot;: [
+    {
+      &quot;if&quot;: {
+        &quot;properties&quot;: {
+          &quot;operation&quot;: {
+            &quot;const&quot;: &quot;state&quot;
+          }
+        }
+      },
+      &quot;then&quot;: {
+        &quot;required&quot;: [
+          &quot;state&quot;
+        ]
+      }
+    },
+    {
+      &quot;if&quot;: {
+        &quot;properties&quot;: {
+          &quot;operation&quot;: {
+            &quot;const&quot;: &quot;timing&quot;
+          }
+        }
+      },
+      &quot;then&quot;: {
+        &quot;required&quot;: [
+          &quot;green_time&quot;,
+          &quot;yellow_time&quot;,
+          &quot;red_time&quot;
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 10,
+  &quot;operation&quot;: &quot;state&quot;,
+  &quot;state&quot;: &quot;Red&quot;,
+  &quot;hold&quot;: true
+}
+</code></pre>
+<h2 id="carla_movement_program">carla_movement_program</h2>
+<p>Enable/update protected and permissive left/straight/right phases, hold, resume, select phase or disable. Conflicting protected paths and unsupported turns are rejected. Edits use yellow/all-red clearance; phase index is zero-based. Works running or paused; stop recording and native replay first. Advances a synchronization frame.</p>
+<p>Access: mutation. Route: <code>/api/command/movement-program</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;group_id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;operation&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;enable&quot;,
+        &quot;update&quot;,
+        &quot;disable&quot;,
+        &quot;hold&quot;,
+        &quot;resume&quot;,
+        &quot;phase&quot;
+      ]
+    },
+    &quot;phases&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;name&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;minLength&quot;: 1
+          },
+          &quot;duration&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;minimum&quot;: 0.5,
+            &quot;maximum&quot;: 600
+          },
+          &quot;states&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;additionalProperties&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;left&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;Stop&quot;,
+                    &quot;Protected&quot;,
+                    &quot;Permissive&quot;,
+                    &quot;Off&quot;
+                  ]
+                },
+                &quot;straight&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;Stop&quot;,
+                    &quot;Protected&quot;,
+                    &quot;Permissive&quot;,
+                    &quot;Off&quot;
+                  ]
+                },
+                &quot;right&quot;: {
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;Stop&quot;,
+                    &quot;Protected&quot;,
+                    &quot;Permissive&quot;,
+                    &quot;Off&quot;
+                  ]
+                }
+              },
+              &quot;required&quot;: [],
+              &quot;additionalProperties&quot;: false
+            }
+          }
+        },
+        &quot;required&quot;: [
+          &quot;duration&quot;,
+          &quot;states&quot;
+        ],
+        &quot;additionalProperties&quot;: false
+      },
+      &quot;minItems&quot;: 1,
+      &quot;maxItems&quot;: 16
+    },
+    &quot;yellow_time&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.5,
+      &quot;maximum&quot;: 30
+    },
+    &quot;all_red_time&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.5,
+      &quot;maximum&quot;: 30
+    },
+    &quot;index&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 0,
+      &quot;maximum&quot;: 15
+    },
+    &quot;hold&quot;: {
+      &quot;type&quot;: &quot;boolean&quot;
+    }
+  },
+  &quot;required&quot;: [
+    &quot;group_id&quot;,
+    &quot;operation&quot;
+  ],
+  &quot;additionalProperties&quot;: false,
+  &quot;allOf&quot;: [
+    {
+      &quot;if&quot;: {
+        &quot;properties&quot;: {
+          &quot;operation&quot;: {
+            &quot;const&quot;: &quot;phase&quot;
+          }
+        }
+      },
+      &quot;then&quot;: {
+        &quot;required&quot;: [
+          &quot;index&quot;
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;group_id&quot;: 10,
+  &quot;operation&quot;: &quot;enable&quot;,
+  &quot;yellow_time&quot;: 3,
+  &quot;all_red_time&quot;: 2
+}
+</code></pre>
+<h2 id="carla_network_timing">carla_network_timing</h2>
+<p>Select independent, coordinated common-cycle/offset, or demand-adaptive timing. Coordinated/adaptive requires fully applied movement plans at every intersection. Works running or paused; stop recording and native replay first. Advances a synchronization frame.</p>
+<p>Access: mutation. Route: <code>/api/command/network-timing</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;mode&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;independent&quot;,
+        &quot;coordinated&quot;,
+        &quot;adaptive&quot;
+      ]
+    },
+    &quot;cycle_time&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 1,
+      &quot;maximum&quot;: 3600
+    },
+    &quot;offsets&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;additionalProperties&quot;: {
+        &quot;type&quot;: &quot;number&quot;,
+        &quot;minimum&quot;: 0,
+        &quot;maximum&quot;: 3600
+      }
+    },
+    &quot;min_green&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.5,
+      &quot;maximum&quot;: 120
+    },
+    &quot;max_green&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.5,
+      &quot;maximum&quot;: 600
+    },
+    &quot;gap&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0.5,
+      &quot;maximum&quot;: 15
+    },
+    &quot;distance&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 5,
+      &quot;maximum&quot;: 100
+    }
+  },
+  &quot;required&quot;: [
+    &quot;mode&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;mode&quot;: &quot;adaptive&quot;,
+  &quot;min_green&quot;: 5,
+  &quot;max_green&quot;: 30,
+  &quot;gap&quot;: 2,
+  &quot;distance&quot;: 40
+}
+</code></pre>
+<h2 id="carla_configure_schedule">carla_configure_schedule</h2>
+<p>Replace the full flows/events schedule. Stop the schedule first. Uses zero-based map spawn/walking point indices and simulation-relative seconds. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/authoring-configure</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;config&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;flows&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;maxItems&quot;: 32,
+          &quot;items&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;id&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;model&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;spawn&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;minimum&quot;: 0
+              },
+              &quot;destination&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;minimum&quot;: 0
+              },
+              &quot;start&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: 0,
+                &quot;maximum&quot;: 86400
+              },
+              &quot;interval&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: 1,
+                &quot;maximum&quot;: 3600
+              },
+              &quot;count&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;minimum&quot;: 1,
+                &quot;maximum&quot;: 1000
+              },
+              &quot;remove_arrived&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;
+              }
+            },
+            &quot;required&quot;: [
+              &quot;id&quot;,
+              &quot;model&quot;,
+              &quot;spawn&quot;,
+              &quot;destination&quot;,
+              &quot;count&quot;
+            ],
+            &quot;additionalProperties&quot;: false
+          }
+        },
+        &quot;events&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;maxItems&quot;: 256,
+          &quot;items&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;id&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;time&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;minimum&quot;: 0,
+                &quot;maximum&quot;: 86400
+              },
+              &quot;action&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [
+                  &quot;spawn_vehicle&quot;,
+                  &quot;spawn_pedestrian&quot;,
+                  &quot;destination&quot;,
+                  &quot;weather&quot;,
+                  &quot;signal_phase&quot;,
+                  &quot;signal_hold&quot;,
+                  &quot;signal_resume&quot;
+                ]
+              },
+              &quot;model&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;spawn&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;minimum&quot;: 0
+              },
+              &quot;destination&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;minimum&quot;: 0
+              },
+              &quot;actor&quot;: {
+                &quot;type&quot;: [
+                  &quot;string&quot;,
+                  &quot;integer&quot;
+                ]
+              },
+              &quot;preset&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [
+                  &quot;clear&quot;,
+                  &quot;cloudy&quot;,
+                  &quot;rain&quot;,
+                  &quot;sunset&quot;,
+                  &quot;night&quot;
+                ]
+              },
+              &quot;group_id&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;minimum&quot;: 1
+              },
+              &quot;index&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;minimum&quot;: 0
+              }
+            },
+            &quot;required&quot;: [
+              &quot;id&quot;,
+              &quot;action&quot;
+            ],
+            &quot;additionalProperties&quot;: false
+          }
+        }
+      },
+      &quot;required&quot;: [],
+      &quot;additionalProperties&quot;: false
+    }
+  },
+  &quot;required&quot;: [
+    &quot;config&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;config&quot;: {
+    &quot;flows&quot;: [],
+    &quot;events&quot;: [
+      {
+        &quot;id&quot;: &quot;nightfall&quot;,
+        &quot;time&quot;: 30,
+        &quot;action&quot;: &quot;weather&quot;,
+        &quot;preset&quot;: &quot;night&quot;
+      }
+    ]
+  }
+}
+</code></pre>
+<h2 id="carla_start_schedule">carla_start_schedule</h2>
+<p>Arm the saved schedule relative to current simulation time. Run or step afterward to execute departures/events. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/authoring-start</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_stop_schedule">carla_stop_schedule</h2>
+<p>Stop future schedule execution. Already spawned actors remain; pending automatic arrival cleanup also stops.</p>
+<p>Access: mutation. Route: <code>/api/command/authoring-stop</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_gpu_profile">carla_gpu_profile</h2>
+<p>Apply automatic or up-to-N GPU worker policy; may recreate sensor streams. Preserves sensor quality. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/gpu-profile</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;profile&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;auto&quot;,
+        &quot;1&quot;,
+        &quot;2&quot;,
+        &quot;3&quot;,
+        &quot;4&quot;
+      ]
+    }
+  },
+  &quot;required&quot;: [
+    &quot;profile&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;profile&quot;: &quot;auto&quot;
+}
+</code></pre>
+<h2 id="carla_gpu_benchmark">carla_gpu_benchmark</h2>
+<p>Measure GPU worker counts with three 50-frame windows per count. Advances the evolving scene, recreates sensor streams, and can take several minutes. Preserves quality. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/gpu-benchmark</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_record_start">carla_record_start</h2>
+<p>Arm native recorder plus exact state/raw sensor capture and optional ROS 2 bag. Requires live mode, ROS and at least 5 GiB free. Run or step to capture.</p>
+<p>Access: mutation. Route: <code>/api/command/record-start</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;rosbag&quot;: {
+      &quot;type&quot;: &quot;boolean&quot;
+    }
+  },
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;rosbag&quot;: true
+}
+</code></pre>
+<h2 id="carla_record_stop">carla_record_stop</h2>
+<p>Finalize the recording, ROS bag and integrity manifest.</p>
+<p>Access: mutation. Route: <code>/api/command/record-stop</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_replay_native">carla_replay_native</h2>
+<p>Replace current actors with a completed recording in native CARLA replay. Requires owned simulator; regenerated sensors are not bit-identical originals. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/replay-native</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    },
+    &quot;start&quot;: {
+      &quot;type&quot;: &quot;number&quot;,
+      &quot;minimum&quot;: 0
+    },
+    &quot;autoplay&quot;: {
+      &quot;type&quot;: &quot;boolean&quot;
+    }
+  },
+  &quot;required&quot;: [
+    &quot;id&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;REPLACE_WITH_SESSION_ID&quot;,
+  &quot;start&quot;: 0,
+  &quot;autoplay&quot;: true
+}
+</code></pre>
+<h2 id="carla_replay_stop">carla_replay_stop</h2>
+<p>Stop native replay and asynchronously restart owner and CARLA into a clean live scene. Poll status through temporary API unavailability; existing replay actors are discarded.</p>
+<p>Access: mutation. Route: <code>/api/command/replay-stop</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_restore_configuration">carla_restore_configuration</h2>
+<p>Restore an exported configuration into an empty managed scene. Not a physics checkpoint. Restores actors/sensors/weather/signals/parking/schedule; leaves simulation paused. Requires paused live simulation with recording stopped.</p>
+<p>Access: mutation. Route: <code>/api/command/restore-configuration</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;configuration&quot;: {
+      &quot;type&quot;: &quot;object&quot;
+    }
+  },
+  &quot;required&quot;: [
+    &quot;configuration&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_recover">carla_recover</h2>
+<p>Restart a failed owned simulator using its saved recovery configuration. Only available in error state; actor IDs and time can change. Poll status until ready.</p>
+<p>Access: mutation. Route: <code>/api/recover</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_session_frame">carla_session_frame</h2>
+<p>Read exact recorded states and sensor file references by zero-based recording index.</p>
+<p>Access: read-only. Route: <code>/api/sessions/{session_id}/frame/{index}</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;session_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    },
+    &quot;index&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 0
+    }
+  },
+  &quot;required&quot;: [
+    &quot;session_id&quot;,
+    &quot;index&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;session_id&quot;: &quot;REPLACE_WITH_SESSION_ID&quot;,
+  &quot;index&quot;: 0
+}
+</code></pre>
+<h2 id="carla_session_files">carla_session_files</h2>
+<p>List recorded session files and byte sizes.</p>
+<p>Access: read-only. Route: <code>/api/sessions/{session_id}/files</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;session_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    }
+  },
+  &quot;required&quot;: [
+    &quot;session_id&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_verify_session">carla_verify_session</h2>
+<p>Verify a stopped recording: hashes, frame/sample continuity and timestamps. Saves verification.json; does not re-simulate.</p>
+<p>Access: mutation. Route: <code>/api/sessions/{session_id}/verify</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;session_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    }
+  },
+  &quot;required&quot;: [
+    &quot;session_id&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_compare_sessions">carla_compare_sessions</h2>
+<p>Compare stopped recordings by configured actor order and recording-relative frames, including trajectories and signals. Separate from byte integrity.</p>
+<p>Access: read-only. Route: <code>/api/compare</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;reference&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    },
+    &quot;candidate&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    }
+  },
+  &quot;required&quot;: [
+    &quot;reference&quot;,
+    &quot;candidate&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_sensor_preview">carla_sensor_preview</h2>
+<p>Fetch ONE latest requested sensor preview only. Image default returns an MCP image plus frame/timestamp metadata; points returns bounded binary as an embedded resource; IMU/GNSS return JSON. after suppresses identical frames. Does not run or subscribe to sensors.</p>
+<p>Access: read-only. Route: <code>/api/preview/{sensor_id}</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;sensor_id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;width&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 160,
+      &quot;maximum&quot;: 960
+    },
+    &quot;after&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: -1
+    },
+    &quot;format&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;image&quot;,
+        &quot;points&quot;
+      ]
+    },
+    &quot;point_limit&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 512,
+      &quot;maximum&quot;: 12000
+    }
+  },
+  &quot;required&quot;: [
+    &quot;sensor_id&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;sensor_id&quot;: 53,
+  &quot;width&quot;: 640,
+  &quot;after&quot;: -1
+}
+</code></pre>
+<h2 id="carla_recorded_preview">carla_recorded_preview</h2>
+<p>Read the saved frame’s first RGB camera as a 640-pixel JPEG. Use session files for other original camera samples.</p>
+<p>Access: read-only. Route: <code>/api/sessions/{session_id}/preview/{index}</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;session_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    },
+    &quot;index&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 0
+    }
+  },
+  &quot;required&quot;: [
+    &quot;session_id&quot;,
+    &quot;index&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_session_file">carla_session_file</h2>
+<p>Read one session file, capped at 2 MiB. Binary is an embedded resource; large files return an error with a download URL. Paths must be relative and traversal-free.</p>
+<p>Access: read-only. Route: <code>/api/sessions/{session_id}/files/{filename}</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;session_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    },
+    &quot;filename&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;minLength&quot;: 1
+    }
+  },
+  &quot;required&quot;: [
+    &quot;session_id&quot;,
+    &quot;filename&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_download_links">carla_download_links</h2>
+<p>Get direct WebUI links without downloading archives/raw sensor datasets into model context. kind=session requires session_id; optional filename chooses one file.</p>
+<p>Access: read-only. Route: <code>adapter operation</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;kind&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;session&quot;,
+        &quot;opendrive&quot;,
+        &quot;parking_review&quot;,
+        &quot;webui&quot;
+      ]
+    },
+    &quot;session_id&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;pattern&quot;: &quot;^[A-Za-z0-9_-]+$&quot;,
+      &quot;maxLength&quot;: 128
+    },
+    &quot;filename&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;minLength&quot;: 1
+    }
+  },
+  &quot;required&quot;: [
+    &quot;kind&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;kind&quot;: &quot;parking_review&quot;
+}
+</code></pre>
+<h2 id="carla_scene_manifest">carla_scene_manifest</h2>
+<p>Read the current map’s exported browser geometry/texture manifest and base URL without loading the meshes.</p>
+<p>Access: read-only. Route: <code>adapter operation</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {},
+  &quot;required&quot;: [],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<h2 id="carla_inspect">carla_inspect</h2>
+<p>Read selected top-level status/map/catalog/configuration fields. Page a single array or object field to keep large maps out of model context. No scene mutation.</p>
+<p>Access: read-only. Route: <code>adapter operation</code>.</p>
+<p>Input schema:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;source&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [
+        &quot;status&quot;,
+        &quot;map&quot;,
+        &quot;catalog&quot;,
+        &quot;configuration&quot;
+      ]
+    },
+    &quot;fields&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;minLength&quot;: 1
+      },
+      &quot;minItems&quot;: 1
+    },
+    &quot;offset&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 0
+    },
+    &quot;limit&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1,
+      &quot;maximum&quot;: 500
+    }
+  },
+  &quot;required&quot;: [
+    &quot;source&quot;,
+    &quot;fields&quot;
+  ],
+  &quot;additionalProperties&quot;: false
+}
+</code></pre>
+<p>Example arguments (resolve IDs/points first):</p>
+<pre><code class="language-json">{
+  &quot;source&quot;: &quot;map&quot;,
+  &quot;fields&quot;: [
+    &quot;parking_spaces&quot;
+  ],
+  &quot;offset&quot;: 0,
+  &quot;limit&quot;: 10
+}
+</code></pre>
+<h2 id="cabin-preset-objects">Cabin preset objects</h2>
+<p>The WebUI draft definitions below use JavaScript object notation. Convert to JSON, preserving mount and attributes, and include them in the complete <code>sensors</code> list. <code>coverage</code> adds all three with unique names.</p>
+<pre><code class="language-javascript">{
+ overview:{name:'cabin_overview',type:'sensor.camera.rgb',mount:{x:.55,y:0,z:1.2,yaw:180,pitch:-8,roll:0},attributes:{image_size_x:'960',image_size_y:'600',fov:'120',post_process_profile:'CabinObservation',lens_k:'0',use_ray_tracing:'false'}},
+ dashboard:{name:'cabin_dashboard',type:'sensor.camera.rgb',mount:{x:-.20,y:0,z:1.25,yaw:0,pitch:-16},attributes:{image_size_x:'960',image_size_y:'600',fov:'100',post_process_profile:'CabinObservation',lens_k:'0',use_ray_tracing:'false'}},
+ rear:{name:'cabin_rear_seats',type:'sensor.camera.rgb',mount:{x:-.43,y:.05,z:1.22,yaw:180,pitch:-15},attributes:{image_size_x:'960',image_size_y:'600',fov:'100',post_process_profile:'CabinObservation',lens_k:'0',use_ray_tracing:'false'}}
+}
+</code></pre></main></div></body></html>

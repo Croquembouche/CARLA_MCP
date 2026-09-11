@@ -1,0 +1,744 @@
+primary: PID 1235605; log /media/william/mist1/Simulations/logs/multigpu-20260907-211647/primary.log
+gpu-0: PID 1239380; log /media/william/mist1/Simulations/logs/multigpu-20260907-211647/gpu-0.log
+gpu-1: PID 1239381; log /media/william/mist1/Simulations/logs/multigpu-20260907-211647/gpu-1.log
+gpu-2: PID 1239382; log /media/william/mist1/Simulations/logs/multigpu-20260907-211647/gpu-2.log
+gpu-3: PID 1239383; log /media/william/mist1/Simulations/logs/multigpu-20260907-211647/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 1260625; log /media/william/mist1/Simulations/logs/multigpu-20260907-212846/primary.log
+gpu-0: PID 1263969; log /media/william/mist1/Simulations/logs/multigpu-20260907-212846/gpu-0.log
+gpu-1: PID 1263971; log /media/william/mist1/Simulations/logs/multigpu-20260907-212846/gpu-1.log
+gpu-2: PID 1263972; log /media/william/mist1/Simulations/logs/multigpu-20260907-212846/gpu-2.log
+gpu-3: PID 1263973; log /media/william/mist1/Simulations/logs/multigpu-20260907-212846/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 1285905; log /media/william/mist1/Simulations/logs/multigpu-20260907-214138/primary.log
+gpu-0: PID 1289011; log /media/william/mist1/Simulations/logs/multigpu-20260907-214138/gpu-0.log
+gpu-1: PID 1289012; log /media/william/mist1/Simulations/logs/multigpu-20260907-214138/gpu-1.log
+gpu-2: PID 1289013; log /media/william/mist1/Simulations/logs/multigpu-20260907-214138/gpu-2.log
+gpu-3: PID 1289014; log /media/william/mist1/Simulations/logs/multigpu-20260907-214138/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 1293482; log /media/william/mist1/Simulations/logs/multigpu-20260907-214436/primary.log
+gpu-0: PID 1296708; log /media/william/mist1/Simulations/logs/multigpu-20260907-214436/gpu-0.log
+gpu-1: PID 1296709; log /media/william/mist1/Simulations/logs/multigpu-20260907-214436/gpu-1.log
+gpu-2: PID 1296710; log /media/william/mist1/Simulations/logs/multigpu-20260907-214436/gpu-2.log
+gpu-3: PID 1296711; log /media/william/mist1/Simulations/logs/multigpu-20260907-214436/gpu-3.log
+Waiting for worker maps and renderer warmup...
+primary: PID 1302106; log /media/william/mist1/Simulations/logs/multigpu-20260907-214807/primary.log
+gpu-0: PID 1305161; log /media/william/mist1/Simulations/logs/multigpu-20260907-214807/gpu-0.log
+gpu-1: PID 1305162; log /media/william/mist1/Simulations/logs/multigpu-20260907-214807/gpu-1.log
+gpu-2: PID 1305163; log /media/william/mist1/Simulations/logs/multigpu-20260907-214807/gpu-2.log
+gpu-3: PID 1305164; log /media/william/mist1/Simulations/logs/multigpu-20260907-214807/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 1309619; log /media/william/mist1/Simulations/logs/multigpu-20260907-215101/primary.log
+gpu-0: PID 1313317; log /media/william/mist1/Simulations/logs/multigpu-20260907-215101/gpu-0.log
+gpu-1: PID 1313318; log /media/william/mist1/Simulations/logs/multigpu-20260907-215101/gpu-1.log
+gpu-2: PID 1313319; log /media/william/mist1/Simulations/logs/multigpu-20260907-215101/gpu-2.log
+gpu-3: PID 1313320; log /media/william/mist1/Simulations/logs/multigpu-20260907-215101/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 169, in <module>
+    main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 148, in main
+    raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: primary exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260907-215101
+primary: PID 1336505; log /media/william/mist1/Simulations/logs/multigpu-20260907-220437/primary.log
+gpu-0: PID 1339823; log /media/william/mist1/Simulations/logs/multigpu-20260907-220437/gpu-0.log
+gpu-1: PID 1339824; log /media/william/mist1/Simulations/logs/multigpu-20260907-220437/gpu-1.log
+gpu-2: PID 1339825; log /media/william/mist1/Simulations/logs/multigpu-20260907-220437/gpu-2.log
+gpu-3: PID 1339826; log /media/william/mist1/Simulations/logs/multigpu-20260907-220437/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 1354287; log /media/william/mist1/Simulations/logs/multigpu-20260907-221319/primary.log
+gpu-0: PID 1357980; log /media/william/mist1/Simulations/logs/multigpu-20260907-221319/gpu-0.log
+gpu-1: PID 1357981; log /media/william/mist1/Simulations/logs/multigpu-20260907-221319/gpu-1.log
+gpu-2: PID 1357982; log /media/william/mist1/Simulations/logs/multigpu-20260907-221319/gpu-2.log
+gpu-3: PID 1357983; log /media/william/mist1/Simulations/logs/multigpu-20260907-221319/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 2613705; log /media/william/mist1/Simulations/logs/multigpu-20260908-095659/primary.log
+gpu-0: PID 2618927; log /media/william/mist1/Simulations/logs/multigpu-20260908-095659/gpu-0.log
+gpu-1: PID 2618928; log /media/william/mist1/Simulations/logs/multigpu-20260908-095659/gpu-1.log
+gpu-2: PID 2618929; log /media/william/mist1/Simulations/logs/multigpu-20260908-095659/gpu-2.log
+gpu-3: PID 2618930; log /media/william/mist1/Simulations/logs/multigpu-20260908-095659/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 2649918; log /media/william/mist1/Simulations/logs/multigpu-20260908-101444/primary.log
+gpu-0: PID 2653084; log /media/william/mist1/Simulations/logs/multigpu-20260908-101444/gpu-0.log
+gpu-1: PID 2653085; log /media/william/mist1/Simulations/logs/multigpu-20260908-101444/gpu-1.log
+gpu-2: PID 2653086; log /media/william/mist1/Simulations/logs/multigpu-20260908-101444/gpu-2.log
+gpu-3: PID 2653087; log /media/william/mist1/Simulations/logs/multigpu-20260908-101444/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 2666815; log /media/william/mist1/Simulations/logs/multigpu-20260908-102240/primary.log
+gpu-0: PID 2669824; log /media/william/mist1/Simulations/logs/multigpu-20260908-102240/gpu-0.log
+gpu-1: PID 2669825; log /media/william/mist1/Simulations/logs/multigpu-20260908-102240/gpu-1.log
+gpu-2: PID 2669826; log /media/william/mist1/Simulations/logs/multigpu-20260908-102240/gpu-2.log
+gpu-3: PID 2669827; log /media/william/mist1/Simulations/logs/multigpu-20260908-102240/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 2683905; log /media/william/mist1/Simulations/logs/multigpu-20260908-103046/primary.log
+gpu-0: PID 2686900; log /media/william/mist1/Simulations/logs/multigpu-20260908-103046/gpu-0.log
+gpu-1: PID 2686901; log /media/william/mist1/Simulations/logs/multigpu-20260908-103046/gpu-1.log
+gpu-2: PID 2686902; log /media/william/mist1/Simulations/logs/multigpu-20260908-103046/gpu-2.log
+gpu-3: PID 2686903; log /media/william/mist1/Simulations/logs/multigpu-20260908-103046/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 2788571; log /media/william/mist1/Simulations/logs/multigpu-20260908-112203/primary.log
+gpu-0: PID 2792241; log /media/william/mist1/Simulations/logs/multigpu-20260908-112203/gpu-0.log
+gpu-1: PID 2792242; log /media/william/mist1/Simulations/logs/multigpu-20260908-112203/gpu-1.log
+gpu-2: PID 2792243; log /media/william/mist1/Simulations/logs/multigpu-20260908-112203/gpu-2.log
+gpu-3: PID 2792244; log /media/william/mist1/Simulations/logs/multigpu-20260908-112203/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3060063; log /media/william/mist1/Simulations/logs/multigpu-20260908-133836/primary.log
+gpu-0: PID 3063614; log /media/william/mist1/Simulations/logs/multigpu-20260908-133836/gpu-0.log
+gpu-1: PID 3063615; log /media/william/mist1/Simulations/logs/multigpu-20260908-133836/gpu-1.log
+gpu-2: PID 3063616; log /media/william/mist1/Simulations/logs/multigpu-20260908-133836/gpu-2.log
+gpu-3: PID 3063617; log /media/william/mist1/Simulations/logs/multigpu-20260908-133836/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3148721; log /media/william/mist1/Simulations/logs/multigpu-20260908-142045/primary.log
+gpu-0: PID 3152018; log /media/william/mist1/Simulations/logs/multigpu-20260908-142045/gpu-0.log
+gpu-1: PID 3152019; log /media/william/mist1/Simulations/logs/multigpu-20260908-142045/gpu-1.log
+gpu-2: PID 3152020; log /media/william/mist1/Simulations/logs/multigpu-20260908-142045/gpu-2.log
+gpu-3: PID 3152021; log /media/william/mist1/Simulations/logs/multigpu-20260908-142045/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3174621; log /media/william/mist1/Simulations/logs/multigpu-20260908-143146/primary.log
+gpu-0: PID 3178174; log /media/william/mist1/Simulations/logs/multigpu-20260908-143146/gpu-0.log
+gpu-1: PID 3178178; log /media/william/mist1/Simulations/logs/multigpu-20260908-143146/gpu-1.log
+gpu-2: PID 3178179; log /media/william/mist1/Simulations/logs/multigpu-20260908-143146/gpu-2.log
+gpu-3: PID 3178180; log /media/william/mist1/Simulations/logs/multigpu-20260908-143146/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3204021; log /media/william/mist1/Simulations/logs/multigpu-20260908-144458/primary.log
+gpu-0: PID 3207478; log /media/william/mist1/Simulations/logs/multigpu-20260908-144458/gpu-0.log
+gpu-1: PID 3207479; log /media/william/mist1/Simulations/logs/multigpu-20260908-144458/gpu-1.log
+gpu-2: PID 3207480; log /media/william/mist1/Simulations/logs/multigpu-20260908-144458/gpu-2.log
+gpu-3: PID 3207481; log /media/william/mist1/Simulations/logs/multigpu-20260908-144458/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3218054; log /media/william/mist1/Simulations/logs/multigpu-20260908-145038/primary.log
+gpu-0: PID 3240443; log /media/william/mist1/Simulations/logs/multigpu-20260908-145038/gpu-0.log
+gpu-1: PID 3240444; log /media/william/mist1/Simulations/logs/multigpu-20260908-145038/gpu-1.log
+gpu-2: PID 3240445; log /media/william/mist1/Simulations/logs/multigpu-20260908-145038/gpu-2.log
+gpu-3: PID 3240446; log /media/william/mist1/Simulations/logs/multigpu-20260908-145038/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3252475; log /media/william/mist1/Simulations/logs/multigpu-20260908-150210/primary.log
+gpu-0: PID 3256076; log /media/william/mist1/Simulations/logs/multigpu-20260908-150210/gpu-0.log
+gpu-1: PID 3256077; log /media/william/mist1/Simulations/logs/multigpu-20260908-150210/gpu-1.log
+gpu-2: PID 3256078; log /media/william/mist1/Simulations/logs/multigpu-20260908-150210/gpu-2.log
+gpu-3: PID 3256079; log /media/william/mist1/Simulations/logs/multigpu-20260908-150210/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3344105; log /media/william/mist1/Simulations/logs/multigpu-20260908-154632/primary.log
+gpu-0: PID 3347465; log /media/william/mist1/Simulations/logs/multigpu-20260908-154632/gpu-0.log
+gpu-1: PID 3347467; log /media/william/mist1/Simulations/logs/multigpu-20260908-154632/gpu-1.log
+gpu-2: PID 3347468; log /media/william/mist1/Simulations/logs/multigpu-20260908-154632/gpu-2.log
+gpu-3: PID 3347469; log /media/william/mist1/Simulations/logs/multigpu-20260908-154632/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3547821; log /media/william/mist1/Simulations/logs/multigpu-20260908-172537/primary.log
+gpu-0: PID 3551315; log /media/william/mist1/Simulations/logs/multigpu-20260908-172537/gpu-0.log
+gpu-1: PID 3551316; log /media/william/mist1/Simulations/logs/multigpu-20260908-172537/gpu-1.log
+gpu-2: PID 3551317; log /media/william/mist1/Simulations/logs/multigpu-20260908-172537/gpu-2.log
+gpu-3: PID 3551318; log /media/william/mist1/Simulations/logs/multigpu-20260908-172537/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3863400; log /media/william/mist1/Simulations/logs/multigpu-20260908-200344/primary.log
+gpu-3: PID 3867007; log /media/william/mist1/Simulations/logs/multigpu-20260908-200344/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3885962; log /media/william/mist1/Simulations/logs/multigpu-20260908-201355/primary.log
+gpu-3: PID 3889173; log /media/william/mist1/Simulations/logs/multigpu-20260908-201355/gpu-3.log
+Waiting for worker maps and renderer warmup...
+READY: primary and GPU workers initialized.
+Use synchronous mode and consume every sensor frame before the next tick.
+Multiple sensor subscriptions are assigned across the selected GPUs.
+Press Ctrl-C to stop this group.
+primary: PID 3953419
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3957247
+gpu-2: PID 3957248
+gpu-2: PID 3961691
+gpu-2: PID 3967629
+primary: PID 3984489
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3988348
+gpu-2: PID 3988349
+gpu-2: PID 3992572
+gpu-1: PID 3995010
+primary: PID 4011430
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 4015134
+gpu-2: PID 4015136
+primary: PID 4034540
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 4038120
+gpu-2: PID 4038121
+gpu-2: PID 4042332
+gpu-2: PID 4045149
+primary: PID 4050333
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 4053649
+gpu-2: PID 4053650
+gpu-2: PID 4057834
+gpu-1: PID 4060291
+gpu-2: PID 4064326
+gpu-1: PID 4066933
+gpu-0: PID 4066935
+gpu-3: PID 4072869
+primary: PID 4081913
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 4085266
+primary: PID 4112065
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 4115556
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-3 exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260908-215732
+primary: PID 4122448
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 4125988
+primary: PID 20385
+READY: renderer pool accepts paused loadout changes.
+primary: PID 34283
+READY: renderer pool accepts paused loadout changes.
+primary: PID 51060
+READY: renderer pool accepts paused loadout changes.
+primary: PID 65475
+READY: renderer pool accepts paused loadout changes.
+primary: PID 74793
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 78227
+primary: PID 81210
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 84607
+gpu-2: PID 84608
+primary: PID 87872
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 91323
+gpu-2: PID 91324
+primary: PID 94612
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 98147
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-3 exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260908-231607
+primary: PID 107338
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 110747
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-3 exited with code -9; inspect /media/william/mist1/Simulations/logs/multigpu-20260908-232121
+primary: PID 147368
+READY: renderer pool accepts paused loadout changes.
+primary: PID 152486
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 155850
+primary: PID 1331017
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1334395
+primary: PID 1347619
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1350967
+primary: PID 1440174
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1443871
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-3 exited with code 1; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-102325
+primary: PID 1609351
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1622134
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-3 exited with code 1; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-113141
+primary: PID 1627259
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1633130
+primary: PID 1643448
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1648870
+primary: PID 1658821
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1662947
+gpu-2: PID 1676926
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: primary exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-114735
+primary: PID 1696020
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1700914
+gpu-2: PID 2001501
+primary: PID 2053944
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2060356
+gpu-2: PID 2073745
+primary: PID 2194334
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2197709
+gpu-2: PID 2201018
+primary: PID 2229531
+primary: PID 2242945
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2246177
+gpu-2: PID 2251055
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-2 exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-154844
+primary: PID 2257343
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2260601
+gpu-2: PID 2264112
+gpu-1: PID 2269949
+gpu-0: PID 2269951
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-0 exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-155443
+primary: PID 2283398
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2287022
+gpu-2: PID 2289716
+gpu-1: PID 2292106
+gpu-0: PID 2292107
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-1 exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-160604
+primary: PID 2311796
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2315080
+gpu-2: PID 2317842
+gpu-1: PID 2320231
+gpu-0: PID 2320232
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-0 exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-161844
+primary: PID 2327209
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2330847
+gpu-2: PID 2333594
+gpu-1: PID 2335926
+gpu-0: PID 2335927
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-1 exited with code -11; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-162510
+primary: PID 2354740
+gpu-0: PID 2357973
+gpu-1: PID 2357974
+gpu-2: PID 2357975
+gpu-3: PID 2357976
+READY: renderer pool accepts paused loadout changes.
+primary: PID 2396123
+primary: PID 2399207
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2402465
+gpu-2: PID 2402466
+primary: PID 2410235
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2413506
+gpu-2: PID 2413507
+primary: PID 2422284
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2425595
+gpu-2: PID 2425596
+gpu-1: PID 2470031
+gpu-0: PID 2470032
+gpu-1: PID 2496703
+gpu-0: PID 2496704
+primary: PID 2517120
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2520407
+gpu-2: PID 2520408
+gpu-1: PID 2520409
+gpu-0: PID 2520410
+gpu-3: PID 2528061
+gpu-2: PID 2528062
+gpu-1: PID 2528063
+gpu-0: PID 2528064
+primary: PID 2574704
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2578071
+gpu-2: PID 2578072
+gpu-1: PID 2578073
+gpu-0: PID 2578074
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-2 exited with code -9; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-180950
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 173, in main
+    try:child.wait(timeout=max(.1,deadline-time.monotonic()))
+  File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1953, in _wait
+    time.sleep(delay)
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 73, in stop
+    def stop(_signum, _frame): raise KeyboardInterrupt
+KeyboardInterrupt
+primary: PID 2614746
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2624405
+gpu-2: PID 2624406
+gpu-1: PID 2624407
+gpu-0: PID 2624412
+primary: PID 2708061
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2711347
+gpu-2: PID 2711348
+gpu-1: PID 2711349
+gpu-0: PID 2711350
+primary: PID 2747611
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 2751806
+gpu-2: PID 2751811
+gpu-1: PID 2751812
+gpu-0: PID 2751813
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 142, in main
+    inspect()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 112, in inspect
+    if child.poll() is not None: raise RuntimeError(f'{role} exited with code {child.returncode}; inspect {output}')
+RuntimeError: gpu-0 exited with code -9; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-192051
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 173, in main
+    try:child.wait(timeout=max(.1,deadline-time.monotonic()))
+  File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1953, in _wait
+    time.sleep(delay)
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 73, in stop
+    def stop(_signum, _frame): raise KeyboardInterrupt
+KeyboardInterrupt
+primary: PID 3087606
+READY: renderer pool accepts paused loadout changes.
+primary: PID 3120062
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3124169
+gpu-3: PID 3128760
+gpu-3: PID 3134826
+primary: PID 3144206
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3147465
+gpu-2: PID 3147466
+gpu-1: PID 3147467
+gpu-0: PID 3147468
+primary: PID 3164028
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3168235
+gpu-2: PID 3168236
+gpu-1: PID 3168237
+gpu-0: PID 3168238
+primary: PID 150527
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 153765
+gpu-2: PID 153766
+gpu-1: PID 153767
+gpu-0: PID 153768
+primary: PID 183496
+Traceback (most recent call last):
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 182, in <module>
+    if __name__ == '__main__': main()
+  File "/media/william/mist1/Simulations/scripts/carla-multigpu.py", line 122, in main
+    if children['primary'].poll() is not None: raise RuntimeError('Primary exited during startup')
+RuntimeError: Primary exited during startup
+primary: PID 193337
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 196749
+gpu-2: PID 196750
+gpu-1: PID 196751
+gpu-0: PID 196752
+primary: PID 213234
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 216551
+gpu-2: PID 216552
+gpu-1: PID 216553
+gpu-0: PID 216554
+primary: PID 230636
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 233921
+gpu-2: PID 233922
+gpu-1: PID 233923
+gpu-0: PID 233924
+primary: PID 244059
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 247406
+gpu-2: PID 247407
+gpu-1: PID 247409
+gpu-0: PID 247410
+primary: PID 261096
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 264398
+gpu-2: PID 264399
+gpu-1: PID 264400
+gpu-0: PID 264402
+primary: PID 274490
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 277771
+gpu-2: PID 277772
+gpu-1: PID 277773
+gpu-0: PID 277774
+primary: PID 314884
+primary: PID 321263
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 326320
+gpu-2: PID 326321
+gpu-1: PID 326322
+gpu-0: PID 326323
+primary: PID 341515
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 344838
+gpu-2: PID 344840
+gpu-1: PID 344841
+gpu-0: PID 344842
+primary: PID 376585
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 380010
+gpu-2: PID 380011
+gpu-1: PID 380012
+gpu-0: PID 380013
+primary: PID 725112
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 728458
+gpu-2: PID 728459
+gpu-1: PID 728460
+gpu-0: PID 728461
+primary: PID 734730
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 738043
+gpu-2: PID 738044
+gpu-1: PID 738045
+gpu-0: PID 738046
+primary: PID 743941
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 747233
+gpu-2: PID 747234
+gpu-1: PID 747235
+gpu-0: PID 747236
+primary: PID 755272
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 758791
+gpu-2: PID 758792
+gpu-1: PID 758793
+gpu-0: PID 758794
+primary: PID 772180
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 775658
+gpu-2: PID 775659
+gpu-1: PID 775660
+gpu-0: PID 775661
+primary: PID 784758
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 788178
+gpu-2: PID 788179
+gpu-1: PID 788180
+gpu-0: PID 788181
+primary: PID 855945
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 859278
+gpu-2: PID 859280
+gpu-1: PID 859281
+gpu-0: PID 859282
+primary: PID 1020511
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1023904
+gpu-2: PID 1023905
+gpu-1: PID 1023906
+gpu-0: PID 1023907
+primary: PID 1052802
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1056432
+gpu-2: PID 1056433
+gpu-1: PID 1056434
+gpu-0: PID 1056435
+primary: PID 1274195
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1277553
+gpu-2: PID 1277554
+gpu-1: PID 1277555
+gpu-0: PID 1277556
+primary: PID 1310659
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1314029
+gpu-2: PID 1314030
+gpu-1: PID 1314031
+gpu-0: PID 1314032
+primary: PID 1573571
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1576920
+gpu-2: PID 1576921
+gpu-1: PID 1576922
+gpu-0: PID 1576923
+primary: PID 1594946
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 1598286
+gpu-2: PID 1598287
+gpu-1: PID 1598288
+gpu-0: PID 1598289
+primary: PID 3617881
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3621269
+gpu-2: PID 3621270
+gpu-1: PID 3621271
+gpu-0: PID 3621272
+primary: PID 3627899
+READY: renderer pool accepts paused loadout changes.
+primary: PID 3632589
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3636248
+gpu-2: PID 3636250
+gpu-1: PID 3636251
+gpu-0: PID 3636252
+primary: PID 3657328
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3660740
+gpu-2: PID 3660741
+gpu-1: PID 3660742
+gpu-0: PID 3660743
+primary: PID 3688139
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3691634
+gpu-2: PID 3691635
+gpu-1: PID 3691636
+gpu-0: PID 3691637
+primary: PID 3704723
+READY: renderer pool accepts paused loadout changes.
+gpu-3: PID 3708401
+gpu-2: PID 3708402
+gpu-1: PID 3708408
+gpu-0: PID 3708409

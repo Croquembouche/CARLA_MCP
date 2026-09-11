@@ -1,0 +1,3 @@
+{
+  "error": "HTTPStatusError(\"Client error '409 Conflict' for url 'http://127.0.0.1:8095/api/command/sensors'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409\")"
+}

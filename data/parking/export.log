@@ -1,0 +1,216 @@
+Using musl
+Opening shared memory
+Existing instance is the same age or newer
+Failed to find game directory: /mnt/simulations/UnrealEngine5_carla/CarlaUnreal/Binaries
+- Existing per-process limit (soft=1048576, hard=1048576) is enough for us (need only 1048576)
+Increasing per-process limit of core file size to infinity.
+LogInit: Display: Running engine for game: CarlaUnreal
+LogCore: Display: Requested channels: 'cpu,gpu,frame,log,bookmark,screenshot,region'
+LogTrace: Display: Display Control listening on port 35683
+LogCsvProfiler: Display: Metadata set : platform="Linux"
+LogCsvProfiler: Display: Metadata set : config="Development"
+LogCsvProfiler: Display: Metadata set : buildversion="UE5-CL-0"
+LogCsvProfiler: Display: Metadata set : engineversion="5.5.4-0+UE5"
+LogCsvProfiler: Display: Metadata set : os="Ubuntu 22.04.5 LTS 5.15.0-190-generic"
+LogCsvProfiler: Display: Metadata set : cpu="GenuineIntel|Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz"
+LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+LogCsvProfiler: Display: Metadata set : pgoprofilingenabled="0"
+LogCsvProfiler: Display: Metadata set : ltoenabled="0"
+LogCsvProfiler: Display: Metadata set : asan="0"
+LogCsvProfiler: Display: Metadata set : commandline="" /mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -run=pythonscript -script=/mnt/simulations/control-center/diagnostics/export_parking.py -unattended -NullRHI -nosound -nosplash -stdout""
+LogCsvProfiler: Display: Metadata set : loginid="178760b60dd744c4bf6f26b000267069-000003e9"
+LogCsvProfiler: Display: Metadata set : llm="0"
+LogConfig: Display: Loading IOS ini files took 0.49 seconds
+LogConfig: Display: Loading Android ini files took 0.50 seconds
+LogConfig: Display: Loading Mac ini files took 0.53 seconds
+LogConfig: Display: Loading VulkanPC ini files took 0.54 seconds
+LogConfig: Display: Loading TVOS ini files took 0.73 seconds
+LogConfig: Display: Loading Windows ini files took 0.76 seconds
+LogConfig: Display: Loading Unix ini files took 0.77 seconds
+LogConfig: Display: Loading VisionOS ini files took 0.77 seconds
+LogConfig: Display: Loading Linux ini files took 0.81 seconds
+LogConfig: Display: Loading LinuxArm64 ini files took 0.84 seconds
+RenderDocPlugin: Display: RenderDoc plugin will not be loaded. Use '-AttachRenderDoc' on the cmd line or enable 'renderdoc.AutoAttach' in the plugin settings.
+Shutdown handler: initialize.
+LogStudioTelemetry: Display: Starting StudioTelemetry Module
+LogStreaming: Display: AsyncLoading2 - Created: Event Driven Loader: false, Async Loading Thread: false, Async Post Load: false
+LogStreaming: Display: AsyncLoading2 - Initialized
+[2026.09.09-14.12.34:278][  0]LogConsoleManager: Warning: Setting the console variable 'r.CustomDepth' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetByDeviceProfile'. Value remains '3'
+[2026.09.09-14.12.34:278][  0]LogConsoleManager: Warning: Setting the console variable 'r.Streaming.PoolSize' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetByDeviceProfile'. Value remains '4000'
+[2026.09.09-14.12.34:278][  0]LogConsoleManager: Warning: Setting the console variable 'r.ReflectionCaptureResolution' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetByDeviceProfile'. Value remains '512'
+[2026.09.09-14.12.34:278][  0]LogConsoleManager: Warning: Setting the console variable 'r.SkinCache.SceneMemoryLimitInMB' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetByDeviceProfile'. Value remains '1024'
+[2026.09.09-14.12.34:280][  0]LogConsoleManager: Warning: Setting the console variable 'r.Streaming.LimitPoolSizeToVRAM' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetByProjectSetting'. Value remains '1'
+[2026.09.09-14.12.34:281][  0]LogHAL: Display: Platform has ~ 126 GB [134964416512 / 137438953472 / 126], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.09.09-14.12.34:282][  0]LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+[2026.09.09-14.12.37:841][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatASTC
+[2026.09.09-14.12.37:841][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatDXT
+[2026.09.09-14.12.37:841][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatETC2
+[2026.09.09-14.12.37:841][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatIntelISPCTexComp
+[2026.09.09-14.12.37:841][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatUncompressed
+[2026.09.09-14.12.37:841][  0]LogTextureFormatOodle: Display: Oodle Texture TFO init; latest sdk version = 2.9.12
+[2026.09.09-14.12.37:841][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: liboo2texlinux64.2.9.12.so
+[2026.09.09-14.12.37:841][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: liboo2texlinux64.2.9.5.so
+[2026.09.09-14.12.37:842][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatOodle
+[2026.09.09-14.12.37:929][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2026.09.09-14.12.37:929][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxEditor'
+[2026.09.09-14.12.37:929][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2026.09.09-14.12.37:929][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2026.09.09-14.12.37:986][  0]LogTargetPlatformManager: Display: Building Assets For LinuxEditor
+[2026.09.09-14.12.38:030][  0]LogDerivedDataCache: Display: Memory: Max Cache Size: -1 MB
+[2026.09.09-14.12.38:035][  0]LogZenServiceInstance: Display: Unreal Zen Storage Server HTTP service at [::1]:8558 status: OK!.
+[2026.09.09-14.12.38:035][  0]LogDerivedDataCache: Display: ZenLocal: Using ZenServer HTTP service at http://[::1]:8558/ with namespace ue.ddc status: OK!.
+[2026.09.09-14.12.38:040][  0]LogDerivedDataCache: Display: /mnt/simulations/cache/unreal: Performance: Latency=0.01ms. RandomReadSpeed=1445.78MBs, RandomWriteSpeed=259.40MBs. Assigned SpeedClass 'Local'
+[2026.09.09-14.12.38:042][  0]LogShaderCompilers: Display: Using Local Shader Compiler with 25 workers.
+[2026.09.09-14.12.38:044][  0]LogShaderCompilers: Display: Compiling shader autogen file: ../../../../carla/Unreal/CarlaUnreal/Intermediate/ShaderAutogen/VULKAN_SM6/AutogenShaderHeaders.ush
+[2026.09.09-14.12.38:044][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2026.09.09-14.12.40:289][  0]LogEditorDomain: Display: EditorDomain is Disabled
+[2026.09.09-14.12.40:608][  0]LogStreaming: Display: FlushAsyncLoading(1): 1 QueuedPackages, 0 AsyncPackages
+[2026.09.09-14.12.40:680][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+[2026.09.09-14.12.40:680][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+[2026.09.09-14.12.40:721][  0]LogCsvProfiler: Display: Metadata set : deviceprofile="LinuxEditor"
+[2026.09.09-14.12.40:743][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:744][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness has reached state ExportsDone > CreateLinkerLoadExports, releasing request 8 to allow recursive sync load to finish
+[2026.09.09-14.12.40:744][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:744][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:744][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness has reached state ExportsDone > CreateLinkerLoadExports, releasing request 9 to allow recursive sync load to finish
+[2026.09.09-14.12.40:744][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:744][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:745][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec has reached state ExportsDone > CreateLinkerLoadExports, releasing request 10 to allow recursive sync load to finish
+[2026.09.09-14.12.40:745][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:745][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:745][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec has reached state ExportsDone > CreateLinkerLoadExports, releasing request 11 to allow recursive sync load to finish
+[2026.09.09-14.12.40:745][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:745][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/WorldGridMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: ExportsDone) recursively from another package /Engine/EngineMaterials/WorldGridMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness has reached state ExportsDone > CreateLinkerLoadExports, releasing request 13 to allow recursive sync load to finish
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness with requester package /Engine/EngineMaterials/WorldGridMaterial
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: ExportsDone) recursively from another package /Engine/EngineMaterials/WorldGridMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec has reached state ExportsDone > CreateLinkerLoadExports, releasing request 14 to allow recursive sync load to finish
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec with requester package /Engine/EngineMaterials/WorldGridMaterial
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/WorldGridMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness has reached state ExportsDone > CreateLinkerLoadExports, releasing request 16 to allow recursive sync load to finish
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness with requester package /Engine/EngineMaterials/DefaultDeferredDecalMaterial
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec has reached state ExportsDone > CreateLinkerLoadExports, releasing request 17 to allow recursive sync load to finish
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec with requester package /Engine/EngineMaterials/DefaultDeferredDecalMaterial
+[2026.09.09-14.12.40:746][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness has reached state ExportsDone > CreateLinkerLoadExports, releasing request 19 to allow recursive sync load to finish
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness with requester package /Engine/EngineMaterials/DefaultLightFunctionMaterial
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec has reached state ExportsDone > CreateLinkerLoadExports, releasing request 20 to allow recursive sync load to finish
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec with requester package /Engine/EngineMaterials/DefaultLightFunctionMaterial
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/DefaultDiffuse with requester package /Engine/EngineMaterials/DefaultLightFunctionMaterial
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness has reached state ExportsDone > CreateLinkerLoadExports, releasing request 22 to allow recursive sync load to finish
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness with requester package /Engine/EngineMaterials/DefaultPostProcessMaterial
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec has reached state ExportsDone > CreateLinkerLoadExports, releasing request 23 to allow recursive sync load to finish
+[2026.09.09-14.12.40:747][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec with requester package /Engine/EngineMaterials/DefaultPostProcessMaterial
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components with requester package /Engine/EngineMaterials/DefaultLightFunctionMaterial
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultPostProcessMaterial has reached state ExportsDone > CreateLinkerLoadExports, releasing request 21 to allow recursive sync load to finish
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/DefaultPostProcessMaterial with requester package /Engine/EngineMaterials/DefaultLightFunctionMaterial
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultPostProcessMaterial has reached state ExportsDone > CreateLinkerLoadExports, releasing request 24 to allow recursive sync load to finish
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/DefaultPostProcessMaterial with requester package /Engine/EngineMaterials/DefaultLightFunctionMaterial
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultLightFunctionMaterial has reached state ExportsDone > CreateLinkerLoadExports, releasing request 18 to allow recursive sync load to finish
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/DefaultLightFunctionMaterial with requester package /Engine/EngineMaterials/DefaultDeferredDecalMaterial
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultLightFunctionMaterial has reached state ExportsDone > CreateLinkerLoadExports, releasing request 25 to allow recursive sync load to finish
+[2026.09.09-14.12.40:748][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/DefaultLightFunctionMaterial with requester package /Engine/EngineMaterials/DefaultDeferredDecalMaterial
+[2026.09.09-14.12.40:749][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultDeferredDecalMaterial has reached state ExportsDone > CreateLinkerLoadExports, releasing request 15 to allow recursive sync load to finish
+[2026.09.09-14.12.40:749][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/DefaultDeferredDecalMaterial with requester package /Engine/EngineMaterials/WorldGridMaterial
+[2026.09.09-14.12.40:749][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: ExportsDone) recursively from another package /Engine/EngineMaterials/WorldGridMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:749][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultDeferredDecalMaterial has reached state ExportsDone > CreateLinkerLoadExports, releasing request 26 to allow recursive sync load to finish
+[2026.09.09-14.12.40:749][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/DefaultDeferredDecalMaterial with requester package /Engine/EngineMaterials/WorldGridMaterial
+[2026.09.09-14.12.40:749][  0]LogStreaming: Display: Merging postload groups of package /Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:749][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/T_Default_Material_Grid_M with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:750][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/T_Default_Material_Grid_N with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:750][  0]LogStreaming: Display: Package /Engine/EngineMaterials/WorldGridMaterial has reached state ExportsDone > CreateLinkerLoadExports, releasing request 12 to allow recursive sync load to finish
+[2026.09.09-14.12.40:750][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/WorldGridMaterial with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:750][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/WorldGridMaterial (state: ExportsDone) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.09.09-14.12.40:750][  0]LogStreaming: Display: Package /Engine/EngineMaterials/WorldGridMaterial has reached state ExportsDone > CreateLinkerLoadExports, releasing request 27 to allow recursive sync load to finish
+[2026.09.09-14.12.40:750][  0]LogStreaming: Display: Merging postload groups of package /Engine/EngineMaterials/WorldGridMaterial with requester package /Engine/EngineMaterials/DefaultTextMaterialOpaque
+[2026.09.09-14.12.40:751][  0]LogTextureEncodingSettings: Display: Texture Encode Speed: Final (cook).
+[2026.09.09-14.12.40:751][  0]LogTextureEncodingSettings: Display: Oodle Texture Encode Speed settings: Fast: RDO Off Lambda=0, Effort=Normal Final: RDO Off Lambda=0, Effort=Normal
+[2026.09.09-14.12.40:751][  0]LogTextureEncodingSettings: Display: Shared linear texture encoding: Disabled
+[2026.09.09-14.12.40:891][  0]LogMeshReduction: Display: HLOD mesh reduction module (r.ProxyLODMeshReductionModule) set to "ProxyLODMeshReduction" which doesn't exist.
+[2026.09.09-14.12.40:904][  0]LogMeshReduction: Display: Using QuadricMeshReduction for automatic static mesh reduction
+[2026.09.09-14.12.40:904][  0]LogMeshReduction: Display: Using SkeletalMeshReduction for automatic skeletal mesh reduction
+[2026.09.09-14.12.40:904][  0]LogMeshReduction: Display: No automatic mesh merging module available
+[2026.09.09-14.12.40:904][  0]LogMeshReduction: Display: No distributed automatic mesh merging module available
+[2026.09.09-14.12.40:945][  0]LogClass: Warning: ConsoleVariable-Backed Enum Property of type '/Script/Engine.EVelocityOutputPass' was set from a string. Please update the cvar in your ini files.
+[2026.09.09-14.12.41:422][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2026.09.09-14.12.41:423][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2026.09.09-14.12.41:431][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2026.09.09-14.12.41:463][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2026.09.09-14.12.41:575][  0]LogStreaming: Display: ImportPackages: SkipPackage: /Game/Carla/Static/GenericMaterials/Roads/MI_Road_Asphalt_B (0x5BE3521F97756E12) /Game/Carla/Static/GenericMaterials/Roads/MI_Road_Asphalt_B (0x5BE3521F97756E12) - Skipping non mounted imported package /CarlaTools/Static/GenericMaterials/00_MastersOpt/Textures/T_MacroVariation (0xE168377D7762A93F)
+[2026.09.09-14.12.42:203][  0]LogVirtualization: Display: VirtualizationSystem name found in ini file: None
+[2026.09.09-14.12.42:203][  0]LogVirtualization: Display: FNullVirtualizationSystem mounted, virtualization will be disabled
+[2026.09.09-14.12.42:600][  0]LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize started...
+[2026.09.09-14.12.42:604][  0]LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize took 4.028 ms
+[2026.09.09-14.12.43:627][  0]LogMetaSound: Display: MetaSound Page Target Initialized to 'Default'
+[2026.09.09-14.12.43:633][  0]LogAudio: Display: Registering Engine Module Parameter Interfaces...
+[2026.09.09-14.12.47:471][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.09.09-14.12.47:471][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.09.09-14.12.49:866][  0]LogStreaming: Display: AsyncLoading2 - NotifyRegistrationComplete: Registered 39102 public script object entries (1050.02 KB)
+[2026.09.09-14.12.49:866][  0]LogStreaming: Display: AsyncLoading2 - Thread Started: false, IsInitialLoad: false
+[2026.09.09-14.12.50:874][  0]LogAssetRegistry: Display: Asset registry cache read as 497.6 MiB from ../../../../carla/Unreal/CarlaUnreal/Intermediate/CachedAssetRegistry_0.bin
+[2026.09.09-14.12.50:885][  0]LogAssetRegistry: Display: AssetDataGatherer spent 0.685s loading caches ../../../../carla/Unreal/CarlaUnreal/Intermediate/CachedAssetRegistry_*.bin.
+[2026.09.09-14.12.51:892][  0]LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2026.09.09-14.12.53:621][  0]LogPython: Display: No enabled plugins with python dependencies found, skipping
+[2026.09.09-14.12.53:639][  0]LogConsoleManager: Warning: Setting the console variable 'r.Streaming.LimitPoolSizeToVRAM' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetByProjectSetting'. Value remains '1'
+[2026.09.09-14.12.55:353][  0]LogPackageName: Warning: GetLocalFullPath called on FPackagePath ../../../../carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Content/Static/GenericMaterials/00_MastersOpt/Textures/T_MacroVariation which has an unspecified header extension, and the path does not exist on disk. Assuming EPackageExtension::Asset.
+[2026.09.09-14.12.55:356][  0]LogPython: Display: Running start-up script /mnt/simulations/UnrealEngine5_carla/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py... started...
+[2026.09.09-14.12.55:436][  0]LogPython: Display: Running start-up script /mnt/simulations/UnrealEngine5_carla/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py... took 80.435 ms
+[2026.09.09-14.12.55:438][  0]LogPythonScriptCommandlet: Display: Running Python script: /mnt/simulations/control-center/diagnostics/export_parking.py
+[2026.09.09-14.12.55:498][  0]LogPython: Warning: /mnt/simulations/control-center/diagnostics/export_parking.py:4: DeprecationWarning: EditorLevelLibrary: Function 'load_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+  unreal.EditorLevelLibrary.load_level('/Game/Carla/Maps/Town10HD_Opt')
+
+[2026.09.09-14.12.55:976][  0]LogStreaming: Display: ImportPackages: SkipPackage: /Game/Carla/Static/GenericMaterials/00_MastersOpt/M_MaterialMaster (0xA64DE6C70BE5EFFB) /Game/Carla/Static/GenericMaterials/00_MastersOpt/M_MaterialMaster (0xA64DE6C70BE5EFFB) - Skipping non mounted imported package /CarlaTools/Static/GenericMaterials/00_MastersOpt/Textures/T_MacroVariation (0xE168377D7762A93F)
+[2026.09.09-14.12.56:237][  0]LogStreaming: Display: ImportPackages: SkipPackage: /Game/Carla/Static/GenericMaterials/000_Masters/Vegetation/M_VegetationMaster (0x7003AD20E87393B4) /Game/Carla/Static/GenericMaterials/000_Masters/Vegetation/M_VegetationMaster (0x7003AD20E87393B4) - Skipping non mounted imported package /Game/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components (0x8AC6E54DD4B0B633)
+[2026.09.09-14.12.56:237][  0]LogStreaming: Display: ImportPackages: SkipPackage: /Game/Carla/Static/GenericMaterials/000_Masters/Vegetation/M_VegetationMaster (0x7003AD20E87393B4) /Game/Carla/Static/GenericMaterials/000_Masters/Vegetation/M_VegetationMaster (0x7003AD20E87393B4) - Skipping non mounted imported package /Game/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay (0x6B2652B63B28BC9E)
+[2026.09.09-14.12.56:238][  0]LogStreaming: Display: ImportPackages: SkipPackage: /Game/Carla/Static/GenericMaterials/000_Masters/Vegetation/M_VegetationMaster (0x7003AD20E87393B4) /Game/Carla/Static/GenericMaterials/000_Masters/Vegetation/M_VegetationMaster (0x7003AD20E87393B4) - Skipping non mounted imported package /Game/EngineMaterials/BlendFunc_DefBase (0xD67F58700FA8E56F)
+[2026.09.09-14.12.56:238][  0]LogStreaming: Display: ImportPackages: SkipPackage: /Game/Carla/Static/GenericMaterials/000_Masters/Vegetation/M_VegetationMaster (0x7003AD20E87393B4) /Game/Carla/Static/GenericMaterials/000_Masters/Vegetation/M_VegetationMaster (0x7003AD20E87393B4) - Skipping non mounted imported package /Game/EngineMaterials/BlendFunc_DefBlend (0xDE743CA632A7E10)
+[2026.09.09-14.12.56:525][  0]LogStreaming: Display: ImportPackages: SkipPackage: /Game/Carla/Static/GenericMaterials/FoliageMaterialAssets/MF_WorldspaceColorVariation (0x5E94CD774766B9B9) /Game/Carla/Static/GenericMaterials/FoliageMaterialAssets/MF_WorldspaceColorVariation (0x5E94CD774766B9B9) - Skipping non mounted imported package /Game/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components (0x8AC6E54DD4B0B633)
+[2026.09.09-14.12.56:525][  0]LogStreaming: Display: ImportPackages: SkipPackage: /Game/Carla/Static/GenericMaterials/FoliageMaterialAssets/MF_WorldspaceColorVariation (0x5E94CD774766B9B9) /Game/Carla/Static/GenericMaterials/FoliageMaterialAssets/MF_WorldspaceColorVariation (0x5E94CD774766B9B9) - Skipping non mounted imported package /Game/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay (0x6B2652B63B28BC9E)
+[2026.09.09-14.13.12:529][  0]LogPython: Warning: /mnt/simulations/control-center/diagnostics/export_parking.py:5: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+  for a in unreal.EditorLevelLibrary.get_all_level_actors():
+
+[2026.09.09-14.13.12:707][  0]LogPythonScriptCommandlet: Display: Python script executed successfully
+[2026.09.09-14.13.12:707][  0]LogInit: Display: 
+[2026.09.09-14.13.12:707][  0]LogInit: Display: Warning/Error Summary (Unique only)
+[2026.09.09-14.13.12:707][  0]LogInit: Display: -----------------------------------
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogConsoleManager: Warning: Setting the console variable 'r.CustomDepth' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetByDeviceProfile'. Value remains '3'
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogConsoleManager: Warning: Setting the console variable 'r.Streaming.PoolSize' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetByDeviceProfile'. Value remains '4000'
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogConsoleManager: Warning: Setting the console variable 'r.ReflectionCaptureResolution' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetByDeviceProfile'. Value remains '512'
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogConsoleManager: Warning: Setting the console variable 'r.SkinCache.SceneMemoryLimitInMB' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetByDeviceProfile'. Value remains '1024'
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogConsoleManager: Warning: Setting the console variable 'r.Streaming.LimitPoolSizeToVRAM' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetByProjectSetting'. Value remains '1'
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogClass: Warning: ConsoleVariable-Backed Enum Property of type '/Script/Engine.EVelocityOutputPass' was set from a string. Please update the cvar in your ini files.
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogPackageName: Warning: GetLocalFullPath called on FPackagePath ../../../../carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Content/Static/GenericMaterials/00_MastersOpt/Textures/T_MacroVariation which has an unspecified header extension, and the path does not exist on disk. Assuming EPackageExtension::Asset.
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogPython: Warning: /mnt/simulations/control-center/diagnostics/export_parking.py:4: DeprecationWarning: EditorLevelLibrary: Function 'load_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+  unreal.EditorLevelLibrary.load_level('/Game/Carla/Maps/Town10HD_Opt')
+
+[2026.09.09-14.13.12:707][  0]LogInit: Display: LogPython: Warning: /mnt/simulations/control-center/diagnostics/export_parking.py:5: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+  for a in unreal.EditorLevelLibrary.get_all_level_actors():
+
+[2026.09.09-14.13.12:707][  0]LogInit: Display: 
+[2026.09.09-14.13.12:707][  0]LogInit: Display: Success - 0 error(s), 14 warning(s)
+[2026.09.09-14.13.12:707][  0]LogInit: Display: 
+Execution of commandlet took:  17.35 seconds
+[2026.09.09-14.13.13:620][  0]LogShaderCompilers: Display: Shaders left to compile 0
+[2026.09.09-14.13.13:893][  0]LogStudioTelemetry: Display: Shutdown StudioTelemetry Module
+Shutdown handler: cleanup.

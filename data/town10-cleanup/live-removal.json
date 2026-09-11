@@ -1,0 +1,42 @@
+[
+  {
+    "id": "34",
+    "source": "BP_Carlacola_Parked_C_3",
+    "deleted": true
+  },
+  {
+    "id": "35",
+    "source": "BP_Carlacola_Parked_C_5",
+    "deleted": true
+  },
+  {
+    "id": "39",
+    "source": "BP_EuropeanHGV_Parked_C_3",
+    "deleted": true
+  },
+  {
+    "id": "40",
+    "source": "BP_EuropeanHGV_Parked_C_4",
+    "deleted": true
+  },
+  {
+    "id": "41",
+    "source": "BP_EuropeanHGV_Parked_C_5",
+    "deleted": true
+  },
+  {
+    "id": "50",
+    "source": "BP_MercedesSprinter_Parked_C_7",
+    "deleted": true
+  },
+  {
+    "id": "65",
+    "source": "SM_Mustang_prop2_421",
+    "deleted": true
+  },
+  {
+    "id": "68",
+    "source": "SM_Tesla2_418",
+    "deleted": true
+  }
+]

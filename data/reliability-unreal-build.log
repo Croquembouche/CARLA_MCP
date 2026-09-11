@@ -1,0 +1,50 @@
+Setting up bundled DotNet SDK
+Building ShaderCompileWorker...
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Target is up to date
+Total execution time: 2.07 seconds
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll CarlaUnrealEditor Linux Development -project=/mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -buildscw -WaitMutex
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Building CarlaUnrealEditor...
+[Adaptive Build] Excluded from Renderer unity file: DeferredShadingRenderer.cpp, SceneRendering.cpp, RayTracingInstanceCulling.cpp
+[Adaptive Build] Excluded from Engine unity file: RayTracingGeometryManager.cpp
+Executing up to 24 actions based on MaxProcessorCount override
+Using Unreal Build Accelerator local executor to run 10 action(s)
+  Storage capacity 40Gb
+---- Starting trace ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 10 action(s) started ------
+[1/10] WriteMetadata UnrealEditor.version (CarlaUnrealEditor) (UBA disabled)
+[2/10] Compile Module.Carla.10.cpp
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.10.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/CityMapGenerator.cpp:69:28: warning: 'OnObjectSaved' is deprecated: Use OnObjectPreSave instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+   69 |     FCoreUObjectDelegates::OnObjectSaved.Broadcast(this);
+      |                            ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectGlobals.h:3142:2: note: 'OnObjectSaved' has been explicitly marked deprecated here
+ 3142 |         UE_DEPRECATED(5.0, "Use OnObjectPreSave instead.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+1 warning generated.
+[3/10] Compile Module.Carla.11.cpp
+[4/10] Compile Module.Carla.12.cpp
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.12.cpp:49:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Server/CarlaServer.cpp:501:46: warning: 'GetNamesOfAllActors' is deprecated: This command no longer makes sense since the apply_textures API relies on IDs. [-Wdeprecated-declarations]
+  501 |     TArray<FString> NamesFString = GameMode->GetNamesOfAllActors();
+      |                                              ^
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaGameModeBase.h:118:5: note: 'GetNamesOfAllActors' has been explicitly marked deprecated here
+  118 |   [[deprecated("This command no longer makes sense since the apply_textures API relies on IDs.")]]
+      |     ^
+1 warning generated.
+[5/10] Link (lld) libUnrealEditor-Carla.so (UBA disabled)
+[6/10] Link (lld) libUnrealEditor-CarlaUnreal.so (UBA disabled)
+[7/10] Link (lld) libUnrealEditor-StreetMapRuntime.so (UBA disabled)
+[8/10] Link (lld) libUnrealEditor-StreetMapImporting.so (UBA disabled)
+[9/10] Link (lld) libUnrealEditor-CarlaTools.so (UBA disabled)
+[10/10] WriteMetadata CarlaUnrealEditor.target (UBA disabled)
+Trace file written to /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.uba with size 17.6kb
+Total time in Unreal Build Accelerator local executor: 266.95 seconds
+Total execution time: 270.69 seconds

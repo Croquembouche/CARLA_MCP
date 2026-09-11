@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "total_messages": 700,
+  "topics": {
+    "/clock": 50,
+    "/carla/ego_25/odometry": 50,
+    "/carla/ego_25/front_rgb/image": 50,
+    "/carla/ego_25/front_rgb/metadata": 50,
+    "/carla/ego_25/front_rgb/camera_info": 50,
+    "/carla/ego_25/roof_lidar/points": 50,
+    "/carla/ego_25/roof_lidar/metadata": 50,
+    "/carla/ego_25/front_radar/points": 50,
+    "/carla/ego_25/front_radar/metadata": 50,
+    "/carla/ego_25/imu/data": 50,
+    "/carla/ego_25/imu/metadata": 50,
+    "/carla/ego_25/gnss/data": 50,
+    "/carla/ego_25/gnss/metadata": 50,
+    "/tf": 50
+  },
+  "camera_original_bytes": "identical",
+  "lidar_coordinate_conversion": "exact",
+  "timestamps": "matched sensor simulation timestamps"
+}

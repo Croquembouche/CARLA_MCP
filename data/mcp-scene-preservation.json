@@ -1,0 +1,10 @@
+{
+  "phase": "connected",
+  "running": true,
+  "same_managed_ids": true,
+  "same_sensor_ids": true,
+  "before_frame": 337538,
+  "after_frame": 342904,
+  "managed_actors": 28,
+  "sensors": 6
+}

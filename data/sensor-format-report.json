@@ -1,0 +1,57 @@
+[
+  {
+    "type": "sensor.camera.rgb",
+    "passed": true,
+    "session": "20260907-221608-ea23c8"
+  },
+  {
+    "type": "sensor.camera.depth",
+    "passed": true,
+    "session": "20260907-221610-8a2654"
+  },
+  {
+    "type": "sensor.camera.semantic_segmentation",
+    "passed": true,
+    "session": "20260907-221611-805ae0"
+  },
+  {
+    "type": "sensor.camera.instance_segmentation",
+    "passed": true,
+    "session": "20260907-221612-487da7"
+  },
+  {
+    "type": "sensor.camera.normals",
+    "passed": true,
+    "session": "20260907-221612-c142ed"
+  },
+  {
+    "type": "sensor.camera.optical_flow",
+    "passed": true,
+    "session": "20260907-221613-5c029b"
+  },
+  {
+    "type": "sensor.lidar.ray_cast",
+    "passed": true,
+    "session": "20260907-221614-7349ff"
+  },
+  {
+    "type": "sensor.lidar.ray_cast_semantic",
+    "passed": true,
+    "session": "20260907-221615-e738b2"
+  },
+  {
+    "type": "sensor.other.radar",
+    "passed": true,
+    "session": "20260907-221616-8e064f"
+  },
+  {
+    "type": "sensor.other.imu",
+    "passed": true,
+    "session": "20260907-221617-948ffb"
+  },
+  {
+    "type": "sensor.other.gnss",
+    "passed": true,
+    "session": "20260907-221617-16d99d"
+  }
+]

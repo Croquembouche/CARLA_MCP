@@ -1,0 +1,7 @@
+{
+  "new_ego_sensor_count": 0,
+  "configuration_export_after_native_removal": "passed",
+  "removed_actor_cleanup": "passed",
+  "ticks_to_cleanup": 1,
+  "test_actor": 25
+}

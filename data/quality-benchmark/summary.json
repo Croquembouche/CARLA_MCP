@@ -1,0 +1,186 @@
+[
+  {
+    "case": "baseline-high",
+    "frames": 258,
+    "measured_seconds": 59.61877497599926,
+    "simulation_fps": 4.329557929758445,
+    "frame_ms_median": 218.45972348819487,
+    "frame_ms_p95": 229.17572798905894,
+    "service_ram_gib_mean": 53.827763080596924,
+    "service_ram_gib_peak": 53.829803466796875,
+    "host_available_gib_min": 61.853580474853516,
+    "cpu_core_equivalents": 7.735324897224638,
+    "cpu_percent_of_28_threads": 27.62616034723085,
+    "gpu_power_watts_mean": 268.32732142857145,
+    "gpu_power_watts_peak": 306.24,
+    "maximum_observed_frame_gap_s": 1.2687282839906402,
+    "gpus": [
+      {
+        "nvidia_index": 0,
+        "utilization_percent_mean": 15.25,
+        "utilization_percent_p95": 16.0,
+        "vram_gib_peak": 6.1318359375,
+        "power_watts_mean": 88.21053571428571
+      },
+      {
+        "nvidia_index": 1,
+        "utilization_percent_mean": 34.482142857142854,
+        "utilization_percent_p95": 40.0,
+        "vram_gib_peak": 5.7373046875,
+        "power_watts_mean": 35.0125
+      },
+      {
+        "nvidia_index": 2,
+        "utilization_percent_mean": 27.25,
+        "utilization_percent_p95": 38.0,
+        "vram_gib_peak": 7.0146484375,
+        "power_watts_mean": 61.63125
+      },
+      {
+        "nvidia_index": 3,
+        "utilization_percent_mean": 34.517857142857146,
+        "utilization_percent_p95": 39.0,
+        "vram_gib_peak": 7.48046875,
+        "power_watts_mean": 83.47303571428571
+      }
+    ]
+  },
+  {
+    "case": "baseline-fresh",
+    "frames": 395,
+    "measured_seconds": 59.51578178402269,
+    "simulation_fps": 6.63950018830852,
+    "frame_ms_median": 141.8118694855366,
+    "frame_ms_p95": 160.05145100643858,
+    "service_ram_gib_mean": 54.53214756135018,
+    "service_ram_gib_peak": 54.64131164550781,
+    "host_available_gib_min": 60.500450134277344,
+    "cpu_core_equivalents": 8.591038628665357,
+    "cpu_percent_of_28_threads": 30.68228081666199,
+    "gpu_power_watts_mean": 326.8091935483871,
+    "gpu_power_watts_peak": 363.26,
+    "maximum_observed_frame_gap_s": 1.0751484329812229,
+    "gpus": [
+      {
+        "nvidia_index": 0,
+        "utilization_percent_mean": 17.661290322580644,
+        "utilization_percent_p95": 18.0,
+        "vram_gib_peak": 6.4873046875,
+        "power_watts_mean": 88.8324193548387
+      },
+      {
+        "nvidia_index": 1,
+        "utilization_percent_mean": 28.741935483870968,
+        "utilization_percent_p95": 32.0,
+        "vram_gib_peak": 6.990234375,
+        "power_watts_mean": 80.56435483870968
+      },
+      {
+        "nvidia_index": 2,
+        "utilization_percent_mean": 27.20967741935484,
+        "utilization_percent_p95": 35.0,
+        "vram_gib_peak": 6.064453125,
+        "power_watts_mean": 27.526935483870968
+      },
+      {
+        "nvidia_index": 3,
+        "utilization_percent_mean": 37.193548387096776,
+        "utilization_percent_p95": 39.0,
+        "vram_gib_peak": 7.1904296875,
+        "power_watts_mean": 129.88548387096773
+      }
+    ]
+  },
+  {
+    "case": "epic-720p",
+    "frames": 520,
+    "measured_seconds": 89.45405955298338,
+    "simulation_fps": 5.815140265213225,
+    "frame_ms_median": 162.21495799254626,
+    "frame_ms_p95": 176.88614502549171,
+    "service_ram_gib_mean": 54.837880302877984,
+    "service_ram_gib_peak": 55.034507751464844,
+    "host_available_gib_min": 59.091312408447266,
+    "cpu_core_equivalents": 8.405879369174317,
+    "cpu_percent_of_28_threads": 30.02099774705113,
+    "gpu_power_watts_mean": 299.5089411764706,
+    "gpu_power_watts_peak": 349.64,
+    "maximum_observed_frame_gap_s": 1.2555760529940017,
+    "gpus": [
+      {
+        "nvidia_index": 0,
+        "utilization_percent_mean": 50.09411764705882,
+        "utilization_percent_p95": 53.0,
+        "vram_gib_peak": 8.0205078125,
+        "power_watts_mean": 144.15023529411764
+      },
+      {
+        "nvidia_index": 1,
+        "utilization_percent_mean": 29.776470588235295,
+        "utilization_percent_p95": 33.0,
+        "vram_gib_peak": 7.60546875,
+        "power_watts_mean": 90.99117647058823
+      },
+      {
+        "nvidia_index": 2,
+        "utilization_percent_mean": 25.50588235294118,
+        "utilization_percent_p95": 36.0,
+        "vram_gib_peak": 6.63671875,
+        "power_watts_mean": 28.30470588235294
+      },
+      {
+        "nvidia_index": 3,
+        "utilization_percent_mean": 26.6,
+        "utilization_percent_p95": 37.0,
+        "vram_gib_peak": 6.5126953125,
+        "power_watts_mean": 36.062823529411766
+      }
+    ]
+  },
+  {
+    "case": "epic-1080p",
+    "frames": 418,
+    "measured_seconds": 89.67026983102551,
+    "simulation_fps": 4.659925519295234,
+    "frame_ms_median": 203.62360897706822,
+    "frame_ms_p95": 221.40219999710098,
+    "service_ram_gib_mean": 54.83386465621321,
+    "service_ram_gib_peak": 54.92107391357422,
+    "host_available_gib_min": 58.388057708740234,
+    "cpu_core_equivalents": 8.068999672778295,
+    "cpu_percent_of_28_threads": 28.817855974208197,
+    "gpu_power_watts_mean": 358.38520547945205,
+    "gpu_power_watts_peak": 411.99,
+    "maximum_observed_frame_gap_s": 1.3678016169578768,
+    "gpus": [
+      {
+        "nvidia_index": 0,
+        "utilization_percent_mean": 15.684931506849315,
+        "utilization_percent_p95": 17.0,
+        "vram_gib_peak": 6.0517578125,
+        "power_watts_mean": 90.23082191780821
+      },
+      {
+        "nvidia_index": 1,
+        "utilization_percent_mean": 36.47945205479452,
+        "utilization_percent_p95": 39.0,
+        "vram_gib_peak": 5.6357421875,
+        "power_watts_mean": 41.04684931506849
+      },
+      {
+        "nvidia_index": 2,
+        "utilization_percent_mean": 40.87671232876713,
+        "utilization_percent_p95": 44.0,
+        "vram_gib_peak": 8.255859375,
+        "power_watts_mean": 138.7386301369863
+      },
+      {
+        "nvidia_index": 3,
+        "utilization_percent_mean": 36.64383561643836,
+        "utilization_percent_p95": 39.0,
+        "vram_gib_peak": 8.2421875,
+        "power_watts_mean": 88.36890410958904
+      }
+    ]
+  }
+]

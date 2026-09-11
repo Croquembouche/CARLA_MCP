@@ -1,0 +1,29 @@
+{
+  "topology": {
+    "vehicle_heads": 43,
+    "pedestrian_heads": 19
+  },
+  "camera_images": {
+    "on": [
+      "/mnt/simulations/control-center/data/movement-verification/worker-0-arrows-on.png",
+      "/mnt/simulations/control-center/data/movement-verification/worker-1-arrows-on.png",
+      "/mnt/simulations/control-center/data/movement-verification/worker-2-arrows-on.png",
+      "/mnt/simulations/control-center/data/movement-verification/worker-3-arrows-on.png"
+    ],
+    "off": [
+      "/mnt/simulations/control-center/data/movement-verification/worker-0-arrows-off.png",
+      "/mnt/simulations/control-center/data/movement-verification/worker-1-arrows-off.png",
+      "/mnt/simulations/control-center/data/movement-verification/worker-2-arrows-off.png",
+      "/mnt/simulations/control-center/data/movement-verification/worker-3-arrows-off.png"
+    ]
+  },
+  "recording": {
+    "id": "20260908-142321-c428ec",
+    "frames": 24,
+    "native_movement_packets": 24,
+    "ros_messages": 24,
+    "exact_words_and_timestamps": true,
+    "original_ego_sensors": 5
+  },
+  "result": "passed"
+}

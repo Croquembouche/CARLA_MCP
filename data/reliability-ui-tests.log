@@ -1,0 +1,6 @@
+PASS: request acknowledgement, expected connection loss, page reload, startup stages, confirmed completion, other clients, rejected/unconfirmed requests and timeout
+PASS: recovery remains pending until actors and sensors are restored
+(node:158328) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///mnt/simulations/control-center/static/scene-operation.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /mnt/simulations/control-center/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

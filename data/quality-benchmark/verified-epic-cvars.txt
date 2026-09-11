@@ -1,0 +1,8 @@
+[2026.09.10-17.24.38:889][220]sg.ShadowQuality = "3"
+[2026.09.10-17.24.38:892][220]r.ViewDistanceScale = "1"
+[2026.09.10-17.24.38:893][220]r.MaxAnisotropy = "8"
+[2026.09.10-17.24.38:893][220]r.Lumen.Reflections.DownsampleFactor = "1"
+[2026.09.10-17.25.56:046][654]sg.ShadowQuality = "3"      LastSetBy: Console
+[2026.09.10-17.25.56:093][655]r.ViewDistanceScale = "1"      LastSetBy: Console
+[2026.09.10-17.25.56:139][655]r.Lumen.Reflections.DownsampleFactor = "1"      LastSetBy: Console
+[2026.09.10-17.25.56:193][655]r.MaxAnisotropy = "8"      LastSetBy: Console

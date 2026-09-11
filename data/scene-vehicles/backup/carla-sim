@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+source /media/william/mist1/Simulations/env.sh
+exec env -u PYTHONHOME -u PYTHONPATH "UE_LocalDataCachePath=$SIMULATIONS_LINUX/cache/unreal" "UE_ZenDataPath=$SIMULATIONS_LINUX/cache/zen" "$CARLA_UNREAL_ENGINE_PATH/Engine/Binaries/Linux/UnrealEditor" "$CARLA_ROOT/Unreal/CarlaUnreal/CarlaUnreal.uproject" -game "$@"

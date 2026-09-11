@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import zlib from 'node:zlib';import {bendGeometry} from '../scripts/spline.mjs';
+const s={axis:'.X',boundary:[0,0],bounds:[[0,-1,-1],[100,1,1]],transform:[10,0,20,0,0,0,1,1,1,1],start_position:[0,0,0],end_position:[200,0,0],start_tangent:[200,0,0],end_tangent:[200,0,0],up:[0,0,1],smooth:false,start_offset:[0,0],end_offset:[0,0],start_scale:[1,1],end_scale:[1,1],start_roll:0,end_roll:0};
+const [p,n]=bendGeometry(new Float32Array([0,0,0,1,0,0]),new Float32Array([0,1,0,0,1,0]),s);assert.deepEqual([...p],[10,0,20,12,0,20]);assert.deepEqual([...n],[0,1,0,0,1,0]);
+const [curve]=bendGeometry(new Float32Array([0,0,0,1,0,0]),new Float32Array([0,1,0,0,1,0]),{...s,end_position:[100,100,0],start_tangent:[200,0,0],end_tangent:[0,200,0]});assert.deepEqual([...curve],[10,0,20,11,0,21]);
+const root='static/scenes/Town10HD_Opt/',manifest=JSON.parse(fs.readFileSync(root+'manifest.json'));let triangles=0;
+for(const layer of manifest.layers){const bytes=zlib.gunzipSync(fs.readFileSync(root+layer.file)),length=bytes.readUInt32LE(),meta=JSON.parse(bytes.subarray(4,4+length)),base=4+length+(4-length%4)%4;const array=(r,Type=Float32Array)=>new Type(bytes.buffer,bytes.byteOffset+base+r[0],r[1]);let total=0;
+ for(const g of meta.groups){for(const x of array(g.transforms))assert(Number.isFinite(x));assert.equal(g.transforms[1],g.count*10);for(const section of meta.meshes[g.mesh].sections){const p=array(section.position),ix=array(section.index,Uint32Array);assert.equal(ix.length%3,0);for(const i of ix)assert(i<p.length/3);for(const x of p)assert(Number.isFinite(x));total+=ix.length/3*g.count;}}
+ assert.equal(total,layer.triangles,layer.category+' triangle accounting');triangles+=total;
+}
+assert.equal(triangles,manifest.summary.triangles);assert.equal(manifest.summary.instances,manifest.summary.sourceInstances);assert.equal(manifest.summary.bakedSplines,1762);assert(manifest.summary.instances>57000);assert(manifest.summary.bytes<64*1024*1024);console.log('PASS: spline endpoints, coordinate conversion, finite meshes, valid indices, triangle accounting, complete object count and transfer budget');

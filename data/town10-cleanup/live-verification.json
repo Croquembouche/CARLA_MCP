@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "actors": 41,
+  "scenery_vehicles": 38,
+  "deleted_sources": 10,
+  "ego_sensors": 5,
+  "gpu_workers": 2,
+  "paused": true,
+  "weather_preserved": true,
+  "all_actor_models_roles_and_sensors_preserved": true,
+  "destination_max_reprojection_m": 0.0074698357296702975,
+  "error": null,
+  "frame": 248
+}

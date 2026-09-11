@@ -1,0 +1,6848 @@
+{
+  "red": [
+    {
+      "frame": 4142,
+      "x": -48.52180862426758,
+      "y": 101.16597747802734,
+      "speed": 0.979469358921051,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4143,
+      "x": -48.52180862426758,
+      "y": 101.16657257080078,
+      "speed": 1.4689812660217285,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4144,
+      "x": -48.52179718017578,
+      "y": 101.17069244384766,
+      "speed": 1.9615707397460938,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4145,
+      "x": -48.521759033203125,
+      "y": 101.18350219726562,
+      "speed": 2.4671363830566406,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4146,
+      "x": -48.52019500732422,
+      "y": 101.2041015625,
+      "speed": 1.9307215213775635,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4147,
+      "x": -48.51874542236328,
+      "y": 101.23321533203125,
+      "speed": 1.1600102186203003,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4148,
+      "x": -48.51823425292969,
+      "y": 101.27232360839844,
+      "speed": 0.923442006111145,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4149,
+      "x": -48.518253326416016,
+      "y": 101.32190704345703,
+      "speed": 1.1105804443359375,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4150,
+      "x": -48.51839828491211,
+      "y": 101.38202667236328,
+      "speed": 1.3445879220962524,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4151,
+      "x": -48.518489837646484,
+      "y": 101.45247650146484,
+      "speed": 1.5368046760559082,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4152,
+      "x": -48.518470764160156,
+      "y": 101.53296661376953,
+      "speed": 1.7090336084365845,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4153,
+      "x": -48.51833724975586,
+      "y": 101.62322235107422,
+      "speed": 1.8845136165618896,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4154,
+      "x": -48.51811981201172,
+      "y": 101.72306823730469,
+      "speed": 2.069794178009033,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4155,
+      "x": -48.517845153808594,
+      "y": 101.83243560791016,
+      "speed": 2.261918544769287,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4156,
+      "x": -48.51752853393555,
+      "y": 101.95133209228516,
+      "speed": 2.4566805362701416,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4157,
+      "x": -48.517173767089844,
+      "y": 102.07980346679688,
+      "speed": 2.6517834663391113,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4158,
+      "x": -48.51679992675781,
+      "y": 102.21792602539062,
+      "speed": 2.84659481048584,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4159,
+      "x": -48.51640701293945,
+      "y": 102.36575317382812,
+      "speed": 3.041168451309204,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4160,
+      "x": -48.515995025634766,
+      "y": 102.52332305908203,
+      "speed": 3.2356746196746826,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4161,
+      "x": -48.515560150146484,
+      "y": 102.69065856933594,
+      "speed": 3.4301838874816895,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4162,
+      "x": -48.515106201171875,
+      "y": 102.86776733398438,
+      "speed": 3.624863386154175,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4163,
+      "x": -48.514625549316406,
+      "y": 103.05479431152344,
+      "speed": 3.8260297775268555,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4164,
+      "x": -48.514137268066406,
+      "y": 103.25221252441406,
+      "speed": 4.037955284118652,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4165,
+      "x": -48.51361083984375,
+      "y": 103.46051788330078,
+      "speed": 4.2608513832092285,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4166,
+      "x": -48.51304626464844,
+      "y": 103.6802749633789,
+      "speed": 4.495079517364502,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4167,
+      "x": -48.51243209838867,
+      "y": 103.91209411621094,
+      "speed": 4.7413482666015625,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4168,
+      "x": -48.51178741455078,
+      "y": 104.15142822265625,
+      "speed": 4.8305182456970215,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4169,
+      "x": -48.51114273071289,
+      "y": 104.39302825927734,
+      "speed": 4.854860782623291,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4170,
+      "x": -48.510494232177734,
+      "y": 104.63533020019531,
+      "speed": 4.864854335784912,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4171,
+      "x": -48.50984573364258,
+      "y": 104.8780288696289,
+      "speed": 4.868605613708496,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4172,
+      "x": -48.509193420410156,
+      "y": 105.12097930908203,
+      "speed": 4.869600772857666,
+      "brake": 0.0,
+      "light": null,
+      "at_light": false,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4173,
+      "x": -48.508544921875,
+      "y": 105.36370086669922,
+      "speed": 4.856693267822266,
+      "brake": 0.0009528223308734596,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4174,
+      "x": -48.50790023803711,
+      "y": 105.60282135009766,
+      "speed": 4.744472503662109,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4175,
+      "x": -48.507266998291016,
+      "y": 105.83320617675781,
+      "speed": 4.532900333404541,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4176,
+      "x": -48.50667953491211,
+      "y": 106.04991149902344,
+      "speed": 4.222213268280029,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4177,
+      "x": -48.506134033203125,
+      "y": 106.2501449584961,
+      "speed": 3.8792247772216797,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4178,
+      "x": -48.50566101074219,
+      "y": 106.43341827392578,
+      "speed": 3.536858558654785,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4179,
+      "x": -48.50527572631836,
+      "y": 106.59980773925781,
+      "speed": 3.1947832107543945,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4180,
+      "x": -48.50494384765625,
+      "y": 106.74929809570312,
+      "speed": 2.8529844284057617,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4181,
+      "x": -48.50465393066406,
+      "y": 106.8818588256836,
+      "speed": 2.511575222015381,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4182,
+      "x": -48.50440979003906,
+      "y": 106.99745178222656,
+      "speed": 2.1705970764160156,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4183,
+      "x": -48.50420379638672,
+      "y": 107.09603881835938,
+      "speed": 1.8300987482070923,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4184,
+      "x": -48.50403594970703,
+      "y": 107.17762756347656,
+      "speed": 1.4900128841400146,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4185,
+      "x": -48.50391387939453,
+      "y": 107.24221801757812,
+      "speed": 1.1502188444137573,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4186,
+      "x": -48.50382614135742,
+      "y": 107.2898178100586,
+      "speed": 0.8106163144111633,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4187,
+      "x": -48.5037841796875,
+      "y": 107.3204345703125,
+      "speed": 0.47112539410591125,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4188,
+      "x": -48.5037841796875,
+      "y": 107.33406066894531,
+      "speed": 0.13134707510471344,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4189,
+      "x": -48.50381088256836,
+      "y": 107.33588409423828,
+      "speed": 0.007195692043751478,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4190,
+      "x": -48.503841400146484,
+      "y": 107.33677673339844,
+      "speed": 0.001260030665434897,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4191,
+      "x": -48.50386428833008,
+      "y": 107.33771514892578,
+      "speed": 0.003211942268535495,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4192,
+      "x": -48.50387954711914,
+      "y": 107.3384780883789,
+      "speed": 0.004852918907999992,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4193,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0048073939979076385,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4194,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4195,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4196,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4197,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4198,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4199,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4200,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4201,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4202,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4203,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4204,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4205,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4206,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4207,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4208,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4209,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4210,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4211,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4212,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4213,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4214,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4215,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4216,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4217,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4218,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4219,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4220,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4221,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4222,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4223,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4224,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4225,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4226,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4227,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4228,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4229,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4230,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4231,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4232,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4233,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4234,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4235,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4236,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4237,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4238,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4239,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4240,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    },
+    {
+      "frame": 4241,
+      "x": -48.5038948059082,
+      "y": 107.3389663696289,
+      "speed": 0.0,
+      "brake": 1.0,
+      "light": 18,
+      "at_light": true,
+      "junction": false,
+      "road": 13,
+      "next": "[]"
+    }
+  ],
+  "trace": [
+    {
+      "left": {
+        "frame": 4400,
+        "x": -48.496482849121094,
+        "y": 110.16593170166016,
+        "speed": 0.979469358921051,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4400,
+        "x": -44.06874465942383,
+        "y": 129.9403533935547,
+        "speed": 5.50715970993042,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4401,
+        "x": -48.496482849121094,
+        "y": 110.16593170166016,
+        "speed": 1.468836784362793,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4401,
+        "x": -44.34437561035156,
+        "y": 129.93885803222656,
+        "speed": 5.504762172698975,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4402,
+        "x": -48.49647903442383,
+        "y": 110.16875457763672,
+        "speed": 1.96089506149292,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4402,
+        "x": -44.619873046875,
+        "y": 129.9373779296875,
+        "speed": 5.5028791427612305,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4403,
+        "x": -48.496463775634766,
+        "y": 110.1803970336914,
+        "speed": 2.4662487506866455,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4403,
+        "x": -44.895263671875,
+        "y": 129.93589782714844,
+        "speed": 5.501405715942383,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4404,
+        "x": -48.49557113647461,
+        "y": 110.20108795166016,
+        "speed": 2.6140289306640625,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4404,
+        "x": -45.17058563232422,
+        "y": 129.93434143066406,
+        "speed": 5.499793529510498,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4405,
+        "x": -48.49648666381836,
+        "y": 110.2269287109375,
+        "speed": 1.662591814994812,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4405,
+        "x": -45.44585418701172,
+        "y": 129.93270874023438,
+        "speed": 5.498383522033691,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4406,
+        "x": -48.49699783325195,
+        "y": 110.26349639892578,
+        "speed": 1.0615482330322266,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4406,
+        "x": -45.72103500366211,
+        "y": 129.9309844970703,
+        "speed": 5.497150421142578,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4407,
+        "x": -48.497100830078125,
+        "y": 110.30235290527344,
+        "speed": 0.7862454056739807,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4407,
+        "x": -45.996131896972656,
+        "y": 129.9292449951172,
+        "speed": 5.497649192810059,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4408,
+        "x": -48.496978759765625,
+        "y": 110.33419799804688,
+        "speed": 0.6846300363540649,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4408,
+        "x": -46.271141052246094,
+        "y": 129.92758178710938,
+        "speed": 5.498759746551514,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4409,
+        "x": -48.496822357177734,
+        "y": 110.35371398925781,
+        "speed": 0.5375969409942627,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4409,
+        "x": -46.545963287353516,
+        "y": 129.92599487304688,
+        "speed": 5.497934341430664,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4410,
+        "x": -48.496707916259766,
+        "y": 110.35899353027344,
+        "speed": 0.41707363724708557,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4410,
+        "x": -46.82059097290039,
+        "y": 129.92449951171875,
+        "speed": 5.497354507446289,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4411,
+        "x": -48.49662399291992,
+        "y": 110.36058807373047,
+        "speed": 0.3034017086029053,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4411,
+        "x": -47.095123291015625,
+        "y": 129.92300415039062,
+        "speed": 5.496936798095703,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4412,
+        "x": -48.496559143066406,
+        "y": 110.36214447021484,
+        "speed": 0.17965978384017944,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4412,
+        "x": -47.369632720947266,
+        "y": 129.9215087890625,
+        "speed": 5.49655818939209,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4413,
+        "x": -48.49652099609375,
+        "y": 110.36338806152344,
+        "speed": 0.07552225142717361,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4413,
+        "x": -47.64415740966797,
+        "y": 129.91995239257812,
+        "speed": 5.4959025382995605,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4414,
+        "x": -48.49649429321289,
+        "y": 110.36417388916016,
+        "speed": 0.0036880311090499163,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4414,
+        "x": -47.91869354248047,
+        "y": 129.91830444335938,
+        "speed": 5.495203495025635,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4415,
+        "x": -48.49647521972656,
+        "y": 110.3645248413086,
+        "speed": 0.036419421434402466,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4415,
+        "x": -48.193199157714844,
+        "y": 129.91656494140625,
+        "speed": 5.494422912597656,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4416,
+        "x": -48.4964599609375,
+        "y": 110.36456298828125,
+        "speed": 0.05047335848212242,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4416,
+        "x": -48.4676399230957,
+        "y": 129.9148406982422,
+        "speed": 5.495762348175049,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4417,
+        "x": -48.49644470214844,
+        "y": 110.36443328857422,
+        "speed": 0.0476144403219223,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4417,
+        "x": -48.742034912109375,
+        "y": 129.9131622314453,
+        "speed": 5.497774600982666,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4418,
+        "x": -48.496429443359375,
+        "y": 110.36424255371094,
+        "speed": 0.03613593801856041,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4418,
+        "x": -49.01660919189453,
+        "y": 129.9115753173828,
+        "speed": 5.500679016113281,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4419,
+        "x": -48.49641799926758,
+        "y": 110.36406707763672,
+        "speed": 0.022343145683407784,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4419,
+        "x": -49.291378021240234,
+        "y": 129.91001892089844,
+        "speed": 5.502919673919678,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4420,
+        "x": -48.496402740478516,
+        "y": 110.36394500732422,
+        "speed": 0.010158131830394268,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4420,
+        "x": -49.566287994384766,
+        "y": 129.90847778320312,
+        "speed": 5.504650592803955,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4421,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0014109136536717415,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4421,
+        "x": -49.84129333496094,
+        "y": 129.90692138671875,
+        "speed": 5.505876064300537,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4422,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4422,
+        "x": -50.11637496948242,
+        "y": 129.90530395507812,
+        "speed": 5.506601333618164,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4423,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4423,
+        "x": -50.39148712158203,
+        "y": 129.9036102294922,
+        "speed": 5.506898403167725,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4424,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4424,
+        "x": -50.66658401489258,
+        "y": 129.90182495117188,
+        "speed": 5.507055759429932,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4425,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4425,
+        "x": -50.941646575927734,
+        "y": 129.90005493164062,
+        "speed": 5.508326053619385,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4426,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4426,
+        "x": -51.216732025146484,
+        "y": 129.89830017089844,
+        "speed": 5.510290622711182,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4427,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4427,
+        "x": -51.49208068847656,
+        "y": 129.8966064453125,
+        "speed": 5.513034820556641,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4428,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4428,
+        "x": -51.767642974853516,
+        "y": 129.89492797851562,
+        "speed": 5.515281677246094,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4429,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4429,
+        "x": -52.043357849121094,
+        "y": 129.8932647705078,
+        "speed": 5.517134189605713,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4430,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4430,
+        "x": -52.31916809082031,
+        "y": 129.89157104492188,
+        "speed": 5.518611431121826,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4431,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4431,
+        "x": -52.59504699707031,
+        "y": 129.8898468017578,
+        "speed": 5.5197272300720215,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4432,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4432,
+        "x": -52.8709602355957,
+        "y": 129.8880615234375,
+        "speed": 5.520411014556885,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4433,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4433,
+        "x": -53.146873474121094,
+        "y": 129.88619995117188,
+        "speed": 5.520942211151123,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4434,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4434,
+        "x": -53.42279815673828,
+        "y": 129.88424682617188,
+        "speed": 5.521290302276611,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4435,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4435,
+        "x": -53.69878387451172,
+        "y": 129.8822479248047,
+        "speed": 5.522290229797363,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4436,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4436,
+        "x": -53.974918365478516,
+        "y": 129.88027954101562,
+        "speed": 5.523482322692871,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4437,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4437,
+        "x": -54.251155853271484,
+        "y": 129.87831115722656,
+        "speed": 5.524508953094482,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4438,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4438,
+        "x": -54.527462005615234,
+        "y": 129.8763427734375,
+        "speed": 5.525394916534424,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4439,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4439,
+        "x": -54.80380630493164,
+        "y": 129.87440490722656,
+        "speed": 5.5264081954956055,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4440,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4440,
+        "x": -55.080169677734375,
+        "y": 129.87252807617188,
+        "speed": 5.5275397300720215,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4441,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4441,
+        "x": -55.35654067993164,
+        "y": 129.87066650390625,
+        "speed": 5.528381824493408,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4442,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4442,
+        "x": -55.63294219970703,
+        "y": 129.86875915527344,
+        "speed": 5.527684688568115,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4443,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4443,
+        "x": -55.90939712524414,
+        "y": 129.86680603027344,
+        "speed": 5.526319980621338,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4444,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4444,
+        "x": -56.18586730957031,
+        "y": 129.86474609375,
+        "speed": 5.525137901306152,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4445,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4445,
+        "x": -56.46232223510742,
+        "y": 129.8626251220703,
+        "speed": 5.5241217613220215,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4446,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4446,
+        "x": -56.73874282836914,
+        "y": 129.8604736328125,
+        "speed": 5.523248195648193,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4447,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4447,
+        "x": -57.01512145996094,
+        "y": 129.85833740234375,
+        "speed": 5.522489547729492,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4448,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4448,
+        "x": -57.29145050048828,
+        "y": 129.85621643066406,
+        "speed": 5.522039890289307,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4449,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4449,
+        "x": -57.56773376464844,
+        "y": 129.8541717529297,
+        "speed": 5.521920204162598,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4450,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4450,
+        "x": -57.844024658203125,
+        "y": 129.8522491455078,
+        "speed": 5.522153854370117,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4451,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4451,
+        "x": -58.120365142822266,
+        "y": 129.85035705566406,
+        "speed": 5.52039098739624,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4452,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4452,
+        "x": -58.39672088623047,
+        "y": 129.84844970703125,
+        "speed": 5.518493175506592,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4453,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4453,
+        "x": -58.6728630065918,
+        "y": 129.84646606445312,
+        "speed": 5.515751361846924,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4454,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4454,
+        "x": -58.94879150390625,
+        "y": 129.84561157226562,
+        "speed": 5.513262748718262,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4455,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4455,
+        "x": -59.22456741333008,
+        "y": 129.8443603515625,
+        "speed": 5.511436939239502,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4456,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4456,
+        "x": -59.500244140625,
+        "y": 129.8427734375,
+        "speed": 5.509949207305908,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4457,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4457,
+        "x": -59.77585220336914,
+        "y": 129.84117126464844,
+        "speed": 5.508741855621338,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4458,
+        "x": -48.49639129638672,
+        "y": 110.36388397216797,
+        "speed": 0.0,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4458,
+        "x": -60.05140686035156,
+        "y": 129.83958435058594,
+        "speed": 5.508071422576904,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4459,
+        "x": -48.496376037597656,
+        "y": 110.36693572998047,
+        "speed": 0.09736443310976028,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4459,
+        "x": -60.326942443847656,
+        "y": 129.83810424804688,
+        "speed": 5.50848913192749,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4460,
+        "x": -48.496341705322266,
+        "y": 110.3779296875,
+        "speed": 0.29272058606147766,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4460,
+        "x": -60.60247039794922,
+        "y": 129.836669921875,
+        "speed": 5.509304523468018,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4461,
+        "x": -48.49626922607422,
+        "y": 110.3988037109375,
+        "speed": 0.48812758922576904,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4461,
+        "x": -60.87791442871094,
+        "y": 129.83517456054688,
+        "speed": 5.5089240074157715,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4462,
+        "x": -48.49617385864258,
+        "y": 110.42937469482422,
+        "speed": 0.6838583946228027,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4462,
+        "x": -61.15316390991211,
+        "y": 129.83351135253906,
+        "speed": 5.508274555206299,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4463,
+        "x": -48.49605178833008,
+        "y": 110.4696044921875,
+        "speed": 0.8796747326850891,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4463,
+        "x": -61.42831039428711,
+        "y": 129.83164978027344,
+        "speed": 5.507772922515869,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4464,
+        "x": -48.49590301513672,
+        "y": 110.51949310302734,
+        "speed": 1.075576901435852,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4464,
+        "x": -61.70341110229492,
+        "y": 129.8295440673828,
+        "speed": 5.507382392883301,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4465,
+        "x": -48.4957275390625,
+        "y": 110.57908630371094,
+        "speed": 1.2715610265731812,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4465,
+        "x": -61.97850036621094,
+        "y": 129.8271942138672,
+        "speed": 5.507073402404785,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4466,
+        "x": -48.495521545410156,
+        "y": 110.6484375,
+        "speed": 1.4675103425979614,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4466,
+        "x": -62.25359344482422,
+        "y": 129.82449340820312,
+        "speed": 5.506825923919678,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4467,
+        "x": -48.495296478271484,
+        "y": 110.72756958007812,
+        "speed": 1.6636006832122803,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4467,
+        "x": -62.52869415283203,
+        "y": 129.82144165039062,
+        "speed": 5.5066704750061035,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4468,
+        "x": -48.49504470825195,
+        "y": 110.8165283203125,
+        "speed": 1.8599486351013184,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4468,
+        "x": -62.80378341674805,
+        "y": 129.81797790527344,
+        "speed": 5.507774353027344,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4469,
+        "x": -48.4947624206543,
+        "y": 110.91534423828125,
+        "speed": 2.056382656097412,
+        "brake": 0.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4469,
+        "x": -63.07887268066406,
+        "y": 129.81370544433594,
+        "speed": 5.509048938751221,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4470,
+        "x": -48.494449615478516,
+        "y": 111.02400207519531,
+        "speed": 2.2529027462005615,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4470,
+        "x": -63.35404586791992,
+        "y": 129.8083038330078,
+        "speed": 5.510941982269287,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4471,
+        "x": -48.494102478027344,
+        "y": 111.14252471923828,
+        "speed": 2.44950795173645,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4471,
+        "x": -63.629310607910156,
+        "y": 129.8016357421875,
+        "speed": 5.512609481811523,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4472,
+        "x": -48.493717193603516,
+        "y": 111.27090454101562,
+        "speed": 2.6461963653564453,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4472,
+        "x": -63.904640197753906,
+        "y": 129.79364013671875,
+        "speed": 5.513960361480713,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4473,
+        "x": -48.4932975769043,
+        "y": 111.40914154052734,
+        "speed": 2.8429672718048096,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4473,
+        "x": -64.17998504638672,
+        "y": 129.7842254638672,
+        "speed": 5.5150837898254395,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4474,
+        "x": -48.49284744262695,
+        "y": 111.5572280883789,
+        "speed": 3.0398178100585938,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4474,
+        "x": -64.45532989501953,
+        "y": 129.7733612060547,
+        "speed": 5.516059398651123,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4475,
+        "x": -48.49237060546875,
+        "y": 111.71517944335938,
+        "speed": 3.2367467880249023,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4475,
+        "x": -64.73065185546875,
+        "y": 129.76104736328125,
+        "speed": 5.516894817352295,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4476,
+        "x": -48.49187088012695,
+        "y": 111.88299560546875,
+        "speed": 3.433917760848999,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4476,
+        "x": -65.00594329833984,
+        "y": 129.7472686767578,
+        "speed": 5.5176286697387695,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4477,
+        "x": -48.49138641357422,
+        "y": 112.06067657470703,
+        "speed": 3.631514072418213,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4477,
+        "x": -65.28106689453125,
+        "y": 129.73101806640625,
+        "speed": 5.519076347351074,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4478,
+        "x": -48.49089813232422,
+        "y": 112.24840545654297,
+        "speed": 3.835745096206665,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4478,
+        "x": -65.55602264404297,
+        "y": 129.71221923828125,
+        "speed": 5.521089553833008,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4479,
+        "x": -48.49034118652344,
+        "y": 112.44664001464844,
+        "speed": 4.049699306488037,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4479,
+        "x": -65.83094787597656,
+        "y": 129.6910400390625,
+        "speed": 5.52365255355835,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4480,
+        "x": -48.489681243896484,
+        "y": 112.65509033203125,
+        "speed": 4.248218536376953,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4480,
+        "x": -66.10584259033203,
+        "y": 129.66754150390625,
+        "speed": 5.5260443687438965,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4481,
+        "x": -48.488922119140625,
+        "y": 112.86832427978516,
+        "speed": 4.277411937713623,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4481,
+        "x": -66.38068389892578,
+        "y": 129.64175415039062,
+        "speed": 5.528398513793945,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4482,
+        "x": -48.48810958862305,
+        "y": 113.08208465576172,
+        "speed": 4.281068325042725,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4482,
+        "x": -66.65544891357422,
+        "y": 129.61380004882812,
+        "speed": 5.530572414398193,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4483,
+        "x": -48.48725509643555,
+        "y": 113.29582977294922,
+        "speed": 4.280273914337158,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4483,
+        "x": -66.93013000488281,
+        "y": 129.58377075195312,
+        "speed": 5.532540798187256,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4484,
+        "x": -48.486351013183594,
+        "y": 113.5095443725586,
+        "speed": 4.278537750244141,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4484,
+        "x": -67.20469665527344,
+        "y": 129.55178833007812,
+        "speed": 5.534107685089111,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4485,
+        "x": -48.4854736328125,
+        "y": 113.72276306152344,
+        "speed": 4.257844924926758,
+        "brake": 0.023365402594208717,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4485,
+        "x": -67.4791488647461,
+        "y": 129.51783752441406,
+        "speed": 5.534855842590332,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4486,
+        "x": -48.484649658203125,
+        "y": 113.93531799316406,
+        "speed": 4.241998195648193,
+        "brake": 0.006247234530746937,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4486,
+        "x": -67.75347900390625,
+        "y": 129.482177734375,
+        "speed": 5.535778522491455,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4487,
+        "x": -48.48381805419922,
+        "y": 114.14714050292969,
+        "speed": 4.2268853187561035,
+        "brake": 0.004812626633793116,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4487,
+        "x": -68.02754211425781,
+        "y": 129.44393920898438,
+        "speed": 5.536782264709473,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4488,
+        "x": -48.48292541503906,
+        "y": 114.35810089111328,
+        "speed": 4.212133884429932,
+        "brake": 0.004902714863419533,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4488,
+        "x": -68.3013687133789,
+        "y": 129.4029541015625,
+        "speed": 5.538329601287842,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4489,
+        "x": -48.48210144042969,
+        "y": 114.56825256347656,
+        "speed": 4.197174072265625,
+        "brake": 0.005778192076832056,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4489,
+        "x": -68.57495880126953,
+        "y": 129.35952758789062,
+        "speed": 5.540104866027832,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4490,
+        "x": -48.481388092041016,
+        "y": 114.77764129638672,
+        "speed": 4.182343482971191,
+        "brake": 0.005752952769398689,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4490,
+        "x": -68.84828186035156,
+        "y": 129.31378173828125,
+        "speed": 5.542205333709717,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4491,
+        "x": -48.4808464050293,
+        "y": 114.986328125,
+        "speed": 4.1675615310668945,
+        "brake": 0.005594194866716862,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4491,
+        "x": -69.12130737304688,
+        "y": 129.2658233642578,
+        "speed": 5.5443220138549805,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4492,
+        "x": -48.480430603027344,
+        "y": 115.19580078125,
+        "speed": 4.199563026428223,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4492,
+        "x": -69.39405059814453,
+        "y": 129.21580505371094,
+        "speed": 5.546154975891113,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4493,
+        "x": -48.480098724365234,
+        "y": 115.41018676757812,
+        "speed": 4.334782123565674,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4493,
+        "x": -69.66651153564453,
+        "y": 129.1637725830078,
+        "speed": 5.5475358963012695,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4494,
+        "x": -48.480194091796875,
+        "y": 115.63583374023438,
+        "speed": 4.608466625213623,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4494,
+        "x": -69.93871307373047,
+        "y": 129.10992431640625,
+        "speed": 5.548711776733398,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4495,
+        "x": -48.48082733154297,
+        "y": 115.87551879882812,
+        "speed": 4.886308670043945,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4495,
+        "x": -70.2103500366211,
+        "y": 129.05337524414062,
+        "speed": 5.548057556152344,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 472,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4496,
+        "x": -48.48215103149414,
+        "y": 116.12821960449219,
+        "speed": 5.143272876739502,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4496,
+        "x": -70.48131561279297,
+        "y": 128.99415588378906,
+        "speed": 5.547428607940674,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 472,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4497,
+        "x": -48.48456573486328,
+        "y": 116.39462280273438,
+        "speed": 5.441395282745361,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4497,
+        "x": -70.75175476074219,
+        "y": 128.93270874023438,
+        "speed": 5.54778528213501,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4498,
+        "x": -48.48849868774414,
+        "y": 116.66790008544922,
+        "speed": 5.489294052124023,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4498,
+        "x": -71.02172088623047,
+        "y": 128.869140625,
+        "speed": 5.548282623291016,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4499,
+        "x": -48.49518585205078,
+        "y": 116.94152069091797,
+        "speed": 5.492199897766113,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4499,
+        "x": -71.28781127929688,
+        "y": 128.80441284179688,
+        "speed": 5.433708190917969,
+        "brake": 0.699999988079071,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4500,
+        "x": -48.50471115112305,
+        "y": 117.21525573730469,
+        "speed": 5.495517730712891,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4500,
+        "x": -71.54481506347656,
+        "y": 128.73992919921875,
+        "speed": 5.219868183135986,
+        "brake": 0.699999988079071,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4501,
+        "x": -48.51712417602539,
+        "y": 117.48931884765625,
+        "speed": 5.497645854949951,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4501,
+        "x": -71.78997802734375,
+        "y": 128.67669677734375,
+        "speed": 4.973118782043457,
+        "brake": 0.699999988079071,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4502,
+        "x": -48.53255844116211,
+        "y": 117.76364135742188,
+        "speed": 5.4985833168029785,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4502,
+        "x": -72.02291107177734,
+        "y": 128.61514282226562,
+        "speed": 4.726747035980225,
+        "brake": 0.699999988079071,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4503,
+        "x": -48.55241012573242,
+        "y": 118.03782653808594,
+        "speed": 5.496669769287109,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4503,
+        "x": -72.24543762207031,
+        "y": 128.55433654785156,
+        "speed": 4.542649269104004,
+        "brake": 0.5099785923957825,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4504,
+        "x": -48.576744079589844,
+        "y": 118.31172943115234,
+        "speed": 5.495862007141113,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4504,
+        "x": -72.46217346191406,
+        "y": 128.4931640625,
+        "speed": 4.472212314605713,
+        "brake": 0.16822843253612518,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4505,
+        "x": -48.60511016845703,
+        "y": 118.58515930175781,
+        "speed": 5.496151447296143,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4505,
+        "x": -72.67573547363281,
+        "y": 128.43124389648438,
+        "speed": 4.415399074554443,
+        "brake": 0.1271888017654419,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4506,
+        "x": -48.6372184753418,
+        "y": 118.85774993896484,
+        "speed": 5.496762752532959,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4506,
+        "x": -72.8863525390625,
+        "y": 128.3686981201172,
+        "speed": 4.36383581161499,
+        "brake": 0.11207184940576553,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4507,
+        "x": -48.67401123046875,
+        "y": 119.12957000732422,
+        "speed": 5.494409084320068,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4507,
+        "x": -73.09408569335938,
+        "y": 128.30564880371094,
+        "speed": 4.3133368492126465,
+        "brake": 0.1104041039943695,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4508,
+        "x": -48.71552658081055,
+        "y": 119.40080261230469,
+        "speed": 5.493963718414307,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4508,
+        "x": -73.2989273071289,
+        "y": 128.2421875,
+        "speed": 4.262920379638672,
+        "brake": 0.11134161800146103,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4509,
+        "x": -48.7613639831543,
+        "y": 119.67150115966797,
+        "speed": 5.494696140289307,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4509,
+        "x": -73.5009536743164,
+        "y": 128.17848205566406,
+        "speed": 4.212952613830566,
+        "brake": 0.1124902069568634,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4510,
+        "x": -48.81125259399414,
+        "y": 119.94165802001953,
+        "speed": 5.495591163635254,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4510,
+        "x": -73.70018005371094,
+        "y": 128.11460876464844,
+        "speed": 4.162370204925537,
+        "brake": 0.11500942707061768,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4511,
+        "x": -48.86650848388672,
+        "y": 120.21076965332031,
+        "speed": 5.493403434753418,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4511,
+        "x": -73.89664459228516,
+        "y": 128.05059814453125,
+        "speed": 4.111759662628174,
+        "brake": 0.11571953445672989,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4512,
+        "x": -48.926963806152344,
+        "y": 120.47867584228516,
+        "speed": 5.492381572723389,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4512,
+        "x": -74.09038543701172,
+        "y": 127.98650360107422,
+        "speed": 4.061103343963623,
+        "brake": 0.1164318174123764,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4513,
+        "x": -48.99191665649414,
+        "y": 120.74546813964844,
+        "speed": 5.492771148681641,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4513,
+        "x": -74.28107452392578,
+        "y": 127.92144012451172,
+        "speed": 4.009860992431641,
+        "brake": 0.11705880612134933,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4514,
+        "x": -49.06080627441406,
+        "y": 121.01127624511719,
+        "speed": 5.493664264678955,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4514,
+        "x": -74.46863555908203,
+        "y": 127.85515594482422,
+        "speed": 3.959486484527588,
+        "brake": 0.11592233926057816,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4515,
+        "x": -49.134891510009766,
+        "y": 121.27554321289062,
+        "speed": 5.491692543029785,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4515,
+        "x": -74.65319061279297,
+        "y": 127.78807067871094,
+        "speed": 3.908355236053467,
+        "brake": 0.11771492660045624,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4516,
+        "x": -49.21449661254883,
+        "y": 121.53823852539062,
+        "speed": 5.490724086761475,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4516,
+        "x": -74.83484649658203,
+        "y": 127.72040557861328,
+        "speed": 3.8575327396392822,
+        "brake": 0.1172562763094902,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4517,
+        "x": -49.29804992675781,
+        "y": 121.79983520507812,
+        "speed": 5.492069244384766,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4517,
+        "x": -75.01359558105469,
+        "y": 127.6522445678711,
+        "speed": 3.8063886165618896,
+        "brake": 0.11802591383457184,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4518,
+        "x": -49.3851203918457,
+        "y": 122.06036376953125,
+        "speed": 5.493081569671631,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4518,
+        "x": -75.1894302368164,
+        "y": 127.58363342285156,
+        "speed": 3.7549924850463867,
+        "brake": 0.11789948493242264,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4519,
+        "x": -49.47673034667969,
+        "y": 122.3192138671875,
+        "speed": 5.491441249847412,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4519,
+        "x": -75.36241149902344,
+        "y": 127.51464080810547,
+        "speed": 3.7040131092071533,
+        "brake": 0.11711307615041733,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4520,
+        "x": -49.573402404785156,
+        "y": 122.5760726928711,
+        "speed": 5.489591598510742,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4520,
+        "x": -75.53250885009766,
+        "y": 127.44530487060547,
+        "speed": 3.6520004272460938,
+        "brake": 0.11788338422775269,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4521,
+        "x": -49.674442291259766,
+        "y": 122.8311996459961,
+        "speed": 5.490023136138916,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4521,
+        "x": -75.69976806640625,
+        "y": 127.3757553100586,
+        "speed": 3.60090708732605,
+        "brake": 0.1152665764093399,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4522,
+        "x": -49.77934265136719,
+        "y": 123.08475494384766,
+        "speed": 5.490922451019287,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4522,
+        "x": -75.8642578125,
+        "y": 127.30618286132812,
+        "speed": 3.5498039722442627,
+        "brake": 0.11604070663452148,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4523,
+        "x": -49.88868713378906,
+        "y": 123.33636474609375,
+        "speed": 5.489819049835205,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4523,
+        "x": -76.02599334716797,
+        "y": 127.23668670654297,
+        "speed": 3.498806953430176,
+        "brake": 0.11684878170490265,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4524,
+        "x": -50.00293731689453,
+        "y": 123.58562469482422,
+        "speed": 5.488466262817383,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4524,
+        "x": -76.18505859375,
+        "y": 127.16738891601562,
+        "speed": 3.447962522506714,
+        "brake": 0.1181953102350235,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4525,
+        "x": -50.121402740478516,
+        "y": 123.83287811279297,
+        "speed": 5.489573955535889,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4525,
+        "x": -76.34147644042969,
+        "y": 127.09838104248047,
+        "speed": 3.396592855453491,
+        "brake": 0.120233453810215,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4526,
+        "x": -50.24356460571289,
+        "y": 124.07839965820312,
+        "speed": 5.491359233856201,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4526,
+        "x": -76.4952392578125,
+        "y": 127.02969360351562,
+        "speed": 3.345278739929199,
+        "brake": 0.12051781266927719,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4527,
+        "x": -50.36988830566406,
+        "y": 124.32183074951172,
+        "speed": 5.491694450378418,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4527,
+        "x": -76.64635467529297,
+        "y": 126.96138763427734,
+        "speed": 3.29388689994812,
+        "brake": 0.12120543420314789,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4528,
+        "x": -50.501060485839844,
+        "y": 124.5626220703125,
+        "speed": 5.490360736846924,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4528,
+        "x": -76.79486083984375,
+        "y": 126.89349365234375,
+        "speed": 3.242828369140625,
+        "brake": 0.12172450870275497,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4529,
+        "x": -50.636314392089844,
+        "y": 124.80113220214844,
+        "speed": 5.491369724273682,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4529,
+        "x": -76.94267272949219,
+        "y": 126.83035278320312,
+        "speed": 3.1921794414520264,
+        "brake": 0.12365421652793884,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4530,
+        "x": -50.7751350402832,
+        "y": 125.03765869140625,
+        "speed": 5.492919445037842,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4530,
+        "x": -77.0889892578125,
+        "y": 126.77027893066406,
+        "speed": 3.140761613845825,
+        "brake": 0.12734349071979523,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4531,
+        "x": -50.91779327392578,
+        "y": 125.27193450927734,
+        "speed": 5.493037700653076,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4531,
+        "x": -77.23287200927734,
+        "y": 126.71110534667969,
+        "speed": 3.0893430709838867,
+        "brake": 0.12753145396709442,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4532,
+        "x": -51.065216064453125,
+        "y": 125.50309753417969,
+        "speed": 5.490568161010742,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4532,
+        "x": -77.37423706054688,
+        "y": 126.6526870727539,
+        "speed": 3.037872076034546,
+        "brake": 0.1274646818637848,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4533,
+        "x": -51.216697692871094,
+        "y": 125.73163604736328,
+        "speed": 5.4911932945251465,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4533,
+        "x": -77.51313018798828,
+        "y": 126.59507751464844,
+        "speed": 2.9862592220306396,
+        "brake": 0.1271524727344513,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4534,
+        "x": -51.37163543701172,
+        "y": 125.95794677734375,
+        "speed": 5.492652416229248,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4534,
+        "x": -77.64952087402344,
+        "y": 126.53813171386719,
+        "speed": 2.934335947036743,
+        "brake": 0.12620292603969574,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4535,
+        "x": -51.530033111572266,
+        "y": 126.18196868896484,
+        "speed": 5.493541717529297,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4535,
+        "x": -77.78338623046875,
+        "y": 126.48176574707031,
+        "speed": 2.8829596042633057,
+        "brake": 0.12389327585697174,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4536,
+        "x": -51.693023681640625,
+        "y": 126.40262603759766,
+        "speed": 5.491506099700928,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4536,
+        "x": -77.91463470458984,
+        "y": 126.42585754394531,
+        "speed": 2.8311779499053955,
+        "brake": 0.12397401034832001,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4537,
+        "x": -51.86000442504883,
+        "y": 126.6203384399414,
+        "speed": 5.492679119110107,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4537,
+        "x": -78.04324340820312,
+        "y": 126.37036895751953,
+        "speed": 2.780106544494629,
+        "brake": 0.12228099256753922,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4538,
+        "x": -52.0303840637207,
+        "y": 126.83553314208984,
+        "speed": 5.494818210601807,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4538,
+        "x": -78.16921997070312,
+        "y": 126.31529998779297,
+        "speed": 2.7286508083343506,
+        "brake": 0.12386570125818253,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4539,
+        "x": -52.203887939453125,
+        "y": 127.04835510253906,
+        "speed": 5.497036457061768,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4539,
+        "x": -78.29256439208984,
+        "y": 126.2606430053711,
+        "speed": 2.677382707595825,
+        "brake": 0.12373723834753036,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4540,
+        "x": -52.38093566894531,
+        "y": 127.25828552246094,
+        "speed": 5.497302055358887,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4540,
+        "x": -78.41327667236328,
+        "y": 126.20639038085938,
+        "speed": 2.6259868144989014,
+        "brake": 0.12466178089380264,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4541,
+        "x": -52.56110763549805,
+        "y": 127.46561431884766,
+        "speed": 5.498867988586426,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4541,
+        "x": -78.5313491821289,
+        "y": 126.15254211425781,
+        "speed": 2.5750672817230225,
+        "brake": 0.12513229250907898,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4542,
+        "x": -52.74397277832031,
+        "y": 127.670654296875,
+        "speed": 5.5002617835998535,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4542,
+        "x": -78.64681243896484,
+        "y": 126.09919738769531,
+        "speed": 2.5241377353668213,
+        "brake": 0.12813925743103027,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4543,
+        "x": -52.92925262451172,
+        "y": 127.87356567382812,
+        "speed": 5.5015435218811035,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4543,
+        "x": -78.75963592529297,
+        "y": 126.04637908935547,
+        "speed": 2.4723007678985596,
+        "brake": 0.13133785128593445,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4544,
+        "x": -53.1168212890625,
+        "y": 128.07444763183594,
+        "speed": 5.5020833015441895,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4544,
+        "x": -78.86982727050781,
+        "y": 125.99407958984375,
+        "speed": 2.420828104019165,
+        "brake": 0.13023246824741364,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4545,
+        "x": -53.30681228637695,
+        "y": 128.2731170654297,
+        "speed": 5.501893997192383,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4545,
+        "x": -78.97740173339844,
+        "y": 125.94234466552734,
+        "speed": 2.3690059185028076,
+        "brake": 0.1312199980020523,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4546,
+        "x": -53.500267028808594,
+        "y": 128.46826171875,
+        "speed": 5.498933792114258,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4546,
+        "x": -79.08238983154297,
+        "y": 125.89117431640625,
+        "speed": 2.317582130432129,
+        "brake": 0.1304936558008194,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4547,
+        "x": -53.69670104980469,
+        "y": 128.66036987304688,
+        "speed": 5.498836040496826,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4547,
+        "x": -79.1847915649414,
+        "y": 125.84053039550781,
+        "speed": 2.267025947570801,
+        "brake": 0.13209983706474304,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4548,
+        "x": -53.89568328857422,
+        "y": 128.84991455078125,
+        "speed": 5.499649524688721,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4548,
+        "x": -79.28456115722656,
+        "y": 125.79047393798828,
+        "speed": 2.2137768268585205,
+        "brake": 0.1387520581483841,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4549,
+        "x": -54.09703826904297,
+        "y": 129.0370635986328,
+        "speed": 5.500958442687988,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4549,
+        "x": -79.38179016113281,
+        "y": 125.74114990234375,
+        "speed": 2.162736177444458,
+        "brake": 0.13063563406467438,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4550,
+        "x": -54.3005256652832,
+        "y": 129.2220001220703,
+        "speed": 5.503098011016846,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4550,
+        "x": -79.4765396118164,
+        "y": 125.69258117675781,
+        "speed": 2.110790729522705,
+        "brake": 0.13560056686401367,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4551,
+        "x": -54.50730514526367,
+        "y": 129.40306091308594,
+        "speed": 5.501174449920654,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4551,
+        "x": -79.5688705444336,
+        "y": 125.64484405517578,
+        "speed": 2.059229850769043,
+        "brake": 0.1352243572473526,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4552,
+        "x": -54.71738815307617,
+        "y": 129.5801239013672,
+        "speed": 5.500679969787598,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4552,
+        "x": -79.65874481201172,
+        "y": 125.59796142578125,
+        "speed": 2.006946563720703,
+        "brake": 0.13769909739494324,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4553,
+        "x": -54.93022155761719,
+        "y": 129.75390625,
+        "speed": 5.501886367797852,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4553,
+        "x": -79.74616241455078,
+        "y": 125.55193328857422,
+        "speed": 1.9552639722824097,
+        "brake": 0.136135995388031,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4554,
+        "x": -55.145484924316406,
+        "y": 129.92471313476562,
+        "speed": 5.503143310546875,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4554,
+        "x": -79.83111572265625,
+        "y": 125.50678253173828,
+        "speed": 1.9027624130249023,
+        "brake": 0.13881753385066986,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4555,
+        "x": -55.363014221191406,
+        "y": 130.0927276611328,
+        "speed": 5.504307746887207,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4555,
+        "x": -79.9135971069336,
+        "y": 125.46253967285156,
+        "speed": 1.8510890007019043,
+        "brake": 0.1365043967962265,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4556,
+        "x": -55.583274841308594,
+        "y": 130.25718688964844,
+        "speed": 5.504115581512451,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4556,
+        "x": -79.99359893798828,
+        "y": 125.41921997070312,
+        "speed": 1.7974679470062256,
+        "brake": 0.14021000266075134,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4557,
+        "x": -55.806758880615234,
+        "y": 130.4170684814453,
+        "speed": 5.5021538734436035,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4557,
+        "x": -80.0711669921875,
+        "y": 125.37677764892578,
+        "speed": 1.7469874620437622,
+        "brake": 0.13068993389606476,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4558,
+        "x": -56.03288650512695,
+        "y": 130.57334899902344,
+        "speed": 5.5027875900268555,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4558,
+        "x": -80.14627838134766,
+        "y": 125.3353042602539,
+        "speed": 1.6921741962432861,
+        "brake": 0.1439126878976822,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4559,
+        "x": -56.26138687133789,
+        "y": 130.72625732421875,
+        "speed": 5.503890514373779,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4559,
+        "x": -80.21898651123047,
+        "y": 125.29480743408203,
+        "speed": 1.6430529356002808,
+        "brake": 0.12579011917114258,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4560,
+        "x": -56.49245071411133,
+        "y": 130.8751983642578,
+        "speed": 5.503589630126953,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4560,
+        "x": -80.2891845703125,
+        "y": 125.25538635253906,
+        "speed": 1.5854835510253906,
+        "brake": 0.15144924819469452,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4561,
+        "x": -56.72649002075195,
+        "y": 131.01934814453125,
+        "speed": 5.501531600952148,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4561,
+        "x": -80.35708618164062,
+        "y": 125.21697235107422,
+        "speed": 1.5412594079971313,
+        "brake": 0.11138761043548584,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4562,
+        "x": -56.96308898925781,
+        "y": 131.15933227539062,
+        "speed": 5.502871513366699,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4562,
+        "x": -80.42236328125,
+        "y": 125.17981719970703,
+        "speed": 1.474422812461853,
+        "brake": 0.17970483005046844,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4563,
+        "x": -57.201866149902344,
+        "y": 131.29579162597656,
+        "speed": 5.505199909210205,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4563,
+        "x": -80.48567199707031,
+        "y": 125.1435546875,
+        "speed": 1.4471917152404785,
+        "brake": 0.05945723503828049,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4564,
+        "x": -57.44287109375,
+        "y": 131.4283905029297,
+        "speed": 5.506411075592041,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4564,
+        "x": -80.5457763671875,
+        "y": 125.10891723632812,
+        "speed": 1.3456634283065796,
+        "brake": 0.28258439898490906,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4565,
+        "x": -57.68659591674805,
+        "y": 131.5557403564453,
+        "speed": 5.504365921020508,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4565,
+        "x": -80.60417938232422,
+        "y": 125.07501983642578,
+        "speed": 1.3512585163116455,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4566,
+        "x": -57.93280029296875,
+        "y": 131.6782684326172,
+        "speed": 5.504204273223877,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4566,
+        "x": -80.65986633300781,
+        "y": 125.04252624511719,
+        "speed": 1.2442280054092407,
+        "brake": 0.38992977142333984,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4567,
+        "x": -58.18107223510742,
+        "y": 131.79678344726562,
+        "speed": 5.505319118499756,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4567,
+        "x": -80.71373748779297,
+        "y": 125.01092529296875,
+        "speed": 1.2490432262420654,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4568,
+        "x": -58.431400299072266,
+        "y": 131.9112548828125,
+        "speed": 5.506546974182129,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4568,
+        "x": -80.76490020751953,
+        "y": 124.98080444335938,
+        "speed": 1.1421147584915161,
+        "brake": 0.44769883155822754,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4569,
+        "x": -58.68401336669922,
+        "y": 132.0203399658203,
+        "speed": 5.503407955169678,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4569,
+        "x": -80.81421661376953,
+        "y": 124.95162963867188,
+        "speed": 1.145745873451233,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4570,
+        "x": -58.93843460083008,
+        "y": 132.12486267089844,
+        "speed": 5.503555774688721,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4570,
+        "x": -80.86082458496094,
+        "y": 124.9239730834961,
+        "speed": 1.038915753364563,
+        "brake": 0.5129050016403198,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4571,
+        "x": -59.194366455078125,
+        "y": 132.22543334960938,
+        "speed": 5.504027843475342,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4571,
+        "x": -80.90558624267578,
+        "y": 124.89730834960938,
+        "speed": 1.041536808013916,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4572,
+        "x": -59.451900482177734,
+        "y": 132.3218231201172,
+        "speed": 5.5044403076171875,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4572,
+        "x": -80.94763946533203,
+        "y": 124.87220001220703,
+        "speed": 0.9348055720329285,
+        "brake": 0.5912937521934509,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4573,
+        "x": -59.71145248413086,
+        "y": 132.41224670410156,
+        "speed": 5.501018047332764,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4573,
+        "x": -80.98782348632812,
+        "y": 124.84810638427734,
+        "speed": 0.9363760352134705,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4574,
+        "x": -59.972721099853516,
+        "y": 132.49755859375,
+        "speed": 5.501926422119141,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4574,
+        "x": -81.02529907226562,
+        "y": 124.82559967041016,
+        "speed": 0.8297435641288757,
+        "brake": 0.6899333000183105,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4575,
+        "x": -60.23545837402344,
+        "y": 132.57861328125,
+        "speed": 5.504881858825684,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4575,
+        "x": -81.06090545654297,
+        "y": 124.80414581298828,
+        "speed": 0.8303555846214294,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4576,
+        "x": -60.49955368041992,
+        "y": 132.65541076660156,
+        "speed": 5.506670951843262,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4576,
+        "x": -81.09381103515625,
+        "y": 124.7843017578125,
+        "speed": 0.7240790128707886,
+        "brake": 0.699999988079071,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4577,
+        "x": -60.76519012451172,
+        "y": 132.72596740722656,
+        "speed": 5.503659725189209,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4577,
+        "x": -81.1248550415039,
+        "y": 124.76556396484375,
+        "speed": 0.723654568195343,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4578,
+        "x": -61.032073974609375,
+        "y": 132.79129028320312,
+        "speed": 5.5048699378967285,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4578,
+        "x": -81.15319061279297,
+        "y": 124.74845886230469,
+        "speed": 0.6174293160438538,
+        "brake": 0.699999988079071,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4579,
+        "x": -61.299903869628906,
+        "y": 132.85243225097656,
+        "speed": 5.506531715393066,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4579,
+        "x": -81.17881774902344,
+        "y": 124.73297882080078,
+        "speed": 0.5845575928688049,
+        "brake": 0.07901738584041595,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4580,
+        "x": -61.56865692138672,
+        "y": 132.9094696044922,
+        "speed": 5.507955074310303,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4580,
+        "x": -81.20047760009766,
+        "y": 124.71989440917969,
+        "speed": 0.452203631401062,
+        "brake": 0.6438700556755066,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4581,
+        "x": -61.8385009765625,
+        "y": 132.96031188964844,
+        "speed": 5.504360675811768,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4581,
+        "x": -81.22047424316406,
+        "y": 124.70774841308594,
+        "speed": 0.4762296974658966,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4582,
+        "x": -62.10930252075195,
+        "y": 133.0058135986328,
+        "speed": 5.505496978759766,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4582,
+        "x": -81.24351501464844,
+        "y": 124.69361114501953,
+        "speed": 0.573311984539032,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4583,
+        "x": -62.380950927734375,
+        "y": 133.04684448242188,
+        "speed": 5.5076093673706055,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4583,
+        "x": -81.26568603515625,
+        "y": 124.68011474609375,
+        "speed": 0.47349223494529724,
+        "brake": 0.45316046476364136,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4584,
+        "x": -62.65333938598633,
+        "y": 133.08375549316406,
+        "speed": 5.509975910186768,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4584,
+        "x": -81.28707122802734,
+        "y": 124.66707611083984,
+        "speed": 0.5164428949356079,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4585,
+        "x": -62.926429748535156,
+        "y": 133.11474609375,
+        "speed": 5.508500099182129,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4585,
+        "x": -81.30683898925781,
+        "y": 124.65601348876953,
+        "speed": 0.40972888469696045,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4586,
+        "x": -63.200199127197266,
+        "y": 133.14041137695312,
+        "speed": 5.5111260414123535,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4586,
+        "x": -81.31919860839844,
+        "y": 124.64922332763672,
+        "speed": 0.2040700912475586,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4587,
+        "x": -63.47452926635742,
+        "y": 133.1617431640625,
+        "speed": 5.5146965980529785,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4587,
+        "x": -81.32149505615234,
+        "y": 124.64789581298828,
+        "speed": 0.013052417896687984,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4588,
+        "x": -63.74931716918945,
+        "y": 133.17910766601562,
+        "speed": 5.5179948806762695,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4588,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.002619177335873246,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4589,
+        "x": -64.02444458007812,
+        "y": 133.19171142578125,
+        "speed": 5.518882751464844,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4589,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4590,
+        "x": -64.29983520507812,
+        "y": 133.19970703125,
+        "speed": 5.5206403732299805,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4590,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4591,
+        "x": -64.5754623413086,
+        "y": 133.20376586914062,
+        "speed": 5.523029804229736,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4591,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4592,
+        "x": -64.85128021240234,
+        "y": 133.20420837402344,
+        "speed": 5.525434970855713,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4592,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4593,
+        "x": -65.12724304199219,
+        "y": 133.20123291015625,
+        "speed": 5.528190612792969,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4593,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4594,
+        "x": -65.40327453613281,
+        "y": 133.19503784179688,
+        "speed": 5.531659126281738,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4594,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4595,
+        "x": -65.67938232421875,
+        "y": 133.1858673095703,
+        "speed": 5.535337448120117,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4595,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4596,
+        "x": -65.95559692382812,
+        "y": 133.17398071289062,
+        "speed": 5.538853645324707,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4596,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4597,
+        "x": -66.23188781738281,
+        "y": 133.15956115722656,
+        "speed": 5.542147636413574,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4597,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4598,
+        "x": -66.50802612304688,
+        "y": 133.14129638671875,
+        "speed": 5.5430498123168945,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4598,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4599,
+        "x": -66.78402709960938,
+        "y": 133.1196746826172,
+        "speed": 5.545205593109131,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4599,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4600,
+        "x": -67.05994415283203,
+        "y": 133.09524536132812,
+        "speed": 5.5472798347473145,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4600,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4601,
+        "x": -67.33573913574219,
+        "y": 133.06817626953125,
+        "speed": 5.5493268966674805,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4601,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4602,
+        "x": -67.61141967773438,
+        "y": 133.03863525390625,
+        "speed": 5.550231456756592,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4602,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4603,
+        "x": -67.88699340820312,
+        "y": 133.0066680908203,
+        "speed": 5.550074100494385,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4603,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4604,
+        "x": -68.16251373291016,
+        "y": 132.97235107421875,
+        "speed": 5.5509419441223145,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4604,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4605,
+        "x": -68.43795776367188,
+        "y": 132.9359588623047,
+        "speed": 5.551894664764404,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4605,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4606,
+        "x": -68.71316528320312,
+        "y": 132.89720153808594,
+        "speed": 5.5527849197387695,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4606,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4607,
+        "x": -68.9879150390625,
+        "y": 132.85552978515625,
+        "speed": 5.553157329559326,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4607,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4608,
+        "x": -69.26223754882812,
+        "y": 132.81124877929688,
+        "speed": 5.55417537689209,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4608,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4609,
+        "x": -69.53620910644531,
+        "y": 132.76463317871094,
+        "speed": 5.555455684661865,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4609,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4610,
+        "x": -69.8098373413086,
+        "y": 132.71583557128906,
+        "speed": 5.556784629821777,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4610,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4611,
+        "x": -70.0826416015625,
+        "y": 132.6651153564453,
+        "speed": 5.541048049926758,
+        "brake": 0.0027504200115799904,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 469,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4611,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4612,
+        "x": -70.35480499267578,
+        "y": 132.61253356933594,
+        "speed": 5.54115104675293,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4612,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4613,
+        "x": -70.62657165527344,
+        "y": 132.55821228027344,
+        "speed": 5.540076732635498,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4613,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4614,
+        "x": -70.8978271484375,
+        "y": 132.502197265625,
+        "speed": 5.539364814758301,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4614,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4615,
+        "x": -71.16842651367188,
+        "y": 132.4438018798828,
+        "speed": 5.537900924682617,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": true,
+        "road": 515,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4615,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    },
+    {
+      "left": {
+        "frame": 4616,
+        "x": -71.43836212158203,
+        "y": 132.38291931152344,
+        "speed": 5.536769390106201,
+        "brake": 0.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      },
+      "opposing": {
+        "frame": 4616,
+        "x": -81.32150268554688,
+        "y": 124.6478042602539,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": null,
+        "at_light": false,
+        "junction": false,
+        "road": 5,
+        "next": "[]"
+      }
+    }
+  ]
+}

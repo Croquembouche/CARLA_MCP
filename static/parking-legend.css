@@ -1,0 +1,16 @@
+.parking-legend{display:flex;flex-direction:column;gap:6px;font-size:11px;line-height:1.3}
+.parking-legend[hidden]{display:none}
+.parking-legend strong{font-size:11px;font-weight:650;color:var(--text,#e6eef1)}
+.parking-legend-row{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:center;gap:7px;color:var(--text,#e6eef1)}
+.parking-swatch{display:flex;align-items:center;justify-content:center;width:22px;height:15px;border:1px solid var(--bay-color);background:color-mix(in srgb,var(--bay-color) 30%,transparent);color:var(--bay-color);font-size:10px;line-height:1;font-weight:700;border-radius:1px}
+.parking-swatch.available{--bay-color:#b79bff}.parking-swatch.occupied{--bay-color:#8f9da7}.parking-swatch.unavailable{--bay-color:#edb35c}
+[data-theme=light] .parking-swatch.available{--bay-color:#7850b1}[data-theme=light] .parking-swatch.occupied{--bay-color:#606b75}[data-theme=light] .parking-swatch.unavailable{--bay-color:#a66313}
+#parking-map-legend{border-top:1px solid var(--line,#506471);padding-top:7px;width:100%;font-size:10px;gap:5px}
+#parking-map-legend .parking-legend-row{font-size:10px;grid-template-columns:20px minmax(0,1fr);gap:6px}
+#parking-map-legend .parking-swatch{width:20px;height:14px}
+#tools .parking-legend{margin:14px 0 8px;padding:12px;background:#0a182466;border:1px solid #506471;border-radius:6px}
+#tools .legend-note{display:block;margin:6px 0 10px}
+
+#tools .parking-legend,#tools .parking-legend strong{font-size:13px}
+#tools .parking-swatch{width:22px;height:17px;font-size:11px}
+@media(max-width:760px){#parking-map-legend{order:-1;border-top:0;border-bottom:1px solid var(--line);padding-top:0;padding-bottom:7px}}

@@ -1,0 +1,385 @@
+{
+  "verified_at": "2026-09-08T15:27:57.955481-04:00",
+  "runtime": {
+    "phase": "connected",
+    "running": false,
+    "frame": 362,
+    "time": 14.03477161716728,
+    "error": null
+  },
+  "service": "MainPID=3252418\nNRestarts=0\nActiveState=active\n",
+  "ui": {
+    "overview_markers": 5,
+    "physical_vehicle_heads": 43,
+    "opendrive_map_click": "passed",
+    "scene3d_map_click": "passed",
+    "zoom_detail": "passed",
+    "label_overlap_tests": "passed",
+    "dark_and_light": "passed",
+    "horizontal_overflow": false,
+    "browser_errors": [],
+    "screenshots": [
+      "/home/william/Pictures/Screenshots/carla-movement-signals/opendrive-overview.png",
+      "/home/william/Pictures/Screenshots/carla-movement-signals/opendrive-signals.png",
+      "/home/william/Pictures/Screenshots/carla-movement-signals/scene3d-overview.png",
+      "/home/william/Pictures/Screenshots/carla-movement-signals/scene3d-signals.png",
+      "/home/william/Pictures/Screenshots/carla-movement-signals/phase-editor.png",
+      "/home/william/Pictures/Screenshots/carla-movement-signals/light-signals.png"
+    ]
+  },
+  "native_and_recording_reports": {
+    "bag-report": {
+      "passed": true,
+      "total_messages": 360,
+      "topics": {
+        "/clock": 24,
+        "/carla/ego_25/odometry": 24,
+        "/carla/ego_25/front_rgb/image": 24,
+        "/carla/ego_25/front_rgb/metadata": 24,
+        "/carla/ego_25/front_rgb/camera_info": 24,
+        "/carla/ego_25/roof_lidar/points": 24,
+        "/carla/ego_25/roof_lidar/metadata": 24,
+        "/carla/ego_25/front_radar/points": 24,
+        "/carla/ego_25/front_radar/metadata": 24,
+        "/carla/ego_25/imu/data": 24,
+        "/carla/ego_25/imu/metadata": 24,
+        "/carla/ego_25/gnss/data": 24,
+        "/carla/ego_25/gnss/metadata": 24,
+        "/tf": 24,
+        "/carla/traffic_signals": 24
+      },
+      "camera_original_bytes": "identical",
+      "lidar_coordinate_conversion": "exact",
+      "timestamps": "matched sensor simulation timestamps"
+    },
+    "protected-left-report": {
+      "result": "passed",
+      "protected_left_entered": true,
+      "entry": {
+        "frame": 259,
+        "x": -27.92979621887207,
+        "y": -64.78533172607422,
+        "speed": 4.170989036560059,
+        "brake": 0.0,
+        "light": 8,
+        "at_light": true,
+        "junction": true,
+        "road": 90,
+        "next": "[]"
+      }
+    },
+    "right-driving-report": {
+      "red_stop": {
+        "frame": 315,
+        "x": -48.5038948059082,
+        "y": 107.3389663696289,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 18,
+        "at_light": true,
+        "junction": false,
+        "road": 13,
+        "next": "[]"
+      },
+      "permissive_right": {
+        "yield_frames": 46,
+        "left_entry": 566,
+        "protected_opposing_entry": 474,
+        "released_after_yield": true
+      },
+      "protected_right_entered": true,
+      "result": "passed"
+    },
+    "replay-report": {
+      "result": "passed",
+      "recording": "20260908-143432-559c1e",
+      "native_replay_response": {
+        "result": "Replaying File: /mnt/simulations/control-center/data/recordings/20260908-143432-559c1e/carla.log\nTotal time recorded: 1.15\nReplaying from 0 s - 1.15 s (1.15 s) at 1.0x\nIgnoring Spectator camera\n"
+      },
+      "expected_words": [
+        33043,
+        49427
+      ],
+      "observed_words": [
+        33043,
+        49427
+      ],
+      "samples": [
+        {
+          "frame": 198,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 199,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 200,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 201,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 202,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 203,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 204,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 205,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 206,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 207,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 208,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 209,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 210,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 211,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 212,
+          "word": 33043,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 213,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 214,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 215,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 216,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 217,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 218,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        },
+        {
+          "frame": 219,
+          "word": 49427,
+          "movements": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          }
+        }
+      ]
+    },
+    "driving-report": {
+      "red_stop": {
+        "frame": 336,
+        "x": -22.747922897338867,
+        "y": -64.73329162597656,
+        "speed": 0.0,
+        "brake": 1.0,
+        "light": 8,
+        "at_light": true,
+        "junction": false,
+        "road": 7,
+        "next": "[]"
+      },
+      "permissive_left": {
+        "yield_frames": 101,
+        "left_entry": 580,
+        "protected_opposing_entry": 444,
+        "released_after_yield": true
+      },
+      "result": "passed"
+    },
+    "report": {
+      "topology": {
+        "vehicle_heads": 43,
+        "pedestrian_heads": 19
+      },
+      "camera_images": {
+        "off": [
+          "/mnt/simulations/control-center/data/movement-verification/worker-0-arrows-off.png",
+          "/mnt/simulations/control-center/data/movement-verification/worker-1-arrows-off.png",
+          "/mnt/simulations/control-center/data/movement-verification/worker-2-arrows-off.png",
+          "/mnt/simulations/control-center/data/movement-verification/worker-3-arrows-off.png"
+        ],
+        "on": [
+          "/mnt/simulations/control-center/data/movement-verification/worker-0-arrows-on.png",
+          "/mnt/simulations/control-center/data/movement-verification/worker-1-arrows-on.png",
+          "/mnt/simulations/control-center/data/movement-verification/worker-2-arrows-on.png",
+          "/mnt/simulations/control-center/data/movement-verification/worker-3-arrows-on.png"
+        ]
+      },
+      "camera_pixel_checks": [
+        {
+          "stream": 0,
+          "yellow_on": 19,
+          "yellow_off": 0,
+          "protected_green": 52
+        },
+        {
+          "stream": 1,
+          "yellow_on": 16,
+          "yellow_off": 0,
+          "protected_green": 58
+        },
+        {
+          "stream": 2,
+          "yellow_on": 20,
+          "yellow_off": 0,
+          "protected_green": 40
+        },
+        {
+          "stream": 3,
+          "yellow_on": 21,
+          "yellow_off": 0,
+          "protected_green": 52
+        }
+      ],
+      "recording": {
+        "id": "20260908-150503-323c34",
+        "frames": 24,
+        "native_movement_packets": 24,
+        "ros_messages": 24,
+        "exact_words_and_timestamps": true,
+        "original_ego_sensors": 5
+      },
+      "result": "passed"
+    }
+  }
+}

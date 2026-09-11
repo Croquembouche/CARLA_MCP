@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/scripts/restore_saved_scene.py", line 13, in <module>
+    if s.get('phase')=='error':raise RuntimeError(s.get('error'))
+RuntimeError: gpu-3 exited with code 1; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-113141

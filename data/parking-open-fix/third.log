@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/data/parking-open-fix/third.py", line 5, in <module>
+    s=c.get('/api/status').json();aid=next(int(k) for k,m in s['managed'].items() if m['role']=='ego');bay=next(b for b in c.get('/api/map').json()['parking_spaces'] if b['id']=='R110');goal={k:bay[k] for k in ('x','y','z')};goal['parking_space']=bay['id'];r=c.post('/api/command/destination',json={'id':aid,'point':goal});r.raise_for_status();print('ASSIGNED',r.json()['parking_trip'],flush=True);c.post('/api/command/run',json={}).raise_for_status();rows=[];last=None;started=time.monotonic()
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'http://127.0.0.1:8095/api/command/destination'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400

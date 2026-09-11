@@ -1,0 +1,29 @@
+{
+  "id": 25,
+  "sensors": [
+    {
+      "id": 26,
+      "name": "cabin_overview",
+      "frame": "403",
+      "bytes": 71103
+    },
+    {
+      "id": 27,
+      "name": "cabin_dashboard",
+      "frame": "403",
+      "bytes": 62415
+    },
+    {
+      "id": 28,
+      "name": "cabin_rear_seats",
+      "frame": "403",
+      "bytes": 50557
+    },
+    {
+      "id": 29,
+      "name": "test_roof_lidar",
+      "frame": "403",
+      "bytes": 45458
+    }
+  ]
+}

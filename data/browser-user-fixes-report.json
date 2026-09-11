@@ -1,0 +1,13 @@
+{
+  "errors": [],
+  "background": 31,
+  "route_points": 18,
+  "destination": {
+    "x": 49.66741943359375,
+    "y": -57.41726303100586,
+    "z": 0
+  },
+  "lane_markings": 257,
+  "turn_lanes": 54,
+  "no_camera_preview_requests": true
+}

@@ -1,0 +1,7 @@
+Processing /mnt/simulations/carla/Build/PythonAPI/dist/carla-0.10.0-cp310-cp310-linux_x86_64.whl
+Installing collected packages: carla
+  Attempting uninstall: carla
+    Found existing installation: carla 0.10.0
+    Uninstalling carla-0.10.0:
+      Successfully uninstalled carla-0.10.0
+Successfully installed carla-0.10.0

@@ -1,0 +1,17 @@
+{
+  "temporary_actor": 60,
+  "parking_trip": {
+    "stage": "driving",
+    "bay": "P025",
+    "blocked": null,
+    "entry_strategy": "reverse_in",
+    "motion": "forward"
+  },
+  "route_points": 101,
+  "reverse_points": 63,
+  "actors_restored": 28,
+  "ego_sensors_preserved": 6,
+  "workers": 4,
+  "allowed_bays": 13,
+  "error": null
+}

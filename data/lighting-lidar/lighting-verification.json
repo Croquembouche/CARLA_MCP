@@ -1,0 +1,20 @@
+{
+  "night": {
+    "vehicles_checked": 42,
+    "tm_state": 3
+  },
+  "day": {
+    "vehicles_checked": 42,
+    "tm_state": 0
+  },
+  "rain": {
+    "vehicles_checked": 42,
+    "tm_state": 3
+  },
+  "fog": {
+    "vehicles_checked": 42,
+    "tm_state": 131
+  },
+  "external_brake_reverse_left": 235,
+  "verified": true
+}

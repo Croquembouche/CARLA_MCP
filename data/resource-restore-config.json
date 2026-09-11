@@ -1,0 +1,1345 @@
+{
+  "map": "Carla/Maps/Town10HD_Opt",
+  "weather": {
+    "cloudiness": 95.0,
+    "precipitation": 70.0,
+    "precipitation_deposits": 60.0,
+    "wind_intensity": 10.0,
+    "sun_azimuth_angle": 0.0,
+    "sun_altitude_angle": 35.0,
+    "fog_density": 0.0,
+    "fog_distance": 100.0,
+    "wetness": 80.0,
+    "dust_storm": 0.0,
+    "fog_falloff": 0.20000000298023224,
+    "scattering_intensity": 0.0,
+    "mie_scattering_scale": 0.0,
+    "rayleigh_scattering_scale": 0.03310000151395798
+  },
+  "movement_programs": {
+    "10": {
+      "active": true,
+      "members": [
+        10,
+        11,
+        22
+      ],
+      "conflicts": [
+        [
+          [
+            10,
+            "left"
+          ],
+          [
+            11,
+            "straight"
+          ]
+        ],
+        [
+          [
+            10,
+            "left"
+          ],
+          [
+            11,
+            "right"
+          ]
+        ],
+        [
+          [
+            10,
+            "straight"
+          ],
+          [
+            22,
+            "left"
+          ]
+        ],
+        [
+          [
+            10,
+            "left"
+          ],
+          [
+            22,
+            "left"
+          ]
+        ],
+        [
+          [
+            11,
+            "straight"
+          ],
+          [
+            22,
+            "right"
+          ]
+        ],
+        [
+          [
+            11,
+            "straight"
+          ],
+          [
+            22,
+            "left"
+          ]
+        ]
+      ],
+      "defaults": [
+        {
+          "name": "Approach 10",
+          "duration": 15.0,
+          "states": {
+            "10": {
+              "straight": "Protected",
+              "left": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 11",
+          "duration": 15.0,
+          "states": {
+            "11": {
+              "straight": "Protected",
+              "right": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 22",
+          "duration": 15.0,
+          "states": {
+            "22": {
+              "right": "Protected",
+              "left": "Protected"
+            }
+          }
+        }
+      ],
+      "phases": [
+        {
+          "name": "Approach 10",
+          "duration": 15.0,
+          "states": {
+            "10": {
+              "left": "Protected",
+              "straight": "Protected",
+              "right": "Off"
+            },
+            "11": {
+              "left": "Off",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "22": {
+              "left": "Stop",
+              "straight": "Off",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 11",
+          "duration": 15.0,
+          "states": {
+            "10": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Off"
+            },
+            "11": {
+              "left": "Off",
+              "straight": "Protected",
+              "right": "Protected"
+            },
+            "22": {
+              "left": "Stop",
+              "straight": "Off",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 22",
+          "duration": 15.0,
+          "states": {
+            "10": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Off"
+            },
+            "11": {
+              "left": "Off",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "22": {
+              "left": "Protected",
+              "straight": "Off",
+              "right": "Protected"
+            }
+          }
+        }
+      ],
+      "yellow_time": 3.0,
+      "all_red_time": 2.0,
+      "index": 1,
+      "next": 1,
+      "stage": "green",
+      "since": 148.0426463445445,
+      "hold": false,
+      "disable": false,
+      "current": {
+        "10": {
+          "left": "Stop",
+          "straight": "Stop",
+          "right": "Off"
+        },
+        "11": {
+          "left": "Off",
+          "straight": "Protected",
+          "right": "Protected"
+        },
+        "22": {
+          "left": "Stop",
+          "straight": "Off",
+          "right": "Stop"
+        }
+      },
+      "waiting_for_clearance": false,
+      "waiting_for_offset": false,
+      "elapsed": 6.000000089406967
+    },
+    "15": {
+      "active": true,
+      "members": [
+        15,
+        17,
+        21
+      ],
+      "conflicts": [
+        [
+          [
+            15,
+            "straight"
+          ],
+          [
+            17,
+            "left"
+          ]
+        ],
+        [
+          [
+            15,
+            "right"
+          ],
+          [
+            17,
+            "left"
+          ]
+        ],
+        [
+          [
+            15,
+            "straight"
+          ],
+          [
+            21,
+            "left"
+          ]
+        ],
+        [
+          [
+            15,
+            "straight"
+          ],
+          [
+            21,
+            "right"
+          ]
+        ],
+        [
+          [
+            17,
+            "straight"
+          ],
+          [
+            21,
+            "left"
+          ]
+        ],
+        [
+          [
+            17,
+            "left"
+          ],
+          [
+            21,
+            "left"
+          ]
+        ]
+      ],
+      "defaults": [
+        {
+          "name": "Approach 15",
+          "duration": 15.0,
+          "states": {
+            "15": {
+              "straight": "Protected",
+              "right": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 17",
+          "duration": 15.0,
+          "states": {
+            "17": {
+              "straight": "Protected",
+              "left": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 21",
+          "duration": 15.0,
+          "states": {
+            "21": {
+              "left": "Protected",
+              "right": "Protected"
+            }
+          }
+        }
+      ],
+      "phases": [
+        {
+          "name": "Approach 15",
+          "duration": 15.0,
+          "states": {
+            "15": {
+              "left": "Off",
+              "straight": "Protected",
+              "right": "Protected"
+            },
+            "17": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Off"
+            },
+            "21": {
+              "left": "Stop",
+              "straight": "Off",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 17",
+          "duration": 15.0,
+          "states": {
+            "15": {
+              "left": "Off",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "17": {
+              "left": "Protected",
+              "straight": "Protected",
+              "right": "Off"
+            },
+            "21": {
+              "left": "Stop",
+              "straight": "Off",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 21",
+          "duration": 15.0,
+          "states": {
+            "15": {
+              "left": "Off",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "17": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Off"
+            },
+            "21": {
+              "left": "Protected",
+              "straight": "Off",
+              "right": "Protected"
+            }
+          }
+        }
+      ],
+      "yellow_time": 3.0,
+      "all_red_time": 2.0,
+      "index": 1,
+      "next": 1,
+      "stage": "green",
+      "since": 148.09264634528955,
+      "hold": false,
+      "disable": false,
+      "current": {
+        "15": {
+          "left": "Off",
+          "straight": "Stop",
+          "right": "Stop"
+        },
+        "17": {
+          "left": "Protected",
+          "straight": "Protected",
+          "right": "Off"
+        },
+        "21": {
+          "left": "Stop",
+          "straight": "Off",
+          "right": "Stop"
+        }
+      },
+      "waiting_for_clearance": false,
+      "waiting_for_offset": false,
+      "elapsed": 5.950000088661909
+    },
+    "12": {
+      "active": true,
+      "members": [
+        12,
+        13,
+        14,
+        20
+      ],
+      "conflicts": [
+        [
+          [
+            12,
+            "left"
+          ],
+          [
+            13,
+            "straight"
+          ]
+        ],
+        [
+          [
+            12,
+            "left"
+          ],
+          [
+            13,
+            "left"
+          ]
+        ],
+        [
+          [
+            12,
+            "straight"
+          ],
+          [
+            13,
+            "straight"
+          ]
+        ],
+        [
+          [
+            12,
+            "straight"
+          ],
+          [
+            13,
+            "left"
+          ]
+        ],
+        [
+          [
+            12,
+            "straight"
+          ],
+          [
+            13,
+            "right"
+          ]
+        ],
+        [
+          [
+            12,
+            "left"
+          ],
+          [
+            14,
+            "straight"
+          ]
+        ],
+        [
+          [
+            12,
+            "right"
+          ],
+          [
+            14,
+            "left"
+          ]
+        ],
+        [
+          [
+            12,
+            "straight"
+          ],
+          [
+            14,
+            "left"
+          ]
+        ],
+        [
+          [
+            12,
+            "left"
+          ],
+          [
+            20,
+            "straight"
+          ]
+        ],
+        [
+          [
+            12,
+            "left"
+          ],
+          [
+            20,
+            "left"
+          ]
+        ],
+        [
+          [
+            12,
+            "right"
+          ],
+          [
+            20,
+            "straight"
+          ]
+        ],
+        [
+          [
+            12,
+            "straight"
+          ],
+          [
+            20,
+            "straight"
+          ]
+        ],
+        [
+          [
+            12,
+            "straight"
+          ],
+          [
+            20,
+            "left"
+          ]
+        ],
+        [
+          [
+            13,
+            "straight"
+          ],
+          [
+            14,
+            "right"
+          ]
+        ],
+        [
+          [
+            13,
+            "straight"
+          ],
+          [
+            14,
+            "left"
+          ]
+        ],
+        [
+          [
+            13,
+            "straight"
+          ],
+          [
+            14,
+            "straight"
+          ]
+        ],
+        [
+          [
+            13,
+            "left"
+          ],
+          [
+            14,
+            "left"
+          ]
+        ],
+        [
+          [
+            13,
+            "left"
+          ],
+          [
+            14,
+            "straight"
+          ]
+        ],
+        [
+          [
+            13,
+            "straight"
+          ],
+          [
+            20,
+            "left"
+          ]
+        ],
+        [
+          [
+            13,
+            "left"
+          ],
+          [
+            20,
+            "straight"
+          ]
+        ],
+        [
+          [
+            13,
+            "right"
+          ],
+          [
+            20,
+            "left"
+          ]
+        ],
+        [
+          [
+            14,
+            "left"
+          ],
+          [
+            20,
+            "straight"
+          ]
+        ],
+        [
+          [
+            14,
+            "left"
+          ],
+          [
+            20,
+            "left"
+          ]
+        ],
+        [
+          [
+            14,
+            "straight"
+          ],
+          [
+            20,
+            "straight"
+          ]
+        ],
+        [
+          [
+            14,
+            "straight"
+          ],
+          [
+            20,
+            "right"
+          ]
+        ],
+        [
+          [
+            14,
+            "straight"
+          ],
+          [
+            20,
+            "left"
+          ]
+        ]
+      ],
+      "defaults": [
+        {
+          "name": "Approach 12",
+          "duration": 15.0,
+          "states": {
+            "12": {
+              "left": "Protected",
+              "right": "Protected",
+              "straight": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 13",
+          "duration": 15.0,
+          "states": {
+            "13": {
+              "straight": "Protected",
+              "left": "Protected",
+              "right": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 14",
+          "duration": 15.0,
+          "states": {
+            "14": {
+              "right": "Protected",
+              "left": "Protected",
+              "straight": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 20",
+          "duration": 15.0,
+          "states": {
+            "20": {
+              "straight": "Protected",
+              "right": "Protected",
+              "left": "Protected"
+            }
+          }
+        }
+      ],
+      "phases": [
+        {
+          "name": "Approach 12",
+          "duration": 15.0,
+          "states": {
+            "12": {
+              "left": "Protected",
+              "straight": "Protected",
+              "right": "Protected"
+            },
+            "13": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "14": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "20": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 13",
+          "duration": 15.0,
+          "states": {
+            "12": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "13": {
+              "left": "Protected",
+              "straight": "Protected",
+              "right": "Protected"
+            },
+            "14": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "20": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 14",
+          "duration": 15.0,
+          "states": {
+            "12": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "13": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "14": {
+              "left": "Protected",
+              "straight": "Protected",
+              "right": "Protected"
+            },
+            "20": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 20",
+          "duration": 15.0,
+          "states": {
+            "12": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "13": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "14": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            },
+            "20": {
+              "left": "Protected",
+              "straight": "Protected",
+              "right": "Protected"
+            }
+          }
+        }
+      ],
+      "yellow_time": 3.0,
+      "all_red_time": 2.0,
+      "index": 3,
+      "next": 3,
+      "stage": "green",
+      "since": 148.1426463460346,
+      "hold": false,
+      "disable": false,
+      "current": {
+        "12": {
+          "left": "Stop",
+          "straight": "Stop",
+          "right": "Stop"
+        },
+        "13": {
+          "left": "Stop",
+          "straight": "Stop",
+          "right": "Stop"
+        },
+        "14": {
+          "left": "Stop",
+          "straight": "Stop",
+          "right": "Stop"
+        },
+        "20": {
+          "left": "Protected",
+          "straight": "Protected",
+          "right": "Protected"
+        }
+      },
+      "waiting_for_clearance": false,
+      "waiting_for_offset": false,
+      "elapsed": 5.900000087916851
+    },
+    "18": {
+      "active": true,
+      "members": [
+        18,
+        19
+      ],
+      "conflicts": [
+        [
+          [
+            18,
+            "right"
+          ],
+          [
+            19,
+            "straight"
+          ]
+        ]
+      ],
+      "defaults": [
+        {
+          "name": "Approach 18",
+          "duration": 15.0,
+          "states": {
+            "18": {
+              "right": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 19",
+          "duration": 15.0,
+          "states": {
+            "19": {
+              "right": "Protected",
+              "left": "Protected",
+              "straight": "Protected"
+            }
+          }
+        }
+      ],
+      "phases": [
+        {
+          "name": "Protected through \u00b7 permissive right",
+          "duration": 15.0,
+          "states": {
+            "18": {
+              "left": "Off",
+              "straight": "Off",
+              "right": "Permissive"
+            },
+            "19": {
+              "left": "Stop",
+              "straight": "Protected",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 18",
+          "duration": 15.0,
+          "states": {
+            "18": {
+              "left": "Off",
+              "straight": "Off",
+              "right": "Protected"
+            },
+            "19": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 19",
+          "duration": 15.0,
+          "states": {
+            "18": {
+              "left": "Off",
+              "straight": "Off",
+              "right": "Stop"
+            },
+            "19": {
+              "left": "Protected",
+              "straight": "Protected",
+              "right": "Protected"
+            }
+          }
+        }
+      ],
+      "yellow_time": 3.0,
+      "all_red_time": 2.0,
+      "index": 1,
+      "next": 1,
+      "stage": "green",
+      "since": 148.19264634677967,
+      "hold": false,
+      "disable": false,
+      "current": {
+        "18": {
+          "left": "Off",
+          "straight": "Off",
+          "right": "Protected"
+        },
+        "19": {
+          "left": "Stop",
+          "straight": "Stop",
+          "right": "Stop"
+        }
+      },
+      "waiting_for_clearance": false,
+      "waiting_for_offset": false,
+      "elapsed": 5.850000087171793
+    },
+    "8": {
+      "active": true,
+      "members": [
+        8,
+        9,
+        16
+      ],
+      "conflicts": [
+        [
+          [
+            8,
+            "left"
+          ],
+          [
+            9,
+            "right"
+          ]
+        ],
+        [
+          [
+            8,
+            "left"
+          ],
+          [
+            9,
+            "left"
+          ]
+        ],
+        [
+          [
+            8,
+            "straight"
+          ],
+          [
+            9,
+            "right"
+          ]
+        ],
+        [
+          [
+            8,
+            "straight"
+          ],
+          [
+            9,
+            "left"
+          ]
+        ],
+        [
+          [
+            8,
+            "left"
+          ],
+          [
+            16,
+            "straight"
+          ]
+        ],
+        [
+          [
+            9,
+            "right"
+          ],
+          [
+            16,
+            "straight"
+          ]
+        ],
+        [
+          [
+            9,
+            "left"
+          ],
+          [
+            16,
+            "straight"
+          ]
+        ]
+      ],
+      "defaults": [
+        {
+          "name": "Approach 8",
+          "duration": 15.0,
+          "states": {
+            "8": {
+              "left": "Protected",
+              "straight": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 9",
+          "duration": 15.0,
+          "states": {
+            "9": {
+              "right": "Protected",
+              "left": "Protected"
+            }
+          }
+        },
+        {
+          "name": "Approach 16",
+          "duration": 15.0,
+          "states": {
+            "16": {
+              "straight": "Protected",
+              "right": "Protected"
+            }
+          }
+        }
+      ],
+      "phases": [
+        {
+          "name": "Opposing through \u00b7 permissive left",
+          "duration": 15.0,
+          "states": {
+            "8": {
+              "left": "Permissive",
+              "straight": "Protected",
+              "right": "Off"
+            },
+            "9": {
+              "left": "Stop",
+              "straight": "Off",
+              "right": "Stop"
+            },
+            "16": {
+              "left": "Off",
+              "straight": "Protected",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 8",
+          "duration": 15.0,
+          "states": {
+            "8": {
+              "left": "Protected",
+              "straight": "Protected",
+              "right": "Off"
+            },
+            "9": {
+              "left": "Stop",
+              "straight": "Off",
+              "right": "Stop"
+            },
+            "16": {
+              "left": "Off",
+              "straight": "Stop",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 9",
+          "duration": 15.0,
+          "states": {
+            "8": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Off"
+            },
+            "9": {
+              "left": "Protected",
+              "straight": "Off",
+              "right": "Protected"
+            },
+            "16": {
+              "left": "Off",
+              "straight": "Stop",
+              "right": "Stop"
+            }
+          }
+        },
+        {
+          "name": "Approach 16",
+          "duration": 15.0,
+          "states": {
+            "8": {
+              "left": "Stop",
+              "straight": "Stop",
+              "right": "Off"
+            },
+            "9": {
+              "left": "Stop",
+              "straight": "Off",
+              "right": "Stop"
+            },
+            "16": {
+              "left": "Off",
+              "straight": "Protected",
+              "right": "Protected"
+            }
+          }
+        }
+      ],
+      "yellow_time": 3.0,
+      "all_red_time": 2.0,
+      "index": 3,
+      "next": 3,
+      "stage": "green",
+      "since": 148.24264634752473,
+      "hold": false,
+      "disable": false,
+      "current": {
+        "8": {
+          "left": "Stop",
+          "straight": "Stop",
+          "right": "Off"
+        },
+        "9": {
+          "left": "Stop",
+          "straight": "Off",
+          "right": "Stop"
+        },
+        "16": {
+          "left": "Off",
+          "straight": "Protected",
+          "right": "Protected"
+        }
+      },
+      "waiting_for_clearance": false,
+      "waiting_for_offset": false,
+      "elapsed": 5.800000086426735
+    }
+  },
+  "network_timing": {
+    "mode": "independent",
+    "epoch": 0.0,
+    "detectors": {},
+    "next_cycle_starts": {}
+  },
+  "authoring": {
+    "running": false,
+    "elapsed": 0.0,
+    "config": {
+      "flows": [],
+      "events": []
+    },
+    "flows": [],
+    "events": [],
+    "log": [],
+    "actors": {}
+  },
+  "actors": [
+    {
+      "id": 32,
+      "model": "walker.pedestrian.0043",
+      "role": "pedestrian",
+      "planner": "tm",
+      "spawn": {
+        "x": -100.96234893798828,
+        "y": -62.91954040527344,
+        "z": 1.0938999652862549,
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "roll": -0.0
+      },
+      "destination": {
+        "x": -98.31407165527344,
+        "y": -64.2831802368164,
+        "z": 0.15465688705444336
+      },
+      "sensors": []
+    },
+    {
+      "id": 31,
+      "model": "vehicle.ambulance.ford",
+      "role": "background",
+      "planner": "tm",
+      "spawn": {
+        "x": 106.46379852294922,
+        "y": -22.877635955810547,
+        "z": -0.18067143857479095,
+        "yaw": -89.73613739013672,
+        "pitch": 0.0899420976638794,
+        "roll": -0.892249345779419
+      },
+      "destination": {
+        "x": 51.99409866333008,
+        "y": -64.418212890625,
+        "z": 0.0
+      },
+      "sensors": []
+    },
+    {
+      "id": 25,
+      "model": "vehicle.ambulance.ford",
+      "role": "ego",
+      "planner": "tm",
+      "spawn": {
+        "x": 105.8720932006836,
+        "y": -30.375885009765625,
+        "z": -0.13542009890079498,
+        "yaw": -99.98207092285156,
+        "pitch": -0.25338053703308105,
+        "roll": -0.4920187294483185
+      },
+      "destination": {
+        "x": 106.24935913085938,
+        "y": -27.652612686157227,
+        "z": 0.0
+      },
+      "sensors": [
+        {
+          "name": "front_rgb",
+          "type": "sensor.camera.rgb",
+          "mount": {
+            "x": 1.5,
+            "z": 2.2
+          },
+          "attributes": {
+            "image_size_x": "640",
+            "image_size_y": "360",
+            "fov": "90",
+            "sensor_tick": "0.0"
+          }
+        },
+        {
+          "name": "roof_lidar",
+          "type": "sensor.lidar.ray_cast",
+          "mount": {
+            "z": 2.5
+          },
+          "attributes": {
+            "channels": "32",
+            "range": "80",
+            "points_per_second": "200000",
+            "rotation_frequency": "20",
+            "sensor_tick": "0.0"
+          }
+        },
+        {
+          "name": "front_radar",
+          "type": "sensor.other.radar",
+          "mount": {
+            "x": 2.0,
+            "z": 1.0
+          },
+          "attributes": {
+            "range": "80",
+            "points_per_second": "10000",
+            "sensor_tick": "0.0"
+          }
+        },
+        {
+          "name": "imu",
+          "type": "sensor.other.imu",
+          "mount": {},
+          "attributes": {
+            "sensor_tick": "0.0"
+          }
+        },
+        {
+          "name": "gnss",
+          "type": "sensor.other.gnss",
+          "mount": {},
+          "attributes": {
+            "sensor_tick": "0.0"
+          }
+        }
+      ]
+    }
+  ]
+}

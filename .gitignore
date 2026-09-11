@@ -1,0 +1,12 @@
+/.venv/
+/.mcp-venv/
+/node_modules/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+*.pid
+/data/restart-live-request.json

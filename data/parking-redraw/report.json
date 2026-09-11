@@ -1,0 +1,450 @@
+{
+  "old_count": 41,
+  "new_count": 120,
+  "allowed": [
+    "P011",
+    "P021",
+    "P024",
+    "P025",
+    "P026",
+    "P034",
+    "P035",
+    "P036",
+    "P037",
+    "P038",
+    "P039",
+    "P042",
+    "R001",
+    "R008",
+    "R009",
+    "R012",
+    "R013",
+    "R014",
+    "R023",
+    "R049",
+    "R050",
+    "R051",
+    "R057",
+    "R058",
+    "R059",
+    "R066",
+    "R067",
+    "R068",
+    "R075",
+    "R076",
+    "R077",
+    "R078",
+    "R079",
+    "R098",
+    "R099",
+    "R103",
+    "R104",
+    "R105",
+    "R106",
+    "R107",
+    "R112",
+    "R113",
+    "R116",
+    "R117",
+    "R119",
+    "R120"
+  ],
+  "excluded": {
+    "P001": [
+      "posted_conditional"
+    ],
+    "P002": [
+      "posted_conditional"
+    ],
+    "P003": [
+      "hydrant",
+      "posted_conditional"
+    ],
+    "P004": [
+      "hydrant",
+      "posted_conditional"
+    ],
+    "P005": [
+      "posted_conditional"
+    ],
+    "P006": [
+      "posted_conditional"
+    ],
+    "P007": [
+      "posted_conditional"
+    ],
+    "P008": [
+      "hydrant"
+    ],
+    "P009": [
+      "hydrant"
+    ],
+    "P010": [
+      "hydrant"
+    ],
+    "P012": [
+      "bus_stop"
+    ],
+    "P013": [
+      "bus_stop"
+    ],
+    "P014": [
+      "hydrant"
+    ],
+    "P015": [
+      "crosswalk"
+    ],
+    "P016": [
+      "hydrant"
+    ],
+    "P017": [
+      "hydrant"
+    ],
+    "P018": [
+      "crosswalk"
+    ],
+    "P020": [
+      "crosswalk"
+    ],
+    "P022": [
+      "hydrant"
+    ],
+    "P023": [
+      "hydrant"
+    ],
+    "P027": [
+      "hydrant",
+      "posted_mixed"
+    ],
+    "P028": [
+      "posted_mixed"
+    ],
+    "P029": [
+      "posted_mixed"
+    ],
+    "P030": [
+      "posted_mixed"
+    ],
+    "P031": [
+      "posted_mixed"
+    ],
+    "P032": [
+      "posted_mixed"
+    ],
+    "P033": [
+      "posted_mixed"
+    ],
+    "P040": [
+      "hydrant"
+    ],
+    "P041": [
+      "hydrant"
+    ],
+    "R002": [
+      "posted_mixed"
+    ],
+    "R003": [
+      "posted_mixed"
+    ],
+    "R004": [
+      "bus_stop",
+      "posted_mixed"
+    ],
+    "R005": [
+      "bus_stop",
+      "posted_mixed"
+    ],
+    "R006": [
+      "hydrant"
+    ],
+    "R007": [
+      "hydrant"
+    ],
+    "R010": [
+      "bus_stop"
+    ],
+    "R011": [
+      "bus_stop"
+    ],
+    "R015": [
+      "posted_conditional"
+    ],
+    "R016": [
+      "posted_conditional"
+    ],
+    "R017": [
+      "posted_conditional"
+    ],
+    "R018": [
+      "posted_conditional"
+    ],
+    "R019": [
+      "posted_conditional"
+    ],
+    "R020": [
+      "posted_conditional"
+    ],
+    "R021": [
+      "posted_conditional"
+    ],
+    "R022": [
+      "posted_conditional"
+    ],
+    "R024": [
+      "bus_stop"
+    ],
+    "R025": [
+      "no_stopping"
+    ],
+    "R026": [
+      "no_stopping"
+    ],
+    "R027": [
+      "no_stopping"
+    ],
+    "R028": [
+      "no_stopping"
+    ],
+    "R029": [
+      "no_stopping"
+    ],
+    "R030": [
+      "no_stopping"
+    ],
+    "R031": [
+      "bus_stop",
+      "no_stopping"
+    ],
+    "R032": [
+      "bus_stop",
+      "bus_stop",
+      "no_stopping"
+    ],
+    "R033": [
+      "bus_stop",
+      "bus_stop",
+      "no_stopping"
+    ],
+    "R034": [
+      "bus_stop",
+      "bus_stop",
+      "no_stopping"
+    ],
+    "R035": [
+      "bus_stop",
+      "no_stopping"
+    ],
+    "R036": [
+      "hydrant",
+      "no_stopping"
+    ],
+    "R037": [
+      "hydrant",
+      "no_stopping"
+    ],
+    "R038": [
+      "no_stopping"
+    ],
+    "R039": [
+      "no_stopping"
+    ],
+    "R040": [
+      "no_stopping"
+    ],
+    "R041": [
+      "no_stopping"
+    ],
+    "R042": [
+      "no_stopping"
+    ],
+    "R043": [
+      "bus_stop",
+      "no_stopping"
+    ],
+    "R044": [
+      "crosswalk",
+      "posted_conditional",
+      "control_approach"
+    ],
+    "R045": [
+      "posted_conditional"
+    ],
+    "R046": [
+      "posted_conditional"
+    ],
+    "R047": [
+      "posted_conditional"
+    ],
+    "R048": [
+      "posted_conditional"
+    ],
+    "R052": [
+      "hydrant"
+    ],
+    "R053": [
+      "hydrant",
+      "posted_mixed"
+    ],
+    "R054": [
+      "posted_mixed"
+    ],
+    "R055": [
+      "hydrant"
+    ],
+    "R056": [
+      "hydrant"
+    ],
+    "R060": [
+      "crosswalk",
+      "posted_mixed"
+    ],
+    "R061": [
+      "posted_mixed"
+    ],
+    "R062": [
+      "posted_mixed"
+    ],
+    "R063": [
+      "crosswalk",
+      "posted_conditional"
+    ],
+    "R064": [
+      "posted_conditional"
+    ],
+    "R065": [
+      "posted_conditional"
+    ],
+    "R069": [
+      "posted_conditional"
+    ],
+    "R070": [
+      "posted_conditional"
+    ],
+    "R071": [
+      "posted_conditional"
+    ],
+    "R072": [
+      "hydrant",
+      "posted_conditional"
+    ],
+    "R073": [
+      "hydrant",
+      "posted_conditional"
+    ],
+    "R074": [
+      "posted_conditional"
+    ],
+    "R080": [
+      "posted_mixed"
+    ],
+    "R081": [
+      "bus_stop",
+      "posted_mixed"
+    ],
+    "R082": [
+      "bus_stop",
+      "bus_stop",
+      "posted_mixed"
+    ],
+    "R083": [
+      "bus_stop",
+      "bus_stop",
+      "posted_mixed"
+    ],
+    "R084": [
+      "bus_stop",
+      "posted_mixed"
+    ],
+    "R085": [
+      "bus_stop",
+      "posted_mixed"
+    ],
+    "R086": [
+      "posted_mixed"
+    ],
+    "R087": [
+      "posted_mixed"
+    ],
+    "R088": [
+      "posted_mixed"
+    ],
+    "R089": [
+      "posted_mixed"
+    ],
+    "R090": [
+      "hydrant",
+      "crosswalk",
+      "posted_unresolved"
+    ],
+    "R091": [
+      "hydrant",
+      "control_approach",
+      "control_approach"
+    ],
+    "R092": [
+      "posted_unresolved",
+      "control_approach",
+      "control_approach"
+    ],
+    "R093": [
+      "posted_unresolved",
+      "control_approach",
+      "control_approach"
+    ],
+    "R094": [
+      "posted_unresolved"
+    ],
+    "R095": [
+      "bus_stop",
+      "posted_unresolved"
+    ],
+    "R096": [
+      "hydrant",
+      "bus_stop",
+      "posted_unresolved"
+    ],
+    "R097": [
+      "hydrant",
+      "posted_unresolved"
+    ],
+    "R100": [
+      "bus_stop",
+      "crosswalk"
+    ],
+    "R101": [
+      "bus_stop"
+    ],
+    "R102": [
+      "bus_stop"
+    ],
+    "R108": [
+      "posted_conditional"
+    ],
+    "R109": [
+      "posted_mixed"
+    ],
+    "R110": [
+      "crosswalk"
+    ],
+    "R111": [
+      "crosswalk"
+    ],
+    "R114": [
+      "posted_conditional"
+    ],
+    "R115": [
+      "crosswalk"
+    ],
+    "R118": [
+      "crosswalk"
+    ]
+  },
+  "removed": [],
+  "strips": 72,
+  "mesh_area_m2": {
+    "asphalt": 22512.87,
+    "paint": 1011.37,
+    "sidewalk": 322764.04
+  },
+  "notes": "Buildings and vegetation omitted from survey renderer; roads/paint/curbs retained. Projected decals are not rendered; source decal inventory reviewed separately."
+}

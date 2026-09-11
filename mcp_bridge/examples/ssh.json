@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "carla": {
+      "command": "ssh",
+      "args": [
+        "-T",
+        "william@128.175.213.232",
+        "env",
+        "CARLA_WEBUI_PUBLIC_URL=http://128.175.213.232:8095",
+        "/mnt/simulations/control-center/run-mcp.sh"
+      ]
+    }
+  }
+}

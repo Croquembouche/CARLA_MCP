@@ -1,0 +1,18 @@
+[Unit]
+Description=CARLA network control center
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/simulations/control-center
+ExecCondition=/usr/bin/mountpoint -q /mnt/simulations
+ExecStart=/mnt/simulations/control-center/run.sh
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=180
+KillMode=mixed
+LimitNOFILE=65536
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

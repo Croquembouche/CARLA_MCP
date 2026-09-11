@@ -1,0 +1,23 @@
+RED_STOP {'frame': 315, 'x': -48.5038948059082, 'y': 107.3389663696289, 'speed': 0.0, 'brake': 1.0, 'light': 18, 'at_light': True, 'junction': False, 'road': 13, 'next': '[]'}
+{
+  "red_stop": {
+    "frame": 315,
+    "x": -48.5038948059082,
+    "y": 107.3389663696289,
+    "speed": 0.0,
+    "brake": 1.0,
+    "light": 18,
+    "at_light": true,
+    "junction": false,
+    "road": 13,
+    "next": "[]"
+  },
+  "permissive_right": {
+    "yield_frames": 46,
+    "left_entry": 566,
+    "protected_opposing_entry": 474,
+    "released_after_yield": true
+  },
+  "protected_right_entered": true,
+  "result": "passed"
+}

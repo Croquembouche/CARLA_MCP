@@ -1,0 +1,68 @@
+[
+  {
+    "condition": "night",
+    "frame": 383,
+    "ego": 55,
+    "lights": 11,
+    "weather": {
+      "cloudiness": 10.0,
+      "precipitation": 0.0,
+      "precipitation_deposits": 0.0,
+      "wind_intensity": 10.0,
+      "sun_azimuth_angle": 0.0,
+      "sun_altitude_angle": -35.0,
+      "fog_density": 0.0,
+      "fog_distance": 100.0,
+      "wetness": 0.0,
+      "dust_storm": 0.0,
+      "fog_falloff": 0.20000000298023224,
+      "scattering_intensity": 0.0,
+      "mie_scattering_scale": 0.0,
+      "rayleigh_scattering_scale": 0.03310000151395798
+    }
+  },
+  {
+    "condition": "day",
+    "frame": 416,
+    "ego": 55,
+    "lights": 8,
+    "weather": {
+      "cloudiness": 5.0,
+      "precipitation": 0.0,
+      "precipitation_deposits": 0.0,
+      "wind_intensity": 10.0,
+      "sun_azimuth_angle": 0.0,
+      "sun_altitude_angle": 65.0,
+      "fog_density": 0.0,
+      "fog_distance": 100.0,
+      "wetness": 0.0,
+      "dust_storm": 0.0,
+      "fog_falloff": 0.20000000298023224,
+      "scattering_intensity": 0.0,
+      "mie_scattering_scale": 0.0,
+      "rayleigh_scattering_scale": 0.03310000151395798
+    }
+  },
+  {
+    "condition": "rain",
+    "frame": 449,
+    "ego": 55,
+    "lights": 8,
+    "weather": {
+      "cloudiness": 95.0,
+      "precipitation": 70.0,
+      "precipitation_deposits": 0.0,
+      "wind_intensity": 10.0,
+      "sun_azimuth_angle": 0.0,
+      "sun_altitude_angle": 35.0,
+      "fog_density": 0.0,
+      "fog_distance": 100.0,
+      "wetness": 80.0,
+      "dust_storm": 0.0,
+      "fog_falloff": 0.20000000298023224,
+      "scattering_intensity": 0.0,
+      "mie_scattering_scale": 0.0,
+      "rayleigh_scattering_scale": 0.03310000151395798
+    }
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "workers_before": 4,
+  "workers_after": 1,
+  "unreal_pss_gib_before": 54.36,
+  "unreal_pss_gib_after": 21.39,
+  "unreal_memory_saved_gib": 32.98,
+  "host_used_gib_before_approx": 60,
+  "host_used_gib_after": 27.2,
+  "host_available_gib_after": 97.18,
+  "processes": [
+    {
+      "role": "primary",
+      "pid": 3885962,
+      "rss_kib": 10340552,
+      "pss_kib": 9997904
+    },
+    {
+      "role": "gpu-3",
+      "pid": 3889173,
+      "rss_kib": 12831284,
+      "pss_kib": 12427315
+    }
+  ],
+  "sensor_validation": {
+    "frames": 20,
+    "first_frame": 263,
+    "last_frame": 283,
+    "elapsed_seconds": 1.92,
+    "sensor_count": 5,
+    "camera_size": [
+      480,
+      270
+    ],
+    "camera_frame": "281",
+    "no_frame_or_timestamp_errors": true
+  },
+  "red_stop_checks_passed": 34,
+  "protected_left_right": "passed",
+  "permissive_left_right_yield": "passed",
+  "restored_ids": {
+    "32": 26,
+    "31": 28,
+    "25": 29
+  },
+  "paused": true
+}

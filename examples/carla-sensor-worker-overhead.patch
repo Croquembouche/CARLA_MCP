@@ -1,0 +1,14 @@
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Server/CarlaServer.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Server/CarlaServer.cpp
+@@ -943,7 +943,10 @@
+           Cost = 2. * Attribute("points_per_second", 56000.) / 200000.;
+         else if (Desc == TEXT("sensor.other.radar"))
+           Cost = .5 * Attribute("points_per_second", 1500.) / 10000.;
+-        Cost = FMath::Clamp(Cost, .05, 1000.);
++        // Each capture/query carries a scene-view and residency overhead even
++        // at low pixel/ray counts. Include it so several low-rate ray sensors
++        // cannot all collect on the worker beside three large camera views.
++        Cost = 8. + FMath::Clamp(Cost, .05, 1000.);
+         break;
+       }
+       auto Token = SecondaryServer->GetCommander().GetToken(sensor_id, Cost, ActorId);

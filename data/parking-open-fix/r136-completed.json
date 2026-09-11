@@ -1,0 +1,197 @@
+{
+  "actor": {
+    "id": 52,
+    "type": "vehicle.lincoln.mkz",
+    "pose": {
+      "x": -38.78904724121094,
+      "y": -14.125754356384277,
+      "z": 0.03844168409705162,
+      "yaw": -89.09671783447266,
+      "pitch": -0.23360832035541534,
+      "roll": 2.1706862449645996
+    },
+    "velocity": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "angular_velocity": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "acceleration": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "attributes": {
+      "has_lights": "true",
+      "generation": "-1",
+      "number_of_wheels": "3",
+      "object_type": "",
+      "special_type": "",
+      "ros2_ackermann_control": "false",
+      "terramechanics": "false",
+      "sticky_control": "true",
+      "color": "0,0,0",
+      "has_dynamic_doors": "true",
+      "base_type": "car",
+      "ros_name": "vehicle.lincoln.mkz",
+      "role_name": "hero"
+    },
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.0,
+      "brake": 1.0,
+      "hand_brake": true,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 0
+    },
+    "extent": {
+      "x": 2.4459850788116455,
+      "y": 0.9178230166435242,
+      "z": 0.7620594501495361
+    },
+    "light_state": 3
+  },
+  "managed": {
+    "role": "ego",
+    "planner": "tm",
+    "destination": {
+      "x": -38.825762654448894,
+      "y": -14.098030513269485,
+      "z": 0.0,
+      "parking_space": "R136"
+    },
+    "route": [
+      {
+        "x": -38.73282241821289,
+        "y": -14.113861083984375,
+        "z": 0.0,
+        "yaw": -88.15298461914062,
+        "reverse": false
+      },
+      {
+        "x": -38.72315314320206,
+        "y": -14.41370521869567,
+        "yaw": -88.15298461914062,
+        "reverse": false,
+        "z": 0.0
+      },
+      {
+        "x": -38.71348386819123,
+        "y": -14.713549353406965,
+        "yaw": -88.15298461914062,
+        "reverse": false,
+        "z": 0.0
+      },
+      {
+        "x": -38.703814593180404,
+        "y": -15.01339348811826,
+        "yaw": -88.15298461914062,
+        "reverse": false,
+        "z": 0.0
+      },
+      {
+        "x": -38.694145318169575,
+        "y": -15.313237622829554,
+        "yaw": -88.15298461914062,
+        "reverse": false,
+        "z": 0.0
+      },
+      {
+        "x": -38.65624536969798,
+        "y": -15.158841206660325,
+        "yaw": -86.28790123080394,
+        "reverse": true,
+        "z": 0.0
+      },
+      {
+        "x": -38.63712163149965,
+        "y": -15.004499781869315,
+        "yaw": -85.02076043444683,
+        "reverse": true,
+        "z": 0.0
+      },
+      {
+        "x": -38.635114435138235,
+        "y": -14.851110300402492,
+        "yaw": -84.35072596961757,
+        "reverse": true,
+        "z": 0.0
+      },
+      {
+        "x": -38.648557857222045,
+        "y": -14.69911110792708,
+        "yaw": -84.27626043739382,
+        "reverse": true,
+        "z": 0.0
+      },
+      {
+        "x": -38.675858883677684,
+        "y": -14.548491511074925,
+        "yaw": -84.79730178196064,
+        "reverse": true,
+        "z": 0.0
+      },
+      {
+        "x": -38.71550619963117,
+        "y": -14.398792838636686,
+        "yaw": -85.91550531459748,
+        "reverse": true,
+        "z": 0.0
+      },
+      {
+        "x": -38.76600883633915,
+        "y": -14.249099072107263,
+        "yaw": -87.63255375206367,
+        "reverse": true,
+        "z": 0.0
+      },
+      {
+        "x": -38.825762654448894,
+        "y": -14.098030513269485,
+        "yaw": -89.94650268554685,
+        "reverse": true,
+        "z": 0.0
+      }
+    ],
+    "parked": true,
+    "physics_sleeping": true,
+    "parking_space": "R136",
+    "parking_trip": {
+      "stage": "parked",
+      "bay": "R136",
+      "blocked": null,
+      "alignment_attempts": 2,
+      "entry_strategy": "reverse_in",
+      "motion": "stopped"
+    },
+    "arrived": true,
+    "approach_slowdown": false,
+    "route_update": {
+      "revision": 1,
+      "frame": 268,
+      "preserved_junction": false,
+      "execution": "parking_and_traffic_manager"
+    }
+  },
+  "sensor_ids": [
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ],
+  "after_sensor_ids": [
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ]
+}

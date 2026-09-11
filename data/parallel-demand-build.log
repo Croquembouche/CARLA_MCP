@@ -1,0 +1,36 @@
+Setting up bundled DotNet SDK
+Building ShaderCompileWorker...
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Target is up to date
+Total execution time: 1.96 seconds
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll CarlaUnrealEditor Linux Development -project=/mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -buildscw -WaitMutex
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Building CarlaUnrealEditor...
+[Adaptive Build] Excluded from Renderer unity file: DeferredShadingRenderer.cpp, SceneRendering.cpp, RayTracingInstanceCulling.cpp
+[Adaptive Build] Excluded from Engine unity file: RayTracingGeometryManager.cpp
+Executing up to 24 actions based on MaxProcessorCount override
+Using Unreal Build Accelerator local executor to run 7 action(s)
+  Storage capacity 40Gb
+---- Starting trace ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 7 action(s) started ------
+[1/7] Compile DeferredShadingRenderer.cpp
+[2/7] Compile Module.Carla.11.cpp
+[3/7] Link (lld) libUnrealEditor-Renderer.so (UBA disabled)
+[4/7] WriteMetadata UnrealEditor.version (CarlaUnrealEditor) (UBA disabled)
+[5/7] Compile Module.Carla.12.cpp
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.12.cpp:49:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Server/CarlaServer.cpp:501:46: warning: 'GetNamesOfAllActors' is deprecated: This command no longer makes sense since the apply_textures API relies on IDs. [-Wdeprecated-declarations]
+  501 |     TArray<FString> NamesFString = GameMode->GetNamesOfAllActors();
+      |                                              ^
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaGameModeBase.h:118:5: note: 'GetNamesOfAllActors' has been explicitly marked deprecated here
+  118 |   [[deprecated("This command no longer makes sense since the apply_textures API relies on IDs.")]]
+      |     ^
+1 warning generated.
+[6/7] Link (lld) libUnrealEditor-Carla.so (UBA disabled)
+[7/7] WriteMetadata CarlaUnrealEditor.target (UBA disabled)
+Trace file written to /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.uba with size 19.0kb
+Total time in Unreal Build Accelerator local executor: 297.18 seconds
+Total execution time: 302.39 seconds

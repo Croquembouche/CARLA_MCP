@@ -1,0 +1,26 @@
+[
+  {
+    "page": "mcp",
+    "width": 1500,
+    "headings": 10,
+    "overflow": false
+  },
+  {
+    "page": "mcp-tools",
+    "width": 1500,
+    "headings": 50,
+    "overflow": false
+  },
+  {
+    "page": "mcp",
+    "width": 390,
+    "headings": 10,
+    "overflow": false
+  },
+  {
+    "page": "mcp-tools",
+    "width": 390,
+    "headings": 50,
+    "overflow": false
+  }
+]

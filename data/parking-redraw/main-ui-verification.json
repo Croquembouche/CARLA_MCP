@@ -1,0 +1,9 @@
+{
+  "selectable": 46,
+  "excluded": 115,
+  "newRoadsideBaySelectable": "R112",
+  "restrictedBayNotSelectable": "P008",
+  "surveyLink": true,
+  "topDown3D": true,
+  "errors": []
+}

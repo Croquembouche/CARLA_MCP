@@ -1,0 +1,82 @@
+{
+  "verified_at": "2026-09-08T15:33:42.245151+00:00",
+  "url": "http://128.175.213.232:8095/",
+  "result": "passed",
+  "unit_tests": {
+    "passed": 13,
+    "suites": [
+      "traffic_signals",
+      "capture",
+      "archive",
+      "lane_map"
+    ]
+  },
+  "native_live": {
+    "selected": 8,
+    "group": [
+      8,
+      9,
+      16
+    ],
+    "outside": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "states": {
+      "Green": "passed",
+      "Yellow": "passed",
+      "Red": "passed",
+      "Off": "passed"
+    },
+    "timings": "applied only to selected intersection",
+    "cycle_states": [
+      "Green",
+      "Red",
+      "Yellow"
+    ],
+    "recording": {
+      "id": "20260908-112513-35bc87",
+      "frames": 2,
+      "signalState": "Green",
+      "frozen": true,
+      "rosbag": true
+    },
+    "result": "passed"
+  },
+  "browser": {
+    "opendrive_marker_selected": 8,
+    "detailed_3d_marker_selected": 18,
+    "state_form_held_green_verified": true,
+    "timing_form_green_seconds_verified": 12.5,
+    "timing_form_restored_seconds": 10,
+    "light_mode_verified": true,
+    "mobile_no_horizontal_overflow": true,
+    "mobile_signal_form_verified": true,
+    "console_warnings_errors": [],
+    "final_view": "Detailed 3D, Signals panel, dark theme"
+  },
+  "final_runtime": {
+    "paused": true,
+    "signal_count": 15,
+    "intersection_count": 5,
+    "all_groups_unfrozen": true,
+    "original_timings_restored": true,
+    "managed_actor_ids": [
+      32,
+      31,
+      25
+    ],
+    "ego_sensor_count_verified_in_browser": 5
+  },
+  "deployment_note": "Native Python client rebuilt and service restarted; actors and configuration restored, simulation clock restarted."
+}

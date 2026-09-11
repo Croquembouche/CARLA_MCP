@@ -1,0 +1,11 @@
+AUTOMATIC_WORKERS {'workers': 2, 'profile': 'auto'}
+TEMPORARY_LINCOLN 77
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/scripts/setup_sensor_view_test.py", line 28, in <module>
+    for _ in range(20):cmd('step')
+  File "/mnt/simulations/control-center/scripts/setup_sensor_view_test.py", line 8, in cmd
+    r=c.post('/api/command/'+a,json=p);r.raise_for_status();return r.json()
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '409 Conflict' for url 'http://127.0.0.1:8095/api/command/step'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409

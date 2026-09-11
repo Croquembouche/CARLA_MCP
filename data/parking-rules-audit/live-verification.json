@@ -1,0 +1,9 @@
+{
+  "actors": 28,
+  "sensors": 6,
+  "ego": 53,
+  "running": true,
+  "selectable": 13,
+  "excluded": 28,
+  "invalid_spawn_and_destination_rejected": true
+}

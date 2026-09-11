@@ -1,0 +1,2912 @@
+{
+  "profile": "Delaware baseline + authored scene restrictions (provisional)",
+  "allowed_ids": [
+    "P008",
+    "P011",
+    "P021",
+    "P024",
+    "P025",
+    "P026",
+    "P034",
+    "P035",
+    "P036",
+    "P037",
+    "P038",
+    "P039",
+    "P042"
+  ],
+  "excluded": [
+    {
+      "id": "P001",
+      "x": -25.02314499991913,
+      "y": 10.114440100087377,
+      "z": 0.0,
+      "yaw": 180.15919494628906,
+      "length": 7.0,
+      "width": 2.5,
+      "polygon": [
+        [
+          -21.52663160027357,
+          11.374159928501244
+        ],
+        [
+          -28.52660458054054,
+          11.354710621768854
+        ],
+        [
+          -28.519658399564687,
+          8.854720271673509
+        ],
+        [
+          -21.51968541929772,
+          8.8741695784059
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:0",
+      "lane": [
+        20,
+        0,
+        6
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_conditional",
+          "kind": "posted_conditional",
+          "reason": "Accessible-reserved / timed no-parking row; exact sign extents and eligibility are unresolved",
+          "evidence": "SM_Parking04 at (-16.97,7.74),(3.03,7.74); SM_Parking02 at (22.01,7.74); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P002",
+      "x": -17.591558838716136,
+      "y": 10.13508772998602,
+      "z": 0.0,
+      "yaw": 180.15919494628906,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          -13.845046404061044,
+          11.395502176497475
+        ],
+        [
+          -21.34501745434708,
+          11.374663633569911
+        ],
+        [
+          -21.338071273371227,
+          8.874673283474566
+        ],
+        [
+          -13.838100223085188,
+          8.89551182640213
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:1",
+      "lane": [
+        20,
+        0,
+        6
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_conditional",
+          "kind": "posted_conditional",
+          "reason": "Accessible-reserved / timed no-parking row; exact sign extents and eligibility are unresolved",
+          "evidence": "SM_Parking04 at (-16.97,7.74),(3.03,7.74); SM_Parking02 at (22.01,7.74); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P003",
+      "x": -9.90997224303436,
+      "y": 10.156431875970442,
+      "z": 0.0,
+      "yaw": 180.15919494628906,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          -6.163459808379268,
+          11.416846322481897
+        ],
+        [
+          -13.663430858665308,
+          11.396007779554333
+        ],
+        [
+          -13.656484677689452,
+          8.896017429458988
+        ],
+        [
+          -6.156513627403414,
+          8.916855972386552
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:2",
+      "lane": [
+        20,
+        0,
+        6
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-17",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-17; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 1.175,
+          "clearance_m": 4.572
+        },
+        {
+          "id": "posted_conditional",
+          "kind": "posted_conditional",
+          "reason": "Accessible-reserved / timed no-parking row; exact sign extents and eligibility are unresolved",
+          "evidence": "SM_Parking04 at (-16.97,7.74),(3.03,7.74); SM_Parking02 at (22.01,7.74); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P004",
+      "x": -1.4783891657434842,
+      "y": 10.179860039775766,
+      "z": 0.0,
+      "yaw": 180.15919494628906,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          2.2681232689116078,
+          11.44027448628722
+        ],
+        [
+          -5.23184778137443,
+          11.419435943359657
+        ],
+        [
+          -5.224901600398576,
+          8.919445593264312
+        ],
+        [
+          2.2750694498874617,
+          8.940284136191876
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:3",
+      "lane": [
+        20,
+        0,
+        6
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-17",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-17; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 3.107,
+          "clearance_m": 4.572
+        },
+        {
+          "id": "posted_conditional",
+          "kind": "posted_conditional",
+          "reason": "Accessible-reserved / timed no-parking row; exact sign extents and eligibility are unresolved",
+          "evidence": "SM_Parking04 at (-16.97,7.74),(3.03,7.74); SM_Parking02 at (22.01,7.74); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P005",
+      "x": 6.953199633923033,
+      "y": 10.203286154820981,
+      "z": 0.0,
+      "yaw": 180.15919494628906,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          10.699712068578124,
+          11.463700601332436
+        ],
+        [
+          3.199741018292087,
+          11.442862058404872
+        ],
+        [
+          3.206687199267941,
+          8.942871708309527
+        ],
+        [
+          10.70665824955398,
+          8.96371025123709
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:4",
+      "lane": [
+        20,
+        0,
+        6
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_conditional",
+          "kind": "posted_conditional",
+          "reason": "Accessible-reserved / timed no-parking row; exact sign extents and eligibility are unresolved",
+          "evidence": "SM_Parking04 at (-16.97,7.74),(3.03,7.74); SM_Parking02 at (22.01,7.74); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P006",
+      "x": 15.384784909921231,
+      "y": 10.226714324735378,
+      "z": 0.0,
+      "yaw": 180.15919494628906,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          19.131297344576325,
+          11.487128771246832
+        ],
+        [
+          11.631326294290284,
+          11.466290228319268
+        ],
+        [
+          11.63827247526614,
+          8.966299878223923
+        ],
+        [
+          19.138243525552177,
+          8.987138421151487
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:5",
+      "lane": [
+        20,
+        0,
+        6
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_conditional",
+          "kind": "posted_conditional",
+          "reason": "Accessible-reserved / timed no-parking row; exact sign extents and eligibility are unresolved",
+          "evidence": "SM_Parking04 at (-16.97,7.74),(3.03,7.74); SM_Parking02 at (22.01,7.74); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P007",
+      "x": 22.816363150485696,
+      "y": 10.247363837325523,
+      "z": 0.0,
+      "yaw": 180.15919494628906,
+      "length": 7.0,
+      "width": 2.5,
+      "polygon": [
+        [
+          26.312876550131254,
+          11.50708366573939
+        ],
+        [
+          19.312903569864286,
+          11.487634359007
+        ],
+        [
+          19.319849750840138,
+          8.987644008911655
+        ],
+        [
+          26.319822731107106,
+          9.007093315644045
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:6",
+      "lane": [
+        20,
+        0,
+        6
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_conditional",
+          "kind": "posted_conditional",
+          "reason": "Accessible-reserved / timed no-parking row; exact sign extents and eligibility are unresolved",
+          "evidence": "SM_Parking04 at (-16.97,7.74),(3.03,7.74); SM_Parking02 at (22.01,7.74); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P009",
+      "x": -18.078779738345478,
+      "y": 31.133814103684276,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          -21.825292115635314,
+          29.873399486657778
+        ],
+        [
+          -14.32532106629771,
+          29.89423837093157
+        ],
+        [
+          -14.33226736105564,
+          32.39422872071077
+        ],
+        [
+          -21.832238410393245,
+          32.37338983643698
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:15",
+      "lane": [
+        20,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-18",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-18; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 1.125,
+          "clearance_m": 4.572
+        }
+      ]
+    },
+    {
+      "id": "P010",
+      "x": -9.886494543213882,
+      "y": 31.156577182993647,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          -13.63300692050372,
+          29.89616256596715
+        ],
+        [
+          -6.133035871166112,
+          29.917001450240942
+        ],
+        [
+          -6.139982165924045,
+          32.41699180002014
+        ],
+        [
+          -13.63995321526165,
+          32.39615291574635
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:16",
+      "lane": [
+        20,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-18",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-18; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 4.025,
+          "clearance_m": 4.572
+        }
+      ]
+    },
+    {
+      "id": "P012",
+      "x": 7.998075851688981,
+      "y": 31.20626946472447,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          4.251563474399144,
+          29.945854847697973
+        ],
+        [
+          11.75153452373675,
+          29.966693731971766
+        ],
+        [
+          11.744588228978818,
+          32.46668408175097
+        ],
+        [
+          4.244617179641211,
+          32.445845197477176
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:18",
+      "lane": [
+        20,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_BusStop-0",
+          "kind": "bus_stop",
+          "reason": "Bus-stop boarding/stopping area reserved from general parking",
+          "evidence": "SM_BusStop-0; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored",
+          "distance_m": 2.608,
+          "clearance_m": 6.0
+        }
+      ]
+    },
+    {
+      "id": "P013",
+      "x": 15.940360114027087,
+      "y": 31.228337923858877,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          12.193847736737249,
+          29.96792330683238
+        ],
+        [
+          19.693818786074853,
+          29.988762191106172
+        ],
+        [
+          19.686872491316922,
+          32.48875254088537
+        ],
+        [
+          12.186901441979318,
+          32.46791365661158
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:19",
+      "lane": [
+        20,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_BusStop-0",
+          "kind": "bus_stop",
+          "reason": "Bus-stop boarding/stopping area reserved from general parking",
+          "evidence": "SM_BusStop-0; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored",
+          "distance_m": 2.27,
+          "clearance_m": 6.0
+        }
+      ]
+    },
+    {
+      "id": "P014",
+      "x": 23.132644376390964,
+      "y": 31.24832247724761,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 6.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          19.886130069056968,
+          29.989297119172694
+        ],
+        [
+          26.38610497848289,
+          30.00735748554332
+        ],
+        [
+          26.37915868372496,
+          32.50734783532252
+        ],
+        [
+          19.879183774299037,
+          32.48928746895189
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:20",
+      "lane": [
+        20,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-11",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-11; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 1.036,
+          "clearance_m": 4.572
+        }
+      ]
+    },
+    {
+      "id": "P015",
+      "x": 59.96975423486394,
+      "y": 31.350675105713915,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 5.0,
+      "width": 2.5,
+      "polygon": [
+        [
+          57.47323703246371,
+          30.093733636066382
+        ],
+        [
+          62.473217732022114,
+          30.107626225582244
+        ],
+        [
+          62.466271437264176,
+          32.60761657536145
+        ],
+        [
+          57.46629073770577,
+          32.593723985845585
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:37",
+      "lane": [
+        21,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "crosswalk-0",
+          "kind": "crosswalk",
+          "reason": "Within 20 ft (6.096 m) of a crosswalk",
+          "evidence": "CARLA/OpenDRIVE crosswalk 0; Delaware 21 \u00a74179(e)(6)",
+          "distance_m": 5.958,
+          "clearance_m": 6.096
+        }
+      ]
+    },
+    {
+      "id": "P016",
+      "x": 65.51946756734328,
+      "y": 31.36609426196341,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 5.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          62.77295132996513,
+          30.108458162840083
+        ],
+        [
+          68.27293009947938,
+          30.123740011307536
+        ],
+        [
+          68.26598380472144,
+          32.623730361086736
+        ],
+        [
+          62.76600503520719,
+          32.60844851261928
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:38",
+      "lane": [
+        21,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-10",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-10; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 0.898,
+          "clearance_m": 4.572
+        }
+      ]
+    },
+    {
+      "id": "P017",
+      "x": 71.56918089506148,
+      "y": 31.382904396079454,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 6.199864516366972,
+      "width": 2.5,
+      "polygon": [
+        [
+          68.47273375026926,
+          30.124296003911866
+        ],
+        [
+          74.67257433461164,
+          30.141522438467838
+        ],
+        [
+          74.6656280398537,
+          32.64151278824704
+        ],
+        [
+          68.46578745551132,
+          32.62428635369107
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:39",
+      "lane": [
+        21,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-10",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-10; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 1.297,
+          "clearance_m": 4.572
+        }
+      ]
+    },
+    {
+      "id": "P018",
+      "x": 77.86889473415894,
+      "y": 31.40040745020801,
+      "z": 0.0,
+      "yaw": 0.15919755399227142,
+      "length": 6.0,
+      "width": 2.5,
+      "polygon": [
+        [
+          74.87237946180286,
+          30.14207672160889
+        ],
+        [
+          80.87235630127296,
+          30.158747829027927
+        ],
+        [
+          80.86541000651502,
+          32.65873817880713
+        ],
+        [
+          74.86543316704493,
+          32.64206707138809
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:40",
+      "lane": [
+        21,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "crosswalk-12",
+          "kind": "crosswalk",
+          "reason": "Within 20 ft (6.096 m) of a crosswalk",
+          "evidence": "CARLA/OpenDRIVE crosswalk 12; Delaware 21 \u00a74179(e)(6)",
+          "distance_m": 3.589,
+          "clearance_m": 6.096
+        }
+      ]
+    },
+    {
+      "id": "P020",
+      "x": -24.031117614541824,
+      "y": 63.21782167321244,
+      "z": 0.0,
+      "yaw": -179.92672729492188,
+      "length": 5.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          -21.282718425303766,
+          64.47133748747072
+        ],
+        [
+          -26.782713927797058,
+          64.46430381463293
+        ],
+        [
+          -26.77951680377988,
+          61.96430585895416
+        ],
+        [
+          -21.27952130128659,
+          61.971339531791955
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:7",
+      "lane": [
+        12,
+        0,
+        -2
+      ],
+      "restriction_reasons": [
+        {
+          "id": "crosswalk-15",
+          "kind": "crosswalk",
+          "reason": "Within 20 ft (6.096 m) of a crosswalk",
+          "evidence": "CARLA/OpenDRIVE crosswalk 15; Delaware 21 \u00a74179(e)(6)",
+          "distance_m": 2.948,
+          "clearance_m": 6.096
+        }
+      ]
+    },
+    {
+      "id": "P022",
+      "x": -9.89656718683481,
+      "y": 63.235899541270314,
+      "z": 0.0,
+      "yaw": -179.92672729492188,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          -6.148168815325248,
+          64.49069420513547
+        ],
+        [
+          -13.648162682361553,
+          64.48110283308392
+        ],
+        [
+          -13.644965558344373,
+          61.98110487740516
+        ],
+        [
+          -6.144971691308068,
+          61.990696249456704
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:9",
+      "lane": [
+        12,
+        0,
+        -2
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-12",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-12; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 0.927,
+          "clearance_m": 4.572
+        }
+      ]
+    },
+    {
+      "id": "P023",
+      "x": -0.9542928987489663,
+      "y": 63.24733085770271,
+      "z": 0.0,
+      "yaw": -179.92672729492188,
+      "length": 7.5,
+      "width": 2.5,
+      "polygon": [
+        [
+          2.7941054727605956,
+          64.50212552156786
+        ],
+        [
+          -4.705888394275709,
+          64.49253414951632
+        ],
+        [
+          -4.702691270258528,
+          61.99253619383755
+        ],
+        [
+          2.7973025967777754,
+          62.0021275658891
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:10",
+      "lane": [
+        12,
+        0,
+        -2
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-12",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-12; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 3.729,
+          "clearance_m": 4.572
+        }
+      ]
+    },
+    {
+      "id": "P027",
+      "x": -22.0871801585544,
+      "y": 127.32520793974926,
+      "z": 0.0,
+      "yaw": -179.6478729248047,
+      "length": 7.5,
+      "width": 2.0,
+      "polygon": [
+        [
+          -18.343396716315375,
+          128.34823557261993
+        ],
+        [
+          -25.843255077112218,
+          128.30214253642444
+        ],
+        [
+          -25.830963600793424,
+          126.30218030687861
+        ],
+        [
+          -18.33110523999658,
+          126.3482733430741
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:21",
+      "lane": [
+        4,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-2",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-2; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 1.063,
+          "clearance_m": 4.572
+        },
+        {
+          "id": "posted_mixed",
+          "kind": "posted_mixed",
+          "reason": "30-minute / no-parking-any-time row; exact transition and duration enforcement are unresolved",
+          "evidence": "SM_Parking03 at (-23.92,125.07),(-1.14,125.23); SM_Parking01 at (28.86,125.81); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P028",
+      "x": -13.145019106722922,
+      "y": 127.38016661777921,
+      "z": 0.0,
+      "yaw": -179.6478729248047,
+      "length": 7.5,
+      "width": 2.0,
+      "polygon": [
+        [
+          -9.401235664483899,
+          128.40319425064988
+        ],
+        [
+          -16.901094025280738,
+          128.3571012144544
+        ],
+        [
+          -16.888802548961944,
+          126.35713898490856
+        ],
+        [
+          -9.388944188165105,
+          126.40323202110405
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:22",
+      "lane": [
+        4,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_mixed",
+          "kind": "posted_mixed",
+          "reason": "30-minute / no-parking-any-time row; exact transition and duration enforcement are unresolved",
+          "evidence": "SM_Parking03 at (-23.92,125.07),(-1.14,125.23); SM_Parking01 at (28.86,125.81); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P029",
+      "x": -4.202858054927463,
+      "y": 127.43512530167007,
+      "z": 0.0,
+      "yaw": -179.6478729248047,
+      "length": 7.5,
+      "width": 2.0,
+      "polygon": [
+        [
+          -0.4590746126884387,
+          128.45815293454072
+        ],
+        [
+          -7.95893297348528,
+          128.41205989834523
+        ],
+        [
+          -7.946641497166486,
+          126.41209766879942
+        ],
+        [
+          -0.44678313636964545,
+          126.4581907049949
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:23",
+      "lane": [
+        4,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_mixed",
+          "kind": "posted_mixed",
+          "reason": "30-minute / no-parking-any-time row; exact transition and duration enforcement are unresolved",
+          "evidence": "SM_Parking03 at (-23.92,125.07),(-1.14,125.23); SM_Parking01 at (28.86,125.81); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P030",
+      "x": 4.724369866782361,
+      "y": 127.50063547748081,
+      "z": 0.0,
+      "yaw": 180.6912841796875,
+      "length": 7.5,
+      "width": 1.9,
+      "polygon": [
+        [
+          8.462635281129698,
+          128.49580967926386
+        ],
+        [
+          0.963181157092071,
+          128.40532298712063
+        ],
+        [
+          0.9861044524350233,
+          126.50546127569777
+        ],
+        [
+          8.48555857647265,
+          126.595947967841
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:24",
+      "lane": [
+        8,
+        0,
+        3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_mixed",
+          "kind": "posted_mixed",
+          "reason": "30-minute / no-parking-any-time row; exact transition and duration enforcement are unresolved",
+          "evidence": "SM_Parking03 at (-23.92,125.07),(-1.14,125.23); SM_Parking01 at (28.86,125.81); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P031",
+      "x": 13.658056549010684,
+      "y": 127.65909328197554,
+      "z": 0.0,
+      "yaw": 180.84732055664062,
+      "length": 7.5,
+      "width": 1.9,
+      "polygon": [
+        [
+          17.393597897855944,
+          128.66444438038212
+        ],
+        [
+          9.894418010624408,
+          128.5535344216676
+        ],
+        [
+          9.922515200165426,
+          126.65374218356895
+        ],
+        [
+          17.42169508739696,
+          126.76465214228348
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:25",
+      "lane": [
+        8,
+        0,
+        3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_mixed",
+          "kind": "posted_mixed",
+          "reason": "30-minute / no-parking-any-time row; exact transition and duration enforcement are unresolved",
+          "evidence": "SM_Parking03 at (-23.92,125.07),(-1.14,125.23); SM_Parking01 at (28.86,125.81); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P032",
+      "x": 22.624303621682213,
+      "y": 127.72811630950622,
+      "z": 0.0,
+      "yaw": 180.32044982910156,
+      "length": 7.5,
+      "width": 2.0,
+      "polygon": [
+        [
+          26.368652095296888,
+          128.74907395218267
+        ],
+        [
+          18.86876939717333,
+          128.7071273863294
+        ],
+        [
+          18.879955148067538,
+          126.70715866682978
+        ],
+        [
+          26.379837846191094,
+          126.74910523268305
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:26",
+      "lane": [
+        1,
+        0,
+        3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_mixed",
+          "kind": "posted_mixed",
+          "reason": "30-minute / no-parking-any-time row; exact transition and duration enforcement are unresolved",
+          "evidence": "SM_Parking03 at (-23.92,125.07),(-1.14,125.23); SM_Parking01 at (28.86,125.81); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P033",
+      "x": 31.566498029781393,
+      "y": 127.7781325288355,
+      "z": 0.0,
+      "yaw": 180.32044982910156,
+      "length": 7.5,
+      "width": 2.0,
+      "polygon": [
+        [
+          35.31084650339607,
+          128.79909017151195
+        ],
+        [
+          27.81096380527251,
+          128.75714360565868
+        ],
+        [
+          27.822149556166718,
+          126.75717488615906
+        ],
+        [
+          35.32203225429027,
+          126.79912145201233
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:27",
+      "lane": [
+        1,
+        0,
+        3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "posted_mixed",
+          "kind": "posted_mixed",
+          "reason": "30-minute / no-parking-any-time row; exact transition and duration enforcement are unresolved",
+          "evidence": "SM_Parking03 at (-23.92,125.07),(-1.14,125.23); SM_Parking01 at (28.86,125.81); inspected sign atlas and mesh UVs"
+        }
+      ]
+    },
+    {
+      "id": "P040",
+      "x": 27.386757324557525,
+      "y": 143.7550179331605,
+      "z": 0.0,
+      "yaw": 0.32044845819473267,
+      "length": 7.5,
+      "width": 2.0,
+      "polygon": [
+        [
+          23.64240882651456,
+          142.73406038007448
+        ],
+        [
+          31.142291525641767,
+          142.77600676647927
+        ],
+        [
+          31.13110582260049,
+          144.77597548624652
+        ],
+        [
+          23.631223123473283,
+          144.73402909984173
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:34",
+      "lane": [
+        1,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-3",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-3; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 1.087,
+          "clearance_m": 4.572
+        }
+      ]
+    },
+    {
+      "id": "P041",
+      "x": 35.62809287459465,
+      "y": 143.8010990235757,
+      "z": 0.0,
+      "yaw": 0.32044845819473267,
+      "length": 7.5,
+      "width": 2.0,
+      "polygon": [
+        [
+          31.883744376551686,
+          142.78014147048967
+        ],
+        [
+          39.383627075678895,
+          142.82208785689446
+        ],
+        [
+          39.37244137263762,
+          144.8220565766617
+        ],
+        [
+          31.872558673510408,
+          144.78011019025692
+        ]
+      ],
+      "source": "metered_curb_estimate",
+      "estimated": true,
+      "meter": "SM_Parkingmeter:35",
+      "lane": [
+        1,
+        0,
+        -3
+      ],
+      "restriction_reasons": [
+        {
+          "id": "SM_FireHdrant-3",
+          "kind": "hydrant",
+          "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+          "evidence": "SM_FireHdrant-3; Delaware 21 \u00a74179(e)(4)",
+          "distance_m": 1.866,
+          "clearance_m": 4.572
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "SM_accessRamp-0",
+      "mesh": "/Game/Carla/Static/SideWalk/ParkingParts/SM_accessRamp.SM_accessRamp",
+      "point": [
+        74.08269059700702,
+        8.66598572
+      ]
+    },
+    {
+      "id": "SM_accessRamp-1",
+      "mesh": "/Game/Carla/Static/SideWalk/ParkingParts/SM_accessRamp.SM_accessRamp",
+      "point": [
+        53.659873049999995,
+        8.604082029999999
+      ]
+    },
+    {
+      "id": "SM_accessRamp-2",
+      "mesh": "/Game/Carla/Static/SideWalk/ParkingParts/SM_accessRamp.SM_accessRamp",
+      "point": [
+        53.66866699,
+        -53.25895996
+      ]
+    },
+    {
+      "id": "SM_accessRamp-3",
+      "mesh": "/Game/Carla/Static/SideWalk/ParkingParts/SM_accessRamp.SM_accessRamp",
+      "point": [
+        95.16787109,
+        -5.96620361
+      ]
+    },
+    {
+      "id": "SM_accessRamp-4",
+      "mesh": "/Game/Carla/Static/SideWalk/ParkingParts/SM_accessRamp.SM_accessRamp",
+      "point": [
+        -40.126839571194516,
+        144.69100586000002
+      ]
+    },
+    {
+      "id": "SM_BusStop01-0",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_BusStop01.SM_BusStop01",
+      "point": [
+        -99.29824219000007,
+        62.22547362547727
+      ]
+    },
+    {
+      "id": "SM_BusStop01-1",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_BusStop01.SM_BusStop01",
+      "point": [
+        63.0283964630475,
+        -72.81994619803217
+      ]
+    },
+    {
+      "id": "SM_BusStop01-2",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_BusStop01.SM_BusStop01",
+      "point": [
+        43.038293923047505,
+        -72.81994619803217
+      ]
+    },
+    {
+      "id": "SM_BusStop01-3",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_BusStop01.SM_BusStop01",
+      "point": [
+        -119.2308007799995,
+        76.8559765053895
+      ]
+    },
+    {
+      "id": "SM_BusStop01-4",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_BusStop01.SM_BusStop01",
+      "point": [
+        -116.52654307577977,
+        97.4802734703552
+      ]
+    },
+    {
+      "id": "SM_Tow01-0",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        -99.29824219000007,
+        62.22547362547727
+      ]
+    },
+    {
+      "id": "SM_Tow01-1",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        37.496796940197775,
+        75.27813476401239
+      ]
+    },
+    {
+      "id": "SM_Tow01-2",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        -13.521263992128349,
+        75.26740722990546
+      ]
+    },
+    {
+      "id": "SM_Tow01-3",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        71.3789160116824,
+        60.889956046384576
+      ]
+    },
+    {
+      "id": "SM_Tow01-4",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        22.011915809177953,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Tow01-5",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        3.026464762841231,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Tow01-6",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        -16.97353523715877,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Tow01-7",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        84.24233798843488,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Tow01-8",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        63.01656730284123,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Tow01-9",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        43.026464762841236,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Tow01-10",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        -119.23363280999965,
+        76.90458980408228
+      ]
+    },
+    {
+      "id": "SM_Tow01-11",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01",
+      "point": [
+        -116.52654307577977,
+        97.4802734703552
+      ]
+    },
+    {
+      "id": "SM_Parking02-0",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        22.011915809177953,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Parking02-1",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        35.63340969618152,
+        -52.399409936901236
+      ]
+    },
+    {
+      "id": "SM_Parking02-2",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        13.056554402734982,
+        -52.39940444999901
+      ]
+    },
+    {
+      "id": "SM_Parking02-3",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        -6.943440717265016,
+        -52.72396986999901
+      ]
+    },
+    {
+      "id": "SM_Parking02-4",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        -26.94344559726501,
+        -52.94075697999901
+      ]
+    },
+    {
+      "id": "SM_Parking02-5",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        113.28009769780701,
+        100.90744134722739
+      ]
+    },
+    {
+      "id": "SM_Parking02-6",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        108.54747071612533,
+        116.26542970673727
+      ]
+    },
+    {
+      "id": "SM_Parking02-7",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        100.90290035366172,
+        128.74758792420928
+      ]
+    },
+    {
+      "id": "SM_Parking02-8",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        88.77899414703948,
+        139.6174707046147
+      ]
+    },
+    {
+      "id": "SM_Parking02-9",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        84.24233798843488,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Parking02-10",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        63.01656730284123,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Parking02-11",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02",
+      "point": [
+        43.026464762841236,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Parking04-0",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking04.SM_Parking04",
+      "point": [
+        3.026464762841231,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Parking04-1",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking04.SM_Parking04",
+      "point": [
+        -16.97353523715877,
+        7.7439306284704665
+      ]
+    },
+    {
+      "id": "SM_Parking04-2",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking04.SM_Parking04",
+      "point": [
+        3.038293923047501,
+        -72.81994619803217
+      ]
+    },
+    {
+      "id": "SM_Parking04-3",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking04.SM_Parking04",
+      "point": [
+        114.04120118993704,
+        80.91843262046874
+      ]
+    },
+    {
+      "id": "SM_Parking04-4",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking04.SM_Parking04",
+      "point": [
+        -118.27852539,
+        -21.5672876
+      ]
+    },
+    {
+      "id": "SM_Parking04-5",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking04.SM_Parking04",
+      "point": [
+        -118.27852539,
+        -1.5672885100000002
+      ]
+    },
+    {
+      "id": "SM_Parking03-0",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking03.SM_Parking03",
+      "point": [
+        23.0382939230475,
+        -72.81994619803217
+      ]
+    },
+    {
+      "id": "SM_Parking03-1",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking03.SM_Parking03",
+      "point": [
+        -16.9617256069525,
+        -73.13444814803216
+      ]
+    },
+    {
+      "id": "SM_Parking03-2",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking03.SM_Parking03",
+      "point": [
+        -1.1369218408615982,
+        125.22606446015374
+      ]
+    },
+    {
+      "id": "SM_Parking03-3",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking03.SM_Parking03",
+      "point": [
+        -23.915517580861597,
+        125.07089844043756
+      ]
+    },
+    {
+      "id": "SM_Parking01-0",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking01.SM_Parking01",
+      "point": [
+        -36.9617256069525,
+        -73.30985830803216
+      ]
+    },
+    {
+      "id": "SM_Parking01-1",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking01.SM_Parking01",
+      "point": [
+        -57.709219306264494,
+        -73.48465322803217
+      ]
+    },
+    {
+      "id": "SM_Parking01-2",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking01.SM_Parking01",
+      "point": [
+        -75.07158979054702,
+        -73.65094717803217
+      ]
+    },
+    {
+      "id": "SM_Parking01-3",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking01.SM_Parking01",
+      "point": [
+        28.863078619138406,
+        125.81445313015956
+      ]
+    },
+    {
+      "id": "SM_NoStopping02-0",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_NoStopping02.SM_NoStopping02",
+      "point": [
+        -61.15272949080545,
+        145.85691405546012
+      ]
+    },
+    {
+      "id": "SM_NoStopping02-1",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_NoStopping02.SM_NoStopping02",
+      "point": [
+        -81.25218751131399,
+        142.07111328323344
+      ]
+    },
+    {
+      "id": "SM_NoStopping02-2",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_NoStopping02.SM_NoStopping02",
+      "point": [
+        -119.01227539000001,
+        55.64281762080815
+      ]
+    },
+    {
+      "id": "SM_NoStopping02-3",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_NoStopping02.SM_NoStopping02",
+      "point": [
+        -108.98029213708259,
+        116.35320426608934
+      ]
+    },
+    {
+      "id": "SM_NoStopping02-4",
+      "mesh": "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_NoStopping02.SM_NoStopping02",
+      "point": [
+        -97.09918946189411,
+        131.75017578617238
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-0",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -98.4938890911112,
+        -12.788918638222112
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-1",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -119.14758196782839,
+        59.010913607277395
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-2",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -26.197871737718515,
+        125.30457146022962
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-3",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        30.34943697621427,
+        145.85819999731314
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-4",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        90.26953373916024,
+        108.07230716702843
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-5",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -94.82104184545291,
+        -68.24607358023046
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-6",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -36.976123795180186,
+        -16.28831816128565
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-7",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        26.912788781538765,
+        -52.638528602773015
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-8",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        94.39942496765342,
+        41.84149778773361
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-9",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        65.0457484493118,
+        61.16145337646815
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-10",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        67.52772724440511,
+        33.52003701994145
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-11",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        24.615966368376743,
+        33.538952113894894
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-12",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -8.312955900615025,
+        61.06101935743602
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-13",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -15.40704489739104,
+        74.82651579995049
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-14",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        43.75886057551341,
+        74.94240508591585
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-15",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        79.39420889650984,
+        75.05421532455779
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-16",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        90.63787309286387,
+        6.2584958541773075
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-17",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -8.098444604059221,
+        7.736617808721668
+      ]
+    },
+    {
+      "id": "SM_FireHdrant-18",
+      "mesh": "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant",
+      "point": [
+        -17.507934686532227,
+        33.510324065013485
+      ]
+    },
+    {
+      "id": "SM_BusStop-0",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        13.023013920000004,
+        34.73990196132951
+      ]
+    },
+    {
+      "id": "SM_BusStop-1",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        -98.49912109,
+        47.565419920000004
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-0",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        13.023013920000004,
+        34.73990196132951
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-1",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        -6.428789060000001,
+        75.63490234
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-2",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        60.32800419809053,
+        -73.5616535650186
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-3",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        35.57752754360301,
+        7.168077389999752
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-4",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        39.777617268906226,
+        7.168077389999752
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-5",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        -119.255625,
+        87.18526367
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-6",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        56.33241210999999,
+        146.73848633
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-7",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        114.96333440474055,
+        54.507038812233475
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-8",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        -98.49912109,
+        47.565419920000004
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-9",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        -36.12542541688317,
+        104.78307231871601
+      ]
+    },
+    {
+      "id": "SM_BusStop_Glasses-10",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses",
+      "point": [
+        57.50470703,
+        125.10464844
+      ]
+    },
+    {
+      "id": "SM_BusStop-0",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        -6.428789060000001,
+        75.63490234
+      ]
+    },
+    {
+      "id": "SM_BusStop-1",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        60.32800419809053,
+        -73.5616535650186
+      ]
+    },
+    {
+      "id": "SM_BusStop-2",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        39.777617268906226,
+        7.168077389999752
+      ]
+    },
+    {
+      "id": "SM_BusStop-0",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        35.57752754360301,
+        7.168077389999752
+      ]
+    },
+    {
+      "id": "SM_BusStop-1",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        -119.255625,
+        87.18526367
+      ]
+    },
+    {
+      "id": "SM_BusStop-2",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        56.33241210999999,
+        146.73848633
+      ]
+    },
+    {
+      "id": "SM_BusStop-3",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        -36.12542541688317,
+        104.78307231871601
+      ]
+    },
+    {
+      "id": "SM_BusStop-4",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        57.50470703,
+        125.10464844
+      ]
+    },
+    {
+      "id": "SM_BusStop-0",
+      "mesh": "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop",
+      "point": [
+        114.96333440474055,
+        54.507038812233475
+      ]
+    }
+  ],
+  "rules": {
+    "profile": "Delaware baseline + authored scene restrictions (provisional)",
+    "jurisdiction_confirmed": false,
+    "review_date": "2026-09-09",
+    "source_url": "https://delcode.delaware.gov/title21/c041/sc10/index.html",
+    "opendrive_sha256": "5d883b799f634030af92be1e9d79d107845540ba04338e8c60e095be1aef7be7",
+    "scene_sha256": "f00615e411ef41d83229d7b61427d0e30181af1e5e4e8db6f00b45131b3c6997",
+    "scope": "Screened for exported hydrants, crosswalks, access ramps, bus stops, nearby approach controls and reviewed parking signs. Remaining bay bounds are estimates; unrepresented restrictions are not certified.",
+    "policy": "Withhold permit-only and time-dependent parking until eligibility and a civil clock/duration policy are implemented. Bus-stop clearance is a conservative scenario reserve, not a statutory distance. Mixed-sign rows remain withheld where exact changeover boundaries are not authored.",
+    "zones": [
+      {
+        "id": "SM_accessRamp-0",
+        "kind": "access",
+        "point": [
+          74.08269059700702,
+          8.66598572
+        ],
+        "clearance_m": 4.0,
+        "reason": "Driveway/access-ramp frontage must remain clear",
+        "evidence": "SM_accessRamp-0; conservative scenario frontage reserve"
+      },
+      {
+        "id": "SM_accessRamp-1",
+        "kind": "access",
+        "point": [
+          53.659873049999995,
+          8.604082029999999
+        ],
+        "clearance_m": 4.0,
+        "reason": "Driveway/access-ramp frontage must remain clear",
+        "evidence": "SM_accessRamp-1; conservative scenario frontage reserve"
+      },
+      {
+        "id": "SM_accessRamp-2",
+        "kind": "access",
+        "point": [
+          53.66866699,
+          -53.25895996
+        ],
+        "clearance_m": 4.0,
+        "reason": "Driveway/access-ramp frontage must remain clear",
+        "evidence": "SM_accessRamp-2; conservative scenario frontage reserve"
+      },
+      {
+        "id": "SM_accessRamp-3",
+        "kind": "access",
+        "point": [
+          95.16787109,
+          -5.96620361
+        ],
+        "clearance_m": 4.0,
+        "reason": "Driveway/access-ramp frontage must remain clear",
+        "evidence": "SM_accessRamp-3; conservative scenario frontage reserve"
+      },
+      {
+        "id": "SM_accessRamp-4",
+        "kind": "access",
+        "point": [
+          -40.126839571194516,
+          144.69100586000002
+        ],
+        "clearance_m": 4.0,
+        "reason": "Driveway/access-ramp frontage must remain clear",
+        "evidence": "SM_accessRamp-4; conservative scenario frontage reserve"
+      },
+      {
+        "id": "SM_BusStop01-0",
+        "kind": "bus_stop",
+        "point": [
+          -99.29824219000007,
+          62.22547362547727
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop01-0; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop01-1",
+        "kind": "bus_stop",
+        "point": [
+          63.0283964630475,
+          -72.81994619803217
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop01-1; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop01-2",
+        "kind": "bus_stop",
+        "point": [
+          43.038293923047505,
+          -72.81994619803217
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop01-2; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop01-3",
+        "kind": "bus_stop",
+        "point": [
+          -119.2308007799995,
+          76.8559765053895
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop01-3; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop01-4",
+        "kind": "bus_stop",
+        "point": [
+          -116.52654307577977,
+          97.4802734703552
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop01-4; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_FireHdrant-0",
+        "kind": "hydrant",
+        "point": [
+          -98.4938890911112,
+          -12.788918638222112
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-0; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-1",
+        "kind": "hydrant",
+        "point": [
+          -119.14758196782839,
+          59.010913607277395
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-1; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-2",
+        "kind": "hydrant",
+        "point": [
+          -26.197871737718515,
+          125.30457146022962
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-2; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-3",
+        "kind": "hydrant",
+        "point": [
+          30.34943697621427,
+          145.85819999731314
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-3; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-4",
+        "kind": "hydrant",
+        "point": [
+          90.26953373916024,
+          108.07230716702843
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-4; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-5",
+        "kind": "hydrant",
+        "point": [
+          -94.82104184545291,
+          -68.24607358023046
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-5; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-6",
+        "kind": "hydrant",
+        "point": [
+          -36.976123795180186,
+          -16.28831816128565
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-6; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-7",
+        "kind": "hydrant",
+        "point": [
+          26.912788781538765,
+          -52.638528602773015
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-7; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-8",
+        "kind": "hydrant",
+        "point": [
+          94.39942496765342,
+          41.84149778773361
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-8; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-9",
+        "kind": "hydrant",
+        "point": [
+          65.0457484493118,
+          61.16145337646815
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-9; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-10",
+        "kind": "hydrant",
+        "point": [
+          67.52772724440511,
+          33.52003701994145
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-10; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-11",
+        "kind": "hydrant",
+        "point": [
+          24.615966368376743,
+          33.538952113894894
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-11; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-12",
+        "kind": "hydrant",
+        "point": [
+          -8.312955900615025,
+          61.06101935743602
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-12; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-13",
+        "kind": "hydrant",
+        "point": [
+          -15.40704489739104,
+          74.82651579995049
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-13; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-14",
+        "kind": "hydrant",
+        "point": [
+          43.75886057551341,
+          74.94240508591585
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-14; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-15",
+        "kind": "hydrant",
+        "point": [
+          79.39420889650984,
+          75.05421532455779
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-15; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-16",
+        "kind": "hydrant",
+        "point": [
+          90.63787309286387,
+          6.2584958541773075
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-16; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-17",
+        "kind": "hydrant",
+        "point": [
+          -8.098444604059221,
+          7.736617808721668
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-17; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_FireHdrant-18",
+        "kind": "hydrant",
+        "point": [
+          -17.507934686532227,
+          33.510324065013485
+        ],
+        "clearance_m": 4.572,
+        "reason": "Within 15 ft (4.572 m) of a fire hydrant",
+        "evidence": "SM_FireHdrant-18; Delaware 21 \u00a74179(e)(4)"
+      },
+      {
+        "id": "SM_BusStop-0",
+        "kind": "bus_stop",
+        "point": [
+          13.023013920000004,
+          34.73990196132951
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-0; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-1",
+        "kind": "bus_stop",
+        "point": [
+          -98.49912109,
+          47.565419920000004
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-1; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-0",
+        "kind": "bus_stop",
+        "point": [
+          -6.428789060000001,
+          75.63490234
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-0; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-1",
+        "kind": "bus_stop",
+        "point": [
+          60.32800419809053,
+          -73.5616535650186
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-1; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-2",
+        "kind": "bus_stop",
+        "point": [
+          39.777617268906226,
+          7.168077389999752
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-2; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-0",
+        "kind": "bus_stop",
+        "point": [
+          35.57752754360301,
+          7.168077389999752
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-0; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-1",
+        "kind": "bus_stop",
+        "point": [
+          -119.255625,
+          87.18526367
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-1; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-2",
+        "kind": "bus_stop",
+        "point": [
+          56.33241210999999,
+          146.73848633
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-2; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-3",
+        "kind": "bus_stop",
+        "point": [
+          -36.12542541688317,
+          104.78307231871601
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-3; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-4",
+        "kind": "bus_stop",
+        "point": [
+          57.50470703,
+          125.10464844
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-4; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "SM_BusStop-0",
+        "kind": "bus_stop",
+        "point": [
+          114.96333440474055,
+          54.507038812233475
+        ],
+        "clearance_m": 6.0,
+        "reason": "Bus-stop boarding/stopping area reserved from general parking",
+        "evidence": "SM_BusStop-0; conservative 6 m scenario reserve around authored stop; exact curb extent is not authored"
+      },
+      {
+        "id": "crosswalk-0",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            34.051841735839844,
+            33.942813873291016
+          ],
+          [
+            31.455005645751953,
+            36.33086395263672
+          ],
+          [
+            53.71012878417969,
+            37.2613525390625
+          ],
+          [
+            51.07689666748047,
+            34.64295196533203
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 0; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-1",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -98.8917236328125,
+            6.572445869445801
+          ],
+          [
+            -97.20420837402344,
+            4.17458963394165
+          ],
+          [
+            -119.50150299072266,
+            2.8100779056549072
+          ],
+          [
+            -119.66156768798828,
+            5.3049492835998535
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 1; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-2",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            94.40624237060547,
+            35.048526763916016
+          ],
+          [
+            92.9481201171875,
+            37.473724365234375
+          ],
+          [
+            114.72908020019531,
+            38.59151077270508
+          ],
+          [
+            114.846923828125,
+            36.094234466552734
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 2; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-3",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            114.80008697509766,
+            4.141450881958008
+          ],
+          [
+            114.96769714355469,
+            1.6469646692276
+          ],
+          [
+            94.30657958984375,
+            0.49555671215057373
+          ],
+          [
+            94.76665496826172,
+            3.0262832641601562
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 3; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-4",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            92.22870635986328,
+            60.306236267089844
+          ],
+          [
+            89.65155029296875,
+            58.732330322265625
+          ],
+          [
+            90.49671936035156,
+            77.71241760253906
+          ],
+          [
+            92.91145324707031,
+            75.8486328125
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 4; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-5",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -36.66078567504883,
+            120.34909057617188
+          ],
+          [
+            -36.35213088989258,
+            117.86100769042969
+          ],
+          [
+            -57.198753356933594,
+            116.90493774414062
+          ],
+          [
+            -56.7077751159668,
+            119.43131256103516
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 5; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-6",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -57.51707458496094,
+            34.78868865966797
+          ],
+          [
+            -59.078433990478516,
+            37.22372817993164
+          ],
+          [
+            -34.88310623168945,
+            38.22414779663086
+          ],
+          [
+            -36.28511047363281,
+            35.661415100097656
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 6; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-7",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -36.702110290527344,
+            4.993293285369873
+          ],
+          [
+            -35.725826263427734,
+            2.5348188877105713
+          ],
+          [
+            -58.32372283935547,
+            1.554499864578247
+          ],
+          [
+            -57.28912353515625,
+            4.1037492752075195
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 7; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-8",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -61.56299591064453,
+            -73.58621978759766
+          ],
+          [
+            -64.0624008178711,
+            -73.52867889404297
+          ],
+          [
+            -63.48960494995117,
+            -53.211002349853516
+          ],
+          [
+            -61.000152587890625,
+            -53.594154357910156
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 8; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-9",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -32.07337188720703,
+            -52.99979782104492
+          ],
+          [
+            -29.549501419067383,
+            -52.52392578125
+          ],
+          [
+            -30.433443069458008,
+            -73.173828125
+          ],
+          [
+            -32.929527282714844,
+            -73.03048706054688
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 9; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-10",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -56.91313934326172,
+            -49.71506881713867
+          ],
+          [
+            -57.57230758666992,
+            -47.24354934692383
+          ],
+          [
+            -36.185211181640625,
+            -46.27292251586914
+          ],
+          [
+            -36.81819534301758,
+            -48.805789947509766
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 10; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-11",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -119.28398132324219,
+            36.80646896362305
+          ],
+          [
+            -119.39707946777344,
+            39.303924560546875
+          ],
+          [
+            -98.50518035888672,
+            40.28086471557617
+          ],
+          [
+            -99.15480041503906,
+            37.74625015258789
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 11; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-12",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            86.4376449584961,
+            6.05242919921875
+          ],
+          [
+            83.9258041381836,
+            5.568210601806641
+          ],
+          [
+            84.49846649169922,
+            31.828845977783203
+          ],
+          [
+            86.99348449707031,
+            31.584400177001953
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 12; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-13",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            50.39024353027344,
+            60.30262756347656
+          ],
+          [
+            52.33848571777344,
+            57.87677764892578
+          ],
+          [
+            32.5969123840332,
+            57.15395736694336
+          ],
+          [
+            34.43790817260742,
+            59.72772979736328
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 13; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-14",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -92.03534698486328,
+            31.256988525390625
+          ],
+          [
+            -89.51499938964844,
+            31.997713088989258
+          ],
+          [
+            -90.20833587646484,
+            4.296143531799316
+          ],
+          [
+            -92.68195343017578,
+            5.332149505615234
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 14; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "crosswalk-15",
+        "kind": "crosswalk",
+        "polygon": [
+          [
+            -31.425952911376953,
+            74.94744110107422
+          ],
+          [
+            -28.903654098510742,
+            75.1102294921875
+          ],
+          [
+            -30.07802391052246,
+            60.156883239746094
+          ],
+          [
+            -32.5196533203125,
+            60.95998001098633
+          ]
+        ],
+        "clearance_m": 6.096,
+        "reason": "Within 20 ft (6.096 m) of a crosswalk",
+        "evidence": "CARLA/OpenDRIVE crosswalk 15; Delaware 21 \u00a74179(e)(6)"
+      },
+      {
+        "id": "posted_conditional",
+        "kind": "posted_conditional",
+        "bay_ids": [
+          "P001",
+          "P002",
+          "P003",
+          "P004",
+          "P005",
+          "P006",
+          "P007"
+        ],
+        "reason": "Accessible-reserved / timed no-parking row; exact sign extents and eligibility are unresolved",
+        "evidence": "SM_Parking04 at (-16.97,7.74),(3.03,7.74); SM_Parking02 at (22.01,7.74); inspected sign atlas and mesh UVs"
+      },
+      {
+        "id": "posted_mixed",
+        "kind": "posted_mixed",
+        "bay_ids": [
+          "P027",
+          "P028",
+          "P029",
+          "P030",
+          "P031",
+          "P032",
+          "P033"
+        ],
+        "reason": "30-minute / no-parking-any-time row; exact transition and duration enforcement are unresolved",
+        "evidence": "SM_Parking03 at (-23.92,125.07),(-1.14,125.23); SM_Parking01 at (28.86,125.81); inspected sign atlas and mesh UVs"
+      }
+    ]
+  }
+}

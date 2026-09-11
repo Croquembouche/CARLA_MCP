@@ -1,0 +1,3552 @@
+[
+  {
+    "frame": 275,
+    "time": 9.703185748367105,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.41537094116211,
+      "y": -8.054049491882324,
+      "z": 0.08125410974025726,
+      "yaw": 89.60379028320312,
+      "pitch": -0.11253540217876434,
+      "roll": 0.10817413032054901
+    },
+    "speed": 0.0,
+    "control": {
+      "throttle": 0.44999998807907104,
+      "steer": 0.630672812461853,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 0
+    }
+  },
+  {
+    "frame": 277,
+    "time": 9.80318574985722,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.415077209472656,
+      "y": -8.058756828308105,
+      "z": 0.0775776207447052,
+      "yaw": 89.59040069580078,
+      "pitch": -0.16968883574008942,
+      "roll": 0.11298214644193649
+    },
+    "speed": 0.08052327151693785,
+    "control": {
+      "throttle": 0.44999998807907104,
+      "steer": 0.6309175491333008,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 0
+    }
+  },
+  {
+    "frame": 279,
+    "time": 9.903185751347337,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.41289520263672,
+      "y": -8.071012496948242,
+      "z": 0.07761754840612411,
+      "yaw": 89.5021743774414,
+      "pitch": -0.19448664784431458,
+      "roll": 0.1429324895143509
+    },
+    "speed": 0.15944891478413686,
+    "control": {
+      "throttle": 0.44999998807907104,
+      "steer": 0.6320067048072815,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 281,
+    "time": 10.003185752837453,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.40867233276367,
+      "y": -8.090662956237793,
+      "z": 0.07763242721557617,
+      "yaw": 89.32170867919922,
+      "pitch": -0.19940857589244843,
+      "roll": 0.14501935243606567
+    },
+    "speed": 0.2364912888013825,
+    "control": {
+      "throttle": 0.4303045868873596,
+      "steer": 0.6329798698425293,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 282,
+    "time": 10.053185753582511,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.40611267089844,
+      "y": -8.103151321411133,
+      "z": 0.07764607667922974,
+      "yaw": 89.20877838134766,
+      "pitch": -0.19624988734722137,
+      "roll": 0.13498155772686005
+    },
+    "speed": 0.271504547007197,
+    "control": {
+      "throttle": 0.4172280430793762,
+      "steer": 0.633455753326416,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 284,
+    "time": 10.153185755072627,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.400150299072266,
+      "y": -8.13296127319336,
+      "z": 0.07769810408353806,
+      "yaw": 88.942138671875,
+      "pitch": -0.183900848031044,
+      "roll": 0.11320427805185318
+    },
+    "speed": 0.3353685891882134,
+    "control": {
+      "throttle": 0.39345866441726685,
+      "steer": 0.6345169544219971,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 287,
+    "time": 10.303185757307801,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.38942337036133,
+      "y": -8.188496589660645,
+      "z": 0.07782788574695587,
+      "yaw": 88.45022583007812,
+      "pitch": -0.1619521528482437,
+      "roll": 0.08269937336444855
+    },
+    "speed": 0.41820455217466285,
+    "control": {
+      "throttle": 0.36275380849838257,
+      "steer": 0.6363915205001831,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 290,
+    "time": 10.453185759542976,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.37717819213867,
+      "y": -8.25526237487793,
+      "z": 0.07798825949430466,
+      "yaw": 87.86114501953125,
+      "pitch": -0.14023733139038086,
+      "roll": 0.04858418181538582
+    },
+    "speed": 0.4881700847780078,
+    "control": {
+      "throttle": 0.3368651568889618,
+      "steer": 0.6382772326469421,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 293,
+    "time": 10.60318576177815,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.364013671875,
+      "y": -8.331618309020996,
+      "z": 0.07817088812589645,
+      "yaw": 87.18827819824219,
+      "pitch": -0.1175602599978447,
+      "roll": 0.009762659668922424
+    },
+    "speed": 0.5480877205179947,
+    "control": {
+      "throttle": 0.3148180842399597,
+      "steer": 0.6398643851280212,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 297,
+    "time": 10.803185764758382,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.344940185546875,
+      "y": -8.44599437713623,
+      "z": 0.07829638570547104,
+      "yaw": 86.15109252929688,
+      "pitch": -0.08891398459672928,
+      "roll": -0.009160049259662628
+    },
+    "speed": 0.6124448358967123,
+    "control": {
+      "throttle": 0.28968822956085205,
+      "steer": 0.6864504814147949,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 300,
+    "time": 10.953185766993556,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.32804870605469,
+      "y": -8.539077758789062,
+      "z": 0.07804492115974426,
+      "yaw": 85.1937484741211,
+      "pitch": -0.08359683305025101,
+      "roll": -0.024151263758540154
+    },
+    "speed": 0.655556855218069,
+    "control": {
+      "throttle": 0.2753848433494568,
+      "steer": 0.6915432810783386,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 303,
+    "time": 11.10318576922873,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.311466217041016,
+      "y": -8.638321876525879,
+      "z": 0.0776788741350174,
+      "yaw": 84.16334533691406,
+      "pitch": -0.0843268483877182,
+      "roll": -0.043299004435539246
+    },
+    "speed": 0.6933788760797177,
+    "control": {
+      "throttle": 0.2615421414375305,
+      "steer": 0.6953690052032471,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 306,
+    "time": 11.253185771463905,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.295597076416016,
+      "y": -8.743008613586426,
+      "z": 0.07735195010900497,
+      "yaw": 83.06919860839844,
+      "pitch": -0.08082746714353561,
+      "roll": -0.05180663242936134
+    },
+    "speed": 0.7269316804125456,
+    "control": {
+      "throttle": 0.24933478236198425,
+      "steer": 0.6981303095817566,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 309,
+    "time": 11.403185773699079,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.27740478515625,
+      "y": -8.850882530212402,
+      "z": 0.07699448615312576,
+      "yaw": 81.79485321044922,
+      "pitch": -0.07089778035879135,
+      "roll": -0.027266735211014748
+    },
+    "speed": 0.7484973724673141,
+    "control": {
+      "throttle": 0.24106863141059875,
+      "steer": 0.7420091032981873,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 312,
+    "time": 11.553185775934253,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.260440826416016,
+      "y": -8.962636947631836,
+      "z": 0.076604925096035,
+      "yaw": 80.44261169433594,
+      "pitch": -0.0730694830417633,
+      "roll": -0.05186038836836815
+    },
+    "speed": 0.7724640436206451,
+    "control": {
+      "throttle": 0.23232005536556244,
+      "steer": 0.7469151616096497,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 315,
+    "time": 11.703185778169427,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.24514389038086,
+      "y": -9.0780029296875,
+      "z": 0.0761679857969284,
+      "yaw": 79.03424835205078,
+      "pitch": -0.07361534982919693,
+      "roll": -0.05541037395596504
+    },
+    "speed": 0.7937314145187611,
+    "control": {
+      "throttle": 0.2245836853981018,
+      "steer": 0.7503032088279724,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 317,
+    "time": 11.803185779659543,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.233802795410156,
+      "y": -9.155634880065918,
+      "z": 0.0758572593331337,
+      "yaw": 77.99431610107422,
+      "pitch": -0.06525135785341263,
+      "roll": -0.019604507833719254
+    },
+    "speed": 0.7978955648052763,
+    "control": {
+      "throttle": 0.2223876267671585,
+      "steer": 0.7855582237243652,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 320,
+    "time": 11.953185781894717,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.21868133544922,
+      "y": -9.272521018981934,
+      "z": 0.07542850822210312,
+      "yaw": 76.38985443115234,
+      "pitch": -0.059765420854091644,
+      "roll": -0.046967048197984695
+    },
+    "speed": 0.795240027605974,
+    "control": {
+      "throttle": 0.22322995960712433,
+      "steer": 0.7912125587463379,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 323,
+    "time": 12.103185784129892,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.205265045166016,
+      "y": -9.389150619506836,
+      "z": 0.07480175793170929,
+      "yaw": 74.7486572265625,
+      "pitch": -0.06264841556549072,
+      "roll": -0.008834991604089737
+    },
+    "speed": 0.7873308212024431,
+    "control": {
+      "throttle": 0.22399015724658966,
+      "steer": 0.8158909678459167,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 326,
+    "time": 12.253185786365066,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.190399169921875,
+      "y": -9.507302284240723,
+      "z": 0.07062438875436783,
+      "yaw": 73.0014419555664,
+      "pitch": -0.23089565336704254,
+      "roll": 0.34890180826187134
+    },
+    "speed": 0.8013776467263326,
+    "control": {
+      "throttle": 0.22073246538639069,
+      "steer": 0.8232923746109009,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 329,
+    "time": 12.40318578860024,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.17899703979492,
+      "y": -9.624767303466797,
+      "z": 0.06554345041513443,
+      "yaw": 71.2149887084961,
+      "pitch": -0.4055488109588623,
+      "roll": 0.561284601688385
+    },
+    "speed": 0.79347389593073,
+    "control": {
+      "throttle": 0.22380004823207855,
+      "steer": 0.8291599154472351,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 332,
+    "time": 12.553185790835414,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.17006301879883,
+      "y": -9.742486953735352,
+      "z": 0.06397074460983276,
+      "yaw": 69.35737609863281,
+      "pitch": -0.4484470784664154,
+      "roll": 0.6580725312232971
+    },
+    "speed": 0.7994547354461081,
+    "control": {
+      "throttle": 0.22084365785121918,
+      "steer": 0.8446301221847534,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 335,
+    "time": 12.703185793070588,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.16396713256836,
+      "y": -9.859268188476562,
+      "z": 0.06350302696228027,
+      "yaw": 67.46165466308594,
+      "pitch": -0.4449441730976105,
+      "roll": 0.6720045208930969
+    },
+    "speed": 0.7874673680680776,
+    "control": {
+      "throttle": 0.22478707134723663,
+      "steer": 0.8497620820999146,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 338,
+    "time": 12.853185795305762,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.1612663269043,
+      "y": -9.975029945373535,
+      "z": 0.0635690689086914,
+      "yaw": 65.55836486816406,
+      "pitch": -0.4251585006713867,
+      "roll": 0.6564139723777771
+    },
+    "speed": 0.7871878792571286,
+    "control": {
+      "throttle": 0.22490103542804718,
+      "steer": 0.8525787591934204,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 341,
+    "time": 13.003185797540937,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.16147232055664,
+      "y": -10.09109878540039,
+      "z": 0.06346099823713303,
+      "yaw": 63.62295913696289,
+      "pitch": -0.4152219891548157,
+      "roll": 0.6647973656654358
+    },
+    "speed": 0.7914643687531402,
+    "control": {
+      "throttle": 0.22370003163814545,
+      "steer": 0.8569267988204956,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 344,
+    "time": 13.15318579977611,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.165069580078125,
+      "y": -10.207813262939453,
+      "z": 0.06242061406373978,
+      "yaw": 61.661529541015625,
+      "pitch": -0.43036192655563354,
+      "roll": 0.6932333111763
+    },
+    "speed": 0.7928729212026269,
+    "control": {
+      "throttle": 0.22287176549434662,
+      "steer": 0.8596735596656799,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 346,
+    "time": 13.253185801266227,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.170936584472656,
+      "y": -10.285750389099121,
+      "z": 0.0624646432697773,
+      "yaw": 60.36507797241211,
+      "pitch": -0.40592408180236816,
+      "roll": 0.6159235239028931
+    },
+    "speed": 0.8031797119055916,
+    "control": {
+      "throttle": 0.22019638121128082,
+      "steer": 0.8499928116798401,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 349,
+    "time": 13.403185803501401,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.183349609375,
+      "y": -10.40018081665039,
+      "z": 0.0655592828989029,
+      "yaw": 58.448448181152344,
+      "pitch": -0.24169710278511047,
+      "roll": 0.3719690442085266
+    },
+    "speed": 0.7920632137547082,
+    "control": {
+      "throttle": 0.2232314795255661,
+      "steer": 0.8524928092956543,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 351,
+    "time": 13.503185804991517,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.192970275878906,
+      "y": -10.47720718383789,
+      "z": 0.06652254611253738,
+      "yaw": 57.15385055541992,
+      "pitch": -0.19656799733638763,
+      "roll": 0.33555251359939575
+    },
+    "speed": 0.7967196185604776,
+    "control": {
+      "throttle": 0.22200630605220795,
+      "steer": 0.8531627058982849,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 354,
+    "time": 13.653185807226691,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.214595794677734,
+      "y": -10.592061042785645,
+      "z": 0.06769020110368729,
+      "yaw": 55.32368469238281,
+      "pitch": -0.12244929373264313,
+      "roll": 0.17463305592536926
+    },
+    "speed": 0.7942993694540875,
+    "control": {
+      "throttle": 0.2229325920343399,
+      "steer": 0.8314962387084961,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 357,
+    "time": 13.803185809461866,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.23952102661133,
+      "y": -10.706217765808105,
+      "z": 0.06879252195358276,
+      "yaw": 53.50349044799805,
+      "pitch": -0.04272086173295975,
+      "roll": 0.10292883962392807
+    },
+    "speed": 0.7873899792677895,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.8324638605117798,
+      "brake": 0.0005170846125110984,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 360,
+    "time": 13.95318581169704,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.272430419921875,
+      "y": -10.819756507873535,
+      "z": 0.06753729283809662,
+      "yaw": 51.84396743774414,
+      "pitch": -0.06777657568454742,
+      "roll": 0.14366818964481354
+    },
+    "speed": 0.7913387652398072,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.7967258095741272,
+      "brake": 0.0023483599070459604,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 362,
+    "time": 14.053185813187156,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.29630661010742,
+      "y": -10.89462947845459,
+      "z": 0.0666140615940094,
+      "yaw": 50.743282318115234,
+      "pitch": -0.06370863318443298,
+      "roll": 0.17002296447753906
+    },
+    "speed": 0.8007197872309761,
+    "control": {
+      "throttle": 0.22148577868938446,
+      "steer": 0.7981547117233276,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 366,
+    "time": 14.253185816167388,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.35459518432617,
+      "y": -11.04064655303955,
+      "z": 0.06590420007705688,
+      "yaw": 48.761146545410156,
+      "pitch": -0.029720954596996307,
+      "roll": 0.09336353838443756
+    },
+    "speed": 0.7998420936690998,
+    "control": {
+      "throttle": 0.22227998077869415,
+      "steer": 0.7459136843681335,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 369,
+    "time": 14.403185818402562,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.4033203125,
+      "y": -11.149161338806152,
+      "z": 0.06518612802028656,
+      "yaw": 47.33893585205078,
+      "pitch": -0.006439611315727234,
+      "roll": 0.1402738094329834
+    },
+    "speed": 0.8020406531287613,
+    "control": {
+      "throttle": 0.22149308025836945,
+      "steer": 0.7461088299751282,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 372,
+    "time": 14.553185820637736,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.46150207519531,
+      "y": -11.25288200378418,
+      "z": 0.06452541053295135,
+      "yaw": 46.18091583251953,
+      "pitch": -0.01633947528898716,
+      "roll": 0.05388122797012329
+    },
+    "speed": 0.8013210658995183,
+    "control": {
+      "throttle": 0.222530797123909,
+      "steer": 0.6735303997993469,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 375,
+    "time": 14.70318582287291,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.52265548706055,
+      "y": -11.354737281799316,
+      "z": 0.06615312397480011,
+      "yaw": 45.053836822509766,
+      "pitch": -0.02970029227435589,
+      "roll": -0.06332262605428696
+    },
+    "speed": 0.7939301686939337,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.6713921427726746,
+      "brake": 0.001400490989908576,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 377,
+    "time": 14.803185824363027,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.56882095336914,
+      "y": -11.42023754119873,
+      "z": 0.06585345417261124,
+      "yaw": 44.486202239990234,
+      "pitch": -0.06329578906297684,
+      "roll": -0.11110924929380417
+    },
+    "speed": 0.7995120374499826,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.5721532106399536,
+      "brake": 0.005296649876981974,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 380,
+    "time": 14.953185826598201,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.63911819458008,
+      "y": -11.518190383911133,
+      "z": 0.06286962330341339,
+      "yaw": 43.687461853027344,
+      "pitch": -0.12560519576072693,
+      "roll": 0.12501269578933716
+    },
+    "speed": 0.7967221342064632,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.5707584619522095,
+      "brake": 0.0007496082689613104,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 383,
+    "time": 15.103185828833375,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.71455001831055,
+      "y": -11.612730026245117,
+      "z": 0.05683733895421028,
+      "yaw": 43.098445892333984,
+      "pitch": -0.22100995481014252,
+      "roll": 0.4447520077228546
+    },
+    "speed": 0.7964666798808303,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.43415242433547974,
+      "brake": 0.003514566458761692,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 386,
+    "time": 15.25318583106855,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.79331588745117,
+      "y": -11.703003883361816,
+      "z": 0.053023673593997955,
+      "yaw": 42.642982482910156,
+      "pitch": -0.21539057791233063,
+      "roll": 0.6516585946083069
+    },
+    "speed": 0.8048156757322381,
+    "control": {
+      "throttle": 0.22220957279205322,
+      "steer": 0.4312044382095337,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 389,
+    "time": 15.403185833303723,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.8793830871582,
+      "y": -11.786931037902832,
+      "z": 0.051394201815128326,
+      "yaw": 42.51133728027344,
+      "pitch": -0.23825377225875854,
+      "roll": 0.6772307753562927
+    },
+    "speed": 0.7973812880530713,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.2002132534980774,
+      "brake": 0.004010989796370268,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 392,
+    "time": 15.553185835538898,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -52.96672058105469,
+      "y": -11.868785858154297,
+      "z": 0.05160072445869446,
+      "yaw": 42.4483757019043,
+      "pitch": -0.19667170941829681,
+      "roll": 0.6613262295722961
+    },
+    "speed": 0.8019453350582483,
+    "control": {
+      "throttle": 0.22182480990886688,
+      "steer": -0.3138393759727478,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 395,
+    "time": 15.703185837774072,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.05790328979492,
+      "y": -11.946274757385254,
+      "z": 0.05129564180970192,
+      "yaw": 42.61730194091797,
+      "pitch": -0.1693512499332428,
+      "roll": 0.5972347855567932
+    },
+    "speed": 0.7906117981337172,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.3336309492588043,
+      "brake": 0.002373101655393839,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 398,
+    "time": 15.853185840009246,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.151695251464844,
+      "y": -12.018442153930664,
+      "z": 0.05487706512212753,
+      "yaw": 42.9538459777832,
+      "pitch": 0.03322160616517067,
+      "roll": 0.22175762057304382
+    },
+    "speed": 0.7928801999325025,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.4936724305152893,
+      "brake": 0.0038675451651215553,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 401,
+    "time": 16.00318584224442,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.248329162597656,
+      "y": -12.08681869506836,
+      "z": 0.05878400057554245,
+      "yaw": 43.56355285644531,
+      "pitch": 0.22247250378131866,
+      "roll": 0.009558639489114285
+    },
+    "speed": 0.8031195559357118,
+    "control": {
+      "throttle": 0.2221570611000061,
+      "steer": -0.5061085820198059,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 405,
+    "time": 16.203185845224652,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.38005065917969,
+      "y": -12.175919532775879,
+      "z": 0.058342207223176956,
+      "yaw": 44.66935348510742,
+      "pitch": 0.2529657483100891,
+      "roll": -0.02009301818907261
+    },
+    "speed": 0.7968332535008644,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.613551139831543,
+      "brake": 0.00370002631098032,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 408,
+    "time": 16.353185847459827,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.47948455810547,
+      "y": -12.24255657196045,
+      "z": 0.057178616523742676,
+      "yaw": 45.62109375,
+      "pitch": 0.24120531976222992,
+      "roll": 0.02674102410674095
+    },
+    "speed": 0.8055173244976095,
+    "control": {
+      "throttle": 0.22107218205928802,
+      "steer": -0.6226578950881958,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 410,
+    "time": 16.453185848949943,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.54655075073242,
+      "y": -12.283812522888184,
+      "z": 0.05669787526130676,
+      "yaw": 46.3935661315918,
+      "pitch": 0.24804174900054932,
+      "roll": -0.01581583358347416
+    },
+    "speed": 0.7948947507817403,
+    "control": {
+      "throttle": 0.22436192631721497,
+      "steer": -0.6936853528022766,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 413,
+    "time": 16.603185851185117,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.64717483520508,
+      "y": -12.347101211547852,
+      "z": 0.056539181619882584,
+      "yaw": 47.62603759765625,
+      "pitch": 0.21854737401008606,
+      "roll": 0.07925911992788315
+    },
+    "speed": 0.8012997140606849,
+    "control": {
+      "throttle": 0.2222123146057129,
+      "steer": -0.7039294838905334,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 416,
+    "time": 16.75318585342029,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.74787521362305,
+      "y": -12.407835960388184,
+      "z": 0.05765793099999428,
+      "yaw": 49.03752136230469,
+      "pitch": 0.13930644094944,
+      "roll": 0.21184639632701874
+    },
+    "speed": 0.7967271627352085,
+    "control": {
+      "throttle": 0.22337093949317932,
+      "steer": -0.7565426826477051,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 419,
+    "time": 16.903185855655465,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.8487434387207,
+      "y": -12.46970272064209,
+      "z": 0.05755822733044624,
+      "yaw": 50.52180480957031,
+      "pitch": 0.09370192140340805,
+      "roll": 0.3098316490650177
+    },
+    "speed": 0.7976452013915512,
+    "control": {
+      "throttle": 0.22282257676124573,
+      "steer": -0.7660343647003174,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 422,
+    "time": 17.05318585789064,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -53.950096130371094,
+      "y": -12.529842376708984,
+      "z": 0.0564863346517086,
+      "yaw": 52.15842056274414,
+      "pitch": 0.08625676482915878,
+      "roll": 0.3246723711490631
+    },
+    "speed": 0.7890664931933817,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8027602434158325,
+      "brake": 0.0008749032276682556,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 425,
+    "time": 17.203185860125814,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.05034255981445,
+      "y": -12.591207504272461,
+      "z": 0.0551922544836998,
+      "yaw": 53.85394287109375,
+      "pitch": 0.07765988260507584,
+      "roll": 0.3501005470752716
+    },
+    "speed": 0.8013756294502,
+    "control": {
+      "throttle": 0.22092829644680023,
+      "steer": -0.8116339445114136,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 428,
+    "time": 17.353185862360988,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.14962387084961,
+      "y": -12.651867866516113,
+      "z": 0.05280032381415367,
+      "yaw": 55.63198471069336,
+      "pitch": 0.12552011013031006,
+      "roll": 0.26818060874938965
+    },
+    "speed": 0.7908628058694136,
+    "control": {
+      "throttle": 0.22420543432235718,
+      "steer": -0.8331947326660156,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 430,
+    "time": 17.453185863851104,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.215782165527344,
+      "y": -12.693068504333496,
+      "z": 0.05231723561882973,
+      "yaw": 56.85783386230469,
+      "pitch": 0.169999897480011,
+      "roll": 0.1661054491996765
+    },
+    "speed": 0.7955483672770164,
+    "control": {
+      "throttle": 0.2224883735179901,
+      "steer": -0.8392625451087952,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 433,
+    "time": 17.603185866086278,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.31373596191406,
+      "y": -12.757528305053711,
+      "z": 0.05255618691444397,
+      "yaw": 58.740966796875,
+      "pitch": 0.19599026441574097,
+      "roll": 0.13430649042129517
+    },
+    "speed": 0.7868272085220724,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8467118740081787,
+      "brake": 0.0004961812519468367,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 436,
+    "time": 17.753185868321452,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.40878677368164,
+      "y": -12.824666976928711,
+      "z": 0.05029436945915222,
+      "yaw": 60.6523551940918,
+      "pitch": 0.10722091048955917,
+      "roll": 0.27246832847595215
+    },
+    "speed": 0.7928658309814681,
+    "control": {
+      "throttle": 0.2231563776731491,
+      "steer": -0.8547347187995911,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 439,
+    "time": 17.903185870556626,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.503257751464844,
+      "y": -12.893868446350098,
+      "z": 0.048409149050712585,
+      "yaw": 62.616416931152344,
+      "pitch": 0.05538173019886017,
+      "roll": 0.30997464060783386
+    },
+    "speed": 0.7974621840958374,
+    "control": {
+      "throttle": 0.2213721126317978,
+      "steer": -0.8608474135398865,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 442,
+    "time": 18.0531858727918,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.594730377197266,
+      "y": -12.966474533081055,
+      "z": 0.0477336049079895,
+      "yaw": 64.55091094970703,
+      "pitch": 0.04280402883887291,
+      "roll": 0.331817090511322
+    },
+    "speed": 0.7883885735568303,
+    "control": {
+      "throttle": 0.22448144853115082,
+      "steer": -0.8564591407775879,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 445,
+    "time": 18.203185875026975,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.6842041015625,
+      "y": -13.040938377380371,
+      "z": 0.04729701206088066,
+      "yaw": 66.51385498046875,
+      "pitch": 0.027513952925801277,
+      "roll": 0.3104887306690216
+    },
+    "speed": 0.7933853438664653,
+    "control": {
+      "throttle": 0.22286884486675262,
+      "steer": -0.8622099161148071,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 448,
+    "time": 18.35318587726215,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.77055740356445,
+      "y": -13.120098114013672,
+      "z": 0.046714890748262405,
+      "yaw": 68.44573211669922,
+      "pitch": 0.0016591770108789206,
+      "roll": 0.3483334183692932
+    },
+    "speed": 0.7881984693063827,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8455075025558472,
+      "brake": 0.0016678118845447898,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 451,
+    "time": 18.503185879497323,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.85342025756836,
+      "y": -13.201876640319824,
+      "z": 0.0457121804356575,
+      "yaw": 70.34656524658203,
+      "pitch": 0.0034918012097477913,
+      "roll": 0.3521113395690918
+    },
+    "speed": 0.7945661688306856,
+    "control": {
+      "throttle": 0.22271469235420227,
+      "steer": -0.8512440919876099,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 454,
+    "time": 18.653185881732497,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -54.93408203125,
+      "y": -13.28653335571289,
+      "z": 0.04336078464984894,
+      "yaw": 72.28963470458984,
+      "pitch": 0.04121135547757149,
+      "roll": 0.45737424492836
+    },
+    "speed": 0.8020300054414056,
+    "control": {
+      "throttle": 0.22016304731369019,
+      "steer": -0.8544266223907471,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 457,
+    "time": 18.80318588396767,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.00772476196289,
+      "y": -13.373849868774414,
+      "z": 0.03928789123892784,
+      "yaw": 74.1034164428711,
+      "pitch": 0.1330382376909256,
+      "roll": 0.7258433699607849
+    },
+    "speed": 0.7666316754668607,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8280200958251953,
+      "brake": 0.014997501857578754,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 460,
+    "time": 18.953185886202846,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.07357406616211,
+      "y": -13.458279609680176,
+      "z": 0.035204336047172546,
+      "yaw": 75.76177978515625,
+      "pitch": 0.24232687056064606,
+      "roll": 0.8787192106246948
+    },
+    "speed": 0.7029842721207549,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8330363035202026,
+      "brake": 0.026484601199626923,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 463,
+    "time": 19.10318588843802,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.13284683227539,
+      "y": -13.536856651306152,
+      "z": 0.03458938002586365,
+      "yaw": 77.29962921142578,
+      "pitch": 0.2601122260093689,
+      "roll": 0.893651008605957
+    },
+    "speed": 0.6391242513935887,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8375513553619385,
+      "brake": 0.028455661609768867,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 464,
+    "time": 19.153185889183078,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.15079879760742,
+      "y": -13.561619758605957,
+      "z": 0.03516644984483719,
+      "yaw": 77.78270721435547,
+      "pitch": 0.27587851881980896,
+      "roll": 0.928656280040741
+    },
+    "speed": 0.6178425618328536,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8387395739555359,
+      "brake": 0.02822185680270195,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 466,
+    "time": 19.253185890673194,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.183040618896484,
+      "y": -13.610884666442871,
+      "z": 0.03632337599992752,
+      "yaw": 78.6356430053711,
+      "pitch": 0.29352399706840515,
+      "roll": 0.9959027171134949
+    },
+    "speed": 0.5826592763215995,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8058529496192932,
+      "brake": 0.031170137226581573,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 469,
+    "time": 19.40318589290837,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.2268180847168,
+      "y": -13.679462432861328,
+      "z": 0.036690134555101395,
+      "yaw": 79.80363464355469,
+      "pitch": 0.2983887493610382,
+      "roll": 0.9507020115852356
+    },
+    "speed": 0.522386390184576,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8120163679122925,
+      "brake": 0.0273701474070549,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 472,
+    "time": 19.553185895143542,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.265438079833984,
+      "y": -13.741560935974121,
+      "z": 0.035928502678871155,
+      "yaw": 80.86634826660156,
+      "pitch": 0.26510241627693176,
+      "roll": 0.8829335570335388
+    },
+    "speed": 0.4678804501853954,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8174548149108887,
+      "brake": 0.02270008996129036,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 475,
+    "time": 19.703185897378717,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.2998046875,
+      "y": -13.797769546508789,
+      "z": 0.033980678766965866,
+      "yaw": 81.82958221435547,
+      "pitch": 0.17980317771434784,
+      "roll": 0.7483890652656555
+    },
+    "speed": 0.41809269020583156,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8224756717681885,
+      "brake": 0.018053779378533363,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 478,
+    "time": 19.85318589961389,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.33018112182617,
+      "y": -13.84843635559082,
+      "z": 0.03398219868540764,
+      "yaw": 82.69598388671875,
+      "pitch": 0.10784361511468887,
+      "roll": 0.636615514755249
+    },
+    "speed": 0.37624972037698423,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8267025947570801,
+      "brake": 0.014526259154081345,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 481,
+    "time": 20.003185901849065,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.35667037963867,
+      "y": -13.895418167114258,
+      "z": 0.03691954165697098,
+      "yaw": 83.43948364257812,
+      "pitch": -0.014545601792633533,
+      "roll": 0.4467339813709259
+    },
+    "speed": 0.3414160808708696,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.7928574681282043,
+      "brake": 0.01400008611381054,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 484,
+    "time": 20.15318590408424,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.37934112548828,
+      "y": -13.938444137573242,
+      "z": 0.03946215286850929,
+      "yaw": 84.08757781982422,
+      "pitch": -0.1337200254201889,
+      "roll": 0.2727932631969452
+    },
+    "speed": 0.3049646313414064,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.799094557762146,
+      "brake": 0.010141474194824696,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 487,
+    "time": 20.303185906319413,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.39874267578125,
+      "y": -13.977267265319824,
+      "z": 0.04009920358657837,
+      "yaw": 84.67755889892578,
+      "pitch": -0.26178666949272156,
+      "roll": 0.2208033949136734
+    },
+    "speed": 0.2729471906616626,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8042058944702148,
+      "brake": 0.006271027494221926,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 490,
+    "time": 20.453185908554588,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.41538619995117,
+      "y": -14.012373924255371,
+      "z": 0.039349719882011414,
+      "yaw": 85.21211242675781,
+      "pitch": -0.4048042893409729,
+      "roll": 0.25460442900657654
+    },
+    "speed": 0.2448543840086867,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8082352876663208,
+      "brake": 0.002651700284332037,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 493,
+    "time": 20.60318591078976,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.43105697631836,
+      "y": -14.046364784240723,
+      "z": 0.03790080174803734,
+      "yaw": 85.73651123046875,
+      "pitch": -0.5658372640609741,
+      "roll": 0.32625600695610046
+    },
+    "speed": 0.2517228945320391,
+    "control": {
+      "throttle": 0.22201071679592133,
+      "steer": -0.8093128204345703,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 496,
+    "time": 20.753185913024936,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.44647979736328,
+      "y": -14.080118179321289,
+      "z": 0.03682705760002136,
+      "yaw": 86.25650024414062,
+      "pitch": -0.6875351071357727,
+      "roll": 0.374323308467865
+    },
+    "speed": 0.24327443409313088,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8078906536102295,
+      "brake": 0.0010109752183780074,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 499,
+    "time": 20.90318591526011,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.462371826171875,
+      "y": -14.11343765258789,
+      "z": 0.03749586269259453,
+      "yaw": 86.78016662597656,
+      "pitch": -0.7282048463821411,
+      "roll": 0.3101576864719391
+    },
+    "speed": 0.25119959983534784,
+    "control": {
+      "throttle": 0.2223687767982483,
+      "steer": -0.8087413907051086,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 502,
+    "time": 21.053185917495284,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.47792434692383,
+      "y": -14.146735191345215,
+      "z": 0.03867089003324509,
+      "yaw": 87.30059051513672,
+      "pitch": -0.7472711205482483,
+      "roll": 0.24069024622440338
+    },
+    "speed": 0.24319665631110912,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.8073210716247559,
+      "brake": 0.0008216559654101729,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 505,
+    "time": 21.20318591973046,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.49317932128906,
+      "y": -14.180237770080566,
+      "z": 0.03952324017882347,
+      "yaw": 87.82372283935547,
+      "pitch": -0.7701713442802429,
+      "roll": 0.17538154125213623
+    },
+    "speed": 0.2510751229265124,
+    "control": {
+      "throttle": 0.2223978042602539,
+      "steer": -0.8077675700187683,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 508,
+    "time": 21.353185921965633,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.495845794677734,
+      "y": -14.19188404083252,
+      "z": 0.03987869247794151,
+      "yaw": 87.9174575805664,
+      "pitch": -0.6970568895339966,
+      "roll": 0.25163498520851135
+    },
+    "speed": 0.004282782084276493,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.0,
+      "brake": 1.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 511,
+    "time": 21.503185924200807,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.496238708496094,
+      "y": -14.186027526855469,
+      "z": 0.04012712091207504,
+      "yaw": 87.91592407226562,
+      "pitch": -0.7112682461738586,
+      "roll": 0.15733098983764648
+    },
+    "speed": 0.10950148003997986,
+    "control": {
+      "throttle": 0.44999998807907104,
+      "steer": -0.031910911202430725,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 515,
+    "time": 21.70318592718104,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.494842529296875,
+      "y": -14.141351699829102,
+      "z": 0.040108948945999146,
+      "yaw": 87.91259002685547,
+      "pitch": -0.7090999484062195,
+      "roll": 0.12060867995023727
+    },
+    "speed": 0.3281616892589085,
+    "control": {
+      "throttle": 0.44999998807907104,
+      "steer": -0.03770434483885765,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 518,
+    "time": 21.853185929416213,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.492332458496094,
+      "y": -14.079111099243164,
+      "z": 0.03971156105399132,
+      "yaw": 87.90898132324219,
+      "pitch": -0.6918218731880188,
+      "roll": 0.15380384027957916
+    },
+    "speed": 0.4918257366324467,
+    "control": {
+      "throttle": 0.44999998807907104,
+      "steer": -0.032222382724285126,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 521,
+    "time": 22.003185931651387,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.48880386352539,
+      "y": -13.992484092712402,
+      "z": 0.039076149463653564,
+      "yaw": 87.90516662597656,
+      "pitch": -0.6656776070594788,
+      "roll": 0.20523616671562195
+    },
+    "speed": 0.650028374444075,
+    "control": {
+      "throttle": 0.4298510253429413,
+      "steer": -0.024274149909615517,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 524,
+    "time": 22.15318593388656,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.4843864440918,
+      "y": -13.884564399719238,
+      "z": 0.0382298044860363,
+      "yaw": 87.90206909179688,
+      "pitch": -0.6416386365890503,
+      "roll": 0.27541622519493103
+    },
+    "speed": 0.7767138781550303,
+    "control": {
+      "throttle": 0.3817896842956543,
+      "steer": -0.011447004973888397,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 527,
+    "time": 22.303185936121736,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.479251861572266,
+      "y": -13.75971794128418,
+      "z": 0.037151042371988297,
+      "yaw": 87.90013122558594,
+      "pitch": -0.6102005243301392,
+      "roll": 0.3635552227497101
+    },
+    "speed": 0.8780046835884238,
+    "control": {
+      "throttle": 0.34369906783103943,
+      "steer": 0.01852189004421234,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 530,
+    "time": 22.45318593835691,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.47349166870117,
+      "y": -13.621127128601074,
+      "z": 0.035860806703567505,
+      "yaw": 87.90097045898438,
+      "pitch": -0.5644027590751648,
+      "roll": 0.47070547938346863
+    },
+    "speed": 0.9609392562271372,
+    "control": {
+      "throttle": 0.3127637803554535,
+      "steer": 0.028824040666222572,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 533,
+    "time": 22.603185940592084,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.46530532836914,
+      "y": -13.470590591430664,
+      "z": 0.0326559878885746,
+      "yaw": 87.9669418334961,
+      "pitch": -0.43475449085235596,
+      "roll": 0.6635009050369263
+    },
+    "speed": 1.032827731193138,
+    "control": {
+      "throttle": 0.2864041328430176,
+      "steer": 0.04763941466808319,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 536,
+    "time": 22.75318594282726,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.45688247680664,
+      "y": -13.310830116271973,
+      "z": 0.029656948521733284,
+      "yaw": 88.04669189453125,
+      "pitch": -0.32307812571525574,
+      "roll": 0.8545908331871033
+    },
+    "speed": 1.084768850357165,
+    "control": {
+      "throttle": 0.23070240020751953,
+      "steer": 0.06226355955004692,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 539,
+    "time": 22.903185945062432,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.448638916015625,
+      "y": -13.151167869567871,
+      "z": 0.027181630954146385,
+      "yaw": 88.12952423095703,
+      "pitch": -0.25621676445007324,
+      "roll": 1.0751279592514038
+    },
+    "speed": 1.0371866207286098,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.07453751564025879,
+      "brake": 0.04925702139735222,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 542,
+    "time": 23.053185947297607,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.44235610961914,
+      "y": -13.00182819366455,
+      "z": 0.0256330743432045,
+      "yaw": 88.17689514160156,
+      "pitch": -0.2217480093240738,
+      "roll": 1.2461614608764648
+    },
+    "speed": 0.9528132445519737,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.08456450700759888,
+      "brake": 0.07268798351287842,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 545,
+    "time": 23.20318594953278,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.438114166259766,
+      "y": -12.866670608520508,
+      "z": 0.026288293302059174,
+      "yaw": 88.19615936279297,
+      "pitch": -0.24915456771850586,
+      "roll": 1.3076708316802979
+    },
+    "speed": 0.8575925188369986,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.08647666126489639,
+      "brake": 0.07513471692800522,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 548,
+    "time": 23.353185951767955,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.434593200683594,
+      "y": -12.74551010131836,
+      "z": 0.026831751689314842,
+      "yaw": 88.21434020996094,
+      "pitch": -0.25487521290779114,
+      "roll": 1.3271998167037964
+    },
+    "speed": 0.764935880940406,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.08708634227514267,
+      "brake": 0.07090403884649277,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 551,
+    "time": 23.50318595400313,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.431495666503906,
+      "y": -12.637691497802734,
+      "z": 0.02700665034353733,
+      "yaw": 88.23101806640625,
+      "pitch": -0.2501778304576874,
+      "roll": 1.3421781063079834
+    },
+    "speed": 0.678732704201485,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.08778378367424011,
+      "brake": 0.06387005746364594,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 554,
+    "time": 23.653185956238303,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.428775787353516,
+      "y": -12.542181968688965,
+      "z": 0.027110833674669266,
+      "yaw": 88.24612426757812,
+      "pitch": -0.2459454983472824,
+      "roll": 1.3559077978134155
+    },
+    "speed": 0.6004703955880902,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.0887216180562973,
+      "brake": 0.055929891765117645,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 557,
+    "time": 23.803185958473478,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.426414489746094,
+      "y": -12.457769393920898,
+      "z": 0.027205955237150192,
+      "yaw": 88.25968933105469,
+      "pitch": -0.2435849905014038,
+      "roll": 1.3654932975769043
+    },
+    "speed": 0.5303186651532508,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.0897347629070282,
+      "brake": 0.048101071268320084,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 560,
+    "time": 23.95318596070865,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.424354553222656,
+      "y": -12.383270263671875,
+      "z": 0.027270659804344177,
+      "yaw": 88.2719497680664,
+      "pitch": -0.24227268993854523,
+      "roll": 1.3724416494369507
+    },
+    "speed": 0.4678298075252345,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.09069003909826279,
+      "brake": 0.04068492352962494,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 563,
+    "time": 24.103185962943826,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.42255401611328,
+      "y": -12.317569732666016,
+      "z": 0.02732236310839653,
+      "yaw": 88.28289794921875,
+      "pitch": -0.24089127779006958,
+      "roll": 1.3785910606384277
+    },
+    "speed": 0.41247733055428815,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.09169789403676987,
+      "brake": 0.03390161693096161,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 566,
+    "time": 24.253185965179,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.42097091674805,
+      "y": -12.259651184082031,
+      "z": 0.0273707564920187,
+      "yaw": 88.29264831542969,
+      "pitch": -0.2394571453332901,
+      "roll": 1.3844794034957886
+    },
+    "speed": 0.3635331043616572,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.09271486848592758,
+      "brake": 0.027819592505693436,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 570,
+    "time": 24.453185968159232,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.419166564941406,
+      "y": -12.192988395690918,
+      "z": 0.02742915228009224,
+      "yaw": 88.3045425415039,
+      "pitch": -0.23781371116638184,
+      "roll": 1.3903326988220215
+    },
+    "speed": 0.307046509916271,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.09409224987030029,
+      "brake": 0.020685764029622078,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 572,
+    "time": 24.55318596964935,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.41837692260742,
+      "y": -12.163651466369629,
+      "z": 0.027454687282443047,
+      "yaw": 88.30963897705078,
+      "pitch": -0.23708117008209229,
+      "roll": 1.3931419849395752
+    },
+    "speed": 0.28215282150753584,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.09473952651023865,
+      "brake": 0.017516255378723145,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 575,
+    "time": 24.703185971884523,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.41730499267578,
+      "y": -12.123970031738281,
+      "z": 0.02748769149184227,
+      "yaw": 88.3168716430664,
+      "pitch": -0.2354787290096283,
+      "roll": 1.3967057466506958
+    },
+    "speed": 0.25082533922114275,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.09571969509124756,
+      "brake": 0.00654712924733758,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 579,
+    "time": 24.903185974864755,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.415950775146484,
+      "y": -12.073441505432129,
+      "z": 0.027512965723872185,
+      "yaw": 88.32654571533203,
+      "pitch": -0.21756696701049805,
+      "roll": 1.400770664215088
+    },
+    "speed": 0.2623748769002933,
+    "control": {
+      "throttle": 0.2202128916978836,
+      "steer": 0.0940384715795517,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 582,
+    "time": 25.05318597709993,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.41495132446289,
+      "y": -12.035481452941895,
+      "z": 0.027553800493478775,
+      "yaw": 88.33343505859375,
+      "pitch": -0.21988441050052643,
+      "roll": 1.4033132791519165
+    },
+    "speed": 0.259186558690204,
+    "control": {
+      "throttle": 0.22137805819511414,
+      "steer": 0.09223149716854095,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 585,
+    "time": 25.203185979335103,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.41397476196289,
+      "y": -11.99785327911377,
+      "z": 0.0275469608604908,
+      "yaw": 88.34009552001953,
+      "pitch": -0.2216571420431137,
+      "roll": 1.404478669166565
+    },
+    "speed": 0.2573899934546605,
+    "control": {
+      "throttle": 0.2220347821712494,
+      "steer": 0.09010233730077744,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 588,
+    "time": 25.353185981570277,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.41298294067383,
+      "y": -11.959516525268555,
+      "z": 0.027543246746063232,
+      "yaw": 88.34705352783203,
+      "pitch": -0.21784356236457825,
+      "roll": 1.4059712886810303
+    },
+    "speed": 0.25309135658284665,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.08598430454730988,
+      "brake": 0.008614432998001575,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 591,
+    "time": 25.50318598380545,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "forward",
+    "pose": {
+      "x": -55.412193298339844,
+      "y": -11.929203033447266,
+      "z": 0.027635077014565468,
+      "yaw": 88.35234832763672,
+      "pitch": -0.26350876688957214,
+      "roll": 1.408700942993164
+    },
+    "speed": 0.13379586757232043,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.09146489202976227,
+      "brake": 0.12776024639606476,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 594,
+    "time": 25.653185986040626,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.4117431640625,
+      "y": -11.916668891906738,
+      "z": 0.027592290192842484,
+      "yaw": 88.34990692138672,
+      "pitch": -0.2790127396583557,
+      "roll": 1.4121087789535522
+    },
+    "speed": 0.03800280217878778,
+    "control": {
+      "throttle": 0.44999998807907104,
+      "steer": -0.5027124285697937,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 1
+    }
+  },
+  {
+    "frame": 597,
+    "time": 25.8031859882758,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.412750244140625,
+      "y": -11.92050552368164,
+      "z": 0.027609849348664284,
+      "yaw": 88.38401794433594,
+      "pitch": -0.2794763743877411,
+      "roll": 1.392570972442627
+    },
+    "speed": 0.08380971393385812,
+    "control": {
+      "throttle": 0.44999998807907104,
+      "steer": -0.5019047856330872,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 600,
+    "time": 25.953185990510974,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.41646957397461,
+      "y": -11.942301750183105,
+      "z": 0.027630390599370003,
+      "yaw": 88.5124740600586,
+      "pitch": -0.28049930930137634,
+      "roll": 1.3818676471710205
+    },
+    "speed": 0.20407054237538375,
+    "control": {
+      "throttle": 0.4422720968723297,
+      "steer": -0.5018923282623291,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 603,
+    "time": 26.10318599274615,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.42254638671875,
+      "y": -11.980722427368164,
+      "z": 0.02762465551495552,
+      "yaw": 88.72445678710938,
+      "pitch": -0.2747200131416321,
+      "roll": 1.3798274993896484
+    },
+    "speed": 0.307898291034588,
+    "control": {
+      "throttle": 0.4036268889904022,
+      "steer": -0.49944019317626953,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 606,
+    "time": 26.253185994981322,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.430416107177734,
+      "y": -12.033183097839355,
+      "z": 0.02763104997575283,
+      "yaw": 89.00215148925781,
+      "pitch": -0.26519742608070374,
+      "roll": 1.3783888816833496
+    },
+    "speed": 0.39501682934517474,
+    "control": {
+      "throttle": 0.3713492453098297,
+      "steer": -0.49546194076538086,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 609,
+    "time": 26.403185997216497,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.439579010009766,
+      "y": -12.097563743591309,
+      "z": 0.027668237686157227,
+      "yaw": 89.3362045288086,
+      "pitch": -0.25652599334716797,
+      "roll": 1.3735649585723877
+    },
+    "speed": 0.46904003814538525,
+    "control": {
+      "throttle": 0.3440191447734833,
+      "steer": -0.49611350893974304,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 613,
+    "time": 26.60318600019673,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.45337677001953,
+      "y": -12.199016571044922,
+      "z": 0.02767716906964779,
+      "yaw": 89.8664321899414,
+      "pitch": -0.24507379531860352,
+      "roll": 1.3593662977218628
+    },
+    "speed": 0.5521348152246284,
+    "control": {
+      "throttle": 0.3135196268558502,
+      "steer": -0.5001460313796997,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 615,
+    "time": 26.703186001686845,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.46070861816406,
+      "y": -12.2555570602417,
+      "z": 0.02765999548137188,
+      "yaw": 90.16384887695312,
+      "pitch": -0.23932082951068878,
+      "roll": 1.3515441417694092
+    },
+    "speed": 0.5882933144182613,
+    "control": {
+      "throttle": 0.3002851605415344,
+      "steer": -0.5018068552017212,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 618,
+    "time": 26.85318600392202,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.47019958496094,
+      "y": -12.347074508666992,
+      "z": 0.027609558776021004,
+      "yaw": 90.57836151123047,
+      "pitch": -0.23379629850387573,
+      "roll": 1.370232105255127
+    },
+    "speed": 0.6366448561096831,
+    "control": {
+      "throttle": 0.282088041305542,
+      "steer": -0.44434159994125366,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 621,
+    "time": 27.003186006157193,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.478858947753906,
+      "y": -12.443880081176758,
+      "z": 0.028710324317216873,
+      "yaw": 90.9257583618164,
+      "pitch": -0.16087400913238525,
+      "roll": 1.1557836532592773
+    },
+    "speed": 0.6635128133375563,
+    "control": {
+      "throttle": 0.27081605792045593,
+      "steer": -0.4487896263599396,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 625,
+    "time": 27.203186009137426,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.49103546142578,
+      "y": -12.578062057495117,
+      "z": 0.03458981215953827,
+      "yaw": 91.41731262207031,
+      "pitch": 0.09571336954832077,
+      "roll": 0.7180314064025879
+    },
+    "speed": 0.701071017039294,
+    "control": {
+      "throttle": 0.2587415874004364,
+      "steer": -0.38605445623397827,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 628,
+    "time": 27.3531860113726,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.49802017211914,
+      "y": -12.684272766113281,
+      "z": 0.03921673819422722,
+      "yaw": 91.74917602539062,
+      "pitch": 0.28238171339035034,
+      "roll": 0.45074671506881714
+    },
+    "speed": 0.7321187682153499,
+    "control": {
+      "throttle": 0.24727174639701843,
+      "steer": -0.3900936245918274,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 631,
+    "time": 27.503186013607774,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.50346755981445,
+      "y": -12.795496940612793,
+      "z": 0.04209577664732933,
+      "yaw": 92.06861114501953,
+      "pitch": 0.4048900604248047,
+      "roll": 0.2563355267047882
+    },
+    "speed": 0.7615349838973863,
+    "control": {
+      "throttle": 0.23691856861114502,
+      "steer": -0.30893567204475403,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 634,
+    "time": 27.653186015842948,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.50580596923828,
+      "y": -12.911437034606934,
+      "z": 0.04361879453063011,
+      "yaw": 92.29743194580078,
+      "pitch": 0.4808920621871948,
+      "roll": 0.08756919950246811
+    },
+    "speed": 0.7888836688323558,
+    "control": {
+      "throttle": 0.22699345648288727,
+      "steer": -0.31148266792297363,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 638,
+    "time": 27.85318601882318,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.50676345825195,
+      "y": -13.07107162475586,
+      "z": 0.04478052631020546,
+      "yaw": 92.58136749267578,
+      "pitch": 0.5502891540527344,
+      "roll": -0.023251976817846298
+    },
+    "speed": 0.8069673405846453,
+    "control": {
+      "throttle": 0.22042150795459747,
+      "steer": -0.19550004601478577,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 641,
+    "time": 28.003186021058355,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.503971099853516,
+      "y": -13.19143295288086,
+      "z": 0.04495115205645561,
+      "yaw": 92.67499542236328,
+      "pitch": 0.5733336210250854,
+      "roll": -0.08210287988185883
+    },
+    "speed": 0.8003487015993533,
+    "control": {
+      "throttle": 0.0,
+      "steer": -0.19534540176391602,
+      "brake": 0.005582370795309544,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 644,
+    "time": 28.15318602329353,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.50005340576172,
+      "y": -13.309802055358887,
+      "z": 0.04454178735613823,
+      "yaw": 92.74447631835938,
+      "pitch": 0.5742964744567871,
+      "roll": -0.07103265821933746
+    },
+    "speed": 0.7766885971995745,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.14878056943416595,
+      "brake": 0.0163708608597517,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 647,
+    "time": 28.303186025528703,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.49325942993164,
+      "y": -13.422422409057617,
+      "z": 0.04339761659502983,
+      "yaw": 92.69812774658203,
+      "pitch": 0.5506247878074646,
+      "roll": -0.01939523033797741
+    },
+    "speed": 0.7257620020333363,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.15261562168598175,
+      "brake": 0.04242520406842232,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 650,
+    "time": 28.453186027763877,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.48596954345703,
+      "y": -13.526305198669434,
+      "z": 0.04174213483929634,
+      "yaw": 92.62652587890625,
+      "pitch": 0.5003311634063721,
+      "roll": 0.08452673256397247
+    },
+    "speed": 0.6607839873127012,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.28852614760398865,
+      "brake": 0.0522204227745533,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 653,
+    "time": 28.60318602999905,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.4770622253418,
+      "y": -13.62024211883545,
+      "z": 0.03950532525777817,
+      "yaw": 92.46888732910156,
+      "pitch": 0.41913411021232605,
+      "roll": 0.21263770759105682
+    },
+    "speed": 0.5947560086843823,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.2915816605091095,
+      "brake": 0.05294052138924599,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 656,
+    "time": 28.753186032234225,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.468875885009766,
+      "y": -13.704580307006836,
+      "z": 0.03685925528407097,
+      "yaw": 92.3240966796875,
+      "pitch": 0.3158378601074219,
+      "roll": 0.3731057047843933
+    },
+    "speed": 0.5308239377953022,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.2932415008544922,
+      "brake": 0.050599656999111176,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 659,
+    "time": 28.9031860344694,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.4591064453125,
+      "y": -13.77994155883789,
+      "z": 0.033062584698200226,
+      "yaw": 92.1166000366211,
+      "pitch": 0.1610001176595688,
+      "roll": 0.6371274590492249
+    },
+    "speed": 0.47490610720500587,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.38285285234451294,
+      "brake": 0.047634948045015335,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 662,
+    "time": 29.053186036704574,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.449615478515625,
+      "y": -13.847272872924805,
+      "z": 0.029176857322454453,
+      "yaw": 91.88409423828125,
+      "pitch": 0.007528338581323624,
+      "roll": 0.8448790311813354
+    },
+    "speed": 0.4222855751051902,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.38515233993530273,
+      "brake": 0.045821454375982285,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 665,
+    "time": 29.203186038939748,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.44166946411133,
+      "y": -13.906479835510254,
+      "z": 0.026152782142162323,
+      "yaw": 91.70323181152344,
+      "pitch": -0.11064364016056061,
+      "roll": 1.0901118516921997
+    },
+    "speed": 0.3666063267343905,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.38752591609954834,
+      "brake": 0.038265686482191086,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 668,
+    "time": 29.353186041174922,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.435699462890625,
+      "y": -13.957382202148438,
+      "z": 0.024630775675177574,
+      "yaw": 91.54767608642578,
+      "pitch": -0.16730552911758423,
+      "roll": 1.1919573545455933
+    },
+    "speed": 0.3165509480145032,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.3890274465084076,
+      "brake": 0.027049321681261063,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 671,
+    "time": 29.503186043410096,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.43046188354492,
+      "y": -14.001154899597168,
+      "z": 0.024724029004573822,
+      "yaw": 91.38428497314453,
+      "pitch": -0.1689082533121109,
+      "roll": 1.2083427906036377
+    },
+    "speed": 0.27501190615204313,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.45738792419433594,
+      "brake": 0.018654320389032364,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 675,
+    "time": 29.70318604639033,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.42399978637695,
+      "y": -14.05210018157959,
+      "z": 0.024984225630760193,
+      "yaw": 91.16722869873047,
+      "pitch": -0.17665891349315643,
+      "roll": 1.2009482383728027
+    },
+    "speed": 0.25594795738269865,
+    "control": {
+      "throttle": 0.2212735265493393,
+      "steer": 0.45868119597435,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 678,
+    "time": 29.853186048625503,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.41923904418945,
+      "y": -14.089766502380371,
+      "z": 0.02490970864892006,
+      "yaw": 91.00462341308594,
+      "pitch": -0.19025219976902008,
+      "roll": 1.203894019126892
+    },
+    "speed": 0.24958434390838435,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.46046626567840576,
+      "brake": 0.005414175800979137,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 680,
+    "time": 29.95318605011562,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.41608810424805,
+      "y": -14.115031242370605,
+      "z": 0.024841206148266792,
+      "yaw": 90.8946762084961,
+      "pitch": -0.19279848039150238,
+      "roll": 1.2052541971206665
+    },
+    "speed": 0.25061076143206806,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.4614033102989197,
+      "brake": 0.006346294190734625,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 683,
+    "time": 30.103186052350793,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.411563873291016,
+      "y": -14.152018547058105,
+      "z": 0.024783102795481682,
+      "yaw": 90.73377227783203,
+      "pitch": -0.19129125773906708,
+      "roll": 1.206727385520935
+    },
+    "speed": 0.24649267453332455,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.4624735414981842,
+      "brake": 0.002594706369563937,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 687,
+    "time": 30.303186055331025,
+    "stage": "entering",
+    "blocked": null,
+    "motion": "reversing",
+    "pose": {
+      "x": -55.408111572265625,
+      "y": -14.187958717346191,
+      "z": 0.02458384819328785,
+      "yaw": 90.60636901855469,
+      "pitch": -0.10643930733203888,
+      "roll": 1.1697543859481812
+    },
+    "speed": 0.008988853856753364,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.0,
+      "brake": 1.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": true,
+      "gear": -1
+    }
+  },
+  {
+    "frame": 690,
+    "time": 30.4531860575662,
+    "stage": "parked",
+    "blocked": null,
+    "motion": "stopped",
+    "pose": {
+      "x": -55.408111572265625,
+      "y": -14.187958717346191,
+      "z": 0.02458384819328785,
+      "yaw": 90.60636901855469,
+      "pitch": -0.10643930733203888,
+      "roll": 1.1697543859481812
+    },
+    "speed": 0.0,
+    "control": {
+      "throttle": 0.0,
+      "steer": 0.0,
+      "brake": 1.0,
+      "hand_brake": true,
+      "reverse": false,
+      "manual_gear_shift": true,
+      "gear": 0
+    }
+  }
+]

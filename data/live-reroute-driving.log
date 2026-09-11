@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/scripts/verify_live_reroute.py", line 10, in <module>
+    assert s['running'] and s['mode']=='live' and not s.get('error'),(s['running'],s.get('error'))
+AssertionError: (False, None)

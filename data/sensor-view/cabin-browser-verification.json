@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "ego": 25,
+  "simultaneous_cameras": 3,
+  "lidar": 1,
+  "loadout_navigation": true,
+  "cabin_preset_add": true,
+  "light_mode": true,
+  "errors": []
+}

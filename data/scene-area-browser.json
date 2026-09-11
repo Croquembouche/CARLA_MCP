@@ -1,0 +1,46 @@
+{
+  "road": {
+    "stats": {
+      "drawCalls": "2138",
+      "fallbackBuildings": "575",
+      "geometryCount": "813",
+      "renderedTriangles": "6140350",
+      "sceneInstances": "7755",
+      "sceneLoading": "false",
+      "sceneScope": "road",
+      "sceneTriangles": "6141158",
+      "textureCount": "196"
+    },
+    "status": "Road network area · 7,755 mesh instances · 6.1M triangles"
+  },
+  "full": {
+    "stats": {
+      "drawCalls": "2965",
+      "fallbackBuildings": "6000",
+      "geometryCount": "861",
+      "renderedTriangles": "18399622",
+      "sceneInstances": "55791",
+      "sceneLoading": "false",
+      "sceneScope": "full",
+      "sceneTriangles": "23021466",
+      "textureCount": "208"
+    },
+    "status": "Full environment · 55,791 mesh instances · 23.0M triangles"
+  },
+  "final": {
+    "frame": "Frame 001076",
+    "sensors": "5 ego sensors",
+    "stats": {
+      "drawCalls": "2138",
+      "fallbackBuildings": "575",
+      "geometryCount": "813",
+      "renderedTriangles": "6140350",
+      "sceneInstances": "7755",
+      "sceneLoading": "false",
+      "sceneScope": "road",
+      "sceneTriangles": "6141158",
+      "textureCount": "196"
+    },
+    "status": "Road network area · 7,755 mesh instances · 6.1M triangles"
+  }
+}

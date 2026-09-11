@@ -1,0 +1,6 @@
+Setting up bundled DotNet SDK
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll CarlaUnrealEditor Linux Development -project=/mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -WaitMutex -MaxParallelActions=8 -Module=AIGraph -Module=AnimationDataController -Module=AnimationModifierLibrary -Module=AnimationModifiers -Module=AudioEditor -Module=BehaviorTreeEditor -Module=ComponentVisualizers -Module=CurveAssetEditor -Module=CurveEditor -Module=CurveEditorTools -Module=CurveTableEditor -Module=DetailCustomizations -Module=EnvironmentQueryEditor -Module=FoliageEdit -Module=GeometryFramework -Module=MeshBoneReduction -Module=MeshBuilderCommon -Module=NaniteBuilder -Module=QuadricMeshReduction -Module=RigVM -Module=Sequencer -Module=SequencerCore -Module=SequencerWidgets -Module=StructUtilsEditor -Module=UniversalObjectLocatorEditor -Module=ViewportInteraction
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Target is up to date
+Total execution time: 3.82 seconds

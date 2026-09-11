@@ -1,0 +1,62 @@
+[
+  {
+    "control": {
+      "throttle": 0.10000000149011612,
+      "steer": -0.5,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": false,
+      "gear": 0
+    },
+    "light_state": 11
+  },
+  {
+    "control": {
+      "throttle": 0.10000000149011612,
+      "steer": -0.5,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": false,
+      "manual_gear_shift": false,
+      "gear": 0
+    },
+    "light_state": 35
+  },
+  {
+    "control": {
+      "throttle": 0.10000000149011612,
+      "steer": -0.5,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": false,
+      "gear": -1
+    },
+    "light_state": 35
+  },
+  {
+    "control": {
+      "throttle": 0.10000000149011612,
+      "steer": -0.5,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": false,
+      "gear": -1
+    },
+    "light_state": 99
+  },
+  {
+    "control": {
+      "throttle": 0.10000000149011612,
+      "steer": -0.5,
+      "brake": 0.0,
+      "hand_brake": false,
+      "reverse": true,
+      "manual_gear_shift": false,
+      "gear": -1
+    },
+    "light_state": 99
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "map": "/Game/Carla/Maps/Town10HD_Opt",
+  "removed": [
+    "BP_Carlacola_Parked_C_7",
+    "BP_Carlacola_Parked_C_9",
+    "BP_EuropeanHGV_Parked_C_8"
+  ],
+  "before_sha256": "be60ffe8df65b9331bd7a8f70028b353d9049c526c8fb0fd37132cc4f97bbac9",
+  "actors_before": 2922,
+  "backup": "/mnt/simulations/maps/Town10HD_Opt-cleaned/backup/Carla/Maps/Town10HD_Opt.umap",
+  "actors_after": 2919,
+  "after_sha256": "501fe36a03725a0a9d084b4bd4b67e3f5f7437863f00e864e0c497ea51e79b42",
+  "verified": true
+}

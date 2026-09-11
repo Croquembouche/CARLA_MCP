@@ -1,0 +1,60 @@
+[
+  {
+    "name": "cabin_overview",
+    "type": "sensor.camera.rgb",
+    "mount": {
+      "x": 0.55,
+      "y": 0,
+      "z": 1.2,
+      "yaw": 180,
+      "pitch": -8,
+      "roll": 0
+    },
+    "attributes": {
+      "image_size_x": "960",
+      "image_size_y": "600",
+      "fov": "120",
+      "post_process_profile": "CabinObservation",
+      "lens_k": "0",
+      "use_ray_tracing": "false"
+    }
+  },
+  {
+    "name": "cabin_dashboard",
+    "type": "sensor.camera.rgb",
+    "mount": {
+      "x": -0.2,
+      "y": 0,
+      "z": 1.25,
+      "yaw": 0,
+      "pitch": -16
+    },
+    "attributes": {
+      "image_size_x": "960",
+      "image_size_y": "600",
+      "fov": "100",
+      "post_process_profile": "CabinObservation",
+      "lens_k": "0",
+      "use_ray_tracing": "false"
+    }
+  },
+  {
+    "name": "cabin_rear_seats",
+    "type": "sensor.camera.rgb",
+    "mount": {
+      "x": -0.43,
+      "y": 0.05,
+      "z": 1.22,
+      "yaw": 180,
+      "pitch": -15
+    },
+    "attributes": {
+      "image_size_x": "960",
+      "image_size_y": "600",
+      "fov": "100",
+      "post_process_profile": "CabinObservation",
+      "lens_k": "0",
+      "use_ray_tracing": "false"
+    }
+  }
+]

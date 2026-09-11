@@ -1,0 +1,56 @@
+{
+  "area": [
+    -141.345,
+    -95.479,
+    136.72899999999998,
+    167.96
+  ],
+  "layers": [
+    {
+      "category": "roads",
+      "full": 400,
+      "road": 400,
+      "fullTriangles": 323667,
+      "roadTriangles": 323667
+    },
+    {
+      "category": "buildings",
+      "full": 48372,
+      "road": 2170,
+      "fullTriangles": 16014866,
+      "roadTriangles": 1087822
+    },
+    {
+      "category": "vegetation",
+      "full": 4270,
+      "road": 2955,
+      "fullTriangles": 5096233,
+      "roadTriangles": 3464361
+    },
+    {
+      "category": "street",
+      "full": 2072,
+      "road": 1714,
+      "fullTriangles": 1137796,
+      "roadTriangles": 918637
+    },
+    {
+      "category": "props",
+      "full": 675,
+      "road": 514,
+      "fullTriangles": 691043,
+      "roadTriangles": 588810
+    },
+    {
+      "category": "water",
+      "full": 2,
+      "road": 2,
+      "fullTriangles": 284,
+      "roadTriangles": 284
+    }
+  ],
+  "fallback": {
+    "full": 6000,
+    "road": 575
+  }
+}

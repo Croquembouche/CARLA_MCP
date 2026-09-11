@@ -1,0 +1,41 @@
+{
+  "logs": "/media/william/mist1/Simulations/logs/multigpu-20260910-094645",
+  "workers": [
+    {
+      "gpu": 0,
+      "clear_delivered": 2,
+      "rain_delivered": 3,
+      "night_delivered": 1,
+      "overcast_direct_sun_disabled": true,
+      "clear_direct_sun_enabled": true,
+      "sky_scene_capture": true
+    },
+    {
+      "gpu": 1,
+      "clear_delivered": 2,
+      "rain_delivered": 3,
+      "night_delivered": 1,
+      "overcast_direct_sun_disabled": true,
+      "clear_direct_sun_enabled": true,
+      "sky_scene_capture": true
+    },
+    {
+      "gpu": 2,
+      "clear_delivered": 2,
+      "rain_delivered": 3,
+      "night_delivered": 1,
+      "overcast_direct_sun_disabled": true,
+      "clear_direct_sun_enabled": true,
+      "sky_scene_capture": true
+    },
+    {
+      "gpu": 3,
+      "clear_delivered": 2,
+      "rain_delivered": 3,
+      "night_delivered": 1,
+      "overcast_direct_sun_disabled": true,
+      "clear_direct_sun_enabled": true,
+      "sky_scene_capture": true
+    }
+  ]
+}

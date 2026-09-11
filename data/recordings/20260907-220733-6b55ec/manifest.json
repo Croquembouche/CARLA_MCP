@@ -1,0 +1,123 @@
+{
+  "id": "20260907-220733-6b55ec",
+  "created": 1788833253.2515936,
+  "status": "complete",
+  "frames": 3,
+  "map": "Carla/Maps/Town10HD_Opt",
+  "configuration": {
+    "version": 1,
+    "map": "Carla/Maps/Town10HD_Opt",
+    "weather": {
+      "cloudiness": 35.0,
+      "precipitation": 0.0,
+      "precipitation_deposits": 0.0,
+      "wind_intensity": 0.3499999940395355,
+      "sun_azimuth_angle": 170.0,
+      "sun_altitude_angle": 45.0,
+      "fog_density": 0.00559999980032444,
+      "fog_distance": 0.0,
+      "wetness": 0.0,
+      "dust_storm": 0.0,
+      "fog_falloff": 0.20000000298023224,
+      "scattering_intensity": 0.0,
+      "mie_scattering_scale": 0.0,
+      "rayleigh_scattering_scale": 0.03310000151395798
+    },
+    "actors": [
+      {
+        "id": 25,
+        "model": "vehicle.ambulance.ford",
+        "role": "ego",
+        "planner": "tm",
+        "spawn": {
+          "x": 106.40164184570312,
+          "y": -29.965463638305664,
+          "z": -0.13960236310958862,
+          "yaw": -90.44117736816406,
+          "pitch": -0.675447940826416,
+          "roll": -0.44172999262809753
+        },
+        "destination": {
+          "x": 106.30007934570312,
+          "y": -27.1510066986084,
+          "z": 0.0
+        },
+        "sensors": [
+          {
+            "name": "format_4",
+            "type": "sensor.camera.normals",
+            "mount": {
+              "z": 2.5
+            },
+            "attributes": {
+              "image_size_x": "320",
+              "image_size_y": "180",
+              "sensor_tick": "0.05"
+            }
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "model": "vehicle.ambulance.ford",
+        "role": "background",
+        "planner": "tm",
+        "spawn": {
+          "x": -4.237276554107666,
+          "y": -57.54559326171875,
+          "z": -0.08865423500537872,
+          "yaw": 0.5793342590332031,
+          "pitch": -0.3883085250854492,
+          "roll": -1.675251841545105
+        },
+        "destination": {
+          "x": -6.554154872894287,
+          "y": 137.1708526611328,
+          "z": 0.0
+        },
+        "sensors": []
+      },
+      {
+        "id": 32,
+        "model": "walker.pedestrian.0043",
+        "role": "pedestrian",
+        "planner": "tm",
+        "spawn": {
+          "x": -103.64478302001953,
+          "y": 129.67628479003906,
+          "z": 1.0746568441390991,
+          "yaw": -114.43791961669922,
+          "pitch": 0.0,
+          "roll": 0.0
+        },
+        "destination": {
+          "x": -98.31407165527344,
+          "y": -64.2831802368164,
+          "z": 0.15465688705444336
+        },
+        "sensors": []
+      }
+    ],
+    "fixed_delta_seconds": 0.05,
+    "tm_seed": 42
+  },
+  "rosbag": true,
+  "sensor_format": "Unmodified CARLA raw_data bytes, or JSON for IMU/GNSS; per-frame index includes type, dimensions, pose and timestamp.",
+  "coordinates": "Raw states and sensor files use CARLA metres and left-handed axes. ROS messages use right-handed x forward, y left, z up; camera optical frame x right, y down, z forward.",
+  "replay": "Use states.jsonl and original sensor files for exact captured values; carla.log is native actor replay, not bit-identical regenerated sensors.",
+  "native_recorder": "/mnt/simulations/control-center/data/recordings/20260907-220733-6b55ec/carla.log",
+  "first_frame": 243,
+  "start_sim_time": 7.228948302654317,
+  "last_frame": 245,
+  "end_sim_time": 7.328948304144433,
+  "ros_topics": {
+    "/clock": 3,
+    "/carla/ego_25/odometry": 3,
+    "/carla/ego_25/format_4/image": 3,
+    "/carla/ego_25/format_4/metadata": 3,
+    "/carla/ego_25/format_4/camera_info": 3,
+    "/tf": 3
+  },
+  "ended": 1788833253.7646637,
+  "error": null
+}

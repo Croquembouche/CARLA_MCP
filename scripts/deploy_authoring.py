@@ -1,0 +1,36 @@
+import json,time,subprocess,httpx
+from pathlib import Path
+root=Path('/mnt/simulations/control-center');data=root/'data'
+c=httpx.Client(base_url='http://127.0.0.1:8095',timeout=240,headers={'X-Control-Client':'carla-control-center'})
+def cmd(a,p={}):
+ r=c.post('/api/command/'+a,json=p);r.raise_for_status();return r.json()
+s=c.get('/api/status').json()
+if s.get('recording') or s.get('mode','live')!='live':raise RuntimeError('Recording or replay is active')
+config=c.get('/api/configuration').json();(data/'authoring-restore-config.json').write_text(json.dumps(config,indent=2))
+print('SCENARIO_SAVED',flush=True)
+subprocess.run(['systemctl','--user','restart','carla-control-center.service'],check=True)
+for _ in range(60):
+ try:
+  if c.get('/api/status').status_code==200:break
+ except httpx.HTTPError:pass
+ time.sleep(1)
+print('SERVICE_RESTARTED',cmd('start',{'gpus':'0,1,2,3'}),flush=True)
+for _ in range(600):
+ s=c.get('/api/status').json()
+ if s['phase']=='connected':break
+ if s['phase']=='error':raise RuntimeError(s.get('error'))
+ time.sleep(3)
+else:raise TimeoutError('CARLA startup')
+print('CARLA_CONNECTED',flush=True);mapping={}
+for actor in config['actors']:
+ p={k:v for k,v in actor.items() if k!='id'}
+ if p['role']=='pedestrian':p['spawn']={**p['spawn'],'z':max(0,p['spawn']['z']-1)}
+ response=cmd('spawn',p);mapping[str(actor['id'])]=response['id'];print('RESTORED_ACTOR',actor['id'],response['id'],flush=True)
+cmd('weather',config['weather'])
+for gid,p in config['movement_programs'].items():
+ if p['active']:cmd('movement-program',dict(group_id=int(gid),operation='enable',**{k:p[k] for k in ('phases','yellow_time','all_red_time')}))
+for _ in range(110):
+ s=c.get('/api/status').json()
+ if all(p.get('stage')=='green' for p in s['movement_programs'].values() if p['active']):break
+ cmd('step')
+(data/'authoring-restored-ids.json').write_text(json.dumps(mapping,indent=2));(data/'authoring-deployed-state.json').write_text(json.dumps(c.get('/api/status').json(),indent=2));print('RESTORE_COMPLETE',flush=True)

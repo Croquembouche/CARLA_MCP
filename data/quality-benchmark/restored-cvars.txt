@@ -1,0 +1,4 @@
+[2026.09.10-17.35.52:443][  0]r.RayTracing.ForceAllRayTracingEffects = "0"
+[2026.09.10-17.36.27:364][242]r.ViewDistanceScale = "0.8"      LastSetBy: DeviceProfile
+[2026.09.10-17.36.27:406][242]r.MaxAnisotropy = "4"      LastSetBy: DeviceProfile
+[2026.09.10-17.36.27:443][242]r.RayTracing.ForceAllRayTracingEffects = "0"      LastSetBy: Console

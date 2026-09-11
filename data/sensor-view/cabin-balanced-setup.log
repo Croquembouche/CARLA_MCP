@@ -1,0 +1,8 @@
+TEMPORARY_LINCOLN 25
+VERIFIED_STEPS 10 {'frame': 353}
+VERIFIED_STEPS 20 {'frame': 363}
+VERIFIED_STEPS 30 {'frame': 373}
+VERIFIED_STEPS 40 {'frame': 383}
+VERIFIED_STEPS 50 {'frame': 393}
+VERIFIED_STEPS 60 {'frame': 403}
+{"id": 25, "sensors": [{"id": 26, "name": "cabin_overview", "frame": "403", "bytes": 71103}, {"id": 27, "name": "cabin_dashboard", "frame": "403", "bytes": 62415}, {"id": 28, "name": "cabin_rear_seats", "frame": "403", "bytes": 50557}, {"id": 29, "name": "test_roof_lidar", "frame": "403", "bytes": 45458}]}

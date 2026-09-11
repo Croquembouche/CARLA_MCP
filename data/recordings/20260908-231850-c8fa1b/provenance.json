@@ -1,0 +1,25 @@
+{
+  "captured_at": 1788923931.1891096,
+  "sources": {
+    "/mnt/simulations/control-center/controller.py": "15748dba32a0f00ae9c1cd7a5080c8982b4b90294a0d76afa62836c1b154a224",
+    "/mnt/simulations/control-center/movement_signals.py": "eff185707bdabb51f281eb067830ccc8e8eb5c09b7828d35edfa91b7403d4a8c",
+    "/mnt/simulations/control-center/recording.py": "8bf82133fbf2f12b1532d494b8127f4d2e617912f2d9db250278a8918313a608",
+    "/mnt/simulations/control-center/gpu_resources.py": "e3f335de76f9bd526a6a8d3f91e416ff65265aca8ad1ba041a1106186b9e9174",
+    "/mnt/simulations/control-center/verification.py": "7518de1d8076dba5b489134ad23ff30b96abc13a87eb0a5ebf51733571a7093b",
+    "/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Shaders/Private/CarlaSensorTrace.usf": "ebe1c7ad3e6c4718c2588ca8b7e900055d1d833b3a5cdb4a118199724cdb0ef5",
+    "/mnt/simulations/carla/LibCarla/source/carla/nav/Navigation.cpp": "496ffff2ac8ef6fde5befb95b1bedec8dfcafde7cc85b432b482f67faa1569ca",
+    "/mnt/simulations/carla/LibCarla/source/carla/nav/WalkerManager.cpp": "17f741b3fa5af9624f142b113610a269848c36367db0920d35024fbb03794594",
+    "/mnt/simulations/carla/LibCarla/source/carla/nav/WalkerEvent.cpp": "02e72ca1aadd249650276a3f3407b0c4595800e4a1e7fe1e97b26847f2630bab",
+    "/mnt/simulations/carla/LibCarla/source/carla/trafficmanager/TrafficLightStage.cpp": "873374e296fb7fadd94ac801c1828ef95d5ddfffe862683f228a10f38bb0dce3"
+  },
+  "map_sha256": "5d883b799f634030af92be1e9d79d107845540ba04338e8c60e095be1aef7be7",
+  "configuration_sha256": "4e6070553c3cb4fe532b49409b6956007fa28c16f8792e05ab5c8844d28e4e51",
+  "carla_version": "0.10.0",
+  "fixed_delta_seconds": 0.05,
+  "tm_seed": 42,
+  "pedestrian_seed": 42,
+  "binaries": {
+    "/mnt/simulations/venvs/carla/lib/python3.10/site-packages/carla.cpython-310-x86_64-linux-gnu.so": "9c400178e5695d3ce99ecfaad3e5f6c46124032427b47c032d7a2e9c15c8f060"
+  },
+  "note": "Custom source and installed native client fingerprints"
+}

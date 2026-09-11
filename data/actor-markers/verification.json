@@ -1,0 +1,56 @@
+{
+  "zoomShapeStable": true,
+  "legend": [
+    {
+      "kind": "background",
+      "x": 95,
+      "y": 641
+    },
+    {
+      "kind": "ego",
+      "x": 95,
+      "y": 662
+    },
+    {
+      "kind": "pedestrian",
+      "x": 95,
+      "y": 683
+    },
+    {
+      "kind": "bicycle",
+      "x": 95,
+      "y": 704
+    },
+    {
+      "kind": "emergency",
+      "x": 95,
+      "y": 725
+    },
+    {
+      "kind": "motorcycle",
+      "x": 95,
+      "y": 746
+    }
+  ],
+  "classification": {
+    "samples": [
+      "background",
+      "ego",
+      "pedestrian",
+      "bicycle",
+      "emergency",
+      "motorcycle",
+      "emergency",
+      "bicycle"
+    ],
+    "sizes": {
+      "background": 14,
+      "ego": 14,
+      "pedestrian": 8,
+      "bicycle": 11,
+      "emergency": 14,
+      "motorcycle": 11
+    }
+  },
+  "errors": []
+}

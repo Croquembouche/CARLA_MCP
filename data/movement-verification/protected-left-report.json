@@ -1,0 +1,16 @@
+{
+  "result": "passed",
+  "protected_left_entered": true,
+  "entry": {
+    "frame": 4119,
+    "x": -27.92979621887207,
+    "y": -64.78533172607422,
+    "speed": 4.170989036560059,
+    "brake": 0.0,
+    "light": 8,
+    "at_light": true,
+    "junction": true,
+    "road": 90,
+    "next": "[]"
+  }
+}

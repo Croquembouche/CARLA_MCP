@@ -1,0 +1,161 @@
+{
+  "http": {
+    "server": {
+      "name": "carla-control-center",
+      "title": null,
+      "version": "1.0.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "tools": 49,
+    "resources": 9,
+    "frame": 342746,
+    "running": true,
+    "map": "Carla/Maps/Town10HD_Opt",
+    "parking_total": 53,
+    "latency": {
+      "api_round_trip_ms": 40.919,
+      "frame": 342748,
+      "phase": "connected",
+      "measurement": "MCP bridge to WebUI, excluding MCP client transport"
+    },
+    "invalid_control_rejected": true,
+    "previews": [
+      {
+        "sensor_id": 53,
+        "kind": "sensor.camera.rgb",
+        "content_types": [
+          "text",
+          "image"
+        ],
+        "metadata": {
+          "url": "http://128.175.213.232:8095/api/preview/53",
+          "mime_type": "image/jpeg",
+          "bytes": 33205,
+          "x-carla-frame": "342748",
+          "x-carla-timestamp": "17133.062051375397",
+          "x-preview-source-size": "960x600"
+        }
+      },
+      {
+        "sensor_id": 55,
+        "kind": "sensor.lidar.ray_cast",
+        "content_types": [
+          "text",
+          "resource"
+        ],
+        "metadata": {
+          "url": "http://128.175.213.232:8095/api/preview/55",
+          "mime_type": "application/vnd.carla.pointcloud",
+          "bytes": 4572,
+          "x-carla-frame": "342748",
+          "x-carla-timestamp": "17133.062051375397",
+          "x-preview-points": "508",
+          "x-preview-source-points": "17766",
+          "x-point-scale": "0.01",
+          "x-point-stride": "9"
+        }
+      },
+      {
+        "sensor_id": 57,
+        "kind": "sensor.other.imu",
+        "content_types": [
+          "text"
+        ],
+        "metadata": {
+          "url": "http://128.175.213.232:8095/api/preview/57",
+          "mime_type": "application/json",
+          "bytes": 315,
+          "x-carla-frame": "342748",
+          "x-carla-timestamp": "17133.062051375397",
+          "data": {
+            "values": {
+              "accelerometer": {
+                "x": -0.1966955065727234,
+                "y": -3.4548521041870117,
+                "z": 9.729459762573242
+              },
+              "gyroscope": {
+                "x": 0.023987261578440666,
+                "y": -0.007384313736110926,
+                "z": -0.44489893317222595
+              },
+              "compass": 4.999521732330322
+            },
+            "units": {
+              "accelerometer": "m/s\u00b2",
+              "gyroscope": "rad/s",
+              "compass": "rad"
+            }
+          }
+        }
+      },
+      {
+        "sensor_id": 58,
+        "kind": "sensor.other.gnss",
+        "content_types": [
+          "text"
+        ],
+        "metadata": {
+          "url": "http://128.175.213.232:8095/api/preview/58",
+          "mime_type": "application/json",
+          "bytes": 191,
+          "x-carla-frame": "342749",
+          "x-carla-timestamp": "17133.11205137614",
+          "data": {
+            "values": {
+              "latitude": 0.00015308174206059405,
+              "longitude": -0.0005444087245583399,
+              "altitude": 0.07651285082101822
+            },
+            "units": {
+              "latitude": "\u00b0",
+              "longitude": "\u00b0",
+              "altitude": "m"
+            }
+          }
+        }
+      },
+      {
+        "sensor_id": 56,
+        "kind": "sensor.other.radar",
+        "content_types": [
+          "text",
+          "image"
+        ],
+        "metadata": {
+          "url": "http://128.175.213.232:8095/api/preview/56",
+          "mime_type": "image/jpeg",
+          "bytes": 24098,
+          "x-carla-frame": "342749",
+          "x-carla-timestamp": "17133.11205137614",
+          "x-preview-points": "2779",
+          "x-preview-source-points": "2779"
+        }
+      }
+    ]
+  },
+  "stdio": {
+    "server": {
+      "name": "carla-control-center",
+      "title": null,
+      "version": "1.0.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "tools": 49,
+    "resources": 9,
+    "frame": 342753,
+    "running": true,
+    "map": "Carla/Maps/Town10HD_Opt",
+    "parking_total": 53,
+    "latency": {
+      "api_round_trip_ms": 23.198,
+      "frame": 342754,
+      "phase": "connected",
+      "measurement": "MCP bridge to WebUI, excluding MCP client transport"
+    },
+    "invalid_control_rejected": true,
+    "previews": []
+  }
+}

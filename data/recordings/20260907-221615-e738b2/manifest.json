@@ -1,0 +1,124 @@
+{
+  "id": "20260907-221615-e738b2",
+  "created": 1788833775.5065796,
+  "status": "complete",
+  "frames": 3,
+  "map": "Carla/Maps/Town10HD_Opt",
+  "configuration": {
+    "version": 1,
+    "map": "Carla/Maps/Town10HD_Opt",
+    "weather": {
+      "cloudiness": 35.0,
+      "precipitation": 0.0,
+      "precipitation_deposits": 0.0,
+      "wind_intensity": 0.3499999940395355,
+      "sun_azimuth_angle": 170.0,
+      "sun_altitude_angle": 45.0,
+      "fog_density": 0.00559999980032444,
+      "fog_distance": 0.0,
+      "wetness": 0.0,
+      "dust_storm": 0.0,
+      "fog_falloff": 0.20000000298023224,
+      "scattering_intensity": 0.0,
+      "mie_scattering_scale": 0.0,
+      "rayleigh_scattering_scale": 0.03310000151395798
+    },
+    "actors": [
+      {
+        "id": 25,
+        "model": "vehicle.ambulance.ford",
+        "role": "ego",
+        "planner": "tm",
+        "spawn": {
+          "x": 106.40028381347656,
+          "y": -30.181344985961914,
+          "z": -0.14072690904140472,
+          "yaw": -90.44713592529297,
+          "pitch": -0.13554415106773376,
+          "roll": -0.47307881712913513
+        },
+        "destination": {
+          "x": 106.26626586914062,
+          "y": -27.492094039916992,
+          "z": 0.0
+        },
+        "sensors": [
+          {
+            "name": "format_7",
+            "type": "sensor.lidar.ray_cast_semantic",
+            "mount": {
+              "z": 2.5
+            },
+            "attributes": {
+              "channels": "16",
+              "range": "40",
+              "points_per_second": "20000",
+              "rotation_frequency": "20",
+              "sensor_tick": "0.0"
+            }
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "model": "vehicle.ambulance.ford",
+        "role": "background",
+        "planner": "tm",
+        "spawn": {
+          "x": 3.960090398788452,
+          "y": -57.46718215942383,
+          "z": -0.0942331925034523,
+          "yaw": 0.5897952914237976,
+          "pitch": -0.3021754324436188,
+          "roll": -1.4096198081970215
+        },
+        "destination": {
+          "x": -6.554154872894287,
+          "y": 137.1708526611328,
+          "z": 0.0
+        },
+        "sensors": []
+      },
+      {
+        "id": 32,
+        "model": "walker.pedestrian.0043",
+        "role": "pedestrian",
+        "planner": "tm",
+        "spawn": {
+          "x": -104.2239990234375,
+          "y": 128.4015655517578,
+          "z": 1.0746568441390991,
+          "yaw": -114.43802642822266,
+          "pitch": 0.0,
+          "roll": 0.0
+        },
+        "destination": {
+          "x": -98.31407165527344,
+          "y": -64.2831802368164,
+          "z": 0.15465688705444336
+        },
+        "sensors": []
+      }
+    ],
+    "fixed_delta_seconds": 0.05,
+    "tm_seed": 42
+  },
+  "rosbag": true,
+  "sensor_format": "Unmodified CARLA raw_data bytes, or JSON for IMU/GNSS; per-frame index includes type, dimensions, pose and timestamp.",
+  "coordinates": "Raw states and sensor files use CARLA metres and left-handed axes. ROS messages use right-handed x forward, y left, z up; camera optical frame x right, y down, z forward.",
+  "replay": "Use states.jsonl and original sensor files for exact captured values; carla.log is native actor replay, not bit-identical regenerated sensors.",
+  "native_recorder": "/mnt/simulations/control-center/data/recordings/20260907-221615-e738b2/carla.log",
+  "first_frame": 240,
+  "start_sim_time": 8.247887949961296,
+  "last_frame": 242,
+  "end_sim_time": 8.347887951451412,
+  "ros_topics": {
+    "/clock": 3,
+    "/carla/ego_25/odometry": 3,
+    "/carla/ego_25/format_7/points": 3,
+    "/carla/ego_25/format_7/metadata": 3,
+    "/tf": 3
+  },
+  "ended": 1788833776.0323908,
+  "error": null
+}

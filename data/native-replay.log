@@ -1,0 +1,1 @@
+{'result': 'Replaying File: /mnt/simulations/control-center/data/recordings/20260907-212048-cc4e49/carla.log\nTotal time recorded: 2.45\nReplaying from 0 s - 2.45 s (2.45 s) at 1.0x\nIgnoring Spectator camera\n', 'passed': True, 'actor_replay_checked': True, 'clean_stop_checked': True}

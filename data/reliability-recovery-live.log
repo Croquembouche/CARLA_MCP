@@ -1,0 +1,11 @@
+UI_RECOVERY_PASSED 149 1
+{"recording": "20260908-231850-c8fa1b", "frames": 30, "actor_mapping": {"28": 28, "27": 27, "25": 25}, "position_max_m": 0.8182738869103134, "position_rms_m": 0.09643926599810736, "yaw_max_deg": 0.0217132568359375, "signal_mismatch_frames": 0, "scope": "Native replay actor poses and signal states at matching relative frames; original sensor bytes are separately integrity-verified", "passed": false}
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/scripts/verify_reliability_replay.py", line 27, in <module>
+    (data/'reliability-native-replay.json').write_text(json.dumps(report,indent=2));print(json.dumps(report),flush=True);assert report['passed'],report
+AssertionError: {'recording': '20260908-231850-c8fa1b', 'frames': 30, 'actor_mapping': {28: 28, 27: 27, 25: 25}, 'position_max_m': 0.8182738869103134, 'position_rms_m': 0.09643926599810736, 'yaw_max_deg': 0.0217132568359375, 'signal_mismatch_frames': 0, 'scope': 'Native replay actor poses and signal states at matching relative frames; original sensor bytes are separately integrity-verified', 'passed': False}
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['.venv/bin/python', 'scripts/verify_reliability_replay.py']' returned non-zero exit status 1.

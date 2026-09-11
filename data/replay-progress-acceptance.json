@@ -1,0 +1,30 @@
+{
+  "restart_completed": true,
+  "duration_seconds": 173,
+  "progress_survived_reload": true,
+  "service_main_pid_before": 3344012,
+  "service_main_pid_after": 3547732,
+  "restored_roles": [
+    "ego",
+    "background",
+    "pedestrian"
+  ],
+  "restored_sensor_count": 5,
+  "restored_signal_programs": 5,
+  "restored_weather": true,
+  "live_mode": "live",
+  "paused": true,
+  "error": null,
+  "frame": 238,
+  "camera_preview": {
+    "frame": "237",
+    "size": [
+      480,
+      270
+    ]
+  },
+  "screenshots": [
+    "/home/william/Pictures/Screenshots/carla-replay-restart/starting-after-refresh.png",
+    "/home/william/Pictures/Screenshots/carla-replay-restart/ready.png"
+  ]
+}

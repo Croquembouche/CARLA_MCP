@@ -1,0 +1,37 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "map.xodr": {
+      "bytes": 1857682,
+      "sha256": "5d883b799f634030af92be1e9d79d107845540ba04338e8c60e095be1aef7be7"
+    },
+    "states.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "configuration.json": {
+      "bytes": 240114,
+      "sha256": "fcca6d507cb5c86997a88d5ceb9fbd1ecaf725050b9528fa8a8c835c2803c3e4"
+    },
+    "frames.idx": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "provenance.json": {
+      "bytes": 2315,
+      "sha256": "6ee72cc98ae8ec5f0cadddc777a888cbce4325ba30e892b94aedc4e1d0c5b9f3"
+    },
+    "carla.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "events.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "map.json": {
+      "bytes": 2290248,
+      "sha256": "58f23acb51b632c3671cad183ecc018850fca9bb06bf335e98aeeac5f543aebf"
+    }
+  }
+}

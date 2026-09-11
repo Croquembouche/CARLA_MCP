@@ -1,0 +1,150 @@
+{
+  "cases": [
+    {
+      "case": "replace_during_reverse_leaving_and_road",
+      "trace": [
+        {
+          "frame": 0,
+          "pose": {
+            "x": 11.041730880737305,
+            "y": 65.15819549560547,
+            "z": 0.0706404373049736,
+            "yaw": 156.34817504882812
+          },
+          "speed": 0.6895785927772522,
+          "stage": "leaving",
+          "blocked": null,
+          "control": {
+            "gear": -1,
+            "manual": true,
+            "brake": 1.0,
+            "throttle": 0.0,
+            "steer": 0.0,
+            "reverse": true,
+            "hand_brake": false
+          }
+        },
+        {
+          "frame": 50,
+          "pose": {
+            "x": 9.21947956085205,
+            "y": 65.64292907714844,
+            "z": 0.07272476702928543,
+            "yaw": 162.41543579101562
+          },
+          "speed": 1.2100824117660522,
+          "stage": "leaving",
+          "blocked": null,
+          "control": {
+            "gear": 1,
+            "manual": true,
+            "brake": 0.0,
+            "throttle": 0.2205093801021576,
+            "steer": 0.32809337973594666,
+            "reverse": false,
+            "hand_brake": false
+          }
+        },
+        {
+          "frame": 100,
+          "pose": {
+            "x": 4.997949123382568,
+            "y": 66.2813720703125,
+            "z": 0.07596556097269058,
+            "yaw": 173.11439514160156
+          },
+          "speed": 4.248534679412842,
+          "stage": "driving",
+          "blocked": null,
+          "control": {
+            "gear": 1,
+            "manual": false,
+            "brake": 0.0,
+            "throttle": 0.8500000238418579,
+            "steer": 0.3373802602291107,
+            "reverse": false,
+            "hand_brake": false
+          }
+        },
+        {
+          "frame": 150,
+          "pose": {
+            "x": -13.284353256225586,
+            "y": 66.3015365600586,
+            "z": -0.060848575085401535,
+            "yaw": -179.2229461669922
+          },
+          "speed": 5.691422462463379,
+          "stage": "driving",
+          "blocked": null,
+          "control": {
+            "gear": 1,
+            "manual": false,
+            "brake": 0.699999988079071,
+            "throttle": 0.0,
+            "steer": 0.030979737639427185,
+            "reverse": false,
+            "hand_brake": false
+          }
+        },
+        {
+          "frame": 200,
+          "pose": {
+            "x": -21.773900985717773,
+            "y": 66.19430541992188,
+            "z": -0.016195055097341537,
+            "yaw": -179.31117248535156
+          },
+          "speed": 2.0674314498901367,
+          "stage": "driving",
+          "blocked": null,
+          "control": {
+            "gear": 1,
+            "manual": false,
+            "brake": 0.0966579020023346,
+            "throttle": 0.0,
+            "steer": -0.049424897879362106,
+            "reverse": false,
+            "hand_brake": false
+          }
+        }
+      ],
+      "arrived": true,
+      "replacements": [
+        {
+          "frame": 80,
+          "previous_stage": "leaving",
+          "old_goal": {
+            "x": -23.323545455932617,
+            "y": 66.2187271118164,
+            "z": 0.0
+          },
+          "new_goal": {
+            "x": -27.50885009765625,
+            "y": 66.21306610107422,
+            "z": 0.0
+          },
+          "revision": 3
+        },
+        {
+          "frame": 140,
+          "previous_stage": "driving",
+          "old_goal": {
+            "x": -27.50885009765625,
+            "y": 66.21306610107422,
+            "z": 0.0
+          },
+          "new_goal": {
+            "x": -24.772050857543945,
+            "y": 66.21688079833984,
+            "z": 0.0
+          },
+          "revision": 4
+        }
+      ],
+      "stage": "arrived",
+      "collisions": [],
+      "blocked": null
+    }
+  ]
+}

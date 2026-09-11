@@ -1,0 +1,19 @@
+test_access (test_bridge.BridgeTests) ... ok
+test_forwarding_and_header (test_bridge.BridgeTests) ... ok
+test_invalid_no_write (test_bridge.BridgeTests) ... ok
+test_no_implicit_run_or_pause (test_bridge.BridgeTests) ... ok
+test_pagination (test_bridge.BridgeTests) ... ok
+test_point_metadata_and_unchanged (test_bridge.BridgeTests) ... ok
+test_response_bound (test_bridge.BridgeTests) ... ok
+test_sensor_constraints (test_bridge.BridgeTests) ... ok
+test_timeout_no_retry (test_bridge.BridgeTests) ... ok
+test_traversal_and_links (test_bridge.BridgeTests) ... ok
+test_upstream_error (test_bridge.BridgeTests) ... ok
+test_controller_actions_covered (test_bridge.CoverageTests) ... ok
+test_no_carla_import (test_bridge.CoverageTests) ... ok
+test_schemas_examples_and_docs (test_bridge.CoverageTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.379s
+
+OK

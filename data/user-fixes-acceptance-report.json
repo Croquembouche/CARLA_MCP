@@ -1,0 +1,147 @@
+{
+  "browser-user-fixes": {
+    "errors": [],
+    "background": 31,
+    "route_points": 18,
+    "destination": {
+      "x": 49.66741943359375,
+      "y": -57.41726303100586,
+      "z": 0
+    },
+    "lane_markings": 257,
+    "turn_lanes": 54,
+    "no_camera_preview_requests": true
+  },
+  "weather-render": {
+    "camera_weather_mean_absolute_difference": 107.22800411522634,
+    "day_mean": 109.81610082304526,
+    "night_mean": 4.835432098765432,
+    "day_sky_mean": 163.1808484848485,
+    "night_sky_mean": 0.24945454545454546,
+    "weather_workers": {
+      "gpu-0": "day and night applied to sky components",
+      "gpu-1": "day and night applied to sky components",
+      "gpu-2": "day and night applied to sky components",
+      "gpu-3": "day and night applied to sky components"
+    },
+    "fog_difference": 12.364032921810699,
+    "passed": true
+  },
+  "long-route": {
+    "changed_goal_arrival": {
+      "seconds": 2.4205055800121045,
+      "samples": 1,
+      "final_pose": {
+        "x": 46.73064422607422,
+        "y": -57.46809005737305,
+        "z": -0.10959836095571518,
+        "yaw": -0.0336323082447052,
+        "pitch": -0.47251373529434204,
+        "roll": -1.4163668155670166
+      },
+      "destination": {
+        "x": 49.66741943359375,
+        "y": -57.41726303100586,
+        "z": 0.0
+      },
+      "distance_driven_m": 0,
+      "stopped_distance_to_goal_m": 2.93721500849201
+    },
+    "original_goal_arrival": {
+      "seconds": 96.71886445599375,
+      "samples": 94,
+      "final_pose": {
+        "x": -9.497774124145508,
+        "y": 137.16961669921875,
+        "z": -0.11711835116147995,
+        "yaw": 0.6627876162528992,
+        "pitch": -0.3301626741886139,
+        "roll": -1.1269614696502686
+      },
+      "destination": {
+        "x": -6.554152965545654,
+        "y": 137.1708526611328,
+        "z": 0.0
+      },
+      "distance_driven_m": 505.37966510941914,
+      "stopped_distance_to_goal_m": 2.9436214180764817
+    },
+    "passed": true
+  },
+  "capture-after-fixes": {
+    "same_control_after_watchdog": "passed",
+    "passed": true,
+    "session": "20260908-103536-634670",
+    "frames": 3,
+    "sensors": 5,
+    "ros_topics": {
+      "/clock": 3,
+      "/carla/ego_25/odometry": 3,
+      "/carla/ego_25/front_rgb/image": 3,
+      "/carla/ego_25/front_rgb/metadata": 3,
+      "/carla/ego_25/front_rgb/camera_info": 3,
+      "/carla/ego_25/roof_lidar/points": 3,
+      "/carla/ego_25/roof_lidar/metadata": 3,
+      "/carla/ego_25/front_radar/points": 3,
+      "/carla/ego_25/front_radar/metadata": 3,
+      "/carla/ego_25/imu/data": 3,
+      "/carla/ego_25/imu/metadata": 3,
+      "/carla/ego_25/gnss/data": 3,
+      "/carla/ego_25/gnss/metadata": 3,
+      "/tf": 3
+    }
+  },
+  "network_endpoints": [
+    "http://128.175.213.232:8095",
+    "http://10.100.100.7:8095"
+  ],
+  "rosbag_readback_messages": 42,
+  "gpu_workers": [
+    {
+      "role": "gpu-0",
+      "pid": 2686900
+    },
+    {
+      "role": "gpu-1",
+      "pid": 2686901
+    },
+    {
+      "role": "gpu-2",
+      "pid": 2686902
+    },
+    {
+      "role": "gpu-3",
+      "pid": 2686903
+    }
+  ],
+  "passed": true,
+  "unit_tests": 9,
+  "final_state": {
+    "map": "Carla/Maps/Town10HD_Opt",
+    "running": false,
+    "managed_ids": [
+      "25",
+      "31",
+      "32"
+    ],
+    "sensors": 5,
+    "weather": {
+      "cloudiness": 95.0,
+      "precipitation": 70.0,
+      "precipitation_deposits": 60.0,
+      "wind_intensity": 10.0,
+      "sun_azimuth_angle": 0.0,
+      "sun_altitude_angle": 35.0,
+      "fog_density": 0.0,
+      "fog_distance": 100.0,
+      "wetness": 80.0,
+      "dust_storm": 0.0,
+      "fog_falloff": 0.20000000298023224,
+      "scattering_intensity": 0.0,
+      "mie_scattering_scale": 0.0,
+      "rayleigh_scattering_scale": 0.03310000151395798
+    }
+  },
+  "desktop_mobile_3d_glb_recorded_playback_regression": "passed",
+  "carla_source_patch_reverse_check": "passed"
+}

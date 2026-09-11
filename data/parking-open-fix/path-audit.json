@@ -1,0 +1,1305 @@
+{
+  "scope": "Empty-road geometric paths, not a guarantee against live obstacles or physical tracking errors",
+  "total": 180,
+  "valid": 180,
+  "seconds": 1.2125773089937866,
+  "bays": [
+    {
+      "id": "P001",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 44
+    },
+    {
+      "id": "P002",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P003",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P004",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P005",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P006",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P007",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P008",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 46
+    },
+    {
+      "id": "P009",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "P010",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P011",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P012",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P013",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P014",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 45
+    },
+    {
+      "id": "P015",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 32
+    },
+    {
+      "id": "P016",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 40
+    },
+    {
+      "id": "P017",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "P018",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction",
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "P020",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 47
+    },
+    {
+      "id": "P021",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 46
+    },
+    {
+      "id": "P022",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P023",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P024",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P025",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P026",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 46
+    },
+    {
+      "id": "P027",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 2,
+      "points": 47
+    },
+    {
+      "id": "P028",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P029",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P030",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P031",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "P032",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P033",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P034",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P035",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P036",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P037",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "P038",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P039",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P040",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P041",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "P042",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "R001",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R002",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R003",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R004",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R005",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R006",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R007",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R008",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R009",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R010",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R011",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R012",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R013",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R014",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R015",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R016",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R017",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R018",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R019",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R020",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R021",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R022",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction",
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R023",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R024",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R025",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 47
+    },
+    {
+      "id": "R026",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R027",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R028",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R029",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R030",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R031",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R032",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R033",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R034",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R035",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R036",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R037",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R038",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R039",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R040",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R041",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R042",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 38
+    },
+    {
+      "id": "R043",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 38
+    },
+    {
+      "id": "R044",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R045",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R046",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R047",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 41
+    },
+    {
+      "id": "R048",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R049",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R050",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R051",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R052",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R053",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R054",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R055",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R056",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R057",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R058",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R059",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R060",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R061",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R062",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R063",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R064",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R065",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 38
+    },
+    {
+      "id": "R066",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R067",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 42
+    },
+    {
+      "id": "R068",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R069",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R070",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R071",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R072",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R073",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R074",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R075",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R076",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R077",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R078",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R079",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R080",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R081",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 41
+    },
+    {
+      "id": "R082",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R083",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R084",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R085",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R086",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R087",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R088",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R089",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R090",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R091",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R092",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R093",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R094",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R095",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R096",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R097",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R098",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R099",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R100",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R101",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R102",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R103",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R104",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R105",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 2,
+      "points": 50
+    },
+    {
+      "id": "R106",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 4,
+      "points": 44
+    },
+    {
+      "id": "R107",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 38
+    },
+    {
+      "id": "R108",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R109",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 38
+    },
+    {
+      "id": "R110",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R111",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R112",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R113",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R114",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction",
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R115",
+      "clear_road_geometry_path": true,
+      "errors": [
+        "crosses junction"
+      ],
+      "staging_distance": 0,
+      "points": 46
+    },
+    {
+      "id": "R116",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R117",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R118",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R119",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R120",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R121",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 40
+    },
+    {
+      "id": "R122",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R123",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R124",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 32
+    },
+    {
+      "id": "R125",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R126",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R127",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 37
+    },
+    {
+      "id": "R128",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 44
+    },
+    {
+      "id": "R129",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R130",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 43
+    },
+    {
+      "id": "R131",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 45
+    },
+    {
+      "id": "R132",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R133",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R134",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 40
+    },
+    {
+      "id": "R135",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 40
+    },
+    {
+      "id": "R136",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 32
+    },
+    {
+      "id": "R137",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 39
+    },
+    {
+      "id": "R138",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 32
+    },
+    {
+      "id": "R139",
+      "clear_road_geometry_path": true,
+      "errors": [],
+      "staging_distance": 7,
+      "points": 32
+    }
+  ]
+}

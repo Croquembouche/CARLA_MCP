@@ -1,0 +1,14 @@
+{
+  "restored_actors": 31,
+  "restored_sensors": 6,
+  "ego_sensor_config_preserved": true,
+  "weather_preserved": true,
+  "ego_goal_preserved": true,
+  "selectable": 46,
+  "restricted": 115,
+  "curb_strips": 72,
+  "restricted_spawn_and_destination_rejected": true,
+  "final_actors": 31,
+  "running": true,
+  "error": null
+}

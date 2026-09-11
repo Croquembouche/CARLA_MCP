@@ -1,0 +1,24 @@
+{
+  "captured": "2026-09-11",
+  "unreal": {
+    "repository": "https://github.com/CarlaUnreal/UnrealEngine",
+    "commit": "2ac0528831e08e80784df2759db9a2c592d3bd4d",
+    "version": "5.5.4"
+  },
+  "carla": {
+    "repository": "https://github.com/carla-simulator/carla",
+    "commit": "1360bb9aff0f1aaa6216876ceee777528128306f",
+    "branch": "ue5-dev"
+  },
+  "content": {
+    "repository": "https://bitbucket.org/carla-simulator/carla-content.git",
+    "commit": "639d6eff5aae672da4219e9ace4a2ee891367548"
+  },
+  "blender": {
+    "version": "5.2.1"
+  },
+  "blender_tools": {
+    "repository": "https://github.com/EpicGamesExt/BlenderTools",
+    "commit": "04cae45d71874a37d75522f4a694a5d4aae32147"
+  }
+}

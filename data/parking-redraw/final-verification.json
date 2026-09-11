@@ -1,0 +1,12 @@
+{
+  "actors": 31,
+  "sensors": 6,
+  "selectable": 46,
+  "withheld": 115,
+  "curb_strips": 72,
+  "curb_geometry_matches_disk": true,
+  "reload_preserved_frame_and_actor_sensor_ids": true,
+  "running": true,
+  "frames_advanced": 14,
+  "error": null
+}

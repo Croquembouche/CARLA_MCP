@@ -1,0 +1,18 @@
+{
+  "front_rgb": {
+    "shape": [
+      360,
+      640,
+      4
+    ],
+    "rgb_stddev": 77.31941092044951
+  },
+  "roof_lidar": {
+    "returns": 8988,
+    "finite": true
+  },
+  "front_radar": {
+    "returns": 476,
+    "finite": true
+  }
+}

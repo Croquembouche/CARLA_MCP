@@ -1,0 +1,3062 @@
+[
+  {
+    "id": "P001",
+    "lane": [
+      20,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.277217804238628,
+    "fits": true
+  },
+  {
+    "id": "P002",
+    "lane": [
+      20,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2768622566814636,
+    "fits": true
+  },
+  {
+    "id": "P003",
+    "lane": [
+      20,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2764942162848856,
+    "fits": true
+  },
+  {
+    "id": "P004",
+    "lane": [
+      20,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2760893541426017,
+    "fits": true
+  },
+  {
+    "id": "P005",
+    "lane": [
+      20,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2759823797717074,
+    "fits": true
+  },
+  {
+    "id": "P006",
+    "lane": [
+      20,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.27600629267158,
+    "fits": true
+  },
+  {
+    "id": "P007",
+    "lane": [
+      20,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.276025601477717,
+    "fits": true
+  },
+  {
+    "id": "P008",
+    "lane": [
+      20,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.276040680139888,
+    "fits": true
+  },
+  {
+    "id": "P009",
+    "lane": [
+      20,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.276039785728023,
+    "fits": true
+  },
+  {
+    "id": "P010",
+    "lane": [
+      20,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2760391246595555,
+    "fits": true
+  },
+  {
+    "id": "P011",
+    "lane": [
+      20,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2760391239960733,
+    "fits": true
+  },
+  {
+    "id": "P012",
+    "lane": [
+      20,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2762651396348375,
+    "fits": true
+  },
+  {
+    "id": "P013",
+    "lane": [
+      20,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2763573288677224,
+    "fits": true
+  },
+  {
+    "id": "P014",
+    "lane": [
+      20,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      20,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2764308935166095,
+    "fits": true
+  },
+  {
+    "id": "P015",
+    "lane": [
+      21,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      21,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2775506170908018,
+    "fits": true
+  },
+  {
+    "id": "P016",
+    "lane": [
+      21,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      21,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2770957351701964,
+    "fits": true
+  },
+  {
+    "id": "P017",
+    "lane": [
+      21,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      21,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2765962938431668,
+    "fits": true
+  },
+  {
+    "id": "P018",
+    "lane": [
+      21,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      21,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2760402957594548,
+    "fits": true
+  },
+  {
+    "id": "P020",
+    "lane": [
+      12,
+      0,
+      -2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      -1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2875477138185576,
+    "fits": true
+  },
+  {
+    "id": "P021",
+    "lane": [
+      12,
+      0,
+      -2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      -1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2872738925962612,
+    "fits": true
+  },
+  {
+    "id": "P022",
+    "lane": [
+      12,
+      0,
+      -2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      -1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2870186185296353,
+    "fits": true
+  },
+  {
+    "id": "P023",
+    "lane": [
+      12,
+      0,
+      -2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      -1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2867486304629754,
+    "fits": true
+  },
+  {
+    "id": "P024",
+    "lane": [
+      12,
+      0,
+      -2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      -1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2864500171977804,
+    "fits": true
+  },
+  {
+    "id": "P025",
+    "lane": [
+      12,
+      0,
+      -2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      -1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.286217141666524,
+    "fits": true
+  },
+  {
+    "id": "P026",
+    "lane": [
+      12,
+      0,
+      -2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      -1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2860125421070614,
+    "fits": true
+  },
+  {
+    "id": "P027",
+    "lane": [
+      4,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      4,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0260817275448657,
+    "fits": true
+  },
+  {
+    "id": "P028",
+    "lane": [
+      4,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      4,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0259854379223197,
+    "fits": true
+  },
+  {
+    "id": "P029",
+    "lane": [
+      4,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      4,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026026976400988,
+    "fits": true
+  },
+  {
+    "id": "P030",
+    "lane": [
+      8,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      8,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.00421142578125,
+    "lane_distance": 3.0234636127863275,
+    "fits": true
+  },
+  {
+    "id": "P031",
+    "lane": [
+      8,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      8,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0056915283203125,
+    "lane_distance": 3.0299426847540962,
+    "fits": true
+  },
+  {
+    "id": "P032",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0243695400741726,
+    "fits": true
+  },
+  {
+    "id": "P033",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0260129574451966,
+    "fits": true
+  },
+  {
+    "id": "P034",
+    "lane": [
+      4,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      4,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026065195867894,
+    "fits": true
+  },
+  {
+    "id": "P035",
+    "lane": [
+      4,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      4,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0260598543499704,
+    "fits": true
+  },
+  {
+    "id": "P036",
+    "lane": [
+      4,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      4,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026028463183553,
+    "fits": true
+  },
+  {
+    "id": "P037",
+    "lane": [
+      8,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      8,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 5.644559860229492e-05,
+    "lane_distance": 3.0581278310203355,
+    "fits": true
+  },
+  {
+    "id": "P038",
+    "lane": [
+      8,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      8,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.010103821754455566,
+    "lane_distance": 3.028560596182816,
+    "fits": true
+  },
+  {
+    "id": "P039",
+    "lane": [
+      8,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      8,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0253317575833614,
+    "fits": true
+  },
+  {
+    "id": "P040",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.025501973672977,
+    "fits": true
+  },
+  {
+    "id": "P041",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.025787339530272,
+    "fits": true
+  },
+  {
+    "id": "P042",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0260638598773046,
+    "fits": true
+  },
+  {
+    "id": "R001",
+    "lane": [
+      0,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      0,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.004150390625,
+    "lane_distance": 3.0278563281991957,
+    "fits": true
+  },
+  {
+    "id": "R002",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026023980746367,
+    "fits": true
+  },
+  {
+    "id": "R003",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026023893347382,
+    "fits": true
+  },
+  {
+    "id": "R004",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026036927902709,
+    "fits": true
+  },
+  {
+    "id": "R005",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0276509871144213,
+    "fits": true
+  },
+  {
+    "id": "R006",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.15312957763671875,
+    "lane_distance": 3.048781646103683,
+    "fits": true
+  },
+  {
+    "id": "R007",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.04738616943359375,
+    "lane_distance": 3.0380920238324722,
+    "fits": true
+  },
+  {
+    "id": "R008",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0529022216796875,
+    "lane_distance": 3.0355077786429794,
+    "fits": true
+  },
+  {
+    "id": "R009",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0284609634250512,
+    "fits": true
+  },
+  {
+    "id": "R010",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026312135372298,
+    "fits": true
+  },
+  {
+    "id": "R011",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.025468685855105,
+    "fits": true
+  },
+  {
+    "id": "R012",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.258084237575531,
+    "lane_distance": 3.032048453109564,
+    "fits": true
+  },
+  {
+    "id": "R013",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.06640052795410156,
+    "lane_distance": 3.0153140659804447,
+    "fits": true
+  },
+  {
+    "id": "R014",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.07895088195800781,
+    "lane_distance": 3.027944478304255,
+    "fits": true
+  },
+  {
+    "id": "R015",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.07896041870117188,
+    "lane_distance": 3.0237482265022186,
+    "fits": true
+  },
+  {
+    "id": "R016",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.4263496398925781,
+    "lane_distance": 3.044190695212721,
+    "fits": true
+  },
+  {
+    "id": "R017",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.262603759765625,
+    "lane_distance": 3.0241682891368855,
+    "fits": true
+  },
+  {
+    "id": "R018",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.13692474365234375,
+    "lane_distance": 3.0588159165311963,
+    "fits": true
+  },
+  {
+    "id": "R019",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.13690185546875,
+    "lane_distance": 3.0480920058584133,
+    "fits": true
+  },
+  {
+    "id": "R020",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.13684844970703125,
+    "lane_distance": 3.0173769616380537,
+    "fits": true
+  },
+  {
+    "id": "R021",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0110931396484375,
+    "lane_distance": 3.0333522788284966,
+    "fits": true
+  },
+  {
+    "id": "R022",
+    "lane": [
+      1,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0244984626908784,
+    "fits": true
+  },
+  {
+    "id": "R023",
+    "lane": [
+      2,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      2,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0268273629952835,
+    "fits": true
+  },
+  {
+    "id": "R024",
+    "lane": [
+      2,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      2,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0260252850431275,
+    "fits": true
+  },
+  {
+    "id": "R025",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.3584442138671875,
+    "lane_distance": 3.0684301021522558,
+    "fits": true
+  },
+  {
+    "id": "R026",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.044921875,
+    "lane_distance": 3.0419645874532795,
+    "fits": true
+  },
+  {
+    "id": "R027",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.068145751953125,
+    "lane_distance": 3.033002988029332,
+    "fits": true
+  },
+  {
+    "id": "R028",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.06815338134765625,
+    "lane_distance": 3.029708072531561,
+    "fits": true
+  },
+  {
+    "id": "R029",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.199127197265625,
+    "lane_distance": 3.037430276235254,
+    "fits": true
+  },
+  {
+    "id": "R030",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.199462890625,
+    "lane_distance": 3.057836870908472,
+    "fits": true
+  },
+  {
+    "id": "R031",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.19927978515625,
+    "lane_distance": 3.047399089152972,
+    "fits": true
+  },
+  {
+    "id": "R032",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.19903564453125,
+    "lane_distance": 3.0292693699010145,
+    "fits": true
+  },
+  {
+    "id": "R033",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.1990966796875,
+    "lane_distance": 3.0335408696005337,
+    "fits": true
+  },
+  {
+    "id": "R034",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.230621337890625,
+    "lane_distance": 3.053656374579176,
+    "fits": true
+  },
+  {
+    "id": "R035",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.024413302775251,
+    "fits": true
+  },
+  {
+    "id": "R036",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0255715921482245,
+    "fits": true
+  },
+  {
+    "id": "R037",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0275197732035246,
+    "fits": true
+  },
+  {
+    "id": "R038",
+    "lane": [
+      5,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.030428328259629,
+    "fits": true
+  },
+  {
+    "id": "R039",
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.092864990234375,
+    "lane_distance": 3.0531595872701276,
+    "fits": true
+  },
+  {
+    "id": "R040",
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0234375,
+    "lane_distance": 3.019320246847907,
+    "fits": true
+  },
+  {
+    "id": "R041",
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.092864990234375,
+    "lane_distance": 3.034589811290894,
+    "fits": true
+  },
+  {
+    "id": "R042",
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0213004557475336,
+    "fits": true
+  },
+  {
+    "id": "R043",
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0203966706129948,
+    "fits": true
+  },
+  {
+    "id": "R044",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0269789650487993,
+    "fits": true
+  },
+  {
+    "id": "R045",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0268383905300924,
+    "fits": true
+  },
+  {
+    "id": "R046",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026693563370817,
+    "fits": true
+  },
+  {
+    "id": "R047",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.11749267578125,
+    "lane_distance": 3.075366123587754,
+    "fits": true
+  },
+  {
+    "id": "R048",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.11760711669921875,
+    "lane_distance": 3.0284425433859834,
+    "fits": true
+  },
+  {
+    "id": "R049",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0053558349609375,
+    "lane_distance": 3.0289435342934694,
+    "fits": true
+  },
+  {
+    "id": "R050",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.00531768798828125,
+    "lane_distance": 3.0294165011876437,
+    "fits": true
+  },
+  {
+    "id": "R051",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0173492431640625,
+    "lane_distance": 3.029937293243877,
+    "fits": true
+  },
+  {
+    "id": "R052",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.2053375244140625,
+    "lane_distance": 3.037108996881556,
+    "fits": true
+  },
+  {
+    "id": "R053",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.4016571044921875,
+    "lane_distance": 3.05251388607654,
+    "fits": true
+  },
+  {
+    "id": "R054",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.2054595947265625,
+    "lane_distance": 3.0095874683553827,
+    "fits": true
+  },
+  {
+    "id": "R055",
+    "lane": [
+      6,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0131172374290762,
+    "fits": true
+  },
+  {
+    "id": "R056",
+    "lane": [
+      6,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.013273031800899,
+    "fits": true
+  },
+  {
+    "id": "R057",
+    "lane": [
+      6,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.09766387939453125,
+    "lane_distance": 3.0175833643511103,
+    "fits": true
+  },
+  {
+    "id": "R058",
+    "lane": [
+      6,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.09539031982421875,
+    "lane_distance": 3.056472891122931,
+    "fits": true
+  },
+  {
+    "id": "R059",
+    "lane": [
+      6,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.26865720748901367,
+    "lane_distance": 3.0721517279575044,
+    "fits": true
+  },
+  {
+    "id": "R060",
+    "lane": [
+      7,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      7,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026054011016335,
+    "fits": true
+  },
+  {
+    "id": "R061",
+    "lane": [
+      7,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      7,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0258005320833266,
+    "fits": true
+  },
+  {
+    "id": "R062",
+    "lane": [
+      7,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      7,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.025550895231141,
+    "fits": true
+  },
+  {
+    "id": "R063",
+    "lane": [
+      7,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      7,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0289814947023515,
+    "fits": true
+  },
+  {
+    "id": "R064",
+    "lane": [
+      7,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      7,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.027793680315723,
+    "fits": true
+  },
+  {
+    "id": "R065",
+    "lane": [
+      7,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      7,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026605847380109,
+    "fits": true
+  },
+  {
+    "id": "R066",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.37811279296875,
+    "lane_distance": 3.064294765018081,
+    "fits": true
+  },
+  {
+    "id": "R067",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.3784942626953125,
+    "lane_distance": 3.0812602369446,
+    "fits": true
+  },
+  {
+    "id": "R068",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.071502685546875,
+    "lane_distance": 3.0699578946201327,
+    "fits": true
+  },
+  {
+    "id": "R069",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026697471107577,
+    "fits": true
+  },
+  {
+    "id": "R070",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026259635677768,
+    "fits": true
+  },
+  {
+    "id": "R071",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0262470013007183,
+    "fits": true
+  },
+  {
+    "id": "R072",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0262311918813927,
+    "fits": true
+  },
+  {
+    "id": "R073",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0262210052198184,
+    "fits": true
+  },
+  {
+    "id": "R074",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026219490241866,
+    "fits": true
+  },
+  {
+    "id": "R075",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.36100006103515625,
+    "lane_distance": 3.0235453966150367,
+    "fits": true
+  },
+  {
+    "id": "R076",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.36115264892578125,
+    "lane_distance": 3.0307327107484685,
+    "fits": true
+  },
+  {
+    "id": "R077",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.2849884033203125,
+    "lane_distance": 3.0278390453073913,
+    "fits": true
+  },
+  {
+    "id": "R078",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.2849884033203125,
+    "lane_distance": 3.0296846023087305,
+    "fits": true
+  },
+  {
+    "id": "R079",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.285247802734375,
+    "lane_distance": 3.053961809464367,
+    "fits": true
+  },
+  {
+    "id": "R080",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.284881591796875,
+    "lane_distance": 3.019702966501496,
+    "fits": true
+  },
+  {
+    "id": "R081",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.28497314453125,
+    "lane_distance": 3.0280758556121476,
+    "fits": true
+  },
+  {
+    "id": "R082",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0263698850671994,
+    "fits": true
+  },
+  {
+    "id": "R083",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0268369928268175,
+    "fits": true
+  },
+  {
+    "id": "R084",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0273022433078083,
+    "fits": true
+  },
+  {
+    "id": "R085",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0277693939775334,
+    "fits": true
+  },
+  {
+    "id": "R086",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0282366289098115,
+    "fits": true
+  },
+  {
+    "id": "R087",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.028696651214647,
+    "fits": true
+  },
+  {
+    "id": "R088",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0291607712543587,
+    "fits": true
+  },
+  {
+    "id": "R089",
+    "lane": [
+      10,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.029628787911713,
+    "fits": true
+  },
+  {
+    "id": "R090",
+    "lane": [
+      11,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      11,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2529175841194635,
+    "fits": true
+  },
+  {
+    "id": "R091",
+    "lane": [
+      11,
+      0,
+      -2
+    ],
+    "nearest_lane": [
+      11,
+      0,
+      -1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2846309821711657,
+    "fits": true
+  },
+  {
+    "id": "R092",
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.252194962278278,
+    "fits": true
+  },
+  {
+    "id": "R093",
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2523129934426422,
+    "fits": true
+  },
+  {
+    "id": "R094",
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.252334946447805,
+    "fits": true
+  },
+  {
+    "id": "R095",
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.252027610967001,
+    "fits": true
+  },
+  {
+    "id": "R096",
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2520553544332875,
+    "fits": true
+  },
+  {
+    "id": "R097",
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.251954573209006,
+    "fits": true
+  },
+  {
+    "id": "R098",
+    "lane": [
+      13,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      13,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026028683674685,
+    "fits": true
+  },
+  {
+    "id": "R099",
+    "lane": [
+      13,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      13,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026020286356692,
+    "fits": true
+  },
+  {
+    "id": "R100",
+    "lane": [
+      13,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      13,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0258240513156,
+    "fits": true
+  },
+  {
+    "id": "R101",
+    "lane": [
+      13,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      13,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0259243102136906,
+    "fits": true
+  },
+  {
+    "id": "R102",
+    "lane": [
+      13,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      13,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.025965770386727,
+    "fits": true
+  },
+  {
+    "id": "R103",
+    "lane": [
+      13,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      13,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.025996869888799,
+    "fits": true
+  },
+  {
+    "id": "R104",
+    "lane": [
+      14,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      14,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0259400537606354,
+    "fits": true
+  },
+  {
+    "id": "R105",
+    "lane": [
+      14,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      14,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0262321761154345,
+    "fits": true
+  },
+  {
+    "id": "R106",
+    "lane": [
+      16,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      16,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.00882720947265625,
+    "lane_distance": 3.0279779833985914,
+    "fits": true
+  },
+  {
+    "id": "R107",
+    "lane": [
+      16,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      16,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0025787353515625,
+    "lane_distance": 3.024640222580691,
+    "fits": true
+  },
+  {
+    "id": "R108",
+    "lane": [
+      17,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      17,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0010986328125,
+    "lane_distance": 3.0170169521401053,
+    "fits": true
+  },
+  {
+    "id": "R109",
+    "lane": [
+      17,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      17,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.012054443359375,
+    "lane_distance": 3.023484811859272,
+    "fits": true
+  },
+  {
+    "id": "R110",
+    "lane": [
+      18,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      18,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.274805163881999,
+    "fits": true
+  },
+  {
+    "id": "R111",
+    "lane": [
+      18,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      18,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.274242447386266,
+    "fits": true
+  },
+  {
+    "id": "R112",
+    "lane": [
+      19,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      19,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.27463817312696,
+    "fits": true
+  },
+  {
+    "id": "R113",
+    "lane": [
+      19,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      19,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.274496716041461,
+    "fits": true
+  },
+  {
+    "id": "R114",
+    "lane": [
+      21,
+      0,
+      6
+    ],
+    "nearest_lane": [
+      21,
+      0,
+      5
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.2941259988710665,
+    "fits": true
+  },
+  {
+    "id": "R115",
+    "lane": [
+      22,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      22,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0261564325143904,
+    "fits": true
+  },
+  {
+    "id": "R116",
+    "lane": [
+      22,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      22,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0251616723270915,
+    "fits": true
+  },
+  {
+    "id": "R117",
+    "lane": [
+      22,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      22,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0235291372497715,
+    "fits": true
+  },
+  {
+    "id": "R118",
+    "lane": [
+      22,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      22,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.026244203440264,
+    "fits": true
+  },
+  {
+    "id": "R119",
+    "lane": [
+      22,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      22,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0260214570267236,
+    "fits": true
+  },
+  {
+    "id": "R120",
+    "lane": [
+      22,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      22,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.025797220212409,
+    "fits": true
+  },
+  {
+    "id": "R121",
+    "lane": [
+      0,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      0,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.000518798828125,
+    "lane_distance": 3.0587484387592605,
+    "fits": true
+  },
+  {
+    "id": "R122",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.005035400390625,
+    "lane_distance": 3.0352647451353167,
+    "fits": false
+  },
+  {
+    "id": "R123",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.095306396484375,
+    "lane_distance": 3.0297142406521056,
+    "fits": true
+  },
+  {
+    "id": "R124",
+    "lane": [
+      1,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      1,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.028027249379793,
+    "fits": true
+  },
+  {
+    "id": "R125",
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.01788330078125,
+    "lane_distance": 3.041358430504405,
+    "fits": false
+  },
+  {
+    "id": "R126",
+    "lane": [
+      5,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      5,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.1837615966796875,
+    "lane_distance": 3.0458087672828653,
+    "fits": false
+  },
+  {
+    "id": "R127",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.10772705078125,
+    "lane_distance": 3.00398964622744,
+    "fits": true
+  },
+  {
+    "id": "R128",
+    "lane": [
+      6,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0234216711083644,
+    "fits": true
+  },
+  {
+    "id": "R129",
+    "lane": [
+      6,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      6,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.04144287109375,
+    "lane_distance": 3.0286891145900867,
+    "fits": true
+  },
+  {
+    "id": "R130",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.00455474853515625,
+    "lane_distance": 3.0408679667336296,
+    "fits": false
+  },
+  {
+    "id": "R131",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.004486083984375,
+    "lane_distance": 3.0378653259416737,
+    "fits": false
+  },
+  {
+    "id": "R132",
+    "lane": [
+      10,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      10,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0258458524965075,
+    "fits": true
+  },
+  {
+    "id": "R133",
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.252253144156171,
+    "fits": true
+  },
+  {
+    "id": "R134",
+    "lane": [
+      12,
+      0,
+      2
+    ],
+    "nearest_lane": [
+      12,
+      0,
+      1
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.251729414291096,
+    "fits": true
+  },
+  {
+    "id": "R135",
+    "lane": [
+      16,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      16,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.002716064453125,
+    "lane_distance": 3.025874060025268,
+    "fits": true
+  },
+  {
+    "id": "R136",
+    "lane": [
+      16,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      16,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.003387451171875,
+    "lane_distance": 3.0275757885307044,
+    "fits": true
+  },
+  {
+    "id": "R137",
+    "lane": [
+      17,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      17,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0035552978515625,
+    "lane_distance": 3.0233871441712132,
+    "fits": true
+  },
+  {
+    "id": "R138",
+    "lane": [
+      22,
+      0,
+      3
+    ],
+    "nearest_lane": [
+      22,
+      0,
+      2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0278061175224322,
+    "fits": true
+  },
+  {
+    "id": "R139",
+    "lane": [
+      22,
+      0,
+      -3
+    ],
+    "nearest_lane": [
+      22,
+      0,
+      -2
+    ],
+    "junction": false,
+    "heading_error": 0.0,
+    "lane_distance": 3.0256135913045843,
+    "fits": true
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "recording": "20260908-231850-c8fa1b",
+  "frames": 30,
+  "actor_mapping": {
+    "28": 28,
+    "27": 27,
+    "25": 25
+  },
+  "position_max_m": 0.8182738869103134,
+  "position_rms_m": 0.09643926599810736,
+  "yaw_max_deg": 0.0217132568359375,
+  "signal_mismatch_frames": 0,
+  "scope": "Native replay actor poses and signal states at matching relative frames; original sensor bytes are separately integrity-verified",
+  "passed": false
+}

@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const {snapPedestrian,pedestrianRole}=await import('data:text/javascript;base64,'+Buffer.from(await readFile(new URL('../static/pedestrian-map.js',import.meta.url))).toString('base64'));
+const map={pedestrian_lanes:[{id:'1:0:2',points:[[0,0,2,3],[10,0,4,3]]}],pedestrian_points:[{x:20,y:20,z:1}]};
+assert.deepEqual(snapPedestrian(map,{x:5,y:2}),{x:5,y:0,z:3,lane:'1:0:2'});
+assert.equal(snapPedestrian(map,{x:50,y:50}),null);
+assert.deepEqual(snapPedestrian(map,{x:20,y:20}),{x:20,y:20,z:1});
+assert.equal(pedestrianRole('goal',25,{25:{role:'pedestrian'}},'ego'),true);
+assert.equal(pedestrianRole('spawn',25,{25:{role:'pedestrian'}},'ego'),false);
+assert.equal(pedestrianRole('goal',27,{27:{role:'background'}},'pedestrian'),false);
+console.log('Pedestrian snapping, elevation and actor-role selection passed');

@@ -1,0 +1,17 @@
+{
+  "ego": 60,
+  "mount": {
+    "x": 0.55,
+    "y": 0.0,
+    "z": 1.2,
+    "yaw": 180.0,
+    "pitch": -8.0,
+    "roll": 0.0
+  },
+  "other_sensors_preserved": true,
+  "resolution_and_capture_settings_preserved": true,
+  "actors": 28,
+  "sensors": 6,
+  "running": true,
+  "checkpoint_saved": true
+}

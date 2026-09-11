@@ -1,0 +1,16 @@
+{
+  "checked_at": 1788964338.3947182,
+  "python_tests": {
+    "passed": 18
+  },
+  "javascript_checks": "parking geometry and destination acknowledgement passed",
+  "served_map_spaces": 42,
+  "served_occupied_spaces": 13,
+  "ui": "OpenDRIVE and 3D top-down screenshots inspected; free/occupied outlines and dropdown selection render; no browser errors",
+  "live_placement": "pending: concurrent Unreal/OpenXR build prevents renderer startup",
+  "runtime_error": "gpu-3 exited with code 1; inspect /media/william/mist1/Simulations/logs/multigpu-20260909-102325",
+  "saved_scene_actors": 3,
+  "saved_scene_sensors": 5,
+  "recovery_checkpoint_actors_match_backup": true,
+  "recovery_checkpoint_weather_matches_backup": true
+}

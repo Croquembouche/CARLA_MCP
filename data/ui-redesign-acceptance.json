@@ -1,0 +1,39 @@
+{
+  "verified_at": "2026-09-08T16:47:00.099606+00:00",
+  "status": "passed",
+  "runtime_unchanged": true,
+  "frame": 211,
+  "simulation_time": 7.066676421178272,
+  "checks": [
+    "Before screenshots for all six panels plus both map views",
+    "Prototype captured before implementation",
+    "2D compact marker selected signal 9",
+    "3D compact marker selected signal 18",
+    "3D visibility toggle hides and restores signal markers",
+    "Inspector can hide and reopen",
+    "Sensor draft retained across panel navigation and restored",
+    "Weather form contains existing values and all controls",
+    "Recorded-state playback opens and returns to live",
+    "Signal state and timing actions disabled during playback",
+    "Mobile header and timing editor readable without horizontal overflow",
+    "Dark and light themes verified",
+    "Lightweight 3D released detailed geometry: 12 geometries and 15 signal textures",
+    "JavaScript syntax checks passed"
+  ],
+  "marker_design": {
+    "unselected_dot_diameter_css_px": 8,
+    "old_housing_css_px": [
+      12,
+      30
+    ],
+    "labels": "selected only; hover tooltip",
+    "picking_radius_css_px": 12
+  },
+  "screenshots": "/home/william/Pictures/Screenshots/carla-redesign-2026-09-08",
+  "design": "data/ui-redesign-plan.md",
+  "ui_only": true,
+  "console_warnings_errors": [],
+  "gallery": "http://128.175.213.232:8095/redesign-review/index.html",
+  "screenshot_count": 24,
+  "detailed_scene_restored": true
+}

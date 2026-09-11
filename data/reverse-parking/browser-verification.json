@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "actor_count": 28,
+  "parking_goal_present": true,
+  "reverse_parking_help": true,
+  "loaded_module_labels": [
+    "Backing into P025",
+    "Pulling forward to set up reverse parking in P025",
+    "Stopping to change gear"
+  ],
+  "errors": []
+}

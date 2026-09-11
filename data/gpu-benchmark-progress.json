@@ -1,0 +1,159 @@
+{
+  "stage": "running",
+  "results": [
+    {
+      "workers": 1,
+      "frames": 50,
+      "timings_ms": {
+        "control_ms": {
+          "mean": 1.06,
+          "p95": 0.97
+        },
+        "world_ms": {
+          "mean": 6.99,
+          "p95": 8.28
+        },
+        "sensor_wait_ms": {
+          "mean": 59.14,
+          "p95": 74.13
+        },
+        "snapshot_ms": {
+          "mean": 3.04,
+          "p95": 8.27
+        },
+        "publish_record_ms": {
+          "mean": 11.47,
+          "p95": 12.85
+        },
+        "preview_ms": {
+          "mean": 2.43,
+          "p95": 8.1
+        },
+        "total_ms": {
+          "mean": 84.13,
+          "p95": 106.53
+        }
+      },
+      "memory": [
+        {
+          "role": "primary",
+          "pid": 4050333,
+          "pss_gib": 9.519
+        },
+        {
+          "role": "gpu-3",
+          "pid": 4053649,
+          "pss_gib": 11.606
+        }
+      ]
+    },
+    {
+      "workers": 2,
+      "frames": 50,
+      "timings_ms": {
+        "control_ms": {
+          "mean": 0.46,
+          "p95": 1.03
+        },
+        "world_ms": {
+          "mean": 7.15,
+          "p95": 10.51
+        },
+        "sensor_wait_ms": {
+          "mean": 56.58,
+          "p95": 69.46
+        },
+        "snapshot_ms": {
+          "mean": 3.87,
+          "p95": 8.4
+        },
+        "publish_record_ms": {
+          "mean": 10.27,
+          "p95": 12.03
+        },
+        "preview_ms": {
+          "mean": 2.79,
+          "p95": 7.67
+        },
+        "total_ms": {
+          "mean": 81.12,
+          "p95": 103.55
+        }
+      },
+      "memory": [
+        {
+          "role": "primary",
+          "pid": 4050333,
+          "pss_gib": 9.404
+        },
+        {
+          "role": "gpu-3",
+          "pid": 4053649,
+          "pss_gib": 11.579
+        },
+        {
+          "role": "gpu-2",
+          "pid": 4057834,
+          "pss_gib": 11.717
+        }
+      ]
+    },
+    {
+      "workers": 3,
+      "frames": 50,
+      "timings_ms": {
+        "control_ms": {
+          "mean": 0.68,
+          "p95": 1.07
+        },
+        "world_ms": {
+          "mean": 7.21,
+          "p95": 10.37
+        },
+        "sensor_wait_ms": {
+          "mean": 61.29,
+          "p95": 73.79
+        },
+        "snapshot_ms": {
+          "mean": 3.01,
+          "p95": 7.12
+        },
+        "publish_record_ms": {
+          "mean": 10.45,
+          "p95": 12.96
+        },
+        "preview_ms": {
+          "mean": 3.08,
+          "p95": 8.46
+        },
+        "total_ms": {
+          "mean": 85.73,
+          "p95": 115.94
+        }
+      },
+      "memory": [
+        {
+          "role": "primary",
+          "pid": 4050333,
+          "pss_gib": 9.348
+        },
+        {
+          "role": "gpu-3",
+          "pid": 4053649,
+          "pss_gib": 11.355
+        },
+        {
+          "role": "gpu-2",
+          "pid": 4057834,
+          "pss_gib": 11.208
+        },
+        {
+          "role": "gpu-1",
+          "pid": 4060291,
+          "pss_gib": 11.533
+        }
+      ]
+    }
+  ],
+  "detail": "Measuring 3 GPU workers; simulation time advances"
+}

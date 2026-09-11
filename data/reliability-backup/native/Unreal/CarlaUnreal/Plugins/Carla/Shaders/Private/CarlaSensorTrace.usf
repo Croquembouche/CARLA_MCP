@@ -1,0 +1,62 @@
+#include "/Engine/Private/Common.ush"
+#include "/Engine/Private/SceneData.ush"
+#include "/Engine/Private/ShadingCommon.ush"
+#include "/Engine/Private/RayTracing/VFXTraceRay.ush"
+
+RaytracingAccelerationStructure TLAS;
+StructuredBuffer<float4> Rays;
+StructuredBuffer<uint2> CollisionTable;
+RWStructuredBuffer<float4> Hits;
+uint RayCount;
+uint TableMask;
+uint IgnoredActor;
+
+uint LookupActor(uint Component)
+{
+    uint Slot = (Component * 2654435761u) & TableMask;
+    for (uint Probe = 0; Probe <= TableMask; ++Probe)
+    {
+        uint2 Entry = CollisionTable[Slot];
+        if (Entry.x == Component) return Entry.y;
+        if (Entry.x == 0) return 0;
+        Slot = (Slot + 1) & TableMask;
+    }
+    return 0;
+}
+
+[numthreads(32, 1, 1)]
+void MainCS(uint3 DispatchId : SV_DispatchThreadID)
+{
+    uint Index = DispatchId.x;
+    if (Index >= RayCount) return;
+    float4 OriginRange = Rays[Index * 2];
+    RayDesc Ray;
+    // The dispatcher applies the view translation before converting to float.
+    Ray.Origin = OriginRange.xyz;
+    Ray.Direction = Rays[Index * 2 + 1].xyz;
+    Ray.TMin = 0;
+    Ray.TMax = OriginRange.w;
+    Hits[Index * 2] = float4(-1, 0, 0, 0);
+    Hits[Index * 2 + 1] = 0;
+
+    // Render-only surfaces must not occlude collision-enabled surfaces. Trace
+    // beyond rejected hits; an exhausted budget is an explicit error (-2).
+    for (uint Retrace = 0; Retrace < 256; ++Retrace)
+    {
+        FVFXTracePayload Hit = (FVFXTracePayload)0;
+        VfxTraceRayInline(TLAS, RAY_FLAG_FORCE_OPAQUE, 0xff, Ray, Hit);
+        if (Hit.IsMiss()) return;
+        FInstanceSceneData Instance = GetInstanceSceneData(Hit.GPUSceneInstanceId, Scene.GPUScene.InstanceDataSOAStride);
+        uint Component = GetPrimitiveData(Instance.PrimitiveId).PrimitiveComponentId;
+        uint Actor = LookupActor(Component);
+        if (Actor != 0 && Actor != IgnoredActor)
+        {
+            Hits[Index * 2] = float4(Hit.HitT, asfloat(Component), 0, 0);
+            Hits[Index * 2 + 1] = float4(Hit.WorldNormal, 0);
+            return;
+        }
+        Ray.TMin = asfloat(asuint(Hit.HitT) + 1);
+        if (Ray.TMin >= Ray.TMax) return;
+    }
+    Hits[Index * 2].x = -2;
+}

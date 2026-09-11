@@ -1,0 +1,4002 @@
+{
+  "name": "epic-720p",
+  "start_frame": 8184,
+  "last_frame": 8524,
+  "max_observed_frame_gap_s": 1.4340302310301922,
+  "samples": [
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8881.0,
+          "power_watts": 171.71
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 52.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9741.0,
+          "power_watts": 164.79
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9198.0,
+          "power_watts": 163.12
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9752.0,
+          "power_watts": 177.26
+        }
+      ],
+      "service_memory_gib": 54.78338623046875,
+      "host_used_gib": 67.55971145629883,
+      "host_available_gib": 58.13569641113281,
+      "cpu_usage_usec": 11665152206,
+      "seconds": 0.023865682014729828,
+      "wall": 1789063034.6961908,
+      "frame": 8184,
+      "http_ms": 11.958701012190431,
+      "timings": {
+        "control_ms": 0.9991640108637512,
+        "world_ms": 11.396894988138229,
+        "sensor_wait_ms": 188.23005200829357,
+        "snapshot_ms": 8.98941099876538,
+        "ros_publish_ms": 25.720395031385124,
+        "signal_audit_ms": 15.546878974419087,
+        "record_write_ms": 0.0005789916031062603,
+        "publish_record_ms": 41.26878298120573,
+        "preview_ms": 0.04194001667201519,
+        "total_ms": 250.92624500393867
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8185,
+        "sensor": "rear_left",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8881.0,
+          "power_watts": 154.15
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9740.0,
+          "power_watts": 174.49
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 31.0,
+          "memory_controller_percent": 7.0,
+          "vram_mib": 9198.0,
+          "power_watts": 165.23
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9752.0,
+          "power_watts": 162.51
+        }
+      ],
+      "service_memory_gib": 54.77855682373047,
+      "host_used_gib": 67.56365966796875,
+      "host_available_gib": 58.13174819946289,
+      "cpu_usage_usec": 11677300481,
+      "seconds": 1.3332180500146933,
+      "wall": 1789063036.0145595,
+      "frame": 8189,
+      "http_ms": 14.131587988231331,
+      "timings": {
+        "control_ms": 0.8959169499576092,
+        "world_ms": 12.279635993763804,
+        "sensor_wait_ms": 186.81466300040483,
+        "snapshot_ms": 9.958893002476543,
+        "ros_publish_ms": 24.91340198321268,
+        "signal_audit_ms": 15.34577802522108,
+        "record_write_ms": 0.0005959882400929928,
+        "publish_record_ms": 40.260558016598225,
+        "preview_ms": 0.03703602124005556,
+        "total_ms": 250.24670298444107
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8190,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8881.0,
+          "power_watts": 155.71
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9740.0,
+          "power_watts": 175.27
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 34.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 9198.0,
+          "power_watts": 164.35
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9752.0,
+          "power_watts": 163.32
+        }
+      ],
+      "service_memory_gib": 54.7802734375,
+      "host_used_gib": 67.56042098999023,
+      "host_available_gib": 58.134986877441406,
+      "cpu_usage_usec": 11689469252,
+      "seconds": 2.6480467449873686,
+      "wall": 1789063037.3253372,
+      "frame": 8194,
+      "http_ms": 14.354172977618873,
+      "timings": {
+        "control_ms": 0.9474760154262185,
+        "world_ms": 11.936859984416515,
+        "sensor_wait_ms": 190.42139599332586,
+        "snapshot_ms": 9.933894034475088,
+        "ros_publish_ms": 26.219688006676733,
+        "signal_audit_ms": 16.839044983498752,
+        "record_write_ms": 0.0006849877536296844,
+        "publish_record_ms": 43.06063195690513,
+        "preview_ms": 0.04290801007300615,
+        "total_ms": 256.3431659946218
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8195,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 43.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8881.0,
+          "power_watts": 164.65
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 49.0,
+          "memory_controller_percent": 11.0,
+          "vram_mib": 9739.0,
+          "power_watts": 137.53
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9198.0,
+          "power_watts": 104.4
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 31.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 9752.0,
+          "power_watts": 100.0
+        }
+      ],
+      "service_memory_gib": 54.77648162841797,
+      "host_used_gib": 67.44377517700195,
+      "host_available_gib": 58.25163269042969,
+      "cpu_usage_usec": 11701791718,
+      "seconds": 3.986219529004302,
+      "wall": 1789063038.664658,
+      "frame": 8199,
+      "http_ms": 16.008762002456933,
+      "timings": {
+        "control_ms": 1.0568969883024693,
+        "world_ms": 11.621019977610558,
+        "sensor_wait_ms": 187.94169800821692,
+        "snapshot_ms": 10.177211021073163,
+        "ros_publish_ms": 25.49055899726227,
+        "signal_audit_ms": 15.90574299916625,
+        "record_write_ms": 0.0006280024535953999,
+        "publish_record_ms": 41.39824298908934,
+        "preview_ms": 0.043947016820311546,
+        "total_ms": 252.23901600111276
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8200,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8873.0,
+          "power_watts": 111.5
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9736.0,
+          "power_watts": 160.16
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 33.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 9198.0,
+          "power_watts": 114.5
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9752.0,
+          "power_watts": 107.18
+        }
+      ],
+      "service_memory_gib": 54.7763786315918,
+      "host_used_gib": 67.43991088867188,
+      "host_available_gib": 58.255496978759766,
+      "cpu_usage_usec": 11713799726,
+      "seconds": 5.28546045802068,
+      "wall": 1789063039.9623,
+      "frame": 8204,
+      "http_ms": 13.338432996533811,
+      "timings": {
+        "control_ms": 0.8868579752743244,
+        "world_ms": 12.385114037897438,
+        "sensor_wait_ms": 186.51218299055472,
+        "snapshot_ms": 9.818100021220744,
+        "ros_publish_ms": 24.137414002325386,
+        "signal_audit_ms": 12.358639040030539,
+        "record_write_ms": 0.0007229973562061787,
+        "publish_record_ms": 36.49779700208455,
+        "preview_ms": 0.03386696334928274,
+        "total_ms": 246.13391899038106
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8205,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.04
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8872.0,
+          "power_watts": 126.46
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9736.0,
+          "power_watts": 111.79
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 9198.0,
+          "power_watts": 157.12
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9752.0,
+          "power_watts": 145.76
+        }
+      ],
+      "service_memory_gib": 54.775081634521484,
+      "host_used_gib": 67.44029998779297,
+      "host_available_gib": 58.25510787963867,
+      "cpu_usage_usec": 11725714052,
+      "seconds": 6.569263010984287,
+      "wall": 1789063041.2442322,
+      "frame": 8209,
+      "http_ms": 18.00856995396316,
+      "timings": {
+        "control_ms": 1.3300319551490247,
+        "world_ms": 10.58806903893128,
+        "sensor_wait_ms": 188.29781300155446,
+        "snapshot_ms": 8.782945980783552,
+        "ros_publish_ms": 25.412906950805336,
+        "signal_audit_ms": 14.648915035650134,
+        "record_write_ms": 0.0007560010999441147,
+        "publish_record_ms": 40.063876018393785,
+        "preview_ms": 0.04121498204767704,
+        "total_ms": 249.10395097685978
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8210,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.04
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8872.0,
+          "power_watts": 121.39
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9736.0,
+          "power_watts": 152.68
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9198.0,
+          "power_watts": 100.52
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9752.0,
+          "power_watts": 94.6
+        }
+      ],
+      "service_memory_gib": 54.773624420166016,
+      "host_used_gib": 67.44201278686523,
+      "host_available_gib": 58.253395080566406,
+      "cpu_usage_usec": 11739077411,
+      "seconds": 8.00096311798552,
+      "wall": 1789063042.7364042,
+      "frame": 8214,
+      "http_ms": 15.1937420014292,
+      "timings": {
+        "control_ms": 0.8475230424664915,
+        "world_ms": 12.418260972481221,
+        "sensor_wait_ms": 186.35375902522355,
+        "snapshot_ms": 8.293491962831467,
+        "ros_publish_ms": 26.327096042223275,
+        "signal_audit_ms": 14.930671954061836,
+        "record_write_ms": 0.0006190384738147259,
+        "publish_record_ms": 41.25915502663702,
+        "preview_ms": 0.03847398329526186,
+        "total_ms": 249.210664012935
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8215,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8872.0,
+          "power_watts": 135.38
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9736.0,
+          "power_watts": 166.83
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9198.0,
+          "power_watts": 175.18
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9752.0,
+          "power_watts": 176.75
+        }
+      ],
+      "service_memory_gib": 54.77316665649414,
+      "host_used_gib": 67.43394088745117,
+      "host_available_gib": 58.26146697998047,
+      "cpu_usage_usec": 11750974383,
+      "seconds": 9.342421837034635,
+      "wall": 1789063044.0217142,
+      "frame": 8219,
+      "http_ms": 18.90274800825864,
+      "timings": {
+        "control_ms": 0.8897599764168262,
+        "world_ms": 12.603587005287409,
+        "sensor_wait_ms": 188.46911599393934,
+        "snapshot_ms": 8.70854000095278,
+        "ros_publish_ms": 25.911423028446734,
+        "signal_audit_ms": 15.308949979953468,
+        "record_write_ms": 0.0010050134733319283,
+        "publish_record_ms": 41.222397005185485,
+        "preview_ms": 0.04858500324189663,
+        "total_ms": 251.94198498502374
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8220,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8872.0,
+          "power_watts": 168.9
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9736.0,
+          "power_watts": 178.96
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 9198.0,
+          "power_watts": 158.4
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9752.0,
+          "power_watts": 150.9
+        }
+      ],
+      "service_memory_gib": 54.76979446411133,
+      "host_used_gib": 67.43422317504883,
+      "host_available_gib": 58.26118469238281,
+      "cpu_usage_usec": 11763288655,
+      "seconds": 10.684975258016493,
+      "wall": 1789063045.3574617,
+      "frame": 8224,
+      "http_ms": 18.780697020702064,
+      "timings": {
+        "control_ms": 0.9207010152749717,
+        "world_ms": 13.06386396754533,
+        "sensor_wait_ms": 191.7363420361653,
+        "snapshot_ms": 8.32073501078412,
+        "ros_publish_ms": 26.432144979480654,
+        "signal_audit_ms": 15.906504995655268,
+        "record_write_ms": 0.0007060007192194462,
+        "publish_record_ms": 42.34012996312231,
+        "preview_ms": 0.04398403689265251,
+        "total_ms": 256.4257560297847
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8225,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8816.0,
+          "power_watts": 161.91
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9476.0,
+          "power_watts": 173.2
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8942.0,
+          "power_watts": 109.01
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9485.0,
+          "power_watts": 120.4
+        }
+      ],
+      "service_memory_gib": 54.76826477050781,
+      "host_used_gib": 67.2451286315918,
+      "host_available_gib": 58.450279235839844,
+      "cpu_usage_usec": 11775616329,
+      "seconds": 12.009310433000792,
+      "wall": 1789063046.6797025,
+      "frame": 8229,
+      "http_ms": 13.263636967167258,
+      "timings": {
+        "control_ms": 0.8613559766672552,
+        "world_ms": 9.6106450073421,
+        "sensor_wait_ms": 188.05233400780708,
+        "snapshot_ms": 10.122795007191598,
+        "ros_publish_ms": 24.769221956375986,
+        "signal_audit_ms": 15.424031007569283,
+        "record_write_ms": 0.0005530309863388538,
+        "publish_record_ms": 40.19472299842164,
+        "preview_ms": 0.0358069664798677,
+        "total_ms": 248.87765996390954
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8230,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8692.0,
+          "power_watts": 137.37
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9476.0,
+          "power_watts": 154.4
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8940.0,
+          "power_watts": 172.79
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9371.0,
+          "power_watts": 177.59
+        }
+      ],
+      "service_memory_gib": 54.76326370239258,
+      "host_used_gib": 67.2115478515625,
+      "host_available_gib": 58.48386001586914,
+      "cpu_usage_usec": 11787597164,
+      "seconds": 13.295216569036711,
+      "wall": 1789063047.9695156,
+      "frame": 8234,
+      "http_ms": 14.814067049883306,
+      "timings": {
+        "control_ms": 0.8800789946690202,
+        "world_ms": 11.209514981601387,
+        "sensor_wait_ms": 190.63470902619883,
+        "snapshot_ms": 8.13206098973751,
+        "ros_publish_ms": 25.35687299678102,
+        "signal_audit_ms": 15.459963993635029,
+        "record_write_ms": 0.0008189817890524864,
+        "publish_record_ms": 40.81857099663466,
+        "preview_ms": 0.04648900358006358,
+        "total_ms": 251.72142399242148
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8235,
+        "sensor": "rear_left",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8692.0,
+          "power_watts": 143.36
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9476.0,
+          "power_watts": 160.21
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8940.0,
+          "power_watts": 164.54
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9371.0,
+          "power_watts": 163.0
+        }
+      ],
+      "service_memory_gib": 54.75748062133789,
+      "host_used_gib": 67.19674301147461,
+      "host_available_gib": 58.49866485595703,
+      "cpu_usage_usec": 11799615477,
+      "seconds": 14.596408983983565,
+      "wall": 1789063049.267637,
+      "frame": 8239,
+      "http_ms": 15.837234968785197,
+      "timings": {
+        "control_ms": 0.8794500026851892,
+        "world_ms": 12.1997440000996,
+        "sensor_wait_ms": 183.59649897320196,
+        "snapshot_ms": 10.40132698835805,
+        "ros_publish_ms": 23.756196023896337,
+        "signal_audit_ms": 12.247646984178573,
+        "record_write_ms": 0.00047800131142139435,
+        "publish_record_ms": 36.00499901222065,
+        "preview_ms": 0.0344550353474915,
+        "total_ms": 243.11647401191294
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8240,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8692.0,
+          "power_watts": 143.58
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9476.0,
+          "power_watts": 153.32
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8940.0,
+          "power_watts": 165.34
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9371.0,
+          "power_watts": 166.83
+        }
+      ],
+      "service_memory_gib": 54.756282806396484,
+      "host_used_gib": 67.20962524414062,
+      "host_available_gib": 58.485782623291016,
+      "cpu_usage_usec": 11811824883,
+      "seconds": 15.924814147001598,
+      "wall": 1789063050.5974848,
+      "frame": 8244,
+      "http_ms": 18.952430982608348,
+      "timings": {
+        "control_ms": 1.0846040095202625,
+        "world_ms": 10.680189006961882,
+        "sensor_wait_ms": 189.14174003293738,
+        "snapshot_ms": 9.668960992712528,
+        "ros_publish_ms": 27.12161000818014,
+        "signal_audit_ms": 16.837812028825283,
+        "record_write_ms": 0.0008809729479253292,
+        "publish_record_ms": 43.96108497167006,
+        "preview_ms": 0.0463810283690691,
+        "total_ms": 254.58296004217118
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8245,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8692.0,
+          "power_watts": 165.03
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 54.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9476.0,
+          "power_watts": 162.57
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 34.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8940.0,
+          "power_watts": 162.58
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9371.0,
+          "power_watts": 120.98
+        }
+      ],
+      "service_memory_gib": 54.75311279296875,
+      "host_used_gib": 67.20718383789062,
+      "host_available_gib": 58.488224029541016,
+      "cpu_usage_usec": 11824061815,
+      "seconds": 17.24961684300797,
+      "wall": 1789063051.9289587,
+      "frame": 8249,
+      "http_ms": 17.655242991168052,
+      "timings": {
+        "control_ms": 0.866243033669889,
+        "world_ms": 10.793321998789907,
+        "sensor_wait_ms": 192.21922801807523,
+        "snapshot_ms": 8.509501989465207,
+        "ros_publish_ms": 25.454681017436087,
+        "signal_audit_ms": 15.05993795581162,
+        "record_write_ms": 0.0005710171535611153,
+        "publish_record_ms": 40.51599698141217,
+        "preview_ms": 0.04525500116869807,
+        "total_ms": 252.9495470225811
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8250,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8692.0,
+          "power_watts": 109.56
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 60.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9476.0,
+          "power_watts": 118.64
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 32.0,
+          "memory_controller_percent": 7.0,
+          "vram_mib": 8940.0,
+          "power_watts": 111.77
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9371.0,
+          "power_watts": 104.41
+        }
+      ],
+      "service_memory_gib": 54.75899124145508,
+      "host_used_gib": 67.19563293457031,
+      "host_available_gib": 58.49977493286133,
+      "cpu_usage_usec": 11837601712,
+      "seconds": 18.603966607013717,
+      "wall": 1789063053.358908,
+      "frame": 8254,
+      "http_ms": 15.496629988774657,
+      "timings": {
+        "control_ms": 0.9270959999412298,
+        "world_ms": 10.712575982324779,
+        "sensor_wait_ms": 187.3341000173241,
+        "snapshot_ms": 8.644287008792162,
+        "ros_publish_ms": 26.34494297672063,
+        "signal_audit_ms": 16.1573410150595,
+        "record_write_ms": 0.0008530332706868649,
+        "publish_record_ms": 42.5039500114508,
+        "preview_ms": 0.046594999730587006,
+        "total_ms": 250.16860401956365
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8255,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8686.0,
+          "power_watts": 111.39
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 57.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9444.0,
+          "power_watts": 118.19
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8908.0,
+          "power_watts": 105.06
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9371.0,
+          "power_watts": 100.03
+        }
+      ],
+      "service_memory_gib": 54.75754928588867,
+      "host_used_gib": 67.15666961669922,
+      "host_available_gib": 58.53873825073242,
+      "cpu_usage_usec": 11849615322,
+      "seconds": 19.996416674985085,
+      "wall": 1789063054.675166,
+      "frame": 8259,
+      "http_ms": 42.52178396563977,
+      "timings": {
+        "control_ms": 0.9570610127411783,
+        "world_ms": 12.119713006541133,
+        "sensor_wait_ms": 186.75139895640314,
+        "snapshot_ms": 9.77392599452287,
+        "ros_publish_ms": 24.247563036624342,
+        "signal_audit_ms": 12.5183739583008,
+        "record_write_ms": 0.0006940099410712719,
+        "publish_record_ms": 36.76725801778957,
+        "preview_ms": 0.04435301525518298,
+        "total_ms": 246.41371000325307
+      },
+      "health": {
+        "stage": "publish",
+        "frame": 8260,
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8430.0,
+          "power_watts": 109.78
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9437.0,
+          "power_watts": 116.98
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 114.33
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9367.0,
+          "power_watts": 99.42
+        }
+      ],
+      "service_memory_gib": 54.75860595703125,
+      "host_used_gib": 67.12443923950195,
+      "host_available_gib": 58.57096862792969,
+      "cpu_usage_usec": 11861580096,
+      "seconds": 21.301826026989147,
+      "wall": 1789063055.9755836,
+      "frame": 8264,
+      "http_ms": 42.68881696043536,
+      "timings": {
+        "control_ms": 1.0082829976454377,
+        "world_ms": 13.090474007185549,
+        "sensor_wait_ms": 186.67018902488053,
+        "snapshot_ms": 9.885796986054629,
+        "ros_publish_ms": 26.42162801930681,
+        "signal_audit_ms": 17.02595397364348,
+        "record_write_ms": 0.0005980255082249641,
+        "publish_record_ms": 43.449160002637655,
+        "preview_ms": 0.04497601184993982,
+        "total_ms": 254.14887903025374
+      },
+      "health": {
+        "stage": "publish",
+        "frame": 8265,
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 43.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8425.0,
+          "power_watts": 146.33
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9437.0,
+          "power_watts": 147.64
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 99.78
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9367.0,
+          "power_watts": 110.03
+        }
+      ],
+      "service_memory_gib": 54.7611198425293,
+      "host_used_gib": 67.13046264648438,
+      "host_available_gib": 58.564945220947266,
+      "cpu_usage_usec": 11873066202,
+      "seconds": 22.559102245024405,
+      "wall": 1789063057.233592,
+      "frame": 8269,
+      "http_ms": 16.906465985812247,
+      "timings": {
+        "control_ms": 0.8766370010562241,
+        "world_ms": 11.61200599744916,
+        "sensor_wait_ms": 185.0465009920299,
+        "snapshot_ms": 10.113780037499964,
+        "ros_publish_ms": 25.76622401829809,
+        "signal_audit_ms": 15.04808897152543,
+        "record_write_ms": 0.0005860347300767899,
+        "publish_record_ms": 40.8159340149723,
+        "preview_ms": 0.04121399251744151,
+        "total_ms": 248.506072035525
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8270,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.05
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 43.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8423.0,
+          "power_watts": 129.51
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9437.0,
+          "power_watts": 133.97
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 97.95
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9367.0,
+          "power_watts": 102.53
+        }
+      ],
+      "service_memory_gib": 54.7625732421875,
+      "host_used_gib": 67.11304092407227,
+      "host_available_gib": 58.582366943359375,
+      "cpu_usage_usec": 11884789995,
+      "seconds": 23.83709629502846,
+      "wall": 1789063058.5126398,
+      "frame": 8274,
+      "http_ms": 17.341440019663423,
+      "timings": {
+        "control_ms": 0.8964490261860192,
+        "world_ms": 11.796036968007684,
+        "sensor_wait_ms": 190.386884030886,
+        "snapshot_ms": 8.514671993907541,
+        "ros_publish_ms": 25.251941988244653,
+        "signal_audit_ms": 15.005971014034003,
+        "record_write_ms": 0.0006109476089477539,
+        "publish_record_ms": 40.25928897317499,
+        "preview_ms": 0.05883403355255723,
+        "total_ms": 251.91216502571478
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8275,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8423.0,
+          "power_watts": 147.52
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 58.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9436.0,
+          "power_watts": 144.86
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 31.0,
+          "memory_controller_percent": 7.0,
+          "vram_mib": 8904.0,
+          "power_watts": 166.89
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9367.0,
+          "power_watts": 163.26
+        }
+      ],
+      "service_memory_gib": 54.76129913330078,
+      "host_used_gib": 67.12277221679688,
+      "host_available_gib": 58.572635650634766,
+      "cpu_usage_usec": 11896849940,
+      "seconds": 25.14023822598392,
+      "wall": 1789063059.8149736,
+      "frame": 8279,
+      "http_ms": 17.675900948233902,
+      "timings": {
+        "control_ms": 0.9245999972335994,
+        "world_ms": 12.087064038496464,
+        "sensor_wait_ms": 196.1201629601419,
+        "snapshot_ms": 9.0252659865655,
+        "ros_publish_ms": 26.476001017726958,
+        "signal_audit_ms": 16.27684000413865,
+        "record_write_ms": 0.0006050104275345802,
+        "publish_record_ms": 42.754274036269635,
+        "preview_ms": 0.04096701741218567,
+        "total_ms": 260.9523340361193
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8280,
+        "sensor": "rear_left",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8418.0,
+          "power_watts": 127.81
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9436.0,
+          "power_watts": 128.53
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 99.03
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9367.0,
+          "power_watts": 95.59
+        }
+      ],
+      "service_memory_gib": 54.76194763183594,
+      "host_used_gib": 67.12580490112305,
+      "host_available_gib": 58.569602966308594,
+      "cpu_usage_usec": 11909179900,
+      "seconds": 26.464532695012167,
+      "wall": 1789063061.1394222,
+      "frame": 8284,
+      "http_ms": 19.838812993839383,
+      "timings": {
+        "control_ms": 0.9545539505779743,
+        "world_ms": 11.453675047960132,
+        "sensor_wait_ms": 184.927420981694,
+        "snapshot_ms": 8.224321994930506,
+        "ros_publish_ms": 25.548411009367555,
+        "signal_audit_ms": 14.69595596427098,
+        "record_write_ms": 0.0006310292519629002,
+        "publish_record_ms": 40.24579701945186,
+        "preview_ms": 0.03550900146365166,
+        "total_ms": 245.84127799607813
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8285,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8427.0,
+          "power_watts": 113.32
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9435.0,
+          "power_watts": 175.14
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 139.77
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9367.0,
+          "power_watts": 161.8
+        }
+      ],
+      "service_memory_gib": 54.76454544067383,
+      "host_used_gib": 67.13198471069336,
+      "host_available_gib": 58.56342315673828,
+      "cpu_usage_usec": 11920964017,
+      "seconds": 27.742142539995257,
+      "wall": 1789063062.4134521,
+      "frame": 8289,
+      "http_ms": 15.946855011861771,
+      "timings": {
+        "control_ms": 0.9487950010225177,
+        "world_ms": 11.815431993454695,
+        "sensor_wait_ms": 191.81628699880093,
+        "snapshot_ms": 7.273983035702258,
+        "ros_publish_ms": 36.7168000084348,
+        "signal_audit_ms": 17.331897979602218,
+        "record_write_ms": 0.0007170019671320915,
+        "publish_record_ms": 54.050955979619175,
+        "preview_ms": 0.05150400102138519,
+        "total_ms": 265.95695700962096
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8290,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8416.0,
+          "power_watts": 166.07
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 57.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 177.06
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 159.54
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 178.33
+        }
+      ],
+      "service_memory_gib": 54.764183044433594,
+      "host_used_gib": 66.99000930786133,
+      "host_available_gib": 58.70539855957031,
+      "cpu_usage_usec": 11933135637,
+      "seconds": 29.047146353987046,
+      "wall": 1789063063.7229657,
+      "frame": 8294,
+      "http_ms": 16.925129981245846,
+      "timings": {
+        "control_ms": 0.9109970415011048,
+        "world_ms": 13.067508989479393,
+        "sensor_wait_ms": 186.83784897439182,
+        "snapshot_ms": 11.671421001665294,
+        "ros_publish_ms": 30.889029032550752,
+        "signal_audit_ms": 29.896783002186567,
+        "record_write_ms": 0.0006859772838652134,
+        "publish_record_ms": 60.787438007537276,
+        "preview_ms": 0.055913988035172224,
+        "total_ms": 273.33112800261006
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8295,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8411.0,
+          "power_watts": 160.26
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 51.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9432.0,
+          "power_watts": 178.51
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 169.1
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 100.0
+        }
+      ],
+      "service_memory_gib": 54.763912200927734,
+      "host_used_gib": 67.00314331054688,
+      "host_available_gib": 58.692264556884766,
+      "cpu_usage_usec": 11945783363,
+      "seconds": 30.354243460984435,
+      "wall": 1789063065.1095119,
+      "frame": 8299,
+      "http_ms": 17.658174969255924,
+      "timings": {
+        "control_ms": 0.8917190134525299,
+        "world_ms": 12.578588968608528,
+        "sensor_wait_ms": 191.04231701930985,
+        "snapshot_ms": 8.693082025274634,
+        "ros_publish_ms": 23.511608014814556,
+        "signal_audit_ms": 12.153755000326782,
+        "record_write_ms": 0.00046298373490571976,
+        "publish_record_ms": 35.666528972797096,
+        "preview_ms": 0.0351340277120471,
+        "total_ms": 248.90737002715468
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8300,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8411.0,
+          "power_watts": 142.85
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 178.51
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 32.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 174.37
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 173.71
+        }
+      ],
+      "service_memory_gib": 54.76644515991211,
+      "host_used_gib": 66.99799728393555,
+      "host_available_gib": 58.697410583496094,
+      "cpu_usage_usec": 11957487216,
+      "seconds": 31.713051702012308,
+      "wall": 1789063066.3844569,
+      "frame": 8304,
+      "http_ms": 15.245752991177142,
+      "timings": {
+        "control_ms": 0.8744460064917803,
+        "world_ms": 11.462491995189339,
+        "sensor_wait_ms": 186.07679603155702,
+        "snapshot_ms": 13.260065985377878,
+        "ros_publish_ms": 26.25531394733116,
+        "signal_audit_ms": 25.815504021011293,
+        "record_write_ms": 0.0008409842848777771,
+        "publish_record_ms": 52.07319196779281,
+        "preview_ms": 0.05141401197761297,
+        "total_ms": 263.79840599838644
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8305,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 46.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8407.0,
+          "power_watts": 139.92
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 177.6
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 34.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 169.77
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 173.59
+        }
+      ],
+      "service_memory_gib": 54.76484298706055,
+      "host_used_gib": 66.99605560302734,
+      "host_available_gib": 58.6993522644043,
+      "cpu_usage_usec": 11969496897,
+      "seconds": 33.010070946998894,
+      "wall": 1789063067.682477,
+      "frame": 8309,
+      "http_ms": 15.862105006817728,
+      "timings": {
+        "control_ms": 0.9132970008067787,
+        "world_ms": 10.641039989423007,
+        "sensor_wait_ms": 188.04470100440085,
+        "snapshot_ms": 8.902882982511073,
+        "ros_publish_ms": 25.85528598865494,
+        "signal_audit_ms": 15.319222991820425,
+        "record_write_ms": 0.000759027898311615,
+        "publish_record_ms": 41.17614502320066,
+        "preview_ms": 0.04895002348348498,
+        "total_ms": 249.72701602382585
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8310,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8407.0,
+          "power_watts": 141.46
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 177.77
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 169.96
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 172.18
+        }
+      ],
+      "service_memory_gib": 54.7572135925293,
+      "host_used_gib": 67.00153350830078,
+      "host_available_gib": 58.69387435913086,
+      "cpu_usage_usec": 11981575261,
+      "seconds": 34.308419424982276,
+      "wall": 1789063068.9834108,
+      "frame": 8314,
+      "http_ms": 13.462697970680892,
+      "timings": {
+        "control_ms": 0.9387769969180226,
+        "world_ms": 10.32419502735138,
+        "sensor_wait_ms": 191.41710398253053,
+        "snapshot_ms": 10.360413987655193,
+        "ros_publish_ms": 25.406460976228118,
+        "signal_audit_ms": 15.01741900574416,
+        "record_write_ms": 0.0007050111889839172,
+        "publish_record_ms": 40.42651201598346,
+        "preview_ms": 0.04443200305104256,
+        "total_ms": 253.51143401348963
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8315,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8407.0,
+          "power_watts": 182.37
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 51.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9432.0,
+          "power_watts": 157.31
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 123.36
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 33.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 9366.0,
+          "power_watts": 139.67
+        }
+      ],
+      "service_memory_gib": 54.75865173339844,
+      "host_used_gib": 66.98274612426758,
+      "host_available_gib": 58.71266174316406,
+      "cpu_usage_usec": 11994071477,
+      "seconds": 35.66933116101427,
+      "wall": 1789063070.3515484,
+      "frame": 8319,
+      "http_ms": 16.81836898205802,
+      "timings": {
+        "control_ms": 1.0852499981410801,
+        "world_ms": 10.8313939999789,
+        "sensor_wait_ms": 186.08021398540586,
+        "snapshot_ms": 11.716701032128185,
+        "ros_publish_ms": 30.529959010891616,
+        "signal_audit_ms": 29.433645016979426,
+        "record_write_ms": 0.0007899943739175797,
+        "publish_record_ms": 59.965446998830885,
+        "preview_ms": 0.05679100286215544,
+        "total_ms": 269.73579701734707
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8320,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 43.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 168.99
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 142.86
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 30.0,
+          "memory_controller_percent": 7.0,
+          "vram_mib": 8904.0,
+          "power_watts": 141.4
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 163.43
+        }
+      ],
+      "service_memory_gib": 54.76142501831055,
+      "host_used_gib": 66.97373580932617,
+      "host_available_gib": 58.72167205810547,
+      "cpu_usage_usec": 12006051565,
+      "seconds": 36.96765816502739,
+      "wall": 1789063071.651967,
+      "frame": 8324,
+      "http_ms": 17.79104903107509,
+      "timings": {
+        "control_ms": 0.9864679886959493,
+        "world_ms": 10.855562053620815,
+        "sensor_wait_ms": 186.35562498820946,
+        "snapshot_ms": 7.7617199858650565,
+        "ros_publish_ms": 27.567895012907684,
+        "signal_audit_ms": 13.315680960658938,
+        "record_write_ms": 0.0005010515451431274,
+        "publish_record_ms": 40.88525002589449,
+        "preview_ms": 0.043263949919492006,
+        "total_ms": 246.88788899220526
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8325,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.08
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 46.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8406.0,
+          "power_watts": 168.55
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 60.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 123.24
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 156.12
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 178.61
+        }
+      ],
+      "service_memory_gib": 54.761138916015625,
+      "host_used_gib": 66.98069763183594,
+      "host_available_gib": 58.7147102355957,
+      "cpu_usage_usec": 12018290101,
+      "seconds": 38.3052226100117,
+      "wall": 1789063072.9858255,
+      "frame": 8329,
+      "http_ms": 15.774748986586928,
+      "timings": {
+        "control_ms": 0.8950480259954929,
+        "world_ms": 11.754014994949102,
+        "sensor_wait_ms": 189.87338698934764,
+        "snapshot_ms": 9.076028014533222,
+        "ros_publish_ms": 26.09506796579808,
+        "signal_audit_ms": 15.669841028284281,
+        "record_write_ms": 0.0006159534677863121,
+        "publish_record_ms": 41.76675697090104,
+        "preview_ms": 0.04274601815268397,
+        "total_ms": 253.40798101387918
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8330,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8406.0,
+          "power_watts": 161.44
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 173.0
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 158.21
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 177.35
+        }
+      ],
+      "service_memory_gib": 54.7620849609375,
+      "host_used_gib": 66.97500228881836,
+      "host_available_gib": 58.72040557861328,
+      "cpu_usage_usec": 12030600695,
+      "seconds": 39.64635339501547,
+      "wall": 1789063074.325569,
+      "frame": 8334,
+      "http_ms": 20.958435023203492,
+      "timings": {
+        "control_ms": 0.9392679785378277,
+        "world_ms": 13.013330986723304,
+        "sensor_wait_ms": 186.21317599900067,
+        "snapshot_ms": 7.475838006939739,
+        "ros_publish_ms": 27.63712196610868,
+        "signal_audit_ms": 14.770713984034956,
+        "record_write_ms": 0.00048300717025995255,
+        "publish_record_ms": 42.409282992593944,
+        "preview_ms": 0.03814900992438197,
+        "total_ms": 250.08904497371987
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8335,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 43.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 149.27
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 175.05
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 101.62
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 115.38
+        }
+      ],
+      "service_memory_gib": 54.76217269897461,
+      "host_used_gib": 66.99443817138672,
+      "host_available_gib": 58.70096969604492,
+      "cpu_usage_usec": 12044041871,
+      "seconds": 40.98598530102754,
+      "wall": 1789063075.7688792,
+      "frame": 8339,
+      "http_ms": 14.154064992908388,
+      "timings": {
+        "control_ms": 1.0191769688390195,
+        "world_ms": 11.66033698245883,
+        "sensor_wait_ms": 187.4133120290935,
+        "snapshot_ms": 9.229900024365634,
+        "ros_publish_ms": 25.499689974822104,
+        "signal_audit_ms": 14.71350499195978,
+        "record_write_ms": 0.0005880137905478477,
+        "publish_record_ms": 40.214578970335424,
+        "preview_ms": 0.044949003495275974,
+        "total_ms": 249.5822539785877
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8340,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 43.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 121.04
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 57.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 119.18
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 100.91
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 100.31
+        }
+      ],
+      "service_memory_gib": 54.76200866699219,
+      "host_used_gib": 66.9722785949707,
+      "host_available_gib": 58.72312927246094,
+      "cpu_usage_usec": 12056083793,
+      "seconds": 42.39795370399952,
+      "wall": 1789063077.0712981,
+      "frame": 8344,
+      "http_ms": 47.73785296129063,
+      "timings": {
+        "control_ms": 0.9456109837628901,
+        "world_ms": 11.223331035580486,
+        "sensor_wait_ms": 190.39724598405883,
+        "snapshot_ms": 8.33163398783654,
+        "ros_publish_ms": 25.228921964298934,
+        "signal_audit_ms": 15.10969502851367,
+        "record_write_ms": 0.0007649650797247887,
+        "publish_record_ms": 40.340213978197426,
+        "preview_ms": 0.047254026867449284,
+        "total_ms": 251.28528999630362
+      },
+      "health": {
+        "stage": "publish",
+        "frame": 8345,
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 155.18
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 58.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 174.77
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 33.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 101.67
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 113.9
+        }
+      ],
+      "service_memory_gib": 54.763084411621094,
+      "host_used_gib": 66.97025299072266,
+      "host_available_gib": 58.725154876708984,
+      "cpu_usage_usec": 12067538632,
+      "seconds": 43.67984133202117,
+      "wall": 1789063078.3531199,
+      "frame": 8349,
+      "http_ms": 14.821142016444355,
+      "timings": {
+        "control_ms": 1.0248509934172034,
+        "world_ms": 12.041242967825383,
+        "sensor_wait_ms": 190.90637803310528,
+        "snapshot_ms": 7.97042396152392,
+        "ros_publish_ms": 24.93801701348275,
+        "signal_audit_ms": 15.308720001485199,
+        "record_write_ms": 0.0006369664333760738,
+        "publish_record_ms": 40.248205012176186,
+        "preview_ms": 0.04263297887519002,
+        "total_ms": 252.23373394692317
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8350,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.04
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8406.0,
+          "power_watts": 124.64
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 158.42
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 157.5
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 93.55
+        }
+      ],
+      "service_memory_gib": 54.76290512084961,
+      "host_used_gib": 66.97291564941406,
+      "host_available_gib": 58.72249221801758,
+      "cpu_usage_usec": 12079453662,
+      "seconds": 44.96568096301053,
+      "wall": 1789063079.6388497,
+      "frame": 8354,
+      "http_ms": 14.594822016078979,
+      "timings": {
+        "control_ms": 0.9346619481220841,
+        "world_ms": 11.619983008131385,
+        "sensor_wait_ms": 194.12516203010455,
+        "snapshot_ms": 9.321446996182203,
+        "ros_publish_ms": 23.49256497109309,
+        "signal_audit_ms": 12.255669047590345,
+        "record_write_ms": 0.0005819601938128471,
+        "publish_record_ms": 35.75006197206676,
+        "preview_ms": 0.044665997847914696,
+        "total_ms": 251.7959819524549
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8355,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.04
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 137.59
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 57.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 175.42
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 169.55
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 170.31
+        }
+      ],
+      "service_memory_gib": 54.75776672363281,
+      "host_used_gib": 66.96552658081055,
+      "host_available_gib": 58.729881286621094,
+      "cpu_usage_usec": 12091278206,
+      "seconds": 46.24483349599177,
+      "wall": 1789063080.9174879,
+      "frame": 8359,
+      "http_ms": 14.95586900273338,
+      "timings": {
+        "control_ms": 1.1230650125071406,
+        "world_ms": 12.017255008686334,
+        "sensor_wait_ms": 191.1160000017844,
+        "snapshot_ms": 11.076873983256519,
+        "ros_publish_ms": 25.39388695731759,
+        "signal_audit_ms": 16.965990012977272,
+        "record_write_ms": 0.0007909839041531086,
+        "publish_record_ms": 42.36143396701664,
+        "preview_ms": 0.050950038712471724,
+        "total_ms": 257.7455780119635
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8360,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.04
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8406.0,
+          "power_watts": 176.42
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 52.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9432.0,
+          "power_watts": 180.75
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 34.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 163.73
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 154.99
+        }
+      ],
+      "service_memory_gib": 54.757816314697266,
+      "host_used_gib": 66.93562316894531,
+      "host_available_gib": 58.75978469848633,
+      "cpu_usage_usec": 12103441034,
+      "seconds": 47.57240040198667,
+      "wall": 1789063082.2434244,
+      "frame": 8364,
+      "http_ms": 15.772254962939769,
+      "timings": {
+        "control_ms": 1.0035659652203321,
+        "world_ms": 12.35713204368949,
+        "sensor_wait_ms": 186.06588896363974,
+        "snapshot_ms": 9.019035031087697,
+        "ros_publish_ms": 25.76747303828597,
+        "signal_audit_ms": 15.140350966248661,
+        "record_write_ms": 0.0006720074452459812,
+        "publish_record_ms": 40.90933396946639,
+        "preview_ms": 0.04734599497169256,
+        "total_ms": 249.40230196807534
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8365,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 175.6
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 176.36
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 32.0,
+          "memory_controller_percent": 7.0,
+          "vram_mib": 8904.0,
+          "power_watts": 107.62
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 122.41
+        }
+      ],
+      "service_memory_gib": 54.75862503051758,
+      "host_used_gib": 66.94808578491211,
+      "host_available_gib": 58.74732208251953,
+      "cpu_usage_usec": 12115853667,
+      "seconds": 48.9240026010084,
+      "wall": 1789063083.59814,
+      "frame": 8369,
+      "http_ms": 17.799275985453278,
+      "timings": {
+        "control_ms": 0.914295029360801,
+        "world_ms": 12.249147985130548,
+        "sensor_wait_ms": 191.1407129955478,
+        "snapshot_ms": 9.420479997061193,
+        "ros_publish_ms": 25.712488975841552,
+        "signal_audit_ms": 15.662236022762954,
+        "record_write_ms": 0.0008589704521000385,
+        "publish_record_ms": 41.376420005690306,
+        "preview_ms": 0.039045989979058504,
+        "total_ms": 255.1401020027697
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8370,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8406.0,
+          "power_watts": 162.61
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 176.51
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 169.55
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 116.2
+        }
+      ],
+      "service_memory_gib": 54.762027740478516,
+      "host_used_gib": 66.94104766845703,
+      "host_available_gib": 58.75436019897461,
+      "cpu_usage_usec": 12127902802,
+      "seconds": 50.219613150984515,
+      "wall": 1789063084.890678,
+      "frame": 8374,
+      "http_ms": 15.954690985381603,
+      "timings": {
+        "control_ms": 1.0028950055129826,
+        "world_ms": 11.319868033751845,
+        "sensor_wait_ms": 183.0047050025314,
+        "snapshot_ms": 10.267714969813824,
+        "ros_publish_ms": 25.44431301066652,
+        "signal_audit_ms": 15.165009011980146,
+        "record_write_ms": 0.0007799826562404633,
+        "publish_record_ms": 40.611086995340884,
+        "preview_ms": 0.04719098797068,
+        "total_ms": 246.25346099492162
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8375,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8406.0,
+          "power_watts": 177.32
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 174.38
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 107.57
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 120.12
+        }
+      ],
+      "service_memory_gib": 54.760467529296875,
+      "host_used_gib": 66.94990158081055,
+      "host_available_gib": 58.745506286621094,
+      "cpu_usage_usec": 12140241406,
+      "seconds": 51.54904097999679,
+      "wall": 1789063086.2280369,
+      "frame": 8379,
+      "http_ms": 14.84481996158138,
+      "timings": {
+        "control_ms": 0.9609420085325837,
+        "world_ms": 11.693473963532597,
+        "sensor_wait_ms": 190.9927620436065,
+        "snapshot_ms": 9.609243948943913,
+        "ros_publish_ms": 25.730619963724166,
+        "signal_audit_ms": 15.063176047988236,
+        "record_write_ms": 0.0004659523256123066,
+        "publish_record_ms": 40.7954870024696,
+        "preview_ms": 0.04395801806822419,
+        "total_ms": 254.0958669851534
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8380,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 163.32
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 57.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 120.09
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 104.22
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 115.07
+        }
+      ],
+      "service_memory_gib": 54.75861740112305,
+      "host_used_gib": 66.93556594848633,
+      "host_available_gib": 58.75984191894531,
+      "cpu_usage_usec": 12153363196,
+      "seconds": 52.85301617399091,
+      "wall": 1789063087.602511,
+      "frame": 8384,
+      "http_ms": 14.821122982539237,
+      "timings": {
+        "control_ms": 0.9344280115328729,
+        "world_ms": 11.334081995300949,
+        "sensor_wait_ms": 189.85239596804604,
+        "snapshot_ms": 9.721145033836365,
+        "ros_publish_ms": 27.935674996115267,
+        "signal_audit_ms": 16.49073202861473,
+        "record_write_ms": 0.0005589681677520275,
+        "publish_record_ms": 44.42771297181025,
+        "preview_ms": 0.046325032599270344,
+        "total_ms": 256.31608901312575
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8385,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 155.88
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 162.02
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 102.63
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 106.13
+        }
+      ],
+      "service_memory_gib": 54.759883880615234,
+      "host_used_gib": 66.8216323852539,
+      "host_available_gib": 58.873775482177734,
+      "cpu_usage_usec": 12164754987,
+      "seconds": 54.18250123702455,
+      "wall": 1789063088.8654587,
+      "frame": 8389,
+      "http_ms": 13.699795003049076,
+      "timings": {
+        "control_ms": 0.988209038041532,
+        "world_ms": 11.366831953637302,
+        "sensor_wait_ms": 190.4910370358266,
+        "snapshot_ms": 9.74071997916326,
+        "ros_publish_ms": 24.751738994382322,
+        "signal_audit_ms": 14.940641005523503,
+        "record_write_ms": 0.0007550115697085857,
+        "publish_record_ms": 39.69409700948745,
+        "preview_ms": 0.04175200592726469,
+        "total_ms": 252.3226470220834
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8390,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 43.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 165.99
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 169.4
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 30.0,
+          "memory_controller_percent": 7.0,
+          "vram_mib": 8904.0,
+          "power_watts": 165.83
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 125.14
+        }
+      ],
+      "service_memory_gib": 54.75779342651367,
+      "host_used_gib": 66.82162094116211,
+      "host_available_gib": 58.87378692626953,
+      "cpu_usage_usec": 12176638541,
+      "seconds": 55.48181350302184,
+      "wall": 1789063090.1518602,
+      "frame": 8394,
+      "http_ms": 15.79707901692018,
+      "timings": {
+        "control_ms": 1.0427620145492256,
+        "world_ms": 11.727926030289382,
+        "sensor_wait_ms": 189.08621498849243,
+        "snapshot_ms": 9.758955973666161,
+        "ros_publish_ms": 30.951950000599027,
+        "signal_audit_ms": 15.700075018685311,
+        "record_write_ms": 0.0007239868864417076,
+        "publish_record_ms": 46.6536310268566,
+        "preview_ms": 0.04889100091531873,
+        "total_ms": 258.3183810347691
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8395,
+        "sensor": "rear_left",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 166.37
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9432.0,
+          "power_watts": 168.05
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 169.66
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 161.46
+        }
+      ],
+      "service_memory_gib": 54.75510787963867,
+      "host_used_gib": 66.79008102416992,
+      "host_available_gib": 58.90532684326172,
+      "cpu_usage_usec": 12188726171,
+      "seconds": 56.79054154001642,
+      "wall": 1789063091.4607236,
+      "frame": 8399,
+      "http_ms": 16.552262008190155,
+      "timings": {
+        "control_ms": 1.0306010372005403,
+        "world_ms": 11.628100008238107,
+        "sensor_wait_ms": 186.77412497345358,
+        "snapshot_ms": 8.793799031991512,
+        "ros_publish_ms": 25.236226967535913,
+        "signal_audit_ms": 15.40158299030736,
+        "record_write_ms": 0.000700005330145359,
+        "publish_record_ms": 40.63931695418432,
+        "preview_ms": 0.03948505036532879,
+        "total_ms": 248.9054270554334
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8400,
+        "sensor": "rear_left",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 181.04
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 177.2
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 136.51
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 117.65
+        }
+      ],
+      "service_memory_gib": 54.769081115722656,
+      "host_used_gib": 66.79540252685547,
+      "host_available_gib": 58.90000534057617,
+      "cpu_usage_usec": 12200697682,
+      "seconds": 58.079606281011365,
+      "wall": 1789063092.7550886,
+      "frame": 8404,
+      "http_ms": 13.408789003733546,
+      "timings": {
+        "control_ms": 1.2029469944536686,
+        "world_ms": 12.059322034474462,
+        "sensor_wait_ms": 194.15467197541147,
+        "snapshot_ms": 8.589092991314828,
+        "ros_publish_ms": 27.344767993781716,
+        "signal_audit_ms": 15.426430036313832,
+        "record_write_ms": 0.000767991878092289,
+        "publish_record_ms": 42.77295002248138,
+        "preview_ms": 0.04235701635479927,
+        "total_ms": 258.8213410344906
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8405,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.07
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8406.0,
+          "power_watts": 112.42
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 112.29
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 138.27
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 121.05
+        }
+      ],
+      "service_memory_gib": 54.75876235961914,
+      "host_used_gib": 66.80825805664062,
+      "host_available_gib": 58.887149810791016,
+      "cpu_usage_usec": 12212446511,
+      "seconds": 59.33255063300021,
+      "wall": 1789063094.0140302,
+      "frame": 8409,
+      "http_ms": 18.336604989599437,
+      "timings": {
+        "control_ms": 0.9569720132276416,
+        "world_ms": 10.07531798677519,
+        "sensor_wait_ms": 188.94150597043335,
+        "snapshot_ms": 9.279909019824117,
+        "ros_publish_ms": 23.58320902567357,
+        "signal_audit_ms": 12.280289956834167,
+        "record_write_ms": 0.0006020418368279934,
+        "publish_record_ms": 35.864841018337756,
+        "preview_ms": 0.03766000736504793,
+        "total_ms": 245.1562060159631
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8410,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8406.0,
+          "power_watts": 110.32
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 53.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9432.0,
+          "power_watts": 162.79
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 31.0,
+          "memory_controller_percent": 7.0,
+          "vram_mib": 8904.0,
+          "power_watts": 117.56
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 145.32
+        }
+      ],
+      "service_memory_gib": 54.75571060180664,
+      "host_used_gib": 66.7949104309082,
+      "host_available_gib": 58.90049743652344,
+      "cpu_usage_usec": 12224626107,
+      "seconds": 60.60008979099803,
+      "wall": 1789063095.2770343,
+      "frame": 8413,
+      "http_ms": 14.789727982133627,
+      "timings": {
+        "control_ms": 0.9398559923283756,
+        "world_ms": 10.677057958673686,
+        "sensor_wait_ms": 215.5059440410696,
+        "snapshot_ms": 9.183029003906995,
+        "ros_publish_ms": 26.598980999551713,
+        "signal_audit_ms": 15.019208018202335,
+        "record_write_ms": 0.0007139751687645912,
+        "publish_record_ms": 41.61985096288845,
+        "preview_ms": 0.04470301792025566,
+        "total_ms": 277.97044097678736
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8414,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8415.0,
+          "power_watts": 185.85
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 58.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 174.98
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 159.85
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 133.66
+        }
+      ],
+      "service_memory_gib": 54.756107330322266,
+      "host_used_gib": 66.80625915527344,
+      "host_available_gib": 58.8891487121582,
+      "cpu_usage_usec": 12236273389,
+      "seconds": 61.85557786002755,
+      "wall": 1789063096.5298338,
+      "frame": 8418,
+      "http_ms": 17.37546199001372,
+      "timings": {
+        "control_ms": 0.9030469809658825,
+        "world_ms": 11.128795042168349,
+        "sensor_wait_ms": 190.18705800408497,
+        "snapshot_ms": 9.443341987207532,
+        "ros_publish_ms": 25.287194992415607,
+        "signal_audit_ms": 14.87584802089259,
+        "record_write_ms": 0.0006660120561718941,
+        "publish_record_ms": 40.16446101013571,
+        "preview_ms": 0.04023395013064146,
+        "total_ms": 251.8669369746931
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8419,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8412.0,
+          "power_watts": 174.76
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 180.92
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 133.13
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 156.53
+        }
+      ],
+      "service_memory_gib": 54.748313903808594,
+      "host_used_gib": 66.7880859375,
+      "host_available_gib": 58.90732192993164,
+      "cpu_usage_usec": 12248430861,
+      "seconds": 63.18020023300778,
+      "wall": 1789063097.8549225,
+      "frame": 8423,
+      "http_ms": 17.977464012801647,
+      "timings": {
+        "control_ms": 1.0133269825018942,
+        "world_ms": 11.798331048339605,
+        "sensor_wait_ms": 194.39680996583775,
+        "snapshot_ms": 9.169088036287576,
+        "ros_publish_ms": 25.197077018674463,
+        "signal_audit_ms": 15.341252961661667,
+        "record_write_ms": 0.0017120037227869034,
+        "publish_record_ms": 40.54078395711258,
+        "preview_ms": 0.04418700700625777,
+        "total_ms": 256.96252699708566
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8424,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8410.0,
+          "power_watts": 161.12
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 53.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9432.0,
+          "power_watts": 177.14
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 34.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 165.76
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 177.43
+        }
+      ],
+      "service_memory_gib": 54.74738311767578,
+      "host_used_gib": 66.79606628417969,
+      "host_available_gib": 58.89934158325195,
+      "cpu_usage_usec": 12260705018,
+      "seconds": 64.51257266598986,
+      "wall": 1789063099.1882982,
+      "frame": 8428,
+      "http_ms": 17.384215956553817,
+      "timings": {
+        "control_ms": 0.9233360178768635,
+        "world_ms": 11.643720034044236,
+        "sensor_wait_ms": 191.42049900256097,
+        "snapshot_ms": 8.336001948919147,
+        "ros_publish_ms": 26.853766990825534,
+        "signal_audit_ms": 14.940552995540202,
+        "record_write_ms": 0.0005540205165743828,
+        "publish_record_ms": 41.795644036028534,
+        "preview_ms": 0.043406966142356396,
+        "total_ms": 254.1626080055721
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8429,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.01
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8410.0,
+          "power_watts": 115.61
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 53.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9432.0,
+          "power_watts": 112.92
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 34.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 147.56
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 121.18
+        }
+      ],
+      "service_memory_gib": 54.75420379638672,
+      "host_used_gib": 66.8000259399414,
+      "host_available_gib": 58.895381927490234,
+      "cpu_usage_usec": 12272971029,
+      "seconds": 65.84588082903065,
+      "wall": 1789063100.5295043,
+      "frame": 8433,
+      "http_ms": 15.772757004015148,
+      "timings": {
+        "control_ms": 0.9656909969635308,
+        "world_ms": 11.49115600856021,
+        "sensor_wait_ms": 189.34183596866205,
+        "snapshot_ms": 10.355184029322118,
+        "ros_publish_ms": 25.774431007448584,
+        "signal_audit_ms": 15.62001503771171,
+        "record_write_ms": 0.0007809721864759922,
+        "publish_record_ms": 41.39595199376345,
+        "preview_ms": 0.04503200761973858,
+        "total_ms": 253.5948510048911
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8434,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.05
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8405.0,
+          "power_watts": 131.92
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 60.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 163.08
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 167.8
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 33.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 9366.0,
+          "power_watts": 161.54
+        }
+      ],
+      "service_memory_gib": 54.75419998168945,
+      "host_used_gib": 66.80078506469727,
+      "host_available_gib": 58.894622802734375,
+      "cpu_usage_usec": 12285439085,
+      "seconds": 67.15199953399133,
+      "wall": 1789063101.909981,
+      "frame": 8438,
+      "http_ms": 21.95148100145161,
+      "timings": {
+        "control_ms": 0.9508950170129538,
+        "world_ms": 12.738197983708233,
+        "sensor_wait_ms": 188.24304098961875,
+        "snapshot_ms": 10.219787014648318,
+        "ros_publish_ms": 24.05838802224025,
+        "signal_audit_ms": 12.443831015843898,
+        "record_write_ms": 0.0005079782567918301,
+        "publish_record_ms": 36.50337900035083,
+        "preview_ms": 0.03967998782172799,
+        "total_ms": 248.6949799931608
+      },
+      "health": {
+        "stage": "complete",
+        "frame": 8438,
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8405.0,
+          "power_watts": 172.07
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 166.65
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 164.93
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 149.72
+        }
+      ],
+      "service_memory_gib": 54.74992752075195,
+      "host_used_gib": 66.81782150268555,
+      "host_available_gib": 58.877586364746094,
+      "cpu_usage_usec": 12297785307,
+      "seconds": 68.58602976502152,
+      "wall": 1789063103.2648532,
+      "frame": 8443,
+      "http_ms": 16.14638202590868,
+      "timings": {
+        "control_ms": 1.2426500325091183,
+        "world_ms": 11.253827949985862,
+        "sensor_wait_ms": 188.40549100423232,
+        "snapshot_ms": 8.248794998507947,
+        "ros_publish_ms": 24.80573597131297,
+        "signal_audit_ms": 15.076119976583868,
+        "record_write_ms": 0.000693020410835743,
+        "publish_record_ms": 39.88336201291531,
+        "preview_ms": 0.04710198845714331,
+        "total_ms": 249.0812279866077
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8444,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8405.0,
+          "power_watts": 170.1
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 12.0,
+          "vram_mib": 9432.0,
+          "power_watts": 113.24
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 129.63
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 116.4
+        }
+      ],
+      "service_memory_gib": 54.75509262084961,
+      "host_used_gib": 66.95149993896484,
+      "host_available_gib": 58.7439079284668,
+      "cpu_usage_usec": 12310055163,
+      "seconds": 69.90594121301547,
+      "wall": 1789063104.5829268,
+      "frame": 8448,
+      "http_ms": 12.934607977513224,
+      "timings": {
+        "control_ms": 0.9895600378513336,
+        "world_ms": 12.248496001120657,
+        "sensor_wait_ms": 192.39619898144156,
+        "snapshot_ms": 6.5156579948961735,
+        "ros_publish_ms": 26.026914012618363,
+        "signal_audit_ms": 15.786762000061572,
+        "record_write_ms": 0.000692030880600214,
+        "publish_record_ms": 41.81507002795115,
+        "preview_ms": 0.04629796603694558,
+        "total_ms": 254.01128100929782
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8449,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.06
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8405.0,
+          "power_watts": 166.01
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 177.46
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 127.6
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 178.39
+        }
+      ],
+      "service_memory_gib": 54.749027252197266,
+      "host_used_gib": 66.95158767700195,
+      "host_available_gib": 58.74382019042969,
+      "cpu_usage_usec": 12322392973,
+      "seconds": 71.25039158703294,
+      "wall": 1789063105.9340932,
+      "frame": 8453,
+      "http_ms": 16.1858270294033,
+      "timings": {
+        "control_ms": 0.9741429821588099,
+        "world_ms": 13.364571030251682,
+        "sensor_wait_ms": 184.75526996189728,
+        "snapshot_ms": 7.249900023452938,
+        "ros_publish_ms": 25.94468800816685,
+        "signal_audit_ms": 14.849336992483586,
+        "record_write_ms": 0.0007329508662223816,
+        "publish_record_ms": 40.79594096401706,
+        "preview_ms": 0.05158502608537674,
+        "total_ms": 247.19140998786315
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8454,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.08
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8405.0,
+          "power_watts": 163.42
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 180.63
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 33.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 117.81
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 177.08
+        }
+      ],
+      "service_memory_gib": 54.749755859375,
+      "host_used_gib": 66.94348526000977,
+      "host_available_gib": 58.751922607421875,
+      "cpu_usage_usec": 12334495190,
+      "seconds": 72.56714561203262,
+      "wall": 1789063107.2508526,
+      "frame": 8458,
+      "http_ms": 14.306469005532563,
+      "timings": {
+        "control_ms": 0.9105619974434376,
+        "world_ms": 13.143715041223913,
+        "sensor_wait_ms": 197.07533298060298,
+        "snapshot_ms": 11.782652989495546,
+        "ros_publish_ms": 30.818135011941195,
+        "signal_audit_ms": 21.633429976645857,
+        "record_write_ms": 0.0006980262696743011,
+        "publish_record_ms": 52.45332303456962,
+        "preview_ms": 0.042985950130969286,
+        "total_ms": 275.40857199346647
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8459,
+        "sensor": "front_rgb",
+        "elapsed_seconds": 0.07
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8405.0,
+          "power_watts": 175.1
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 175.71
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 131.77
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 158.13
+        }
+      ],
+      "service_memory_gib": 54.74917984008789,
+      "host_used_gib": 66.94876861572266,
+      "host_available_gib": 58.746639251708984,
+      "cpu_usage_usec": 12346821195,
+      "seconds": 73.92293292703107,
+      "wall": 1789063108.6041949,
+      "frame": 8463,
+      "http_ms": 16.964420035947114,
+      "timings": {
+        "control_ms": 0.9614599985070527,
+        "world_ms": 12.553078006021678,
+        "sensor_wait_ms": 188.3207309874706,
+        "snapshot_ms": 7.074039021972567,
+        "ros_publish_ms": 25.870956014841795,
+        "signal_audit_ms": 18.64947995636612,
+        "record_write_ms": 0.001701002474874258,
+        "publish_record_ms": 44.52289396431297,
+        "preview_ms": 0.05300500197336078,
+        "total_ms": 253.48520698025823
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8464,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8405.0,
+          "power_watts": 176.42
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 58.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 166.05
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 36.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 117.35
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 155.22
+        }
+      ],
+      "service_memory_gib": 54.749996185302734,
+      "host_used_gib": 66.94388198852539,
+      "host_available_gib": 58.75152587890625,
+      "cpu_usage_usec": 12358786878,
+      "seconds": 75.22959282400552,
+      "wall": 1789063109.9026349,
+      "frame": 8468,
+      "http_ms": 15.557407983578742,
+      "timings": {
+        "control_ms": 1.064424985088408,
+        "world_ms": 13.456014974508435,
+        "sensor_wait_ms": 193.93290003063157,
+        "snapshot_ms": 8.557780995033681,
+        "ros_publish_ms": 25.892706005834043,
+        "signal_audit_ms": 17.27615698473528,
+        "record_write_ms": 0.0006459886208176613,
+        "publish_record_ms": 43.170447985176,
+        "preview_ms": 0.045294000301510096,
+        "total_ms": 260.2268629707396
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8469,
+        "sensor": "rear_rgb",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 42.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8405.0,
+          "power_watts": 111.44
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 60.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 133.01
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 98.95
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 9366.0,
+          "power_watts": 112.55
+        }
+      ],
+      "service_memory_gib": 54.74958038330078,
+      "host_used_gib": 66.93986892700195,
+      "host_available_gib": 58.75553894042969,
+      "cpu_usage_usec": 12372136217,
+      "seconds": 76.60106164601166,
+      "wall": 1789063111.3445897,
+      "frame": 8473,
+      "http_ms": 13.368104991968721,
+      "timings": {
+        "control_ms": 0.9392279898747802,
+        "world_ms": 11.66682899929583,
+        "sensor_wait_ms": 191.77682499866933,
+        "snapshot_ms": 8.739712997339666,
+        "ros_publish_ms": 26.186021976172924,
+        "signal_audit_ms": 15.605819993652403,
+        "record_write_ms": 0.0005880137905478477,
+        "publish_record_ms": 41.79319803370163,
+        "preview_ms": 0.0435439869761467,
+        "total_ms": 254.95933700585738
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8474,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 43.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8405.0,
+          "power_watts": 116.47
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 123.67
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 101.04
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 97.31
+        }
+      ],
+      "service_memory_gib": 54.74871063232422,
+      "host_used_gib": 66.95031356811523,
+      "host_available_gib": 58.745094299316406,
+      "cpu_usage_usec": 12384253478,
+      "seconds": 77.97877012303798,
+      "wall": 1789063112.653528,
+      "frame": 8478,
+      "http_ms": 21.786871016956866,
+      "timings": {
+        "control_ms": 0.95106300432235,
+        "world_ms": 11.478681000880897,
+        "sensor_wait_ms": 190.67087798612192,
+        "snapshot_ms": 9.759348002262414,
+        "ros_publish_ms": 28.05844199610874,
+        "signal_audit_ms": 17.591823008842766,
+        "record_write_ms": 0.0008500064723193645,
+        "publish_record_ms": 45.652016007807106,
+        "preview_ms": 0.04763196920976043,
+        "total_ms": 258.55961797060445
+      },
+      "health": {
+        "stage": "publish",
+        "frame": 8479,
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 46.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8405.0,
+          "power_watts": 118.02
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 54.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 127.23
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 32.0,
+          "memory_controller_percent": 7.0,
+          "vram_mib": 8904.0,
+          "power_watts": 98.22
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 103.57
+        }
+      ],
+      "service_memory_gib": 54.74912643432617,
+      "host_used_gib": 66.95515060424805,
+      "host_available_gib": 58.740257263183594,
+      "cpu_usage_usec": 12396671786,
+      "seconds": 79.3170167930075,
+      "wall": 1789063113.990469,
+      "frame": 8483,
+      "http_ms": 43.18914900068194,
+      "timings": {
+        "control_ms": 1.0049300035461783,
+        "world_ms": 10.727523011155427,
+        "sensor_wait_ms": 187.55727302050218,
+        "snapshot_ms": 7.51245697028935,
+        "ros_publish_ms": 24.920256983023137,
+        "signal_audit_ms": 15.471879974938929,
+        "record_write_ms": 0.000692030880600214,
+        "publish_record_ms": 40.39365903008729,
+        "preview_ms": 0.048821966629475355,
+        "total_ms": 247.2446640022099
+      },
+      "health": {
+        "stage": "publish",
+        "frame": 8484,
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8405.0,
+          "power_watts": 143.4
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 58.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 174.3
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 34.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 162.3
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 98.95
+        }
+      ],
+      "service_memory_gib": 54.7529296875,
+      "host_used_gib": 66.96159362792969,
+      "host_available_gib": 58.73381423950195,
+      "cpu_usage_usec": 12407725271,
+      "seconds": 80.55036947800545,
+      "wall": 1789063115.2247427,
+      "frame": 8488,
+      "http_ms": 16.419601975940168,
+      "timings": {
+        "control_ms": 0.8336749742738903,
+        "world_ms": 11.17435802007094,
+        "sensor_wait_ms": 191.37024000519887,
+        "snapshot_ms": 9.609379980247468,
+        "ros_publish_ms": 27.99934701761231,
+        "signal_audit_ms": 12.25432998035103,
+        "record_write_ms": 0.00076700234785676,
+        "publish_record_ms": 40.2553949970752,
+        "preview_ms": 0.06154400762170553,
+        "total_ms": 253.30459198448807
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8489,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 46.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8446.0,
+          "power_watts": 175.6
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 177.45
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 170.43
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 35.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 155.62
+        }
+      ],
+      "service_memory_gib": 54.75040054321289,
+      "host_used_gib": 66.9694709777832,
+      "host_available_gib": 58.72593688964844,
+      "cpu_usage_usec": 12419660180,
+      "seconds": 81.84292515699053,
+      "wall": 1789063116.5186012,
+      "frame": 8493,
+      "http_ms": 18.717939965426922,
+      "timings": {
+        "control_ms": 0.9496749844402075,
+        "world_ms": 10.71426598355174,
+        "sensor_wait_ms": 186.43604300450534,
+        "snapshot_ms": 10.255575005430728,
+        "ros_publish_ms": 25.601372006349266,
+        "signal_audit_ms": 15.513571968767792,
+        "record_write_ms": 0.001125037670135498,
+        "publish_record_ms": 41.1168800201267,
+        "preview_ms": 0.04904699744656682,
+        "total_ms": 249.52148599550128
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8494,
+        "sensor": "rear_right",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8450.0,
+          "power_watts": 109.7
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 59.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 139.35
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 109.13
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 129.91
+        }
+      ],
+      "service_memory_gib": 54.74614334106445,
+      "host_used_gib": 66.96004486083984,
+      "host_available_gib": 58.7353630065918,
+      "cpu_usage_usec": 12432321997,
+      "seconds": 83.2319376670057,
+      "wall": 1789063117.9065557,
+      "frame": 8498,
+      "http_ms": 14.073371014092118,
+      "timings": {
+        "control_ms": 0.8529920014552772,
+        "world_ms": 11.174688988830894,
+        "sensor_wait_ms": 192.77790398336947,
+        "snapshot_ms": 11.020504985935986,
+        "ros_publish_ms": 26.717884989921004,
+        "signal_audit_ms": 15.258316008839756,
+        "record_write_ms": 0.0009490177035331726,
+        "publish_record_ms": 41.97846102761105,
+        "preview_ms": 0.05983398295938969,
+        "total_ms": 257.86438497016206
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8499,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.04
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 44.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8434.0,
+          "power_watts": 108.87
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 58.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 136.52
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 33.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 106.62
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 129.54
+        }
+      ],
+      "service_memory_gib": 54.746299743652344,
+      "host_used_gib": 66.96184539794922,
+      "host_available_gib": 58.73356246948242,
+      "cpu_usage_usec": 12444544727,
+      "seconds": 84.5595141800004,
+      "wall": 1789063119.2311838,
+      "frame": 8503,
+      "http_ms": 17.323545995168388,
+      "timings": {
+        "control_ms": 0.8582609589211643,
+        "world_ms": 14.483520993962884,
+        "sensor_wait_ms": 188.61070700222626,
+        "snapshot_ms": 10.052400000859052,
+        "ros_publish_ms": 25.332310004159808,
+        "signal_audit_ms": 15.32485499046743,
+        "record_write_ms": 0.000600994098931551,
+        "publish_record_ms": 40.65859399270266,
+        "preview_ms": 0.042046012822538614,
+        "total_ms": 254.70552896149457
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8504,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.05
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8419.0,
+          "power_watts": 181.34
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 55.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 134.99
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 34.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8904.0,
+          "power_watts": 109.8
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 41.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 131.29
+        }
+      ],
+      "service_memory_gib": 54.74733352661133,
+      "host_used_gib": 66.98720932006836,
+      "host_available_gib": 58.70819854736328,
+      "cpu_usage_usec": 12456430622,
+      "seconds": 85.85239688499132,
+      "wall": 1789063120.5237763,
+      "frame": 8508,
+      "http_ms": 19.615277007687837,
+      "timings": {
+        "control_ms": 0.9129800018854439,
+        "world_ms": 11.24413701472804,
+        "sensor_wait_ms": 193.46387399127707,
+        "snapshot_ms": 9.673852997366339,
+        "ros_publish_ms": 25.862982030957937,
+        "signal_audit_ms": 16.279154981020838,
+        "record_write_ms": 0.0005509937182068825,
+        "publish_record_ms": 42.14375698938966,
+        "preview_ms": 0.042813015170395374,
+        "total_ms": 257.48141400981694
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8509,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 46.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8420.0,
+          "power_watts": 181.88
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 56.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 134.48
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 108.45
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 39.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 9366.0,
+          "power_watts": 131.63
+        }
+      ],
+      "service_memory_gib": 54.72283172607422,
+      "host_used_gib": 66.96678161621094,
+      "host_available_gib": 58.7286262512207,
+      "cpu_usage_usec": 12468564352,
+      "seconds": 87.16836378903827,
+      "wall": 1789063121.8419213,
+      "frame": 8513,
+      "http_ms": 17.312185023911297,
+      "timings": {
+        "control_ms": 0.9903240134008229,
+        "world_ms": 11.545690998900682,
+        "sensor_wait_ms": 194.09057300072163,
+        "snapshot_ms": 10.729813016951084,
+        "ros_publish_ms": 24.872226000297815,
+        "signal_audit_ms": 15.11328696506098,
+        "record_write_ms": 0.0006289919838309288,
+        "publish_record_ms": 39.98687997227535,
+        "preview_ms": 0.04962703678756952,
+        "total_ms": 257.39290803903714
+      },
+      "health": {
+        "stage": "sensor",
+        "frame": 8514,
+        "sensor": "cabin_overview",
+        "elapsed_seconds": 0.02
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 45.0,
+          "memory_controller_percent": 10.0,
+          "vram_mib": 8405.0,
+          "power_watts": 115.98
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 57.0,
+          "memory_controller_percent": 13.0,
+          "vram_mib": 9432.0,
+          "power_watts": 123.72
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 100.02
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 112.42
+        }
+      ],
+      "service_memory_gib": 54.726226806640625,
+      "host_used_gib": 66.94720840454102,
+      "host_available_gib": 58.748199462890625,
+      "cpu_usage_usec": 12481919992,
+      "seconds": 88.50279187102569,
+      "wall": 1789063123.2235305,
+      "frame": 8518,
+      "http_ms": 15.008312999270856,
+      "timings": {
+        "control_ms": 0.9410629863850772,
+        "world_ms": 12.215951981488615,
+        "sensor_wait_ms": 189.2269100062549,
+        "snapshot_ms": 10.590404039248824,
+        "ros_publish_ms": 24.697529966942966,
+        "signal_audit_ms": 12.686117028351873,
+        "record_write_ms": 0.0005980255082249641,
+        "publish_record_ms": 37.38530300324783,
+        "preview_ms": 0.0412359950132668,
+        "total_ms": 250.40086801163852
+      },
+      "health": {
+        "stage": "publish",
+        "frame": 8519,
+        "elapsed_seconds": 0.03
+      }
+    },
+    {
+      "gpus": [
+        {
+          "index": 0.0,
+          "gpu_percent": 40.0,
+          "memory_controller_percent": 8.0,
+          "vram_mib": 8405.0,
+          "power_watts": 110.76
+        },
+        {
+          "index": 1.0,
+          "gpu_percent": 60.0,
+          "memory_controller_percent": 14.0,
+          "vram_mib": 9432.0,
+          "power_watts": 128.69
+        },
+        {
+          "index": 2.0,
+          "gpu_percent": 38.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 8904.0,
+          "power_watts": 113.32
+        },
+        {
+          "index": 3.0,
+          "gpu_percent": 37.0,
+          "memory_controller_percent": 9.0,
+          "vram_mib": 9366.0,
+          "power_watts": 99.96
+        }
+      ],
+      "service_memory_gib": 54.72016525268555,
+      "host_used_gib": 66.93345642089844,
+      "host_available_gib": 58.7619514465332,
+      "cpu_usage_usec": 12494182811,
+      "seconds": 89.87714073900133,
+      "wall": 1789063124.553515,
+      "frame": 8524,
+      "http_ms": 30.937306000851095,
+      "timings": {
+        "control_ms": 0.8376609766855836,
+        "world_ms": 11.36423903517425,
+        "sensor_wait_ms": 195.59176097391173,
+        "snapshot_ms": 9.388744016177952,
+        "ros_publish_ms": 25.88171698153019,
+        "signal_audit_ms": 20.103548013139516,
+        "record_write_ms": 0.0006509944796562195,
+        "publish_record_ms": 45.987281017005444,
+        "preview_ms": 0.04553596954792738,
+        "total_ms": 263.2152219885029
+      },
+      "health": {
+        "stage": "complete",
+        "frame": 8524,
+        "elapsed_seconds": 0.0
+      }
+    }
+  ]
+}

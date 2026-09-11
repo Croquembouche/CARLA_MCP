@@ -1,0 +1,10 @@
+Sep 10 08:51:27 ganesh run.sh[3163935]: Traceback (most recent call last):
+Sep 10 08:51:27 ganesh run.sh[3163935]:   File "/mnt/simulations/control-center/controller.py", line 112, in loop
+Sep 10 08:51:27 ganesh run.sh[3163935]:     started=time.monotonic();self.tick()
+Sep 10 08:51:27 ganesh run.sh[3163935]:   File "/mnt/simulations/control-center/controller.py", line 581, in tick
+Sep 10 08:51:27 ganesh run.sh[3163935]:     return self._tick(publish)
+Sep 10 08:51:27 ganesh run.sh[3163935]:   File "/mnt/simulations/control-center/controller.py", line 688, in _tick
+Sep 10 08:51:27 ganesh run.sh[3163935]:     if hasattr(self,'signal_audit'):self.state['signal_audit']=self.signal_audit.observe(self.state)
+Sep 10 08:51:27 ganesh run.sh[3163935]:   File "/mnt/simulations/control-center/signal_audit.py", line 57, in observe
+Sep 10 08:51:27 ganesh run.sh[3163935]:     indication=light.get('movements',{}).get(move,light.get('state'))
+Sep 10 08:51:27 ganesh run.sh[3163935]: AttributeError: 'NoneType' object has no attribute 'get'

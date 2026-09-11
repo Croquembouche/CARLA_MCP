@@ -1,0 +1,315 @@
+{
+  "version": 2,
+  "map": "/Game/Carla/Maps/Town10HD_Opt",
+  "removed": [
+    {
+      "source": "BP_Carlacola_Parked_C_3",
+      "reason": "Vehicle is obstructed at its current position; clear nearby objects before driving",
+      "pose": {
+        "key": "BP_Carlacola_Parked_C_3",
+        "label": "Truck",
+        "x": -32.68718338012695,
+        "y": 182.6195831298828,
+        "z": 2.081723928451538,
+        "yaw": 180.0,
+        "length": 8.003671646118164,
+        "width": 3.3805370330810547,
+        "height": 4.054566383361816
+      },
+      "names": [
+        "BP_Carlacola_Parked_C_3_SM_0",
+        "BP_Carlacola_Parked_C_3_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Glasses_Parked.SM_CarlaCola_Glasses_Parked",
+        "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Parked.SM_CarlaCola_Parked"
+      ]
+    },
+    {
+      "source": "BP_Carlacola_Parked_C_5",
+      "reason": "Vehicle is obstructed at its current position; clear nearby objects before driving",
+      "pose": {
+        "key": "BP_Carlacola_Parked_C_5",
+        "label": "Truck",
+        "x": -48.865997314453125,
+        "y": 199.19635009765625,
+        "z": 2.027557373046875,
+        "yaw": -90.0,
+        "length": 8.003671646118164,
+        "width": 3.3805370330810547,
+        "height": 4.054566383361816
+      },
+      "names": [
+        "BP_Carlacola_Parked_C_5_SM_0",
+        "BP_Carlacola_Parked_C_5_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Glasses_Parked.SM_CarlaCola_Glasses_Parked",
+        "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Parked.SM_CarlaCola_Parked"
+      ]
+    },
+    {
+      "source": "BP_EuropeanHGV_Parked_C_10",
+      "reason": "Parking maneuver crosses a junction; a clear connection to a non-junction road is required",
+      "pose": {
+        "key": "BP_EuropeanHGV_Parked_C_10",
+        "label": "Truck",
+        "x": -40.43634796142578,
+        "y": 156.55126953125,
+        "z": 2.398186206817627,
+        "yaw": -90.0,
+        "length": 9.9051513671875,
+        "width": 4.229673862457275,
+        "height": 4.72915506362915
+      },
+      "names": [
+        "BP_EuropeanHGV_Parked_C_10_SM_0",
+        "BP_EuropeanHGV_Parked_C_10_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked",
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+      ]
+    },
+    {
+      "source": "BP_EuropeanHGV_Parked_C_3",
+      "reason": "Vehicle is obstructed at its current position; clear nearby objects before driving",
+      "pose": {
+        "key": "BP_EuropeanHGV_Parked_C_3",
+        "label": "Truck",
+        "x": -32.71954345703125,
+        "y": 177.3932647705078,
+        "z": 1.930667519569397,
+        "yaw": 180.0,
+        "length": 7.924120903015137,
+        "width": 3.3837389945983887,
+        "height": 3.7833240032196045
+      },
+      "names": [
+        "BP_EuropeanHGV_Parked_C_3_SM_0",
+        "BP_EuropeanHGV_Parked_C_3_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked",
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+      ]
+    },
+    {
+      "source": "BP_EuropeanHGV_Parked_C_4",
+      "reason": "Parking maneuver crosses a junction; a clear connection to a non-junction road is required",
+      "pose": {
+        "key": "BP_EuropeanHGV_Parked_C_4",
+        "label": "Truck",
+        "x": -33.44889450073242,
+        "y": 192.36244201660156,
+        "z": 1.930667519569397,
+        "yaw": 180.0,
+        "length": 7.924120903015137,
+        "width": 3.3837389945983887,
+        "height": 3.7833240032196045
+      },
+      "names": [
+        "BP_EuropeanHGV_Parked_C_4_SM_0",
+        "BP_EuropeanHGV_Parked_C_4_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked",
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+      ]
+    },
+    {
+      "source": "BP_EuropeanHGV_Parked_C_5",
+      "reason": "Vehicle is obstructed at its current position; clear nearby objects before driving",
+      "pose": {
+        "key": "BP_EuropeanHGV_Parked_C_5",
+        "label": "Truck",
+        "x": -43.61984634399414,
+        "y": 199.5589141845703,
+        "z": 1.930667519569397,
+        "yaw": -90.0,
+        "length": 7.924120903015137,
+        "width": 3.3837389945983887,
+        "height": 3.7833240032196045
+      },
+      "names": [
+        "BP_EuropeanHGV_Parked_C_5_SM_0",
+        "BP_EuropeanHGV_Parked_C_5_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked",
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+      ]
+    },
+    {
+      "source": "BP_EuropeanHGV_Parked_C_6",
+      "reason": "Vehicle is obstructed at its current position; clear nearby objects before driving",
+      "pose": {
+        "key": "BP_EuropeanHGV_Parked_C_6",
+        "label": "Truck",
+        "x": -53.9942512512207,
+        "y": 199.5589141845703,
+        "z": 1.930667519569397,
+        "yaw": -90.0,
+        "length": 7.924120903015137,
+        "width": 3.3837389945983887,
+        "height": 3.7833240032196045
+      },
+      "names": [
+        "BP_EuropeanHGV_Parked_C_6_SM_0",
+        "BP_EuropeanHGV_Parked_C_6_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked",
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+      ]
+    },
+    {
+      "source": "BP_MercedesSprinter_Parked_C_7",
+      "reason": "Parking maneuver crosses a junction; a clear connection to a non-junction road is required",
+      "pose": {
+        "key": "BP_MercedesSprinter_Parked_C_7",
+        "label": "Truck",
+        "x": -55.506649017333984,
+        "y": 68.09368133544922,
+        "z": 1.4058524370193481,
+        "yaw": 75.84477996826172,
+        "length": 5.915139198303223,
+        "width": 2.320512056350708,
+        "height": 2.7260189056396484
+      },
+      "names": [
+        "BP_MercedesSprinter_Parked_C_7_SM_0",
+        "BP_MercedesSprinter_Parked_C_7_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/MercedesSprinter/Parked/SM_MercedesSprinter_Glass_Parked.SM_MercedesSprinter_Glass_Parked",
+        "/Game/Carla/Static/Truck/MercedesSprinter/Parked/SM_MercedesSprinter_Parked.SM_MercedesSprinter_Parked"
+      ]
+    },
+    {
+      "source": "SM_Mustang_prop2_421",
+      "reason": "Vehicle is obstructed at its current position; clear nearby objects before driving",
+      "pose": {
+        "key": "SM_Mustang_prop2_421",
+        "label": "Car",
+        "x": 48.63214111328125,
+        "y": -17.600000381469727,
+        "z": 0.7824023962020874,
+        "yaw": 0.0,
+        "length": 4.717525005340576,
+        "width": 1.8948270082473755,
+        "height": 1.300939917564392
+      },
+      "names": [
+        "SM_Mustang_prop2_421_SM_0",
+        "SM_Mustang_prop2_421_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Car/4Wheeled/Mustang/Parked/SM_Mustang_Parked.SM_Mustang_Parked",
+        "/Game/Carla/Static/Car/4Wheeled/Mustang/Parked/SM_Mustang_Parked_glass.SM_Mustang_Parked_glass"
+      ]
+    },
+    {
+      "source": "SM_Tesla2_418",
+      "reason": "Vehicle is obstructed at its current position; clear nearby objects before driving",
+      "pose": {
+        "key": "SM_Tesla2_418",
+        "label": "Car",
+        "x": 48.206336975097656,
+        "y": -6.000061511993408,
+        "z": 0.8209526538848877,
+        "yaw": 0.0,
+        "length": 4.8105926513671875,
+        "width": 2.2402570247650146,
+        "height": 1.5221024751663208
+      },
+      "names": [
+        "SM_Tesla2_418_SM_0"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Car/4Wheeled/Tesla/Parked/SM_TeslaM3.SM_TeslaM3"
+      ]
+    },
+    {
+      "source": "BP_Carlacola_Parked_C_7",
+      "reason": "Previously removed off-road truck; no nearby drivable route or parking access",
+      "pose": {
+        "key": "BP_Carlacola_Parked_C_7",
+        "label": "Truck",
+        "x": -64.51690673828125,
+        "y": 184.42562866210938,
+        "z": 2.053758382797241,
+        "yaw": 0.0,
+        "length": 8.003671646118164,
+        "width": 3.3805370330810547,
+        "height": 4.054566383361816
+      },
+      "names": [
+        "BP_Carlacola_Parked_C_7_SM_0",
+        "BP_Carlacola_Parked_C_7_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Glasses_Parked.SM_CarlaCola_Glasses_Parked",
+        "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Parked.SM_CarlaCola_Parked"
+      ]
+    },
+    {
+      "source": "BP_Carlacola_Parked_C_9",
+      "reason": "Previously removed off-road truck; no nearby drivable route or parking access",
+      "pose": {
+        "key": "BP_Carlacola_Parked_C_9",
+        "label": "Truck",
+        "x": -65.07793426513672,
+        "y": 178.90748596191406,
+        "z": 2.0697505474090576,
+        "yaw": -3.7434349060058594,
+        "length": 8.003671646118164,
+        "width": 3.3805370330810547,
+        "height": 4.054566383361816
+      },
+      "names": [
+        "BP_Carlacola_Parked_C_9_SM_0",
+        "BP_Carlacola_Parked_C_9_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Glasses_Parked.SM_CarlaCola_Glasses_Parked",
+        "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Parked.SM_CarlaCola_Parked"
+      ]
+    },
+    {
+      "source": "BP_EuropeanHGV_Parked_C_8",
+      "reason": "Previously removed off-road truck; no nearby drivable route or parking access",
+      "pose": {
+        "key": "BP_EuropeanHGV_Parked_C_8",
+        "label": "Truck",
+        "x": -65.47285461425781,
+        "y": 170.98179626464844,
+        "z": 1.9521620273590088,
+        "yaw": 0.0,
+        "length": 7.924120903015137,
+        "width": 3.3837389945983887,
+        "height": 3.7833240032196045
+      },
+      "names": [
+        "BP_EuropeanHGV_Parked_C_8_SM_0",
+        "BP_EuropeanHGV_Parked_C_8_SM_1"
+      ],
+      "meshes": [
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked",
+        "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+      ]
+    }
+  ],
+  "previous_removed": [
+    "BP_Carlacola_Parked_C_3",
+    "BP_Carlacola_Parked_C_5",
+    "BP_EuropeanHGV_Parked_C_10",
+    "BP_EuropeanHGV_Parked_C_3",
+    "BP_EuropeanHGV_Parked_C_4",
+    "BP_EuropeanHGV_Parked_C_5",
+    "BP_EuropeanHGV_Parked_C_6",
+    "BP_MercedesSprinter_Parked_C_7",
+    "SM_Mustang_prop2_421",
+    "SM_Tesla2_418"
+  ]
+}

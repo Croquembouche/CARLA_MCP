@@ -1,0 +1,22 @@
+{
+  "Harley": {
+    "animation_max_rpm_before": 0.0,
+    "animation_max_rpm_after": 6500.0,
+    "engine_max_rpm": 6500.0
+  },
+  "Vespa": {
+    "animation_max_rpm_before": 0.0,
+    "animation_max_rpm_after": 6500.0,
+    "engine_max_rpm": 6500.0
+  },
+  "Yamaha": {
+    "animation_max_rpm_before": 0.0,
+    "animation_max_rpm_after": 6500.0,
+    "engine_max_rpm": 6500.0
+  },
+  "KawasakiNinja": {
+    "animation_max_rpm_before": 0.0,
+    "animation_max_rpm_after": 6500.0,
+    "engine_max_rpm": 6500.0
+  }
+}

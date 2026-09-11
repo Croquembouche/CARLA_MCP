@@ -1,0 +1,613 @@
+{
+	"Vehicles": [
+		{
+			"Make": "Lincoln",
+			"Model": "Mkz",
+			"Class": "/Game/Carla/Blueprints/Vehicles/LincolnMKZ/BP_LincolnMKZ.BP_LincolnMKZ_C",
+			"NumberOfWheels": 3,
+			"Generation": -1,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 0,
+					"G": 0,
+					"B": 0,
+					"A": 0
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "Mini",
+			"Model": "Cooper",
+			"Class": "/Game/Carla/Blueprints/Vehicles/MiniCooper/BP_MiniCooper.BP_MiniCooper_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 0,
+					"G": 0,
+					"B": 0,
+					"A": 0
+				},
+				{
+					"R": 104,
+					"G": 4,
+					"B": 8,
+					"A": 255
+				},
+				{
+					"R": 27,
+					"G": 54,
+					"B": 118,
+					"A": 255
+				},
+				{
+					"R": 26,
+					"G": 62,
+					"B": 29,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "Dodge",
+			"Model": "Charger",
+			"Class": "/Game/Carla/Blueprints/Vehicles/DodgeCharger/BP_DodgeCharger.BP_DodgeCharger_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 0,
+					"G": 0,
+					"B": 0,
+					"A": 0
+				},
+				{
+					"R": 71,
+					"G": 71,
+					"B": 71,
+					"A": 255
+				},
+				{
+					"R": 220,
+					"G": 218,
+					"B": 217,
+					"A": 255
+				},
+				{
+					"R": 78,
+					"G": 17,
+					"B": 17,
+					"A": 255
+				},
+				{
+					"R": 142,
+					"G": 45,
+					"B": 22,
+					"A": 255
+				},
+				{
+					"R": 221,
+					"G": 50,
+					"B": 13,
+					"A": 255
+				},
+				{
+					"R": 72,
+					"G": 119,
+					"B": 172,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "DodgeCop",
+			"Model": "Charger",
+			"Class": "/Game/Carla/Blueprints/Vehicles/DodgeChargerCop/BP_DodgeChargerCop.BP_DodgeChargerCop_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 26,
+					"G": 26,
+					"B": 26,
+					"A": 0
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "Nissan",
+			"Model": "Patrol",
+			"Class": "/Game/Carla/Blueprints/Vehicles/NissanPatrol/BP_NissanPatrol.BP_NissanPatrol_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 2,
+					"G": 35,
+					"B": 54,
+					"A": 255
+				},
+				{
+					"R": 83,
+					"G": 83,
+					"B": 83,
+					"A": 255
+				},
+				{
+					"R": 172,
+					"G": 172,
+					"B": 172,
+					"A": 255
+				},
+				{
+					"R": 5,
+					"G": 5,
+					"B": 5,
+					"A": 255
+				},
+				{
+					"R": 122,
+					"G": 107,
+					"B": 100,
+					"A": 255
+				},
+				{
+					"R": 159,
+					"G": 65,
+					"B": 47,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "Ambulance",
+			"Model": "Ford",
+			"Class": "/Game/Carla/Blueprints/Vehicles/Ambulance/BP_Ambulance.BP_Ambulance_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "truck",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 255,
+					"G": 255,
+					"B": 255,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "Sprinter",
+			"Model": "Mercedes",
+			"Class": "/Game/Carla/Blueprints/Vehicles/MercedesSprinter/BP_MercedesSprinter.BP_MercedesSprinter_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "van",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 233,
+					"G": 234,
+					"B": 236,
+					"A": 255
+				},
+				{
+					"R": 135,
+					"G": 151,
+					"B": 160,
+					"A": 255
+				},
+				{
+					"R": 78,
+					"G": 80,
+					"B": 77,
+					"A": 255
+				},
+				{
+					"R": 69,
+					"G": 22,
+					"B": 25,
+					"A": 255
+				},
+				{
+					"R": 28,
+					"G": 51,
+					"B": 83,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "Fuso",
+			"Model": "Mitsubishi",
+			"Class": "/Game/Carla/Blueprints/Vehicles/MitsubishiFusoRosa/BP_MitsubishiFusoRosa.BP_MitsubishiFusoRosa_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "bus",
+			"SpecialType": "",
+			"HasDynamicDoors": false,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 250,
+					"G": 252,
+					"B": 246,
+					"A": 255
+				},
+				{
+					"R": 212,
+					"G": 229,
+					"B": 246,
+					"A": 255
+				},
+				{
+					"R": 167,
+					"G": 44,
+					"B": 58,
+					"A": 255
+				},
+				{
+					"R": 0,
+					"G": 84,
+					"B": 166,
+					"A": 255
+				},
+				{
+					"R": 142,
+					"G": 142,
+					"B": 142,
+					"A": 0
+				},
+				{
+					"R": 255,
+					"G": 238,
+					"B": 170,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "UE4.ford",
+			"Model": "mustang",
+			"Class": "/Game/Carla/Blueprints/Vehicles/Mustang/BP_Mustang.BP_Mustang_C",
+			"NumberOfWheels": 4,
+			"Generation": -1,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": false,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 0,
+					"G": 0,
+					"B": 0,
+					"A": 0
+				},
+				{
+					"R": 27,
+					"G": 54,
+					"B": 118,
+					"A": 255
+				},
+				{
+					"R": 104,
+					"G": 4,
+					"B": 8,
+					"A": 255
+				},
+				{
+					"R": 230,
+					"G": 216,
+					"B": 205,
+					"A": 255
+				},
+				{
+					"R": 108,
+					"G": 108,
+					"B": 108,
+					"A": 0
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "UE4.ford",
+			"Model": "crown",
+			"Class": "/Game/Carla/Blueprints/Vehicles/FordCrown01/BP_FordCrown01.BP_FordCrown01_C",
+			"NumberOfWheels": 4,
+			"Generation": -1,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": false,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 254,
+					"G": 211,
+					"B": 0,
+					"A": 0
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "UE4.bmw",
+			"Model": "grantourer",
+			"Class": "/Game/Carla/Blueprints/Vehicles/BmwGrandTourer/BP_BmwGrandTourer.BP_BmwGrandTourer_C",
+			"NumberOfWheels": 4,
+			"Generation": 2,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": false,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 0,
+					"G": 0,
+					"B": 0,
+					"A": 0
+				},
+				{
+					"R": 27,
+					"G": 54,
+					"B": 118,
+					"A": 255
+				},
+				{
+					"R": 104,
+					"G": 4,
+					"B": 8,
+					"A": 255
+				},
+				{
+					"R": 230,
+					"G": 216,
+					"B": 205,
+					"A": 255
+				},
+				{
+					"R": 108,
+					"G": 108,
+					"B": 108,
+					"A": 0
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "UE4.audi",
+			"Model": "tt",
+			"Class": "/Game/Carla/Blueprints/Vehicles/AudiTT/BP_AudiTT.BP_AudiTT_C",
+			"NumberOfWheels": 4,
+			"Generation": 2,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": false,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 0,
+					"G": 0,
+					"B": 0,
+					"A": 0
+				},
+				{
+					"R": 27,
+					"G": 54,
+					"B": 118,
+					"A": 255
+				},
+				{
+					"R": 104,
+					"G": 4,
+					"B": 8,
+					"A": 255
+				},
+				{
+					"R": 230,
+					"G": 216,
+					"B": 205,
+					"A": 255
+				},
+				{
+					"R": 108,
+					"G": 108,
+					"B": 108,
+					"A": 0
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "UE4.mercedes",
+			"Model": "ccc",
+			"Class": "/Game/Carla/Blueprints/Vehicles/MercedesCCC/BP_MercedesCCC.BP_MercedesCCC_C",
+			"NumberOfWheels": 4,
+			"Generation": 2,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": false,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 73,
+					"G": 0,
+					"B": 0,
+					"A": 255
+				},
+				{
+					"R": 27,
+					"G": 54,
+					"B": 118,
+					"A": 255
+				},
+				{
+					"R": 104,
+					"G": 4,
+					"B": 8,
+					"A": 255
+				},
+				{
+					"R": 230,
+					"G": 216,
+					"B": 205,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "UE4.chevrolet",
+			"Model": "impala",
+			"Class": "/Game/Carla/Blueprints/Vehicles/ChevroletImpala/BP_ChevroletImpala.BP_ChevroletImpala_C",
+			"NumberOfWheels": 4,
+			"Generation": 2,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": false,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 0,
+					"G": 146,
+					"B": 255,
+					"A": 255
+				},
+				{
+					"R": 27,
+					"G": 54,
+					"B": 118,
+					"A": 255
+				},
+				{
+					"R": 104,
+					"G": 4,
+					"B": 8,
+					"A": 255
+				},
+				{
+					"R": 230,
+					"G": 216,
+					"B": 205,
+					"A": 255
+				},
+				{
+					"R": 108,
+					"G": 108,
+					"B": 108,
+					"A": 0
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "Firetruck",
+			"Model": "Actors",
+			"Class": "/Game/Carla/Blueprints/Vehicles/ActrosFiretruck/BP_ActrosFiretruck.BP_ActrosFiretruck_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "truck",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 255,
+					"G": 75,
+					"B": 26,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "carlacola",
+			"Model": "actors",
+			"Class": "/Game/Carla/Blueprints/Vehicles/CarlaCola/BP_CarlaCola.BP_CarlaCola_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "truck",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 149,
+					"G": 0,
+					"B": 14,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		},
+		{
+			"Make": "taxi",
+			"Model": "Ford",
+			"Class": "/Game/Carla/Blueprints/Vehicles/FordCrown02/BP_FordCrown02.BP_FordCrown02_C",
+			"NumberOfWheels": 4,
+			"Generation": 3,
+			"ObjectType": "",
+			"BaseType": "car",
+			"SpecialType": "",
+			"HasDynamicDoors": true,
+			"HasLights": true,
+			"RecommendedColors": [
+				{
+					"R": 232,
+					"G": 192,
+					"B": 0,
+					"A": 255
+				}
+			],
+			"SupportedDrivers": []
+		}
+	]
+}

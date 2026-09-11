@@ -1,0 +1,171 @@
+{
+  "matches": [
+    {
+      "name": "SM_Tesla2_418",
+      "label": "SM_Tesla2",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.SM_Tesla2_418",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff18970) {x: 4820.000000, y: -600.000000, z: 10.000000}>",
+      "components": [
+        {
+          "name": "StaticMeshComponent0",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/Tesla/Parked/SM_TeslaM3.SM_TeslaM3"
+        }
+      ]
+    },
+    {
+      "name": "SM_Mustang_prop2_421",
+      "label": "SM_Mustang_prop2",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.SM_Mustang_prop2_421",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff18a10) {x: 4860.000000, y: -1760.000000, z: 13.193241}>",
+      "components": [
+        {
+          "name": "SM_Mustang_Parked_glass",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/Mustang/Parked/SM_Mustang_Parked_glass.SM_Mustang_Parked_glass"
+        },
+        {
+          "name": "SM_Mustang_prop",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/Mustang/Parked/SM_Mustang_Parked.SM_Mustang_Parked"
+        }
+      ]
+    },
+    {
+      "name": "BP_MercedesSprinter_Parked_C_7",
+      "label": "BP_MercedesSprinter_Parked3",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_MercedesSprinter_Parked_C_7",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff18c40) {x: -5556.556312, y: 6811.171691, z: 3.824266}>",
+      "components": [
+        {
+          "name": "SM_MercedesSprinter_Parked",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Parked/SM_MercedesSprinter_Parked.SM_MercedesSprinter_Parked"
+        },
+        {
+          "name": "SM_Sprinter_Parked_Glass",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Parked/SM_MercedesSprinter_Glass_Parked.SM_MercedesSprinter_Glass_Parked"
+        }
+      ]
+    },
+    {
+      "name": "BP_Carlacola_Parked_C_3",
+      "label": "BP_Carlacola_Parked",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_Carlacola_Parked_C_3",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff18d80) {x: -3271.018390, y: 18261.958100, z: 5.416588}>",
+      "components": [
+        {
+          "name": "SM_CarlaCola2024Parked",
+          "mesh": "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Parked.SM_CarlaCola_Parked"
+        },
+        {
+          "name": "SM_CarlaCola2024Parked_Glasses",
+          "mesh": "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Glasses_Parked.SM_CarlaCola_Glasses_Parked"
+        }
+      ]
+    },
+    {
+      "name": "BP_EuropeanHGV_Parked_C_3",
+      "label": "BP_EuropeanHGV_Parked",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_EuropeanHGV_Parked_C_3",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff18ec0) {x: -3270.275530, y: 17739.165704, z: 3.873102}>",
+      "components": [
+        {
+          "name": "SM_European_HGV2024Parked",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+        },
+        {
+          "name": "SM_European_HGV2024Parked_Glasses",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked"
+        }
+      ]
+    },
+    {
+      "name": "BP_EuropeanHGV_Parked_C_4",
+      "label": "BP_EuropeanHGV_Parked2",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_EuropeanHGV_Parked_C_4",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff18fb0) {x: -3343.210815, y: 19236.084090, z: 3.873101}>",
+      "components": [
+        {
+          "name": "SM_European_HGV2024Parked",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+        },
+        {
+          "name": "SM_European_HGV2024Parked_Glasses",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked"
+        }
+      ]
+    },
+    {
+      "name": "BP_EuropeanHGV_Parked_C_5",
+      "label": "BP_EuropeanHGV_Parked3",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_EuropeanHGV_Parked_C_5",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff190a0) {x: -4361.824298, y: 19957.570503, z: 3.873101}>",
+      "components": [
+        {
+          "name": "SM_European_HGV2024Parked",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+        },
+        {
+          "name": "SM_European_HGV2024Parked_Glasses",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked"
+        }
+      ]
+    },
+    {
+      "name": "BP_EuropeanHGV_Parked_C_6",
+      "label": "BP_EuropeanHGV_Parked4",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_EuropeanHGV_Parked_C_6",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff19190) {x: -5399.264648, y: 19957.570498, z: 3.873101}>",
+      "components": [
+        {
+          "name": "SM_European_HGV2024Parked",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+        },
+        {
+          "name": "SM_European_HGV2024Parked_Glasses",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked"
+        }
+      ]
+    },
+    {
+      "name": "BP_Carlacola_Parked_C_5",
+      "label": "BP_Carlacola_Parked2",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_Carlacola_Parked_C_5",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff19280) {x: -4886.599280, y: 19917.336168, z: -0.000065}>",
+      "components": [
+        {
+          "name": "SM_CarlaCola2024Parked",
+          "mesh": "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Parked.SM_CarlaCola_Parked"
+        },
+        {
+          "name": "SM_CarlaCola2024Parked_Glasses",
+          "mesh": "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Glasses_Parked.SM_CarlaCola_Glasses_Parked"
+        }
+      ]
+    },
+    {
+      "name": "BP_EuropeanHGV_Parked_C_10",
+      "label": "BP_EuropeanHGV_Parked6",
+      "path": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_EuropeanHGV_Parked_C_10",
+      "level": "/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel",
+      "location": "<Struct 'Vector' (0x7f7d5ff193c0) {x: -4043.434298, y: 15657.225514, z: 3.326554}>",
+      "components": [
+        {
+          "name": "SM_European_HGV2024Parked",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked"
+        },
+        {
+          "name": "SM_European_HGV2024Parked_Glasses",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked"
+        }
+      ]
+    }
+  ],
+  "count": 2932
+}

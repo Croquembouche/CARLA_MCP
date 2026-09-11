@@ -1,0 +1,28 @@
+{
+  "id": "20260909-094713-aab86a",
+  "checked_at": 1788961692.3456671,
+  "status": "verified",
+  "frames": 39,
+  "sensor_samples": 195,
+  "rosbag_topic_counts": {
+    "/clock": 39,
+    "/carla/ego_28/odometry": 39,
+    "/carla/ego_28/front_rgb/image": 39,
+    "/carla/ego_28/front_rgb/metadata": 39,
+    "/carla/ego_28/front_rgb/camera_info": 39,
+    "/carla/ego_28/roof_lidar/points": 39,
+    "/carla/ego_28/roof_lidar/metadata": 39,
+    "/carla/ego_28/front_radar/points": 39,
+    "/carla/ego_28/front_radar/metadata": 39,
+    "/carla/ego_28/imu/data": 39,
+    "/carla/ego_28/imu/metadata": 39,
+    "/carla/ego_28/gnss/data": 39,
+    "/carla/ego_28/gnss/metadata": 39,
+    "/tf": 39,
+    "/carla/traffic_signals": 39
+  },
+  "files_checked": 205,
+  "errors": [],
+  "warnings": [],
+  "scope": "Stored bytes, frame index, sensor coverage and simulation timestamps; not proof of identical re-simulation"
+}

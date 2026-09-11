@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "actors": 28,
+  "scenery_vehicles": 35,
+  "deleted_sources": 13,
+  "offroad_sources_absent": [
+    "BP_Carlacola_Parked_C_7",
+    "BP_Carlacola_Parked_C_9",
+    "BP_EuropeanHGV_Parked_C_8"
+  ],
+  "ego_sensors": 6,
+  "weather_preserved": true,
+  "destinations_preserved_within_1cm": true,
+  "ego_sensor_configuration_preserved": true,
+  "retained_actor_models_roles_sources_preserved": true,
+  "maximum_vehicle_road_distance_m": 3.346291867381068,
+  "gpu_workers": 4,
+  "paused": true,
+  "parking_positions": 180,
+  "frame": 267
+}

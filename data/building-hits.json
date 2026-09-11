@@ -1,0 +1,877 @@
+[
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 10.072089694215478,
+    "distance": 47.16384917714495,
+    "info": {
+      "name": "MI_Skysc24_Mid_Scrafolding",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_d.T_Skysc24_Mid_Scrafolding_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_n.T_Skysc24_Mid_Scrafolding_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_orm.T_Skysc24_Mid_Scrafolding_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_d.T_Skysc24_Mid_Scrafolding_d",
+      "web_texture": "e88a4eaa588c6174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.35839998722076416,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid_Scrafolding.MI_Skysc24_Mid_Scrafolding",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 10.072089694215478,
+    "distance": 47.16384917714495,
+    "info": {
+      "name": "MI_Skysc24_Mid_Scrafolding",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_d.T_Skysc24_Mid_Scrafolding_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_n.T_Skysc24_Mid_Scrafolding_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_orm.T_Skysc24_Mid_Scrafolding_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_d.T_Skysc24_Mid_Scrafolding_d",
+      "web_texture": "e88a4eaa588c6174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.35839998722076416,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid_Scrafolding.MI_Skysc24_Mid_Scrafolding",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 9.750775827056678,
+    "distance": 47.59772565691514,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 9.495571807466845,
+    "distance": 47.9423326999349,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 5.240987645543093,
+    "distance": 53.68738197335821,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 5.1266703605651855,
+    "distance": 53.84174686778894,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 5.12667033076287,
+    "distance": 53.84174690803159,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 5.012202910718969,
+    "distance": 53.99631453281599,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 4.088836296576119,
+    "distance": 55.24315476297519,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 3.836803694190145,
+    "distance": 55.583479378521595,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Wall_B.SM_Skysc24_Mid_Wall_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 3.8338402378713425,
+    "distance": 55.58748099229234,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 3.7043340893191115,
+    "distance": 55.762355710085544,
+    "info": {
+      "name": "MI_Skysc24_Mid",
+      "vectors": {
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+        "Normal": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_n.T_Skysc24_Mid_n",
+        "Emissive": "/Game/Carla/Static/Static/Materials/BusStop/T_busStop_Glow.T_busStop_Glow",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_orm.T_Skysc24_Mid_orm"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+      "web_texture": "a2be25a507012174.webp",
+      "scalars": {
+        "Hue": 0,
+        "Saturation": 1,
+        "Brightness": 1,
+        "AO Intensity": 0,
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "RoughnessContrast": 1,
+        "MetalCorrection": 1,
+        "NormalFlatness": 0,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Scale X": 1,
+        "Scale Y": 1,
+        "Offset X": 0,
+        "Offset Y": 0,
+        "RoughnessCorrection": 0.3840000033378601,
+        "Rotation": 0,
+        "SimpleVariationScale": 1,
+        "SimpleVariationStrength": 1,
+        "ProjectionSmoothness": 0.20000000298023224,
+        "SimpleVariationBrightness": 0
+      }
+    },
+    "mesh": "SM_Skysc24_Mid_Wall_B.SM_Skysc24_Mid_Wall_B",
+    "material": "MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "layer": "buildings"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": 0.15240000188350677,
+    "distance": 60.558602669046294,
+    "info": {
+      "name": "MI_sidewalk_09",
+      "vectors": {
+        "PuddleColor": [
+          0.24479199945926666,
+          0.2066980004310608,
+          0.18486900627613068,
+          1
+        ],
+        "EmissiveColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "Tint Color": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "textures": {
+        "BaseColor": "/Game/Carla/Static/GenericMaterials/Sidewalk/Textures/Textures/T_sidewalk_09_d.T_sidewalk_09_d",
+        "Normal": "/Game/Carla/Static/GenericMaterials/Sidewalk/Textures/Textures/T_sidewalk_09_n.T_sidewalk_09_n",
+        "Emissive": "/Game/Carla/Static/GenericMaterials/000_Masters/Textures/T_Flat_White.T_Flat_White",
+        "AO / Roughness / Metallic / Emissive": "/Game/Carla/Static/GenericMaterials/Sidewalk/Textures/T_sidewalk_09_orm.T_sidewalk_09_orm",
+        "ColorVariation": "/Game/Carla/Static/GenericMaterials/000_Masters/Textures/Noises/T_MacroVariation01.T_MacroVariation01",
+        "RoughnessVariation": "/Game/Carla/Static/GenericMaterials/000_Masters/Textures/Noises/T_MacroVariation01.T_MacroVariation01",
+        "NormalVariationTexture": "/Game/Carla/Static/GenericMaterials/000_Masters/Textures/Noises/T_MacroVariation01.T_MacroVariation01"
+      },
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "browser_texture": "/Game/Carla/Static/GenericMaterials/Sidewalk/Textures/Textures/T_sidewalk_09_d.T_sidewalk_09_d",
+      "web_texture": "fdc7296e2f659a01.webp",
+      "scalars": {
+        "Puddles Size": 0.003000000026077032,
+        "Raindrops UV Scale": 0.004999999888241291,
+        "Raindrops Fading": 2,
+        "EmissiveIntensity": 0,
+        "On/Off": 0,
+        "Emissive attenuance": 1,
+        "Saturation": 1,
+        "Brightness": 2,
+        "Contrast": 1,
+        "Roughness Contrast": 0,
+        "Roughness Correction": 0,
+        "AO Intensity": 0,
+        "MetalCorrection": 1,
+        "SpecularCorrection": 1,
+        "Normal Intensity": 1,
+        "Tint Intensity": 0,
+        "Hue": 0,
+        "Displacement Intensity": 1,
+        "Displacement MidValue": 0.5,
+        "OpacityIntensity": 0,
+        "Scale X": 0.0020000000949949026,
+        "Scale Y": 0.0020000000949949026,
+        "Offset X": 0.07619000226259232,
+        "Offset Y": 0.16190500557422638,
+        "Rotation": 0,
+        "AxisSelection": 0,
+        "ColorVariationHardness": 1,
+        "ColorVariationOffset": 0,
+        "RoughnessVariationHardness": 1,
+        "RoughnessVariationOffset": 0,
+        "ScaleRoughnessVariation": 1,
+        "ScaleColorVariation": 1,
+        "Normal Variation Intensity": 1,
+        "ScaleNormalVariation": 1
+      }
+    },
+    "mesh": "Town10HD_Terrain_Ground_34Node.Town10HD_Terrain_Ground_34Node",
+    "material": "MI_sidewalk_09.MI_sidewalk_09",
+    "layer": "roads"
+  },
+  {
+    "point": [
+      0,
+      0
+    ],
+    "height": -2.0175814628601145,
+    "distance": 63.48877162631764,
+    "info": {
+      "name": "MI_Beach",
+      "vectors": {
+        "Water Base Color": [
+          0.019752999767661095,
+          0.028951000422239304,
+          0.054999999701976776,
+          1
+        ],
+        "Wave Crest Color": [
+          0.43309998512268066,
+          0.6100000143051147,
+          0.6011180281639099,
+          1
+        ]
+      },
+      "textures": {},
+      "blend": "<BlendMode.BLEND_OPAQUE: 0>",
+      "scalars": {
+        "Large Wave Noise Speed": 1,
+        "Large Wave Tiling": 100,
+        "Large Wave Speed": -0.029999999329447746,
+        "Large Wave Movement Tiling": 300,
+        "Large Wave World Position Tiling": 800,
+        "Small Wave Tiling": 50,
+        "Small Wave Speed": -0.07000000029802322,
+        "Wave Transition Small to Large": 10000,
+        "Wave Height": 15,
+        "Foam Amount": 50,
+        "Tiling": 80
+      }
+    },
+    "mesh": "SM_Sea02.SM_Sea02",
+    "material": "MI_Beach.MI_Beach",
+    "layer": "water"
+  }
+]

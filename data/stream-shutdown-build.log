@@ -1,0 +1,5 @@
+/mnt/simulations/carla/LibCarla/source/carla/streaming/detail/tcp/Client.cpp: In lambda function:
+/mnt/simulations/carla/LibCarla/source/carla/streaming/detail/tcp/Client.cpp:124:51: warning: implicit capture of ‘this’ via ‘[=]’ is deprecated in C++20 [-Wdeprecated]
+  124 |               boost::asio::bind_executor(_strand, [=](error_code ec, size_t DEBUG_ONLY(bytes)) {
+      |                                                   ^
+/mnt/simulations/carla/LibCarla/source/carla/streaming/detail/tcp/Client.cpp:124:51: note: add explicit ‘this’ or ‘*this’ capture

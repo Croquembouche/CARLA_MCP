@@ -1,0 +1,10 @@
+import {chromium} from '@playwright/test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const browser=await chromium.launch({headless:true,executablePath:'/home/william/.cache/ms-playwright/chromium-1217/chrome-linux64/chrome',args:['--no-sandbox']});const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+try{
+ await page.goto('http://127.0.0.1:8095');await page.waitForFunction(()=>document.querySelector('#actor-count').textContent==='28');
+ const dismiss=page.getByRole('button',{name:'Continue to scene',exact:true});if(await dismiss.isVisible())await dismiss.click();await page.locator('nav [data-panel="scenario"]').click();await page.locator('#parking-section > summary').click();
+ assert.ok((await page.locator('#parking-count').textContent()).startsWith('41 estimated'));
+ assert.equal(await page.locator('#parking-bay option[value="P019"]').count(),0);await page.locator('#parking-bay').selectOption('P020');assert.ok((await page.locator('#parking-detail').textContent()).includes('5.5 × 2.5'));
+ const actual=await (await page.request.get('http://127.0.0.1:8095/api/map')).json();assert.deepEqual(actual.parking_spaces,JSON.parse(fs.readFileSync('data/parking-audit/corrected-bays.json')));await page.screenshot({path:'data/parking-audit/opendrive-ui.png',fullPage:true});
+ await page.locator('#open-top-down').click();await page.waitForFunction(()=>document.querySelector('#three canvas')&&document.querySelector('#top-down').getAttribute('aria-pressed')==='true');await page.waitForTimeout(8000);await page.screenshot({path:'data/parking-audit/scene3d-ui.png',fullPage:true});assert.deepEqual(errors,[]);fs.writeFileSync('data/parking-audit/ui-verification.json',JSON.stringify({count:41,excluded:'P019',selected:'P020',apiMatches:true,errors},null,2));console.log('PASS: 41 bays served; P019 excluded; P020 corrected dimensions; OpenDRIVE and top-down 3D rendered; no page errors.');
+}finally{await browser.close()}

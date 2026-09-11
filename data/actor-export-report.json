@@ -1,0 +1,7430 @@
+{
+  "models": {
+    "vehicle.ambulance.ford": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/Ambulance/BP_Ambulance.BP_Ambulance_C",
+      "parts": [
+        {
+          "file": "c262df96dd5c898516c6.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/SK_Ambulance.SK_Ambulance",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9d6b8906801f46e6b847.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Emissive/SM_Ambulance_Emissive.SM_Ambulance_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d520a9fef5a243442dfa.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Doors/SM_Ambulance_Door_FR.SM_Ambulance_Door_FR",
+          "position": [
+            1.763927001953125,
+            1.20515869140625,
+            0.8835279083251953
+          ],
+          "quaternion": [
+            1.917379017298929e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3f13b6c893205ac05ae7.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FR_Glass_Ext2.SM_Ambulance_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3dac5e274e1ac6a77de7.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FR_Glass_Int1.SM_Ambulance_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3fb13bae3045adaf52a2.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FR_Glass_Int2.SM_Ambulance_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e5651ff1e270e4a4181e.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FR_Glass_Ext1.SM_Ambulance_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "6deaf7cb6e1ce45d330e.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FR_Glass_Blinker.SM_Ambulance_Door_FR_Glass_Blinker",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1d881eff22c65abb0cd7.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Doors/SM_Ambulance_Door_FL.SM_Ambulance_Door_FL",
+          "position": [
+            1.763927001953125,
+            1.20515869140625,
+            -0.8815718841552734
+          ],
+          "quaternion": [
+            1.917379017298929e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "475cff7325c28ce26c8f.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FL_Glass_Ext2.SM_Ambulance_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "cc2fb7cee460777bf7ed.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FL_Glass_Int1.SM_Ambulance_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c801a7147a2326964780.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FL_Glass_Int2.SM_Ambulance_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "b33b7f5ed07f817d4ac5.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FL_Glass_Ext1.SM_Ambulance_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ef3b666726154f232294.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Door_FL_Glass_Blinker.SM_Ambulance_Door_FL_Glass_Blinker",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.1232336964774e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "2bea264284375602a53a.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Glass_Ext1.SM_Ambulance_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f737e200ed2ab227c47d.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Glass_Ext2.SM_Ambulance_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c2be428f6292a4657495.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Glass_Int1.SM_Ambulance_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "2db92773fe74dd9828b6.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Meshes/Glass/SM_Ambulance_Glass_Int2.SM_Ambulance_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "6946d5ee7198a54b792e.glb",
+          "mesh": "/Game/Carla/Static/Truck/Ambulance/Materials/SM_Ambulance_ExtraPieces.SM_Ambulance_ExtraPieces",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1195219e16928ecb9306.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/SM_MercedesSprinter_PlagueDoll.SM_MercedesSprinter_PlagueDoll",
+          "position": [
+            1.4887483050458947,
+            0.8031918160467066,
+            0.05261468603428408
+          ],
+          "quaternion": [
+            0.17298739156448453,
+            0.9810602622980672,
+            0.08583165264070511,
+            0.015134447605668042
+          ],
+          "scale": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0043": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroF02_B_G2.BP_EuroF02_B_G2_C",
+      "parts": [
+        {
+          "file": "da59c9dbaef6343226f0.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroF02_G2/SK_EuroF02_B_G2.SK_EuroF02_B_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.lincoln.mkz": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/LincolnMKZ/BP_LincolnMKZ.BP_LincolnMKZ_C",
+      "parts": [
+        {
+          "file": "dc5929aff70f26737d93.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/SK_LincolnMKZ.SK_LincolnMKZ",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "5ab1e5857191f9886773.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Emissive/SM_LincolnMKZ_Emissive.SM_LincolnMKZ_Emissive",
+          "position": [
+            3.0517578125e-07,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "41632d754842a651e4cb.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Doors/SM_LincolnMKZ_Door_RL.SM_LincolnMKZ_Door_RL",
+          "position": [
+            -0.1595377254486084,
+            0.9042851257324219,
+            -0.8969478418897279
+          ],
+          "quaternion": [
+            -6.123234262925839e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "dab939d74bd12a502df6.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Glass/SM_LincolnMKZ_Door_RL_Glass_Ext1.SM_LincolnMKZ_Door_RL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.123234262925839e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e44e6c59f72cc61fd3f3.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Doors/SM_LincolnMKZ_Door_RR.SM_LincolnMKZ_Door_RR",
+          "position": [
+            -0.15953275680541992,
+            0.8814220428466797,
+            0.8950441167284362
+          ],
+          "quaternion": [
+            -6.123234262925839e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ef56c63e96eaf67122d5.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Glass/SM_LincolnMKZ_Door_RR_Glass_Ext1.SM_LincolnMKZ_Door_RR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.123234262925839e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "09b7a750c5256766a18f.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Doors/SM_LincolnMKZ_Door_FL.SM_LincolnMKZ_Door_FL",
+          "position": [
+            0.9595306396484375,
+            0.8739900207519531,
+            -0.8741020777295716
+          ],
+          "quaternion": [
+            -6.123234262925839e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "849ebaa36cfc74b35f38.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Glass/SM_LincolnMKZ_Door_FL_Glass_Ext1.SM_LincolnMKZ_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.123234262925839e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e5e866650c4c03498875.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Doors/SM_LincolnMKZ_Door_FR.SM_LincolnMKZ_Door_FR",
+          "position": [
+            0.9595306396484375,
+            0.8739890289306641,
+            0.8802096745897643
+          ],
+          "quaternion": [
+            -6.123234262925839e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "deb9bd768b2aaa62eef1.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Glass/SM_LincolnMKZ_Door_FR_Glass_Ext1.SM_LincolnMKZ_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -6.123234262925839e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f1b1b1a4457ac3d6118a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Meshes/Glass/SM_LincolnMKZ_Glass_Ext1.SM_LincolnMKZ_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.mini.cooper": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/MiniCooper/BP_MiniCooper.BP_MiniCooper_C",
+      "parts": [
+        {
+          "file": "bd167ba19363bf0bbd36.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/SK_MiniCooper.SK_MiniCooper",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "756a6bc6699b81ff60c5.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Doors/SM_MiniCooper_Door_FL.SM_MiniCooper_Door_FL",
+          "position": [
+            0.7418507385253906,
+            0.88,
+            -1.0175839233398438
+          ],
+          "quaternion": [
+            4.978995652453481e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d5c0070a1a0ef600f1b8.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Door_FL_Glass_Ext2.SM_MiniCooper_Door_FL_Glass_Ext2",
+          "position": [
+            -0.01291351318359375,
+            0.005117797851562642,
+            0.002069854736328267
+          ],
+          "quaternion": [
+            -3.0616170613228474e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "bee2e3cfdf99d473603d.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Door_FL_Glass_Int1.SM_MiniCooper_Door_FL_Glass_Int1",
+          "position": [
+            -0.01291351318359375,
+            0.005117797851562642,
+            0.002069854736328267
+          ],
+          "quaternion": [
+            -3.0616170613228474e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "b6ecd329023ce09170aa.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Door_FL_Glass_Ext1.SM_MiniCooper_Door_FL_Glass_Ext1",
+          "position": [
+            -0.01291351318359375,
+            0.005117797851562642,
+            0.002069854736328267
+          ],
+          "quaternion": [
+            -3.0616170613228474e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3bd8f407d34e7b0a04e0.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Door_FL_Glass_Int2.SM_MiniCooper_Door_FL_Glass_Int2",
+          "position": [
+            -0.01291351318359375,
+            0.005117797851562642,
+            0.002069854736328267
+          ],
+          "quaternion": [
+            -3.0616170613228474e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "22757042b0030327ed81.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Doors/SM_MiniCooper_Door_FR.SM_MiniCooper_Door_FR",
+          "position": [
+            0.7419342041015625,
+            0.8759376525878906,
+            1.017583999633789
+          ],
+          "quaternion": [
+            4.978995652453481e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d4969d1b7cba79cf6bd9.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Door_FR_Glass_Ext2.SM_MiniCooper_Door_FR_Glass_Ext2",
+          "position": [
+            -0.012830047607421876,
+            0.001055450439452983,
+            -0.0020697784423826704
+          ],
+          "quaternion": [
+            -3.0616170613228474e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7b752f340c0d4f945d1e.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Door_FR_Glass_Int1.SM_MiniCooper_Door_FR_Glass_Int1",
+          "position": [
+            -0.012830047607421876,
+            0.001055450439452983,
+            -0.0020697784423826704
+          ],
+          "quaternion": [
+            -3.0616170613228474e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1ecbdf61f2f6d1879e72.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Door_FR_Glass_Int2.SM_MiniCooper_Door_FR_Glass_Int2",
+          "position": [
+            -0.012830047607421876,
+            0.001055450439452983,
+            -0.0020697784423826704
+          ],
+          "quaternion": [
+            -3.0616170613228474e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0bb0e3d62f8e7c0c59b6.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Door_FR_Glass_Ext1.SM_MiniCooper_Door_FR_Glass_Ext1",
+          "position": [
+            -0.012830047607421876,
+            0.001055450439452983,
+            -0.0020697784423826704
+          ],
+          "quaternion": [
+            -3.0616170613228474e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e1922330a38d1e4696e8.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Emissive/SM_MiniCooper_Emissive.SM_MiniCooper_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "a1174edffaed78d10caa.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Glass_Ext1.SM_MiniCooper_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "b3b28c6ab65ec95a3c84.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Glass_Ext2.SM_MiniCooper_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d0e3eb670fc68746399f.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Glass_Int1.SM_MiniCooper_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "2e05b8065a54d6b88a8f.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Meshes/Glass/SM_MiniCooper_Glass_Int2.SM_MiniCooper_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.dodge.charger": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/DodgeCharger/BP_DodgeCharger.BP_DodgeCharger_C",
+      "parts": [
+        {
+          "file": "1be1134d8b57e11f7554.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/SK_DodgeCharger.SK_DodgeCharger",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "07b821e5f4ca1e67a660.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Emissive/SM_DodgeCharger_Emissive.SM_DodgeCharger_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "152eb693f7d714606c2f.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Doors/SM_DodgeCharger_Door_FL.SM_DodgeCharger_Door_FL",
+          "position": [
+            0.9707093811035157,
+            0.741126708984375,
+            -0.9334677124023437
+          ],
+          "quaternion": [
+            4.978995321581236e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7a9982ece604f371b07f.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_FL_Glass_Ext1.SM_DodgeCharger_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "66d301b9033583fdfd87.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_FL_Glass_Ext2.SM_DodgeCharger_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "02518506761659b1d383.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_FL_Glass_Int1.SM_DodgeCharger_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9d3ff3f28aea384778f7.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_FL_Glass_Int2.SM_DodgeCharger_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "fc24b0373d8257371d8d.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Doors/SM_DodgeCharger_Door_FR.SM_DodgeCharger_Door_FR",
+          "position": [
+            0.9707093811035157,
+            0.741126708984375,
+            0.9334677124023437
+          ],
+          "quaternion": [
+            4.978995321581236e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "896d523a6a1ff00ea89f.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_FR_Glass_Int1.SM_DodgeCharger_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8103543dc6daba721630.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_FR_Glass_Ext2.SM_DodgeCharger_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0766cfa5f187933300d8.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_FR_Glass_Ext1.SM_DodgeCharger_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9025dd474eb97a4bede3.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_FR_Glass_Int2.SM_DodgeCharger_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "657e92d56d8d18f798d2.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Doors/SM_DodgeCharger_Door_RL.SM_DodgeCharger_Door_RL",
+          "position": [
+            -0.20009182739257814,
+            0.7832159423828124,
+            -0.902298583984375
+          ],
+          "quaternion": [
+            4.978995321581236e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4b3b0c6d68e5f22a2e28.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_RL_Glass_Ext1.SM_DodgeCharger_Door_RL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "27ba2656f9ec21fcf4d5.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_RL_Glass_Ext2.SM_DodgeCharger_Door_RL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "08b32f0e68e5b0dcba65.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_RL_Glass_Int1.SM_DodgeCharger_Door_RL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "84acca76d9d4d4a6a0fc.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_RL_Glass_Int2.SM_DodgeCharger_Door_RL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "431da689be7c00408cba.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Doors/SM_DodgeCharger_Door_RR.SM_DodgeCharger_Door_RR",
+          "position": [
+            -0.20209182739257814,
+            0.7832159423828124,
+            0.902298583984375
+          ],
+          "quaternion": [
+            4.978995321581236e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0de331e1bffa747796b0.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_RR_Glass_Ext1.SM_DodgeCharger_Door_RR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "73eeb9baf7c13e9a7f9e.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_RR_Glass_Ext2.SM_DodgeCharger_Door_RR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7dd5e473250dd1c23787.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_RR_Glass_Int1.SM_DodgeCharger_Door_RR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "857acdb287ea40d9903c.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Door_RR_Glass_Int2.SM_DodgeCharger_Door_RR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "afb097c92b9ae2392428.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Glass_Ext1.SM_DodgeCharger_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d44051c03e672d048336.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Glass_Ext2.SM_DodgeCharger_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7c8b77a2d9847d68e421.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Glass_Int1.SM_DodgeCharger_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "46ac770cede0f0d8d134.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Charger/Meshes/Glass/SM_DodgeCharger_Glass_Int2.SM_DodgeCharger_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.dodgecop.charger": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/DodgeChargerCop/BP_DodgeChargerCop.BP_DodgeChargerCop_C",
+      "parts": [
+        {
+          "file": "b97562b4fa78d3957bb6.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/SK_DodgeChargerCop.SK_DodgeChargerCop",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "23cca9d1080e9accab9a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Emissive/SM_DodgeChargerCop_Emissive.SM_DodgeChargerCop_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f230b7f346ad14bb86ac.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Doors/SM_DodgeChargerCop_Door_FL.SM_DodgeChargerCop_Door_FL",
+          "position": [
+            0.9668634033203125,
+            0.808001708984375,
+            -0.9315460205078125
+          ],
+          "quaternion": [
+            4.978995652453481e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7d7ee21bde8692273197.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_FL_Glass_Ext2.SM_DodgeChargerCop_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "2e236dd06fdf7d167fb3.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_FL_Glass_Int1.SM_DodgeChargerCop_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7ac3e9ffb05bba226422.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_FL_Glass_Ext1.SM_DodgeChargerCop_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1a641abc4061821b85b0.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_FL_Glass_Int2.SM_DodgeChargerCop_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e60851b5b0733934bb07.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Doors/SM_DodgeChargerCop_Door_FR.SM_DodgeChargerCop_Door_FR",
+          "position": [
+            0.9668634033203125,
+            0.808001708984375,
+            0.9297549438476562
+          ],
+          "quaternion": [
+            4.978995652453481e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "5d97696714731961cbb0.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_FR_Glass_Int2.SM_DodgeChargerCop_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "60e1b5f0b573c90b202e.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_FR_Glass_Ext1.SM_DodgeChargerCop_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "665ee0c06b535451d6aa.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_FR_Glass_Ext2.SM_DodgeChargerCop_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "23490307df0d8f5f1347.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_FR_Glass_Int1.SM_DodgeChargerCop_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f0ab568dd2168b4edf8d.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Doors/SM_DodgeChargerCop_Door_RL.SM_DodgeChargerCop_Door_RL",
+          "position": [
+            -0.2017628288269043,
+            0.7829026794433593,
+            -0.9022786712646484
+          ],
+          "quaternion": [
+            4.978995652453481e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ba139b5e023a17fbc763.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_RL_Glass_Int1.SM_DodgeChargerCop_Door_RL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "dfa2fdaa38415063b2d3.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_RL_Glass_Ext2.SM_DodgeChargerCop_Door_RL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "b7710b7ff126edc7c7fc.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_RL_Glass_Ext1.SM_DodgeChargerCop_Door_RL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8fb92db09518d9b3ff2d.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_RL_Glass_Int2.SM_DodgeChargerCop_Door_RL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "5b2e7ac98d545bc4fdb6.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Doors/SM_DodgeChargerCop_Door_RR.SM_DodgeChargerCop_Door_RR",
+          "position": [
+            -0.2017628288269043,
+            0.7829026794433593,
+            0.9022786712646484
+          ],
+          "quaternion": [
+            4.978995652453481e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "56346f1f354c6a72b6b5.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_RR_Glass_Ext1.SM_DodgeChargerCop_Door_RR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0c2db0b49f88345200fe.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_RR_Glass_Int1.SM_DodgeChargerCop_Door_RR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0c2db0b49f88345200fe.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Door_RR_Glass_Int1.SM_DodgeChargerCop_Door_RR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c30b1a35c810dd3dbc7a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Glass_Ext1.SM_DodgeChargerCop_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "71f349dd0e9f56aaf546.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Glass_Ext2.SM_DodgeChargerCop_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "19a808189c6cfcff1fb6.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Glass_Int1.SM_DodgeChargerCop_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "07f3d3c5cc03a220b2e9.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/ChargerCop/Meshes/Glass/SM_DodgeChargerCop_Glass_Int2.SM_DodgeChargerCop_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.nissan.patrol": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/NissanPatrol/BP_NissanPatrol.BP_NissanPatrol_C",
+      "parts": [
+        {
+          "file": "2e3541575f6cf26d1a20.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/SK_NissanPatrol.SK_NissanPatrol",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1498aa9e4cdfea735721.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Doors/SM_NissanPatrol_Door_FR.SM_NissanPatrol_Door_FR",
+          "position": [
+            1.1422794342041016,
+            1.1320663452148438,
+            1.0517074584960937
+          ],
+          "quaternion": [
+            4.978995983325726e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "97c412adb47629bcf3b2.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_FR_Glass_Ext2.SM_NissanPatrol_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c04382b9d1f3a4bbdbbc.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_FR_Glass_Int1.SM_NissanPatrol_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "2d812c8b65f4b9db975a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_FR_Glass_Int2.SM_NissanPatrol_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "26b0ea54e4fe3d74104a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_FR_Glass_Ext1.SM_NissanPatrol_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "15629e83228163287cb9.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Doors/SM_NissanPatrol_Door_FL.SM_NissanPatrol_Door_FL",
+          "position": [
+            1.1422794342041016,
+            1.1320663452148438,
+            -1.0517074584960937
+          ],
+          "quaternion": [
+            4.978995983325726e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9144c2d26db61a66acbe.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_FL_Glass_Ext2.SM_NissanPatrol_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e7cd29b7ebca51a3c84a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_FL_Glass_Int1.SM_NissanPatrol_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "692ad2715b0f91fa1ad8.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_FL_Glass_Int2.SM_NissanPatrol_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8ea5c1e6df5fba9a4347.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_FL_Glass_Ext1.SM_NissanPatrol_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3c96249d43bc70193246.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Emissive/SM_NissanPatrol_Door_FL_Emissive.SM_NissanPatrol_Door_FL_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d1605a5a56414f9706de.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Emissive/SM_NissanPatrol_Door_FR_Emissive.SM_NissanPatrol_Door_FR_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "bb255b1717bfafd19694.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Emissive/SM_NissanPatrol_Emissive.SM_NissanPatrol_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "fa513d93ca7296055cd1.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Glass_Ext1.SM_NissanPatrol_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "23f40b80ea2853ef33b0.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Glass_Ext2.SM_NissanPatrol_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ad66954fe48edc6f0401.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Glass_Int1.SM_NissanPatrol_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e571ef72e57cd8a3bd09.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Glass_Int2.SM_NissanPatrol_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e61467d130baff52b595.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Doors/SM_NissanPatrol_Door_RR.SM_NissanPatrol_Door_RR",
+          "position": [
+            -0.06611098289489746,
+            1.1312960052490235,
+            1.0545619964599608
+          ],
+          "quaternion": [
+            4.978995983325726e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ecccd9e0302c56443b3e.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_RR_Glass_Int1.SM_NissanPatrol_Door_RR_Glass_Int1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.0616152520992225e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d385fe2f520d9833ab5a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_RR_Glass_Ext2.SM_NissanPatrol_Door_RR_Glass_Ext2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.0616152520992225e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ff934110f1816364b231.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_RR_Glass_Ext1.SM_NissanPatrol_Door_RR_Glass_Ext1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.0616152520992225e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "cd6ba22384ebfdc213fe.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_RR_Glass_Int2.SM_NissanPatrol_Door_RR_Glass_Int2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.0616152520992225e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "411e09ae929356309e91.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Doors/SM_NissanPatrol_Door_RL.SM_NissanPatrol_Door_RL",
+          "position": [
+            -0.06611105918884277,
+            1.1312960052490235,
+            -1.0545619964599608
+          ],
+          "quaternion": [
+            4.978995983325726e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "be33604679cc54b5318d.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_RL_Glass_Int1.SM_NissanPatrol_Door_RL_Glass_Int1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4fbf82190a539a83c7f2.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_RL_Glass_Ext2.SM_NissanPatrol_Door_RL_Glass_Ext2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c62126ac9873c43aede8.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_RL_Glass_Ext1.SM_NissanPatrol_Door_RL_Glass_Ext1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "157503dd34c09a27c5f6.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Meshes/Glass/SM_NissanPatrol_Door_RL_Glass_Int2.SM_NissanPatrol_Door_RL_Glass_Int2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            -3.061615991274913e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.sprinter.mercedes": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/MercedesSprinter/BP_MercedesSprinter.BP_MercedesSprinter_C",
+      "parts": [
+        {
+          "file": "734def7669638ad37b4a.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/SK_MercedesSprinter.SK_MercedesSprinter",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "52da85b81b1ee8f8045d.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Emissive/SM_MercedesSprinter_Emissive.SM_MercedesSprinter_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ca0a675339b0b61386b9.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Doors/SM_MercedesSprinter_Door_FR.SM_MercedesSprinter_Door_FR",
+          "position": [
+            1.6826495361328124,
+            1.077133560180664,
+            0.9572179412841797
+          ],
+          "quaternion": [
+            1.917378686426684e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "66c4ee220ca4a87bd15d.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Door_FR_Glass_Int2.SM_MercedesSprinter_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -3.0616167348680885e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0b553f823e25f5677dea.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Door_FR_Glass_Ext1.SM_MercedesSprinter_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -3.0616167348680885e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "5cecfe4825d48f0391e8.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Door_FR_Glass_Ext2.SM_MercedesSprinter_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -3.0616167348680885e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ab3615eaf2b580f4c125.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Door_FR_Glass_Int1.SM_MercedesSprinter_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -3.0616167348680885e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "44ade4215535cd511fe8.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Doors/SM_MercedesSprinter_Door_FL.SM_MercedesSprinter_Door_FL",
+          "position": [
+            1.6826495361328124,
+            1.077133560180664,
+            -0.956380615234375
+          ],
+          "quaternion": [
+            1.917378686426684e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7eef606c2a0d447359d3.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Door_FL_Glass_Int1.SM_MercedesSprinter_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -3.0616167348680885e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4925de8a2cf821d09ca4.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Door_FL_Glass_Int2.SM_MercedesSprinter_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -3.0616167348680885e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "87589bfe4beee1421826.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Door_FL_Glass_Ext1.SM_MercedesSprinter_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -3.0616167348680885e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1292b86365564e7c5c55.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Door_FL_Glass_Ext2.SM_MercedesSprinter_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -3.0616167348680885e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "cd7cf2887ef79b7dd59c.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Glass_Int2.SM_MercedesSprinter_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "6f50627da91ddef4762a.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Glass_Int1.SM_MercedesSprinter_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4ae0317ba615e4816839.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Glass_Ext1.SM_MercedesSprinter_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3f33205f7a94a1901cca.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/Glasses/SM_MercedesSprinter_Glass_Ext2.SM_MercedesSprinter_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1195219e16928ecb9306.glb",
+          "mesh": "/Game/Carla/Static/Truck/MercedesSprinter/Meshes/SM_MercedesSprinter_PlagueDoll.SM_MercedesSprinter_PlagueDoll",
+          "position": [
+            0.8364737643370889,
+            0.9947339089519217,
+            0.13724384580140822
+          ],
+          "quaternion": [
+            -0.0,
+            0.17364817633547588,
+            -0.0,
+            0.9848077532469794
+          ],
+          "scale": [
+            2.25,
+            2.25,
+            2.25
+          ]
+        }
+      ]
+    },
+    "vehicle.fuso.mitsubishi": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/MitsubishiFusoRosa/BP_MitsubishiFusoRosa.BP_MitsubishiFusoRosa_C",
+      "parts": [
+        {
+          "file": "444455f9435a8e56f357.glb",
+          "mesh": "/Game/Carla/Static/Bus/MitsubishiFusoRosa/SK_MitsubishiFusoRosa.SK_MitsubishiFusoRosa",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e136ac2db02da4c24875.glb",
+          "mesh": "/Game/Carla/Static/Bus/MitsubishiFusoRosa/Meshes/Glass/SM_MitsubishiFusoRosa_Glass_Ext1.SM_MitsubishiFusoRosa_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "afce6f2a0d07ad1dc7a2.glb",
+          "mesh": "/Game/Carla/Static/Bus/MitsubishiFusoRosa/Meshes/Glass/SM_MitsubishiFusoRosa_Glass_Ext2.SM_MitsubishiFusoRosa_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7e296defadf754814ce0.glb",
+          "mesh": "/Game/Carla/Static/Bus/MitsubishiFusoRosa/Meshes/Glass/SM_MitsubishiFusoRosa_Glass_Int1.SM_MitsubishiFusoRosa_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "6cd0893d139c5520d3ca.glb",
+          "mesh": "/Game/Carla/Static/Bus/MitsubishiFusoRosa/Meshes/Glass/SM_MitsubishiFusoRosa_Glass_Int2.SM_MitsubishiFusoRosa_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c2da609a6e472360aae3.glb",
+          "mesh": "/Game/Carla/Static/Bus/MitsubishiFusoRosa/Meshes/Emissive/SM_MitsubishiFusoRosa_Emissive.SM_MitsubishiFusoRosa_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.ue4.ford.mustang": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/Mustang/BP_Mustang.BP_Mustang_C",
+      "parts": [
+        {
+          "file": "77de937b5a5246027bc2.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/Mustang/SK_Mustang.SK_Mustang",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4e3b162b3fccd019e39e.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/Mustang/Meshes/Emissive/SM_Mustang_Emissive.SM_Mustang_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.ue4.ford.crown": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/FordCrown01/BP_FordCrown01.BP_FordCrown01_C",
+      "parts": [
+        {
+          "file": "ace63c3adb06ea119930.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown01/SK_FordCrown01.SK_FordCrown01",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f6f66cce81dc6e79c1ee.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Glass_Ext1.SM_FordCrown02_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "51bd6efacbc925e24f10.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Glass_Ext2.SM_FordCrown02_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4aabb5d2500d5bdd422c.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Glass_Int1.SM_FordCrown02_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ee5c3f38cde18d6f1b45.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Glass_Int2.SM_FordCrown02_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "35881472acf41719c07a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown01/Meshes/Emissive/SM_FordCrown01_Emissive.SM_FordCrown01_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e5b5dcffa1522fea2e0d.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown01/Meshes/Doors/SM_FordCrown01_Door_RR.SM_FordCrown01_Door_RR",
+          "position": [
+            0.02290496826171875,
+            0.8739890289306641,
+            0.8297889709472657
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8daae70c56ff6ee1e848.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RR_Glass_Ext2.SM_FordCrown02_Door_RR_Glass_Ext2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "98247cd1e86209f361f6.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RR_Glass_Int1.SM_FordCrown02_Door_RR_Glass_Int1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d686e02036ae85acc2a0.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RR_Glass_Int2.SM_FordCrown02_Door_RR_Glass_Int2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "284397cbcf4c47fe6dfa.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RR_Glass_Ext1.SM_FordCrown02_Door_RR_Glass_Ext1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8e8baf7c9147ca44c05b.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown01/Meshes/Doors/SM_FordCrown01_Door_FR.SM_FordCrown01_Door_FR",
+          "position": [
+            1.1372429656982421,
+            0.8717610168457032,
+            0.8346340179443359
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3f2def74c1681ae3a29a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FR_Glass_Ext2.SM_FordCrown02_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ba289c0094fa264900a3.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FR_Glass_Int1.SM_FordCrown02_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "63c4132e28d110ff0577.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FR_Glass_Int2.SM_FordCrown02_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7cf879dd4b3fbee98e3b.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FR_Glass_Ext1.SM_FordCrown02_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "837c4212362d3eef2a94.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown01/Meshes/Doors/SM_FordCrown01_Door_RL.SM_FordCrown01_Door_RL",
+          "position": [
+            0.022899999618530273,
+            0.8739900207519531,
+            -0.8297899627685547
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e8eef952f2b4abef18f7.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RL_Glass_Ext2.SM_FordCrown02_Door_RL_Glass_Ext2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.8793636971584078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "789754bf8e590be9e6c5.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RL_Glass_Int1.SM_FordCrown02_Door_RL_Glass_Int1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.8793636971584078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8fda37aefa665588e07b.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RL_Glass_Int2.SM_FordCrown02_Door_RL_Glass_Int2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.8793636971584078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d4d4a79e112939f76914.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RL_Glass_Ext1.SM_FordCrown02_Door_RL_Glass_Ext1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.8793636971584078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7ad3c2afa25f2ab362ac.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown01/Meshes/Doors/SM_FordCrown01_Door_FL.SM_FordCrown01_Door_FL",
+          "position": [
+            1.1372429656982421,
+            0.8717610168457032,
+            -0.8346340179443359
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "160ecb800127f3d4e7da.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FL_Glass_Ext2.SM_FordCrown02_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "a6a149d85bc8f665b356.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FL_Glass_Int1.SM_FordCrown02_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0335ba2cccd7a3fce176.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FL_Glass_Int2.SM_FordCrown02_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7b7d799404f5472cc3ec.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FL_Glass_Ext1.SM_FordCrown02_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            1.1401880065984078e-23,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.ue4.bmw.grantourer": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/BmwGrandTourer/BP_BmwGrandTourer.BP_BmwGrandTourer_C",
+      "parts": [
+        {
+          "file": "5796b8238ee194e603a9.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/BmwGranTourer/SK_BMWGranTourer.SK_BMWGranTourer",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.ue4.audi.tt": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/AudiTT/BP_AudiTT.BP_AudiTT_C",
+      "parts": [
+        {
+          "file": "f2db3478b5161359e486.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/AudiTT/SK_AudiTT.SK_AudiTT",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "a0805b128c711e2cf818.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/AudiTT/Meshes/Emissive/SM_AudiTT_Emissive.SM_AudiTT_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.ue4.mercedes.ccc": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/MercedesCCC/BP_MercedesCCC.BP_MercedesCCC_C",
+      "parts": [
+        {
+          "file": "c6331e319bde64a8b8fc.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/SK_MercedesCCC.SK_MercedesCCC",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f687289cbbe4c2453d64.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_Glass_MercedesCCC_Ext2.SM_Glass_MercedesCCC_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "2ace046af4f654ef3e99.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_Glass_MercedesCCC_Int1.SM_Glass_MercedesCCC_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f67728a939e9565e90e4.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_Glass_MercedesCCC_Int2.SM_Glass_MercedesCCC_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d5fa912a0cf9d3d005d1.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_Glass_MercedesCCC_Ext1.SM_Glass_MercedesCCC_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "26bef7c969e42dd190fc.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Emissive/SM_MercedesCCC_Emissive.SM_MercedesCCC_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "bd81dbbc702d5a17b44b.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Doors/SM_MercedesCCC_Door_FL.SM_MercedesCCC_Door_FL",
+          "position": [
+            0.8790499877929687,
+            0.8823140716552734,
+            -0.8376000213623047
+          ],
+          "quaternion": [
+            4.978995652453481e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "908ec42c194af7279d74.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_MercedesCCC_Door_FL_Glass_Ext2.SM_MercedesCCC_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            2.311587086603302e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "289926cb5d985d4ed60f.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_MercedesCCC_Door_FL_Glass_Ext1.SM_MercedesCCC_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            2.311587086603302e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d9262da0844a778ad251.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_MercedesCCC_Door_FL_Glass_Int2.SM_MercedesCCC_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            2.311587086603302e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0fff52a4f6bce86f0169.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_MercedesCCC_Door_FL_Glass_Int1.SM_MercedesCCC_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            2.311587086603302e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ba6116034647361fdc3f.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Doors/SM_MercedesCCC_Door_FR.SM_MercedesCCC_Door_FR",
+          "position": [
+            0.8790461730957031,
+            0.8823140716552734,
+            0.8375957489013672
+          ],
+          "quaternion": [
+            4.978995652453481e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "813d83e114bf14d8aaf7.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_MercedesCCC_Door_FR_Glass_Int2.SM_MercedesCCC_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            2.311587086603302e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1eed195c3e8fa081b521.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_MercedesCCC_Door_FR_Glass_Ext1.SM_MercedesCCC_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            2.311587086603302e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c5ea0f499292666b209d.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_MercedesCCC_Door_FR_Glass_Ext2.SM_MercedesCCC_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            2.311587086603302e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7752b208bc64cddc2692.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/MercedesCCC/Meshes/Glass/SM_MercedesCCC_Door_FR_Glass_Int1.SM_MercedesCCC_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            2.311587086603302e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.ue4.chevrolet.impala": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/ChevroletImpala/BP_ChevroletImpala.BP_ChevroletImpala_C",
+      "parts": [
+        {
+          "file": "e008ffc54be78f34ba74.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/ChevroletImpala/SK_ChevroletImpala.SK_ChevroletImpala",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "16e115c83adda31316f4.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/ChevroletImpala/Meshes/Emissive/SM_ChevroletImpala_Emissive.SM_ChevroletImpala_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.firetruck.actors": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/ActrosFiretruck/BP_ActrosFiretruck.BP_ActrosFiretruck_C",
+      "parts": [
+        {
+          "file": "ed184e46e20c2c748498.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/SK_ActrosFiretruck.SK_ActrosFiretruck",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "90cc84e24399bdefe6ec.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Emissive/SM_ActrosFiretruck_Emissive.SM_ActrosFiretruck_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "2e17a34387e606e1266b.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Doors/SM_ActrosFiretruck_Door_FR.SM_ActrosFiretruck_Door_FR",
+          "position": [
+            3.6172634887695314,
+            1.8498629760742187,
+            1.352239990234375
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "20942711b2272ed545e8.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Door_FR_Glass_Ext2.SM_ActrosFiretruck_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            -2.842170943040401e-16,
+            2.842170943040401e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4dcdeab84c838d04c3a5.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Door_FR_Glass_Int1.SM_ActrosFiretruck_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            -2.842170943040401e-16,
+            2.842170943040401e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "a7e504030bb6b2e16fc9.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Door_FR_Glass_Int2.SM_ActrosFiretruck_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            -2.842170943040401e-16,
+            2.842170943040401e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "a4c46ff5a6b07daa4829.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Door_FR_Glass_Ext1.SM_ActrosFiretruck_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            -2.842170943040401e-16,
+            2.842170943040401e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "2e08244dcd750ada668d.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Doors/SM_ActrosFiretruck_Door_FL.SM_ActrosFiretruck_Door_FL",
+          "position": [
+            3.6172634887695314,
+            1.8498629760742187,
+            -1.3522406005859375
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3f2b37864bf42539bfa4.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Door_FL_Glass_Ext2.SM_ActrosFiretruck_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            2.842170943040401e-16,
+            2.842170943040401e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c5c04661802090d18295.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Door_FL_Glass_Int1.SM_ActrosFiretruck_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            2.842170943040401e-16,
+            2.842170943040401e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "54d5abbc665879679f4b.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Door_FL_Glass_Int2.SM_ActrosFiretruck_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            2.842170943040401e-16,
+            2.842170943040401e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e1176499818542e9ecc6.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Door_FL_Glass_Ext1.SM_ActrosFiretruck_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            2.842170943040401e-16,
+            2.842170943040401e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "a536e5caeffc65880fd7.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Glass_Ext1.SM_ActrosFiretruck_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9a5cba61ffe2610f178b.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Glass_Int1.SM_ActrosFiretruck_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "cfb7938dc48bbaf806d2.glb",
+          "mesh": "/Game/Carla/Static/Truck/ActrosFiretruck/Meshes/Glasses/SM_ActrosFiretruck_Glass_Int2.SM_ActrosFiretruck_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.carlacola.actors": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/CarlaCola/BP_CarlaCola.BP_CarlaCola_C",
+      "parts": [
+        {
+          "file": "4030e59b9dbd6ab97114.glb",
+          "mesh": "/Game/Carla/Static/Truck/CarlaCola/SK_CarlaCola.SK_CarlaCola",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "40439f2eac4da1072618.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Glass_Ext1.SM_EuropeanHGV_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "cfe2bbae896bd85aebdb.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Glass_Ext2.SM_EuropeanHGV_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1ff6ecdb2ad3ea769bce.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Glass_Int1.SM_EuropeanHGV_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f769873762bc307d1d00.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Glass_Int2.SM_EuropeanHGV_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9f82862d4ebb87c336c1.glb",
+          "mesh": "/Game/Carla/Static/Truck/CarlaCola/Meshes/Doors/SM_CarlaCola_Door_FL.SM_CarlaCola_Door_FL",
+          "position": [
+            3.6172634887695314,
+            1.8498629760742187,
+            -1.3522406005859375
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d0138b284b0b5c1c125a.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FL_Glass_Ext1.SM_EuropeanHGV_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            -2.842170943040401e-16
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "52b922fd436aa087e230.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FL_Glass_Int1.SM_EuropeanHGV_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            -2.842170943040401e-16
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4152869f57a11f206962.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FL_Glass_Int2.SM_EuropeanHGV_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            -2.842170943040401e-16
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f72c94d913d7496893ce.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FL_Glass_Ext2.SM_EuropeanHGV_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            -2.842170943040401e-16
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "262987a0ecea83ac9007.glb",
+          "mesh": "/Game/Carla/Static/Truck/CarlaCola/Meshes/Doors/SM_CarlaCola_Door_FR.SM_CarlaCola_Door_FR",
+          "position": [
+            3.6172634887695314,
+            1.8498629760742187,
+            1.352239990234375
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "560da56cbf42e9921c5e.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FR_Glass_Int1.SM_EuropeanHGV_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            -2.842170943040401e-16
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "6456db4abf3923eed4f1.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FR_Glass_Int2.SM_EuropeanHGV_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            -2.842170943040401e-16
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "504528b2e4943821009f.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FR_Glass_Ext1.SM_EuropeanHGV_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            -2.842170943040401e-16
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "6cbaef65b16ddd9713a0.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FR_Glass_Ext2.SM_EuropeanHGV_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            -2.842170943040401e-16
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9a71c8b3b5f2a9139df7.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Emissive/SM_EuropeanHGV_Emissive.SM_EuropeanHGV_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            3.061616368511944e-17,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.taxi.ford": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/FordCrown02/BP_FordCrown02.BP_FordCrown02_C",
+      "parts": [
+        {
+          "file": "00e1d89ce487543aae29.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/SK_FordCrown2024.SK_FordCrown2024",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f6f66cce81dc6e79c1ee.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Glass_Ext1.SM_FordCrown02_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "51bd6efacbc925e24f10.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Glass_Ext2.SM_FordCrown02_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4aabb5d2500d5bdd422c.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Glass_Int1.SM_FordCrown02_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ee5c3f38cde18d6f1b45.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Glass_Int2.SM_FordCrown02_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "35881472acf41719c07a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown01/Meshes/Emissive/SM_FordCrown01_Emissive.SM_FordCrown01_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f1c92a820b327b90be3e.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Doors/SM_FordCrown02_Door_RR.SM_FordCrown02_Door_RR",
+          "position": [
+            0.02290496826171875,
+            0.8739890289306641,
+            0.8297889709472657
+          ],
+          "quaternion": [
+            -3.0616171314629196e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8daae70c56ff6ee1e848.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RR_Glass_Ext2.SM_FordCrown02_Door_RR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "98247cd1e86209f361f6.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RR_Glass_Int1.SM_FordCrown02_Door_RR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d686e02036ae85acc2a0.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RR_Glass_Int2.SM_FordCrown02_Door_RR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "284397cbcf4c47fe6dfa.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RR_Glass_Ext1.SM_FordCrown02_Door_RR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c390005a91b021aedbcb.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Doors/SM_FordCrown02_Door_FR.SM_FordCrown02_Door_FR",
+          "position": [
+            1.1372429656982421,
+            0.8717610168457032,
+            0.8346340179443359
+          ],
+          "quaternion": [
+            -3.0616171314629196e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "3f2def74c1681ae3a29a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FR_Glass_Ext2.SM_FordCrown02_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "ba289c0094fa264900a3.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FR_Glass_Int1.SM_FordCrown02_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "63c4132e28d110ff0577.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FR_Glass_Int2.SM_FordCrown02_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7cf879dd4b3fbee98e3b.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FR_Glass_Ext1.SM_FordCrown02_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7fb14208dd02d38b021c.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Doors/SM_FordCrown02_Door_RL.SM_FordCrown02_Door_RL",
+          "position": [
+            0.022899999618530273,
+            0.8739900207519531,
+            -0.8297899627685547
+          ],
+          "quaternion": [
+            -3.0616171314629196e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e8eef952f2b4abef18f7.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RL_Glass_Ext2.SM_FordCrown02_Door_RL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102228366887868e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "789754bf8e590be9e6c5.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RL_Glass_Int1.SM_FordCrown02_Door_RL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102228366887868e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8fda37aefa665588e07b.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RL_Glass_Int2.SM_FordCrown02_Door_RL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102228366887868e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d4d4a79e112939f76914.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_RL_Glass_Ext1.SM_FordCrown02_Door_RL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102228366887868e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "8388ac02bc9faa405353.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Doors/SM_FordCrown02_Door_FL.SM_FordCrown02_Door_FL",
+          "position": [
+            1.1372429656982421,
+            0.8717610168457032,
+            -0.8346340179443359
+          ],
+          "quaternion": [
+            -3.0616171314629196e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "160ecb800127f3d4e7da.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FL_Glass_Ext2.SM_FordCrown02_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "a6a149d85bc8f665b356.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FL_Glass_Int1.SM_FordCrown02_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "0335ba2cccd7a3fce176.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FL_Glass_Int2.SM_FordCrown02_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7b7d799404f5472cc3ec.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Meshes/Glass/SM_FordCrown02_Door_FL_Glass_Ext1.SM_FordCrown02_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102229106063559e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0015": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF01_A_G2.BP_AfroF01_A_G2_C",
+      "parts": [
+        {
+          "file": "e9212fd3e90b82abb5b3.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF01_G2/SK_AfroF01_A_G2.SK_AfroF01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0016": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF01_B_G2.BP_AfroF01_B_G2_C",
+      "parts": [
+        {
+          "file": "e9212fd3e90b82abb5b3.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF01_G2/SK_AfroF01_A_G2.SK_AfroF01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0017": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF02_A_G2.BP_AfroF02_A_G2_C",
+      "parts": [
+        {
+          "file": "7723052e8e347a2baeb7.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF02_G2/SK_AfroF02_A_G2.SK_AfroF02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0018": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF02_B_G2.BP_AfroF02_B_G2_C",
+      "parts": [
+        {
+          "file": "065878b35030bd8965c1.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF02_G2/SK_AfroF02_B_G2.SK_AfroF02_B_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0019": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF02_C_G2.BP_AfroF02_C_G2_C",
+      "parts": [
+        {
+          "file": "ee4ca8fe045c92b9dc43.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF02_G2/SK_AfroF02_C_G2.SK_AfroF02_C_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0020": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF02_Cop_G2.BP_AfroF02_Cop_G2_C",
+      "parts": [
+        {
+          "file": "e7d76d39f3aacffada70.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF02_G2/SK_AfroF02_Cop_G2.SK_AfroF02_Cop_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0021": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF02_D_G2.BP_AfroF02_D_G2_C",
+      "parts": [
+        {
+          "file": "7723052e8e347a2baeb7.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF02_G2/SK_AfroF02_A_G2.SK_AfroF02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0022": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF03_A_G2.BP_AfroF03_A_G2_C",
+      "parts": [
+        {
+          "file": "b154fba3c887c45caeec.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF03_G2/SK_AfroF03_A_G2.SK_AfroF03_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0023": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF03_B_G2.BP_AfroF03_B_G2_C",
+      "parts": [
+        {
+          "file": "b154fba3c887c45caeec.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF03_G2/SK_AfroF03_A_G2.SK_AfroF03_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0024": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroF03_C_G2.BP_AfroF03_C_G2_C",
+      "parts": [
+        {
+          "file": "b154fba3c887c45caeec.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF03_G2/SK_AfroF03_A_G2.SK_AfroF03_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0025": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroM01_A_G2.BP_AfroM01_A_G2_C",
+      "parts": [
+        {
+          "file": "74aaed712bda47e07135.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroM01_G2/SK_AfroM01_A_G2.SK_AfroM01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0026": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroM01_B_G2.BP_AfroM01_B_G2_C",
+      "parts": [
+        {
+          "file": "8b99a335174a28aa4d8c.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroM01_G2/SK_AfroM01_B_G2.SK_AfroM01_B_G2",
+          "position": [
+            0.00104428768157959,
+            -0.92,
+            7.2479248046875e-07
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0027": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroM02_A_G2.BP_AfroM02_A_G2_C",
+      "parts": [
+        {
+          "file": "9eeab967905954ec8be6.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroM02_G2/SK_AfroM02_A_G2.SK_AfroM02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0028": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AmerM01_A_G2.BP_AmerM01_A_G2_C",
+      "parts": [
+        {
+          "file": "ee399b08e7d62b79ffd0.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AmerM01_G2/SK_AmerM01_A_G2.SK_AmerM01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0029": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AmerM01_B_G2.BP_AmerM01_B_G2_C",
+      "parts": [
+        {
+          "file": "ee399b08e7d62b79ffd0.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AmerM01_G2/SK_AmerM01_A_G2.SK_AmerM01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0030": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AmerM01_C_G2.BP_AmerM01_C_G2_C",
+      "parts": [
+        {
+          "file": "ee399b08e7d62b79ffd0.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AmerM01_G2/SK_AmerM01_A_G2.SK_AmerM01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0031": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AmerM01_Cop_G2.BP_AmerM01_Cop_G2_C",
+      "parts": [
+        {
+          "file": "5db9bed23675793bc67b.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AmerM01_cop_G2/SK_AmerM01_Cop_G2.SK_AmerM01_Cop_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0032": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AsiaF01_A_G2.BP_AsiaF01_A_G2_C",
+      "parts": [
+        {
+          "file": "73a1ff8c122c2f29c2e3.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaF01_G2/SK_AsiaF01_G2.SK_AsiaF01_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0033": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AsiaF01_B_G2.BP_AsiaF01_B_G2_C",
+      "parts": [
+        {
+          "file": "73a1ff8c122c2f29c2e3.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaF01_G2/SK_AsiaF01_G2.SK_AsiaF01_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0034": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AsiaM01_A_G2.BP_AsiaM01_A_G2_C",
+      "parts": [
+        {
+          "file": "058c6a1146f5f0e96011.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaM01_G2/SK_AsiaM01_A_G2.SK_AsiaM01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0035": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AsiaM01_B_G2.BP_AsiaM01_B_G2_C",
+      "parts": [
+        {
+          "file": "d13e4f330ae5242b7fe2.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaM01_G2/SK_AsiaM01_B_G2.SK_AsiaM01_B_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0036": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AsiaM02_A_G2.BP_AsiaM02_A_G2_C",
+      "parts": [
+        {
+          "file": "14187b9364b740ce73d8.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaM02_G2/SK_AsiaM02_A_G2.SK_AsiaM02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0037": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AsiaM02_B_G2.BP_AsiaM02_B_G2_C",
+      "parts": [
+        {
+          "file": "14187b9364b740ce73d8.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaM02_G2/SK_AsiaM02_A_G2.SK_AsiaM02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0038": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AsiaM02_C_G2.BP_AsiaM02_C_G2_C",
+      "parts": [
+        {
+          "file": "14187b9364b740ce73d8.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaM02_G2/SK_AsiaM02_A_G2.SK_AsiaM02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0039": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroF01_A_G2.BP_EuroF01_A_G2_C",
+      "parts": [
+        {
+          "file": "9a774e8293e731493c77.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroF01_G2/SK_EuroF01_A_G2.SK_EuroF01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0040": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroF01_B_G2.BP_EuroF01_B_G2_C",
+      "parts": [
+        {
+          "file": "9a774e8293e731493c77.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroF01_G2/SK_EuroF01_A_G2.SK_EuroF01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0041": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroF01_C_G2.BP_EuroF01_C_G2_C",
+      "parts": [
+        {
+          "file": "9a774e8293e731493c77.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroF01_G2/SK_EuroF01_A_G2.SK_EuroF01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0042": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroF02_A_G2.BP_EuroF02_A_G2_C",
+      "parts": [
+        {
+          "file": "c5470a613181ba1eb867.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroF02_G2/SK_EuroF02_A_G2.SK_EuroF02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0044": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroF02_B_G2.BP_EuroF02_B_G2_C",
+      "parts": [
+        {
+          "file": "da59c9dbaef6343226f0.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroF02_G2/SK_EuroF02_B_G2.SK_EuroF02_B_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0045": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroM01_A_G2.BP_EuroM01_A_G2_C",
+      "parts": [
+        {
+          "file": "45f925fa98b2d349c3d8.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroM01_G2/SK_EuroM01_A_G2.SK_EuroM01_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0046": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroM01_B_G2.BP_EuroM01_B_G2_C",
+      "parts": [
+        {
+          "file": "9e72b2f4c13571434e0d.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroM01_G2/SK_EuroM01_B_G2.SK_EuroM01_B_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0047": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroM02_A_G2.BP_EuroM02_A_G2_C",
+      "parts": [
+        {
+          "file": "b124693304773600a34b.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroM02_G2/SK_EuroM02_A_G2.SK_EuroM02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0048": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroM02_B_G2.BP_EuroM02_B_G2_C",
+      "parts": [
+        {
+          "file": "b124693304773600a34b.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroM02_G2/SK_EuroM02_A_G2.SK_EuroM02_A_G2",
+          "position": [
+            0.0,
+            -0.92,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0049": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroG02_A_G2.BP_EuroG02_A_G2_C",
+      "parts": [
+        {
+          "file": "6ee6e80855e02efba654.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroG02_G2/SK_EuroG02_A_G2.SK_EuroG02_A_G2",
+          "position": [
+            3.814697265625e-08,
+            -0.53455078125,
+            0.009999998211860657
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0050": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_EuroB02_A_G2.BP_EuroB02_A_G2_C",
+      "parts": [
+        {
+          "file": "98d83b0dccc921730540.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroB02_G2/SK_EuroB02_A_G2.SK_EuroB02_A_G2",
+          "position": [
+            3.814697265625e-08,
+            -0.53455078125,
+            0.009999998211860657
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0051": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroG01_A_G3.BP_AfroG01_A_G3_C",
+      "parts": [
+        {
+          "file": "307c4414e6c3a33ecc94.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroG01_G3/SK_AfroG01_A_G3.SK_AfroG01_A_G3",
+          "position": [
+            0.0,
+            -0.9469525146484375,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ]
+        }
+      ]
+    },
+    "walker.pedestrian.0052": {
+      "blueprint": "/Game/Carla/Blueprints/Walkers/BP_AfroB01_A_G3.BP_AfroB01_A_G3_C",
+      "parts": [
+        {
+          "file": "b5d3df3fe43c8b627a2a.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroB01_G3/SK_AfroB01_A_G3.SK_AfroB01_A_G3",
+          "position": [
+            0.0,
+            -0.9469525146484375,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071080993828052,
+            -0.0,
+            0.7071054629878325
+          ],
+          "scale": [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ]
+        }
+      ]
+    },
+    "vehicle.harley.low_rider": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/2Wheeled/Harley/BP_Harley.BP_Harley_C",
+      "parts": [
+        {
+          "file": "5156daad10ef9e85e755.glb",
+          "mesh": "/Game/Carla/Static/Motorcycle/Harley/SK_Harley.SK_Harley",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9eeab967905954ec8be6.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroM02_G2/SK_AfroM02_A_G2.SK_AfroM02_A_G2",
+          "position": [
+            -1.2891296422868974,
+            0.15156901696033515,
+            1.4662742614746094e-07
+          ],
+          "quaternion": [
+            0.06162841671621931,
+            0.7044160264027586,
+            -0.061628416716219304,
+            0.7044160264027587
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "20f59e94cc2ce96e4174.glb",
+          "mesh": "/Game/Carla/Static/Motorcycle/Harley/SM_Harley_Emissive_Front.SM_Harley_Emissive_Front",
+          "position": [
+            -2.717047028014008e-05,
+            -0.0008977446716487236,
+            -0.0013329529762269832
+          ],
+          "quaternion": [
+            1.093118961570383e-06,
+            -6.526180420032834e-08,
+            -0.004500789964038077,
+            0.9999898713929559
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "bd60af8ad0d1808aacf7.glb",
+          "mesh": "/Game/Carla/Static/Motorcycle/Harley/SM_Harley_Emissive_Back.SM_Harley_Emissive_Back",
+          "position": [
+            -9.55963134765625e-05,
+            0.000880279541015625,
+            -0.0012302711606025697
+          ],
+          "quaternion": [
+            1.6139673869498993e-07,
+            -8.657995274662263e-14,
+            -5.364417735244899e-07,
+            0.9999999999998431
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.vespa.zx125": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/2Wheeled/Vespa/BP_Vespa.BP_Vespa_C",
+      "parts": [
+        {
+          "file": "2abcd86a85d8136fd940.glb",
+          "mesh": "/Game/Carla/Static/Motorcycle/Vespa/SK_Vespa.SK_Vespa",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9a774e8293e731493c77.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroF01_G2/SK_EuroF01_A_G2.SK_EuroF01_A_G2",
+          "position": [
+            -0.9604772559436009,
+            0.0761568917522193,
+            -2.1316282072803005e-16
+          ],
+          "quaternion": [
+            0.030843564597231827,
+            0.706433772212892,
+            -0.030843564597231823,
+            0.7064337722128922
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.yamaha.yzf": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/2Wheeled/Yamaha/BP_Yamaha.BP_Yamaha_C",
+      "parts": [
+        {
+          "file": "b61fd9606d274c37cf13.glb",
+          "mesh": "/Game/Carla/Static/Motorcycle/Yamaha/SK_Yamaha.SK_Yamaha",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "da59c9dbaef6343226f0.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroF02_G2/SK_EuroF02_B_G2.SK_EuroF02_B_G2",
+          "position": [
+            -1.4723507690429687,
+            2.842170943040401e-16,
+            -2.5629997537635063e-08
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071067811865475,
+            -0.0,
+            0.7071067811865476
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e2cb857d1fef2e12318a.glb",
+          "mesh": "/Game/Carla/Static/Motorcycle/Yamaha/SM_Yamaha_Light.SM_Yamaha_Light",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.kawasaki.ninja": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/2Wheeled/KawasakiNinja/BP_KawasakiNinja.BP_KawasakiNinja_C",
+      "parts": [
+        {
+          "file": "b70d35b45b7ba0302492.glb",
+          "mesh": "/Game/Carla/Static/Motorcycle/kawasakiNinja/SK_KawasakiNinja.SK_KawasakiNinja",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "73a1ff8c122c2f29c2e3.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaF01_G2/SK_AsiaF01_G2.SK_AsiaF01_G2",
+          "position": [
+            -1.2222638702392579,
+            1.4210854715202004e-16,
+            -1.788139584846249e-08
+          ],
+          "quaternion": [
+            -0.0,
+            0.7071067811865475,
+            -0.0,
+            0.7071067811865476
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.bh.crossbike": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/2Wheeled/CrossBike/BP_CrossBike.BP_CrossBike_C",
+      "parts": [
+        {
+          "file": "60745183c3fa924f751a.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/CrossBike/SK_CrossBike.SK_CrossBike",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7723052e8e347a2baeb7.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AfroF02_G2/SK_AfroF02_A_G2.SK_AfroF02_A_G2",
+          "position": [
+            -1.1669289623531767,
+            -0.07759622955871408,
+            -1.6689302881900402e-08
+          ],
+          "quaternion": [
+            -0.030843564597231872,
+            0.706433772212892,
+            0.030843564597231924,
+            0.7064337722128922
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "12cec97276e583b31916.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Light_Back.SM_RoadBike_Light_Back",
+          "position": [
+            -0.5155722427368165,
+            0.6465004730224609,
+            0.009053829908370972
+          ],
+          "quaternion": [
+            -0.7010578809317357,
+            -0.09229669128693113,
+            -0.09229615351033893,
+            0.7010567654678082
+          ],
+          "scale": [
+            0.7192254662513733,
+            0.8413131237030029,
+            0.7192254662513733
+          ]
+        },
+        {
+          "file": "f3da3fe14c57f0bfebe3.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Light_Front.SM_RoadBike_Light_Front",
+          "position": [
+            0.2314054947710116,
+            0.9609935904737137,
+            -0.08305872201919545
+          ],
+          "quaternion": [
+            0.024586937133800668,
+            -0.04334513325128672,
+            0.004870677886940136,
+            0.9987456925778092
+          ],
+          "scale": [
+            1.708268404006958,
+            2.0600128173828125,
+            1.9696197509765625
+          ]
+        },
+        {
+          "file": "c7da6f0da8b38bfd862a.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Emissive_Back.SM_RoadBike_Emissive_Back",
+          "position": [
+            -0.5168558883666993,
+            0.6465004730224609,
+            0.009053851366043092
+          ],
+          "quaternion": [
+            -0.7010578809317357,
+            -0.09229669128693113,
+            -0.09229615351033893,
+            0.7010567654678082
+          ],
+          "scale": [
+            0.7192249894142151,
+            0.8413130044937134,
+            0.7192249894142151
+          ]
+        },
+        {
+          "file": "95f35c8f7a796083362d.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Emissive_Front.SM_RoadBike_Emissive_Front",
+          "position": [
+            0.2320551947799997,
+            0.96099851230194,
+            -0.08300195932388309
+          ],
+          "quaternion": [
+            0.024586937133800668,
+            -0.04334513325128672,
+            0.004870677886940136,
+            0.9987456925778092
+          ],
+          "scale": [
+            1.7082680463790894,
+            2.0600130558013916,
+            1.9696199893951416
+          ]
+        }
+      ]
+    },
+    "vehicle.diamondback.century": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/2Wheeled/RoadBike/BP_RoadBike.BP_RoadBike_C",
+      "parts": [
+        {
+          "file": "afd8dbbf8a3ea2660cbd.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SK_RoadBike.SK_RoadBike",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "14187b9364b740ce73d8.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/AsiaM02_G2/SK_AsiaM02_A_G2.SK_AsiaM02_A_G2",
+          "position": [
+            -1.188460679828817,
+            0.5418205261230471,
+            -1.4901163609692957e-08
+          ],
+          "quaternion": [
+            0.18301270189221927,
+            0.6830127018922193,
+            -0.18301270189221924,
+            0.6830127018922194
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c7da6f0da8b38bfd862a.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Emissive_Back.SM_RoadBike_Emissive_Back",
+          "position": [
+            -0.25699487686157224,
+            0.8248653411865234,
+            -6.961822509765625e-07
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "95f35c8f7a796083362d.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Emissive_Front.SM_RoadBike_Emissive_Front",
+          "position": [
+            0.3266244002618842,
+            0.9617866056612356,
+            -0.03797049760818485
+          ],
+          "quaternion": [
+            0.0045034790111865425,
+            -2.2408474151906776e-06,
+            2.402898241632423e-07,
+            0.9999898592844411
+          ],
+          "scale": [
+            1.0,
+            1.3611730337142944,
+            1.6942896842956543
+          ]
+        },
+        {
+          "file": "12cec97276e583b31916.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Light_Back.SM_RoadBike_Light_Back",
+          "position": [
+            -0.2546663475036621,
+            0.8248653411865234,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f3da3fe14c57f0bfebe3.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Light_Front.SM_RoadBike_Light_Front",
+          "position": [
+            0.3261684946653381,
+            0.9617864767704641,
+            -0.03797049760818485
+          ],
+          "quaternion": [
+            0.0045034790111865425,
+            -2.2408474151906776e-06,
+            2.402898241632423e-07,
+            0.9999898592844411
+          ],
+          "scale": [
+            1.0,
+            1.3611730337142944,
+            1.6942896842956543
+          ]
+        }
+      ]
+    },
+    "vehicle.gazelle.omafiets": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/2Wheeled/LeisureBike/BP_LeisureBike.BP_LeisureBike_C",
+      "parts": [
+        {
+          "file": "33fe73d939e37b341aaa.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/LeisureBike/SK_LeisureBike.SK_LeisureBike",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "b124693304773600a34b.glb",
+          "mesh": "/Game/Carla/Static/Pedestrian/EuroM02_G2/SK_EuroM02_A_G2.SK_EuroM02_A_G2",
+          "position": [
+            -1.2250452688780393,
+            0.18880495399245192,
+            -1.251698471094187e-08
+          ],
+          "quaternion": [
+            0.030843564597231827,
+            0.706433772212892,
+            -0.030843564597231823,
+            0.7064337722128922
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "12cec97276e583b31916.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Light_Back.SM_RoadBike_Light_Back",
+          "position": [
+            -0.8312401580810547,
+            0.8209822082519531,
+            0.005626039505004883
+          ],
+          "quaternion": [
+            -0.696364876508681,
+            -0.12278858294116478,
+            -0.12278772044632165,
+            0.6963634815036945
+          ],
+          "scale": [
+            0.7571286559104919,
+            1.067194938659668,
+            0.6992604732513428
+          ]
+        },
+        {
+          "file": "c7da6f0da8b38bfd862a.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Emissive_Back.SM_RoadBike_Emissive_Back",
+          "position": [
+            -0.8328036499023438,
+            0.8209822082519531,
+            0.00562604010105133
+          ],
+          "quaternion": [
+            -0.6963648760229678,
+            -0.12278858018654083,
+            -0.12278772320094158,
+            0.6963634819894127
+          ],
+          "scale": [
+            0.7571290135383606,
+            1.0671950578689575,
+            0.6992599964141846
+          ]
+        },
+        {
+          "file": "95f35c8f7a796083362d.glb",
+          "mesh": "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike_Emissive_Front.SM_RoadBike_Emissive_Front",
+          "position": [
+            0.4031675593612576,
+            0.7846391339672998,
+            -0.0020177280902861127
+          ],
+          "quaternion": [
+            0.004515966724496584,
+            0.00022277567734496281,
+            0.03375065575233954,
+            0.9994200566587743
+          ],
+          "scale": [
+            1.0,
+            7.307386627453809,
+            2.4411853937570527
+          ]
+        }
+      ]
+    },
+    "vehicle.tesla.model3": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/Tesla/BP_Tesla.BP_Tesla_C",
+      "parts": [
+        {
+          "file": "77b496e09493bdca8296.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/Tesla/SK_TeslaM3.SK_TeslaM3",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "5adcb55fef1a6bc8cc4a.glb",
+          "mesh": "/Game/Carla/Static/Car/4Wheeled/Tesla/Meshes/Emissive/SM_TeslaM3_Emissive.SM_TeslaM3_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.volkswagen.t2": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/VolkswagenT2/BP_VolkswagenT2.BP_VolkswagenT2_C",
+      "parts": [
+        {
+          "file": "9bc835d9c5bbcf7184c6.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/SK_VolkswagenT2.SK_VolkswagenT2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "82758b556dd414b181ce.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Doors/SM_VolkswagenT2_Door_FL.SM_VolkswagenT2_Door_FL",
+          "position": [
+            1.900296630859375,
+            0.9030072021484375,
+            -0.7696305084228515
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "c68d0845b43db3b6e5a9.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Door_FL_Glass_Ext2.SM_VolkswagenT2_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "bf2d1a4523172d57d88e.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Door_FL_Glass_Int1.SM_VolkswagenT2_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "35ee6ba4193c08e29eb4.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Door_FL_Glass_Int2.SM_VolkswagenT2_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d810b7482a3615762441.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Door_FL_Glass_Ext1.SM_VolkswagenT2_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "bf8e8a43918f6b71b818.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Doors/SM_VolkswagenT2_Door_FR.SM_VolkswagenT2_Door_FR",
+          "position": [
+            1.900296630859375,
+            0.9030072021484375,
+            0.7696305084228515
+          ],
+          "quaternion": [
+            8.040613114788646e-17,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "b357217743a4db315073.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Door_FR_Glass_Ext2.SM_VolkswagenT2_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "faf0905f3bbd6b31d13d.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Door_FR_Glass_Int1.SM_VolkswagenT2_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "85cf25dbab51ebb777a2.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Door_FR_Glass_Int2.SM_VolkswagenT2_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "b924d260a31dde96ba27.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Door_FR_Glass_Ext1.SM_VolkswagenT2_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            -1.4210854715202004e-16,
+            1.4210854715202004e-16
+          ],
+          "quaternion": [
+            4.010123172710029e-24,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "51a22be0e32baa1d56b4.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Glass_Ext1.SM_VolkswagenT2_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "7b354233751356139cad.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Glass_Ext2.SM_VolkswagenT2_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d5609159609866372220.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Glass_Int1.SM_VolkswagenT2_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "a651998fb9aade6db2ef.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Glass/SM_VolkswagenT2_Glass_Int2.SM_VolkswagenT2_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "e7abcb9f8b4d3f53168b.glb",
+          "mesh": "/Game/Carla/Static/Truck/VolkswagenT2/Meshes/Emissive/SM_VolkswagenT2_Emissive.SM_VolkswagenT2_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "vehicle.european.hgv": {
+      "blueprint": "/Game/Carla/Blueprints/Vehicles/EuropeanHGV/BP_EuropeanHGV.BP_EuropeanHGV_C",
+      "parts": [
+        {
+          "file": "773f22cedb2b4144730e.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/SK_EuropeanHGV.SK_EuropeanHGV",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "40439f2eac4da1072618.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Glass_Ext1.SM_EuropeanHGV_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "cfe2bbae896bd85aebdb.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Glass_Ext2.SM_EuropeanHGV_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "1ff6ecdb2ad3ea769bce.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Glass_Int1.SM_EuropeanHGV_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f769873762bc307d1d00.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Glass_Int2.SM_EuropeanHGV_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "db8cafd86a6501848863.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Doors/SM_EuropeanHGV_Door_FL.SM_EuropeanHGV_Door_FL",
+          "position": [
+            3.6172634887695314,
+            1.8498629760742193,
+            -1.3522406005859366
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "d0138b284b0b5c1c125a.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FL_Glass_Ext1.SM_EuropeanHGV_Door_FL_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "52b922fd436aa087e230.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FL_Glass_Int1.SM_EuropeanHGV_Door_FL_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "4152869f57a11f206962.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FL_Glass_Int2.SM_EuropeanHGV_Door_FL_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "f72c94d913d7496893ce.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FL_Glass_Ext2.SM_EuropeanHGV_Door_FL_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "420f44ffc39828df9454.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Doors/SM_EuropeanHGV_Door_FR.SM_EuropeanHGV_Door_FR",
+          "position": [
+            3.6172634887695314,
+            1.8498629760742182,
+            1.3522399902343758
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "560da56cbf42e9921c5e.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FR_Glass_Int1.SM_EuropeanHGV_Door_FR_Glass_Int1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "6456db4abf3923eed4f1.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FR_Glass_Int2.SM_EuropeanHGV_Door_FR_Glass_Int2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "504528b2e4943821009f.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FR_Glass_Ext1.SM_EuropeanHGV_Door_FR_Glass_Ext1",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "6cbaef65b16ddd9713a0.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Glasses/SM_EuropeanHGV_Door_FR_Glass_Ext2.SM_EuropeanHGV_Door_FR_Glass_Ext2",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            -1.1102230246251565e-16,
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "file": "9a71c8b3b5f2a9139df7.glb",
+          "mesh": "/Game/Carla/Static/Truck/EuropeanHGV/Meshes/Emissive/SM_EuropeanHGV_Emissive.SM_EuropeanHGV_Emissive",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            3.061616368511944e-17,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  },
+  "errors": {}
+}

@@ -1,0 +1,11 @@
+{
+  "models": 55,
+  "meshFiles": 257,
+  "sourceTriangles": 6250069,
+  "webTriangles": 1121057,
+  "materials": {
+    "textures": 95,
+    "materials": 363,
+    "errors": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "native_report_reused": true,
+  "passed": true,
+  "session": "20260907-221557-607589",
+  "archive_files": 267,
+  "live_workflow": true,
+  "rosbag_readback": true,
+  "native_replay_and_fresh_restart": true,
+  "sensor_formats": 11,
+  "browser_desktop_mobile_3d_mesh_replay": true,
+  "state": {
+    "phase": "connected",
+    "map": "Carla/Maps/Town10HD_Opt",
+    "actors": 3,
+    "sensors": 5
+  },
+  "verified_worker_gpu_pci_ids": {
+    "gpu-0": "00000000:05:00.0",
+    "gpu-3": "00000000:06:00.0",
+    "gpu-2": "00000000:09:00.0",
+    "gpu-1": "00000000:0A:00.0"
+  }
+}

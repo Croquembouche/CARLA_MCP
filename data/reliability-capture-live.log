@@ -1,0 +1,15 @@
+PROFILE_CACHED 1 57032e0fcada3ea8aa44
+GPU_STRESS_FRAMES 80
+GPU_STRESS_FRAMES 160
+GPU_STRESS_FRAMES 240
+GPU_STRESS_FRAMES 320
+RECORDING_AND_BAG_PASSED 20260908-231850-c8fa1b
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/scripts/verify_reliability_capture.py", line 39, in <module>
+    assert s.get('worker_health',{}).get('status')=='failed' and not s['running'],s.get('error')
+AssertionError: None
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['.venv/bin/python', 'scripts/verify_reliability_capture.py']' returned non-zero exit status 1.

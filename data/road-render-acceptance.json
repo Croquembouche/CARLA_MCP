@@ -1,0 +1,31 @@
+{
+  "map": "Carla/Maps/Town10HD_Opt",
+  "source_road_meshes": 8,
+  "road_triangles": 323667,
+  "additional_textured_materials": 49,
+  "opaque_texture_repairs": 16,
+  "source_textures_recovered": 14,
+  "scene_transfer_bytes": 35306453,
+  "browser": {
+    "loaded_actor_models": 3,
+    "actor_model_errors": 0,
+    "scene_triangles": 6383581,
+    "console_errors": [],
+    "guide_toggle_verified": true
+  },
+  "junction_surface_samples": 483,
+  "junction_surface_holes": 0,
+  "runtime": {
+    "frame": 1076,
+    "running": false,
+    "time": 49.215864957513986,
+    "sensor_count": 5,
+    "main_pid": 3344012,
+    "service_restarts": 0
+  },
+  "screenshots": [
+    "/home/william/Pictures/Screenshots/carla-road-rendering/central-after.png",
+    "/home/william/Pictures/Screenshots/carla-road-rendering/east-after.png",
+    "/home/william/Pictures/Screenshots/carla-road-rendering/west-after.png"
+  ]
+}

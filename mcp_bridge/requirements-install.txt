@@ -1,0 +1,5 @@
+mcp==1.30.0
+httpx==0.28.1
+jsonschema==4.26.0
+uvicorn==0.52.4
+Markdown==3.8.2

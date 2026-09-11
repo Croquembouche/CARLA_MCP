@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "layouts": [
+    1440,
+    1024,
+    390
+  ],
+  "header_no_overlap": true,
+  "command_wiring": [
+    "shutdown",
+    "start",
+    "shutdown",
+    "start"
+  ],
+  "loading_and_stopping_states": true,
+  "startup_cancellation": true,
+  "real_simulator_not_stopped": true,
+  "errors": []
+}

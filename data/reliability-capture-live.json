@@ -1,0 +1,129 @@
+{
+  "stress": {
+    "frames": 320,
+    "last_frame": 560,
+    "phase": "connected",
+    "native_profiles": [
+      {
+        "worker": "gpu-3",
+        "age_seconds": 0.9,
+        "metrics": {
+          "camera_readback_ready_ms": {
+            "mean": 31.9668,
+            "p95": 44.7121,
+            "samples": 120
+          },
+          "camera_copy_gpu_ms": {
+            "mean": 0.0837,
+            "p95": 0.145,
+            "samples": 120
+          },
+          "camera_convert_serialize_ms": {
+            "mean": 0.1583,
+            "p95": 0.2038,
+            "samples": 120
+          },
+          "ray_gpu_ms": {
+            "mean": 0.0051,
+            "p95": 0.013,
+            "samples": 120
+          },
+          "ray_queue_ms": {
+            "mean": 19.3183,
+            "p95": 22.9884,
+            "samples": 120
+          },
+          "ray_dispatch_to_readback_ms": {
+            "mean": 33.3755,
+            "p95": 49.6588,
+            "samples": 120
+          }
+        }
+      }
+    ]
+  },
+  "recording": {
+    "id": "20260908-231850-c8fa1b",
+    "verification": {
+      "id": "20260908-231850-c8fa1b",
+      "checked_at": 1788923938.8523536,
+      "status": "verified",
+      "frames": 30,
+      "sensor_samples": 150,
+      "rosbag_topic_counts": {
+        "/clock": 30,
+        "/carla/ego_28/odometry": 30,
+        "/carla/ego_28/front_rgb/image": 30,
+        "/carla/ego_28/front_rgb/metadata": 30,
+        "/carla/ego_28/front_rgb/camera_info": 30,
+        "/carla/ego_28/roof_lidar/points": 30,
+        "/carla/ego_28/roof_lidar/metadata": 30,
+        "/carla/ego_28/front_radar/points": 30,
+        "/carla/ego_28/front_radar/metadata": 30,
+        "/carla/ego_28/imu/data": 30,
+        "/carla/ego_28/imu/metadata": 30,
+        "/carla/ego_28/gnss/data": 30,
+        "/carla/ego_28/gnss/metadata": 30,
+        "/tf": 30,
+        "/carla/traffic_signals": 30
+      },
+      "files_checked": 160,
+      "errors": [],
+      "warnings": [],
+      "scope": "Stored bytes, frame index, sensor coverage and simulation timestamps; not proof of identical re-simulation"
+    },
+    "rosbag_counts": {
+      "/clock": 30,
+      "/carla/ego_28/odometry": 30,
+      "/carla/ego_28/front_rgb/image": 30,
+      "/carla/ego_28/front_rgb/metadata": 30,
+      "/carla/ego_28/front_rgb/camera_info": 30,
+      "/carla/ego_28/roof_lidar/points": 30,
+      "/carla/ego_28/roof_lidar/metadata": 30,
+      "/carla/ego_28/front_radar/points": 30,
+      "/carla/ego_28/front_radar/metadata": 30,
+      "/carla/ego_28/imu/data": 30,
+      "/carla/ego_28/imu/metadata": 30,
+      "/carla/ego_28/gnss/data": 30,
+      "/carla/ego_28/gnss/metadata": 30,
+      "/tf": 30,
+      "/carla/traffic_signals": 30
+    },
+    "self_comparison": {
+      "integrity": {
+        "20260908-231850-c8fa1b": "verified"
+      },
+      "reference": "20260908-231850-c8fa1b",
+      "candidate": "20260908-231850-c8fa1b",
+      "frames_compared": 30,
+      "frame_counts_equal": true,
+      "position_max_m": 0.0,
+      "position_rms_m": 0.0,
+      "yaw_max_deg": 0.0,
+      "time_alignment_max_s": 0.0,
+      "velocity_max_error_mps": 0.0,
+      "signal_mismatch_frames": 0,
+      "sensor_payloads_compared": 150,
+      "sensor_payload_differences": 0,
+      "position_tolerance_m": 0.05,
+      "trajectory_pass": true,
+      "errors": [],
+      "scope": "Aligns by recording-relative frame and configured actor order; regenerated sensor bytes may differ"
+    }
+  },
+  "fault": {
+    "pid": 98147,
+    "signal": "SIGTERM",
+    "health": {
+      "status": "failed",
+      "detail": "gpu-3 process 98147 stopped",
+      "last_complete_frame": 595,
+      "recovery_available": true
+    },
+    "recording": "20260908-231900-d8ba62",
+    "recording_status": "failed",
+    "frames_preserved": 5,
+    "note": "Unreal deferred graceful termination while paused; verified failure after the process exited. The repeatable script now uses abrupt SIGKILL to test a crash without graceful-shutdown delay."
+  },
+  "passed": true
+}

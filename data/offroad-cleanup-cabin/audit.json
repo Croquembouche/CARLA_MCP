@@ -1,0 +1,20 @@
+[
+  {
+    "id": 36,
+    "source": "BP_EuropeanHGV_Parked_C_8",
+    "road_distance_m": 30.73,
+    "parking_distance_m": 51.45
+  },
+  {
+    "id": 35,
+    "source": "BP_Carlacola_Parked_C_9",
+    "road_distance_m": 38.64,
+    "parking_distance_m": 55.81
+  },
+  {
+    "id": 34,
+    "source": "BP_Carlacola_Parked_C_7",
+    "road_distance_m": 44.14,
+    "parking_distance_m": 59.08
+  }
+]

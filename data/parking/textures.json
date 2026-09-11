@@ -1,0 +1,14 @@
+{
+  "/Game/Carla/Static/FX/Decals/Road/AccessRoad/DI_access": {
+    "Difuse texture": "T_accessRoad_d.tga",
+    "ORM texture": "T_accessRoad_orm.tga",
+    "Normal texture": "T_accessRoad_n.tga",
+    "Opacity texture": "T_Flat_White.tga"
+  },
+  "/Game/Carla/Static/Building/SpecialBuildings/Parking/IndividualComponents/MI_Parking": {
+    "BaseColor": "T_Parking_d.tga",
+    "AO / Roughness / Metallic / Emissive": "T_Parking_orm.tga",
+    "Normal": "T_Parking_n.tga",
+    "Emissive": "T_Parking_e.tga"
+  }
+}

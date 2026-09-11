@@ -1,0 +1,48 @@
+AUTOMATIC_WORKERS {'workers': 2, 'profile': 'auto'}
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/scripts/setup_sensor_view_test.py", line 23, in <module>
+    result=cmd('spawn',{'role':'ego','planner':'external','model':'vehicle.lincoln.mkz_interior','spawn':point,'sensors':configs});break
+  File "/mnt/simulations/control-center/scripts/setup_sensor_view_test.py", line 8, in cmd
+    r=c.post('/api/command/'+a,json=p);r.raise_for_status();return r.json()
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_client.py", line 1144, in post
+    return self.request(
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/mnt/simulations/control-center/.venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.

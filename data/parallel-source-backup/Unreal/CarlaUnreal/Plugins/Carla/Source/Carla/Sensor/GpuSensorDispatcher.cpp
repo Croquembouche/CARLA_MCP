@@ -1,0 +1,397 @@
+// Copyright (c) 2026. Licensed under the MIT license.
+#include "Carla/Sensor/GpuSensorDispatcher.h"
+#include "GameFramework/Actor.h"
+#include "Carla.h"
+#include "Async/TaskGraphInterfaces.h"
+#include "Components/PrimitiveComponent.h"
+#include "Containers/Queue.h"
+#include "Containers/Ticker.h"
+#include "Engine/World.h"
+#include "EngineUtils.h"
+#include "LandscapeComponent.h"
+#include "LandscapeHeightfieldCollisionComponent.h"
+#include "FXRenderingUtils.h"
+#include "GlobalShader.h"
+#include "DataDrivenShaderPlatformInfo.h"
+#include "HAL/IConsoleManager.h"
+#include "Modules/ModuleManager.h"
+#include "Misc/CoreDelegates.h"
+#include "RendererInterface.h"
+#include "ExternalRayTracingQueries.h"
+#include "RenderGraphBuilder.h"
+#include "RenderGraphUtils.h"
+#include "RHIGPUReadback.h"
+#include "SceneView.h"
+#include "SceneRendererInterface.h"
+#include "SceneUniformBuffer.h"
+#include "ShaderParameterStruct.h"
+#include "RenderUtils.h"
+
+namespace CarlaGpuSensorPrivate
+{
+TAutoConsoleVariable<int32> Enabled(TEXT("carla.Sensors.GpuRayTracing"), 0,
+    TEXT("Experimental render-geometry GPU LiDAR/radar. Requires patched UE, inline RT, and a rendered view. No CPU fallback."));
+
+class FCarlaSensorTraceCS : public FGlobalShader
+{
+  DECLARE_GLOBAL_SHADER(FCarlaSensorTraceCS);
+  SHADER_USE_PARAMETER_STRUCT(FCarlaSensorTraceCS, FGlobalShader);
+  BEGIN_SHADER_PARAMETER_STRUCT(FParameters, )
+    SHADER_PARAMETER_STRUCT_REF(FViewUniformShaderParameters, View)
+    SHADER_PARAMETER_RDG_UNIFORM_BUFFER(FSceneUniformParameters, Scene)
+    SHADER_PARAMETER_SRV(RaytracingAccelerationStructure, TLAS)
+    SHADER_PARAMETER_RDG_BUFFER_SRV(StructuredBuffer<float4>, Rays)
+    SHADER_PARAMETER_RDG_BUFFER_SRV(StructuredBuffer<uint2>, CollisionTable)
+    SHADER_PARAMETER_RDG_BUFFER_UAV(RWStructuredBuffer<float4>, Hits)
+    SHADER_PARAMETER(uint32, RayCount)
+    SHADER_PARAMETER(uint32, TableMask)
+    SHADER_PARAMETER(uint32, IgnoredActor)
+  END_SHADER_PARAMETER_STRUCT()
+  static bool ShouldCompilePermutation(const FGlobalShaderPermutationParameters& P)
+  {
+    return IsRayTracingEnabledForProject(P.Platform) && RHISupportsInlineRayTracing(P.Platform);
+  }
+  static void ModifyCompilationEnvironment(const FGlobalShaderPermutationParameters& P, FShaderCompilerEnvironment& E)
+  {
+    FGlobalShader::ModifyCompilationEnvironment(P, E);
+    E.CompilerFlags.Add(CFLAG_InlineRayTracing);
+    E.CompilerFlags.Add(CFLAG_Wave32);
+    E.SetDefine(TEXT("RAY_TRACING_THREAD_GROUP_SIZE_X"), 32);
+    E.SetDefine(TEXT("VF_SUPPORTS_PRIMITIVE_SCENE_DATA"), 1);
+  }
+};
+IMPLEMENT_GLOBAL_SHADER(FCarlaSensorTraceCS, "/Plugin/Carla/Private/CarlaSensorTrace.usf", "MainCS", SF_Compute);
+
+struct FComponentSnapshot
+{
+  TWeakObjectPtr<UPrimitiveComponent> Component;
+  FVector Velocity;
+  uint32 Actor;
+};
+struct FCollisionSnapshot
+{
+  TMap<uint32, FComponentSnapshot> Components;
+  TArray<FUintVector2> Table;
+};
+struct FBatch
+{
+  TWeakObjectPtr<AActor> Owner;
+  const FSceneInterface* Scene = nullptr; // Identity only; never dereferenced.
+  uint32 Actor = 0;
+  double Submitted = 0;
+  TArray<FCarlaGpuRay> Rays;
+  TSharedPtr<FCollisionSnapshot, ESPMode::ThreadSafe> Collision;
+  TArray<FVector4f> Output;
+  TUniqueFunction<void(TArray<FCarlaGpuHit>&&)> Complete;
+  TUniquePtr<FRHIGPUBufferReadback> Readback;
+};
+using FBatchPtr = TSharedPtr<FBatch, ESPMode::ThreadSafe>;
+TArray<FBatchPtr> Pending; // Render thread only.
+TSet<const FSceneInterface*> QueryScenes; // Render thread only; cleared on shutdown.
+TMap<const FSceneInterface*, FSphere> FrameQueryBounds; // Game thread only.
+uint64 QueryBoundsFrame = MAX_uint64;
+TArray<TUniqueFunction<bool()>> Readbacks; // Render thread only.
+TAtomic<int32> ReadbackCount{0};
+FGraphEventArray CallbackTasks; // Render thread; joined after the shutdown fence.
+TQueue<FBatchPtr, EQueueMode::Mpsc> Completed;
+TQueue<TUniqueFunction<void()>, EQueueMode::Mpsc> GameCallbacks;
+TMap<TWeakObjectPtr<AActor>, double> InFlight; // Game thread only.
+TWeakObjectPtr<UWorld> CachedWorld;
+uint64 CachedFrame = MAX_uint64;
+TSharedPtr<FCollisionSnapshot, ESPMode::ThreadSafe> CachedCollision;
+FDelegateHandle RenderHandle;
+FDelegateHandle PreExitHandle;
+FTSTicker::FDelegateHandle TickHandle;
+bool Running = false;
+double LastPoll = 0;
+
+TSharedPtr<FCollisionSnapshot, ESPMode::ThreadSafe> Snapshot(UWorld* World)
+{
+  if (CachedWorld == World && CachedFrame == GFrameCounter) return CachedCollision;
+  auto Result = MakeShared<FCollisionSnapshot, ESPMode::ThreadSafe>();
+  // Once per world/frame, not once per ray. Capture velocity alongside IDs so
+  // delayed radar readback never samples velocity from a later physics tick.
+  for (TActorIterator<AActor> Actor(World); Actor; ++Actor)
+  {
+    TInlineComponentArray<UPrimitiveComponent*> Components;
+    Actor->GetComponents(Components);
+    const FVector Velocity = Actor->GetVelocity();
+    for (UPrimitiveComponent* C : Components)
+    {
+      // Landscapes use separate render and collision components. Key the GPU
+      // table by the rendered primitive, while honoring the heightfield's
+      // collision settings and retaining its component for semantic decoding.
+      UPrimitiveComponent* CollisionComponent = C;
+      if (auto* Landscape = Cast<ULandscapeComponent>(C))
+        CollisionComponent = Landscape->GetCollisionComponent();
+      if (!C->IsRegistered() || !CollisionComponent || !CollisionComponent->IsRegistered() ||
+          !CollisionComponent->IsQueryCollisionEnabled() ||
+          CollisionComponent->GetCollisionResponseToChannel(ECC_GameTraceChannel2) != ECR_Block) continue;
+      const uint32 Id = C->GetPrimitiveSceneId().PrimIDValue;
+      if (Id) Result->Components.Add(Id, {CollisionComponent, Velocity, Actor->GetUniqueID()});
+    }
+  }
+  const uint32 Size = FMath::RoundUpToPowerOfTwo(FMath::Max(2, Result->Components.Num() * 2));
+  Result->Table.SetNumZeroed(Size);
+  for (const auto& Entry : Result->Components)
+  {
+    uint32 Slot = (Entry.Key * 2654435761u) & (Size - 1);
+    while (Result->Table[Slot].X != 0) Slot = (Slot + 1) & (Size - 1);
+    Result->Table[Slot] = FUintVector2(Entry.Key, Entry.Value.Actor);
+  }
+  CachedWorld = World;
+  CachedFrame = GFrameCounter;
+  CachedCollision = Result;
+  return Result;
+}
+
+void Render(FPostOpaqueRenderParameters& P)
+{
+#if RHI_RAYTRACING
+  const FSceneView* View = P.SceneView;
+  if (!View || !View->Family || !P.GraphBuilder || Pending.IsEmpty()) return;
+  const auto* Scene = View->Family->Scene;
+  if (!UE::FXRenderingUtils::RayTracing::HasRayTracingScene(Scene)) return;
+  FRDGBuilder& Graph = *P.GraphBuilder;
+  for (int32 Index = 0; Index < Pending.Num();)
+  {
+    FBatchPtr Batch = Pending[Index];
+    if (Batch->Scene != Scene) { ++Index; continue; }
+    Pending.RemoveAt(Index);
+    TArray<FVector4f> Input;
+    Input.Reserve(Batch->Rays.Num() * 2);
+    for (const auto& Ray : Batch->Rays)
+    {
+      // Translate while still in double precision. Converting absolute world
+      // positions to float first loses small distance differences on large maps.
+      const FVector TranslatedOrigin = Ray.Origin + View->ViewMatrices.GetPreViewTranslation();
+      Input.Add(FVector4f(FVector3f(TranslatedOrigin), Ray.Range));
+      Input.Add(FVector4f(FVector3f(Ray.Direction), 0));
+    }
+    auto* Params = Graph.AllocParameters<FCarlaSensorTraceCS::FParameters>();
+    Params->View = View->ViewUniformBuffer;
+    Params->Scene = GetSceneUniformBufferRef(Graph, *View);
+    Params->TLAS = UE::FXRenderingUtils::RayTracing::GetRayTracingSceneView(Graph.RHICmdList, Scene);
+    Params->RayCount = Batch->Rays.Num();
+    Params->TableMask = Batch->Collision->Table.Num() - 1;
+    Params->IgnoredActor = Batch->Actor;
+    Params->Rays = Graph.CreateSRV(CreateStructuredBuffer(Graph, TEXT("Carla.SensorRays"),
+        sizeof(FVector4f), Input.Num(), Input.GetData(), Input.Num() * sizeof(FVector4f)));
+    Params->CollisionTable = Graph.CreateSRV(CreateStructuredBuffer(Graph, TEXT("Carla.CollisionFilter"),
+        sizeof(FUintVector2), Batch->Collision->Table.Num(), Batch->Collision->Table.GetData(),
+        Batch->Collision->Table.Num() * sizeof(FUintVector2)));
+    FRDGBufferRef Output = Graph.CreateBuffer(FRDGBufferDesc::CreateStructuredDesc(
+        sizeof(FVector4f), Input.Num()), TEXT("Carla.SensorHits"));
+    Params->Hits = Graph.CreateUAV(Output);
+    TShaderMapRef<FCarlaSensorTraceCS> Shader(GetGlobalShaderMap(View->GetFeatureLevel()));
+    FComputeShaderUtils::AddPass(Graph, RDG_EVENT_NAME("Carla GPU sensor rays (%u)", Params->RayCount),
+        Shader, Params, FIntVector(FMath::DivideAndRoundUp(Params->RayCount, 32u), 1, 1));
+    Batch->Readback = MakeUnique<FRHIGPUBufferReadback>(TEXT("Carla.SensorReadback"));
+    const uint32 Bytes = Input.Num() * sizeof(FVector4f);
+    AddEnqueueCopyPass(Graph, Batch->Readback.Get(), Output, Bytes);
+    CarlaGpuSensors::PollReadback([Batch, Bytes]()
+    {
+      if (!Batch->Readback->IsReady()) return false;
+      const void* Data = Batch->Readback->Lock(Bytes);
+      if (!Data) UE_LOG(LogCarla, Fatal, TEXT("GPU sensor readback mapping failed"));
+      Batch->Output.SetNumUninitialized(Bytes / sizeof(FVector4f));
+      FMemory::Memcpy(Batch->Output.GetData(), Data, Bytes);
+      Batch->Readback->Unlock();
+      Batch->Readback.Reset();
+      Completed.Enqueue(Batch);
+      return true;
+    });
+  }
+#endif
+}
+}
+
+namespace CarlaGpuSensors
+{
+using namespace CarlaGpuSensorPrivate;
+
+bool IsEnabled() { return Enabled.GetValueOnGameThread() != 0; }
+
+void PollReadback(TUniqueFunction<bool()>&& Poll)
+{
+  check(IsInRenderingThread());
+  Readbacks.Add(MoveTemp(Poll));
+  ReadbackCount.Store(Readbacks.Num());
+}
+
+void DispatchReadbackCallback(TUniqueFunction<void()>&& Callback)
+{
+  check(IsInRenderingThread());
+  CallbackTasks.RemoveAll([](const FGraphEventRef& Task) { return Task->IsComplete(); });
+  CallbackTasks.Add(FFunctionGraphTask::CreateAndDispatchWhenReady(MoveTemp(Callback),
+      TStatId(), nullptr, ENamedThreads::AnyBackgroundThreadNormalTask));
+}
+
+void EnqueueGameThread(TUniqueFunction<void()>&& Callback)
+{
+  GameCallbacks.Enqueue(MoveTemp(Callback));
+}
+
+void Startup()
+{
+  check(IsInGameThread());
+  if (Running) return;
+  Running = true;
+  // Module shutdown happens after Unreal stops the render thread. Drain GPU
+  // work earlier, while mapping, unmapping and task dispatch still have their
+  // normal thread ownership. ShutdownModule remains an idempotent fallback.
+  PreExitHandle = FCoreDelegates::OnPreExit.AddStatic(&Shutdown);
+  auto& Renderer = FModuleManager::LoadModuleChecked<IRendererModule>(TEXT("Renderer"));
+  RenderHandle = Renderer.RegisterPostOpaqueRenderDelegate(FPostOpaqueRenderDelegate::CreateStatic(&Render));
+  TickHandle = FTSTicker::GetCoreTicker().AddTicker(FTickerDelegate::CreateLambda([](float)
+  { Pump(); return true; }));
+}
+
+void Pump()
+{
+  check(IsInGameThread());
+  if (!Running) return;
+  TUniqueFunction<void()> Callback;
+  while (GameCallbacks.Dequeue(Callback)) Callback();
+  FBatchPtr Batch;
+  while (Completed.Dequeue(Batch))
+  {
+    InFlight.Remove(Batch->Owner);
+    if (!Batch->Owner.IsValid()) continue;
+    TArray<FCarlaGpuHit> Hits;
+    Hits.SetNum(Batch->Rays.Num());
+    for (int32 I = 0; I < Hits.Num(); ++I)
+    {
+      const FVector4f& Raw = Batch->Output[I * 2];
+      if (Raw.X == -2) UE_LOG(LogCarla, Fatal, TEXT("GPU ray exceeded 256 collision-filter retraces; refusing incomplete sensor data"));
+      if (Raw.X < 0) continue;
+      uint32 ComponentId;
+      FMemory::Memcpy(&ComponentId, &Raw.Y, sizeof(ComponentId));
+      const auto* Meta = Batch->Collision->Components.Find(ComponentId);
+      if (!Meta || !Meta->Component.IsValid()) continue;
+      auto* Component = Meta->Component.Get();
+      const FVector Position = Batch->Rays[I].Origin + Batch->Rays[I].Direction * Raw.X;
+      const FVector4f& Normal = Batch->Output[I * 2 + 1];
+      Hits[I].Hit = FHitResult(Component->GetOwner(), Component, Position, FVector(Normal.X, Normal.Y, Normal.Z));
+      Hits[I].Hit.bBlockingHit = true;
+      Hits[I].Hit.Distance = Raw.X;
+      Hits[I].Hit.Location = Hits[I].Hit.ImpactPoint = Position;
+      Hits[I].Hit.TraceStart = Batch->Rays[I].Origin;
+      Hits[I].TargetVelocity = Meta->Velocity;
+    }
+    Batch->Complete(MoveTemp(Hits));
+  }
+  const double Now = FPlatformTime::Seconds();
+  for (auto It = InFlight.CreateIterator(); It; ++It)
+  {
+    if (!It.Key().IsValid()) { It.RemoveCurrent(); continue; }
+    if (Now - It.Value() > 120)
+      UE_LOG(LogCarla, Fatal, TEXT("GPU sensor timed out: a rendered view, inline ray tracing and r.RayTracing.ExternalQueries=1 are required"));
+  }
+  if (Now - LastPoll < 0.002) return;
+  if (ReadbackCount.Load() == 0 && InFlight.IsEmpty()) return;
+  LastPoll = Now;
+  ENQUEUE_RENDER_COMMAND(CarlaPollSensorReadbacks)([](FRHICommandListImmediate& Cmd)
+  {
+    // A synchronous client can wait for this copy before allowing another
+    // frame. Submit queued RHI work without waiting for the RHI thread or GPU,
+    // so the fence can complete even when normal end-of-frame submission stops.
+    if (!Readbacks.IsEmpty())
+      Cmd.ImmediateFlush(EImmediateFlushType::DispatchToRHIThread);
+    for (int32 I = 0; I < Readbacks.Num();)
+      if (Readbacks[I]()) Readbacks.RemoveAt(I); else ++I;
+    ReadbackCount.Store(Readbacks.Num());
+  });
+}
+
+void Submit(AActor& Owner, TArray<FCarlaGpuRay>&& Rays,
+    TUniqueFunction<void(TArray<FCarlaGpuHit>&&)>&& Complete)
+{
+  check(IsInGameThread());
+  if (!GRHISupportsInlineRayTracing)
+    UE_LOG(LogCarla, Fatal, TEXT("GPU sensors explicitly requested but this RHI has no inline ray tracing"));
+  if (InFlight.Contains(&Owner))
+    UE_LOG(LogCarla, Fatal, TEXT("GPU sensor %s still has an outstanding frame. Use synchronous mode and consume sensor frames before world.tick()."), *Owner.GetName());
+  if (Rays.IsEmpty()) { Complete(TArray<FCarlaGpuHit>()); return; }
+  if (Rays.Num() > 2097120)
+    UE_LOG(LogCarla, Fatal, TEXT("GPU sensor batch exceeds dispatch limit; reduce points per tick"));
+  auto Batch = MakeShared<FBatch, ESPMode::ThreadSafe>();
+  Batch->Owner = &Owner;
+  Batch->Scene = Owner.GetWorld()->Scene;
+  Batch->Actor = Owner.GetUniqueID();
+  Batch->Submitted = FPlatformTime::Seconds();
+  Batch->Rays = MoveTemp(Rays);
+  if (QueryBoundsFrame != GFrameCounter)
+  {
+    FrameQueryBounds.Reset();
+    QueryBoundsFrame = GFrameCounter;
+  }
+  FSphere* Sphere = FrameQueryBounds.Find(Batch->Scene);
+  if (!Sphere)
+    Sphere = &FrameQueryBounds.Add(Batch->Scene, FSphere(Batch->Rays[0].Origin, 0));
+  for (const FCarlaGpuRay& Ray : Batch->Rays)
+  {
+    const double Offset = Ray.Origin == Sphere->Center ? 0.0 : FVector::Distance(Ray.Origin, Sphere->Center);
+    Sphere->W = FMath::Max(Sphere->W, Offset + double(Ray.Range));
+  }
+  // One centimetre of outward padding protects conservative bounds from the
+  // renderer's float conversion. No angular, camera-facing or min-distance cull.
+  const FVector QueryCenter = Sphere->Center;
+  const float QueryRadius = float(FMath::CeilToDouble(Sphere->W + 1.0));
+  Batch->Collision = Snapshot(Owner.GetWorld());
+  Batch->Complete = MoveTemp(Complete);
+  InFlight.Add(&Owner, Batch->Submitted);
+  ENQUEUE_RENDER_COMMAND(CarlaQueueSensorRays)([Batch, QueryCenter, QueryRadius](FRHICommandListImmediate&)
+  {
+    SetExternalRayTracingQueryBounds(Batch->Scene, QueryCenter, QueryRadius);
+    QueryScenes.Add(Batch->Scene);
+    Pending.Add(Batch);
+  });
+}
+
+bool HasPendingFrames()
+{
+  check(IsInGameThread());
+  return !InFlight.IsEmpty();
+}
+
+void BeginSensorTick(AActor& Owner)
+{
+  Pump();
+  if (InFlight.Contains(&Owner))
+    UE_LOG(LogCarla, Fatal, TEXT("GPU sensor %s has an outstanding frame. Consume its frame before the next synchronous tick."), *Owner.GetName());
+}
+
+void Shutdown()
+{
+  if (!Running) return;
+  Running = false;
+  FCoreDelegates::OnPreExit.Remove(PreExitHandle);
+  FTSTicker::GetCoreTicker().RemoveTicker(TickHandle);
+  if (auto* Renderer = FModuleManager::GetModulePtr<IRendererModule>(TEXT("Renderer")))
+    Renderer->RemovePostOpaqueRenderDelegate(RenderHandle);
+  ENQUEUE_RENDER_COMMAND(CarlaDrainSensorReadbacks)([](FRHICommandListImmediate& Cmd)
+  {
+    Cmd.BlockUntilGPUIdle();
+    for (auto& Poll : Readbacks) Poll();
+    Readbacks.Empty();
+    ReadbackCount.Store(0);
+    Pending.Empty();
+    for (const FSceneInterface* Scene : QueryScenes)
+      SetExternalRayTracingQueryBounds(Scene, FVector::ZeroVector, -1);
+    QueryScenes.Empty();
+  });
+  FlushRenderingCommands();
+  FTaskGraphInterface::Get().WaitUntilTasksComplete(CallbackTasks, ENamedThreads::GameThread);
+  CallbackTasks.Empty();
+  // Background converters enqueue render-thread unmaps when they finish.
+  FlushRenderingCommands();
+  TUniqueFunction<void()> UnusedCallback;
+  while (GameCallbacks.Dequeue(UnusedCallback)) {}
+  FBatchPtr Unused;
+  while (Completed.Dequeue(Unused)) {}
+  InFlight.Empty();
+  CachedCollision.Reset();
+  CachedWorld.Reset();
+}
+}

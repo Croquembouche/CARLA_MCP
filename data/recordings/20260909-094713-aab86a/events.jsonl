@@ -1,0 +1,2 @@
+{"action": "record-start", "payload": {"rosbag": true}, "frame": 283, "time": 10.884794579091249}
+{"action": "destination", "payload": {"id": 28, "point": {"x": -52.13356018066406, "y": -40.1802978515625, "z": 0.5999999642372131, "yaw": 90.43230438232422, "pitch": 0.0, "roll": -0.0, "index": 75}}, "frame": 284, "time": 10.934794579836307}

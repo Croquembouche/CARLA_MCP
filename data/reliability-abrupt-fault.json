@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "pid": 110747,
+  "detection_seconds": 0.2924090640008217,
+  "health": {
+    "status": "failed",
+    "detail": "gpu-3 process 110747 stopped",
+    "last_complete_frame": 180,
+    "recovery_available": true
+  },
+  "gpu_operation": {
+    "stage": "failed",
+    "detail": "gpu-3 process 110747 stopped"
+  },
+  "recovery_operation": {
+    "stage": "failed",
+    "detail": "Recover the saved configuration to resume; completed recording frames are preserved"
+  }
+}

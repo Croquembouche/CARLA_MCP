@@ -1,0 +1,13 @@
+{
+  "footer_opens_overhead": true,
+  "toolbar_returns_to_orbit": true,
+  "fit_preserves_overhead": true,
+  "actor_focus_preserves_overhead": true,
+  "actor_models": 3,
+  "selected_actor_cones": 1,
+  "opendrive_return_verified": true,
+  "console_errors": [],
+  "native_state_unchanged": true,
+  "frame": 1076,
+  "screenshot": "/home/william/Pictures/Screenshots/carla-top-down/overhead-fixed.png"
+}

@@ -1,0 +1,14 @@
+EGO 34
+{
+  "map": "Carla/Maps/Town10HD_Opt",
+  "lanes": 168,
+  "buildings": 6000,
+  "models": 17,
+  "ego": 34
+}
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/tests/live_workflow.py", line 22, in <module>
+    bg=cmd('spawn',{'role':'background','model':model,'spawn':points[10],'destination':points[20]})['id'];report['background']=bg;print('BACKGROUND',bg,flush=True)
+  File "/mnt/simulations/control-center/tests/live_workflow.py", line 13, in cmd
+    if not r.is_success:raise RuntimeError(f'{a}: {r.status_code} {r.text}')
+RuntimeError: spawn: 409 {"detail":"Sensor 35 did not deliver frame 177"}

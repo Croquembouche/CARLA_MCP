@@ -1,0 +1,1269 @@
+diff --git a/Examples/QtClient/CMakeLists.txt b/Examples/QtClient/CMakeLists.txt
+index 4622aba..38399d8 100644
+--- a/Examples/QtClient/CMakeLists.txt
++++ b/Examples/QtClient/CMakeLists.txt
+@@ -69,6 +69,14 @@ target_link_libraries (
+   ${CARLA_QT_WIDGETS}
+ )
+ 
++# The Unreal Linux compiler uses a bundled sysroot, while Qt may come from
++# the host distribution. Let the linker find Qt's transitive shared libraries
++# beside QtCore without changing the simulator's library search paths.
++target_link_options (
++  carla_studio_example_tool PRIVATE
++  "$<$<PLATFORM_ID:Linux>:LINKER:-rpath-link,$<TARGET_FILE_DIR:Qt${Qt_VERSION}::Core>>"
++)
++
+ # -----------------------------------------------------------------------------
+ # Plugin shared library: same source compiled without main() and dlopen-loaded
+ # by CARLA Studio at runtime.
+diff --git a/LibCarla/source/carla/client/TrafficLight.cpp b/LibCarla/source/carla/client/TrafficLight.cpp
+index e787e79..6c30b73 100644
+--- a/LibCarla/source/carla/client/TrafficLight.cpp
++++ b/LibCarla/source/carla/client/TrafficLight.cpp
+@@ -55,6 +55,10 @@ namespace client {
+     GetEpisode().Lock()->FreezeAllTrafficLights(freeze);
+   }
+ 
++  void TrafficLight::FreezeGroup(bool freeze) {
++    GetEpisode().Lock()->FreezeTrafficLight(*this, freeze);
++  }
++
+   bool TrafficLight::IsFrozen() const {
+     return GetEpisode().Lock()->GetActorSnapshot(*this).state.traffic_light_data.time_is_frozen;
+   }
+diff --git a/LibCarla/source/carla/client/TrafficLight.h b/LibCarla/source/carla/client/TrafficLight.h
+index 9eb64b9..439d20a 100644
+--- a/LibCarla/source/carla/client/TrafficLight.h
++++ b/LibCarla/source/carla/client/TrafficLight.h
+@@ -53,6 +53,9 @@ namespace client {
+ 
+     void Freeze(bool freeze);
+ 
++    /// Freeze only this traffic light's junction group.
++    void FreezeGroup(bool freeze);
++
+     /// @note This function does not call the simulator, it returns the data
+     /// received in the last tick.
+     bool IsFrozen() const;
+diff --git a/LibCarla/source/carla/trafficmanager/LocalizationStage.cpp b/LibCarla/source/carla/trafficmanager/LocalizationStage.cpp
+index 77cdcca..92e2f0c 100644
+--- a/LibCarla/source/carla/trafficmanager/LocalizationStage.cpp
++++ b/LibCarla/source/carla/trafficmanager/LocalizationStage.cpp
+@@ -552,7 +552,7 @@ void LocalizationStage::ImportPath(Path &imported_path, Buffer &waypoint_buffer,
+     // Remove the waypoints already added to the path, except for the first.
+     if (parameters.GetUploadPath(actor_id)) {
+       auto number_of_pops = waypoint_buffer.size();
+-      for (uint64_t j = 0u; j < number_of_pops - 1; ++j) {
++      for (uint64_t j = 0u; j + 1 < number_of_pops; ++j) {
+         PopWaypoint(actor_id, track_traffic, waypoint_buffer, false);
+       }
+       // We have successfully imported the path. Remove it from the list of paths to be imported.
+@@ -616,8 +616,12 @@ void LocalizationStage::ImportPath(Path &imported_path, Buffer &waypoint_buffer,
+           PushWaypoint(actor_id, track_traffic, waypoint_buffer, next_wp_selection);
+         }
+         PushWaypoint(actor_id, track_traffic, waypoint_buffer, imported);
+-        latest_imported = imported_path.front();
+-        imported = local_map->GetWaypoint(latest_imported);
++        // The final destination may consume the last point. Never dereference
++        // an empty path while finishing or replacing a user route.
++        if (!imported_path.empty()) {
++          latest_imported = imported_path.front();
++          imported = local_map->GetWaypoint(latest_imported);
++        }
+       } else {
+         PushWaypoint(actor_id, track_traffic, waypoint_buffer, next_wp_selection);
+       }
+@@ -635,7 +639,7 @@ void LocalizationStage::ImportRoute(Route &imported_actions, Buffer &waypoint_bu
+ 
+     if (parameters.GetUploadRoute(actor_id)) {
+       auto number_of_pops = waypoint_buffer.size();
+-      for (uint64_t j = 0u; j < number_of_pops - 1; ++j) {
++      for (uint64_t j = 0u; j + 1 < number_of_pops; ++j) {
+         PopWaypoint(actor_id, track_traffic, waypoint_buffer, false);
+       }
+       // We have successfully imported the route. Remove it from the list of routes to be imported.
+diff --git a/PythonAPI/carla/src/Actor.cpp b/PythonAPI/carla/src/Actor.cpp
+index ac24e69..180b866 100644
+--- a/PythonAPI/carla/src/Actor.cpp
++++ b/PythonAPI/carla/src/Actor.cpp
+@@ -269,6 +269,7 @@ void export_actor() {
+       .def("get_red_time", &cc::TrafficLight::GetRedTime)
+       .def("get_elapsed_time", &cc::TrafficLight::GetElapsedTime)
+       .def("freeze", &cc::TrafficLight::Freeze, (arg("freeze")))
++      .def("freeze_group", &cc::TrafficLight::FreezeGroup, (arg("freeze")))
+       .def("is_frozen", &cc::TrafficLight::IsFrozen)
+       .def("get_pole_index", &cc::TrafficLight::GetPoleIndex)
+       .def("get_group_traffic_lights", &GetGroupTrafficLights)
+diff --git a/Ros2Native/CMakeLists.txt b/Ros2Native/CMakeLists.txt
+index 18b8d61..3beac39 100644
+--- a/Ros2Native/CMakeLists.txt
++++ b/Ros2Native/CMakeLists.txt
+@@ -18,6 +18,10 @@ ExternalProject_add (
+     -DCMAKE_TOOLCHAIN_FILE=${CMAKE_TOOLCHAIN_FILE}
+     -DBUILD_SHARED_LIBS=ON
+     -DFOONATHAN_MEMORY_FORCE_VENDORED_BUILD=ON
++    -DBUILD_TESTING=OFF
++    # This vendored library does not need the host ROS test framework, whose
++    # Python packages may be outside CARLA's isolated virtual environment.
++    -DCMAKE_DISABLE_FIND_PACKAGE_ament_cmake_test=ON
+ )
+ 
+ # Note: We are using GIT_REPOSITORY instead URL for fastdds because fastdss contains submodules
+diff --git a/Unreal/CarlaUnreal/Config/DefaultEngine.ini b/Unreal/CarlaUnreal/Config/DefaultEngine.ini
+index ac304bf..42f12ce 100644
+--- a/Unreal/CarlaUnreal/Config/DefaultEngine.ini
++++ b/Unreal/CarlaUnreal/Config/DefaultEngine.ini
+@@ -213,3 +213,9 @@ bReportStats=False
+ ConnectionType=USBOnly
+ bUseManualIPAddress=False
+ ManualIPAddress=
++
++; Simulations Blender Send to Unreal (local machine only)
++[/Script/PythonScriptPlugin.PythonScriptPluginSettings]
++bRemoteExecution=True
++RemoteExecutionMulticastBindAddress=127.0.0.1
++RemoteExecutionMulticastTtl=0
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/BlueprintLibary/MeshToLandscape.h b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/BlueprintLibary/MeshToLandscape.h
+index ad09923..1b861a9 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/BlueprintLibary/MeshToLandscape.h
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/BlueprintLibary/MeshToLandscape.h
+@@ -24,7 +24,7 @@ struct CARLA_API FHitDisplacementEntry
+     FString Pattern;
+ 
+     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MeshToLandscapeUtil")
+-    double Displacement;
++    double Displacement = 0.0;
+ };
+ 
+ UCLASS(BlueprintType)
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Carla.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Carla.cpp
+index 0bee95d..22784e0 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Carla.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Carla.cpp
+@@ -1,6 +1,7 @@
+ // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+ 
+ #include "Carla.h"
++#include "Carla/Sensor/GpuSensorDispatcher.h"
+ #include "Settings/CarlaSettings.h"
+ 
+ #include <util/ue-header-guard-begin.h>
+@@ -19,6 +20,7 @@ DEFINE_LOG_CATEGORY(LogCarlaServer);
+ void FCarlaModule::StartupModule()
+ {
+ 	AddShaderSearchPaths();
++	CarlaGpuSensors::Startup();
+ 	RegisterSettings();
+ 	LoadChronoDll();
+ }
+@@ -88,6 +90,7 @@ void FCarlaModule::LoadChronoDll()
+ 
+ void FCarlaModule::ShutdownModule()
+ {
++	CarlaGpuSensors::Shutdown();
+ 	if (UObjectInitialized())
+ 	{
+ 		UnregisterSettings();
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEngine.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEngine.cpp
+index f013dc9..610312c 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEngine.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEngine.cpp
+@@ -5,6 +5,7 @@
+ // For a copy, see <https://opensource.org/licenses/MIT>.
+ 
+ #include "Carla/Game/CarlaEngine.h"
++#include "Carla/Sensor/GpuSensorDispatcher.h"
+ #include "Carla.h"
+ #include "Carla/Game/CarlaEpisode.h"
+ #include "Carla/Game/CarlaStaticDelegates.h"
+@@ -305,17 +306,46 @@ void FCarlaEngine::OnPreTick(UWorld *, ELevelTick TickType, float DeltaSeconds)
+       do
+       {
+         Server.RunSome(1u);
++        CarlaGpuSensors::Pump();
+       }
+       while (bSynchronousMode && !Server.TickCueReceived());
+     }
+     else
+     {
+-      // process frame data
++      // CARLA normally disables the worker viewport and only renders camera
++      // captures. GPU ray batches are submitted after sensor captures, so they
++      // require the subsequent main view to build/query this frame's TLAS.
++      if (CurrentEpisode && CarlaGpuSensors::IsEnabled() && CurrentSettings.bNoRenderingMode)
++      {
++        CurrentSettings.bNoRenderingMode = false;
++#if WITH_EDITOR
++        // Applying all episode settings here would also reapply High quality,
++        // overriding the user's texture pool and other explicit renderer CVars.
++        if (GEngine && GEngine->GameViewport)
++        {
++          GEngine->GameViewport->bDisableWorldRendering = false;
++          // This hidden view only services the external ray pass. Sensor
++          // captures have independent show flags and retain their full quality.
++          GEngine->GameViewport->ViewModeIndex = VMI_Unlit;
++          auto& Flags = GEngine->GameViewport->EngineShowFlags;
++          Flags.SetLighting(false);
++          Flags.SetPostProcessing(false);
++          Flags.SetDynamicShadows(false);
++          Flags.SetGlobalIllumination(false);
++          Flags.SetLumenGlobalIllumination(false);
++          Flags.SetLumenReflections(false);
++          Flags.SetReflectionEnvironment(false);
++        }
++#endif
++      }
++      // Drain GPU queries before applying another replicated world state,
++      // including startup frames already queued before clients subscribe.
+       do
+       {
+         Server.RunSome(1u);
++        CarlaGpuSensors::Pump();
+       }
+-      while (!FramesToProcess.size());
++      while (!FramesToProcess.size() || CarlaGpuSensors::HasPendingFrames());
+     }
+ 
+     // update frame counter
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEpisode.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEpisode.cpp
+index 50aa4d1..ef0ff2c 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEpisode.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEpisode.cpp
+@@ -452,3 +452,14 @@ TPair<EActorSpawnResultStatus, FCarlaActor*> UCarlaEpisode::SpawnActorWithInfo(
+ 
+   return result;
+ }
++
++void UCarlaEpisode::SetReplicatedElapsedGameTime(double Time)
++{
++  check(!bIsPrimaryServer);
++  check(FMath::IsFinite(Time) && Time >= 0);
++  ElapsedGameTime = Time;
++#if defined(WITH_ROS2)
++  auto ROS2 = carla::ros2::ROS2::GetInstance();
++  if (ROS2->IsEnabled()) ROS2->SetTimestamp(Time);
++#endif
++}
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h
+index f33c8d9..e6f516a 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h
+@@ -105,6 +105,9 @@ public:
+     return ElapsedGameTime;
+   }
+ 
++  // Apply the primary clock before sensor capture on replicated workers.
++  void SetReplicatedElapsedGameTime(double Time);
++
+   /// Visual game seconds
+   double GetVisualGameTime() const
+   {
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/FrameData.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/FrameData.cpp
+index 15a67b3..e01cf4d 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/FrameData.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/FrameData.cpp
+@@ -5,6 +5,7 @@
+ // For a copy, see <https://opensource.org/licenses/MIT>.
+ 
+ #include "FrameData.h"
++#include "Carla/Weather/Weather.h"
+ 
+ #include "Carla/Game/CarlaEpisode.h"
+ #include "Carla/Actor/CarlaActor.h"
+@@ -27,7 +28,32 @@
+ void FFrameData::GetFrameData(UCarlaEpisode *ThisEpisode, bool bAdditionalData, bool bIncludeActorsAgain)
+ {
+   Episode = ThisEpisode;
+-  // PlatformTime.UpdateTime();
++  // Secondary sensor headers must use the primary episode clock, not the
++  // elapsed time since that worker finished loading its map.
++  SimulationFrame.Id = FCarlaEngine::GetFrameCounter();
++  SimulationFrame.Elapsed = Episode->GetElapsedGameTime();
++  SimulationFrame.DurationThis = Episode->GetWorld()->GetDeltaSeconds();
++  bHasSimulationFrame = true;
++  // Include the current weather in every snapshot, including late-joining workers.
++  if (const AWeather* Weather = Episode->GetWeather())
++  {
++    const auto& Current = Weather->GetCurrentWeather();
++    ReplicatedWeather.Cloudiness = Current.Cloudiness;
++    ReplicatedWeather.Precipitation = Current.Precipitation;
++    ReplicatedWeather.PrecipitationDeposits = Current.PrecipitationDeposits;
++    ReplicatedWeather.WindIntensity = Current.WindIntensity;
++    ReplicatedWeather.SunAzimuthAngle = Current.SunAzimuthAngle;
++    ReplicatedWeather.SunAltitudeAngle = Current.SunAltitudeAngle;
++    ReplicatedWeather.FogDensity = Current.FogDensity;
++    ReplicatedWeather.FogDistance = Current.FogDistance;
++    ReplicatedWeather.FogFalloff = Current.FogFalloff;
++    ReplicatedWeather.Wetness = Current.Wetness;
++    ReplicatedWeather.ScatteringIntensity = Current.ScatteringIntensity;
++    ReplicatedWeather.MieScatteringScale = Current.MieScatteringScale;
++    ReplicatedWeather.RayleighScatteringScale = Current.RayleighScatteringScale;
++    ReplicatedWeather.DustStorm = Current.DustStorm;
++    bHasWeather = true;
++  }
+   const FActorRegistry &Registry = Episode->GetActorRegistry();
+ 
+   if (bIncludeActorsAgain)
+@@ -84,6 +110,48 @@ void FFrameData::PlayFrameData(
+     std::unordered_map<uint32_t, uint32_t>& MappedId)
+ {
+ 
++  // Apply on the game thread before secondary sensor capture. Avoid refreshing
++  // weather blueprints every tick when the snapshot has not changed.
++  if (bHasWeather && ThisEpisode->GetWeather())
++  {
++    AWeather* Weather = ThisEpisode->GetWeather();
++    FWeatherParameters Updated = Weather->GetCurrentWeather();
++    const bool bChanged =
++      Updated.Cloudiness != ReplicatedWeather.Cloudiness ||
++      Updated.Precipitation != ReplicatedWeather.Precipitation ||
++      Updated.PrecipitationDeposits != ReplicatedWeather.PrecipitationDeposits ||
++      Updated.WindIntensity != ReplicatedWeather.WindIntensity ||
++      Updated.SunAzimuthAngle != ReplicatedWeather.SunAzimuthAngle ||
++      Updated.SunAltitudeAngle != ReplicatedWeather.SunAltitudeAngle ||
++      Updated.FogDensity != ReplicatedWeather.FogDensity ||
++      Updated.FogDistance != ReplicatedWeather.FogDistance ||
++      Updated.FogFalloff != ReplicatedWeather.FogFalloff ||
++      Updated.Wetness != ReplicatedWeather.Wetness ||
++      Updated.ScatteringIntensity != ReplicatedWeather.ScatteringIntensity ||
++      Updated.MieScatteringScale != ReplicatedWeather.MieScatteringScale ||
++      Updated.RayleighScatteringScale != ReplicatedWeather.RayleighScatteringScale ||
++      Updated.DustStorm != ReplicatedWeather.DustStorm;
++    if (bChanged)
++    {
++      Updated.Cloudiness = ReplicatedWeather.Cloudiness;
++      Updated.Precipitation = ReplicatedWeather.Precipitation;
++      Updated.PrecipitationDeposits = ReplicatedWeather.PrecipitationDeposits;
++      Updated.WindIntensity = ReplicatedWeather.WindIntensity;
++      Updated.SunAzimuthAngle = ReplicatedWeather.SunAzimuthAngle;
++      Updated.SunAltitudeAngle = ReplicatedWeather.SunAltitudeAngle;
++      Updated.FogDensity = ReplicatedWeather.FogDensity;
++      Updated.FogDistance = ReplicatedWeather.FogDistance;
++      Updated.FogFalloff = ReplicatedWeather.FogFalloff;
++      Updated.Wetness = ReplicatedWeather.Wetness;
++      Updated.ScatteringIntensity = ReplicatedWeather.ScatteringIntensity;
++      Updated.MieScatteringScale = ReplicatedWeather.MieScatteringScale;
++      Updated.RayleighScatteringScale = ReplicatedWeather.RayleighScatteringScale;
++      Updated.DustStorm = ReplicatedWeather.DustStorm;
++      Weather->ApplyWeather(Updated);
++      UE_LOG(LogCarla, Log, TEXT("Replicated weather applied: sun=%.1f cloud=%.1f rain=%.1f"), Updated.SunAltitudeAngle, Updated.Cloudiness, Updated.Precipitation);
++    }
++  }
++
+   for(const CarlaRecorderEventAdd &EventAdd : EventsAdd.GetEvents())
+   {
+     uint32_t OldId = EventAdd.DatabaseId;
+@@ -184,6 +252,13 @@ void FFrameData::PlayFrameData(
+   }
+ 
+   SetFrameCounter();
++  if (bHasSimulationFrame)
++  {
++    if (SimulationFrame.Id != FrameCounter.FrameCounter ||
++        !FMath::IsFinite(SimulationFrame.Elapsed) || SimulationFrame.Elapsed < 0)
++      UE_LOG(LogCarla, Fatal, TEXT("Invalid replicated simulation frame timestamp"));
++    ThisEpisode->SetReplicatedElapsedGameTime(SimulationFrame.Elapsed);
++  }
+ }
+ 
+ void FFrameData::Clear()
+@@ -206,6 +281,9 @@ void FFrameData::Clear()
+   PhysicsControls.Clear();
+   TrafficLightTimes.Clear();
+   FrameCounter.FrameCounter = 0;
++  bHasWeather = false;
++  bHasSimulationFrame = false;
++  SimulationFrame = {};
+ }
+ 
+ void FFrameData::Write(std::ostream& OutStream)
+@@ -223,6 +301,21 @@ void FFrameData::Write(std::ostream& OutStream)
+   LightScenes.Write(OutStream);
+   TrafficLightTimes.Write(OutStream);
+   FrameCounter.Write(OutStream);
++  if (bHasWeather)
++  {
++    WriteValue<char>(OutStream, static_cast<char>(CarlaRecorderPacketId::Weather));
++    WriteValue<uint32_t>(OutStream, sizeof(uint16_t) + sizeof(CarlaRecorderWeather));
++    WriteValue<uint16_t>(OutStream, 1);
++    ReplicatedWeather.Write(OutStream);
++  }
++  if (bHasSimulationFrame)
++  {
++    // Reuse the existing recorder frame packet format. Older readers skip this
++    // packet; all workers in this installation use the same modified build.
++    WriteValue<char>(OutStream, static_cast<char>(CarlaRecorderPacketId::FrameStart));
++    WriteValue<uint32_t>(OutStream, sizeof(CarlaRecorderFrame));
++    SimulationFrame.Write(OutStream);
++  }
+ }
+ 
+ void FFrameData::Read(std::istream& InStream)
+@@ -230,9 +323,11 @@ void FFrameData::Read(std::istream& InStream)
+   Clear();
+   while(!InStream.eof())
+   {
+-    Header header;
++    Header header{};
+     ReadValue<char>(InStream, header.Id);
++    if (InStream.eof()) break;
+     ReadValue<uint32_t>(InStream, header.Size);
++    if (!InStream) UE_LOG(LogCarla, Fatal, TEXT("Truncated replicated frame packet header"));
+     switch (header.Id)
+     {
+       // events add
+@@ -290,6 +385,27 @@ void FFrameData::Read(std::istream& InStream)
+         LightScenes.Read(InStream);
+         break;
+ 
++      case static_cast<char>(CarlaRecorderPacketId::Weather):
++      {
++        uint16_t Count = 0;
++        if (header.Size != sizeof(uint16_t) + sizeof(CarlaRecorderWeather))
++          UE_LOG(LogCarla, Fatal, TEXT("Invalid replicated weather packet size"));
++        ReadValue<uint16_t>(InStream, Count);
++        if (Count != 1) UE_LOG(LogCarla, Fatal, TEXT("Invalid replicated weather count"));
++        ReplicatedWeather.Read(InStream);
++        if (!InStream) UE_LOG(LogCarla, Fatal, TEXT("Truncated replicated weather"));
++        bHasWeather = true;
++        break;
++      }
++
++      case static_cast<char>(CarlaRecorderPacketId::FrameStart):
++        if (header.Size != sizeof(CarlaRecorderFrame))
++          UE_LOG(LogCarla, Fatal, TEXT("Invalid replicated simulation timestamp packet size"));
++        SimulationFrame.Read(InStream);
++        if (!InStream) UE_LOG(LogCarla, Fatal, TEXT("Truncated replicated simulation timestamp"));
++        bHasSimulationFrame = true;
++        break;
++
+       case static_cast<char>(CarlaRecorderPacketId::FrameCounter):
+         FrameCounter.Read(InStream);
+         break;
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/FrameData.h b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/FrameData.h
+index 7cc0e73..07474bb 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/FrameData.h
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/FrameData.h
+@@ -25,6 +25,7 @@
+ #include "Carla/Recorder/CarlaRecorderInfo.h"
+ #include "Carla/Recorder/CarlaRecorderPosition.h"
+ #include "Carla/Recorder/CarlaRecorderFrameCounter.h"
++#include "Carla/Recorder/CarlaRecorderWeather.h"
+ #include "Carla/Recorder/CarlaRecorderState.h"
+ #include "Carla/Actor/ActorDescription.h"
+ #include "Carla/Lights/CarlaLight.h"
+@@ -61,6 +62,10 @@ class FFrameData
+   CarlaRecorderPhysicsControls PhysicsControls;
+   CarlaRecorderTrafficLightTimes TrafficLightTimes;
+   CarlaRecorderFrameCounter FrameCounter;
++  CarlaRecorderFrame SimulationFrame{};
++  bool bHasSimulationFrame = false;
++  CarlaRecorderWeather ReplicatedWeather{};
++  bool bHasWeather = false;
+ 
+   #pragma pack(push, 1)
+   struct Header
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/DepthCamera.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/DepthCamera.cpp
+index 59dff92..90d2488 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/DepthCamera.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/DepthCamera.cpp
+@@ -36,11 +36,12 @@ void ADepthCamera::PostPhysTick(UWorld *World, ELevelTick TickType, float DeltaS
+       return;
+ 
+   auto FrameIndex = FCarlaEngine::GetFrameCounter();
+-  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex](
++  auto CaptureStream = MakeShared<FAsyncDataStream, ESPMode::ThreadSafe>(GetDataStream(*this));
++  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex, CaptureStream](
+     TArrayView<const FColor> Pixels,
+     FIntPoint Size) -> bool
+   {
+-    SendDataToClient(*this, Pixels, FrameIndex);
++    SendDataToClient(*this, Pixels, FrameIndex, &CaptureStream.Get());
+     return true;
+   });
+ }
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/ImageUtil.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/ImageUtil.cpp
+index 59bd048..866c66e 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/ImageUtil.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/ImageUtil.cpp
+@@ -5,6 +5,7 @@
+ // For a copy, see <https://opensource.org/licenses/MIT>.
+ 
+ #include <Carla/Sensor/ImageUtil.h>
++#include "Carla/Sensor/GpuSensorDispatcher.h"
+ #include <Carla/Sensor/ShaderBasedSensor.h>
+ #include <Carla/Carla.h>
+ 
+@@ -217,12 +218,11 @@ namespace ImageUtil
+     FRHIGPUReadbackPoolPtr Pool,
+     ReadImageDataAsyncCallback&& Callback)
+   {
+-    static thread_local auto RenderQueryPool =
+-        RHICreateRenderQueryPool(RQT_AbsoluteTime);
+-
+     auto& CmdList = FRHICommandListImmediate::Get();
+     auto Resource = static_cast<FTextureRenderTarget2DResource*>(
+       RenderTarget.GetResource());
++    if (Resource == nullptr)
++      return;
+     auto Texture = Resource->GetRenderTargetTexture();
+     if (Texture == nullptr)
+       return;
+@@ -241,26 +241,17 @@ namespace ImageUtil
+     Self.Size = Texture->GetSizeXY();
+     Self.Format = Texture->GetFormat();
+     auto ResolveRect = FResolveRect();
++    CmdList.Transition(FRHITransitionInfo(Texture, ERHIAccess::Unknown, ERHIAccess::CopySrc));
+     Self.Readback->EnqueueCopy(CmdList, Texture, ResolveRect);
++    CmdList.Transition(FRHITransitionInfo(Texture, ERHIAccess::CopySrc, ERHIAccess::SRVMask));
++
++    // The copy's GPU fence is polled by the shared readback queue. No
++    // per-camera RHI flush or blocking timestamp query is necessary.
+ 
+-    auto Query = RenderQueryPool->AllocateQuery();
+-    CmdList.EndRenderQuery(Query.GetQuery());
+-    CmdList.ImmediateFlush(EImmediateFlushType::FlushRHIThread);
+-    uint64 DeltaTime;
+-    RHIGetRenderQueryResult(Query.GetQuery(), DeltaTime, true);
+-    Query.ReleaseQuery();
+   }
+ 
+-  static void ReadImageDataEnd(
+-    ReadImageDataContext& Self)
++  static void ReadImageDataRelease(ReadImageDataContext& Self)
+   {
+-    int32 RowPitch, BufferHeight;
+-    auto MappedPtr = Self.Readback->Lock(RowPitch, &BufferHeight);
+-    if (MappedPtr != nullptr)
+-    {
+-      ScopedCallback Unlock = [&] { Self.Readback->Unlock(); };
+-      Self.Callback(MappedPtr, RowPitch, BufferHeight, Self.Format, Self.Size);
+-    }
+     if (Self.Pool && Self.SlotIndex != INDEX_NONE)
+     {
+       Self.Pool->Release(Self.SlotIndex);
+@@ -268,16 +259,39 @@ namespace ImageUtil
+     }
+   }
+ 
++  static void ReadImageDataEnd(ReadImageDataContext&& Self)
++  {
++    check(IsInRenderingThread());
++    int32 RowPitch, BufferHeight;
++    auto MappedPtr = Self.Readback->Lock(RowPitch, &BufferHeight);
++    if (!MappedPtr) { ReadImageDataRelease(Self); return; }
++    // RHI mapping/unmapping stays on the render thread. Keep the staging slot
++    // locked while a background task converts its pixels, without a raw copy.
++    CarlaGpuSensors::DispatchReadbackCallback([
++      Self = std::move(Self), MappedPtr, RowPitch, BufferHeight]() mutable
++    {
++      ScopedCallback Release = [&Self]
++      {
++        ENQUEUE_RENDER_COMMAND(CarlaUnmapImageReadback)([
++          Self = std::move(Self)](FRHICommandListImmediate&) mutable
++        {
++          Self.Readback->Unlock();
++          ReadImageDataRelease(Self);
++        });
++      };
++      Self.Callback(MappedPtr, RowPitch, BufferHeight, Self.Format, Self.Size);
++    });
++  }
++
+   static void ReadImageDataEndAsync(
+     ReadImageDataContext&& Self)
+   {
+-    AsyncTask(
+-      ENamedThreads::HighTaskPriority, [
+-      Self = std::move(Self)]() mutable
++    if (!Self.Readback) return;
++    CarlaGpuSensors::PollReadback([Self = std::move(Self)]() mutable
+     {
+-      while (!Self.Readback->IsReady())
+-        std::this_thread::sleep_for(std::chrono::microseconds(100));
+-      ReadImageDataEnd(Self);
++      if (!Self.Readback->IsReady()) return false;
++      ReadImageDataEnd(std::move(Self));
++      return true;
+     });
+   }
+ 
+@@ -313,7 +327,7 @@ namespace ImageUtil
+       {
+         ReadImageDataContext Context = { };
+         ReadImageDataBegin(Context, RenderTarget, std::move(Pool), std::move(Callback));
+-        ReadImageDataEnd(Context);
++        ReadImageDataEndAsync(std::move(Context));
+       });
+ 
+     }
+@@ -375,7 +389,23 @@ namespace ImageUtil
+     auto RenderTarget = Sensor.GetCaptureRenderTarget();
+     if (RenderTarget == nullptr)
+       return false;
+-    return ReadImageDataAsyncFColor(*RenderTarget, std::move(Callback));
++    TWeakObjectPtr<AShaderBasedSensor> WeakSensor(&Sensor);
++    return ReadImageDataAsync(*RenderTarget, Sensor.GetReadbackPool(),
++      [WeakSensor, Callback = std::move(Callback)](
++        const void* Mapping, size_t RowPitch, size_t BufferHeight,
++        EPixelFormat Format, FIntPoint Size) mutable -> bool
++      {
++        FReadSurfaceDataFlags Flags;
++        TArray<FColor> Pixels;
++        Pixels.SetNum(Size.X * Size.Y);
++        if (!DecodePixelsByFormat(Mapping, RowPitch, Size, Format, Flags, Pixels)) return false;
++        CarlaGpuSensors::EnqueueGameThread([
++          WeakSensor, Callback = std::move(Callback), Pixels = MoveTemp(Pixels), Size]() mutable
++        {
++          if (WeakSensor.IsValid() && WeakSensor->HasActorBegunPlay()) Callback(Pixels, Size);
++        });
++        return true;
++      });
+   }
+ 
+ 
+@@ -409,6 +439,22 @@ namespace ImageUtil
+     auto RenderTarget = Sensor.GetCaptureRenderTarget();
+     if (RenderTarget == nullptr)
+       return false;
+-    return ReadImageDataAsyncFLinearColor(*RenderTarget, std::move(Callback));
++    TWeakObjectPtr<AShaderBasedSensor> WeakSensor(&Sensor);
++    return ReadImageDataAsync(*RenderTarget, Sensor.GetReadbackPool(),
++      [WeakSensor, Callback = std::move(Callback)](
++        const void* Mapping, size_t RowPitch, size_t BufferHeight,
++        EPixelFormat Format, FIntPoint Size) mutable -> bool
++      {
++        FReadSurfaceDataFlags Flags;
++        TArray<FLinearColor> Pixels;
++        Pixels.SetNum(Size.X * Size.Y);
++        if (!DecodePixelsByFormat(Mapping, RowPitch, Size, Format, Flags, Pixels)) return false;
++        CarlaGpuSensors::EnqueueGameThread([
++          WeakSensor, Callback = std::move(Callback), Pixels = MoveTemp(Pixels), Size]() mutable
++        {
++          if (WeakSensor.IsValid() && WeakSensor->HasActorBegunPlay()) Callback(Pixels, Size);
++        });
++        return true;
++      });
+   }
+ }
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/InstanceSegmentationCamera.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/InstanceSegmentationCamera.cpp
+index 2af5fc6..c49d27c 100755
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/InstanceSegmentationCamera.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/InstanceSegmentationCamera.cpp
+@@ -37,13 +37,20 @@ void AInstanceSegmentationCamera::PostPhysTick(UWorld *World, ELevelTick TickTyp
+ {
+   TRACE_CPUPROFILER_EVENT_SCOPE(AInstanceSegmentationCamera::PostPhysTick);
+   Super::PostPhysTick(World, TickType, DeltaSeconds);
++
++  // The headless primary and unassigned replicas have no image consumer.
++  if (!AreClientsListening())
++  {
++    return;
++  }
+   
+   auto FrameIndex = FCarlaEngine::GetFrameCounter();
+-  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex](
++  auto CaptureStream = MakeShared<FAsyncDataStream, ESPMode::ThreadSafe>(GetDataStream(*this));
++  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex, CaptureStream](
+     TArrayView<const FColor> Pixels,
+     FIntPoint Size) -> bool
+   {
+-    SendDataToClient(*this, Pixels, FrameIndex);
++    SendDataToClient(*this, Pixels, FrameIndex, &CaptureStream.Get());
+     return true;
+   });
+ }
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.cpp
+index a0333ce..5683f15 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.cpp
+@@ -32,11 +32,12 @@ void ANormalsCamera::PostPhysTick(UWorld *World, ELevelTick TickType, float Delt
+       return;
+ 
+   auto FrameIndex = FCarlaEngine::GetFrameCounter();
+-  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex](
++  auto CaptureStream = MakeShared<FAsyncDataStream, ESPMode::ThreadSafe>(GetDataStream(*this));
++  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex, CaptureStream](
+     TArrayView<const FColor> Pixels,
+     FIntPoint Size) -> bool
+   {
+-    SendDataToClient(*this, Pixels, FrameIndex);
++    SendDataToClient(*this, Pixels, FrameIndex, &CaptureStream.Get());
+     return true;
+   });
+ }
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/OpticalFlowCamera.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/OpticalFlowCamera.cpp
+index 058b256..f866018 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/OpticalFlowCamera.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/OpticalFlowCamera.cpp
+@@ -5,6 +5,7 @@
+ // For a copy, see <https://opensource.org/licenses/MIT>.
+ 
+ #include "Carla/Sensor/OpticalFlowCamera.h"
++#include "Carla/Sensor/GpuSensorDispatcher.h"
+ #include "Carla.h"
+ #include "Carla/Actor/ActorBlueprintFunctionLibrary.h"
+ 
+@@ -40,9 +41,11 @@ void AOpticalFlowCamera::PostPhysTick(UWorld *World, ELevelTick TickType, float
+   }
+ 
+   const auto FrameIndex = FCarlaEngine::GetFrameCounter();
++  auto CaptureStream = MakeShared<FAsyncDataStream, ESPMode::ThreadSafe>(GetDataStream(*this));
++  TWeakObjectPtr<AOpticalFlowCamera> WeakThis(this);
+   ImageUtil::ReadSensorImageDataAsync(
+       *this,
+-      [this, FrameIndex](
++      [WeakThis, FrameIndex, CaptureStream](
+           const void* MappedPtr,
+           size_t RowPitch,
+           size_t BufferHeight,
+@@ -71,10 +74,12 @@ void AOpticalFlowCamera::PostPhysTick(UWorld *World, ELevelTick TickType, float
+           }
+           BasePtr += RowPitch;
+         }
+-        SendDataToClient(
+-            *this,
+-            TArrayView<FVector2f>(ImageData),
+-            FrameIndex);
++        CarlaGpuSensors::EnqueueGameThread([
++            WeakThis, FrameIndex, CaptureStream, ImageData = MoveTemp(ImageData)]() mutable
++        {
++          if (WeakThis.IsValid() && WeakThis->HasActorBegunPlay())
++            SendDataToClient(*WeakThis.Get(), TArrayView<FVector2f>(ImageData), FrameIndex, &CaptureStream.Get());
++        });
+         return true;
+       });
+ }
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Radar.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Radar.cpp
+index 295c8c9..3f0e2b1 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Radar.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Radar.cpp
+@@ -5,6 +5,7 @@
+ // For a copy, see <https://opensource.org/licenses/MIT>.
+ 
+ #include "Carla/Sensor/Radar.h"
++#include "Carla/Sensor/GpuSensorDispatcher.h"
+ #include "Carla.h"
+ #include "Carla/Actor/ActorBlueprintFunctionLibrary.h"
+ 
+@@ -80,10 +81,18 @@ void ARadar::PostPhysTick(UWorld *World, ELevelTick TickType, float DeltaTime)
+   TRACE_CPUPROFILER_EVENT_SCOPE(ARadar::PostPhysTick);
+   CalculateCurrentVelocity(DeltaTime);
+ 
+-  RadarData.Reset();
+-  SendLineTraces(DeltaTime);
+-
++  // Multi-GPU worlds replicate sensors, but only the assigned stream worker
++  // should spend time tracing. Retain recording and ROS consumers.
++  // AreClientsListening also includes enabled ROS streams and forced activity.
++  const bool Needed = AreClientsListening() || bSavingDataToDisk;
++  if (!Needed) return;
++  CarlaGpuSensors::BeginSensorTick(*this);
++  const AActor* ParentAtCapture = GetAttachParentActor();
++  const FTransform RelativeAtCapture = ParentAtCapture
++      ? GetActorTransform().GetRelativeTransform(ParentAtCapture->GetActorTransform()) : GetActorTransform();
+   auto DataStream = GetDataStream(*this);
++  auto Send = [this, RelativeAtCapture, DataStream = MoveTemp(DataStream)]() mutable
++  {
+ 
+   // ROS2
+   #if defined(WITH_ROS2)
+@@ -95,7 +104,7 @@ void ARadar::PostPhysTick(UWorld *World, ELevelTick TickType, float DeltaTime)
+     AActor* ParentActor = GetAttachParentActor();
+     if (ParentActor)
+     {
+-      FTransform LocalTransformRelativeToParent = GetActorTransform().GetRelativeTransform(ParentActor->GetActorTransform());
++      FTransform LocalTransformRelativeToParent = RelativeAtCapture;
+       ROS2->ProcessDataFromRadar(DataStream.GetSensorType(), StreamId, LocalTransformRelativeToParent, RadarData, this);
+     }
+     else
+@@ -109,6 +118,15 @@ void ARadar::PostPhysTick(UWorld *World, ELevelTick TickType, float DeltaTime)
+     TRACE_CPUPROFILER_EVENT_SCOPE_STR("Send Stream");
+     DataStream.SerializeAndSend(*this, RadarData, DataStream.PopBufferFromPool());
+   }
++  };
++  if (CarlaGpuSensors::IsEnabled()) SendGpuTraces(DeltaTime, MoveTemp(Send));
++  else
++  {
++    RadarData.Reset();
++    SendLineTraces(DeltaTime);
++    Send();
++  }
++
+ }
+ 
+ void ARadar::CalculateCurrentVelocity(const float DeltaTime)
+@@ -219,3 +237,43 @@ float ARadar::CalculateRelativeVelocity(const FHitResult& OutHit, const FVector&
+ 
+   return V;
+ }
++
++void ARadar::SendGpuTraces(float DeltaTime, TUniqueFunction<void()>&& Complete)
++{
++  TRACE_CPUPROFILER_EVENT_SCOPE(CarlaGpuRadarSubmit);
++  CarlaGpuSensors::Pump();
++  const FTransform Transform = GetActorTransform();
++  const FVector Velocity = CurrentVelocity;
++  const float MaxX = FMath::Tan(FMath::DegreesToRadians(HorizontalFOV * 0.5f)) * Range;
++  const float MaxY = FMath::Tan(FMath::DegreesToRadians(VerticalFOV * 0.5f)) * Range;
++  const int32 Count = FMath::Max(0, int32(PointsPerSecond * DeltaTime));
++  TArray<FCarlaGpuRay> Rays;
++  TArray<FVector2D> Angles;
++  TArray<FVector> Directions;
++  Rays.Reserve(Count);
++  for (int32 I = 0; I < Count; ++I)
++  {
++    const float Radius = RandomEngine->GetUniformFloat();
++    const float Angle = RandomEngine->GetUniformFloatInRange(0, carla::geom::Math::Pi2<float>());
++    float Sin, Cos;
++    FMath::SinCos(&Sin, &Cos, Angle);
++    const FVector Delta = Transform.GetRotation().RotateVector(FVector(Range, MaxX * Radius * Cos, MaxY * Radius * Sin));
++    const FVector Direction = Delta.GetSafeNormal();
++    Rays.Add({Transform.GetLocation(), Direction, float(Delta.Size())});
++    Directions.Add(Direction);
++    Angles.Add(FMath::GetAzimuthAndElevation(Direction * Range,
++        Transform.GetUnitAxis(EAxis::X), Transform.GetUnitAxis(EAxis::Y), Transform.GetUnitAxis(EAxis::Z)));
++  }
++  CarlaGpuSensors::Submit(*this, MoveTemp(Rays),
++      [this, Velocity, Directions = MoveTemp(Directions), Angles = MoveTemp(Angles),
++       Complete = MoveTemp(Complete)](TArray<FCarlaGpuHit>&& Hits) mutable
++  {
++    TRACE_CPUPROFILER_EVENT_SCOPE(CarlaGpuRadarComplete);
++    RadarData.Reset();
++    for (int32 I = 0; I < Hits.Num(); ++I)
++      if (Hits[I].Hit.bBlockingHit)
++        RadarData.WriteDetection({float(0.01 * FVector::DotProduct(Hits[I].TargetVelocity - Velocity, Directions[I])),
++            float(Angles[I].X), float(Angles[I].Y), Hits[I].Hit.Distance * 0.01f});
++    Complete();
++  });
++}
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Radar.h b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Radar.h
+index c821a93..6f971b5 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Radar.h
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Radar.h
+@@ -69,6 +69,8 @@ private:
+ 
+   void SendLineTraces(float DeltaTime);
+ 
++  void SendGpuTraces(float DeltaTime, TUniqueFunction<void()>&& Complete);
++
+   float CalculateRelativeVelocity(const FHitResult& OutHit, const FVector& RadarLocation);
+ 
+   FRadarData RadarData;
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastLidar.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastLidar.cpp
+index 84cf88e..2d21dd6 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastLidar.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastLidar.cpp
+@@ -5,6 +5,7 @@
+ // For a copy, see <https://opensource.org/licenses/MIT>.
+ 
+ #include "Carla/Sensor/RayCastLidar.h"
++#include "Carla/Sensor/GpuSensorDispatcher.h"
+ #include "Carla.h"
+ #include "Carla/Actor/ActorBlueprintFunctionLibrary.h"
+ 
+@@ -59,9 +60,18 @@ void ARayCastLidar::Set(const FLidarDescription &LidarDescription)
+ void ARayCastLidar::PostPhysTick(UWorld *World, ELevelTick TickType, float DeltaTime)
+ {
+   TRACE_CPUPROFILER_EVENT_SCOPE(ARayCastLidar::PostPhysTick);
+-  SimulateLidar(DeltaTime);
+-
++  // Multi-GPU worlds replicate sensors, but only the assigned stream worker
++  // should spend time tracing. Retain recording and ROS consumers.
++  // AreClientsListening also includes enabled ROS streams and forced activity.
++  const bool Needed = AreClientsListening() || bSavingDataToDisk;
++  if (!Needed) return;
++  CarlaGpuSensors::BeginSensorTick(*this);
++  const AActor* ParentAtCapture = GetAttachParentActor();
++  const FTransform RelativeAtCapture = ParentAtCapture
++      ? GetActorTransform().GetRelativeTransform(ParentAtCapture->GetActorTransform()) : GetActorTransform();
+   auto DataStream = GetDataStream(*this);
++  auto Send = [this, RelativeAtCapture, DataStream = MoveTemp(DataStream)]() mutable
++  {
+   auto SensorTransform = DataStream.GetSensorTransform();
+ 
+   {
+@@ -78,7 +88,7 @@ void ARayCastLidar::PostPhysTick(UWorld *World, ELevelTick TickType, float Delta
+     AActor* ParentActor = GetAttachParentActor();
+     if (ParentActor)
+     {
+-      FTransform LocalTransformRelativeToParent = GetActorTransform().GetRelativeTransform(ParentActor->GetActorTransform());
++      FTransform LocalTransformRelativeToParent = RelativeAtCapture;
+       ROS2->ProcessDataFromLidar(DataStream.GetSensorType(), StreamId, LocalTransformRelativeToParent, LidarData, this);
+     }
+     else
+@@ -89,6 +99,15 @@ void ARayCastLidar::PostPhysTick(UWorld *World, ELevelTick TickType, float Delta
+   #endif
+ 
+ 
++  };
++  if (CarlaGpuSensors::IsEnabled())
++    SimulateLidarGpu(DeltaTime, MoveTemp(Send));
++  else
++  {
++    SimulateLidar(DeltaTime);
++    Send();
++  }
++
+ }
+ 
+ float ARayCastLidar::ComputeIntensity(const FSemanticDetection& RawDetection) const
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastSemanticLidar.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastSemanticLidar.cpp
+index 6e35e8f..f2695be 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastSemanticLidar.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastSemanticLidar.cpp
+@@ -5,6 +5,7 @@
+ // For a copy, see <https://opensource.org/licenses/MIT>.
+ 
+ #include "Carla/Sensor/RayCastSemanticLidar.h"
++#include "Carla/Sensor/GpuSensorDispatcher.h"
+ #include "Carla.h"
+ #include "Carla/Actor/ActorBlueprintFunctionLibrary.h"
+ #include "Carla/Game/Tagger.h"
+@@ -73,9 +74,18 @@ void ARayCastSemanticLidar::CreateLasers()
+ void ARayCastSemanticLidar::PostPhysTick(UWorld *World, ELevelTick TickType, float DeltaTime)
+ {
+   TRACE_CPUPROFILER_EVENT_SCOPE(ARayCastSemanticLidar::PostPhysTick);
+-  SimulateLidar(DeltaTime);
+-
++  // Multi-GPU worlds replicate sensors, but only the assigned stream worker
++  // should spend time tracing. Retain recording and ROS consumers.
++  // AreClientsListening also includes enabled ROS streams and forced activity.
++  const bool Needed = AreClientsListening() || bSavingDataToDisk;
++  if (!Needed) return;
++  CarlaGpuSensors::BeginSensorTick(*this);
++  const AActor* ParentAtCapture = GetAttachParentActor();
++  const FTransform RelativeAtCapture = ParentAtCapture
++      ? GetActorTransform().GetRelativeTransform(ParentAtCapture->GetActorTransform()) : GetActorTransform();
+   auto DataStream = GetDataStream(*this);
++  auto Send = [this, RelativeAtCapture, DataStream = MoveTemp(DataStream)]() mutable
++  {
+   auto SensorTransform = DataStream.GetSensorTransform();
+   {
+     TRACE_CPUPROFILER_EVENT_SCOPE_STR("Send Stream");
+@@ -91,7 +101,7 @@ void ARayCastSemanticLidar::PostPhysTick(UWorld *World, ELevelTick TickType, flo
+     AActor* ParentActor = GetAttachParentActor();
+     if (ParentActor)
+     {
+-      FTransform LocalTransformRelativeToParent = GetActorTransform().GetRelativeTransform(ParentActor->GetActorTransform());
++      FTransform LocalTransformRelativeToParent = RelativeAtCapture;
+       ROS2->ProcessDataFromSemanticLidar(DataStream.GetSensorType(), StreamId, LocalTransformRelativeToParent, SemanticLidarData, this);
+     }
+     else
+@@ -100,6 +110,15 @@ void ARayCastSemanticLidar::PostPhysTick(UWorld *World, ELevelTick TickType, flo
+     }
+   }
+   #endif
++  };
++  if (CarlaGpuSensors::IsEnabled())
++    SimulateLidarGpu(DeltaTime, MoveTemp(Send));
++  else
++  {
++    SimulateLidar(DeltaTime);
++    Send();
++  }
++
+ }
+ 
+ void ARayCastSemanticLidar::SimulateLidar(const float DeltaTime)
+@@ -173,6 +192,50 @@ void ARayCastSemanticLidar::ResetRecordedHits(uint32_t Channels, uint32_t MaxPoi
+   }
+ }
+ 
++void ARayCastSemanticLidar::SimulateLidarGpu(float DeltaTime, TUniqueFunction<void()>&& Complete)
++{
++  TRACE_CPUPROFILER_EVENT_SCOPE(CarlaGpuLidarSubmit);
++  // Complete the preceding GPU batch before consuming the next random values.
++  CarlaGpuSensors::Pump();
++  const uint32 Channels = Description.Channels;
++  const uint32 Count = FMath::Max(0, FMath::RoundHalfFromZero(
++      Description.PointsPerSecond * DeltaTime / float(Channels)));
++  const FTransform Transform = GetActorTransform();
++  const float Start = carla::geom::Math::ToDegrees(SemanticLidarData.GetHorizontalAngle());
++  const float Sweep = Description.RotationFrequency * Description.HorizontalFov * DeltaTime;
++  const float NextAngle = carla::geom::Math::ToRadians(FMath::Fmod(Start + Sweep, Description.HorizontalFov));
++  PreprocessRays(Channels, Count);
++  TArray<FCarlaGpuRay> Rays;
++  TArray<uint32> ChannelIndices;
++  Rays.Reserve(Channels * Count);
++  ChannelIndices.Reserve(Channels * Count);
++  for (uint32 Channel = 0; Channel < Channels; ++Channel)
++    for (uint32 Point = 0; Point < Count; ++Point)
++    {
++      if (!RayPreprocessCondition[Channel][Point]) continue;
++      const float Horizontal = FMath::Fmod(Start + Sweep * Point / Count,
++          Description.HorizontalFov) - Description.HorizontalFov * 0.5f;
++      // Rotate the unit direction directly: avoid converting the sensor's
++      // quaternion to Euler angles and back for every point in the batch.
++      const FVector Direction = Transform.TransformVectorNoScale(
++          FRotator(LaserAngles[Channel], Horizontal, 0).Vector());
++      Rays.Add({Transform.GetLocation(), Direction, Description.Range});
++      ChannelIndices.Add(Channel);
++    }
++  CarlaGpuSensors::Submit(*this, MoveTemp(Rays),
++      [this, Transform, Channels, Count, NextAngle, ChannelIndices = MoveTemp(ChannelIndices),
++       Complete = MoveTemp(Complete)](TArray<FCarlaGpuHit>&& Hits) mutable
++  {
++    TRACE_CPUPROFILER_EVENT_SCOPE(CarlaGpuLidarComplete);
++    ResetRecordedHits(Channels, Count);
++    for (int32 I = 0; I < Hits.Num(); ++I)
++      if (Hits[I].Hit.bBlockingHit) WritePointAsync(ChannelIndices[I], Hits[I].Hit);
++    ComputeAndSaveDetections(Transform);
++    SemanticLidarData.SetHorizontalAngle(NextAngle);
++    Complete();
++  });
++}
++
+ void ARayCastSemanticLidar::PreprocessRays(uint32_t Channels, uint32_t MaxPointsPerChannel) {
+   RayPreprocessCondition.resize(Channels);
+ 
+@@ -220,12 +283,15 @@ void ARayCastSemanticLidar::ComputeRawDetection(const FHitResult& HitInfo, const
+     Detection.object_idx = 0;
+     
+     // Given that landscapes do not have tags for now, asign it here if the actor is a landscape, otherwise get the component tag
+-    if (actor->IsA<ALandscape>()){
++    if (actor && actor->IsA<ALandscape>()){
+       Detection.object_tag = static_cast<uint32_t>(ATagger::GetTagFromString("Terrain"));
+     }
+-    else {
++    else if (HitInfo.Component.IsValid() && !HitInfo.Component->ComponentTags.IsEmpty()) {
+       Detection.object_tag = static_cast<uint32_t>(ATagger::GetTagFromString(HitInfo.Component->ComponentTags[0].ToString()));
+     }
++    else {
++      Detection.object_tag = 0;
++    }
+ 
+     if (actor != nullptr) {
+ 
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastSemanticLidar.h b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastSemanticLidar.h
+index 4d05651..3bdc05c 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastSemanticLidar.h
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/RayCastSemanticLidar.h
+@@ -47,6 +47,8 @@ protected:
+   /// Updates LidarMeasurement with the points read in DeltaTime.
+   void SimulateLidar(const float DeltaTime);
+ 
++  void SimulateLidarGpu(float DeltaTime, TUniqueFunction<void()>&& Complete);
++
+   /// Shoot a laser ray-trace, return whether the laser hit something.
+   bool ShootLaser(const float VerticalAngle, float HorizontalAngle, FHitResult &HitResult, FCollisionQueryParams& TraceParams) const;
+ 
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SceneCaptureCamera.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SceneCaptureCamera.cpp
+index ab7b3b0..6193dab 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SceneCaptureCamera.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SceneCaptureCamera.cpp
+@@ -54,11 +54,12 @@ void ASceneCaptureCamera::PostPhysTick(UWorld *World, ELevelTick TickType, float
+       return;
+ 
+   auto FrameIndex = FCarlaEngine::GetFrameCounter();
+-  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex](
++  auto CaptureStream = MakeShared<FAsyncDataStream, ESPMode::ThreadSafe>(GetDataStream(*this));
++  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex, CaptureStream](
+     TArrayView<const FColor> Pixels,
+     FIntPoint Size) -> bool
+   {
+-    SendDataToClient(*this, Pixels, FrameIndex);
++    SendDataToClient(*this, Pixels, FrameIndex, &CaptureStream.Get());
+     return true;
+   });
+ }
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.cpp
+index 1036339..587853d 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.cpp
+@@ -948,7 +948,9 @@ void ASceneCaptureSensor::BeginPlay()
+ 
+   CaptureComponent2D->CaptureSource = ESceneCaptureSource::SCS_FinalToneCurveHDR;
+ 
+-  CaptureComponent2D->UpdateContent();
++  // PostPhysTick captures only when a stream or GBuffer has a consumer.
++  // An eager UpdateContent here renders every replicated camera once and
++  // retains unused Lumen/view resources on every GPU worker.
+   CaptureComponent2D->Activate();
+ 
+   // Nudge texture streaming priority at the new sensor's location so
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp
+index e641d6c..d02c4ab 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp
+@@ -32,11 +32,12 @@ void ASemanticSegmentationCamera::PostPhysTick(UWorld *World, ELevelTick TickTyp
+       return;
+ 
+   auto FrameIndex = FCarlaEngine::GetFrameCounter();
+-  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex](
++  auto CaptureStream = MakeShared<FAsyncDataStream, ESPMode::ThreadSafe>(GetDataStream(*this));
++  ImageUtil::ReadSensorImageDataAsyncFColor(*this, [this, FrameIndex, CaptureStream](
+     TArrayView<const FColor> Pixels,
+     FIntPoint Size) -> bool
+   {
+-    SendDataToClient(*this, Pixels, FrameIndex);
++    SendDataToClient(*this, Pixels, FrameIndex, &CaptureStream.Get());
+     return true;
+   });
+ }
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Sensor.h b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Sensor.h
+index 99f4c4a..db0e6ee 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Sensor.h
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Sensor/Sensor.h
+@@ -176,7 +176,8 @@ protected:
+   static void SendDataToClient(
+     SensorType&& Sensor,                  // The data's owning sensor.
+     TArrayView<ElementType> SensorData,   // Data to send to the client.
+-    uint64_t FrameIndex                   // Current frame index.
++    uint64_t FrameIndex,                  // Current frame index.
++    FAsyncDataStream* CapturedStream = nullptr // Immutable capture-time header.
+     )
+   {
+     using carla::sensor::SensorRegistry;
+@@ -186,7 +187,7 @@ protected:
+     if (!Sensor.AreClientsListening())
+         return;
+ 
+-    auto Stream = Sensor.GetDataStream(Sensor);
++    auto Stream = CapturedStream ? MoveTemp(*CapturedStream) : Sensor.GetDataStream(Sensor);
+     Stream.SetFrameNumber(FrameIndex);
+     
+     auto Buffer = Stream.PopBufferFromPool();
+diff --git a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Weather/Weather.cpp b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Weather/Weather.cpp
+index 2ae4526..beaecde 100644
+--- a/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Weather/Weather.cpp
++++ b/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Weather/Weather.cpp
+@@ -5,6 +5,7 @@
+ // For a copy, see <https://opensource.org/licenses/MIT>.
+ 
+ #include "Carla/Weather/Weather.h"
++#include "Carla/Weather/Sky.h"
+ #include "Carla.h"
+ #include "Carla/Game/CarlaStatics.h"
+ #include "Carla/Recorder/CarlaRecorder.h"
+@@ -14,10 +15,109 @@
+ #include <util/ue-header-guard-begin.h>
+ #include "Components/SceneCaptureComponent2D.h"
+ #include "Components/SkyLightComponent.h"
++#include "Components/DirectionalLightComponent.h"
++#include "Components/ExponentialHeightFogComponent.h"
++#include "Components/VolumetricCloudComponent.h"
++#include "Materials/MaterialInstanceDynamic.h"
++#include "Curves/CurveFloat.h"
+ #include "Kismet/GameplayStatics.h"
+ #include "UObject/ConstructorHelpers.h"
++#include "UObject/UnrealType.h"
+ #include <util/ue-header-guard-end.h>
+ 
++namespace
++{
++// UE5 maps keep their lighting components on a separately loaded sky actor.
++// A weather controller spawned by the game mode can precede that actor. Resolve
++// the authored blueprint reference when applying weather, after map loading.
++void ResolveWeatherSky(AWeather* WeatherActor)
++{
++    FObjectPropertyBase* SkyProperty = FindFProperty<FObjectPropertyBase>(
++        WeatherActor->GetClass(), TEXT("BP_CarlaSky"));
++    if (SkyProperty && SkyProperty->PropertyClass->IsChildOf(AActor::StaticClass()) &&
++        !IsValid(SkyProperty->GetObjectPropertyValue_InContainer(WeatherActor)))
++    {
++        AActor* Sky = UGameplayStatics::GetActorOfClass(
++            WeatherActor->GetWorld(), SkyProperty->PropertyClass);
++        if (Sky)
++        {
++            SkyProperty->SetObjectPropertyValue_InContainer(WeatherActor, Sky);
++            UE_LOG(LogCarla, Log, TEXT("Weather controller linked to loaded sky %s"), *Sky->GetName());
++        }
++    }
++}
++
++void ApplyLoadedSkyWeather(AWeather* WeatherActor, const FWeatherParameters& Parameters)
++{
++    TArray<AActor*> Skies;
++    UGameplayStatics::GetAllActorsOfClass(WeatherActor->GetWorld(), ASkyBase::StaticClass(), Skies);
++    const auto CurveValue = [WeatherActor](const TCHAR* PropertyName, float Input, float Fallback)
++    {
++        const FObjectPropertyBase* Property = FindFProperty<FObjectPropertyBase>(WeatherActor->GetClass(), PropertyName);
++        const UCurveFloat* Curve = Property ? Cast<UCurveFloat>(Property->GetObjectPropertyValue_InContainer(WeatherActor)) : nullptr;
++        return Curve ? Curve->GetFloatValue(Input) : Fallback;
++    };
++    // The UE5 port's legacy weather graph updates material parameters but does
++    // not drive the new sky's component lights. Use the supplied weather curves
++    // and update the actual movable components before sensor rendering.
++    const bool bDay = Parameters.SunAltitudeAngle >= 0.f;
++    const float SunIntensity = bDay ? CurveValue(TEXT("SunIntensity_Curve"), Parameters.SunAltitudeAngle, 100000.f) : 0.f;
++    const float PeakSunIntensity = FMath::Max(1.f, CurveValue(TEXT("SunIntensity_Curve"), 75.f, 100000.f));
++    // Preserve each map's authored light scale; UE4 weather curves use lux,
++    // while this UE5 map was authored with a much lower cinematic intensity.
++    static TMap<TWeakObjectPtr<UDirectionalLightComponent>, float> OriginalSunIntensities;
++    for (auto It = OriginalSunIntensities.CreateIterator(); It; ++It)
++        if (!It.Key().IsValid()) It.RemoveCurrent();
++    const float SkyIntensity = CurveValue(TEXT("SkyIntensity_Curve"), Parameters.SunAltitudeAngle, bDay ? 1.f : 0.f);
++    for (AActor* Sky : Skies)
++    {
++        TArray<UDirectionalLightComponent*> Lights;
++        Sky->GetComponents(Lights);
++        for (UDirectionalLightComponent* Light : Lights)
++        {
++            const bool bSun = Light->GetName().Contains(TEXT("Sun"));
++            Light->SetWorldRotation(FRotator(bSun ? -Parameters.SunAltitudeAngle : Parameters.SunAltitudeAngle,
++                Parameters.SunAzimuthAngle + (bSun ? 0.f : 180.f), 0.f));
++            float MapSunIntensity = 0.f;
++            if (bSun)
++            {
++                const TWeakObjectPtr<UDirectionalLightComponent> Key(Light);
++                if (!OriginalSunIntensities.Contains(Key)) OriginalSunIntensities.Add(Key, Light->Intensity);
++                MapSunIntensity = OriginalSunIntensities[Key] * SunIntensity / PeakSunIntensity;
++            }
++            Light->SetIntensity(bSun ? MapSunIntensity * (1.f - .008f * Parameters.Cloudiness) : (bDay ? 0.f : .05f));
++        }
++        if (USkyLightComponent* Light = Sky->FindComponentByClass<USkyLightComponent>())
++            Light->SetIntensity(SkyIntensity);
++        if (UExponentialHeightFogComponent* Fog = Sky->FindComponentByClass<UExponentialHeightFogComponent>())
++        {
++            Fog->SetFogDensity(Parameters.FogDensity * .001f);
++            Fog->SetFogHeightFalloff(Parameters.FogFalloff);
++            Fog->SetStartDistance(Parameters.FogDistance * 100.f); // API metres -> UE centimetres.
++        }
++        if (UVolumetricCloudComponent* Cloud = Sky->FindComponentByClass<UVolumetricCloudComponent>())
++        {
++            Cloud->SetVisibility(Parameters.Cloudiness > 0.f);
++            UMaterialInstanceDynamic* Dynamic = Cast<UMaterialInstanceDynamic>(Cloud->GetMaterial());
++            if (!Dynamic && Cloud->GetMaterial())
++            {
++                Dynamic = UMaterialInstanceDynamic::Create(Cloud->GetMaterial(), Cloud);
++                Cloud->SetMaterial(Dynamic);
++            }
++            if (Dynamic && Dynamic->Parent)
++            {
++                float Extinction = 1.f;
++                Dynamic->Parent->GetScalarParameterValue(FHashedMaterialParameterInfo(TEXT("ExtinctionScale")), Extinction);
++                Dynamic->SetScalarParameterValue(TEXT("ExtinctionScale"), Extinction * Parameters.Cloudiness / 100.f);
++            }
++        }
++        UE_LOG(LogCarla, Log, TEXT("Sky components updated: altitude=%.1f azimuth=%.1f sun_curve=%.1f sky=%.2f cloud=%.1f fog=%.1f"),
++            Parameters.SunAltitudeAngle, Parameters.SunAzimuthAngle, SunIntensity, SkyIntensity, Parameters.Cloudiness, Parameters.FogDensity);
++    }
++}
++
++}
++
+ AWeather::AWeather(const FObjectInitializer& ObjectInitializer)
+     : Super(ObjectInitializer)
+ {
+@@ -77,7 +177,9 @@ void AWeather::ApplyWeather(const FWeatherParameters& InWeather)
+ #endif // CARLA_WEATHER_EXTRA_LOG
+ 
+     // Call the blueprint that actually changes the weather.
++    ResolveWeatherSky(this);
+     RefreshWeather(Weather);
++    ApplyLoadedSkyWeather(this, Weather);
+ 
+     // record the weather event
+     ACarlaRecorder *Recorder = UCarlaStatics::GetRecorder(GetWorld());
+@@ -107,7 +209,9 @@ void AWeather::NotifyWeather(ASensor* Sensor)
+     CheckWeatherPostProcessEffects();
+ 
+     // Call the blueprint that actually changes the weather.
++    ResolveWeatherSky(this);
+     RefreshWeather(Weather);
++    ApplyLoadedSkyWeather(this, Weather);
+ }
+ 
+ void AWeather::SetWeather(const FWeatherParameters& InWeather)

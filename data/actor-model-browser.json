@@ -1,0 +1,21 @@
+{
+  "frame": "Frame 001076",
+  "selected": "Selected ego / 25 · vehicle.ambulance.ford",
+  "stats": {
+    "actorCones": "1",
+    "actorModelErrors": "0",
+    "actorModels": "3",
+    "drawCalls": "196",
+    "fallbackBuildings": "575",
+    "focusedActor": "25",
+    "geometryCount": "847",
+    "renderedTriangles": "739669",
+    "sceneInstances": "7755",
+    "sceneLoading": "false",
+    "sceneScope": "road",
+    "sceneTriangles": "6141158",
+    "selectedActor": "25",
+    "textureCount": "232"
+  },
+  "status": "3 actor models loaded"
+}

@@ -1,0 +1,3839 @@
+{
+  "actors": 2932,
+  "classes": {
+    "PlayerStart": 1,
+    "BlueprintParentClassFixer": 1,
+    "StaticMeshActor": 1541,
+    "DecalActor": 422,
+    "ProceduralBuilding": 3,
+    "OpenDriveActor": 1,
+    "RoutePlanner": 136,
+    "VehicleSpawnPoint": 155,
+    "BP_TrafficLightGroup_C": 5,
+    "BP_Stop01_C": 3,
+    "BP_Yield01_C": 2,
+    "BP_TurnBasedStop_C": 1,
+    "BP_Stop_C": 2,
+    "BP_TrafficLightNew_T10_master_largeBIG_rsc_C": 13,
+    "BP_TrafficLightNew_T10_master_mediumBIG_rsc_C": 2,
+    "Emitter": 40,
+    "BP_AddPole01_A_C": 2,
+    "BP_CarlaCola_C": 3,
+    "BP_FoodCart_Decal_C": 9,
+    "BP_BillBoard2_C": 4,
+    "BP_StreetLight06_B_C": 17,
+    "BP_HighwayLight02_A_C": 5,
+    "BP_SpotLight01_C": 7,
+    "BP_FactoryLights_C": 10,
+    "BP_StreetLight06_A_C": 119,
+    "BP_MuseumGate_C": 1,
+    "BP_Apt19_B_C": 1,
+    "BP_Factory01_C": 1,
+    "BP_Factory02_C": 1,
+    "BP_Factory03_C": 1,
+    "BP_Museum02_C": 1,
+    "BP_Parking_C": 1,
+    "BP_Apt20_C_C": 3,
+    "BP_Apt20_B_C": 3,
+    "BP_Apt20_E_C": 3,
+    "BP_Apt20_F_C": 3,
+    "BP_Apt20_A_C": 1,
+    "BP_Apt21_A_C": 1,
+    "BP_Apt12_A_C": 1,
+    "BP_Apt12_B_C": 1,
+    "BP_Apt20_D_C": 2,
+    "BP_Museum01_C": 1,
+    "BP_ParkingRamp_C": 1,
+    "InstancedFoliageActor": 1,
+    "BP_BillBoard3_C": 4,
+    "DroppingAsset_C": 1,
+    "BP_BillBoard1_C": 3,
+    "BP_StreetLight01_C": 9,
+    "SM_Bollard02_C": 4,
+    "BP_RepSpline_C": 147,
+    "Actor": 114,
+    "GroupActor": 56,
+    "BP_GeneralSceneSettings_C": 1,
+    "BP_SplinePoweLine_C": 8,
+    "BP_DodgeCharger_Parked_C": 6,
+    "BP_FordCrown02_Parked_C": 2,
+    "BP_DodgeChargerCop_Parked_C": 1,
+    "BP_Mustang_Parked_C": 4,
+    "BP_BusStop_C": 11,
+    "BP_Carla_Sky_C": 1,
+    "BP_VehicleFactory_C": 1,
+    "BP_MitsubishiFusoRosa_Parked_C": 1,
+    "BP_LincolnMKZ_Parked_C": 2,
+    "BP_NissanPatrol_Parked_C": 3,
+    "BP_FordCrown01_Parked_C": 2,
+    "BP_MiniCooper_Parked_C": 2,
+    "BP_TeslaM3_Parked_C": 1,
+    "BP_VolkswagenT2_Parked_C": 1,
+    "BP_MercedesSprinter_Parked_C": 4,
+    "BP_Carlacola_Parked_C": 4,
+    "BP_EuropeanHGV_Parked_C": 6,
+    "BP_StreetLight05_C": 1
+  },
+  "libraries": [
+    "DatasmithGLTFSceneImportData",
+    "DatasmithStaticMeshGLTFImportData",
+    "EditorLevelUtils",
+    "GLTFAnimSequenceExporter",
+    "GLTFExportMessages",
+    "GLTFExportOptions",
+    "GLTFExporter",
+    "GLTFLevelExporter",
+    "GLTFLevelSequenceExporter",
+    "GLTFLevelVariantSetsExporter",
+    "GLTFMaterialBakeMode",
+    "GLTFMaterialBakeSize",
+    "GLTFMaterialExportOptions",
+    "GLTFMaterialExporter",
+    "GLTFMaterialPropertyGroup",
+    "GLTFMaterialVariantMode",
+    "GLTFOverrideMaterialBakeSettings",
+    "GLTFProxyOptions",
+    "GLTFSkeletalMeshExporter",
+    "GLTFStaticMeshExporter",
+    "GLTFTextureImageFormat",
+    "InterchangeGLTFPipeline",
+    "InterchangeGLTFTranslator",
+    "ProceduralMeshActor",
+    "ProceduralMeshComponent",
+    "ProceduralMeshLibrary"
+  ],
+  "levels": [
+    "add_level_to_world",
+    "add_level_to_world_with_transform",
+    "create_new_streaming_level",
+    "get_levels",
+    "make_level_current",
+    "move_actors_to_level",
+    "move_selected_actors_to_level",
+    "remove_level_from_world",
+    "set_level_visibility",
+    "set_levels_visibility"
+  ],
+  "meshes": {
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/SM_Road_SideWalk_Town10HD.SM_Road_SideWalk_Town10HD": {
+      "lods": [
+        12
+      ],
+      "instances": 37
+    },
+    "/Game/Carla/Static/Water/SM_Sea02.SM_Sea02": {
+      "lods": [
+        252,
+        125,
+        63,
+        32
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/RoadLine/Town10HDLaneMarkings/SM_Town10HD_LaneMarking_1.SM_Town10HD_LaneMarking_1": {
+      "lods": [
+        434
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/RoadLine/Town10HDLaneMarkings/SM_Town10HD_LaneMarking_2.SM_Town10HD_LaneMarking_2": {
+      "lods": [
+        689
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/RoadLine/Town10HDLaneMarkings/SM_Town10HD_LaneMarking_3.SM_Town10HD_LaneMarking_3": {
+      "lods": [
+        812
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/RoadLine/Town10HDLaneMarkings/SM_Town10HD_LaneMarking_4.SM_Town10HD_LaneMarking_4": {
+      "lods": [
+        591
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Road/RoadsTown10HD/SM_Town10HD_Road_4.SM_Town10HD_Road_4": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Road/RoadsTown10HD/SM_Town10HD_Road_1.SM_Town10HD_Road_1": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Road/RoadsTown10HD/SM_Town10HD_Road_2.SM_Town10HD_Road_2": {
+      "lods": [
+        302
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Road/RoadsTown10HD/SM_Town10HD_Road_3.SM_Town10HD_Road_3": {
+      "lods": [
+        342
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Road_Sidewalk_18Node3.Town10HD_Road_Sidewalk_18Node3": {
+      "lods": [
+        59
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Road_Sidewalk_19Node1.Town10HD_Road_Sidewalk_19Node1": {
+      "lods": [
+        117
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Road_Sidewalk_20Node1.Town10HD_Road_Sidewalk_20Node1": {
+      "lods": [
+        72
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Road_Sidewalk_21Node.Town10HD_Road_Sidewalk_21Node": {
+      "lods": [
+        34
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Road_Sidewalk_22Node2.Town10HD_Road_Sidewalk_22Node2": {
+      "lods": [
+        78
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_10Node.Town10HD_Terrain_Ground_10Node": {
+      "lods": [
+        78
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_11Node.Town10HD_Terrain_Ground_11Node": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_12Node.Town10HD_Terrain_Ground_12Node": {
+      "lods": [
+        53
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_13Node.Town10HD_Terrain_Ground_13Node": {
+      "lods": [
+        61
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_14Node.Town10HD_Terrain_Ground_14Node": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_18Node.Town10HD_Terrain_Ground_18Node": {
+      "lods": [
+        77
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_22Node.Town10HD_Terrain_Ground_22Node": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_25Node.Town10HD_Terrain_Ground_25Node": {
+      "lods": [
+        49
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_26Node.Town10HD_Terrain_Ground_26Node": {
+      "lods": [
+        65
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_27Node.Town10HD_Terrain_Ground_27Node": {
+      "lods": [
+        53
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_28Node.Town10HD_Terrain_Ground_28Node": {
+      "lods": [
+        51
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_29Node.Town10HD_Terrain_Ground_29Node": {
+      "lods": [
+        90
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_33Node2.Town10HD_Terrain_Ground_33Node2": {
+      "lods": [
+        53
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_34Node.Town10HD_Terrain_Ground_34Node": {
+      "lods": [
+        60
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_34Node1.Town10HD_Terrain_Ground_34Node1": {
+      "lods": [
+        45
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_35Node.Town10HD_Terrain_Ground_35Node": {
+      "lods": [
+        88
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_35Node1.Town10HD_Terrain_Ground_35Node1": {
+      "lods": [
+        57
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_36Node.Town10HD_Terrain_Ground_36Node": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_36Node1.Town10HD_Terrain_Ground_36Node1": {
+      "lods": [
+        47
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_37Node.Town10HD_Terrain_Ground_37Node": {
+      "lods": [
+        94
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_37Node1.Town10HD_Terrain_Ground_37Node1": {
+      "lods": [
+        79
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_41Node.Town10HD_Terrain_Ground_41Node": {
+      "lods": [
+        47
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_41Node1.Town10HD_Terrain_Ground_41Node1": {
+      "lods": [
+        79
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_42Node.Town10HD_Terrain_Ground_42Node": {
+      "lods": [
+        80
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_43Node.Town10HD_Terrain_Ground_43Node": {
+      "lods": [
+        164
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_44Node.Town10HD_Terrain_Ground_44Node": {
+      "lods": [
+        115
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_45Node.Town10HD_Terrain_Ground_45Node": {
+      "lods": [
+        132
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_49Node.Town10HD_Terrain_Ground_49Node": {
+      "lods": [
+        102
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_50Node.Town10HD_Terrain_Ground_50Node": {
+      "lods": [
+        38
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_50Node1.Town10HD_Terrain_Ground_50Node1": {
+      "lods": [
+        69
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_51Node1.Town10HD_Terrain_Ground_51Node1": {
+      "lods": [
+        57
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_52Node1.Town10HD_Terrain_Ground_52Node1": {
+      "lods": [
+        49
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_53Node1.Town10HD_Terrain_Ground_53Node1": {
+      "lods": [
+        60
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_54Node.Town10HD_Terrain_Ground_54Node": {
+      "lods": [
+        109
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_59Node.Town10HD_Terrain_Ground_59Node": {
+      "lods": [
+        48
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_60Node.Town10HD_Terrain_Ground_60Node": {
+      "lods": [
+        43
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_61Node.Town10HD_Terrain_Ground_61Node": {
+      "lods": [
+        48
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_9Node.Town10HD_Terrain_Ground_9Node": {
+      "lods": [
+        67
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Water/SM_Sea01.SM_Sea01": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_15Node.Town10HD_Terrain_Ground_15Node": {
+      "lods": [
+        33
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_17Node.Town10HD_Terrain_Ground_17Node": {
+      "lods": [
+        13
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_17Node1.Town10HD_Terrain_Ground_17Node1": {
+      "lods": [
+        87
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_1Node.Town10HD_Terrain_Ground_1Node": {
+      "lods": [
+        54
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_24Node.Town10HD_Terrain_Ground_24Node": {
+      "lods": [
+        40
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_25Node1.Town10HD_Terrain_Ground_25Node1": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_2Node.Town10HD_Terrain_Ground_2Node": {
+      "lods": [
+        65
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_30Node.Town10HD_Terrain_Ground_30Node": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_31Node.Town10HD_Terrain_Ground_31Node": {
+      "lods": [
+        94
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_32Node.Town10HD_Terrain_Ground_32Node": {
+      "lods": [
+        44
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_33Node.Town10HD_Terrain_Ground_33Node": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_33Node1.Town10HD_Terrain_Ground_33Node1": {
+      "lods": [
+        22
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_38Node.Town10HD_Terrain_Ground_38Node": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_39Node.Town10HD_Terrain_Ground_39Node": {
+      "lods": [
+        175
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Terrain_Ground_3Node.Town10HD_Terrain_Ground_3Node": {
+      "lods": [
+        40
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_40Node.Town10HD_Terrain_Ground_40Node": {
+      "lods": [
+        61
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_46Node.Town10HD_Terrain_Ground_46Node": {
+      "lods": [
+        179
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_47Node.Town10HD_Terrain_Ground_47Node": {
+      "lods": [
+        85
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_48Node.Town10HD_Terrain_Ground_48Node": {
+      "lods": [
+        63
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_4Node.Town10HD_Terrain_Ground_4Node": {
+      "lods": [
+        45
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_51Node.Town10HD_Terrain_Ground_51Node": {
+      "lods": [
+        95
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_52Node.Town10HD_Terrain_Ground_52Node": {
+      "lods": [
+        82
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_53Node.Town10HD_Terrain_Ground_53Node": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_55Node.Town10HD_Terrain_Ground_55Node": {
+      "lods": [
+        96
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_56Node.Town10HD_Terrain_Ground_56Node": {
+      "lods": [
+        17
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_57Node.Town10HD_Terrain_Ground_57Node": {
+      "lods": [
+        36
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_58Node.Town10HD_Terrain_Ground_58Node": {
+      "lods": [
+        50
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_5Node.Town10HD_Terrain_Ground_5Node": {
+      "lods": [
+        45
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_62Node.Town10HD_Terrain_Ground_62Node": {
+      "lods": [
+        37
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_63Node.Town10HD_Terrain_Ground_63Node": {
+      "lods": [
+        43
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_6Node.Town10HD_Terrain_Ground_6Node": {
+      "lods": [
+        124
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Terrain/Town10HD/Town10HD_Terrain_Ground_7Node.Town10HD_Terrain_Ground_7Node": {
+      "lods": [
+        20
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_GroundNode.Town10HD_Terrain_GroundNode": {
+      "lods": [
+        18
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/Stairs_T10/SM_stairT10.SM_stairT10": {
+      "lods": [
+        358,
+        179,
+        90,
+        44
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/Props/00_LegacyAssets/SM_Stairs01_Corner.SM_Stairs01_Corner": {
+      "lods": [
+        716
+      ],
+      "instances": 12
+    },
+    "/Game/Carla/Static/Building/Props/00_LegacyAssets/SM_Stairs01.SM_Stairs01": {
+      "lods": [
+        120
+      ],
+      "instances": 124
+    },
+    "/Game/Carla/Static/Other/SM_Plane.SM_Plane": {
+      "lods": [
+        12
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Terrain_Ground_64.Town10HD_Terrain_Ground_64": {
+      "lods": [
+        12
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/ParkingParts/SM_accessRamp.SM_accessRamp": {
+      "lods": [
+        64
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_10Node.Town10HD_Road_Curb_10Node": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_11Node.Town10HD_Road_Curb_11Node": {
+      "lods": [
+        210
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_11Node1.Town10HD_Road_Curb_11Node1": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_12Node.Town10HD_Road_Curb_12Node": {
+      "lods": [
+        200
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_12Node1.Town10HD_Road_Curb_12Node1": {
+      "lods": [
+        230
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_13Node.Town10HD_Road_Curb_13Node": {
+      "lods": [
+        140
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_14Node.Town10HD_Road_Curb_14Node": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_14Node1.Town10HD_Road_Curb_14Node1": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_15Node.Town10HD_Road_Curb_15Node": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_15Node1.Town10HD_Road_Curb_15Node1": {
+      "lods": [
+        190
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_16Node.Town10HD_Road_Curb_16Node": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_16Node1.Town10HD_Road_Curb_16Node1": {
+      "lods": [
+        245
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_17Node.Town10HD_Road_Curb_17Node": {
+      "lods": [
+        220
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_17Node1.Town10HD_Road_Curb_17Node1": {
+      "lods": [
+        217
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_17Node2.Town10HD_Road_Curb_17Node2": {
+      "lods": [
+        175
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_18Node.Town10HD_Road_Curb_18Node": {
+      "lods": [
+        181
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_18Node1.Town10HD_Road_Curb_18Node1": {
+      "lods": [
+        201
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_18Node2.Town10HD_Road_Curb_18Node2": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_18Node3.Town10HD_Road_Curb_18Node3": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_19Node.Town10HD_Road_Curb_19Node": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_19Node1.Town10HD_Road_Curb_19Node1": {
+      "lods": [
+        340
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_19Node2.Town10HD_Road_Curb_19Node2": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_1Node.Town10HD_Road_Curb_1Node": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_20Node.Town10HD_Road_Curb_20Node": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_20Node1.Town10HD_Road_Curb_20Node1": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_20Node2.Town10HD_Road_Curb_20Node2": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_21Node.Town10HD_Road_Curb_21Node": {
+      "lods": [
+        160
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_21Node1.Town10HD_Road_Curb_21Node1": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_21Node3.Town10HD_Road_Curb_21Node3": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_22Node.Town10HD_Road_Curb_22Node": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_22Node1.Town10HD_Road_Curb_22Node1": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_22Node2.Town10HD_Road_Curb_22Node2": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_23Node.Town10HD_Road_Curb_23Node": {
+      "lods": [
+        201
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_23Node1.Town10HD_Road_Curb_23Node1": {
+      "lods": [
+        170
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_23Node2.Town10HD_Road_Curb_23Node2": {
+      "lods": [
+        181
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_23Node3.Town10HD_Road_Curb_23Node3": {
+      "lods": [
+        250
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_24Node.Town10HD_Road_Curb_24Node": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_24Node1.Town10HD_Road_Curb_24Node1": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_25Node.Town10HD_Road_Curb_25Node": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_26Node.Town10HD_Road_Curb_26Node": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_27Node.Town10HD_Road_Curb_27Node": {
+      "lods": [
+        59
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_28Node.Town10HD_Road_Curb_28Node": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_28Node1.Town10HD_Road_Curb_28Node1": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_29Node.Town10HD_Road_Curb_29Node": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_2Node.Town10HD_Road_Curb_2Node": {
+      "lods": [
+        180
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_30Node.Town10HD_Road_Curb_30Node": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_30Node1.Town10HD_Road_Curb_30Node1": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_31Node.Town10HD_Road_Curb_31Node": {
+      "lods": [
+        226
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_31Node1.Town10HD_Road_Curb_31Node1": {
+      "lods": [
+        255
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_32Node.Town10HD_Road_Curb_32Node": {
+      "lods": [
+        190
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_32Node1.Town10HD_Road_Curb_32Node1": {
+      "lods": [
+        200
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_33Node.Town10HD_Road_Curb_33Node": {
+      "lods": [
+        251
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_33Node1.Town10HD_Road_Curb_33Node1": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_34Node.Town10HD_Road_Curb_34Node": {
+      "lods": [
+        212
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_3Node.Town10HD_Road_Curb_3Node": {
+      "lods": [
+        200
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_4Node.Town10HD_Road_Curb_4Node": {
+      "lods": [
+        241
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_5Node.Town10HD_Road_Curb_5Node": {
+      "lods": [
+        41
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_6Node.Town10HD_Road_Curb_6Node": {
+      "lods": [
+        191
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_6Node1.Town10HD_Road_Curb_6Node1": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_7Node.Town10HD_Road_Curb_7Node": {
+      "lods": [
+        256
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_8Node.Town10HD_Road_Curb_8Node": {
+      "lods": [
+        252
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Curb_9Node.Town10HD_Road_Curb_9Node": {
+      "lods": [
+        210
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_CurbNode.Town10HD_Road_CurbNode": {
+      "lods": [
+        31
+      ],
+      "instances": 1
+    },
+    "/Engine/BasicShapes/Plane.Plane": {
+      "lods": [
+        2
+      ],
+      "instances": 110
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_10Node.Town10HD_Road_Gutter_10Node": {
+      "lods": [
+        74
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_11Node.Town10HD_Road_Gutter_11Node": {
+      "lods": [
+        41
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_11Node1.Town10HD_Road_Gutter_11Node1": {
+      "lods": [
+        62
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_12Node.Town10HD_Road_Gutter_12Node": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_12Node1.Town10HD_Road_Gutter_12Node1": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_13Node.Town10HD_Road_Gutter_13Node": {
+      "lods": [
+        30
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_14Node.Town10HD_Road_Gutter_14Node": {
+      "lods": [
+        75
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_14Node1.Town10HD_Road_Gutter_14Node1": {
+      "lods": [
+        94
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_15Node.Town10HD_Road_Gutter_15Node": {
+      "lods": [
+        89
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_15Node1.Town10HD_Road_Gutter_15Node1": {
+      "lods": [
+        38
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_16Node.Town10HD_Road_Gutter_16Node": {
+      "lods": [
+        95
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_16Node1.Town10HD_Road_Gutter_16Node1": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_17Node.Town10HD_Road_Gutter_17Node": {
+      "lods": [
+        41
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_17Node1.Town10HD_Road_Gutter_17Node1": {
+      "lods": [
+        40
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_17Node2.Town10HD_Road_Gutter_17Node2": {
+      "lods": [
+        45
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_18Node.Town10HD_Road_Gutter_18Node": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_18Node1.Town10HD_Road_Gutter_18Node1": {
+      "lods": [
+        72
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_18Node2.Town10HD_Road_Gutter_18Node2": {
+      "lods": [
+        38
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_19Node.Town10HD_Road_Gutter_19Node": {
+      "lods": [
+        90
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_19Node1.Town10HD_Road_Gutter_19Node1": {
+      "lods": [
+        76
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_1Node.Town10HD_Road_Gutter_1Node": {
+      "lods": [
+        60
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_20Node.Town10HD_Road_Gutter_20Node": {
+      "lods": [
+        78
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_20Node1.Town10HD_Road_Gutter_20Node1": {
+      "lods": [
+        80
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_21Node.Town10HD_Road_Gutter_21Node": {
+      "lods": [
+        34
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_21Node1.Town10HD_Road_Gutter_21Node1": {
+      "lods": [
+        86
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_22Node.Town10HD_Road_Gutter_22Node": {
+      "lods": [
+        109
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_22Node1.Town10HD_Road_Gutter_22Node1": {
+      "lods": [
+        72
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_23Node.Town10HD_Road_Gutter_23Node": {
+      "lods": [
+        41
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_23Node1.Town10HD_Road_Gutter_23Node1": {
+      "lods": [
+        53
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_23Node2.Town10HD_Road_Gutter_23Node2": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_24Node.Town10HD_Road_Gutter_24Node": {
+      "lods": [
+        71
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_24Node1.Town10HD_Road_Gutter_24Node1": {
+      "lods": [
+        56
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_25Node.Town10HD_Road_Gutter_25Node": {
+      "lods": [
+        54
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_26Node.Town10HD_Road_Gutter_26Node": {
+      "lods": [
+        61
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_27Node.Town10HD_Road_Gutter_27Node": {
+      "lods": [
+        15
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_28Node.Town10HD_Road_Gutter_28Node": {
+      "lods": [
+        70
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_28Node1.Town10HD_Road_Gutter_28Node1": {
+      "lods": [
+        72
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_29Node.Town10HD_Road_Gutter_29Node": {
+      "lods": [
+        68
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_2Node.Town10HD_Road_Gutter_2Node": {
+      "lods": [
+        38
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_30Node.Town10HD_Road_Gutter_30Node": {
+      "lods": [
+        98
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_30Node1.Town10HD_Road_Gutter_30Node1": {
+      "lods": [
+        62
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_31Node.Town10HD_Road_Gutter_31Node": {
+      "lods": [
+        47
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_31Node1.Town10HD_Road_Gutter_31Node1": {
+      "lods": [
+        85
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_32Node.Town10HD_Road_Gutter_32Node": {
+      "lods": [
+        40
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_32Node1.Town10HD_Road_Gutter_32Node1": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_33Node.Town10HD_Road_Gutter_33Node": {
+      "lods": [
+        52
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_33Node1.Town10HD_Road_Gutter_33Node1": {
+      "lods": [
+        56
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_34Node.Town10HD_Road_Gutter_34Node": {
+      "lods": [
+        44
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_3Node.Town10HD_Road_Gutter_3Node": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_4Node.Town10HD_Road_Gutter_4Node": {
+      "lods": [
+        50
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_5Node.Town10HD_Road_Gutter_5Node": {
+      "lods": [
+        7
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_6Node.Town10HD_Road_Gutter_6Node": {
+      "lods": [
+        41
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_6Node1.Town10HD_Road_Gutter_6Node1": {
+      "lods": [
+        80
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_7Node.Town10HD_Road_Gutter_7Node": {
+      "lods": [
+        113
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_8Node.Town10HD_Road_Gutter_8Node": {
+      "lods": [
+        96
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Gutter_9Node.Town10HD_Road_Gutter_9Node": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_GutterNode.Town10HD_Road_GutterNode": {
+      "lods": [
+        8
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_10Node.Town10HD_Road_Sidewalk_10Node": {
+      "lods": [
+        127
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_11Node.Town10HD_Road_Sidewalk_11Node": {
+      "lods": [
+        51
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_11Node1.Town10HD_Road_Sidewalk_11Node1": {
+      "lods": [
+        73
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_12Node.Town10HD_Road_Sidewalk_12Node": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_12Node1.Town10HD_Road_Sidewalk_12Node1": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_13Node.Town10HD_Road_Sidewalk_13Node": {
+      "lods": [
+        30
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_14Node.Town10HD_Road_Sidewalk_14Node": {
+      "lods": [
+        60
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_14Node1.Town10HD_Road_Sidewalk_14Node1": {
+      "lods": [
+        72
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_15Node.Town10HD_Road_Sidewalk_15Node": {
+      "lods": [
+        73
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_15Node1.Town10HD_Road_Sidewalk_15Node1": {
+      "lods": [
+        38
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_16Node.Town10HD_Road_Sidewalk_16Node": {
+      "lods": [
+        130
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_16Node1.Town10HD_Road_Sidewalk_16Node1": {
+      "lods": [
+        81
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_17Node.Town10HD_Road_Sidewalk_17Node": {
+      "lods": [
+        46
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_17Node1.Town10HD_Road_Sidewalk_17Node1": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_17Node2.Town10HD_Road_Sidewalk_17Node2": {
+      "lods": [
+        55
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_18Node.Town10HD_Road_Sidewalk_18Node": {
+      "lods": [
+        60
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_18Node1.Town10HD_Road_Sidewalk_18Node1": {
+      "lods": [
+        40
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_18Node2.Town10HD_Road_Sidewalk_18Node2": {
+      "lods": [
+        37
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_19Node.Town10HD_Road_Sidewalk_19Node": {
+      "lods": [
+        73
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_19Node3.Town10HD_Road_Sidewalk_19Node3": {
+      "lods": [
+        80
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_1Node.Town10HD_Road_Sidewalk_1Node": {
+      "lods": [
+        63
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_20Node.Town10HD_Road_Sidewalk_20Node": {
+      "lods": [
+        71
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_20Node2.Town10HD_Road_Sidewalk_20Node2": {
+      "lods": [
+        69
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_21Node1.Town10HD_Road_Sidewalk_21Node1": {
+      "lods": [
+        69
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_21Node2.Town10HD_Road_Sidewalk_21Node2": {
+      "lods": [
+        34
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_22Node.Town10HD_Road_Sidewalk_22Node": {
+      "lods": [
+        98
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_22Node1.Town10HD_Road_Sidewalk_22Node1": {
+      "lods": [
+        144
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_23Node.Town10HD_Road_Sidewalk_23Node": {
+      "lods": [
+        44
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_23Node1.Town10HD_Road_Sidewalk_23Node1": {
+      "lods": [
+        44
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Ground/Town10HD/Town10HD_Road_Sidewalk_23Node2.Town10HD_Road_Sidewalk_23Node2": {
+      "lods": [
+        30
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_23Node3.Town10HD_Road_Sidewalk_23Node3": {
+      "lods": [
+        63
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_24Node.Town10HD_Road_Sidewalk_24Node": {
+      "lods": [
+        70
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_24Node1.Town10HD_Road_Sidewalk_24Node1": {
+      "lods": [
+        71
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_25Node.Town10HD_Road_Sidewalk_25Node": {
+      "lods": [
+        39
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_25Node1.Town10HD_Road_Sidewalk_25Node1": {
+      "lods": [
+        65
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_26Node.Town10HD_Road_Sidewalk_26Node": {
+      "lods": [
+        66
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_27Node.Town10HD_Road_Sidewalk_27Node": {
+      "lods": [
+        122
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_28Node.Town10HD_Road_Sidewalk_28Node": {
+      "lods": [
+        80
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_28Node1.Town10HD_Road_Sidewalk_28Node1": {
+      "lods": [
+        73
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_29Node.Town10HD_Road_Sidewalk_29Node": {
+      "lods": [
+        71
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_2Node.Town10HD_Road_Sidewalk_2Node": {
+      "lods": [
+        38
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_30Node.Town10HD_Road_Sidewalk_30Node": {
+      "lods": [
+        90
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_30Node1.Town10HD_Road_Sidewalk_30Node1": {
+      "lods": [
+        63
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_31Node.Town10HD_Road_Sidewalk_31Node": {
+      "lods": [
+        75
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_31Node1.Town10HD_Road_Sidewalk_31Node1": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_32Node.Town10HD_Road_Sidewalk_32Node": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_32Node1.Town10HD_Road_Sidewalk_32Node1": {
+      "lods": [
+        40
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_33Node.Town10HD_Road_Sidewalk_33Node": {
+      "lods": [
+        64
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_33Node1.Town10HD_Road_Sidewalk_33Node1": {
+      "lods": [
+        53
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_34Node.Town10HD_Road_Sidewalk_34Node": {
+      "lods": [
+        54
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_3Node.Town10HD_Road_Sidewalk_3Node": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_4Node.Town10HD_Road_Sidewalk_4Node": {
+      "lods": [
+        50
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_5Node.Town10HD_Road_Sidewalk_5Node": {
+      "lods": [
+        23
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_6Node.Town10HD_Road_Sidewalk_6Node": {
+      "lods": [
+        39
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_6Node1.Town10HD_Road_Sidewalk_6Node1": {
+      "lods": [
+        87
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_7Node.Town10HD_Road_Sidewalk_7Node": {
+      "lods": [
+        118
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_8Node.Town10HD_Road_Sidewalk_8Node": {
+      "lods": [
+        101
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_Sidewalk_9Node.Town10HD_Road_Sidewalk_9Node": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/Town10HD_Road_SidewalkNode.Town10HD_Road_SidewalkNode": {
+      "lods": [
+        34
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Pole/SM_Pole01.SM_Pole01": {
+      "lods": [
+        32
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/TrafficSign/00_IndividualComponents/Stop01/SM_Stop01.SM_Stop01": {
+      "lods": [
+        112
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/TrafficSign/00_IndividualComponents/Yield01/SM_Yield01.SM_Yield01": {
+      "lods": [
+        152
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Pole/SM_TrafficLightPole01.SM_TrafficLightPole01": {
+      "lods": [
+        939
+      ],
+      "instances": 13
+    },
+    "/Game/Carla/Static/TrafficLight/SM_TrafficLight_PushButton01.SM_TrafficLight_PushButton01": {
+      "lods": [
+        196
+      ],
+      "instances": 15
+    },
+    "/Game/Carla/Static/Pole/SM_TrafficLightBase01.SM_TrafficLightBase01": {
+      "lods": [
+        606
+      ],
+      "instances": 15
+    },
+    "/Game/Carla/Static/Pole/SM_Pole09.SM_Pole09": {
+      "lods": [
+        256
+      ],
+      "instances": 15
+    },
+    "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Signal01_A.SM_TrafficLight_Signal01_A": {
+      "lods": [
+        312
+      ],
+      "instances": 129
+    },
+    "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_B.SM_TrafficLight_Pedestrian01_B": {
+      "lods": [
+        319
+      ],
+      "instances": 15
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_B.SM_StreetSign02_B": {
+      "lods": [
+        252
+      ],
+      "instances": 15
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight05.SM_StreetLight05": {
+      "lods": [
+        256
+      ],
+      "instances": 31
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_B.SM_StreetSign01_B": {
+      "lods": [
+        364
+      ],
+      "instances": 14
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PassengerCar01.SM_PassengerCar01": {
+      "lods": [
+        328
+      ],
+      "instances": 12
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign02_A.SM_StreetSign02_A": {
+      "lods": [
+        252
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_StreetSign01_A.SM_StreetSign01_A": {
+      "lods": [
+        364
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02L.SM_OneWay02L": {
+      "lods": [
+        339
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_OneWay02_R.SM_OneWay02_R": {
+      "lods": [
+        341
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/TrafficLight/SM_TrafficLight_Pedestrian01_C.SM_TrafficLight_Pedestrian01_C": {
+      "lods": [
+        632
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_CleanPet01.SM_CleanPet01": {
+      "lods": [
+        140
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Pole/SM_TrafficLightPole02.SM_TrafficLightPole02": {
+      "lods": [
+        841
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Crosswalk01.SM_Crosswalk01": {
+      "lods": [
+        140
+      ],
+      "instances": 11
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_BikeSign01.SM_BikeSign01": {
+      "lods": [
+        140
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_NoPedestrians01.SM_NoPedestrians01": {
+      "lods": [
+        140
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/TrafficSign/00_IndividualComponents/OneWay01/SM_OneWay01_R.SM_OneWay01_R": {
+      "lods": [
+        140
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PedestrianYield01.SM_PedestrianYield01": {
+      "lods": [
+        140
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_TrafficLight01.SM_TrafficLight01": {
+      "lods": [
+        140
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Motorcycle/Harley/SM_Harley.SM_Harley": {
+      "lods": [
+        5172,
+        6074,
+        3037,
+        1455
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Motorcycle/Vespa/SM_Vespa.SM_Vespa": {
+      "lods": [
+        2461
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Car/4Wheeled/Tesla/Parked/SM_TeslaM3.SM_TeslaM3": {
+      "lods": [
+        14804,
+        7402,
+        3701,
+        1850,
+        926
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Motorcycle/Yamaha/SM_Yamaha.SM_Yamaha": {
+      "lods": [
+        5895,
+        2947,
+        1474,
+        737
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_MailBox.SM_MailBox": {
+      "lods": [
+        256,
+        234
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Museum/SM_MuseumProp02.SM_MuseumProp02": {
+      "lods": [
+        328
+      ],
+      "instances": 21
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_ParkingBarrier_Opt.SM_ParkingBarrier_Opt": {
+      "lods": [
+        255
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Static/SM_HighAdd.SM_HighAdd": {
+      "lods": [
+        24
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Other/Banner/SM_banner.SM_banner": {
+      "lods": [
+        1326,
+        663,
+        332,
+        166
+      ],
+      "instances": 78
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_Dumpster02.SM_Dumpster02": {
+      "lods": [
+        345
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_CarlaCola.SM_CarlaCola": {
+      "lods": [
+        255,
+        127,
+        63,
+        32
+      ],
+      "instances": 14
+    },
+    "/Game/Carla/Static/Pole/00_IndividualComponents/AddPole/SM_AddPole01.SM_AddPole01": {
+      "lods": [
+        699,
+        349,
+        174,
+        88
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/Street/Materials/SM_FoodCart_Body.SM_FoodCart_Body": {
+      "lods": [
+        1678,
+        839,
+        420,
+        210
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Dynamic/Street/Materials/SM_FoodCart_Umbrella01.SM_FoodCart_Umbrella01": {
+      "lods": [
+        251,
+        125,
+        63,
+        32
+      ],
+      "instances": 18
+    },
+    "/Game/Carla/Static/Dynamic/Street/Materials/SM_FoodCart_Umbrella02.SM_FoodCart_Umbrella02": {
+      "lods": [
+        251,
+        125,
+        63,
+        32
+      ],
+      "instances": 18
+    },
+    "/Game/Carla/Static/Dynamic/Street/Materials/SM_FoodCart_Lights02.SM_FoodCart_Lights02": {
+      "lods": [
+        252,
+        126,
+        63,
+        32
+      ],
+      "instances": 63
+    },
+    "/Game/Carla/Static/Dynamic/Street/Materials/SM_FoodCart_Lights01.SM_FoodCart_Lights01": {
+      "lods": [
+        1398,
+        698,
+        350,
+        174
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Other/SkatePark/SM_SkatePark01.SM_SkatePark01": {
+      "lods": [
+        256,
+        291
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Other/SkatePark/SM_SkatePark02.SM_SkatePark02": {
+      "lods": [
+        524,
+        813
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Other/SkatePark/SM_SkatePark03.SM_SkatePark03": {
+      "lods": [
+        339,
+        610
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Other/SkatePark/SM_SkatePark04.SM_SkatePark04": {
+      "lods": [
+        766,
+        1587
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_ParkingBarrier_Short_Opt.SM_ParkingBarrier_Short_Opt": {
+      "lods": [
+        256
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/BarRestaurant/SM_BarAdvertise.SM_BarAdvertise": {
+      "lods": [
+        256,
+        270
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/Materials/Billboard/SM_Billboard2.SM_Billboard2": {
+      "lods": [
+        440
+      ],
+      "instances": 12
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_LightBox1.SM_LightBox1": {
+      "lods": [
+        255
+      ],
+      "instances": 12
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight06_B.SM_StreetLight06_B": {
+      "lods": [
+        745
+      ],
+      "instances": 17
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight06_B_GlassExt.SM_StreetLight06_B_GlassExt": {
+      "lods": [
+        360
+      ],
+      "instances": 17
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight06_B_GlassInt.SM_StreetLight06_B_GlassInt": {
+      "lods": [
+        360
+      ],
+      "instances": 17
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_HighwayLight02.SM_HighwayLight02": {
+      "lods": [
+        1011
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_HighwayLight02_GlassExt.SM_HighwayLight02_GlassExt": {
+      "lods": [
+        24
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_HighwayLight02_GlassInt.SM_HighwayLight02_GlassInt": {
+      "lods": [
+        24
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_SpotLight01.SM_SpotLight01": {
+      "lods": [
+        82,
+        41,
+        20,
+        10
+      ],
+      "instances": 7
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Factory/IndividualComponents/SM_FactoryLights.SM_FactoryLights": {
+      "lods": [
+        246,
+        123,
+        62,
+        30
+      ],
+      "instances": 10
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight06_A.SM_StreetLight06_A": {
+      "lods": [
+        517
+      ],
+      "instances": 119
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight06_A_GlassExt.SM_StreetLight06_A_GlassExt": {
+      "lods": [
+        180,
+        90,
+        45,
+        23
+      ],
+      "instances": 119
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight06_A_GlassInt.SM_StreetLight06_A_GlassInt": {
+      "lods": [
+        180,
+        90,
+        45,
+        22
+      ],
+      "instances": 119
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_BusStop01.SM_BusStop01": {
+      "lods": [
+        140
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Tow01.SM_Tow01": {
+      "lods": [
+        140
+      ],
+      "instances": 12
+    },
+    "/Game/Carla/Static/Other/Banner/SM_Banner02.SM_Banner02": {
+      "lods": [
+        464,
+        232,
+        116,
+        57
+      ],
+      "instances": 17
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_PedestrianStop01.SM_PedestrianStop01": {
+      "lods": [
+        140
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking02.SM_Parking02": {
+      "lods": [
+        140
+      ],
+      "instances": 12
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking04.SM_Parking04": {
+      "lods": [
+        140
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking03.SM_Parking03": {
+      "lods": [
+        140
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_Parking01.SM_Parking01": {
+      "lods": [
+        140
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/TrafficSign/TrafficSignPanel/Panel_NoConnectors/SM_NoStopping02.SM_NoStopping02": {
+      "lods": [
+        140
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/Fence/00_LegacyAssets/SM_WallBridge02.SM_WallBridge02": {
+      "lods": [
+        108
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Museum/SM_MuseumProp03.SM_MuseumProp03": {
+      "lods": [
+        398
+      ],
+      "instances": 161
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Museum/SM_MuseumProp01.SM_MuseumProp01": {
+      "lods": [
+        10
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_ChainBarrierEnd.SM_ChainBarrierEnd": {
+      "lods": [
+        298
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/00_LegacyAssets/SM_Apt15_C.SM_Apt15_C": {
+      "lods": [
+        28
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/00_LegacyAssets/GuardShelter/SM_GuardShelter_Opt.SM_GuardShelter_Opt": {
+      "lods": [
+        571
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Museum/IndividualComponents/SM_MuseumGate.SM_MuseumGate": {
+      "lods": [
+        3861,
+        1931,
+        966,
+        483
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Other/Banner/SM_Banner05.SM_Banner05": {
+      "lods": [
+        269,
+        230
+      ],
+      "instances": 7
+    },
+    "/Game/Carla/Static/Other/Banner/SM_Banner04.SM_Banner04": {
+      "lods": [
+        262,
+        222
+      ],
+      "instances": 12
+    },
+    "/Game/Carla/Static/Bridge/SM_Pier01.SM_Pier01": {
+      "lods": [
+        604,
+        302,
+        151,
+        76
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Bridge/SM_Pier01_Square.SM_Pier01_Square": {
+      "lods": [
+        5662,
+        2830,
+        1416,
+        708
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/SM_Apt19_A.SM_Apt19_A": {
+      "lods": [
+        4358
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Factory/IndividualComponents/SM_Factory01.SM_Factory01": {
+      "lods": [
+        2810,
+        2248
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Factory/IndividualComponents/SM_Factory02.SM_Factory02": {
+      "lods": [
+        2493,
+        1746
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Factory/IndividualComponents/SM_Factory03.SM_Factory03": {
+      "lods": [
+        5529
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Museum/IndividualComponents/SM_Museum02.SM_Museum02": {
+      "lods": [
+        6910,
+        3455,
+        1728
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Parking/IndividualComponents/SM_Parking.SM_Parking": {
+      "lods": [
+        3202,
+        1601,
+        801,
+        401
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_C_Glass.SM_Apt20_C_Glass": {
+      "lods": [
+        112
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_C.SM_Apt20_C": {
+      "lods": [
+        12794
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_B_Glass.SM_Apt20_B_Glass": {
+      "lods": [
+        40
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_B.SM_Apt20_B": {
+      "lods": [
+        8748,
+        6999
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_E_Glass.SM_Apt20_E_Glass": {
+      "lods": [
+        84
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_E.SM_Apt20_E": {
+      "lods": [
+        12716
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_F_Glass.SM_Apt20_F_Glass": {
+      "lods": [
+        42
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_F.SM_Apt20_F": {
+      "lods": [
+        7854
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_A_Glass.SM_Apt20_A_Glass": {
+      "lods": [
+        30
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_A.SM_Apt20_A": {
+      "lods": [
+        2740
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt21_A.SM_Apt21_A": {
+      "lods": [
+        22164,
+        113224,
+        64040
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt12/SM_Apt12_A.SM_Apt12_A": {
+      "lods": [
+        3824
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt12/SM_Apt12_B.SM_Apt12_B": {
+      "lods": [
+        4157
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/BackgroundBuildings/00_IndividualComponents/Apt20/SM_Apt20_D.SM_Apt20_D": {
+      "lods": [
+        2293
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Museum/IndividualComponents/SM_Museum01.SM_Museum01": {
+      "lods": [
+        6367,
+        3183,
+        1592
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Building/SpecialBuildings/Parking/IndividualComponents/SM_ParkingRamp.SM_ParkingRamp": {
+      "lods": [
+        7635,
+        45106,
+        22564,
+        11278
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Vegetation/00_LegacyAssets/Trees/SM_Pine01_C.SM_Pine01_C": {
+      "lods": [
+        100240
+      ],
+      "instances": 19
+    },
+    "/Game/Carla/Static/Vegetation/00_LegacyAssets/Trees/SM_Pine01_B.SM_Pine01_B": {
+      "lods": [
+        100199
+      ],
+      "instances": 21
+    },
+    "/Game/Carla/Static/Vegetation/00_LegacyAssets/Trees/SM_Pine01_A.SM_Pine01_A": {
+      "lods": [
+        100587
+      ],
+      "instances": 24
+    },
+    "/Game/Carla/Static/Vegetation/Grass/SM_SmallGrassv2.SM_SmallGrassv2": {
+      "lods": [
+        1160,
+        580,
+        290,
+        145
+      ],
+      "instances": 1962
+    },
+    "/Game/Carla/Static/Vegetation/Grass/SM_SmallGrassv3.SM_SmallGrassv3": {
+      "lods": [
+        1160,
+        580,
+        290,
+        145
+      ],
+      "instances": 2022
+    },
+    "/Game/Carla/Static/Vegetation/Trees/SM_PalmTree03_C.SM_PalmTree03_C": {
+      "lods": [
+        243723
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Vegetation/Trees/SM_PalmTree03_D.SM_PalmTree03_D": {
+      "lods": [
+        259111
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Vegetation/Trees/SM_PalmTree03_A.SM_PalmTree03_A": {
+      "lods": [
+        196734
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_StreetAD03.SM_StreetAD03": {
+      "lods": [
+        100,
+        50,
+        24,
+        12
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/Materials/Billboard/SM_Billboard3.SM_Billboard3": {
+      "lods": [
+        1844
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Dynamic/Construction/SM_DebrisContainer.SM_DebrisContainer": {
+      "lods": [
+        1846
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Dynamic/Construction/SM_PortableRestroom.SM_PortableRestroom": {
+      "lods": [
+        2287
+      ],
+      "instances": 10
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Construction/SM_RoadBlocker_03.SM_RoadBlocker_03": {
+      "lods": [
+        1304
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Construction/SM_TrafficCones_01.SM_TrafficCones_01": {
+      "lods": [
+        1482
+      ],
+      "instances": 23
+    },
+    "/Game/Carla/Static/Dynamic/Construction/SM_ConstructionCone.SM_ConstructionCone": {
+      "lods": [
+        530
+      ],
+      "instances": 56
+    },
+    "/Game/Carla/Static/Dynamic/Construction/SM_ConstructionLight.SM_ConstructionLight": {
+      "lods": [
+        1545
+      ],
+      "instances": 20
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_Recycle_Cardboard.SM_Recycle_Cardboard": {
+      "lods": [
+        702
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_Recycle_Plastic.SM_Recycle_Plastic": {
+      "lods": [
+        1133
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_Recycle_Organic.SM_Recycle_Organic": {
+      "lods": [
+        631
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_RecycleGlass.SM_RecycleGlass": {
+      "lods": [
+        705
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Static/SM_AdvertisingPost.SM_AdvertisingPost": {
+      "lods": [
+        344
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/Materials/Billboard/SM_Billboard1.SM_Billboard1": {
+      "lods": [
+        1810
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Static/SM_TrashCan03.SM_TrashCan03": {
+      "lods": [
+        2275
+      ],
+      "instances": 66
+    },
+    "/Game/Carla/Static/Static/SM_TrashCan01.SM_TrashCan01": {
+      "lods": [
+        442
+      ],
+      "instances": 32
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_StreetFountain.SM_StreetFountain": {
+      "lods": [
+        2385,
+        1193,
+        596,
+        299
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_FireHdrant.SM_FireHdrant": {
+      "lods": [
+        702,
+        350,
+        176,
+        87
+      ],
+      "instances": 19
+    },
+    "/Game/Carla/Static/Dynamic/Construction/Sm_Pallet.SM_Pallet": {
+      "lods": [
+        566
+      ],
+      "instances": 50
+    },
+    "/Game/Carla/Static/Fence/TarpFences/SM_Tarp_1.SM_Tarp_1": {
+      "lods": [
+        744
+      ],
+      "instances": 59
+    },
+    "/Game/Carla/Static/Fence/TarpFences/SM_Tarp_2.SM_Tarp_2": {
+      "lods": [
+        1022
+      ],
+      "instances": 50
+    },
+    "/Game/Carla/Static/Static/SM_RoadBump2x1.SM_RoadBump2x1": {
+      "lods": [
+        372
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Static/SM_RoadBump3x1.SM_RoadBump3x1": {
+      "lods": [
+        487
+      ],
+      "instances": 16
+    },
+    "/Game/Carla/Static/Static/SM_Bench_Plant.SM_Bench_Plant": {
+      "lods": [
+        3697,
+        4939,
+        4303,
+        3985
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Vegetation/00_LegacyAssets/Trees/SM_QuercusRubraBase01_B.SM_QuercusRubraBase01_B": {
+      "lods": [
+        921925
+      ],
+      "instances": 7
+    },
+    "/Game/Carla/Static/Vegetation/00_LegacyAssets/Trees/SM_QuercusRubraBase01_C.SM_QuercusRubraBase01_C": {
+      "lods": [
+        877879
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Static/SM_BikeParking02.SM_BikeParking02": {
+      "lods": [
+        26048
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Bicycle/Roadbike/SM_RoadBike.SM_RoadBike": {
+      "lods": [
+        2072,
+        1036,
+        518
+      ],
+      "instances": 56
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_Dumpster.SM_Dumpster": {
+      "lods": [
+        1666
+      ],
+      "instances": 11
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_TrasdhBag.SM_TrasdhBag": {
+      "lods": [
+        100
+      ],
+      "instances": 10
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_CreasedBox01.SM_CreasedBox01": {
+      "lods": [
+        104
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/Wastes/SM_CupPaper.SM_CupPaper": {
+      "lods": [
+        28
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Garden/SM_Gnome.SM_Gnome": {
+      "lods": [
+        584
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/PedestrianProps/SM_Mobile.SM_Mobile": {
+      "lods": [
+        128
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/BarRestaurant/SM_BarBottle.SM_BarBottle": {
+      "lods": [
+        42,
+        20
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/Wastes/SM_Cigarette01.SM_Cigarette01": {
+      "lods": [
+        12
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/Wastes/SM_Cigarette02.SM_Cigarette02": {
+      "lods": [
+        8
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/Wastes/SM_CigaretteBox.SM_CigaretteBox": {
+      "lods": [
+        44
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Trash/SM_Recycle_Others.SM_Recycle_Others": {
+      "lods": [
+        689
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Construction/SM_TrafficCones_03.SM_TrafficCones_03": {
+      "lods": [
+        833
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Construction/SM_WarningAccident.SM_WarningAccident": {
+      "lods": [
+        252
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Construction/SM_WarningConstruction.SM_WarningConstruction": {
+      "lods": [
+        252
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Static/SM_BikeParking01.SM_BikeParking01": {
+      "lods": [
+        11448
+      ],
+      "instances": 13
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight07.SM_StreetLight07": {
+      "lods": [
+        696
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight01_GlassExt.SM_StreetLight01_GlassExt": {
+      "lods": [
+        20
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Static/Streetlights/SM_StreetLight01_GlassInt.SM_StreetLight01_GlassInt": {
+      "lods": [
+        20
+      ],
+      "instances": 9
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_LightPost.SM_LightPost": {
+      "lods": [
+        381
+      ],
+      "instances": 24
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/SM_Shop02_Btt_CornerGlass_A.SM_Shop02_Btt_CornerGlass_A": {
+      "lods": [
+        2300
+      ],
+      "instances": 33
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_Awning01.SM_Awning01": {
+      "lods": [
+        273,
+        206
+      ],
+      "instances": 39
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/SM_Shop02_Btt_DoorGlass_A.SM_Shop02_Btt_DoorGlass_A": {
+      "lods": [
+        1184
+      ],
+      "instances": 23
+    },
+    "/Game/Carla/Static/Dynamic/Construction/Sm_ConcreteFence03.Sm_ConcreteFence03": {
+      "lods": [
+        822
+      ],
+      "instances": 57
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Construction/SM_StreetBarrier.SM_StreetBarrier": {
+      "lods": [
+        256
+      ],
+      "instances": 36
+    },
+    "/Game/Carla/Static/Dynamic/Construction/Sm_ConcreteFence04.Sm_ConcreteFence04": {
+      "lods": [
+        336
+      ],
+      "instances": 7
+    },
+    "/Game/Carla/Static/Dynamic/Construction/SM_ConcreteFence01.SM_ConcreteFence01": {
+      "lods": [
+        758
+      ],
+      "instances": 10
+    },
+    "/Game/Carla/Static/Dynamic/Construction/SM_ConcreteFence05.SM_ConcreteFence05": {
+      "lods": [
+        256
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_ChainBarrier.SM_ChainBarrier": {
+      "lods": [
+        450
+      ],
+      "instances": 136
+    },
+    "/Game/Carla/Static/Fence/TarpFences/SM_Fence.SM_Fence": {
+      "lods": [
+        16156
+      ],
+      "instances": 1566
+    },
+    "/Game/Carla/Static/Fence/00_LegacyAssets/SM_WallBridge01.SM_WallBridge01": {
+      "lods": [
+        394,
+        196,
+        98,
+        50
+      ],
+      "instances": 69
+    },
+    "/Game/Carla/Static/Fence/00_LegacyAssets/SM_UrbanFence01.SM_UrbanFence01": {
+      "lods": [
+        262
+      ],
+      "instances": 20
+    },
+    "/Game/Carla/Static/Wall/00_LegacyAssets/SM_Wall01.SM_Wall01": {
+      "lods": [
+        124,
+        62,
+        30,
+        16
+      ],
+      "instances": 30
+    },
+    "/Game/Carla/Static/Wall/00_LegacyAssets/SM_Wall05.SM_Wall05": {
+      "lods": [
+        284,
+        142,
+        70,
+        36
+      ],
+      "instances": 18
+    },
+    "/Game/Carla/Static/Vegetation/00_LegacyAssets/Trees/SM_QuercusRubraBase01_A.SM_QuercusRubraBase01_A": {
+      "lods": [
+        631892
+      ],
+      "instances": 52
+    },
+    "/Game/Carla/Static/Vegetation/Bushes/SM_Boxwood01.SM_Boxwood01": {
+      "lods": [
+        77365
+      ],
+      "instances": 62
+    },
+    "/Game/Carla/Static/Static/SM_Parkingmeter.SM_Parkingmeter": {
+      "lods": [
+        398,
+        159,
+        60,
+        8
+      ],
+      "instances": 42
+    },
+    "/Game/Carla/Static/Vegetation/Trees/SM_PalmTreeBase03_A.SM_PalmTreeBase03_A": {
+      "lods": [
+        235865
+      ],
+      "instances": 50
+    },
+    "/Game/Carla/Static/Static/SM_Bench01.SM_Bench01": {
+      "lods": [
+        1312
+      ],
+      "instances": 113
+    },
+    "/Game/Carla/Static/Static/SM_PlanterGrass04.SM_PlanterGrass04": {
+      "lods": [
+        40467
+      ],
+      "instances": 93
+    },
+    "/Game/Carla/Static/Dynamic/Construction/SM_ConcreteFence02.SM_ConcreteFence02": {
+      "lods": [
+        606
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Dynamic/00_LegacyAssets/Construction/SM_TrafficCones_02.SM_TrafficCones_02": {
+      "lods": [
+        104
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/Construction/Scaffoldings/SM_Scaffolding09.SM_Scaffolding09": {
+      "lods": [
+        2324
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Dynamic/Construction/Scaffoldings/SM_Scaffolding05.SM_Scaffolding05": {
+      "lods": [
+        2157
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Dynamic/Construction/Scaffoldings/SM_Scaffolding11.SM_Scaffolding11": {
+      "lods": [
+        1990
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Dynamic/Construction/Scaffoldings/SM_ScaffoldingStairs01.SM_ScaffoldingStairs01": {
+      "lods": [
+        3073
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop02_Btt_Wall_A.SM_Shop02_Btt_Wall_A": {
+      "lods": [
+        113735
+      ],
+      "instances": 72
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop02_Btt_Wall_B.SM_Shop02_Btt_Wall_B": {
+      "lods": [
+        178443
+      ],
+      "instances": 71
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop02_Btt_Corner_A.SM_Shop02_Btt_Corner_A": {
+      "lods": [
+        84457
+      ],
+      "instances": 44
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop02_Btt_Door_A.SM_Shop02_Btt_Door_A": {
+      "lods": [
+        197405
+      ],
+      "instances": 23
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc19_Mid_Wall.SM_Skysc19_Mid_Wall": {
+      "lods": [
+        962
+      ],
+      "instances": 12670
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc19_Mid_Corner.SM_Skysc19_Mid_Corner": {
+      "lods": [
+        4716
+      ],
+      "instances": 2184
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Top/SM_Skysc19_Top_Wall.SM_Skysc19_Top_Wall": {
+      "lods": [
+        1278
+      ],
+      "instances": 494
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Top/SM_Skysc19_Top_Corner.SM_Skysc19_Top_Corner": {
+      "lods": [
+        5090
+      ],
+      "instances": 96
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_LegacyAssets/Town13_15/Building_pieces/SM_RoofPlane.SM_RoofPlane": {
+      "lods": [
+        2
+      ],
+      "instances": 84
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc21_Btt_Wall_B.SM_Skysc21_Btt_Wall_B": {
+      "lods": [
+        1388
+      ],
+      "instances": 126
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc21_Btt_Door_A.SM_Skysc21_Btt_Door_A": {
+      "lods": [
+        8598
+      ],
+      "instances": 84
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc21_Btt_Corner_B.SM_Skysc21_Btt_Corner_B": {
+      "lods": [
+        15712
+      ],
+      "instances": 28
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc21_Btt_Door_B.SM_Skysc21_Btt_Door_B": {
+      "lods": [
+        22402
+      ],
+      "instances": 14
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc21_Btt_Corner_A.SM_Skysc21_Btt_Corner_A": {
+      "lods": [
+        14422
+      ],
+      "instances": 28
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc21_Mid_Wall_A.SM_Skysc21_Mid_Wall_A": {
+      "lods": [
+        1470
+      ],
+      "instances": 6444
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc21_Mid_Wall_C.SM_Skysc21_Mid_Wall_C": {
+      "lods": [
+        1470
+      ],
+      "instances": 5381
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc21_Mid_Corner_B.SM_Skysc21_Mid_Corner_B": {
+      "lods": [
+        15398
+      ],
+      "instances": 2462
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc21_Mid_Wall_B.SM_Skysc21_Mid_Wall_B": {
+      "lods": [
+        1470
+      ],
+      "instances": 6233
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc21_Mid_Corner_A.SM_Skysc21_Mid_Corner_A": {
+      "lods": [
+        14422
+      ],
+      "instances": 2170
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Top/SM_Skysc21_Top_Wall.SM_Skysc21_Top_Wall": {
+      "lods": [
+        6020
+      ],
+      "instances": 562
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Top/SM_Skysc21_Top_Corner.SM_Skysc21_Top_Corner": {
+      "lods": [
+        13584
+      ],
+      "instances": 144
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc24_Mid_Wall_A.SM_Skysc24_Mid_Wall_A": {
+      "lods": [
+        26008
+      ],
+      "instances": 177
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc24_Mid_Wall_D.SM_Skysc24_Mid_Wall_D": {
+      "lods": [
+        44524
+      ],
+      "instances": 223
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc24_Mid_Wall_C.SM_Skysc24_Mid_Wall_C": {
+      "lods": [
+        41870
+      ],
+      "instances": 119
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc24_Mid_Corner_B.SM_Skysc24_Mid_Corner_B": {
+      "lods": [
+        61997
+      ],
+      "instances": 134
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc24_Mid_Wall_B.SM_Skysc24_Mid_Wall_B": {
+      "lods": [
+        35974
+      ],
+      "instances": 249
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc24_Mid_Corner_A.SM_Skysc24_Mid_Corner_A": {
+      "lods": [
+        49868
+      ],
+      "instances": 182
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc20_Btt_Wall.SM_Skysc20_Btt_Wall": {
+      "lods": [
+        2462
+      ],
+      "instances": 24
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_LegacyAssets/Town13_15/Building_pieces/SM_GlassPlane.SM_GlassPlane": {
+      "lods": [
+        2
+      ],
+      "instances": 307
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc20_Btt_Corner.SM_Skysc20_Btt_Corner": {
+      "lods": [
+        790
+      ],
+      "instances": 56
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc20_Btt_Door_B.SM_Skysc20_Btt_Door_B": {
+      "lods": [
+        2899
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc20_Btt_Door_A.SM_Skysc20_Btt_Door_A": {
+      "lods": [
+        3003
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc20_Mid_Wall_B.SM_Skysc20_Mid_Wall_B": {
+      "lods": [
+        59359
+      ],
+      "instances": 187
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc20_Mid_Wall_A.SM_Skysc20_Mid_Wall_A": {
+      "lods": [
+        4077
+      ],
+      "instances": 13
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Top/SM_Skysc20_Top_Wall.SM_Skysc20_Top_Wall": {
+      "lods": [
+        15802
+      ],
+      "instances": 38
+    },
+    "/Game/Carla/Static/Vegetation/Trees/SM_PalmTreeBase03_B.SM_PalmTreeBase03_B": {
+      "lods": [
+        221097
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Vegetation/Trees/SM_PalmTreeBase03_C.SM_PalmTreeBase03_C": {
+      "lods": [
+        271628
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Vegetation/Trees/SM_PalmTreeBase03_D.SM_PalmTreeBase03_D": {
+      "lods": [
+        365719
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Static/SM_Atm.SM_Atm": {
+      "lods": [
+        1000
+      ],
+      "instances": 13
+    },
+    "/Game/Carla/Static/Other/SM_wire.SM_wire": {
+      "lods": [
+        192
+      ],
+      "instances": 240
+    },
+    "/Game/Carla/Static/Pole/00_IndividualComponents/ElectricPole01/SM_ElectricPole01_E.SM_ElectricPole01_E": {
+      "lods": [
+        1226
+      ],
+      "instances": 24
+    },
+    "/Game/Carla/Static/Pole/00_IndividualComponents/ElectricPole01/SM_ElectricPole01_C.SM_ElectricPole01_C": {
+      "lods": [
+        1541
+      ],
+      "instances": 26
+    },
+    "/Game/Carla/Static/Pole/00_IndividualComponents/ElectricPole01/SM_ElectricPole01_D.SM_ElectricPole01_D": {
+      "lods": [
+        1263
+      ],
+      "instances": 18
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_PlatformGarbage01.SM_PlatformGarbage01": {
+      "lods": [
+        44
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Static/00_LegacyAssets/SM_MapTable.SM_MapTable": {
+      "lods": [
+        216,
+        108,
+        54,
+        26
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/SM_Apt35_A.SM_Apt35_A": {
+      "lods": [
+        643275
+      ],
+      "instances": 11
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/00_IndividualComponents/Apt35/SM_Apt35_A_Glass.SM_Apt35_A_Glass": {
+      "lods": [
+        112
+      ],
+      "instances": 11
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/SM_Apt33_A.SM_Apt33_A": {
+      "lods": [
+        703122
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/00_IndividualComponents/Apt33/SM_Apt33_A_Glass.SM_Apt33_A_Glass": {
+      "lods": [
+        136
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/SM_Apt32_A.SM_Apt32_A": {
+      "lods": [
+        221232
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/00_IndividualComponents/Apt32/SM_Apt32_A_Glass.SM_Apt32_A_Glass": {
+      "lods": [
+        474
+      ],
+      "instances": 8
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/SM_Apt34_A.SM_Apt34_A": {
+      "lods": [
+        266537
+      ],
+      "instances": 10
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/00_IndividualComponents/Apt34/SM_Apt34_A_Glass.SM_Apt34_A_Glass": {
+      "lods": [
+        280
+      ],
+      "instances": 10
+    },
+    "/Game/Carla/Static/Vegetation/00_LegacyAssets/Trees/SM_QuercusRubra01_C.SM_QuercusRubra01_C": {
+      "lods": [
+        449203
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Static/SM_Sculpture01.SM_Sculpture01": {
+      "lods": [
+        376
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingComplete/SM_Apt32_B.SM_Apt32_B": {
+      "lods": [
+        44492
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Static/SM_PlanterGrass02.SM_PlanterGrass02": {
+      "lods": [
+        256
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_LegacyAssets/Town13_15/Building_pieces/props/pipes/SM_Prop_001_pipe_001_Mid.SM_Prop_001_pipe_001_Mid": {
+      "lods": [
+        248
+      ],
+      "instances": 28
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_LegacyAssets/Town13_15/Building_pieces/props/pipes/SM_Prop_001_pipe_001_Bot.SM_Prop_001_pipe_001_Bot": {
+      "lods": [
+        196
+      ],
+      "instances": 7
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_LegacyAssets/Town13_15/Building_pieces/props/pipes/SM_Prop_001_pipe_001_Top.SM_Prop_001_pipe_001_Top": {
+      "lods": [
+        134
+      ],
+      "instances": 7
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop02_Btt_Door_B.SM_Shop02_Btt_Door_B": {
+      "lods": [
+        219921
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/SM_Shop02_Btt_DoorGlass_B.SM_Shop02_Btt_DoorGlass_B": {
+      "lods": [
+        512
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Building/Props/SM_Skysc20_WallLamp.SM_Skysc20_WallLamp": {
+      "lods": [
+        1467
+      ],
+      "instances": 12
+    },
+    "/Game/Carla/Static/Building/Props/SM_Skysc20_Sign.SM_Skysc20_Sign": {
+      "lods": [
+        486
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Building/Props/SM_Skysc20_FlowerPot.SM_Skysc20_FlowerPot": {
+      "lods": [
+        492
+      ],
+      "instances": 24
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop01_Btt_Wall_C.SM_Shop01_Btt_Wall_C": {
+      "lods": [
+        8241
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop01_Btt_Door_A.SM_Shop01_Btt_Door_A": {
+      "lods": [
+        1990
+      ],
+      "instances": 7
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop01_Btt_Wall_D.SM_Shop01_Btt_Wall_D": {
+      "lods": [
+        7949
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop01_Btt_Wall_A.SM_Shop01_Btt_Wall_A": {
+      "lods": [
+        7520
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop01_Btt_Corner_A.SM_Shop01_Btt_Corner_A": {
+      "lods": [
+        612762
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop01_Btt_Wall_E.SM_Shop01_Btt_Wall_E": {
+      "lods": [
+        8117
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Shop01_Btt_Wall_B.SM_Shop01_Btt_Wall_B": {
+      "lods": [
+        7867
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc23_Btt_Corner_A.SM_Skysc23_Btt_Corner_A": {
+      "lods": [
+        1895
+      ],
+      "instances": 5
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc23_Btt_Door_B.SM_Skysc23_Btt_Door_B": {
+      "lods": [
+        2489
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc23_Btt_Wall.SM_Skysc23_Btt_Wall": {
+      "lods": [
+        1656
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc23_Btt_Corner_B.SM_Skysc23_Btt_Corner_B": {
+      "lods": [
+        1960
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc23_Btt_Door_A.SM_Skysc23_Btt_Door_A": {
+      "lods": [
+        2489
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc22_Btt_Wall_A.SM_Skysc22_Btt_Wall_A": {
+      "lods": [
+        6090
+      ],
+      "instances": 220
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc22_Btt_Corner.SM_Skysc22_Btt_Corner": {
+      "lods": [
+        4522
+      ],
+      "instances": 88
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc22_Btt_Wall_B.SM_Skysc22_Btt_Wall_B": {
+      "lods": [
+        7098
+      ],
+      "instances": 114
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc22_Mid_Wall.SM_Skysc22_Mid_Wall": {
+      "lods": [
+        8305
+      ],
+      "instances": 4576
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Mid/SM_Skysc22_Mid_Corner.SM_Skysc22_Mid_Corner": {
+      "lods": [
+        11251
+      ],
+      "instances": 1152
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Top/SM_Skysc22_Top_Wall.SM_Skysc22_Top_Wall": {
+      "lods": [
+        2878
+      ],
+      "instances": 344
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Top/SM_Skysc22_Top_Corner.SM_Skysc22_Top_Corner": {
+      "lods": [
+        3960
+      ],
+      "instances": 88
+    },
+    "/Game/Carla/Static/Building/Buildings/BuildingPieces/Btt/SM_Skysc22_Btt_Door.SM_Skysc22_Btt_Door": {
+      "lods": [
+        9428
+      ],
+      "instances": 10
+    },
+    "/Game/Carla/Static/Vegetation/PlantsAndFlowers/SM_FlowerPlant.SM_FlowerPlant": {
+      "lods": [
+        23309
+      ],
+      "instances": 24
+    },
+    "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Parked/SM_DodgeCharger_Parked.SM_DodgeCharger_Parked": {
+      "lods": [
+        492229
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Parked/SM_DodgeCharger_Parked_Glass.SM_DodgeCharger_Parked_Glass": {
+      "lods": [
+        28608
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Parked/SM_FordCrown02_Parked.SM_FordCrown02_Parked": {
+      "lods": [
+        446052
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Parked/SM_FordCrown02_Parked_Glass.SM_FordCrown02_Parked_Glass": {
+      "lods": [
+        23638
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Parked/SM_DodgeChargerCop_Parked.SM_DodgeChargerCop_Parked": {
+      "lods": [
+        502089
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Car/4Wheeled/DodgeCharger/Parked/SM_DodgeChargerCop_Parked_Glass.SM_DodgeChargerCop_Parked_Glass": {
+      "lods": [
+        38172
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Car/4Wheeled/Mustang/Parked/SM_Mustang_Parked_glass.SM_Mustang_Parked_glass": {
+      "lods": [
+        74
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Car/4Wheeled/Mustang/Parked/SM_Mustang_Parked.SM_Mustang_Parked": {
+      "lods": [
+        4440,
+        2220,
+        1110,
+        554,
+        277
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop.SM_BusStop": {
+      "lods": [
+        898,
+        449,
+        224,
+        113
+      ],
+      "instances": 11
+    },
+    "/Game/Carla/Static/Static/Materials/BusStop/SM_BusStop_Glasses.SM_BusStop_Glasses": {
+      "lods": [
+        24
+      ],
+      "instances": 11
+    },
+    "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/SM_Apartment_Street.SM_Apartment_Street": {
+      "lods": [
+        48
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Bus/MitsubishiFusoRosa/Parked/SM_MitsubishiFusoRosa_Parked.SM_MitsubishiFusoRosa_Parked": {
+      "lods": [
+        566188
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Bus/MitsubishiFusoRosa/Parked/SM_MitsubishiFusoRosa_Glass_Parked.SM_MitsubishiFusoRosa_Glass_Parked": {
+      "lods": [
+        9461
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Parked/SM_LincolnMKZ_Glass_Parked.SM_LincolnMKZ_Glass_Parked": {
+      "lods": [
+        14375
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Car/4Wheeled/LincolnMKZ/Parked/SM_LincolnMKZ_Parked.SM_LincolnMKZ_Parked": {
+      "lods": [
+        640184
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Parked/SM_NissanPatrol_Glass.SM_NissanPatrol_Glass": {
+      "lods": [
+        4089
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Car/4Wheeled/NissanPatrol/Parked/SM_NissanPatrol_Parked.SM_NissanPatrol_Parked": {
+      "lods": [
+        405636
+      ],
+      "instances": 3
+    },
+    "/Game/Carla/Static/Car/4Wheeled/FordCrown01/Parked/SM_FordCrown01_Glass_Parked.SM_FordCrown01_Glass_Parked": {
+      "lods": [
+        3612
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Car/4Wheeled/FordCrown01/Parked/SM_FordCrown01_Parked.SM_FordCrown01_Parked": {
+      "lods": [
+        91706,
+        27511,
+        10026
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Parked/SM_MiniCooper_Parked.SM_MiniCooper_Parked": {
+      "lods": [
+        431620
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Car/4Wheeled/MiniCooper/Parked/SM_MiniCooper_Glass_Parked.SM_MiniCooper_Glass_Parked": {
+      "lods": [
+        3920
+      ],
+      "instances": 2
+    },
+    "/Game/Carla/Static/Car/4Wheeled/Tesla/Parked/SM_TeslaM3_parked.SM_TeslaM3_parked": {
+      "lods": [
+        14062
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Car/4Wheeled/Tesla/Parked/SM_TeslaM3_parked_glass.SM_TeslaM3_parked_glass": {
+      "lods": [
+        756
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Truck/VolkswagenT2/Parked/SM_VolkswagenT2_Parked.SM_VolkswagenT2_Parked": {
+      "lods": [
+        89701,
+        44850,
+        10765
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Truck/VolkswagenT2/Parked/SM_VolkswagenT2_Glass_Parked.SM_VolkswagenT2_Glass_Parked": {
+      "lods": [
+        1670
+      ],
+      "instances": 1
+    },
+    "/Game/Carla/Static/Truck/MercedesSprinter/Parked/SM_MercedesSprinter_Parked.SM_MercedesSprinter_Parked": {
+      "lods": [
+        456436
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Truck/MercedesSprinter/Parked/SM_MercedesSprinter_Glass_Parked.SM_MercedesSprinter_Glass_Parked": {
+      "lods": [
+        14307
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Parked.SM_CarlaCola_Parked": {
+      "lods": [
+        615388
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Truck/CarlaCola/Parked/SM_CarlaCola_Glasses_Parked.SM_CarlaCola_Glasses_Parked": {
+      "lods": [
+        1907
+      ],
+      "instances": 4
+    },
+    "/Game/Carla/Static/Truck/EuropeanHGV/Parked/SM_EuropeanHGV_Parked.SM_EuropeanHGV_Parked": {
+      "lods": [
+        641415
+      ],
+      "instances": 6
+    },
+    "/Game/Carla/Static/Truck/EuropeanHGV/Parked/BP_EuropeanHGV_Glass_Parked.BP_EuropeanHGV_Glass_Parked": {
+      "lods": [
+        25975
+      ],
+      "instances": 6
+    }
+  },
+  "samples": [
+    {
+      "actor": "SM_Road_SideWalk_Town10HD51_1",
+      "component": "StaticMeshComponent0",
+      "mesh": "/Game/Carla/Static/SideWalk/SideWalk/Town10HDSideWalk/SM_Road_SideWalk_Town10HD.SM_Road_SideWalk_Town10HD",
+      "transform": "<Struct 'Transform' (0x7fb9aeb2c9f0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 30308.038271, y: 12452.844095, z: -20.000013}, scale3d: {x: 6.867121, y: 6.579981, z: 1.000000}}>",
+      "methods": [
+        "add_local_transform",
+        "add_world_transform",
+        "add_world_transform_keep_scale",
+        "affect_indirect_lighting_while_hidden",
+        "cast_hidden_shadow",
+        "get_relative_transform",
+        "get_socket_transform",
+        "get_world_transform",
+        "hidden_in_game",
+        "hidden_in_scene_capture",
+        "is_visible",
+        "reset_relative_transform",
+        "set_affect_indirect_lighting_while_hidden",
+        "set_cast_hidden_shadow",
+        "set_hidden_in_game",
+        "set_hidden_in_scene_capture",
+        "set_relative_transform",
+        "set_visible_in_ray_tracing",
+        "set_visible_in_scene_capture_only",
+        "set_world_transform",
+        "visible",
+        "visible_in_ray_tracing",
+        "visible_in_real_time_sky_captures",
+        "visible_in_reflection_captures",
+        "visible_in_scene_capture_only"
+      ]
+    },
+    {
+      "actor": "SM_Beach1760_2",
+      "component": "StaticMeshComponent0",
+      "mesh": "/Game/Carla/Static/Water/SM_Sea02.SM_Sea02",
+      "transform": "<Struct 'Transform' (0x7fb9aeb2c9f0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 10493.754390, y: 54880.582031, z: -201.758153}, scale3d: {x: 30000.000000, y: 50000.000000, z: 1.000000}}>",
+      "methods": [
+        "add_local_transform",
+        "add_world_transform",
+        "add_world_transform_keep_scale",
+        "affect_indirect_lighting_while_hidden",
+        "cast_hidden_shadow",
+        "get_relative_transform",
+        "get_socket_transform",
+        "get_world_transform",
+        "hidden_in_game",
+        "hidden_in_scene_capture",
+        "is_visible",
+        "reset_relative_transform",
+        "set_affect_indirect_lighting_while_hidden",
+        "set_cast_hidden_shadow",
+        "set_hidden_in_game",
+        "set_hidden_in_scene_capture",
+        "set_relative_transform",
+        "set_visible_in_ray_tracing",
+        "set_visible_in_scene_capture_only",
+        "set_world_transform",
+        "visible",
+        "visible_in_ray_tracing",
+        "visible_in_real_time_sky_captures",
+        "visible_in_reflection_captures",
+        "visible_in_scene_capture_only"
+      ]
+    },
+    {
+      "actor": "StaticMeshActor_41",
+      "component": "StaticMeshComponent0",
+      "mesh": "/Game/Carla/Static/RoadLine/Town10HDLaneMarkings/SM_Town10HD_LaneMarking_1.SM_Town10HD_LaneMarking_1",
+      "transform": "<Struct 'Transform' (0x7fb9aeb2c9f0) {rotation: {x: 0.000000, y: -0.000000, z: 1.000000, w: 0.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "methods": [
+        "add_local_transform",
+        "add_world_transform",
+        "add_world_transform_keep_scale",
+        "affect_indirect_lighting_while_hidden",
+        "cast_hidden_shadow",
+        "get_relative_transform",
+        "get_socket_transform",
+        "get_world_transform",
+        "hidden_in_game",
+        "hidden_in_scene_capture",
+        "is_visible",
+        "reset_relative_transform",
+        "set_affect_indirect_lighting_while_hidden",
+        "set_cast_hidden_shadow",
+        "set_hidden_in_game",
+        "set_hidden_in_scene_capture",
+        "set_relative_transform",
+        "set_visible_in_ray_tracing",
+        "set_visible_in_scene_capture_only",
+        "set_world_transform",
+        "visible",
+        "visible_in_ray_tracing",
+        "visible_in_real_time_sky_captures",
+        "visible_in_reflection_captures",
+        "visible_in_scene_capture_only"
+      ]
+    },
+    {
+      "actor": "StaticMeshActor_43",
+      "component": "StaticMeshComponent0",
+      "mesh": "/Game/Carla/Static/RoadLine/Town10HDLaneMarkings/SM_Town10HD_LaneMarking_2.SM_Town10HD_LaneMarking_2",
+      "transform": "<Struct 'Transform' (0x7fb9aeb2c9f0) {rotation: {x: 0.000000, y: -0.000000, z: 1.000000, w: 0.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "methods": [
+        "add_local_transform",
+        "add_world_transform",
+        "add_world_transform_keep_scale",
+        "affect_indirect_lighting_while_hidden",
+        "cast_hidden_shadow",
+        "get_relative_transform",
+        "get_socket_transform",
+        "get_world_transform",
+        "hidden_in_game",
+        "hidden_in_scene_capture",
+        "is_visible",
+        "reset_relative_transform",
+        "set_affect_indirect_lighting_while_hidden",
+        "set_cast_hidden_shadow",
+        "set_hidden_in_game",
+        "set_hidden_in_scene_capture",
+        "set_relative_transform",
+        "set_visible_in_ray_tracing",
+        "set_visible_in_scene_capture_only",
+        "set_world_transform",
+        "visible",
+        "visible_in_ray_tracing",
+        "visible_in_real_time_sky_captures",
+        "visible_in_reflection_captures",
+        "visible_in_scene_capture_only"
+      ]
+    }
+  ],
+  "section": "(<Array object at 0x7fb9aebad130>, <Array object at 0x7fb9aebad170>, <Array object at 0x7fb9aebad1b0>, <Array object at 0x7fb9aebad1f0>, <Array object at 0x7fb9aebad230>)"
+}

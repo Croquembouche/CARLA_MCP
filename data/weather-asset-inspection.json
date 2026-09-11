@@ -1,0 +1,113 @@
+{
+  "skies": [
+    {
+      "name": "BP_Carla_Sky_C_15",
+      "class": "/Game/Carla/Blueprints/LevelDesign/BP_Carla_Sky.BP_Carla_Sky_C",
+      "components": [
+        {
+          "name": "PostProcessComponent",
+          "class": "PostProcessComponent",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c86863380) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+        },
+        {
+          "name": "ExponentialHeightFogComponent",
+          "class": "ExponentialHeightFogComponent",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c86837500) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "fog_density": "0.029999999329447746"
+        },
+        {
+          "name": "DirectionalLightComponentSun",
+          "class": "DirectionalLightComponent",
+          "intensity": "15.0",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c82d8d880) {pitch: 210.000000, yaw: 160.000000, roll: 0.000000}>"
+        },
+        {
+          "name": "DirectionalLightComponentMoon",
+          "class": "DirectionalLightComponent",
+          "intensity": "10.0",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c82d8dd80) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+        },
+        {
+          "name": "SkyLightComponent",
+          "class": "SkyLightComponent",
+          "intensity": "1.0",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c82d8e280) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+        },
+        {
+          "name": "VolumetricCloudComponent",
+          "class": "VolumetricCloudComponent",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c86887080) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+        },
+        {
+          "name": "SkyAtmosphereComponent",
+          "class": "SkyAtmosphereComponent",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c86837880) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c672c3980) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+        },
+        {
+          "name": "BillboardComponent_1",
+          "class": "BillboardComponent",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c672c3280) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+        },
+        {
+          "name": "BillboardComponent_2",
+          "class": "BillboardComponent",
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "relative_rotation": "<Struct 'Rotator' (0xa4c672c1d80) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+        }
+      ],
+      "functions": [
+        "directional_light_component_sun",
+        "force_net_update",
+        "min_net_update_frequency",
+        "net_update_frequency"
+      ],
+      "properties": {
+        "SunAltitudeAngle": "SkyBase: Failed to find property 'SunAltitudeAngle' for attribute 'SunAltitudeAngle' on 'BP_Carla_Sky_C'",
+        "SunAzimuthAngle": "SkyBase: Failed to find property 'SunAzimuthAngle' for attribute 'SunAzimuthAngle' on 'BP_Carla_Sky_C'",
+        "Cloudiness": "SkyBase: Failed to find property 'Cloudiness' for attribute 'Cloudiness' on 'BP_Carla_Sky_C'",
+        "Weather": "SkyBase: Failed to find property 'Weather' for attribute 'Weather' on 'BP_Carla_Sky_C'",
+        "WeatherParameters": "SkyBase: Failed to find property 'WeatherParameters' for attribute 'WeatherParameters' on 'BP_Carla_Sky_C'",
+        "SunOrientation": "None"
+      },
+      "update_test": {
+        "error": "SkyBase: Failed to find property 'SunAltitudeAngle' for attribute 'SunAltitudeAngle' on 'BP_Carla_Sky_C'"
+      },
+      "weather_function_tests": {
+        "UpdateSun": "update_sun() takes at most 0 arguments (1 given)",
+        "UpdateAtmosphereAndPrecipitation": "update_atmosphere_and_precipitation() takes at most 0 arguments (1 given)",
+        "UpdateSunRotation": "SkyBase: Failed to find function 'UpdateSunRotation' on 'BP_Carla_Sky_C'"
+      }
+    }
+  ],
+  "weather_class": "/Game/Carla/Blueprints/Weather/BP_CarlaWeather.BP_CarlaWeather_C",
+  "props": {
+    "BP_CarlaSky": "None",
+    "BP Carla Sky": "Weather: Failed to find property 'BP Carla Sky' for attribute 'BP Carla Sky' on 'BP_CarlaWeather_C'",
+    "SunLight": "<Object '/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_Carla_Sky_C_15.DirectionalLightComponentSun' (0xa4c82d8d700) Class 'DirectionalLightComponent'>",
+    "Sun Light": "Weather: Failed to find property 'Sun Light' for attribute 'Sun Light' on 'BP_CarlaWeather_C'",
+    "SkyLight": "<Object '/Game/Carla/Maps/Town10HD_Opt.Town10HD_Opt:PersistentLevel.BP_Carla_Sky_C_15.SkyLightComponent' (0xa4c82d8e100) Class 'SkyLightComponent'>",
+    "SunIntensity_Curve": "<Object '/Game/Carla/Blueprints/Weather/Weather2_Curves/SunIntensity_2.SunIntensity_2' (0xa4c7da59d80) Class 'CurveFloat'>",
+    "SkyIntensity_Curve": "<Object '/Game/Carla/Blueprints/Weather/Weather2_Curves/SkylightIntensity_2.SkylightIntensity_2' (0xa4c7d976d00) Class 'CurveFloat'>"
+  },
+  "bound_refresh_error": "Weather: Property 'BP_CarlaSky' for attribute 'BP_CarlaSky' on 'BP_CarlaWeather_C' cannot be edited on instances",
+  "functions": [
+    "apply_weather",
+    "get_current_weather",
+    "refresh_weather",
+    "set_weather"
+  ]
+}

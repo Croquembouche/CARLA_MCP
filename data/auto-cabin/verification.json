@@ -1,0 +1,38 @@
+{
+  "spawnedActor": 88,
+  "camera": {
+    "id": 89,
+    "parent": 88,
+    "name": "cabin_overview",
+    "type": "sensor.camera.rgb",
+    "mount": {
+      "x": 0.65,
+      "y": -0.35,
+      "z": 1.28,
+      "yaw": 134,
+      "pitch": -17
+    },
+    "attributes": {
+      "image_size_x": "960",
+      "image_size_y": "600",
+      "fov": "120",
+      "post_process_profile": "CabinObservation",
+      "lens_k": "0",
+      "use_ray_tracing": "false",
+      "sensor_tick": "0.0"
+    }
+  },
+  "previewVerified": true,
+  "hideStopsDownloads": true,
+  "reenableWorks": true,
+  "errors": [],
+  "restored": {
+    "actors": 38,
+    "sensors": 5,
+    "loadouts_match_saved_scene": true,
+    "running": true,
+    "worker_count": 2,
+    "error": null,
+    "note": "Sensor IDs regenerate when the GPU worker pool resizes."
+  }
+}

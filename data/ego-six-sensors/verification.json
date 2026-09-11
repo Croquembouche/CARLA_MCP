@@ -1,0 +1,53 @@
+{
+  "verified": true,
+  "ego": 55,
+  "model": "vehicle.lincoln.mkz",
+  "sensors": [
+    {
+      "name": "cabin_overview",
+      "id": 56,
+      "frame": 253,
+      "bytes": 17639,
+      "content_type": "image/jpeg"
+    },
+    {
+      "name": "front_rgb",
+      "id": 57,
+      "frame": 253,
+      "bytes": 18340,
+      "content_type": "image/jpeg"
+    },
+    {
+      "name": "roof_lidar",
+      "id": 58,
+      "frame": 253,
+      "bytes": 34470,
+      "content_type": "application/vnd.carla.pointcloud"
+    },
+    {
+      "name": "front_radar",
+      "id": 59,
+      "frame": 253,
+      "bytes": 15384,
+      "content_type": "image/jpeg"
+    },
+    {
+      "name": "imu",
+      "id": 60,
+      "frame": 253,
+      "bytes": 264,
+      "content_type": "application/json"
+    },
+    {
+      "name": "gnss",
+      "id": 61,
+      "frame": 253,
+      "bytes": 191,
+      "content_type": "application/json"
+    }
+  ],
+  "existing_cabin_mount_preserved": true,
+  "web_uses_server_defaults": true,
+  "worker_count": 4,
+  "errors": []
+}

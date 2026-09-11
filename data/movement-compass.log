@@ -1,0 +1,10 @@
+HEAD {'x': -45.741553610000004, 'y': -64.2566173, 'z': 5.15425385, 'yaw': -90.00019751722276}
+0 5 actor Transform(Location(x=-37.741554, y=-64.256615, z=5.154254), Rotation(pitch=0.000000, yaw=180.000000, roll=-0.000000)) image Transform(Location(x=-37.741554, y=-64.256615, z=5.154254), Rotation(pitch=0.000000, yaw=180.000000, roll=-0.000000))
+1 5 actor Transform(Location(x=-53.741550, y=-64.256615, z=5.154254), Rotation(pitch=0.000000, yaw=0.000000, roll=-0.000000)) image Transform(Location(x=-53.741550, y=-64.256615, z=5.154254), Rotation(pitch=0.000000, yaw=0.000000, roll=-0.000000))
+2 5 actor Transform(Location(x=-45.741550, y=-56.256615, z=5.154254), Rotation(pitch=0.000000, yaw=-90.000000, roll=0.000000)) image Transform(Location(x=-45.741550, y=-56.256615, z=5.154254), Rotation(pitch=0.000000, yaw=-90.000000, roll=0.000000))
+3 5 actor Transform(Location(x=-45.741550, y=-72.256615, z=5.154254), Rotation(pitch=0.000000, yaw=90.000000, roll=-0.000000)) image Transform(Location(x=-45.741550, y=-72.256615, z=5.154254), Rotation(pitch=0.000000, yaw=90.000000, roll=-0.000000))
+0 11 actor Transform(Location(x=-37.741554, y=-64.256615, z=5.154254), Rotation(pitch=0.000000, yaw=180.000000, roll=-0.000000)) image Transform(Location(x=-37.741554, y=-64.256615, z=5.154254), Rotation(pitch=0.000000, yaw=180.000000, roll=-0.000000))
+1 11 actor Transform(Location(x=-53.741550, y=-64.256615, z=5.154254), Rotation(pitch=0.000000, yaw=0.000000, roll=-0.000000)) image Transform(Location(x=-53.741550, y=-64.256615, z=5.154254), Rotation(pitch=0.000000, yaw=0.000000, roll=-0.000000))
+2 11 actor Transform(Location(x=-45.741550, y=-56.256615, z=5.154254), Rotation(pitch=0.000000, yaw=-90.000000, roll=0.000000)) image Transform(Location(x=-45.741550, y=-56.256615, z=5.154254), Rotation(pitch=0.000000, yaw=-90.000000, roll=0.000000))
+3 11 actor Transform(Location(x=-45.741550, y=-72.256615, z=5.154254), Rotation(pitch=0.000000, yaw=90.000000, roll=-0.000000)) image Transform(Location(x=-45.741550, y=-72.256615, z=5.154254), Rotation(pitch=0.000000, yaw=90.000000, roll=-0.000000))
+libc++abi: terminating due to uncaught foreign exception

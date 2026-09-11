@@ -1,0 +1,4 @@
+{"action": "record-start", "payload": {"rosbag": true}, "frame": 403, "time": 15.070717141585192}
+{"action": "step", "payload": {}, "frame": 404, "time": 15.12071714233025}
+{"action": "step", "payload": {}, "frame": 405, "time": 15.170717143075308}
+{"action": "step", "payload": {}, "frame": 406, "time": 15.220717143820366}

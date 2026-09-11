@@ -1,0 +1,111 @@
+{
+  "format": "carla-traffic-plan",
+  "version": 1,
+  "name": "Town10 protected and unprotected turns",
+  "map": "Carla/Maps/Town10HD_Opt",
+  "group_id": 8,
+  "approaches": [
+    {
+      "id": 16,
+      "opendrive_id": "945"
+    },
+    {
+      "id": 9,
+      "opendrive_id": "944"
+    },
+    {
+      "id": 8,
+      "opendrive_id": "943"
+    }
+  ],
+  "config": {
+    "phases": [
+      {
+        "name": "Opposing through \u00b7 permissive left",
+        "duration": 15.0,
+        "states": {
+          "8": {
+            "left": "Permissive",
+            "straight": "Protected",
+            "right": "Off"
+          },
+          "9": {
+            "left": "Stop",
+            "straight": "Off",
+            "right": "Stop"
+          },
+          "16": {
+            "left": "Off",
+            "straight": "Protected",
+            "right": "Stop"
+          }
+        }
+      },
+      {
+        "name": "Approach 8",
+        "duration": 15.0,
+        "states": {
+          "8": {
+            "left": "Protected",
+            "straight": "Protected",
+            "right": "Off"
+          },
+          "9": {
+            "left": "Stop",
+            "straight": "Off",
+            "right": "Stop"
+          },
+          "16": {
+            "left": "Off",
+            "straight": "Stop",
+            "right": "Stop"
+          }
+        }
+      },
+      {
+        "name": "Approach 9",
+        "duration": 15.0,
+        "states": {
+          "8": {
+            "left": "Stop",
+            "straight": "Stop",
+            "right": "Off"
+          },
+          "9": {
+            "left": "Protected",
+            "straight": "Off",
+            "right": "Protected"
+          },
+          "16": {
+            "left": "Off",
+            "straight": "Stop",
+            "right": "Stop"
+          }
+        }
+      },
+      {
+        "name": "Approach 16",
+        "duration": 15.0,
+        "states": {
+          "8": {
+            "left": "Stop",
+            "straight": "Stop",
+            "right": "Off"
+          },
+          "9": {
+            "left": "Stop",
+            "straight": "Off",
+            "right": "Stop"
+          },
+          "16": {
+            "left": "Off",
+            "straight": "Protected",
+            "right": "Protected"
+          }
+        }
+      }
+    ],
+    "yellow_time": 3.0,
+    "all_red_time": 2.0
+  }
+}

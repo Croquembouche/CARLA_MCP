@@ -1,0 +1,13 @@
+{
+  "data": {
+    "positions": 180,
+    "drawCalls": 5,
+    "bands": 0,
+    "meters": 42,
+    "native": 180
+  },
+  "errors": [],
+  "panZoom": true,
+  "inspection": true,
+  "toggles": true
+}

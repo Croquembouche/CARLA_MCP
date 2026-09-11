@@ -1,0 +1,69 @@
+[0/2] Re-checking globbed directories...
+[1/9] Building CXX object LibCarla/CMakeFiles/carla-client.dir/source/carla/nav/WalkerEvent.cpp.o
+[2/9] Building CXX object LibCarla/CMakeFiles/carla-client.dir/source/carla/nav/Navigation.cpp.o
+/mnt/simulations/carla/LibCarla/source/carla/nav/Navigation.cpp:883:9: warning: variable 'total_unblocked' set but not used [-Wunused-but-set-variable]
+  883 |     int total_unblocked = 0;
+      |         ^
+1 warning generated.
+[3/9] Building CXX object LibCarla/CMakeFiles/carla-client.dir/source/carla/client/WalkerAIController.cpp.o
+[4/9] Building CXX object LibCarla/CMakeFiles/carla-client.dir/source/carla/client/detail/Episode.cpp.o
+/mnt/simulations/carla/LibCarla/source/carla/client/detail/Episode.cpp:45:7: warning: field '_simulator' will be initialized after field '_token' [-Wreorder-ctor]
+   45 |       _simulator(simulator),
+      |       ^~~~~~~~~~~~~~~~~~~~~
+      |       _token(info.token)
+   46 |       _token(info.token) {}
+      |       ~~~~~~~~~~~~~~~~~~
+      |       _simulator(simulator)
+1 warning generated.
+[5/9] Building CXX object LibCarla/CMakeFiles/carla-client.dir/source/carla/client/detail/WalkerNavigation.cpp.o
+[6/9] Building CXX object LibCarla/CMakeFiles/carla-client.dir/source/carla/client/detail/Simulator.cpp.o
+[7/9] Building CXX object LibCarla/CMakeFiles/carla-client.dir/source/carla/nav/WalkerManager.cpp.o
+[8/9] Linking CXX static library LibCarla/libcarla-client.a
+[8/9] cd /mnt/simulations/carla/PythonAPI/carla && /opt/cmake-3.28.3-linux-x86_64/bin/cmake -E copy /mnt/simulations/carla/LICENSE /mnt/simulations/carla/PythonAPI/carla/LICENSE && /mnt/simulations/venvs/carla/bin/python -m build --outdir /mnt/simulations/carla/Build/PythonAPI/dist --wheel
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - scikit-build-core
+  - wheel
+* Getting build dependencies for wheel...
+* Installed build dependency versions:
+  - scikit-build-core==1.0.3
+  - wheel==0.48.0
+* Building wheel...
+*** scikit-build-core 1.0.3 using CMake 3.28.3 (wheel)
+*** Configuring CMake...
+loading initial cache file /tmp/tmp8aqr_9ft/build/CMakeInit.txt
+-- The CXX compiler identification is Clang 18.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /tmp/build-env-98sfihs5/bin/python (found version "3.10.12") found components: Interpreter Development.Module Development.Embed Development.SABIModule 
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/tmp8aqr_9ft/build
+*** Building project with Ninja...
+[1/18] Building CXX object CMakeFiles/carla.dir/src/Exception.cpp.o
+[2/18] Building CXX object CMakeFiles/carla.dir/src/PythonAPI.cpp.o
+[3/18] Building CXX object CMakeFiles/carla.dir/src/V2XData.cpp.o
+[4/18] Building CXX object CMakeFiles/carla.dir/src/Sensor.cpp.o
+[5/18] Building CXX object CMakeFiles/carla.dir/src/TrafficManager.cpp.o
+[6/18] Building CXX object CMakeFiles/carla.dir/src/Snapshot.cpp.o
+[7/18] Building CXX object CMakeFiles/carla.dir/src/Client.cpp.o
+[8/18] Building CXX object CMakeFiles/carla.dir/src/Blueprint.cpp.o
+[9/18] Building CXX object CMakeFiles/carla.dir/src/Actor.cpp.o
+[10/18] Building CXX object CMakeFiles/carla.dir/src/LightManager.cpp.o
+[11/18] Building CXX object CMakeFiles/carla.dir/src/Weather.cpp.o
+[12/18] Building CXX object CMakeFiles/carla.dir/src/Map.cpp.o
+[13/18] Building CXX object CMakeFiles/carla.dir/src/Geometry.cpp.o
+[14/18] Building CXX object CMakeFiles/carla.dir/src/SensorData.cpp.o
+[15/18] Building CXX object CMakeFiles/carla.dir/src/Commands.cpp.o
+[16/18] Building CXX object CMakeFiles/carla.dir/src/World.cpp.o
+[17/18] Building CXX object CMakeFiles/carla.dir/src/Control.cpp.o
+[18/18] Linking CXX shared module carla.cpython-310-x86_64-linux-gnu.so
+*** Installing project into wheel...
+-- Install configuration: "Release"
+-- Installing: /tmp/tmp8aqr_9ft/wheel/platlib/./carla.cpython-310-x86_64-linux-gnu.so
+*** Making wheel...
+*** Created carla-0.10.0-cp310-cp310-linux_x86_64.whl
+Successfully built carla-0.10.0-cp310-cp310-linux_x86_64.whl

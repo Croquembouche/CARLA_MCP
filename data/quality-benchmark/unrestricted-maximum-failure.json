@@ -1,0 +1,21 @@
+{
+  "errors": {
+    "gpu-0.log": [
+      "Out of memory on Vulkan; MemoryTypeIndex=1, AllocSize=512.000MB",
+      "Out of memory on Vulkan; MemoryTypeIndex=1, AllocSize=512.000MB"
+    ],
+    "gpu-1.log": [
+      "Out of memory on Vulkan; MemoryTypeIndex=1, AllocSize=512.000MB",
+      "Out of memory on Vulkan; MemoryTypeIndex=1, AllocSize=512.000MB"
+    ],
+    "gpu-2.log": [],
+    "gpu-3.log": [
+      "Out of memory on Vulkan; MemoryTypeIndex=1, AllocSize=0.000MB",
+      "Out of memory on Vulkan; MemoryTypeIndex=1, AllocSize=0.000MB"
+    ]
+  },
+  "time": 1789060914.4607015,
+  "nvidia_smi": "0, 10781 MiB, 85.44 W\n1, 10823 MiB, 21.40 W\n2, 9572 MiB, 9.08 W\n3, 20 MiB, 21.07 W\n",
+  "memory_current": "50984771584\n",
+  "notes": "Failed while changing quality before high-resolution steady-state tests. Do not report a 720p or 1080p throughput for this attempt."
+}

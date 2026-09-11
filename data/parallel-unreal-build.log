@@ -1,0 +1,187 @@
+Setting up bundled DotNet SDK
+Building ShaderCompileWorker...
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Waiting for 'git status' command to complete
+Target is up to date
+Total execution time: 5.41 seconds
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll CarlaUnrealEditor Linux Development -project=/mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -buildscw -WaitMutex
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Creating makefile for CarlaUnrealEditor (command line arguments changed)
+Unity build is enabled.
+Slate UI is disabled.
+Online Subsystem is disabled.
+CarSim support is disabled.
+Chrono support is disabled.
+PyTorch support is disabled.
+OSM2ODR support is disabled.
+Ros2 support is enabled.
+Ros2 demo is disabled.
+Dynamic Library Added: /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/../../Binaries/Linux/libcarla-ros2-native.so
+Unknown option "ROS2".
+OSM2ODR support is disabled.
+------- Build details --------
+Using toolchain located at '/mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu'.
+Using clang (/mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++) version 'clang version 18.1.0rc (github.com/llvm/llvm-project 461274b81d8641eab64d494accddc81d7db8a09e)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin' (string), 18 (major), 1 (minor), 0 (patch)
+Using bundled libc++ standard C++ library.
+Using lld linker
+Using llvm-ar (/mnt/simulations/UnrealEngine5_carla/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v23_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/llvm-ar) version 'LLVM (http://llvm.org/):
+  LLVM version 18.1.0rc
+  Optimized build. (string)'
+Using fast way to relink  circularly dependent libraries (no FixDeps).
+Compressing debug files
+Targeted minimum CPU architecture: None
+------------------------------
+Building CarlaUnrealEditor...
+[Adaptive Build] Excluded from Renderer unity file: DeferredShadingRenderer.cpp, SceneRendering.cpp, RayTracingInstanceCulling.cpp
+[Adaptive Build] Excluded from Engine unity file: RayTracingGeometryManager.cpp
+Executing up to 24 actions based on MaxProcessorCount override
+Using Unreal Build Accelerator local executor to run 20 action(s)
+  Storage capacity 40Gb
+---- Starting trace ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 20 action(s) started ------
+[1/20] WriteMetadata UnrealEditor.version (CarlaUnrealEditor) (UBA disabled)
+[2/20] Compile Module.Carla.7.cpp
+[3/20] Compile Module.Carla.6.cpp
+[4/20] Compile Module.Carla.4.cpp
+[5/20] Compile Module.Carla.3.cpp
+[6/20] Compile Module.Carla.9.cpp
+[7/20] Compile Module.Carla.2.cpp
+[8/20] Compile Module.Carla.14.cpp
+[9/20] Compile Module.Carla.5.cpp
+[10/20] Compile Module.Carla.10.cpp
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.10.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/CityMapGenerator.cpp:69:28: warning: 'OnObjectSaved' is deprecated: Use OnObjectPreSave instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+   69 |     FCoreUObjectDelegates::OnObjectSaved.Broadcast(this);
+      |                            ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectGlobals.h:3142:2: note: 'OnObjectSaved' has been explicitly marked deprecated here
+ 3142 |         UE_DEPRECATED(5.0, "Use OnObjectPreSave instead.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+1 warning generated.
+[11/20] Compile Module.Carla.11.cpp
+[12/20] Compile Module.CarlaTools.3.cpp
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Intermediate/Build/Linux/x64/UnrealEditor/Development/CarlaTools/Module.CarlaTools.3.cpp:4:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Source/CarlaTools/Private/BlueprintLibrary/CarlaToolsFunctionLibrary.cpp:212:15: warning: 'SavePackage' is deprecated: Pack the arguments into FSavePackageArgs and call the function overload that takes FSavePackageArgs. Note that Conform is no longer implemented. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  212 |     UPackage::SavePackage(Package, NewMesh, EObjectFlags::RF_Public | EObjectFlags::RF_Standalone, *Filename);
+      |               ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/CoreUObject/Public/UObject/Package.h:998:2: note: 'SavePackage' has been explicitly marked deprecated here
+  998 |         UE_DEPRECATED(5.0, "Pack the arguments into FSavePackageArgs and call the function overload that takes FSavePackageArgs. Note that Conform is no longer implemented.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Intermediate/Build/Linux/x64/UnrealEditor/Development/CarlaTools/Module.CarlaTools.3.cpp:4:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Source/CarlaTools/Private/BlueprintLibrary/CarlaToolsFunctionLibrary.cpp:310:15: warning: 'SavePackage' is deprecated: Pack the arguments into FSavePackageArgs and call the function overload that takes FSavePackageArgs. Note that Conform is no longer implemented. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  310 |     UPackage::SavePackage(Package, NewMesh, EObjectFlags::RF_Public | RF_Standalone, *Filename);
+      |               ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/CoreUObject/Public/UObject/Package.h:998:2: note: 'SavePackage' has been explicitly marked deprecated here
+  998 |         UE_DEPRECATED(5.0, "Pack the arguments into FSavePackageArgs and call the function overload that takes FSavePackageArgs. Note that Conform is no longer implemented.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Intermediate/Build/Linux/x64/UnrealEditor/Development/CarlaTools/Module.CarlaTools.3.cpp:5:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Source/CarlaTools/Private/BlueprintLibrary/MeshToSplineActor.cpp:108:24: warning: 'Pop' is deprecated: Pop with a boolean bAllowShrinking has been deprecated - please use the EAllowShrinking enum instead Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  108 |                         const int32 cur = Q.Pop(false);
+      |                                             ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Containers/Array.h:895:2: note: 'Pop' has been explicitly marked deprecated here
+  895 |         UE_ALLOWSHRINKING_BOOL_DEPRECATED("Pop")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Containers/AllowShrinking.h:14:57: note: expanded from macro 'UE_ALLOWSHRINKING_BOOL_DEPRECATED'
+   14 | #define UE_ALLOWSHRINKING_BOOL_DEPRECATED(FunctionName) UE_DEPRECATED_FORENGINE(5.5, FunctionName " with a boolean bAllowShrinking has been deprecated - please use the EAllowShrinking enum instead")
+      |                                                         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Intermediate/Build/Linux/x64/UnrealEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Project.ValApi.Cpp20.h:282:33: note: expanded from macro 'UE_DEPRECATED_FORENGINE'
+  282 | #define UE_DEPRECATED_FORENGINE UE_DEPRECATED
+      |                                 ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Intermediate/Build/Linux/x64/UnrealEditor/Development/CarlaTools/Module.CarlaTools.3.cpp:15:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/CarlaTools/Source/CarlaTools/Private/MapGeneratorWidget.cpp:1100:18: warning: 'Import' is deprecated: Use the new method prototype which takes a TArrayView parameter for import layers Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+ 1100 |       Landscape->Import(Landscape->GetLandscapeGuid(), 0, 0, HeightRT->SizeX-1, HeightRT->SizeY-1, Landscape->NumSubsections, Landscape->SubsectionSizeQuads,
+      |                  ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Landscape/Classes/LandscapeProxy.h:1368:2: note: 'Import' has been explicitly marked deprecated here
+ 1368 |         UE_DEPRECATED(5.5, "Use the new method prototype which takes a TArrayView parameter for import layers")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+4 warnings generated.
+[13/20] Compile Module.Carla.13.cpp
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:23:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/CameraModelUtil.cpp:753:9: warning: 'FTexture2DRHIRef' is deprecated: The separate RHI texture types were unified in UE 5.1. FTexture2DRHIRef is now deprecated. Use FTextureRHIRef instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  753 |         FTexture2DRHIRef TextureRHIs[6] = {};
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/RHI/Public/RHIFwd.h:146:29: note: 'FTexture2DRHIRef' has been explicitly marked deprecated here
+  146 | using FTexture2DRHIRef      UE_DEPRECATED(5.5, "The separate RHI texture types were unified in UE 5.1. FTexture2DRHIRef is now deprecated. Use FTextureRHIRef instead."     ) = FTextureRHIRef;
+      |                             ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/GeometryImporter.cpp:98:22: warning: 'TryGetArrayField' is deprecated: Passing an ANSI string to TryGetArrayField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+   98 |     if (!JsonParsed->TryGetArrayField("features", Features))
+      |                      ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h:428:2: note: 'TryGetArrayField' has been explicitly marked deprecated here
+  428 |         UE_DEPRECATED(5.4, "Passing an ANSI string to TryGetArrayField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/GeometryImporter.cpp:108:62: warning: 'GetObjectField' is deprecated: Passing an ANSI string to GetObjectField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  108 |         const TSharedPtr<FJsonObject> Geometry = FeatureObj->GetObjectField("geometry");
+      |                                                              ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h:434:2: note: 'GetObjectField' has been explicitly marked deprecated here
+  434 |         UE_DEPRECATED(5.4, "Passing an ANSI string to GetObjectField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/GeometryImporter.cpp:110:42: warning: 'GetStringField' is deprecated: Passing an ANSI string to GetStringField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  110 |         FString GeometryType = Geometry->GetStringField("type");
+      |                                          ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h:385:2: note: 'GetStringField' has been explicitly marked deprecated here
+  385 |         UE_DEPRECATED(5.4, "Passing an ANSI string to GetStringField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/GeometryImporter.cpp:115:24: warning: 'TryGetArrayField' is deprecated: Passing an ANSI string to TryGetArrayField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  115 |         if (!Geometry->TryGetArrayField("coordinates", Rings) || Rings->Num() == 0)
+      |                        ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h:428:2: note: 'TryGetArrayField' has been explicitly marked deprecated here
+  428 |         UE_DEPRECATED(5.4, "Passing an ANSI string to TryGetArrayField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+5 warnings generated.
+[14/20] Compile Module.Carla.12.cpp
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.12.cpp:49:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Server/CarlaServer.cpp:501:46: warning: 'GetNamesOfAllActors' is deprecated: This command no longer makes sense since the apply_textures API relies on IDs. [-Wdeprecated-declarations]
+  501 |     TArray<FString> NamesFString = GameMode->GetNamesOfAllActors();
+      |                                              ^
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Game/CarlaGameModeBase.h:118:5: note: 'GetNamesOfAllActors' has been explicitly marked deprecated here
+  118 |   [[deprecated("This command no longer makes sense since the apply_textures API relies on IDs.")]]
+      |     ^
+1 warning generated.
+[15/20] Link (lld) libUnrealEditor-Carla.so (UBA disabled)
+[16/20] Link (lld) libUnrealEditor-CarlaUnreal.so (UBA disabled)
+[17/20] Link (lld) libUnrealEditor-StreetMapRuntime.so (UBA disabled)
+[18/20] Link (lld) libUnrealEditor-StreetMapImporting.so (UBA disabled)
+[19/20] Link (lld) libUnrealEditor-CarlaTools.so (UBA disabled)
+[20/20] WriteMetadata CarlaUnrealEditor.target (UBA disabled)
+Trace file written to /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.uba with size 21.1kb
+Total time in Unreal Build Accelerator local executor: 301.71 seconds
+Total execution time: 325.21 seconds

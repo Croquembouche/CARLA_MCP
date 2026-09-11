@@ -1,0 +1,21 @@
+{
+  "map": "/Game/Carla/Maps/Town10HD_Opt",
+  "removed": [
+    "BP_Carlacola_Parked_C_3",
+    "BP_Carlacola_Parked_C_5",
+    "BP_EuropeanHGV_Parked_C_10",
+    "BP_EuropeanHGV_Parked_C_3",
+    "BP_EuropeanHGV_Parked_C_4",
+    "BP_EuropeanHGV_Parked_C_5",
+    "BP_EuropeanHGV_Parked_C_6",
+    "BP_MercedesSprinter_Parked_C_7",
+    "SM_Mustang_prop2_421",
+    "SM_Tesla2_418"
+  ],
+  "before_sha256": "013f97735dcd6be505ccdec3bf7121c34b761743a9eb092c9139b6dac304b990",
+  "actors_before": 2932,
+  "backup": "/mnt/simulations/maps/Town10HD_Opt-cleaned/backup/Carla/Maps/Town10HD_Opt.umap",
+  "actors_after": 2922,
+  "after_sha256": "be60ffe8df65b9331bd7a8f70028b353d9049c526c8fb0fd37132cc4f97bbac9",
+  "verified": true
+}

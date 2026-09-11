@@ -1,0 +1,204 @@
+{
+  "native_routes": [
+    {
+      "actor": "60",
+      "primary_stream": "33",
+      "worker_port": "2011",
+      "local_stream": "33",
+      "cost": "4.000"
+    },
+    {
+      "actor": "61",
+      "primary_stream": "34",
+      "worker_port": "2021",
+      "local_stream": "9",
+      "cost": "2.000"
+    },
+    {
+      "actor": "62",
+      "primary_stream": "35",
+      "worker_port": "2031",
+      "local_stream": "4",
+      "cost": "1.000"
+    },
+    {
+      "actor": "63",
+      "primary_stream": "36",
+      "worker_port": "2041",
+      "local_stream": "5",
+      "cost": "0.500"
+    }
+  ],
+  "four_workers": {
+    "frame": 494,
+    "sensors": 6,
+    "streaming_ports": [
+      2011,
+      2021,
+      2031,
+      2041
+    ],
+    "memory": [
+      {
+        "role": "primary",
+        "pid": 4050333,
+        "pss_gib": 9.312
+      },
+      {
+        "role": "gpu-3",
+        "pid": 4053649,
+        "pss_gib": 11.439
+      },
+      {
+        "role": "gpu-2",
+        "pid": 4064326,
+        "pss_gib": 11.687
+      },
+      {
+        "role": "gpu-1",
+        "pid": 4066933,
+        "pss_gib": 11.88
+      },
+      {
+        "role": "gpu-0",
+        "pid": 4066935,
+        "pss_gib": 11.538
+      }
+    ],
+    "performance": {
+      "frames": 109,
+      "timings_ms": {
+        "control_ms": {
+          "mean": 1.05,
+          "p95": 2.04
+        },
+        "world_ms": {
+          "mean": 7.83,
+          "p95": 16.47
+        },
+        "sensor_wait_ms": {
+          "mean": 121.97,
+          "p95": 530.29
+        },
+        "snapshot_ms": {
+          "mean": 3.73,
+          "p95": 8.8
+        },
+        "publish_record_ms": {
+          "mean": 7.51,
+          "p95": 13.78
+        },
+        "preview_ms": {
+          "mean": 2.57,
+          "p95": 8.5
+        },
+        "total_ms": {
+          "mean": 144.66,
+          "p95": 585.17
+        }
+      },
+      "simulation_step_ms": 50,
+      "world_includes": "Physics, actor ticks, Traffic Manager, replication and RPC; not pure physics time",
+      "sensor_ready_ms": {
+        "60": 76.86,
+        "61": 76.92,
+        "62": 76.81,
+        "63": 34.32,
+        "64": 4.73,
+        "65": 4.77
+      }
+    }
+  },
+  "recording": {
+    "id": "20260908-213728-d69810",
+    "frames": 10,
+    "status": "complete",
+    "sensor_topic_counts": [
+      [
+        "/carla/ego_28/front_radar/points",
+        10
+      ],
+      [
+        "/carla/ego_28/front_rgb/image",
+        10
+      ],
+      [
+        "/carla/ego_28/gnss/data",
+        10
+      ],
+      [
+        "/carla/ego_28/imu/data",
+        10
+      ],
+      [
+        "/carla/ego_28/parallel_test_rgb/image",
+        10
+      ],
+      [
+        "/carla/ego_28/roof_lidar/points",
+        10
+      ]
+    ],
+    "lidar_and_camera_payloads_valid": true
+  },
+  "zero_workers": {
+    "frame": 527,
+    "cpu_sensor_count": 2,
+    "memory": [
+      {
+        "role": "primary",
+        "pid": 4050333,
+        "pss_gib": 9.827
+      }
+    ],
+    "performance": {
+      "frames": 120,
+      "timings_ms": {
+        "control_ms": {
+          "mean": 1.02,
+          "p95": 1.79
+        },
+        "world_ms": {
+          "mean": 7.56,
+          "p95": 15.59
+        },
+        "sensor_wait_ms": {
+          "mean": 108.46,
+          "p95": 306.62
+        },
+        "snapshot_ms": {
+          "mean": 3.61,
+          "p95": 12.19
+        },
+        "publish_record_ms": {
+          "mean": 10.09,
+          "p95": 31.13
+        },
+        "preview_ms": {
+          "mean": 2.47,
+          "p95": 8.81
+        },
+        "total_ms": {
+          "mean": 133.21,
+          "p95": 351.67
+        }
+      },
+      "simulation_step_ms": 50,
+      "world_includes": "Physics, actor ticks, Traffic Manager, replication and RPC; not pure physics time",
+      "sensor_ready_ms": {
+        "66": 5.04,
+        "67": 5.08
+      }
+    }
+  },
+  "restored": {
+    "frame": 563,
+    "worker_count": 1,
+    "sensor_count": 5,
+    "actor_ids": [
+      "25",
+      "27",
+      "28"
+    ]
+  }
+}

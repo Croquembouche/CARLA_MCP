@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "drag_rotates": true,
+  "wheel_zooms": true,
+  "zoom_buttons": true,
+  "pan_target": [
+    0,
+    0,
+    0
+  ],
+  "right_and_ctrl_drag_cannot_pan": true,
+  "interaction_downloads": 0,
+  "hidden_workspace_downloads": 0,
+  "reset": true,
+  "errors": []
+}

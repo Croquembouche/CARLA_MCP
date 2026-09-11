@@ -1,0 +1,27 @@
+{
+  "verified": true,
+  "start_frame": 698,
+  "final_frame": 911,
+  "steps": 212,
+  "actor_count": 31,
+  "sensors": 6,
+  "worker_count": 4,
+  "signal_audit": {
+    "entries_observed": 1,
+    "violation_count": 0,
+    "recent_violations": [],
+    "violations": [],
+    "recent_entries": [
+      {
+        "frame": 911,
+        "actor": 55,
+        "signal": 22,
+        "movement": "right",
+        "indication": "Green"
+      }
+    ],
+    "scope": "Movement-entry boundary observations and protected-conflict checks; yielding requires dedicated interaction tests"
+  },
+  "error": null,
+  "running": false
+}

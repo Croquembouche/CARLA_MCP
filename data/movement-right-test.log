@@ -1,0 +1,5 @@
+RED_STOP {'frame': 800, 'x': -48.5038948059082, 'y': 107.3389663696289, 'speed': 0.0, 'brake': 1.0, 'light': 18, 'at_light': True, 'junction': False, 'road': 13, 'next': '[]'}
+Traceback (most recent call last):
+  File "/mnt/simulations/control-center/tests/verify_movement_right.py", line 54, in <module>
+    assert yielding and left_entry and opposing_entry and left_entry>opposing_entry,{'yield_frames':len(yielding),'left_entry':left_entry,'opposing_entry':opposing_entry,'last':trace[-1]}
+AssertionError: {'yield_frames': 0, 'left_entry': 899, 'opposing_entry': 902, 'last': {'left': {'frame': 1073, 'x': -80.96639251708984, 'y': 128.87725830078125, 'speed': 2.8917396068573, 'brake': 0.11870744824409485, 'light': None, 'at_light': False, 'junction': False, 'road': 5, 'next': '[]'}, 'opposing': {'frame': 1073, 'x': -70.61312103271484, 'y': 128.964599609375, 'speed': 5.547621250152588, 'brake': 0.0, 'light': None, 'at_light': False, 'junction': False, 'road': 5, 'next': '[]'}}}

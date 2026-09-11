@@ -1,0 +1,15 @@
+{
+  "camera_weather_mean_absolute_difference": 107.22800411522634,
+  "day_mean": 109.81610082304526,
+  "night_mean": 4.835432098765432,
+  "day_sky_mean": 163.1808484848485,
+  "night_sky_mean": 0.24945454545454546,
+  "weather_workers": {
+    "gpu-0": "day and night applied to sky components",
+    "gpu-1": "day and night applied to sky components",
+    "gpu-2": "day and night applied to sky components",
+    "gpu-3": "day and night applied to sky components"
+  },
+  "fog_difference": 12.364032921810699,
+  "passed": true
+}

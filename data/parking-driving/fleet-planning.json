@@ -1,0 +1,17 @@
+{
+  "vehicles_checked": 48,
+  "routes_planned": 38,
+  "rejections": [
+    "REJECT 723 Vehicle is obstructed at its current position; clear nearby objects before driving",
+    "REJECT 724 Vehicle is obstructed at its current position; clear nearby objects before driving",
+    "REJECT 727 Parking maneuver crosses a junction; a clear connection to a non-junction road is required",
+    "REJECT 728 Vehicle is obstructed at its current position; clear nearby objects before driving",
+    "REJECT 729 Parking maneuver crosses a junction; a clear connection to a non-junction road is required",
+    "REJECT 730 Vehicle is obstructed at its current position; clear nearby objects before driving",
+    "REJECT 731 Vehicle is obstructed at its current position; clear nearby objects before driving",
+    "REJECT 739 Parking maneuver crosses a junction; a clear connection to a non-junction road is required",
+    "REJECT 754 Vehicle is obstructed at its current position; clear nearby objects before driving",
+    "REJECT 757 Vehicle is obstructed at its current position; clear nearby objects before driving"
+  ],
+  "note": "Planning from native scenery poses toward one common road goal. Accepted routes are not a physical driving validation of every vehicle."
+}

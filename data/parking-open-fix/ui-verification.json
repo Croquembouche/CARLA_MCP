@@ -1,0 +1,20 @@
+{
+  "survey": {
+    "positions": 180,
+    "excluded": 0,
+    "legend": [
+      "PPurple · Open",
+      "PGrey · Occupied"
+    ],
+    "status": "180 individual positions · 42 meters. 180 open positions · surveyed 10 Sep 2026"
+  },
+  "main": {
+    "bayOptions": 180,
+    "legend": [
+      "PPurple · Open",
+      "PGrey · Occupied"
+    ],
+    "summary": "180 mapped positions · 143 open · 37 occupied"
+  },
+  "errors": []
+}

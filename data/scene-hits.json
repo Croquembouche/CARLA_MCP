@@ -1,0 +1,42 @@
+[
+  {
+    "point": [
+      -50,
+      22
+    ],
+    "height": 0.05650001852637354,
+    "mesh": "SM_Town10HD_Road_3.SM_Town10HD_Road_3",
+    "material": "MI_Road_Asphalt_B.MI_Road_Asphalt_B",
+    "layer": "roads"
+  },
+  {
+    "point": [
+      -46,
+      28
+    ],
+    "height": 0.026498069826528692,
+    "mesh": "SM_Town10HD_Road_3.SM_Town10HD_Road_3",
+    "material": "MI_Road_Asphalt_B.MI_Road_Asphalt_B",
+    "layer": "roads"
+  },
+  {
+    "point": [
+      -46,
+      22
+    ],
+    "height": 0.01737939726505555,
+    "mesh": "SM_Town10HD_Road_3.SM_Town10HD_Road_3",
+    "material": "MI_Road_Asphalt_B.MI_Road_Asphalt_B",
+    "layer": "roads"
+  },
+  {
+    "point": [
+      -42,
+      22
+    ],
+    "height": -0.003367496260027636,
+    "mesh": "SM_Town10HD_Road_3.SM_Town10HD_Road_3",
+    "material": "MI_Road_Asphalt_B.MI_Road_Asphalt_B",
+    "layer": "roads"
+  }
+]

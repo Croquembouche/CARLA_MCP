@@ -1,0 +1,15 @@
+{
+  "ego": 52,
+  "role": "ego",
+  "planner": "tm",
+  "bay": "P024",
+  "parked": true,
+  "footprint_inside_bay": true,
+  "parking_survived_restart": true,
+  "six_sensors_preserved": true,
+  "weather_preserved": true,
+  "actor_count": 28,
+  "removed_trucks_still_absent": true,
+  "running": true,
+  "error": null
+}

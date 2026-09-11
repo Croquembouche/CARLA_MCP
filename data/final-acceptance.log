@@ -1,0 +1,72 @@
+PHASE starting
+PHASE connecting
+PHASE connected
+REUSE previously passed native replay and fresh-scene restart check
+RUN live_workflow.py
+EGO 25
+BACKGROUND 31
+PEDESTRIAN 32
+RECORDING 20260907-221557-607589
+FRAME 0
+FRAME 10
+FRAME 20
+FRAME 30
+FRAME 40
+{
+  "map": "Carla/Maps/Town10HD_Opt",
+  "lanes": 168,
+  "buildings": 6000,
+  "models": 17,
+  "ego": 25,
+  "background": 31,
+  "pedestrian": 32,
+  "sensor_types": [
+    "sensor.camera.rgb",
+    "sensor.lidar.ray_cast",
+    "sensor.other.radar",
+    "sensor.other.imu",
+    "sensor.other.gnss"
+  ],
+  "session": "20260907-221557-607589",
+  "ego_distance_m": 6.756182784348102,
+  "ros_topics": {
+    "/clock": 50,
+    "/carla/ego_25/odometry": 50,
+    "/carla/ego_25/front_rgb/image": 50,
+    "/carla/ego_25/front_rgb/metadata": 50,
+    "/carla/ego_25/front_rgb/camera_info": 50,
+    "/carla/ego_25/roof_lidar/points": 50,
+    "/carla/ego_25/roof_lidar/metadata": 50,
+    "/carla/ego_25/front_radar/points": 50,
+    "/carla/ego_25/front_radar/metadata": 50,
+    "/carla/ego_25/imu/data": 50,
+    "/carla/ego_25/imu/metadata": 50,
+    "/carla/ego_25/gnss/data": 50,
+    "/carla/ego_25/gnss/metadata": 50,
+    "/tf": 50
+  },
+  "recorded_state_checks": "passed",
+  "destination_arrival_and_braking": "passed",
+  "external_control_watchdog": "passed",
+  "passed": true
+}
+RUN verify_bag.py
+[INFO] [1788833765.879619220] [rosbag2_storage]: Opened database '/mnt/simulations/control-center/data/recordings/20260907-221557-607589/rosbag2/rosbag2_0.db3' for READ_ONLY.
+{"passed": true, "total_messages": 700, "topics": {"/clock": 50, "/carla/ego_25/odometry": 50, "/carla/ego_25/front_rgb/image": 50, "/carla/ego_25/front_rgb/metadata": 50, "/carla/ego_25/front_rgb/camera_info": 50, "/carla/ego_25/roof_lidar/points": 50, "/carla/ego_25/roof_lidar/metadata": 50, "/carla/ego_25/front_radar/points": 50, "/carla/ego_25/front_radar/metadata": 50, "/carla/ego_25/imu/data": 50, "/carla/ego_25/imu/metadata": 50, "/carla/ego_25/gnss/data": 50, "/carla/ego_25/gnss/metadata": 50, "/tf": 50}, "camera_original_bytes": "identical", "lidar_coordinate_conversion": "exact", "timestamps": "matched sensor simulation timestamps"}
+RUN sensor_formats.py
+sensor.camera.rgb PASS
+sensor.camera.depth PASS
+sensor.camera.semantic_segmentation PASS
+sensor.camera.instance_segmentation PASS
+sensor.camera.normals PASS
+sensor.camera.optical_flow PASS
+sensor.lidar.ray_cast PASS
+sensor.lidar.ray_cast_semantic PASS
+sensor.other.radar PASS
+sensor.other.imu PASS
+sensor.other.gnss PASS
+RUN browser.cjs
+{"errors":[]}
+RUN browser-live.cjs
+{"errors":[]}
+ALL_ACCEPTANCE_CHECKS_PASSED {"native_report_reused": true, "passed": true, "session": "20260907-221557-607589", "archive_files": 267, "live_workflow": true, "rosbag_readback": true, "native_replay_and_fresh_restart": true, "sensor_formats": 11, "browser_desktop_mobile_3d_mesh_replay": true, "state": {"phase": "connected", "map": "Carla/Maps/Town10HD_Opt", "actors": 3, "sensors": 5}}

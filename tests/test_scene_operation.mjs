@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {SceneOperation} from '../static/scene-operation.js';
+let now=1000;const op=new SceneOperation(null,()=>now);
+op.begin();assert(op.pending);assert(!op.observe({phase:'connected',mode:'native-replay'}));
+op.accept();assert(!op.observe({phase:'connected',mode:'native-replay'}));op.disconnected();assert.equal(op.display().stage,'reconnecting');
+const restored=new SceneOperation(JSON.parse(JSON.stringify(op.value)),()=>now);assert(restored.pending,'restart progress survives reload');
+restored.observe({phase:'starting',worker_count:4});assert.match(restored.display().detail,/4 GPU workers/);
+restored.observe({phase:'connecting'});assert(restored.pending);assert(restored.observe({phase:'connected',mode:'live'}));assert.equal(restored.display().stage,'ready');assert(!restored.pending);now+=10000;assert.equal(restored.display().elapsed,'0s','completed duration stops counting');restored.dismiss();assert.equal(restored.display(),null);
+const other=new SceneOperation(null,()=>now);other.observe({phase:'restarting'});assert(other.pending,'other clients discover restart');other.observe({phase:'error',error:'GPU startup failed'});assert.equal(other.display().stage,'failed');assert.match(other.display().detail,/GPU startup failed/);
+const unknown=new SceneOperation(null,()=>now);unknown.begin();unknown.disconnected();assert.equal(unknown.display().stage,'confirming');assert(!unknown.observe({phase:'connected',mode:'live'}),'unconfirmed request must not falsely succeed');now+=21000;unknown.observe({phase:'connected',mode:'native-replay'});assert.equal(unknown.display().stage,'failed');
+const stalled=new SceneOperation(null,()=>now);stalled.begin();stalled.accept();now+=2100001;stalled.disconnected();assert.equal(stalled.display().stage,'failed');
+console.log('PASS: request acknowledgement, expected connection loss, page reload, startup stages, confirmed completion, other clients, rejected/unconfirmed requests and timeout');
+const recovery=new SceneOperation(null,()=>now);recovery.observe({phase:'starting'});
+assert(!recovery.observe({phase:'connected',mode:'live',recovery_operation:{stage:'restoring'}}));
+assert(recovery.pending);assert.equal(recovery.display().stage,'restoring');
+assert(recovery.observe({phase:'connected',mode:'live',recovery_operation:{stage:'ready'}}));
+assert.match(recovery.display().detail,/restored/);
+console.log('PASS: recovery remains pending until actors and sensors are restored');

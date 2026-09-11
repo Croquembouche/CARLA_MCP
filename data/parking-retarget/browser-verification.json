@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "paused_selection_submits_without_apply": true,
+  "moving_selection_replaces_unfinished_goal": true,
+  "paused_status": "Leaving parking · low-speed maneuver, then Traffic Manager. Press Run to continue.",
+  "request_count": 2,
+  "errors": []
+}

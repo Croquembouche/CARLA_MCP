@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {parkingAt,parkingInspectAt,drawParking} from '../static/parking.js';
+import {parkingStyle} from '../static/parking-display.js';
+const bay={id:'P001',x:2,y:3,z:0,length:6,width:2,yaw:90,polygon:[[1,0],[3,0],[3,6],[1,6]]};
+const excluded={...bay,id:'P002',y:10,polygon:[[1,7],[3,7],[3,13],[1,13]],restriction_reasons:[{reason:'Reserved'}]};
+const map={parking_spaces:[bay],parking_excluded:[excluded],parking_curb_strips:[{id:'C001',polygon:[[1,-2],[3,-2],[3,16],[1,16]]}]};
+assert.equal(parkingAt(map,2,5).id,'P001');assert.equal(parkingAt(map,4,3),undefined);assert.equal(parkingAt(map,2,10),undefined);
+assert.equal(parkingInspectAt(map,2,10).id,'P002');assert.equal(parkingInspectAt(map,2,15),undefined);
+assert.equal(parkingStyle(excluded,true).key,'occupied');assert.equal(parkingStyle(bay,true).key,'occupied');
+let strokes=0;const labels=[],dashes=[];const ctx=new Proxy({stroke:()=>strokes++,fillText:t=>labels.push(t),setLineDash:v=>dashes.push(v)},{get:(t,k)=>t[k]||(()=>{}),set:(t,k,v)=>(t[k]=v,true)});
+drawParking(ctx,map,{},null,3);assert.equal(strokes,2);assert.deepEqual(labels,['P','P']);assert.ok(dashes.every(v=>v.length===0));drawParking(ctx,map,{},'P001',3);assert.equal(strokes,4);assert.deepEqual(labels,['P','P','P001','P']);
+console.log('PASS individual P spaces, two-state availability, individual bay inspection');

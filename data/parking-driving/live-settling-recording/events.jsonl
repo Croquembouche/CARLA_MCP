@@ -1,0 +1,13 @@
+{"action": "record-start", "payload": {"rosbag": true}, "frame": 220, "time": 7.363728829746833}
+{"action": "step", "payload": {}, "frame": 221, "time": 7.413728830491891}
+{"action": "step", "payload": {}, "frame": 222, "time": 7.463728831236949}
+{"action": "step", "payload": {}, "frame": 223, "time": 7.513728831982007}
+{"action": "step", "payload": {}, "frame": 224, "time": 7.563728832727065}
+{"action": "step", "payload": {}, "frame": 225, "time": 7.613728833472123}
+{"action": "step", "payload": {}, "frame": 226, "time": 7.663728834217181}
+{"action": "step", "payload": {}, "frame": 227, "time": 7.7137288349622395}
+{"action": "step", "payload": {}, "frame": 228, "time": 7.7637288357072975}
+{"action": "step", "payload": {}, "frame": 229, "time": 7.813728836452356}
+{"action": "step", "payload": {}, "frame": 230, "time": 7.863728837197414}
+{"action": "step", "payload": {}, "frame": 231, "time": 7.913728837942472}
+{"action": "step", "payload": {}, "frame": 232, "time": 7.96372883868753}

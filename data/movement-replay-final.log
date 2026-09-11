@@ -1,0 +1,215 @@
+{
+  "result": "passed",
+  "recording": "20260908-143432-559c1e",
+  "native_replay_response": {
+    "result": "Replaying File: /mnt/simulations/control-center/data/recordings/20260908-143432-559c1e/carla.log\nTotal time recorded: 1.15\nReplaying from 0 s - 1.15 s (1.15 s) at 1.0x\nIgnoring Spectator camera\n"
+  },
+  "expected_words": [
+    33043,
+    49427
+  ],
+  "observed_words": [
+    33043,
+    49427
+  ],
+  "samples": [
+    {
+      "frame": 198,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 199,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 200,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 201,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 202,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 203,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 204,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 205,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 206,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 207,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 208,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 209,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 210,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 211,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 212,
+      "word": 33043,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 213,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 214,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 215,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 216,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 217,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 218,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    },
+    {
+      "frame": 219,
+      "word": 49427,
+      "movements": {
+        "left": "Permissive",
+        "straight": "Protected",
+        "right": "Off"
+      }
+    }
+  ]
+}

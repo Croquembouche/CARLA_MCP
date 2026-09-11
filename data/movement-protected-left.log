@@ -1,0 +1,1 @@
+{'result': 'passed', 'protected_left_entered': True, 'entry': {'frame': 259, 'x': -27.92979621887207, 'y': -64.78533172607422, 'speed': 4.170989036560059, 'brake': 0.0, 'light': 8, 'at_light': True, 'junction': True, 'road': 90, 'next': '[]'}}

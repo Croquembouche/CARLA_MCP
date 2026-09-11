@@ -1,0 +1,29 @@
+{
+  "verified": true,
+  "warmup": {
+    "stage": "ready",
+    "sensor_ids": [
+      56,
+      57
+    ],
+    "completed": 30,
+    "total": 30
+  },
+  "samples": [
+    {
+      "id": 56,
+      "name": "cabin_overview",
+      "frame": 293,
+      "source": "960x600"
+    },
+    {
+      "id": 57,
+      "name": "front_rgb",
+      "frame": 293,
+      "source": "640x360"
+    }
+  ],
+  "frames_advanced_by_verification": 0,
+  "worker_count": 4,
+  "errors": []
+}

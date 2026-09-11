@@ -1,0 +1,818 @@
+[
+  {
+    "light": 8,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 273,
+      "xy": [
+        -22.8403263092041,
+        -64.72969818115234
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 8,
+      "brake": 1.0,
+      "word": 33024
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      23
+    ]
+  },
+  {
+    "light": 8,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 374,
+      "xy": [
+        -22.84700584411621,
+        -64.72969818115234
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 8,
+      "brake": 1.0,
+      "word": 33024
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      23
+    ]
+  },
+  {
+    "light": 9,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 475,
+      "xy": [
+        -41.67462921142578,
+        -39.468318939208984
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 9,
+      "brake": 1.0,
+      "word": 32800
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      23
+    ]
+  },
+  {
+    "light": 9,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 576,
+      "xy": [
+        -45.17824935913086,
+        -39.511436462402344
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 9,
+      "brake": 1.0,
+      "word": 32800
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      23
+    ]
+  },
+  {
+    "light": 10,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 677,
+      "xy": [
+        109.53216552734375,
+        49.31514358520508
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 10,
+      "brake": 1.0,
+      "word": 33024
+    },
+    "started_in_other_junction": true,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      532
+    ]
+  },
+  {
+    "light": 10,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 778,
+      "xy": [
+        106.03451538085938,
+        49.14162063598633
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 10,
+      "brake": 1.0,
+      "word": 33024
+    },
+    "started_in_other_junction": true,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      532
+    ]
+  },
+  {
+    "light": 11,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 879,
+      "xy": [
+        102.8749771118164,
+        -9.700730323791504
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 11,
+      "brake": 1.0,
+      "word": 32772
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      532
+    ]
+  },
+  {
+    "light": 11,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 980,
+      "xy": [
+        99.39356231689453,
+        -9.748656272888184
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 11,
+      "brake": 1.0,
+      "word": 32772
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      532
+    ]
+  },
+  {
+    "light": 12,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1081,
+      "xy": [
+        -45.167667388916016,
+        49.17847442626953
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 12,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": true,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 12,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1182,
+      "xy": [
+        -41.59260559082031,
+        49.021484375
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 12,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": true,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 12,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1283,
+      "xy": [
+        -41.59260177612305,
+        49.021522521972656
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 12,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": true,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 13,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1384,
+      "xy": [
+        -22.811019897460938,
+        16.613191604614258
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 13,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 13,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1485,
+      "xy": [
+        -23.0211124420166,
+        16.615713119506836
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 13,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 13,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1586,
+      "xy": [
+        -22.910873413085938,
+        13.127055168151855
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 13,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 14,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1687,
+      "xy": [
+        -52.38796615600586,
+        -8.519625663757324
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 14,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 14,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1788,
+      "xy": [
+        -48.887290954589844,
+        -8.416220664978027
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 14,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 14,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1889,
+      "xy": [
+        -48.887969970703125,
+        -8.330066680908203
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 14,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 15,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 1990,
+      "xy": [
+        -107.31285858154297,
+        51.05116653442383
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 15,
+      "brake": 1.0,
+      "word": 32772
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      719
+    ]
+  },
+  {
+    "light": 15,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2091,
+      "xy": [
+        -103.81614685058594,
+        51.07418441772461
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 15,
+      "brake": 1.0,
+      "word": 32772
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      719
+    ]
+  },
+  {
+    "light": 16,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2192,
+      "xy": [
+        -71.32215881347656,
+        -58.31523132324219
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 16,
+      "brake": 1.0,
+      "word": 32772
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      23
+    ]
+  },
+  {
+    "light": 16,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2293,
+      "xy": [
+        -71.32217407226562,
+        -58.31523895263672
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 16,
+      "brake": 1.0,
+      "word": 32772
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      23
+    ]
+  },
+  {
+    "light": 17,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2394,
+      "xy": [
+        -110.13766479492188,
+        -8.811264991760254
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 17,
+      "brake": 1.0,
+      "word": 33024
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      719
+    ]
+  },
+  {
+    "light": 17,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2495,
+      "xy": [
+        -110.13817596435547,
+        -8.809075355529785
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 17,
+      "brake": 1.0,
+      "word": 33024
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      719
+    ]
+  },
+  {
+    "light": 18,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2596,
+      "xy": [
+        -48.505531311035156,
+        107.35445404052734
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 18,
+      "brake": 1.0,
+      "word": 32804
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      468
+    ]
+  },
+  {
+    "light": 19,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2697,
+      "xy": [
+        -20.89769172668457,
+        130.08302307128906
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 19,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      468
+    ]
+  },
+  {
+    "light": 19,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2798,
+      "xy": [
+        -20.89771842956543,
+        130.0829315185547
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 19,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      468
+    ]
+  },
+  {
+    "light": 19,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 2899,
+      "xy": [
+        -20.89769172668457,
+        130.08302307128906
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 19,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      468
+    ]
+  },
+  {
+    "light": 20,
+    "movement": "straight",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 3000,
+      "xy": [
+        -71.2603530883789,
+        27.978464126586914
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 20,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 20,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 3101,
+      "xy": [
+        -71.26038360595703,
+        27.978391647338867
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 20,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 20,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 3202,
+      "xy": [
+        -71.28443908691406,
+        24.485441207885742
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 20,
+      "brake": 1.0,
+      "word": 32768
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      189
+    ]
+  },
+  {
+    "light": 21,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 3303,
+      "xy": [
+        -82.21218872070312,
+        16.456491470336914
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 21,
+      "brake": 1.0,
+      "word": 32800
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      719
+    ]
+  },
+  {
+    "light": 21,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 3404,
+      "xy": [
+        -82.37744140625,
+        12.958681106567383
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 21,
+      "brake": 1.0,
+      "word": 32800
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      719
+    ]
+  },
+  {
+    "light": 22,
+    "movement": "right",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 3505,
+      "xy": [
+        76.70124816894531,
+        28.400962829589844
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 22,
+      "brake": 1.0,
+      "word": 32800
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      532
+    ]
+  },
+  {
+    "light": 22,
+    "movement": "left",
+    "stopped_at_expected_light": true,
+    "pass": true,
+    "last": {
+      "frame": 3606,
+      "xy": [
+        76.63317108154297,
+        24.896873474121094
+      ],
+      "speed": 0.0,
+      "junction": false,
+      "at_light": true,
+      "light": 22,
+      "brake": 1.0,
+      "word": 32800
+    },
+    "started_in_other_junction": false,
+    "entered_target_junction": false,
+    "target_junction_ids": [
+      532
+    ]
+  }
+]

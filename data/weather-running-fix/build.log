@@ -1,0 +1,46 @@
+Setting up bundled DotNet SDK
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll CarlaUnrealEditor Linux Development -project=/mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -WaitMutex -MaxParallelActions=8
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Waiting for 'git status' command to complete
+Building CarlaUnrealEditor...
+[Adaptive Build] Excluded from Renderer unity file: DeferredShadingRenderer.cpp, SceneRendering.cpp, RayTracingInstanceCulling.cpp
+[Adaptive Build] Excluded from VulkanRHI unity file: VulkanMemory.cpp
+[Adaptive Build] Excluded from Engine unity file: RayTracingGeometryManager.cpp
+Executing up to 8 actions based on MaxProcessorCount override
+Using Unreal Build Accelerator local executor to run 831 action(s)
+  Storage capacity 40Gb
+---- Starting trace ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 831 action(s) started ------
+[1/831] Link (lld) libUnrealEditor-AnimationModifiers.so (UBA disabled)
+[2/831] Link (lld) libUnrealEditor-SequencerWidgets.so (UBA disabled)
+[3/831] Link (lld) libUnrealEditor-ViewportInteraction.so (UBA disabled)
+[4/831] Link (lld) libUnrealEditor-AudioEditor.so (UBA disabled)
+[5/831] Relink libUnrealEditor-ViewportInteraction.so (UBA disabled)
+[6/831] Link (lld) libUnrealEditor-AnimationModifierLibrary.so (UBA disabled)
+[7/831] Link (lld) libUnrealEditor-ComponentVisualizers.so (UBA disabled)
+[8/831] Link (lld) libUnrealEditor-AIGraph.so (UBA disabled)
+[9/831] Link (lld) libUnrealEditor-CurveEditor.so (UBA disabled)
+[10/831] Link (lld) libUnrealEditor-SequencerCore.so (UBA disabled)
+[11/831] Link (lld) libUnrealEditor-BehaviorTreeEditor.so (UBA disabled)
+[12/831] Link (lld) libUnrealEditor-AnimationDataController.so (UBA disabled)
+[13/831] Link (lld) libUnrealEditor-CurveAssetEditor.so (UBA disabled)
+[14/831] Link (lld) libUnrealEditor-Sequencer.so (UBA disabled)
+[15/831] Link (lld) libUnrealEditor-DetailCustomizations.so (UBA disabled)
+[16/831] Link (lld) libUnrealEditor-CurveEditorTools.so (UBA disabled)
+[17/831] Link (lld) libUnrealEditor-UniversalObjectLocatorEditor.so (UBA disabled)
+[18/831] Link (lld) libUnrealEditor-CurveTableEditor.so (UBA disabled)
+[19/831] Link (lld) libUnrealEditor-StructUtilsEditor.so (UBA disabled)
+[20/831] Link (lld) libUnrealEditor-QuadricMeshReduction.so (UBA disabled)
+[21/831] Link (lld) libUnrealEditor-EnvironmentQueryEditor.so (UBA disabled)
+[22/831] Link (lld) libUnrealEditor-NaniteBuilder.so (UBA disabled)
+[23/831] Link (lld) libUnrealEditor-FoliageEdit.so (UBA disabled)
+[24/831] Link (lld) libUnrealEditor-MeshBoneReduction.so (UBA disabled)
+[25/831] Link (lld) libUnrealEditor-MeshBuilderCommon.so (UBA disabled)
+[26/831] Link (lld) libUnrealEditor-RigVM.so (UBA disabled)
+[27/831] Link (lld) libUnrealEditor-GeometryFramework.so (UBA disabled)
+Canceling actions...
+Trace file written to /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.uba with size 9.4kb
+Total time in Unreal Build Accelerator local executor: 60.65 seconds
+Total execution time: 105.88 seconds

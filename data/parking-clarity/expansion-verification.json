@@ -1,0 +1,95 @@
+{
+  "total": 180,
+  "selectable": 53,
+  "excluded": 127,
+  "new": [
+    {
+      "id": "R121",
+      "length": 6.0
+    },
+    {
+      "id": "R122",
+      "length": 5.5
+    },
+    {
+      "id": "R123",
+      "length": 5.5
+    },
+    {
+      "id": "R124",
+      "length": 5.0
+    },
+    {
+      "id": "R125",
+      "length": 6.0
+    },
+    {
+      "id": "R126",
+      "length": 5.5
+    },
+    {
+      "id": "R127",
+      "length": 5.0
+    },
+    {
+      "id": "R128",
+      "length": 5.5
+    },
+    {
+      "id": "R129",
+      "length": 6.0
+    },
+    {
+      "id": "R130",
+      "length": 6.0
+    },
+    {
+      "id": "R131",
+      "length": 5.5
+    },
+    {
+      "id": "R132",
+      "length": 6.0
+    },
+    {
+      "id": "R133",
+      "length": 6.0
+    },
+    {
+      "id": "R134",
+      "length": 5.5
+    },
+    {
+      "id": "R135",
+      "length": 5.5
+    },
+    {
+      "id": "R136",
+      "length": 5.0
+    },
+    {
+      "id": "R137",
+      "length": 5.5
+    },
+    {
+      "id": "R138",
+      "length": 5.0
+    },
+    {
+      "id": "R139",
+      "length": 5.0
+    }
+  ],
+  "new_selectable": [
+    "R121",
+    "R124",
+    "R129",
+    "R130",
+    "R131",
+    "R135",
+    "R139"
+  ],
+  "all_on_pavement": true,
+  "no_overlaps": true,
+  "prior_positions_and_eligibility_unchanged": true
+}

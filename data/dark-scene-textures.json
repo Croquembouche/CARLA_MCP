@@ -1,0 +1,98 @@
+[
+  {
+    "key": "/Game/Carla/Static/Static/Materials/Add_2/T_AddAdd_02_Opt.T_AddAdd_02_Opt",
+    "texture": "/Game/Carla/Static/Static/Materials/Add_2/T_Add_02_Opt_d.T_Add_02_Opt_d",
+    "web_texture": "5c705196e7cff4aa.webp",
+    "mean": 1.2904437029803242
+  },
+  {
+    "key": "/Game/Carla/Static/StreetLight/00_LegacyAssets/00_IndividualComponents/HighwayLight_01_02/MI_HighwayLight.MI_HighwayLight",
+    "texture": "/Game/Carla/Static/StreetLight/00_LegacyAssets/00_IndividualComponents/HighwayLight_01_02/T_HighwayLight_d.T_HighwayLight_d",
+    "web_texture": "cb502f49797e9b53.webp",
+    "mean": 2.6879069010416665
+  },
+  {
+    "key": "/Game/Carla/Static/Dynamic/Construction/Materials/Scafolding/MI_Scaffolding.MI_Scaffolding",
+    "texture": "/Game/Carla/Static/Dynamic/Construction/Materials/Scafolding/T_Scaffolding_d.T_Scaffolding_d",
+    "web_texture": "47999b7fbe96708b.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/MI_Shop02_Btt_Details_B.MI_Shop02_Btt_Details_B",
+    "texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/T_Shop02_Btt_Details_B_d.T_Shop02_Btt_Details_B_d",
+    "web_texture": "6beb2139d90373bc.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/MI_Shop02_Btt_Details_C.MI_Shop02_Btt_Details_C",
+    "texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/T_Shop02_Btt_Details_C_d.T_Shop02_Btt_Details_C_d",
+    "web_texture": "0bea4360ef1cdb62.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/MI_Shop02_Btt_Details_A.MI_Shop02_Btt_Details_A",
+    "texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/T_Shop02_Btt_Details_A_d.T_Shop02_Btt_Details_A_d",
+    "web_texture": "595aa69ce49948b6.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/MI_Shop02_Btt_Wall.MI_Shop02_Btt_Wall",
+    "texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Shop02/T_Shop02_Btt_Wall_d.T_Shop02_Btt_Wall_d",
+    "web_texture": "6f49992f4a3c5874.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/MI_Skysc24_Mid.MI_Skysc24_Mid",
+    "texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_d.T_Skysc24_Mid_d",
+    "web_texture": "a2be25a507012174.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/MI_Skysc24_Mid_Scrafolding.MI_Skysc24_Mid_Scrafolding",
+    "texture": "/Game/Carla/Static/Building/Buildings/BuildingPieces/00_IndividualComponents/Skysc24/T_Skysc24_Mid_Scrafolding_d.T_Skysc24_Mid_Scrafolding_d",
+    "web_texture": "e88a4eaa588c6174.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Materials/MI_FordCrown02_Details02.MI_FordCrown02_Details02",
+    "texture": "/Game/Carla/Static/Car/4Wheeled/FordCrown02/Materials/T_FordCrown02_Details02_d.T_FordCrown02_Details02_d",
+    "web_texture": "00d68fd8c9c44334.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Truck/MercedesSprinter/Materials/MI_MercedesSprinter_Details03.MI_MercedesSprinter_Details03",
+    "texture": "/Game/Carla/Static/Truck/MercedesSprinter/Materials/T_MercedesSprinter_Details03_d.T_MercedesSprinter_Details03_d",
+    "web_texture": "2c45156bc2a1422e.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Truck/CarlaCola/Materials/MI_CarlaCola_Details02.MI_CarlaCola_Details02",
+    "texture": "/Game/Carla/Static/Truck/EuropeanHGV/Materials/T_EuropeanHGV_Details02_d.T_EuropeanHGV_Details02_d",
+    "web_texture": "9b74c9d45191496d.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Truck/CarlaCola/Materials/MI_CarlaCola_Details03.MI_CarlaCola_Details03",
+    "texture": "/Game/Carla/Static/Truck/EuropeanHGV/Materials/T_EuropeanHGV_Details03_d.T_EuropeanHGV_Details03_d",
+    "web_texture": "15aac29b1f8bac05.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Truck/CarlaCola/Materials/MI_CarlaCola_Details04.MI_CarlaCola_Details04",
+    "texture": "/Game/Carla/Static/Truck/CarlaCola/Materials/T_CarlaCola_Details04_d.T_CarlaCola_Details04_d",
+    "web_texture": "da99fdf5cb5f7aec.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Truck/EuropeanHGV/Materials/MI_EuropeanHGV_Details03.MI_EuropeanHGV_Details03",
+    "texture": "/Game/Carla/Static/Truck/EuropeanHGV/Materials/T_EuropeanHGV_Details03_d.T_EuropeanHGV_Details03_d",
+    "web_texture": "15aac29b1f8bac05.webp",
+    "mean": 0.0
+  },
+  {
+    "key": "/Game/Carla/Static/Truck/EuropeanHGV/Materials/MI_EuropeanHGV_Details02.MI_EuropeanHGV_Details02",
+    "texture": "/Game/Carla/Static/Truck/EuropeanHGV/Materials/T_EuropeanHGV_Details02_d.T_EuropeanHGV_Details02_d",
+    "web_texture": "9b74c9d45191496d.webp",
+    "mean": 0.0
+  }
+]

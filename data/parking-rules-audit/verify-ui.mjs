@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const browser=await chromium.launch({headless:true,executablePath:'/home/william/.cache/ms-playwright/chromium-1217/chrome-linux64/chrome',args:['--no-sandbox']});const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+try{
+ await page.goto('http://127.0.0.1:8095');await page.waitForFunction(()=>document.querySelector('#actor-count').textContent==='28',{},{timeout:60000});
+ const dismiss=page.getByRole('button',{name:'Continue to scene',exact:true});if(await dismiss.isVisible())await dismiss.click();await page.locator('nav [data-panel="scenario"]').click();if(!await page.locator('#parking-section').evaluate(e=>e.open))await page.locator('#parking-section > summary').click();
+ assert.ok((await page.locator('#parking-count').textContent()).startsWith('13 selectable'));
+ for(const id of ['P001','P009','P012','P018','P019','P020','P033','P040'])assert.equal(await page.locator(`#parking-bay option[value="${id}"]`).count(),0);
+ const review=page.locator('#parking-restrictions');assert.ok((await review.textContent()).includes('P009'));assert.ok((await review.textContent()).includes('fire hydrant'));assert.ok((await review.textContent()).includes('provisional'));assert.ok((await review.textContent()).includes('28 spaces'));
+ const actual=await (await page.request.get('http://127.0.0.1:8095/api/map')).json();assert.deepEqual(actual.parking_spaces.map(b=>b.id),JSON.parse(fs.readFileSync('data/parking-rules-audit/report.json')).allowed_ids);assert.equal(actual.parking_excluded.length,28);
+ await page.screenshot({path:'data/parking-rules-audit/opendrive-ui.png',fullPage:true});
+ await review.locator('summary').click();await review.scrollIntoViewIfNeeded();await page.screenshot({path:'data/parking-rules-audit/exclusions-ui.png',fullPage:true});await review.locator('summary').click();
+ await page.locator('#open-top-down').click();await page.waitForFunction(()=>document.querySelector('#three canvas')&&document.querySelector('#top-down').getAttribute('aria-pressed')==='true');await page.waitForTimeout(6000);await page.screenshot({path:'data/parking-rules-audit/scene3d-ui.png',fullPage:true});assert.deepEqual(errors,[]);fs.writeFileSync('data/parking-rules-audit/ui-verification.json',JSON.stringify({selectable:13,excluded:28,apiMatches:true,errors},null,2));console.log('PASS: 13 selectable bays, excluded IDs absent, reasons visible, both map views rendered, no page errors.');
+}finally{await browser.close()}

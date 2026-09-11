@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "carla": {
+      "command": "/mnt/simulations/control-center/run-mcp.sh",
+      "args": [],
+      "env": {
+        "CARLA_WEBUI_URL": "http://127.0.0.1:8095",
+        "CARLA_WEBUI_PUBLIC_URL": "http://128.175.213.232:8095"
+      }
+    }
+  }
+}

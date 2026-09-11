@@ -1,0 +1,65 @@
+Setting up bundled DotNet SDK
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll CarlaUnrealEditor Linux Development -project=/mnt/simulations/carla/Unreal/CarlaUnreal/CarlaUnreal.uproject -Module=Carla -WaitMutex -MaxParallelActions=12 -NoUBA -NoUBALocal
+Log file: /mnt/simulations/UnrealEngine5_carla/Engine/Programs/UnrealBuildTool/Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (/mnt/simulations/UnrealEngine5_carla).
+Building CarlaUnrealEditor...
+[Adaptive Build] Excluded from Renderer unity file: DeferredShadingRenderer.cpp, SceneRendering.cpp, RayTracingInstanceCulling.cpp
+[Adaptive Build] Excluded from Engine unity file: RayTracingGeometryManager.cpp
+Executing up to 12 actions based on MaxProcessorCount override
+Using Parallel executor to run 2 action(s)
+------ Building 2 action(s) started ------
+[1/2] Compile Module.Carla.13.cpp
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:23:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/CameraModelUtil.cpp:753:9: warning: 'FTexture2DRHIRef' is deprecated: The separate RHI texture types were unified in UE 5.1. FTexture2DRHIRef is now deprecated. Use FTextureRHIRef instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  753 |         FTexture2DRHIRef TextureRHIs[6] = {};
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/RHI/Public/RHIFwd.h:146:29: note: 'FTexture2DRHIRef' has been explicitly marked deprecated here
+  146 | using FTexture2DRHIRef      UE_DEPRECATED(5.5, "The separate RHI texture types were unified in UE 5.1. FTexture2DRHIRef is now deprecated. Use FTextureRHIRef instead."     ) = FTextureRHIRef;
+      |                             ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/GeometryImporter.cpp:98:22: warning: 'TryGetArrayField' is deprecated: Passing an ANSI string to TryGetArrayField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+   98 |     if (!JsonParsed->TryGetArrayField("features", Features))
+      |                      ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h:428:2: note: 'TryGetArrayField' has been explicitly marked deprecated here
+  428 |         UE_DEPRECATED(5.4, "Passing an ANSI string to TryGetArrayField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/GeometryImporter.cpp:108:62: warning: 'GetObjectField' is deprecated: Passing an ANSI string to GetObjectField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  108 |         const TSharedPtr<FJsonObject> Geometry = FeatureObj->GetObjectField("geometry");
+      |                                                              ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h:434:2: note: 'GetObjectField' has been explicitly marked deprecated here
+  434 |         UE_DEPRECATED(5.4, "Passing an ANSI string to GetObjectField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/GeometryImporter.cpp:110:42: warning: 'GetStringField' is deprecated: Passing an ANSI string to GetStringField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  110 |         FString GeometryType = Geometry->GetStringField("type");
+      |                                          ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h:385:2: note: 'GetStringField' has been explicitly marked deprecated here
+  385 |         UE_DEPRECATED(5.4, "Passing an ANSI string to GetStringField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+In file included from /mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Intermediate/Build/Linux/x64/UnrealEditor/Development/Carla/Module.Carla.13.cpp:26:
+/mnt/simulations/carla/Unreal/CarlaUnreal/Plugins/Carla/Source/Carla/Util/GeometryImporter.cpp:115:24: warning: 'TryGetArrayField' is deprecated: Passing an ANSI string to TryGetArrayField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  115 |         if (!Geometry->TryGetArrayField("coordinates", Rings) || Rings->Num() == 0)
+      |                        ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h:428:2: note: 'TryGetArrayField' has been explicitly marked deprecated here
+  428 |         UE_DEPRECATED(5.4, "Passing an ANSI string to TryGetArrayField has been deprecated outside of UTF-8 mode. Please use the overload that takes a TCHAR string.")
+      |         ^
+/mnt/simulations/UnrealEngine5_carla/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:276:43: note: expanded from macro 'UE_DEPRECATED'
+  276 | #define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                           ^
+5 warnings generated.
+[2/2] Link (lld) libUnrealEditor-Carla.so
+Total time in Parallel executor: 104.96 seconds
+Total execution time: 109.23 seconds

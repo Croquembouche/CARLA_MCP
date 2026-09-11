@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "origin": "http://128.175.213.232:8095",
+  "actor": 59,
+  "model": "vehicle.lincoln.mkz_interior",
+  "planner": "tm",
+  "external_planner_spawn_verified": true,
+  "cabin_sensor": 60,
+  "worker_count": 1,
+  "frame": 259,
+  "lighting": {
+    "status": "ready",
+    "warnings": []
+  },
+  "errors": []
+}

@@ -1,5 +1,6 @@
 from gpu_resources import GpuResources, desired_workers, loadout_key, summary
 import reliability
+import lidar_profiles
 import parking
 from parking_driving import ParkingDriving, trip_status
 from signal_audit import SignalAudit
@@ -57,6 +58,16 @@ def validate_loadout(configs):
         attrs={str(k):str(v) for k,v in c.get('attributes',{}).items()}
         if 'sensor_tick' in attrs and float(attrs['sensor_tick']) not in (0.,.05):raise ValueError('This synchronized workspace captures every 0.05 s; sensor_tick must be 0 or 0.05')
         attrs['sensor_tick']='0.0'
+        if c.get('type')=='sensor.lidar.ray_cast':
+            # Migrate older saved loadouts: weather now comes from the scene.
+            for key in ('weather_rain_density','weather_fog_density','weather_smoke_density'):
+                attrs.pop(key,None)
+            attrs.setdefault('material_model','true')
+            attrs.setdefault('physical_model',attrs['material_model'])
+            if attrs['physical_model'].lower()=='true':
+                attrs.setdefault('physical_profile','generic');attrs.setdefault('output_format','extended')
+            lidar_profiles.validate(attrs)
+        if c.get('type')=='sensor.camera.rgb':attrs.setdefault('use_ray_tracing','true')
         # Explicit resource limits keep accidental configurations reviewable.
         for k,lo,hi in [('image_size_x',16,1920),('image_size_y',16,1080),('points_per_second',1,2000000),('channels',1,128),('range',1,150),('fov',1,179)]:
             if k in attrs and not(lo<=float(attrs[k])<=hi):raise ValueError(f'{k} must be between {lo} and {hi}')
@@ -138,6 +149,7 @@ class Controller(GpuResources):
         if action=='shutdown':self.disconnect(stop_process=True);return {'stopped':True}
         if not self.world:raise ValueError('Start or connect to CARLA first')
         if action=='configuration':return self.export_config()
+        if action=='lidar-weather':raise ValueError('Separate LiDAR noise controls were removed; use scene weather')
         if action=='reload-parking':
             if self.recording or self.mode!='live':raise ValueError('Stop recording or replay before reloading parking annotations')
             annotations=parking.build_parking(self.wmap,self.opendrive,DATA/'parking'/(self.wmap.name.split('/')[-1]+'.json'))
@@ -189,12 +201,12 @@ class Controller(GpuResources):
             self.tick();result['signal']=next(a for a in self.state['actors'] if a['id']==result['id'])
             return result
         if action=='weather':
-            if self.recording or self.mode!='live':raise ValueError('Stop recording or replay before editing weather')
+            if self.mode!='live':raise ValueError('Stop native replay before editing weather')
             w=self.world.get_weather()
             for k,v in p.items():
                 hi=360 if k=='sun_azimuth_angle' else 10000 if k=='fog_distance' else 90 if k=='sun_altitude_angle' else 100
                 lo=-90 if k=='sun_altitude_angle' else 0
-                if k not in WEATHER or not(lo<=float(v)<=hi):raise ValueError('Invalid weather field or value')
+                if k not in WEATHER or isinstance(v,bool) or not isinstance(v,(int,float)) or not math.isfinite(v) or not(lo<=v<=hi):raise ValueError('Invalid weather field or value')
                 setattr(w,k,float(v))
             self.state['weather_application']={'stage':'applying','detail':'Applying weather to the synchronized scene'}
             try:
@@ -285,7 +297,7 @@ class Controller(GpuResources):
     def poll_start(self):
         if time.monotonic()-self.started>1800:raise RuntimeError('CARLA initialization exceeded 30 minutes')
         if self.proc.poll() is not None:raise RuntimeError('CARLA failed to start; inspect simulator log')
-        manifests=sorted(Path('/mnt/simulations/carla/carlab/host-setup/logs').glob('multigpu-*/processes.json'),key=lambda p:p.stat().st_mtime,reverse=True)
+        manifests=sorted(Path('/media/william/mist1/Simulations/logs').glob('multigpu-*/processes.json'),key=lambda p:p.stat().st_mtime,reverse=True)
         for path in manifests[:8]:
             m=json.loads(path.read_text())
             if m.get('manager_pid')==self.proc.pid and m.get('ready'):
@@ -317,7 +329,7 @@ class Controller(GpuResources):
         self.catalog={'vehicles':[{'id':b.id,'label':b.id.removeprefix('vehicle.').replace('.',' / ').replace('_',' ').title()} for b in sorted(bps.filter('vehicle.*'),key=lambda b:b.id)],
                       'walkers':[b.id for b in bps.filter('walker.pedestrian.*')],
                       'sensors':{kind:[{'id':a.id,'type':str(a.type),'value':str(a),'modifiable':a.is_modifiable,'recommended':list(a.recommended_values)} for a in bps.find(kind)] for kind in SENSOR_TYPES if bps.filter(kind)},
-                      'defaults':DEFAULT_SENSORS}
+                      'defaults':DEFAULT_SENSORS,'lidar_profiles':lidar_profiles.catalog()}
         self.state.update(error=None,running=False,map=wmap.name,server_version=client.get_server_version())
         self.refresh()
         self.movements=MovementPrograms(world,self.opendrive,self.map_data['lanes'],self.signal_metadata)
@@ -815,7 +827,7 @@ class Controller(GpuResources):
 
     def export_config(self):
         poses={a['id']:a['pose'] for a in self.state['actors']}
-        return {'version':4,'scene_vehicles':{'hidden':sorted(self.scene_vehicles.hidden)} if getattr(self,'scene_vehicles',None) else {},'authoring':self.schedule.snapshot(),'network_timing':self.movements.network.snapshot() if self.movements else {},'map':self.state['map'],'weather':self.state.get('weather'),'movement_programs':self.movements.snapshot() if self.movements else {},
+        return {'version':6,'lidar_weather_model':'scene-weather-v1','lidar_material_model':'optics-v1','scene_vehicles':{'hidden':sorted(self.scene_vehicles.hidden)} if getattr(self,'scene_vehicles',None) else {},'authoring':self.schedule.snapshot(),'network_timing':self.movements.network.snapshot() if self.movements else {},'map':self.state['map'],'weather':self.state.get('weather'),'movement_programs':self.movements.snapshot() if self.movements else {},
                 'traffic_lights':[a for a in self.state['actors'] if a['type'].startswith('traffic.traffic_light')],
                 'actors':[dict(id=aid,model=m['actor'].type_id,role=m['role'],saved_offroad_pose=bool(m.get('parked') or m.get('parking_trip',{}).get('stage') in ('leaving','entering','blocked')),planner='parked' if m['role']!='ego' and (m.get('parked') or m.get('parking_trip',{}).get('stage') in ('leaving','entering','blocked')) else m['planner'],parked=bool(m.get('parked')),parking_space=m.get('parking_space'),scene_source=m.get('scene_source'),model_substituted=m.get('model_substituted',False),spawn=poses[aid],destination=None if m.get('parked') else m['destination'],
                                arrival_tolerance=m.get('arrival_tolerance',.75),sensors=[s['config'] for s in self.sensors.values() if s['parent']==aid]) for aid,m in self.managed.items() if aid in poses],

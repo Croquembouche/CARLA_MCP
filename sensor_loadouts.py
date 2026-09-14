@@ -3,11 +3,11 @@ from copy import deepcopy
 
 DEFAULT_SENSORS=[
  {'name':'front_rgb','type':'sensor.camera.rgb','mount':{'x':1.5,'z':2.2},'attributes':{'image_size_x':'640','image_size_y':'360','fov':'90'}},
- {'name':'roof_lidar','type':'sensor.lidar.ray_cast','mount':{'z':2.5},'attributes':{'channels':'32','range':'80','points_per_second':'200000','rotation_frequency':'20'}},
+ {'name':'roof_lidar','type':'sensor.lidar.ray_cast','mount':{'z':2.5},'attributes':{'channels':'32','range':'80','points_per_second':'200000','rotation_frequency':'20','material_model':'true','physical_model':'true','physical_profile':'generic','output_format':'extended'}},
  {'name':'imu','type':'sensor.other.imu','mount':{},'attributes':{}},
  {'name':'gnss','type':'sensor.other.gnss','mount':{},'attributes':{}},
  {'name':'front_radar','type':'sensor.other.radar','mount':{'x':2.0,'z':1.0},'attributes':{'range':'80','points_per_second':'10000'}},
- {'name':'cabin_overview','type':'sensor.camera.rgb','mount':{'x':.55,'y':0,'z':1.2,'yaw':180,'pitch':-8,'roll':0},'attributes':{'image_size_x':'960','image_size_y':'600','fov':'120','post_process_profile':'CabinObservation','lens_k':'0','use_ray_tracing':'false'}},
+ {'name':'cabin_overview','type':'sensor.camera.rgb','mount':{'x':.55,'y':0,'z':1.2,'yaw':180,'pitch':-8,'roll':0},'attributes':{'image_size_x':'960','image_size_y':'600','fov':'120','post_process_profile':'CabinObservation','lens_k':'0','use_ray_tracing':'true'}},
 ]
 
 def default_ego_loadout(model):

@@ -10,6 +10,7 @@ import rosbag2_py
 from builtin_interfaces.msg import Time
 from std_msgs.msg import Header, String
 from recording import sensor_metadata
+from physical_lidar import is_physical, points as physical_points, ROS_FIELDS
 import json
 from sensor_msgs.msg import Image, CameraInfo, PointCloud2, PointField, Imu, NavSatFix
 from geometry_msgs.msg import TransformStamped
@@ -42,6 +43,12 @@ def sensor_message(sample, name):
                     step=data.width * (8 if kind.endswith('optical_flow') else 4),
                     data=bytes(data.raw_data))
         return msg, 'sensor_msgs/msg/Image'
+    if kind=='sensor.lidar.ray_cast' and is_physical(data):
+        a=physical_points(data).copy();a['y']*=-1;a['azimuth']*=-1
+        return PointCloud2(header=h,height=1,width=len(a),
+            fields=[PointField(name=n,offset=o,datatype=t,count=1) for n,o,t in ROS_FIELDS],
+            is_bigendian=False,point_step=64,row_step=len(a)*64,data=a.tobytes(),
+            is_dense=bool(np.isfinite(np.column_stack([a[n] for n in ('x','y','z')])).all())), 'sensor_msgs/msg/PointCloud2'
     if 'lidar.' in kind or kind.endswith('radar'):
         fields = [('x', PointField.FLOAT32), ('y', PointField.FLOAT32), ('z', PointField.FLOAT32)]
         if kind.endswith('ray_cast_semantic'):

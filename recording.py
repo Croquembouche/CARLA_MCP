@@ -5,6 +5,7 @@ import struct
 import time
 from pathlib import Path
 from uuid import uuid4
+from physical_lidar import is_physical, metadata as physical_metadata
 
 
 def dump(path, value):
@@ -19,8 +20,9 @@ def sensor_metadata(sample):
             'attributes':sample['config']['attributes'],'mount':sample['config'].get('mount',{})}
     if hasattr(data,'width'):result.update(width=data.width,height=data.height,fov=data.fov)
     if hasattr(data,'channels'):
-        result.update(channels=data.channels,horizontal_angle=data.horizontal_angle,
-                      point_counts=[data.get_point_count(i) for i in range(data.channels)])
+        result.update(channels=data.channels,horizontal_angle=data.horizontal_angle)
+        if is_physical(data):result.update(physical_metadata(data))
+        else:result['point_counts']=[data.get_point_count(i) for i in range(data.channels)]
     if hasattr(data,'compass'):result['compass']=data.compass
     return result
 

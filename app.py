@@ -60,6 +60,11 @@ def status():
 @app.get('/api/catalog')
 def catalog():return engine.catalog
 
+@app.get('/api/lidar/profiles')
+def lidar_profile_catalog():
+    from lidar_profiles import catalog
+    return {'profiles':catalog()}
+
 @app.get('/api/map')
 def map_data():
     if engine.map_data:return engine.map_data
@@ -88,7 +93,7 @@ async def configuration():
     except Exception as e:raise HTTPException(409,str(e))
 
 @app.get('/api/preview/{sensor_id}')
-def preview(sensor_id:int,request:Request,width:int=Query(640,ge=160,le=960),after:int=Query(-1,ge=-1),format:Literal["image","points"]="image",point_limit:int=Query(4000,ge=512,le=12000)):
+def preview(sensor_id:int,request:Request,width:int=Query(640,ge=160,le=960),after:int=Query(-1,ge=-1),format:Literal["image","points"]="image",point_limit:int=Query(4000,ge=512,le=12000),color:Literal["height","intensity"]="height"):
     warmup=engine.state.get('camera_warmup',{})
     if warmup.get('stage')=='warming' and sensor_id in warmup.get('sensor_ids',[]):
         return Response(status_code=204,headers={'Cache-Control':'no-store','Retry-After':'1','X-CARLA-Camera-State':'warming'})
@@ -97,11 +102,11 @@ def preview(sensor_id:int,request:Request,width:int=Query(640,ge=160,le=960),aft
         raise HTTPException(404,'No completed sample for this sensor yet')
     frame,kind,data=item
     # World timestamp and sample identity prevent cache reuse after a scene restart.
-    etag=f'"{sensor_id}-{frame}-{data.timestamp}-{width}-{format}-{point_limit}-{id(data)}"'
+    etag=f'"{sensor_id}-{frame}-{data.timestamp}-{width}-{format}-{point_limit}-{color}-{id(data)}"'
     headers={'Cache-Control':'no-store','ETag':etag,'X-CARLA-Frame':str(frame),'X-CARLA-Timestamp':str(data.timestamp)}
     if request.headers.get('if-none-match')==etag:return Response(status_code=304,headers=headers)
     if frame==after:return Response(status_code=204,headers=headers)
-    try:body,mime,extra=preview_cache.get(etag,kind,data,width,format=format,point_limit=point_limit)
+    try:body,mime,extra=preview_cache.get(etag,kind,data,width,format=format,point_limit=point_limit,color=color)
     except (ValueError,TypeError) as error:raise HTTPException(422,str(error))
     return Response(body,media_type=mime,headers={**headers,**extra})
 

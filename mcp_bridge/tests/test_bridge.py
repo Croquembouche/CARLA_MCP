@@ -80,7 +80,15 @@ class CoverageTests(unittest.TestCase):
                     if isinstance(part,ast.Constant) and isinstance(part.value,str):actions.add(part.value)
                     if isinstance(part,(ast.Tuple,ast.List)):actions.update(x.value for x in part.elts if isinstance(x,ast.Constant))
         implemented={s['action'] for s in TOOLS.values()}|{'configuration'}
-        self.assertEqual(actions-implemented,set())
+        # The retired noise endpoint only raises a migration error; do not expose it as a tool.
+        retired={'lidar-weather'}
+        self.assertFalse(retired & implemented)
+        for action in retired:
+            guards=[n for n in ast.walk(method) if isinstance(n,ast.If) and isinstance(n.test,ast.Compare) and isinstance(n.test.left,ast.Name) and n.test.left.id=='action' and any(isinstance(c,ast.Constant) and c.value==action for c in n.test.comparators)]
+            self.assertEqual(len(guards),1)
+            self.assertEqual(len(guards[0].body),1)
+            self.assertIsInstance(guards[0].body[0],ast.Raise)
+        self.assertEqual(actions-implemented-retired,set())
     def test_schemas_examples_and_docs(self):
         guide=(ROOT/'docs/mcp.md').read_text()
         for name,s in TOOLS.items():

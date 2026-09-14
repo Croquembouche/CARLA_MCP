@@ -1,6 +1,21 @@
 {
-  "snapshot": "2026-09-11",
+  "snapshot": "2026-09-14",
   "files": [
+    {
+      "path": "README.md",
+      "bytes": 5711,
+      "sha256": "498709d81b9d0e68d4e4c1329ee9325d98b67e93beea905f6676064c40c41e8e"
+    },
+    {
+      "path": "app.py",
+      "bytes": 10133,
+      "sha256": "dd720111ab75b5dde71cc8fbc20ffabd9416c579fe89c8b4144d38f7ff4872f3"
+    },
+    {
+      "path": "controller.py",
+      "bytes": 62849,
+      "sha256": "3ffbc13e868acbc67f22b6156913cb8f2d0fff79c74663449bdb8a5dc11c8bd2"
+    },
     {
       "path": "data/acceptance-report.json",
       "bytes": 570,
@@ -23667,6 +23682,21 @@
       "sha256": "106d40a38dddeababd4980a8c672348ffe0a84796dd9906f3b52f080a3f07f1e"
     },
     {
+      "path": "docs/lidar-optics.md",
+      "bytes": 7231,
+      "sha256": "49153e4a091cc09df0a820529908a519a717abaa36a145ccd622bf4fc258f9a4"
+    },
+    {
+      "path": "docs/lidar-physical.md",
+      "bytes": 10811,
+      "sha256": "5cde8619d35726a1df917339502a8f6c1af3d8e9c82a7c53da7584caf2712006"
+    },
+    {
+      "path": "docs/lidar-weather.md",
+      "bytes": 2995,
+      "sha256": "547d248caa713abaefa0ab6621353f258b84e8bdc5bd461cd4b7c01090a589ee"
+    },
+    {
       "path": "docs/live-destination-updates.md",
       "bytes": 3567,
       "sha256": "e2bac2f1f1cd99ab3a008adb552fb00336859738195145821def0cfe9fe2e060"
@@ -23787,6 +23817,11 @@
       "sha256": "1a0521c990acaf9d47275997ff4bc22093f7aff5f2dd5051c41f44fc707576af"
     },
     {
+      "path": "lidar_profiles.py",
+      "bytes": 1781,
+      "sha256": "c308e5d58f4a42d1cc0d0949b04f11661c0e6cdd1ba454bc449e56d34f80c9cd"
+    },
+    {
       "path": "mcp_bridge/__init__.py",
       "bytes": 40,
       "sha256": "4954541773365e1db9bafd359a769efc1cca5e2cd0f5a5e9904044ffc2c21cc1"
@@ -23833,8 +23868,23 @@
     },
     {
       "path": "mcp_bridge/tests/test_bridge.py",
-      "bytes": 6861,
-      "sha256": "c3edde5c5632b27a7d1d4ce8e2b3abdb4f80922e4d4d0e2730a9cd9ca9c81054"
+      "bytes": 7495,
+      "sha256": "9ac9272254f32df141b6169694e7cc7fa0ac3e3ede2f841cab87f2977c5240de"
+    },
+    {
+      "path": "physical_lidar.py",
+      "bytes": 1851,
+      "sha256": "2879cc9b0d42dce241a7ac93adc25b59f07fce2544fbb53e8ee001127d7f194f"
+    },
+    {
+      "path": "recording.py",
+      "bytes": 6021,
+      "sha256": "cfbbd044bc6c657bb87fd21645db1f3f6a7ea9bf4c671b4b1ff9f8e992e994dc"
+    },
+    {
+      "path": "rosio.py",
+      "bytes": 9855,
+      "sha256": "4a87b9df0456b0d4a494d946b37ed8d8e40d1ac880b525274d0cd37905d59555"
     },
     {
       "path": "scripts/benchmark_repeated.py",
@@ -24045,6 +24095,16 @@
       "path": "scripts/verify_signals_live.py",
       "bytes": 4112,
       "sha256": "6244fe9248d3e7caf16df0fc1886b9040e2be640b7f022ed51813b9bb16380aa"
+    },
+    {
+      "path": "sensor_loadouts.py",
+      "bytes": 1659,
+      "sha256": "13e2d9952d1b918877e5d32d8ac9f0d3176d721f7b2b3ce29e890f61c52bba8f"
+    },
+    {
+      "path": "sensor_preview.py",
+      "bytes": 8142,
+      "sha256": "1af145a06d6399087263aefd6fb9222185b84803c017d1363859a867dbd14e87"
     },
     {
       "path": "static/actor-markers.js",
@@ -26078,8 +26138,8 @@
     },
     {
       "path": "static/app.js",
-      "bytes": 54221,
-      "sha256": "b2ea0177d64a25197d826329295a4f7fc55ec27796a88c0b39af43608044e943"
+      "bytes": 55350,
+      "sha256": "a2486b3d2408e9c14557c3db2f8bb76fa0c7c3338d101a051f1bcc4a3df9c453"
     },
     {
       "path": "static/authoring-review/acceptance.json",
@@ -26178,8 +26238,8 @@
     },
     {
       "path": "static/index.html",
-      "bytes": 24826,
-      "sha256": "2e8e1690c032daaf77345f4bedaa0c0a75f1b327c1baf06234097cba37991d23"
+      "bytes": 25050,
+      "sha256": "f6e7ae391c060e2f271d1cb96b693d4943d1492bf0f6422a87f6a9e102198bc7"
     },
     {
       "path": "static/lidar-view.js",
@@ -28058,8 +28118,8 @@
     },
     {
       "path": "static/sensor-view.js",
-      "bytes": 14321,
-      "sha256": "e721e16fc4918fc668719cce49d4f2529567ca8a3be1a92ed60b7bbadca285b6"
+      "bytes": 14821,
+      "sha256": "e4d88c64d7a35bc92ecaac30c68644535a254fb582accd170908f1713b032910"
     },
     {
       "path": "static/signals.js",
@@ -28100,7 +28160,27 @@
       "path": "systemd/carla-mcp.service",
       "bytes": 489,
       "sha256": "683057b483ee3c5b56faf356f1a20b863938943e3460a6a1dff9de0c09f81284"
+    },
+    {
+      "path": "tests/test_lidar_optics.py",
+      "bytes": 1224,
+      "sha256": "00373e7c0b01bfcb404b050b72ba8fb99e4203f01b9858180f43f8826638c402"
+    },
+    {
+      "path": "tests/test_physical_lidar.py",
+      "bytes": 2592,
+      "sha256": "83305bcf1440f205abcba6f5e63542265bde9f922610698786f84ab80920fc24"
+    },
+    {
+      "path": "tests/test_scene_weather.py",
+      "bytes": 3067,
+      "sha256": "f6d0a9983f140d9411ca6f2ec0b40f78a5d549565f4f1281da1aecebb57aecb3"
+    },
+    {
+      "path": "tools/lidar_calibrate.py",
+      "bytes": 6735,
+      "sha256": "71cfc478334f1a1903af793213ad604d6e0b794c6893967fca0e7b2a9ce9f0b8"
     }
   ],
-  "note": "Custom files present before the manifest itself was written; generated dependencies and transient process files are excluded."
+  "note": "Published custom files; manifest and runtime dependencies excluded. Existing unchanged entries preserved; modified entries refreshed."
 }

@@ -52,3 +52,9 @@ node tests/test_parking.mjs
 ## License and access
 
 This repository is public. See docs/ASSET-NOTICES.md for asset attribution. CARLA/Unreal-derived scene and vehicle assets retain their upstream licenses and notices; keep those restrictions when sharing the data. Repository ownership does not replace third-party asset licenses.
+
+## Physical LiDAR and live weather
+
+New ordinary LiDAR loadouts default to the generic physical profile and extended return data. The sensor editor exposes installed profiles; Sensor views supports height or intensity coloring. Scene weather can be applied while running or recording, preserving the sensor actors and recording session. Separate LiDAR noise controls have been removed. Set **Fog starts at (m)** to zero for fog surrounding the vehicle.
+
+See [physical model and schema](docs/lidar-physical.md), [optics](docs/lidar-optics.md), and [live weather](docs/lidar-weather.md). This requires the matching rebuilt CARLA native plugin and Python wheel plus the `Content/Carla/Config/Lidar` profiles installed by the CARLA content setup. `CARLA_LIDAR_PROFILE_DIR` overrides the control center profile directory for custom installations. The generic profile is uncalibrated.

@@ -65,3 +65,5 @@ button.map-overview{padding:0;display:block;flex-shrink:0;text-align:left;cursor
 @media(max-width:760px){.simulator-controls{grid-column:1/-1;grid-row:3;align-items:stretch;padding:0;border:0}.simulator-buttons button{flex:1;padding:8px 10px}#carla-power-status{text-align:center}.transport{grid-row:4}}
 /* Keep the combined map legend below the toolbar on small viewports. */
 .map-legend{max-height:calc(100% - 155px);overflow-y:auto;pointer-events:auto;overscroll-behavior:contain}
+
+@media(max-width:1200px){:root{--header-height:112px}header{flex-wrap:wrap;align-content:center;gap:8px 14px}.town-controls{order:3}}

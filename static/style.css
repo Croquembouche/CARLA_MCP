@@ -40,3 +40,5 @@
 @media(max-width:760px){nav button{font-size:9px;padding:3px 1px}nav{gap:1px}}
 
 #stream-health{font-size:11px;font-variant-numeric:tabular-nums}#stream-health[data-state=waiting]{color:var(--amber)}#stream-health[data-state=ready]{color:var(--mint)}
+
+.town-controls{display:flex;align-items:center;gap:6px}.town-controls label{margin:0;font-size:11px}.town-controls select{width:145px;margin:0;padding:7px}.town-controls button{white-space:nowrap}

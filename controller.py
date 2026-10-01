@@ -1,7 +1,8 @@
-from gpu_resources import GpuResources, desired_workers, loadout_key, summary
+from gpu_resources import GpuResources, desired_workers, loadout_key, summary, sensor_cost
 import reliability
 import lidar_profiles
 import parking
+from towns import resolve_town
 from parking_driving import ParkingDriving, trip_status
 from signal_audit import SignalAudit
 import authoring
@@ -30,8 +31,9 @@ from scene_vehicles import SceneVehicles, MOTORCYCLE_PRESETS
 import numpy as np
 from PIL import Image
 from agents.navigation.global_route_planner import GlobalRoutePlanner
-from recording import Recording, dump
+from recording import Recording, dump, recording_storage
 from rosio import RosIO
+from sensor_delivery import collect_frame
 
 ROOT=Path(__file__).resolve().parent
 DATA=ROOT/'data';DATA.mkdir(exist_ok=True)
@@ -45,7 +47,7 @@ def pose(t):return dict(xyz(t.location),yaw=t.rotation.yaw,pitch=t.rotation.pitc
 def transform(d):return carla.Transform(carla.Location(x=d.get('x',0),y=d.get('y',0),z=d.get('z',0)),carla.Rotation(pitch=d.get('pitch',0),yaw=d.get('yaw',0),roll=d.get('roll',0)))
 
 
-def validate_loadout(configs):
+def validate_loadout(configs, fixed_delta_seconds=.05):
     if not isinstance(configs,list) or len(configs)>16:raise ValueError('Use a list of at most 16 sensors per ego vehicle')
     names=set();result=[]
     for c in configs:
@@ -56,7 +58,7 @@ def validate_loadout(configs):
         mount={k:float(v) for k,v in c.get('mount',{}).items()}
         if any(k not in ('x','y','z','yaw','pitch','roll') or not math.isfinite(v) or abs(v)>360 for k,v in mount.items()):raise ValueError('Invalid sensor mount')
         attrs={str(k):str(v) for k,v in c.get('attributes',{}).items()}
-        if 'sensor_tick' in attrs and float(attrs['sensor_tick']) not in (0.,.05):raise ValueError('This synchronized workspace captures every 0.05 s; sensor_tick must be 0 or 0.05')
+        if 'sensor_tick' in attrs and float(attrs['sensor_tick']) not in (0.,fixed_delta_seconds):raise ValueError(f'Synchronized sensors require sensor_tick 0 or {fixed_delta_seconds}')
         attrs['sensor_tick']='0.0'
         if c.get('type')=='sensor.lidar.ray_cast':
             # Migrate older saved loadouts: weather now comes from the scene.
@@ -76,11 +78,31 @@ def validate_loadout(configs):
 
 
 class Controller(GpuResources):
+    fixed_delta_seconds = .05
+
+    def set_simulation_step(self, value):
+        step=float(value)
+        if isinstance(value,bool) or not math.isfinite(step) or step not in (.05,.1):
+            raise ValueError("fixed_delta_seconds must be 0.05 or 0.1")
+        settings=self.world.get_settings()
+        settings.synchronous_mode=True
+        settings.fixed_delta_seconds=step
+        settings.substepping=True
+        settings.max_substep_delta_time=.01
+        settings.max_substeps=max(10,math.ceil(step/.01))
+        self.world.apply_settings(settings)
+        self.fixed_delta_seconds=step
+
     def __init__(self):
         self.commands=queue.Queue(maxsize=128);self.stop_event=threading.Event()
         self.state={'phase':'offline','running':False,'error':None,'actors':[],'managed':{},'sensors':[],'frame':0,'time':0,'recording':None,'map':None,'ros_domain':42}
+        interrupted=DATA/'startup-progress.json'
+        if interrupted.exists() and not (DATA/'restart-live-request.json').exists():
+            previous=json.loads(interrupted.read_text())
+            self.state.update(phase='error',requested_town=previous.get('town'),error='The controller exited while loading '+str(previous.get('town'))+'. Check the startup log, then use Start CARLA to retry.')
         self.schedule=authoring.ScenarioSchedule(self.execute_scheduled,lambda aid:aid not in self.managed or self.managed[aid].get('arrived',False),lambda aid:self.delete(aid) if aid in self.managed else None);self.scheduled_walkers=[]
         self.movements=None;self.signal_metadata={};self.map_data=None;self.catalog={};self.previews={};self.managed={};self.sensors={};self.proc=None;self.log_handle=None
+        self.sensor_delivery_event=threading.Event()
         self.client=None;self.world=None;self.tm=None;self.recording=None;self.ros=None;self.running=False;self.mode='live'
         self.init_resources(DATA)
         self.worker_fault=None;self.signal_audit=SignalAudit();self.pending_restore=None
@@ -90,7 +112,7 @@ class Controller(GpuResources):
         if restart.exists():
             request=json.loads(restart.read_text());restart.unlink()
             if time.time()-request.get('created',0)<300:
-                self.pending_restore=request.get('configuration');self.submit('start',{'gpus':request['gpus']})
+                self.pending_restore=request.get('configuration');self.submit('start',{'gpus':request['gpus'],'town':request.get('town') or (self.pending_restore or {}).get('map'),'gpu_profile':request.get('gpu_profile')})
                 if self.pending_restore:self.state['recovery_operation']={'stage':'restarting','detail':'Loading the simulator before restoring the saved configuration'}
 
     def submit(self,action,payload):
@@ -121,33 +143,65 @@ class Controller(GpuResources):
                     config=self.pending_restore;self.pending_restore=None;self.restore_configuration(config)
                 elif self.running and self.world:
                     started=time.monotonic();self.tick()
-                    time.sleep(max(0,0.05-(time.monotonic()-started)))
+                    # Dataset generation advances fixed simulation timestamps as
+                    # quickly as complete sensor/recording work permits. Artificial
+                    # wall pacing plus command polling otherwise caps 10 Hz below 10.
+                    if not self.recording:time.sleep(max(0,self.fixed_delta_seconds-(time.monotonic()-started)))
                 if self.proc and self.proc.poll() is not None and self.state['phase'] not in ('offline','error'):
                     raise RuntimeError('CARLA group exited; inspect data/simulator.log')
             except Exception as e:
                 traceback.print_exc();self.fail(e)
-        try:self.disconnect(stop_process=True)
+        try:
+            reliability.finish_checkpoint(self)
         finally:
-            if self.ros:self.ros.close()
+            try:self.disconnect(stop_process=True)
+            finally:
+                if self.ros:self.ros.close()
 
     def command(self,action,p):
+        if self.state.get('phase')=='stopping':raise ValueError('Wait for the controller to restart after stopping CARLA')
         if action=='start':
             if self.proc or self.world:raise ValueError('A simulator is already connected or starting')
             if not self.ros:raise RuntimeError('ROS initialization failed: '+self.state.get('ros_error',''))
+            saved_town=DATA/'runtime-town.json'
+            town=resolve_town(p.get('town') or (json.loads(saved_town.read_text()).get('town') if saved_town.exists() else None))
             gpus=p.get('gpus','auto')
             self.last_gpus=gpus
             if gpus not in ('auto','0,1,2,3','3'):raise ValueError('Choose automatic, four GPUs or single GPU')
-            self.gpu_profile='auto' if gpus=='auto' else '4' if gpus=='0,1,2,3' else '1'
+            profile=p.get('gpu_profile') or ('auto' if gpus=='auto' else '4' if gpus=='0,1,2,3' else '1')
+            if profile not in ('auto','1','2','3','4'):raise ValueError('Invalid GPU worker policy')
+            self.gpu_profile=profile
             self.log_handle=(DATA/'simulator.log').open('ab')
             env=os.environ.copy();env.pop('PYTHONPATH',None);env.pop('PYTHONHOME',None)
-            self.proc=subprocess.Popen(['/mnt/simulations/bin/carla-multigpu','--gpus',gpus,'--port','2000','--backend','gpu'],stdout=self.log_handle,stderr=subprocess.STDOUT,start_new_session=True,env=env)
+            dump(DATA/'startup-progress.json',{'town':town,'created':time.time()})
+            self.proc=subprocess.Popen(['/mnt/simulations/bin/carla-multigpu','--gpus',gpus,'--port','2000','--backend','gpu','--town',town],stdout=self.log_handle,stderr=subprocess.STDOUT,start_new_session=True,env=env)
+            dump(DATA/'runtime-town.json',{'town':town})
+            self.state['requested_town']=town
             self.started=time.monotonic();self.state.update(phase='starting',error=None,worker_count=0 if gpus=='auto' else len(gpus.split(',')),gpu_selection=gpus)
             return {'started':True}
         if action=='connect':
             if self.world:raise ValueError('Already connected')
             self.connect();return {'connected':True}
-        if action=='shutdown':self.disconnect(stop_process=True);return {'stopped':True}
+        if action=='shutdown':
+            self.disconnect(stop_process=True)
+            self.state['phase']='stopping'
+            return {'stopped':True}
         if not self.world:raise ValueError('Start or connect to CARLA first')
+        if action=='switch-town':
+            self.require_edit()
+            if self.state.get('phase')!='connected':raise ValueError('Wait for the current scene to become ready')
+            if not self.proc:raise ValueError('Town switching requires a server started by this interface')
+            town=resolve_town(p.get('town'))
+            if not p.get('town'):raise ValueError('Choose a destination town')
+            if town.removeprefix('/Game/')==self.wmap.name.removeprefix('/Game/'):raise ValueError('That town is already loaded')
+            saved=DATA/'town-configurations'/(self.wmap.name.split('/')[-1]+'.json')
+            saved.parent.mkdir(parents=True,exist_ok=True)
+            dump(saved,self.export_config())
+            dump(DATA/'restart-live-request.json',{'gpus':getattr(self,'last_gpus','auto'),'gpu_profile':getattr(self,'gpu_profile','auto'),'town':town,'created':time.time()})
+            self.state.update(phase='restarting',requested_town=town,running=False)
+            threading.Timer(.5,lambda:subprocess.Popen(['systemctl','--user','--no-block','restart','carla-control-center.service'])).start()
+            return {'restarting':True,'town':town,'saved_configuration':str(saved)}
+        if self.state.get('phase')=='restarting':raise ValueError('Wait for the scene restart to finish')
         if action=='configuration':return self.export_config()
         if action=='lidar-weather':raise ValueError('Separate LiDAR noise controls were removed; use scene weather')
         if action=='reload-parking':
@@ -223,7 +277,8 @@ class Controller(GpuResources):
             if self.recording or self.mode!='live':raise ValueError('Stop existing recording or replay first')
             if not self.ros:raise ValueError('ROS unavailable')
             import shutil
-            if shutil.disk_usage(DATA).free<5*1024**3:raise ValueError('Recording requires at least 5 GiB free')
+            storage=recording_storage(DATA/'recordings');storage.mkdir(parents=True,exist_ok=True)
+            if shutil.disk_usage(storage).free<5*1024**3:raise ValueError('Recording requires at least 5 GiB free on the recording volume')
             self.recording=Recording(DATA/'recordings',self.client,self.ros,self.export_config(),self.map_data,self.opendrive,bool(p.get('rosbag',True)))
             self.state['recording']=dict(self.recording.manifest);return self.state['recording']
         if action=='replay-stop':
@@ -235,7 +290,7 @@ class Controller(GpuResources):
             # episode after the simulator restarts. Replace this owner process
             # too, so no old native thread survives into the new episode.
             self.running=False;self.state.update(running=False,phase='restarting')
-            dump(DATA/'restart-live-request.json',{'gpus':gpus,'created':time.time()})
+            dump(DATA/'restart-live-request.json',{'gpus':gpus,'gpu_profile':self.gpu_profile,'town':self.wmap.name,'created':time.time()})
             threading.Timer(.5,lambda:subprocess.Popen(['systemctl','--user','--no-block','restart','carla-control-center.service'])).start()
             return {'started':True,'restarting_live_scene':True,'restarting_owner':True}
         if action=='replay-native':
@@ -243,8 +298,12 @@ class Controller(GpuResources):
             if not self.proc:raise ValueError('Native replay requires a simulator group started by this interface; recorded-state playback is available for external servers')
             session=self.session(p['id']);info=json.loads((session/'manifest.json').read_text())
             if info['status']!='complete':raise ValueError('Only completed sessions can be replayed')
+            recorded_map=info.get('map') or info.get('configuration',{}).get('map')
+            if not recorded_map:raise ValueError('This recording has no town metadata')
+            if recorded_map.removeprefix('/Game/')!=self.wmap.name.removeprefix('/Game/'):
+                raise ValueError('Switch to '+recorded_map.split('/')[-1]+' before starting native replay')
             self.schedule.stop();self.movements.suspend()
-            self.clear_managed();self.tick()
+            self.clear_managed();self.set_simulation_step(info.get('configuration',{}).get('fixed_delta_seconds',.05));self.tick()
             if getattr(self,'scene_vehicles',None):self.scene_vehicles.restore(info.get('configuration',{}).get('scene_vehicles',{}))
             self.replay_baseline_ids={a.id for a in self.world.get_actors()}
             self.tm.set_synchronous_mode(False)
@@ -254,7 +313,7 @@ class Controller(GpuResources):
             # Replay replaces actor lifetimes; discard client-side walker navigation caches.
             client=carla.Client('127.0.0.1',2000);client.set_timeout(120)
             self.client=client;self.world=client.get_world()
-            self.replay_frames=max(1,info['frames']-round(float(p.get('start',0))/.05))
+            self.replay_frames=max(1,info['frames']-round(float(p.get('start',0))/self.fixed_delta_seconds))
             self.mode='native-replay';self.running=bool(p.get('autoplay',True));self.state.update(running=self.running,mode=self.mode,phase='connected',error=None);return {'result':result}
         if action=='pedestrian-path':
             m=self.managed.get(int(p['id']))
@@ -297,7 +356,7 @@ class Controller(GpuResources):
     def poll_start(self):
         if time.monotonic()-self.started>1800:raise RuntimeError('CARLA initialization exceeded 30 minutes')
         if self.proc.poll() is not None:raise RuntimeError('CARLA failed to start; inspect simulator log')
-        manifests=sorted(Path('/media/william/mist1/Simulations/logs').glob('multigpu-*/processes.json'),key=lambda p:p.stat().st_mtime,reverse=True)
+        manifests=sorted(Path('/mnt/simulations/carla/carlab/host-setup/logs').glob('multigpu-*/processes.json'),key=lambda p:p.stat().st_mtime,reverse=True)
         for path in manifests[:8]:
             m=json.loads(path.read_text())
             if m.get('manager_pid')==self.proc.pid and m.get('ready'):
@@ -314,9 +373,12 @@ class Controller(GpuResources):
             if probe.connect_ex(('127.0.0.1',8005))==0:raise RuntimeError('Dedicated Traffic Manager port 8005 is already in use')
         client=carla.Client('127.0.0.1',2000);client.set_timeout(120)
         world=client.get_world();wmap=world.get_map()
+        requested=self.state.get('requested_town') if self.proc else None
+        if requested and wmap.name.removeprefix('/Game/')!=requested.removeprefix('/Game/'):
+            raise RuntimeError(f'CARLA loaded {wmap.name}, expected {requested}')
         self.original_settings=world.get_settings()
-        settings=world.get_settings();settings.synchronous_mode=True;settings.fixed_delta_seconds=.05
-        world.apply_settings(settings)
+        self.world=world
+        self.set_simulation_step((self.pending_restore or {}).get("fixed_delta_seconds",.05))
         world.set_pedestrians_seed(42)
         self.state['deterministic_start']=False
         self.state['startup_reproducibility']='Fresh owned process and seeded actors; episode time before synchronous connection can vary'
@@ -330,7 +392,7 @@ class Controller(GpuResources):
                       'walkers':[b.id for b in bps.filter('walker.pedestrian.*')],
                       'sensors':{kind:[{'id':a.id,'type':str(a.type),'value':str(a),'modifiable':a.is_modifiable,'recommended':list(a.recommended_values)} for a in bps.find(kind)] for kind in SENSOR_TYPES if bps.filter(kind)},
                       'defaults':DEFAULT_SENSORS,'lidar_profiles':lidar_profiles.catalog()}
-        self.state.update(error=None,running=False,map=wmap.name,server_version=client.get_server_version())
+        self.state.update(owns_server=bool(self.proc),error=None,running=False,map=wmap.name,server_version=client.get_server_version())
         self.refresh()
         self.movements=MovementPrograms(world,self.opendrive,self.map_data['lanes'],self.signal_metadata)
         self.schedule.stop();saved=DATA/'authoring-plan.json'
@@ -338,9 +400,10 @@ class Controller(GpuResources):
             stored=json.loads(saved.read_text())
             if stored.get('map')==self.state['map']:self.schedule.config=stored.get('config',{'flows':[],'events':[]})
         self.refresh()
-        self.state['phase']='connected'
         self.scene_vehicles=SceneVehicles(self)
         if not self.pending_restore:self.scene_vehicles.convert()
+        self.state['phase']='connected'
+        (DATA/'startup-progress.json').unlink(missing_ok=True)
 
     def build_map(self):
         lanes,bounds,markings=build_lanes(self.wmap)
@@ -397,7 +460,7 @@ class Controller(GpuResources):
             else:
                 t=self.waypoint(p['spawn']).transform;t.location.z+=.5
             bp.set_attribute('role_name','hero' if role=='ego' else 'background')
-        configs=validate_loadout(spawn_loadout(p))
+        configs=validate_loadout(spawn_loadout(p),self.fixed_delta_seconds)
         self.validate_blueprints(configs)
         a=self.world.try_spawn_actor(bp,t)
         if not a:raise ValueError('Spawn position is occupied; choose another lane point')
@@ -477,7 +540,7 @@ class Controller(GpuResources):
         else:
             payload={'group_id':event['group_id'],'operation':{'signal_phase':'phase','signal_hold':'hold','signal_resume':'resume'}[action]}
             if action=='signal_phase':payload.update(index=event['index'],hold=True)
-            self.movements.apply(payload,self.world.get_snapshot().timestamp.elapsed_seconds+.05)
+            self.movements.apply(payload,self.world.get_snapshot().timestamp.elapsed_seconds+self.fixed_delta_seconds)
 
     def destination(self,aid,p):
         m=self.managed.get(aid)
@@ -527,7 +590,7 @@ class Controller(GpuResources):
     def configure_sensors(self,aid,configs):
         m=self.managed.get(aid)
         if not m or m['role']!='ego':raise ValueError('Sensor loadouts belong to ego vehicles')
-        configs=validate_loadout(configs);self.validate_blueprints(configs)
+        configs=sorted(validate_loadout(configs,self.fixed_delta_seconds),key=sensor_cost,reverse=True);self.validate_blueprints(configs)
         if self.worker_manifest and not self.resizing_workers:
             loadouts=self.current_loadouts();loadouts[aid]=configs
             all_configs=[c for values in loadouts.values() for c in values]
@@ -542,17 +605,24 @@ class Controller(GpuResources):
                 mount=transform(cfg['mount']);a=self.world.spawn_actor(bp,mount,attach_to=m['actor'])
                 new.append({'actor':a,'parent':aid,'config':cfg,'type':cfg['type'],'queue':queue.Queue(maxsize=8),'mount':mount,'overflow':False})
             self.tick() # Replicate new actors before subscribing; drain existing streams.
-            for s in new:
+            # A calibrated subscription order seeds greedy worker placement.
+            # Actor creation, exported loadout order and sensor parameters stay
+            # unchanged. Unknown names retain their original relative order.
+            route_order = [name.strip() for name in os.environ.get('CARLA_SENSOR_ROUTE_ORDER', '').split(',') if name.strip()]
+            route_priority = {name: index for index, name in enumerate(route_order)}
+            subscription_order = sorted(new, key=lambda sensor: route_priority.get(sensor['config']['name'], len(route_order)))
+            for s in subscription_order:
                 def callback(data,entry=s):
                     entry.setdefault('arrivals',collections.deque(maxlen=8)).append((data.frame,time.perf_counter()))
                     try:entry['queue'].put_nowait(data)
                     except queue.Full:entry['overflow']=True
+                    self.sensor_delivery_event.set()
                 s['actor'].listen(callback)
-            # Listen registers an asynchronous TCP subscription. Allow its local
-            # connection to settle, then prove a complete frame before replacing
-            # the old loadout or permitting recording. Zero tick interval avoids
-            # floating-point cadence skips at the fixed .05-second world step.
-            time.sleep(.2)
+            # A TCP subscription can miss its first replicated sensor tick.
+            # Observe a delivery from every new stream before requiring a shared
+            # frame. These startup samples are deliberately discarded; the full
+            # synchronized camera warmup below still gates recording readiness.
+            self.settle_sensor_subscriptions(new)
             for s in new:self.sensors[s['actor'].id]=s
             self.warm_sensor_views(new)
             for sid in old:
@@ -570,6 +640,35 @@ class Controller(GpuResources):
                 except Exception:pass
             self.client.set_timeout(120)
             raise
+
+    def settle_sensor_subscriptions(self, sensors):
+        # Large towns can need several minutes to compile and stream the first
+        # six camera views. This deadline applies only to startup, before the
+        # synchronized warmup and recording readiness checks.
+        deadline=time.monotonic()+300
+        while sensors:
+            if self.stop_event.is_set():raise RuntimeError('Sensor subscription warmup cancelled during shutdown')
+            if time.monotonic()>=deadline:raise RuntimeError('New sensor subscriptions did not deliver startup samples')
+            # New sensors are not in self.sensors yet, so a missed startup frame
+            # cannot prevent the next world tick needed to initialize them.
+            self.tick(publish=False)
+            frame=self.state['frame']
+            # Let workers catch up before advancing again. An unrestricted
+            # startup tick loop can flood fast cameras while another worker is
+            # still compiling its first view. Discard only startup samples.
+            # A cold multi-camera frame can exceed five seconds. Wait for its
+            # renderer work to finish before queuing another frame; otherwise
+            # a valid slow stream can accumulate a permanent startup backlog.
+            for _ in range(1500):
+                if self.stop_event.is_set():raise RuntimeError('Sensor subscription warmup cancelled during shutdown')
+                if time.monotonic()>=deadline:raise RuntimeError('New sensor subscriptions did not deliver startup samples')
+                for sensor in sensors:
+                    while True:
+                        try:sensor['queue'].get_nowait()
+                        except queue.Empty:break
+                    sensor['overflow']=False
+                if all(s.get('arrivals') and max(f for f,_ in s['arrivals'])>=frame for s in sensors):return
+                time.sleep(.02)
 
     def warm_sensor_views(self, sensors):
         # A valid first frame can still contain Nanite fallback geometry and
@@ -638,7 +737,7 @@ class Controller(GpuResources):
                         m['controller'].start();m['controller'].set_max_speed(1.4)
                         if entry['destination']:self.destination(entry['id'],entry['destination'])
                     self.scheduled_walkers.remove(entry)
-            self.schedule.update(self.world.get_snapshot().timestamp.elapsed_seconds+.05)
+            self.schedule.update(self.world.get_snapshot().timestamp.elapsed_seconds+self.fixed_delta_seconds)
         forced_controls=[]
         if self.mode=='live':
             for m in list(self.managed.values()):
@@ -682,7 +781,7 @@ class Controller(GpuResources):
         if forced_controls:
             for response in self.client.apply_batch_sync(forced_controls,False):
                 if response.error:raise RuntimeError('Brake command failed: '+response.error)
-        if self.mode=='live' and self.movements:self.movements.update(self.world.get_snapshot().timestamp.elapsed_seconds+.05)
+        if self.mode=='live' and self.movements:self.movements.update(self.world.get_snapshot().timestamp.elapsed_seconds+self.fixed_delta_seconds)
         if not hasattr(self,'vehicle_lighting'):self.vehicle_lighting=AutomaticVehicleLights()
         self.vehicle_lighting.update(self)
         before_world=time.perf_counter()
@@ -691,20 +790,22 @@ class Controller(GpuResources):
         frame=self.world.tick(30);snap=self.world.get_snapshot();samples=[]
         after_world=time.perf_counter()
         if self.mode=='live':self.prune_removed_actors()
-        for sid,s in self.sensors.items():
-            if s['overflow']:raise RuntimeError(f'Sensor {sid} queue overflow: simulation paused; no complete recording claim')
+        captured={};raw_batch=None;raw_prepare_seconds=0.;ros_prepare_seconds=0.
+        def received(sid,s,data):
+            nonlocal raw_batch,raw_prepare_seconds,ros_prepare_seconds
+            sample=dict(s,data=data,pose=pose(data.transform));captured[sid]=sample
+            if self.recording:
+                started=time.perf_counter()
+                raw_batch=self.recording.prepare([sample],prepared=raw_batch)
+                raw_prepare_seconds+=time.perf_counter()-started
+            if self.ros and publish:
+                started=time.perf_counter();self.ros.prepare_sample(sample)
+                ros_prepare_seconds+=time.perf_counter()-started
+        def waiting(sid,s):
             self.state['tick_progress']={'stage':'sensor','started':time.monotonic(),'frame':frame,'sensor':s.get('config',{}).get('name',str(sid))}
-            deadline=time.monotonic()+90
-            while True:
-                try:data=s['queue'].get(timeout=min(.25,max(.01,deadline-time.monotonic())))
-                except queue.Empty:
-                    if getattr(self,'worker_fault',None):raise RuntimeError(self.worker_fault)
-                    if self.stop_event.is_set():raise RuntimeError('Sensor wait cancelled during shutdown')
-                    if time.monotonic()>=deadline:raise RuntimeError(f'Sensor {sid} did not deliver frame {frame}')
-                    continue
-                if data.frame<frame:continue
-                if data.frame!=frame or abs(data.timestamp-snap.timestamp.elapsed_seconds)>1e-5:raise RuntimeError(f'Sensor {sid} frame or timestamp mismatch')
-                samples.append(dict(s,data=data,pose=pose(data.transform)));break
+        collect_frame(self.sensors,frame,snap.timestamp.elapsed_seconds,self.sensor_delivery_event,
+            self.stop_event,lambda:getattr(self,'worker_fault',None),received,waiting)
+        samples=[captured[sid] for sid in self.sensors]
         after_sensors=time.perf_counter()
         self.state['tick_progress']={'stage':'publish','started':time.monotonic(),'frame':frame}
         self.refresh(snap)
@@ -712,6 +813,10 @@ class Controller(GpuResources):
         if self.mode=='native-replay':
             self.replay_frames-=1
             if self.replay_frames<=0:self.running=False;self.state['running']=False
+        # Raw writes/hashes started as each validated sensor arrived, while
+        # remaining workers were rendering. Join all before frame commit/advance.
+        before_raw_prepare=time.perf_counter()
+        if self.recording and raw_batch is None:raw_batch=self.recording.prepare(samples)
         before_ros=time.perf_counter()
         if self.ros and publish:self.ros.frame(snap.timestamp.elapsed_seconds,[m['actor'] for m in self.managed.values() if m['role']=='ego'],samples)
         if self.ros and publish:self.ros.signals(snap.timestamp.elapsed_seconds,self.state)
@@ -719,7 +824,7 @@ class Controller(GpuResources):
         if hasattr(self,'signal_audit'):self.state['signal_audit']=self.signal_audit.observe(self.state)
         before_record=time.perf_counter()
         if self.recording:
-            self.recording.write(self.state,samples);self.state['recording']=dict(self.recording.manifest)
+            self.recording.write(self.state,samples,prepared=raw_batch);self.state['recording']=dict(self.recording.manifest)
         after_publish=time.perf_counter()
         # Keep one immutable completed sample per sensor. Encoding happens only
         # when a visible browser tile requests a preview, outside the tick loop.
@@ -728,14 +833,20 @@ class Controller(GpuResources):
         ended=time.perf_counter()
         row={'control_ms':(before_world-timing_start)*1000,'world_ms':(after_world-before_world)*1000,
              'sensor_wait_ms':(after_sensors-after_world)*1000,'snapshot_ms':(after_refresh-after_sensors)*1000,
-             'ros_publish_ms':(after_ros-before_ros)*1000,'signal_audit_ms':(before_record-after_ros)*1000,'record_write_ms':(after_publish-before_record)*1000,'publish_record_ms':(after_publish-after_refresh)*1000,'preview_ms':(ended-after_publish)*1000,
+             'ros_prepare_ms':ros_prepare_seconds*1000,'raw_prepare_ms':(raw_prepare_seconds+before_ros-before_raw_prepare)*1000,'ros_publish_ms':(after_ros-before_ros)*1000,'signal_audit_ms':(before_record-after_ros)*1000,'record_write_ms':(after_publish-before_record)*1000,'publish_record_ms':(after_publish-after_refresh)*1000,'preview_ms':(ended-after_publish)*1000,
              'total_ms':(ended-timing_start)*1000}
-        self.frame_timings.append(row)
+        if self.recording:row.update(getattr(self.recording,'last_write_timings',{}))
+        if self.ros and publish:row.update({'ros_'+k+'_ms':v for k,v in getattr(self.ros,'stage_ms',{}).items()})
         if hasattr(self,'worker_fault'):reliability.checkpoint(self)
+        after_checkpoint=time.perf_counter()
+        row['checkpoint_ms']=(after_checkpoint-ended)*1000
+        row['total_ms']=(after_checkpoint-timing_start)*1000
+        ended=after_checkpoint
+        self.frame_timings.append(row)
         self.state['last_complete_frame']=frame;self.state['last_sensor_delivery_wall']=time.time()
         self.state['tick_progress']={'stage':'complete','started':time.monotonic(),'frame':frame}
-        self.state['performance']={'last_frame_ms':row,'real_time_factor':round(.05/((ended-timing_start) or 1),3),'frames':len(self.frame_timings),'timings_ms':summary(list(self.frame_timings)),
-                                   'simulation_step_ms':50,'world_includes':'Physics, actor ticks, Traffic Manager, replication and RPC; not pure physics time',
+        self.state['performance']={'last_frame_ms':row,'real_time_factor':round(self.fixed_delta_seconds/((ended-timing_start) or 1),3),'frames':len(self.frame_timings),'timings_ms':summary(list(self.frame_timings)),
+                                   'simulation_step_ms':self.fixed_delta_seconds*1000,'world_includes':'Physics, actor ticks, Traffic Manager, replication and RPC; not pure physics time',
                                    'sensor_ready_ms':{str(sid):round(max(0,arrived-before_world)*1000,2) for sid,s in self.sensors.items() for f,arrived in s.get('arrivals',[]) if f==frame}}
 
     def refresh(self,snap=None):
@@ -746,7 +857,7 @@ class Controller(GpuResources):
             if a.type_id.startswith(('vehicle.','walker.pedestrian.','traffic.traffic_light')):
                 item={'id':a.id,'type':a.type_id,'pose':pose(a.get_transform())}
                 if a.type_id.startswith('traffic.traffic_light'):
-                    if a.id not in self.signal_metadata:self.signal_metadata[a.id]=traffic_signals.metadata(a)
+                    if a.id not in self.signal_metadata or self.signal_metadata[a.id].get('dormant')!=bool(a.is_dormant):self.signal_metadata[a.id]=traffic_signals.metadata(a,self.wmap.name)
                     item.update(self.signal_metadata[a.id])
                     item.update(movement_word=a.get_movement_states(),movements=unpack(a.get_movement_states()),movement_lanes=self.movements.movements.get(a.id,{}) if self.movements else {})
                     item.update(state=str(a.get_state()).split('.')[-1],elapsed=a.get_elapsed_time(),green_time=a.get_green_time(),yellow_time=a.get_yellow_time(),red_time=a.get_red_time(),frozen=a.is_frozen())
@@ -786,6 +897,8 @@ class Controller(GpuResources):
     def restore_configuration(self,config):
         if self.managed:raise ValueError('Recovery requires a clean scene')
         if config.get('map')!=self.state.get('map'):raise ValueError('Saved configuration belongs to a different map')
+        step=config.get('fixed_delta_seconds',.05)
+        if step!=self.fixed_delta_seconds:self.set_simulation_step(step)
         self.state['recovery_operation']={'stage':'restoring','detail':'Restoring actors, sensors, weather and signals'}
         if getattr(self,'scene_vehicles',None):self.scene_vehicles.restore(config.get('scene_vehicles',{}))
         self.command('weather',config['weather'])
@@ -807,6 +920,12 @@ class Controller(GpuResources):
         # Initialize every actor and sensor before handing vehicles to TM.
         for aid,saved in restored:
             m=self.managed[aid];m.pop('_restore_hold',None)
+            # Scene conversion spawns a sleeping parked actor. A saved car
+            # already driving on the road must resume as a road vehicle,
+            # rather than attempting a new parking exit from its current pose.
+            if m['role']=='background' and m['planner']=='parked' and saved.get('parked') is False:
+                m['actor'].set_simulate_physics(True)
+                m.update(parked=False,physics_sleeping=False,planner='tm',arrived=False,parking_space=None)
             if m['role']=='pedestrian':m['controller'].start();m['controller'].set_max_speed(1.4)
             elif m['planner']=='tm' and not m.get('parked'):
                 m['actor'].apply_control(carla.VehicleControl())
@@ -831,7 +950,7 @@ class Controller(GpuResources):
                 'traffic_lights':[a for a in self.state['actors'] if a['type'].startswith('traffic.traffic_light')],
                 'actors':[dict(id=aid,model=m['actor'].type_id,role=m['role'],saved_offroad_pose=bool(m.get('parked') or m.get('parking_trip',{}).get('stage') in ('leaving','entering','blocked')),planner='parked' if m['role']!='ego' and (m.get('parked') or m.get('parking_trip',{}).get('stage') in ('leaving','entering','blocked')) else m['planner'],parked=bool(m.get('parked')),parking_space=m.get('parking_space'),scene_source=m.get('scene_source'),model_substituted=m.get('model_substituted',False),spawn=poses[aid],destination=None if m.get('parked') else m['destination'],
                                arrival_tolerance=m.get('arrival_tolerance',.75),sensors=[s['config'] for s in self.sensors.values() if s['parent']==aid]) for aid,m in self.managed.items() if aid in poses],
-                'fixed_delta_seconds':.05,'tm_seed':42,'pedestrian_seed':42,'server_version':self.state.get('server_version')}
+                'fixed_delta_seconds':self.fixed_delta_seconds,'tm_seed':42,'pedestrian_seed':42,'server_version':self.state.get('server_version')}
 
     @staticmethod
     def session(sid):
@@ -866,6 +985,7 @@ class Controller(GpuResources):
             self.proc=None
             if self.log_handle:self.log_handle.close();self.log_handle=None
         self.worker_manifest=None
+        (DATA/'startup-progress.json').unlink(missing_ok=True)
         self.state.update(worker_count=0,gpu_workers=[],phase='offline',mode='live',running=False,scene_vehicles=None,actors=[],managed={},sensors=[],recording=None,error=None)
 
     def close(self):self.stop_event.set();self.thread.join(timeout=150)

@@ -1,0 +1,175 @@
+{
+	"passed": true,
+	"cases": [
+		{
+			"case": "moving_0.00",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.30000001192092896,
+			"cpu_return": 0.30000001192092896,
+			"gpu_range_cm": 950.00006103515625,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "moving_0.20",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.30000001192092896,
+			"cpu_return": 0.30000001192092896,
+			"gpu_range_cm": 950.00006103515625,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "moving_0.50",
+			"match": true,
+			"gpu_hit": false,
+			"cpu_hit": false,
+			"gpu_return": 1,
+			"cpu_return": 1,
+			"gpu_range_cm": 0,
+			"cpu_range_cm": 0
+		},
+		{
+			"case": "moving_0.75",
+			"match": true,
+			"gpu_hit": false,
+			"cpu_hit": false,
+			"gpu_return": 1,
+			"cpu_return": 1,
+			"gpu_range_cm": 0,
+			"cpu_range_cm": 0
+		},
+		{
+			"case": "moving_1.00",
+			"match": true,
+			"gpu_hit": false,
+			"cpu_hit": false,
+			"gpu_return": 1,
+			"cpu_return": 1,
+			"gpu_range_cm": 0,
+			"cpu_range_cm": 0
+		},
+		{
+			"case": "infrared_0_y900_z-100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.80000001192092896,
+			"cpu_return": 0.80000001192092896,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_0_y900_z100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.20000000298023224,
+			"cpu_return": 0.20000000298023224,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_0_y1100_z-100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.20000000298023224,
+			"cpu_return": 0.20000000298023224,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_0_y1100_z100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.80000001192092896,
+			"cpu_return": 0.80000001192092896,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_1_y900_z-100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.19999998807907104,
+			"cpu_return": 0.19999998807907104,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_1_y900_z100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.049999997019767761,
+			"cpu_return": 0.049999997019767761,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_1_y1100_z-100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.049999997019767761,
+			"cpu_return": 0.049999997019767761,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_1_y1100_z100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.19999998807907104,
+			"cpu_return": 0.19999998807907104,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_2_y900_z-100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.40000000596046448,
+			"cpu_return": 0.40000000596046448,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_2_y900_z100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.10000000149011612,
+			"cpu_return": 0.10000000149011612,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_2_y1100_z-100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.10000000149011612,
+			"cpu_return": 0.10000000149011612,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		},
+		{
+			"case": "infrared_2_y1100_z100",
+			"match": true,
+			"gpu_hit": true,
+			"cpu_hit": true,
+			"gpu_return": 0.40000000596046448,
+			"cpu_return": 0.40000000596046448,
+			"gpu_range_cm": 950,
+			"cpu_range_cm": 950
+		}
+	]
+}

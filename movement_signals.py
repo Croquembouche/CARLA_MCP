@@ -108,6 +108,8 @@ class MovementPrograms:
         gid=p.get('group_id');op=p.get('operation')
         if isinstance(gid,bool) or not isinstance(gid,int) or gid not in self.groups:raise ValueError('Choose a signal group')
         if op not in ('enable','update','disable','hold','resume','phase'):raise ValueError('Invalid movement program operation')
+        if op!='disable' and any(self.metadata.get(aid,{}).get('dormant') for aid in self.groups[gid]):
+            raise ValueError('This intersection includes an unloaded map tile; move an ego vehicle nearby first')
         program=self.programs.get(gid)
         if op in ('hold','phase','disable') and self.network.config['mode']!='independent':self.network.configure({'mode':'independent'},now)
         if op in ('enable','update'):

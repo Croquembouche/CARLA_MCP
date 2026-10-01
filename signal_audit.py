@@ -37,18 +37,23 @@ class SignalAudit:
                         x,y=vehicle['pose']['x'],vehicle['pose']['y'];bounds=active[1]
                         if bounds[0]-10<x<bounds[2]+10 and bounds[1]-10<y<bounds[3]+10:continue
                         self.active_entries.pop(vehicle['id'],None)
+                    # Most frames do not cross this light's entry boundary.
+                    # Test that geometry first, then resolve the route against ALL
+                    # connectors so offset turn entries retain their semantics.
+                    paths=[(move,path,crosses_entry(old[vehicle['id']],vehicle,path))
+                           for move,data in light.get('movement_lanes',{}).items()
+                           for path in data.get('paths',[])]
+                    if not any(crossed for _,_,crossed in paths):continue
                     options=[]
-                    for move,data in light.get('movement_lanes',{}).items():
-                        for path in data.get('paths',[]):
-                            score=sum(min(((p[0]-r['x'])**2+(p[1]-r['y'])**2 for r in route),default=1e9) for p in path[::max(1,len(path)//5)])
-                            options.append((score,move,path))
-                    if not options:continue
+                    for move,path,crossed in paths:
+                        score=sum(min(((p[0]-r['x'])**2+(p[1]-r['y'])**2 for r in route),default=1e9) for p in path[::max(1,len(path)//5)])
+                        options.append((score,move,path,crossed))
                     # Resolve the intended movement before testing its entry line.
                     # Different connector starts can be offset along the same approach.
                     best_move=min(options,key=lambda x:x[0])[1] if route else None
-                    for score,move,path in options:
+                    for score,move,path,crossed in options:
                         if best_move is not None and move!=best_move:continue
-                        if crosses_entry(old[vehicle['id']],vehicle,path):candidates.append((score,light,move))
+                        if crossed:candidates.append((score,light,move))
                 if candidates:
                     _,light,move=min(candidates,key=lambda x:x[0]);self.entries+=1
                     gid=light.get('group_id',light['id'])

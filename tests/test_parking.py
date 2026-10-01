@@ -5,11 +5,13 @@ from unittest.mock import Mock
 import pytest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import bootstrap,carla,parking
+from towns import MAPS
+TOWN10_XODR=MAPS/'OpenDrive/Town10HD_Opt.xodr'
 from controller import Controller
 
 @pytest.fixture
 def spaces():
-    source=Path('data/map-cache.xodr').read_text();w=carla.Map('Town10HD_Opt',source)
+    source=TOWN10_XODR.read_text();w=carla.Map('Town10HD_Opt',source)
     return parking.build_parking(w,source,Path('data/parking/Town10HD_Opt.json'))['parking_spaces']
 
 def test_surveyed_bays_follow_curb_geometry_without_claiming_painted_divisions(spaces):
@@ -89,8 +91,8 @@ def test_unknown_space_cannot_be_spawned_or_used_as_destination(spaces):
 
 
 def test_reload_parking_preserves_world_and_actors_while_running(spaces):
-    c=Controller.__new__(Controller);c.world=Mock();c.wmap=SimpleNamespace(name='Town10HD_Opt');c.opendrive=Path('data/map-cache.xodr').read_text();c.recording=None;c.mode='live';c.running=True
-    c.map_data={'name':'Town10HD_Opt','lanes':['unchanged'],'parking_source':'old'};c.refresh=Mock();c.managed={'existing':object()};managed=c.managed
+    c=Controller.__new__(Controller);c.world=Mock();c.wmap=SimpleNamespace(name='Town10HD_Opt');c.opendrive=TOWN10_XODR.read_text();c.recording=None;c.mode='live';c.running=True
+    c.state={'phase':'connected'};c.map_data={'name':'Town10HD_Opt','lanes':['unchanged'],'parking_source':'old'};c.refresh=Mock();c.managed={'existing':object()};managed=c.managed
     from unittest.mock import patch
     with patch('controller.dump'):
         result=c.command('reload-parking',{})
@@ -108,3 +110,20 @@ def test_policy_opens_formerly_withheld_bays_without_changing_geometry(spaces):
     assert spaces==original
     assert {'P009','P012','P020','P033'} <= {p['id'] for p in spaces}
     assert not any(p.get('restriction_reasons') for p in spaces)
+
+def test_occupancy_spatial_grid_matches_exact_geometry_and_preserves_priority():
+    import random
+    rng=random.Random(14)
+    spaces=[{'id':str(i),'z':0,'polygon':parking.corners(rng.uniform(-100,100),rng.uniform(-100,100),6,2.8,rng.uniform(-180,180))} for i in range(150)]
+    boxes=[{'name':str(i),'z':rng.choice([1,8]),'height':2,'polygon':parking.corners(rng.uniform(-100,100),rng.uniform(-100,100),8,3,rng.uniform(-180,180))} for i in range(80)]
+    boxes.append({'name':'large','z':1,'height':2,'polygon':parking.corners(0,0,200,200,0)})
+    def bounds(p):return min(x for x,y in p),min(y for x,y in p),max(x for x,y in p),max(y for x,y in p)
+    expected={}
+    for space in spaces:
+        a=bounds(space['polygon']);expected[space['id']]=None
+        for box in boxes:
+            b=bounds(box['polygon'])
+            if abs(box['z']-space['z'])<box['height']/2+1 and a[0]<b[2] and b[0]<a[2] and a[1]<b[3] and b[1]<a[3] and parking.overlaps(space['polygon'],box['polygon']):
+                expected[space['id']]={'kind':'scenery','name':box['name']};break
+    assert parking.occupancy(spaces,boxes,[])==expected
+    assert parking.occupancy(spaces,[],[])==dict.fromkeys(expected)

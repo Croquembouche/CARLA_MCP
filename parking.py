@@ -31,8 +31,12 @@ def build_parking(wmap,opendrive,source):
         spaces=data['validated_spaces'];rules=data.get('traffic_rules');excluded=[]
         validation=data.get('validation',{})
         if validation.get('geometry_sha256'):
-            geometry=source.parent.parent/'scene-source'/'geometry.bin'
-            scene=source.parent.parent/'scene-source'/'scene.json'
+            town=wmap.name.split('/')[-1]
+            scene_root=source.parent.parent/'scene-sources'/town
+            if town=='Town10HD_Opt' and not scene_root.exists():
+                scene_root=source.parent.parent/'scene-source'
+            geometry=scene_root/'geometry.bin'
+            scene=scene_root/'scene.json'
             if (not geometry.exists() or not scene.exists()
                 or hashlib.sha256(geometry.read_bytes()).hexdigest()!=validation['geometry_sha256']
                 or hashlib.sha256(scene.read_bytes()).hexdigest()!=validation.get('scene_sha256')):
@@ -43,7 +47,7 @@ def build_parking(wmap,opendrive,source):
         spaces=[{k:v for k,v in bay.items() if k!='restriction_reasons'} for bay in spaces]
         result.update(parking_spaces=spaces,parking_areas=data.get('areas',[]),
                       parking_curb_strips=data.get('curb_strips',[]),
-                      parking_source=f"{len(spaces)} mapped curb parking positions, open unless occupied. Curb and paint edges are surveyed where available; unpainted divisions between cars remain planning estimates.",
+                      parking_source=data.get("parking_note") or f"{len(spaces)} mapped parking positions, open unless occupied. Footprints use this town's native pavement and authored parking locations; unpainted divisions remain planning estimates.",
                       parking_validation=data['validation'],parking_excluded=excluded,
                       parking_rules={'enforcement':'disabled','availability':'open_or_occupied'})
         return result
@@ -79,7 +83,32 @@ def occupancy(spaces,static_boxes,actors):
         if not a['type'].startswith('vehicle.'):continue
         p=a['pose'];e=a.get('extent',{'x':2.5,'y':1.2,'z':1})
         boxes.append((corners(p['x'],p['y'],2*e['x'],2*e['y'],p['yaw']),p['z']+e['z'],2*e['z'],{'kind':'actor','id':a['id']}))
-    return {space['id']:next((who for polygon,z,height,who in boxes if abs(z-space['z'])<height/2+1 and overlaps(space['polygon'],polygon)),None) for space in spaces}
+    # Axis-aligned bounds reject distant pairs before the exact polygon test.
+    # Keep box order and the existing height/SAT checks for identical occupancy.
+    def bounds(polygon):
+        return (min(p[0] for p in polygon),min(p[1] for p in polygon),
+                max(p[0] for p in polygon),max(p[1] for p in polygon))
+    boxes=[(polygon,z,height,who,bounds(polygon)) for polygon,z,height,who in boxes]
+    if not boxes:return {space['id']:None for space in spaces}
+    # Large towns have thousands of bays; only nearby vehicle boxes need SAT.
+    from math import floor
+    cell_size=10;grid={};large=[]
+    for i,(_,_,_,_,b) in enumerate(boxes):
+        x0,y0,x1,y1=(floor(v/cell_size) for v in b)
+        if (x1-x0+1)*(y1-y0+1)>256:large.append(i);continue
+        for x in range(x0,x1+1):
+            for y in range(y0,y1+1):grid.setdefault((x,y),[]).append(i)
+    result={}
+    for space in spaces:
+        a=bounds(space['polygon']);x0,y0,x1,y1=(floor(v/cell_size) for v in a)
+        candidates=set(large)
+        for x in range(x0,x1+1):
+            for y in range(y0,y1+1):candidates.update(grid.get((x,y),()))
+        result[space['id']]=next((boxes[i][3] for i in sorted(candidates)
+            if abs(boxes[i][1]-space['z'])<boxes[i][2]/2+1
+            and a[0]<boxes[i][4][2] and boxes[i][4][0]<a[2] and a[1]<boxes[i][4][3] and boxes[i][4][1]<a[3]
+            and overlaps(space['polygon'],boxes[i][0])),None)
+    return result
 
 def static_vehicles(world,carla):
     boxes=[]

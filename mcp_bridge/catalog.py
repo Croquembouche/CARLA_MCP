@@ -27,6 +27,7 @@ add('latency','Measure one MCP-bridge-to-WebUI status round trip in milliseconds
 cmd('start','start','Start the owned CARLA simulator group asynchronously. Poll carla_status until connected; do not repeat start.',obj({'gpus':enum('auto','3','0,1,2,3')}),{'gpus':'auto'})
 cmd('connect','connect','Connect to the existing local CARLA on port 2000. No other client may own its clock.')
 cmd('shutdown','shutdown','Stop the owned CARLA group and workers, or disconnect an external simulator. This destroys the current owned runtime; export configuration first if needed.')
+cmd('switch_town','switch-town','Switch an owned paused live simulator to an installed town. Stop recording first. Saves the current configuration, restarts the owner asynchronously, and leaves the destination scene paused. Poll carla_status through temporary API unavailability.',obj({'town':dict(STR,minLength=1)},('town',)),{'town':'Town02_Opt'})
 cmd('run','run','Advance the shared synchronous simulation continuously, or resume native replay.')
 cmd('pause','pause','Pause the shared simulation clock; sensor previews may still read the last completed sample.')
 cmd('step','step','Advance one synchronous frame. Do this while paused for controlled stepping; setup operations may also advance frames.')

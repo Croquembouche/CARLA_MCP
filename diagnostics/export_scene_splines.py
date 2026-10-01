@@ -1,11 +1,13 @@
-import unreal,json,traceback
-ROOT='/mnt/simulations/control-center/data/scene-source'
+import unreal,json,traceback,os
+ROOT=os.environ.get('CARLA_SCENE_SOURCE','/mnt/simulations/control-center/data/scene-source')
 src=json.load(open(ROOT+'/scene.json'))
 def v(p):return [p.x,p.y,p.z] if hasattr(p,'z') else [p.x,p.y]
 def tr(t):
  p=t.translation;q=t.rotation;s=t.scale3d
  return [p.x/100,p.z/100,p.y/100,-q.x,-q.z,-q.y,q.w,s.x,s.z,s.y]
-unreal.EditorLevelLibrary.load_level('/Game/'+src['map'].removeprefix('/Game/'));splines=[];errors=[]
+if not os.environ.get('CARLA_SCENE_ALREADY_LOADED'):
+ unreal.EditorLevelLibrary.load_level('/Game/'+src['map'].removeprefix('/Game/'))
+splines=[];errors=[]
 for a in unreal.EditorLevelLibrary.get_all_level_actors():
  for c in a.get_components_by_class(unreal.SplineMeshComponent):
   m=c.get_editor_property('static_mesh')

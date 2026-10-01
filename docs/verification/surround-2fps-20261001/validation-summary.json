@@ -1,0 +1,283 @@
+{
+  "passed": true,
+  "target_recorded_hz": 2,
+  "recording": {
+    "frames": 361,
+    "wall_seconds": 125.60056998103391,
+    "recorded_hz": 2.874190778389876,
+    "timings_ms": {
+      "control_ms": {
+        "mean": 1.105546454911948,
+        "median": 0.7493050070479512,
+        "p99": 7.576114032417536,
+        "p95": 5.766916961874813,
+        "max": 12.72322196746245
+      },
+      "world_ms": {
+        "mean": 11.670252859281996,
+        "median": 11.12465001642704,
+        "p99": 20.634078013245016,
+        "p95": 14.946401992347091,
+        "max": 25.554060004651546
+      },
+      "sensor_wait_ms": {
+        "mean": 295.5095485444569,
+        "median": 286.10559648950584,
+        "p99": 450.66766400123015,
+        "p95": 391.5137629956007,
+        "max": 467.4236560240388
+      },
+      "snapshot_ms": {
+        "mean": 4.632607520842511,
+        "median": 4.273409023880959,
+        "p99": 11.845482978969812,
+        "p95": 5.815787008032203,
+        "max": 14.37891396926716
+      },
+      "ros_prepare_ms": {
+        "mean": 8.964971841487568,
+        "median": 8.55093850987032,
+        "p99": 15.869166003540158,
+        "p95": 10.832332947757095,
+        "max": 16.82597101898864
+      },
+      "raw_prepare_ms": {
+        "mean": 3.8332414320191472,
+        "median": 3.675918880617246,
+        "p99": 5.726255010813475,
+        "p95": 4.925457003992051,
+        "max": 6.736144074238837
+      },
+      "ros_publish_ms": {
+        "mean": 16.866881082953316,
+        "median": 16.499089979333803,
+        "p99": 24.004650011193007,
+        "p95": 19.782239047344774,
+        "max": 24.96354200411588
+      },
+      "signal_audit_ms": {
+        "mean": 5.203188027048276,
+        "median": 5.097190995002165,
+        "p99": 6.554212013725191,
+        "p95": 5.927062011323869,
+        "max": 11.33682596264407
+      },
+      "record_write_ms": {
+        "mean": 6.850035953620035,
+        "median": 6.568954471731558,
+        "p99": 14.328086981549859,
+        "p95": 7.400218979455531,
+        "max": 14.95421800063923
+      },
+      "publish_record_ms": {
+        "mean": 28.92154650681833,
+        "median": 28.256571502424777,
+        "p99": 37.65465598553419,
+        "p95": 32.46080502867699,
+        "max": 38.03034999873489
+      },
+      "preview_ms": {
+        "mean": 0.02989801966274778,
+        "median": 0.029183982405811548,
+        "p99": 0.04800001624971628,
+        "p95": 0.037187011912465096,
+        "max": 0.05260802572593093
+      },
+      "total_ms": {
+        "mean": 342.4198100920573,
+        "median": 332.66186199034564,
+        "p99": 499.96949598426,
+        "p95": 439.69375698361546,
+        "max": 511.95219601504505
+      },
+      "raw_copy_ms": {
+        "mean": 2.0235243001176664,
+        "median": 1.94390001706779,
+        "p99": 2.858285093680024,
+        "p95": 2.476060064509511,
+        "max": 3.869825042784214
+      },
+      "raw_disk_ms": {
+        "mean": 24.38589311560564,
+        "median": 23.914527031593025,
+        "p99": 38.463912962470204,
+        "p95": 29.64837005129084,
+        "max": 43.30509901046753
+      },
+      "raw_hash_ms": {
+        "mean": 80.72763626825892,
+        "median": 79.39144349074923,
+        "p99": 100.49461998278275,
+        "p95": 94.99881998635828,
+        "max": 119.03951998101547
+      },
+      "raw_metadata_ms": {
+        "mean": 0.9359539927875934,
+        "median": 0.8835245098453015,
+        "p99": 1.6185339190997183,
+        "p95": 1.2393249780870974,
+        "max": 2.671185997314751
+      },
+      "raw_payload_wall_ms": {
+        "mean": 190.59490134418917,
+        "median": 182.22705050720833,
+        "p99": 344.27520900499076,
+        "p95": 289.372821978759,
+        "max": 346.4754539891146
+      },
+      "raw_index_ms": {
+        "mean": 6.764370901510119,
+        "median": 6.488828512374312,
+        "p99": 14.25131200812757,
+        "p95": 7.323256984818727,
+        "max": 14.88086802419275
+      },
+      "ros_serialize_ms": {
+        "mean": 2.0158710229831436,
+        "median": 1.9724570156540722,
+        "p99": 2.7628488605841994,
+        "p95": 2.436902024783194,
+        "max": 3.3388209412805736
+      },
+      "ros_dds_ms": {
+        "mean": 7.241635690540231,
+        "median": 7.207086076959968,
+        "p99": 8.019031782168895,
+        "p95": 7.596561103127897,
+        "max": 8.613902318757027
+      },
+      "ros_bag_enqueue_ms": {
+        "mean": 0.7240735135079982,
+        "median": 0.6303185946308076,
+        "p99": 1.1068401508964598,
+        "p95": 0.9674059692770243,
+        "max": 1.3300040736794472
+      },
+      "ros_sensor_message_ms": {
+        "mean": 4.182456134650339,
+        "median": 3.9397975197061896,
+        "p99": 7.164907001424581,
+        "p95": 5.5147159728221595,
+        "max": 11.379772971849889
+      },
+      "ros_image_cdr_ms": {
+        "mean": 3.4875888227058263,
+        "median": 3.290671535069123,
+        "p99": 9.92452900391072,
+        "p95": 4.269158991519362,
+        "max": 11.325087049044669
+      },
+      "checkpoint_ms": {
+        "mean": 0.5504101860828491,
+        "median": 0.0194879830814898,
+        "p99": 6.174425012432039,
+        "p95": 5.639952956698835,
+        "max": 47.381829004734755
+      }
+    },
+    "raw_and_ros_recorded": true
+  },
+  "comparison": {
+    "previous_full_rig_recorded_hz": 0.25257228793536135,
+    "speedup_ratio": 11.379675901441107
+  },
+  "rig": {
+    "cameras": 6,
+    "resolution": [
+      1280,
+      800
+    ],
+    "camera_ray_tracing": true,
+    "lidar_channels": 64,
+    "lidar_range_m": 150,
+    "lidar_points_per_second": 400000,
+    "physical_and_material_models": true,
+    "actors": 29,
+    "background_vehicles": 28,
+    "gpus": 4,
+    "fixed_delta_seconds": 0.1
+  },
+  "independent_payload_verification": {
+    "passed": true,
+    "matched_samples": 2527,
+    "recording_id": "20261001-172940-fcffae",
+    "min_camera_std": 37.371249108146706,
+    "min_lidar_points": 40850,
+    "max_lidar_range_m": 147.21400451660156,
+    "max_pulse_count_rounding_error": 0.9994039535522461
+  },
+  "gpu_ray_test": {
+    "passed": true,
+    "custom_sensor_proxy": true,
+    "disabled_actor_rejected": true,
+    "rays": 65536,
+    "hits": 32768,
+    "max_distance_error_cm": 0.0,
+    "cpu_serial_ms": 247.438,
+    "gpu_end_to_end_ms": 469.025
+  },
+  "physical_fixture_cases": 17,
+  "hardware_overlap_samples": {
+    "0": 15,
+    "1": 23,
+    "2": 2,
+    "3": 38
+  },
+  "hardware_trace_diagnostics": [],
+  "parallelism_scope": "Four workers run concurrently. Eligible graphics and asynchronous compute work overlaps; paired cameras still share one ordered graphics queue per worker.",
+  "retained_changes": [
+    "Mapped local descriptor arrays with host fallback",
+    "Mapped local uniform uploads with host fallback",
+    "Prefer completed local upload blocks over available host fallback blocks",
+    "Compact shader records",
+    "Reuse and compact unchanged spline ray geometry",
+    "Async compute with image lifetime invalidation for all relevant contexts"
+  ],
+  "restoration": {
+    "passed": true,
+    "actors": 29,
+    "max_pose_difference_m": 0.0,
+    "max_destination_difference_m": 7.62939453125e-06,
+    "frame": 605,
+    "running": false,
+    "camera_count": 6,
+    "lidar_count": 1
+  },
+  "cleanup": {
+    "recordings_removed": 14,
+    "ssd_bytes_removed": 61130330112,
+    "recording_ids": [
+      "20261001-094623-6855cc",
+      "20261001-095844-9392ae",
+      "20261001-101111-5cce2f",
+      "20261001-102130-c525d0",
+      "20261001-103306-132148",
+      "20261001-105955-6dbb72",
+      "20261001-113043-c30de3",
+      "20261001-115626-6d60f6",
+      "20261001-123155-885c1e",
+      "20261001-132038-c9ada4",
+      "20261001-134523-827da7",
+      "20261001-163110-fb061c",
+      "20261001-170926-453449",
+      "20261001-172940-fcffae"
+    ]
+  },
+  "limits": [
+    "Throughput measured after warm-up; cold startup still has allocation and shader stalls.",
+    "The existing scene contains one moving background vehicle during this sample, which travelled 44.428 m."
+  ],
+  "proof_files": [
+    "final-production-report.json",
+    "final-production-sample-verification.json",
+    "production-gpu-self-test.json",
+    "production-physical-fixtures.json",
+    "production-hardware-overlap.json",
+    "production-memory-placement.json",
+    "production-build-source.json",
+    "final-runtime-audit.json",
+    "restoration.json",
+    "benchmark-recording-cleanup.json",
+    "final-production-surround.png"
+  ]
+}

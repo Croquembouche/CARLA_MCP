@@ -1,0 +1,155 @@
+{
+  "0": {
+    "samples": 241,
+    "active_samples": 86,
+    "overlap_samples": 15,
+    "async_and_pixel_samples": 74,
+    "examples": [
+      {
+        "2": 98,
+        "3": 20,
+        "4": 92,
+        "10": 8,
+        "13": 2
+      },
+      {
+        "2": 100,
+        "3": 21,
+        "4": 95,
+        "10": 9,
+        "13": 2
+      },
+      {
+        "2": 100,
+        "3": 24,
+        "4": 97,
+        "10": 10,
+        "13": 2
+      },
+      {
+        "2": 100,
+        "3": 25,
+        "4": 87,
+        "10": 9,
+        "13": 3
+      },
+      {
+        "2": 99,
+        "3": 36,
+        "4": 71,
+        "10": 7,
+        "13": 2
+      }
+    ]
+  },
+  "1": {
+    "samples": 239,
+    "active_samples": 131,
+    "overlap_samples": 23,
+    "async_and_pixel_samples": 122,
+    "examples": [
+      {
+        "2": 100,
+        "3": 35,
+        "4": 99,
+        "10": 8,
+        "13": 6
+      },
+      {
+        "2": 99,
+        "3": 13,
+        "4": 95,
+        "10": 10,
+        "13": 1
+      },
+      {
+        "2": 99,
+        "3": 14,
+        "4": 87,
+        "10": 9,
+        "13": 1
+      },
+      {
+        "2": 100,
+        "3": 49,
+        "4": 77,
+        "10": 6,
+        "13": 8
+      },
+      {
+        "2": 99,
+        "3": 13,
+        "4": 94,
+        "10": 7,
+        "13": 3
+      }
+    ]
+  },
+  "2": {
+    "samples": 229,
+    "active_samples": 89,
+    "overlap_samples": 2,
+    "async_and_pixel_samples": 79,
+    "examples": [
+      {
+        "2": 100,
+        "3": 19,
+        "4": 99,
+        "10": 9,
+        "13": 5
+      },
+      {
+        "2": 100,
+        "3": 21,
+        "4": 100,
+        "10": 9,
+        "13": 5
+      }
+    ]
+  },
+  "3": {
+    "samples": 241,
+    "active_samples": 241,
+    "overlap_samples": 38,
+    "async_and_pixel_samples": 138,
+    "examples": [
+      {
+        "2": 100,
+        "3": 6,
+        "4": 99,
+        "10": 11,
+        "13": 7
+      },
+      {
+        "2": 100,
+        "3": 17,
+        "4": 95,
+        "10": 10,
+        "13": 2
+      },
+      {
+        "2": 100,
+        "3": 33,
+        "4": 87,
+        "10": 8,
+        "13": 4
+      },
+      {
+        "2": 100,
+        "3": 17,
+        "4": 98,
+        "10": 10,
+        "13": 2
+      },
+      {
+        "2": 100,
+        "3": 26,
+        "4": 85,
+        "10": 8,
+        "13": 4
+      }
+    ]
+  },
+  "diagnostics": [],
+  "interpretation": "Observed hardware sync and async work; paired camera graphics still share one ordered graphics queue. This profiled sample is separate from recording acceptance. Check diagnostics before interpreting sample counts."
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "matched_samples": 2527,
+  "recording_id": "20261001-172940-fcffae",
+  "min_camera_std": 37.371249108146706,
+  "min_lidar_points": 40850,
+  "max_lidar_range_m": 147.21400451660156,
+  "max_pulse_count_rounding_error": 0.9994039535522461
+}

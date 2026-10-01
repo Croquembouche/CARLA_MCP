@@ -1,7 +1,7 @@
-import {buildParkingOverlay} from './parking-three.js?v=open-parking-1';
+import {buildParkingOverlay} from './parking-three.js?v=town-scenes-5';
 import {drawSignalMarker,isSignal,signalMarkers,markerAt} from './signals.js';
 import {ActorModels} from './actor-models.js?v=4';
-import {SceneDetail,areaPlanes} from './scene-detail.js?v=scene-vehicles-1';
+import {SceneDetail,areaPlanes} from './scene-detail.js?v=town-scenes-5';
 import {roadArea,buildingInArea} from './scene-area.js';
 import {markingLines,laneAt,laneDescription} from './markings.js?v=road-render-1';
 import * as THREE from 'three';

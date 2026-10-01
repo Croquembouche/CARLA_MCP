@@ -1,6 +1,8 @@
 """Read-only Unreal commandlet export. Never saves or modifies source assets."""
-import unreal,json,traceback,os,array,collections,time
-ROOT='/mnt/simulations/control-center/data/scene-source'
+import unreal,json,traceback,os,array,collections,time,sys,re
+sys.path.insert(0,'/mnt/simulations/control-center/diagnostics')
+from load_scene_world import load_scene_world
+ROOT=os.environ.get('CARLA_SCENE_SOURCE','/mnt/simulations/control-center/data/scene-source')
 os.makedirs(ROOT,exist_ok=True)
 MAP=os.environ.get('CARLA_SCENE_MAP','/Game/Carla/Maps/Town10HD_Opt')
 out={'map':MAP.removeprefix('/Game/'),'meshes':{},'groups':{},'materials':{},'errors':[],'skipped':collections.Counter()}
@@ -19,7 +21,7 @@ def material(m):
  if not m:return None
  key=m.get_path_name()
  if key in out['materials']:return key
- data={'name':m.get_name(),'vectors':{},'textures':{}}
+ data={'name':m.get_name(),'vectors':{},'textures':{},'scalars':{}}
  try:
   for n in unreal.MaterialEditingLibrary.get_vector_parameter_names(m):
    c=unreal.MaterialEditingLibrary.get_material_instance_vector_parameter_value(m,n) if isinstance(m,unreal.MaterialInstanceConstant) else None
@@ -27,16 +29,23 @@ def material(m):
   for n in unreal.MaterialEditingLibrary.get_texture_parameter_names(m):
    t=unreal.MaterialEditingLibrary.get_material_instance_texture_parameter_value(m,n) if isinstance(m,unreal.MaterialInstanceConstant) else None
    if t:data['textures'][str(n)]=t.get_path_name()
+  if isinstance(m,unreal.MaterialInstanceConstant):
+   for n in unreal.MaterialEditingLibrary.get_scalar_parameter_names(m):data['scalars'][str(n)]=unreal.MaterialEditingLibrary.get_material_instance_scalar_parameter_value(m,n)
+  elif isinstance(m,unreal.Material):
+   for t in unreal.MaterialEditingLibrary.get_used_textures(m):
+    if any(k in t.get_name().lower() for k in ['diffuse','albedo','basecolor','_d.','_d_']) or t.get_name().lower().endswith('_d'):
+     data['textures'].setdefault('BaseColor',t.get_path_name())
   data['blend']=str(m.get_blend_mode())
  except Exception as e:data['error']=str(e)
  out['materials'][key]=data
  return key
 try:
- unreal.EditorLevelLibrary.load_level(MAP)
+ load_scene_world(MAP,ROOT)
  actors=unreal.EditorLevelLibrary.get_all_level_actors();out['actor_count']=len(actors)
+ out['actor_levels']=dict(collections.Counter(a.get_outer().get_path_name() for a in actors))
  editor=unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem) or unreal.get_default_object(unreal.StaticMeshEditorSubsystem)
  for ai,a in enumerate(actors):
-  if 'Sky' in a.get_class().get_name():out['skipped']['sky']+=1;continue
+  if re.search(r'(?:^|_)(?:Sky(?:Sphere|Atmosphere|Light)?|Ultra_Dynamic_Sky)(?:_|$)',a.get_class().get_name()):out['skipped']['sky']+=1;continue
   for c in a.get_components_by_class(unreal.StaticMeshComponent):
    m=c.get_editor_property('static_mesh')
    if not m:continue
@@ -44,7 +53,7 @@ try:
    path=m.get_path_name();cat=category(path+' '+a.get_class().get_name())
    try:
     if path not in out['meshes']:
-     lod=m.get_num_lods()-1;sections=[]
+     lod=0 if cat=='roads' else m.get_num_lods()-1;sections=[]
      for si in range(m.get_num_sections(lod)):
       v,ix,n,uv,tan=unreal.ProceduralMeshLibrary.get_section_from_static_mesh(m,lod,si)
       if not len(ix):continue

@@ -25,7 +25,14 @@ def gpu_sensor(config):
 def sensor_cost(config):
     a=config.get('attributes', {}); kind=config['type']
     if kind.startswith('sensor.camera.'): return 4*float(a.get('image_size_x',800))*float(a.get('image_size_y',600))/(640*360)
-    if kind.startswith('sensor.lidar.'): return 2*float(a.get('points_per_second',56000))/200000
+    if kind.startswith('sensor.lidar.'):
+        samples=1
+        if kind=='sensor.lidar.ray_cast' and str(a.get('physical_model','false')).lower()=='true':
+            import lidar_profiles
+            lidar_profiles.validate(a)
+            profile=json.loads((lidar_profiles.PROFILE_DIR/(a.get('physical_profile','generic')+'.json')).read_text())
+            samples=int(profile.get('beam_samples',7))
+        return 2*float(a.get('points_per_second',56000))*samples/200000
     if kind=='sensor.other.radar': return .5*float(a.get('points_per_second',1500))/10000
     return 0.
 
@@ -43,8 +50,15 @@ def desired_workers(configs, profile='auto', measured=None):
 
 def summary(rows):
     if not rows:return {}
-    return {key:{'mean':round(statistics.mean(r[key] for r in rows),2),
-                 'p95':round(sorted(r[key] for r in rows)[max(0,math.ceil(.95*len(rows))-1)],2)} for key in rows[0]}
+    # Recording-only stages appear and disappear as capture starts/stops.
+    # Aggregate observed measurements without inventing zeros or requiring a
+    # stage to exist in every row of the rolling window.
+    result={}
+    for key in dict.fromkeys(key for row in rows for key in row):
+        values=sorted(row[key] for row in rows if key in row)
+        result[key]={'mean':round(statistics.mean(values),2),
+                     'p95':round(values[max(0,math.ceil(.95*len(values))-1)],2)}
+    return result
 
 class GpuResources:
     def init_resources(self, data):
@@ -55,7 +69,8 @@ class GpuResources:
         except (OSError,ValueError):self.gpu_benchmarks={}
 
     def profile_key(self, configs):
-        context={'renderer_version':'sensor-view-overhead-v1','sensors':loadout_key(configs),'map':self.state.get('map'),'weather':self.state.get('weather'),
+        context={'renderer_version':'physical-beam-cost-v2','sensors':loadout_key(configs),'map':self.state.get('map'),'weather':self.state.get('weather'),
+                 'fixed_delta_seconds':getattr(self,'fixed_delta_seconds',.05),
                  'models':sorted(m['actor'].type_id for m in self.managed.values())}
         return hashlib.sha256(json.dumps(context,sort_keys=True).encode()).hexdigest()[:20]
 

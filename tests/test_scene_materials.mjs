@@ -5,3 +5,6 @@ const fence=sceneMaterial({name:'Fence',blend:'BLEND_MASKED'},'street',texture);
 const glass=sceneMaterial({name:'Glass',blend:'BLEND_TRANSLUCENT'},'buildings',texture);assert(glass.transparent);assert(!glass.depthWrite);assert(glass.opacity<1);
 const road=sceneMaterial({name:'Asphalt',blend:'OPAQUE'},'roads',texture);assert.equal(road.map,texture);assert(!road.polygonOffset);assert(!road.transparent);
 console.log('PASS: paint contrast/depth separation, masked non-vegetation textures, translucent surfaces, textured asphalt');
+const ruralWhite=sceneMaterial({name:'MI_Rural_v02_LMW'},'roads',texture),ruralYellow=sceneMaterial({name:'MI_Rural_v02_LMY'},'roads',texture);
+assert(ruralWhite.isMeshBasicMaterial&&ruralYellow.isMeshBasicMaterial);assert.equal(ruralWhite.map,null);assert(ruralYellow.color.b<ruralWhite.color.b);
+console.log('PASS: Town13 rural white and yellow markings are recognized as paint');

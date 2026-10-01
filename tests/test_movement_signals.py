@@ -75,9 +75,11 @@ def test_replay_stop_replaces_native_owner_process(monkeypatch,tmp_path):
     import json
     import controller
     owner=controller.Controller.__new__(controller.Controller)
-    owner.world=object();owner.mode='native-replay';owner.running=True;owner.state={};owner.last_gpus='0,1,2,3'
+    owner.world=object();owner.mode='native-replay';owner.running=True;owner.state={};owner.last_gpus='0,1,2,3';owner.gpu_profile='2';owner.wmap=SimpleNamespace(name='Carla/Maps/Town03_Opt')
     timer=Mock();monkeypatch.setattr(controller,'DATA',tmp_path);monkeypatch.setattr(controller.threading,'Timer',lambda delay,callback:timer)
     result=owner.command('replay-stop',{})
     assert result['restarting_owner'] and owner.state['phase']=='restarting'
     assert json.loads((tmp_path/'restart-live-request.json').read_text())['gpus']=='0,1,2,3'
+    request=json.loads((tmp_path/'restart-live-request.json').read_text())
+    assert request['town']=='Carla/Maps/Town03_Opt' and request['gpu_profile']=='2'
     timer.start.assert_called_once()

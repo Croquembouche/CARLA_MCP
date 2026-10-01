@@ -1,0 +1,475 @@
+{
+  "target_hz": 2,
+  "target_frames": 360,
+  "status": "measured",
+  "recording_id": "20261001-172940-fcffae",
+  "wall_seconds": 125.60056998103391,
+  "frames": 361,
+  "recorded_hz": 2.874190778389876,
+  "timings_ms": {
+    "control_ms": {
+      "mean": 1.105546454911948,
+      "median": 0.7493050070479512,
+      "p99": 7.576114032417536,
+      "p95": 5.766916961874813,
+      "max": 12.72322196746245
+    },
+    "world_ms": {
+      "mean": 11.670252859281996,
+      "median": 11.12465001642704,
+      "p99": 20.634078013245016,
+      "p95": 14.946401992347091,
+      "max": 25.554060004651546
+    },
+    "sensor_wait_ms": {
+      "mean": 295.5095485444569,
+      "median": 286.10559648950584,
+      "p99": 450.66766400123015,
+      "p95": 391.5137629956007,
+      "max": 467.4236560240388
+    },
+    "snapshot_ms": {
+      "mean": 4.632607520842511,
+      "median": 4.273409023880959,
+      "p99": 11.845482978969812,
+      "p95": 5.815787008032203,
+      "max": 14.37891396926716
+    },
+    "ros_prepare_ms": {
+      "mean": 8.964971841487568,
+      "median": 8.55093850987032,
+      "p99": 15.869166003540158,
+      "p95": 10.832332947757095,
+      "max": 16.82597101898864
+    },
+    "raw_prepare_ms": {
+      "mean": 3.8332414320191472,
+      "median": 3.675918880617246,
+      "p99": 5.726255010813475,
+      "p95": 4.925457003992051,
+      "max": 6.736144074238837
+    },
+    "ros_publish_ms": {
+      "mean": 16.866881082953316,
+      "median": 16.499089979333803,
+      "p99": 24.004650011193007,
+      "p95": 19.782239047344774,
+      "max": 24.96354200411588
+    },
+    "signal_audit_ms": {
+      "mean": 5.203188027048276,
+      "median": 5.097190995002165,
+      "p99": 6.554212013725191,
+      "p95": 5.927062011323869,
+      "max": 11.33682596264407
+    },
+    "record_write_ms": {
+      "mean": 6.850035953620035,
+      "median": 6.568954471731558,
+      "p99": 14.328086981549859,
+      "p95": 7.400218979455531,
+      "max": 14.95421800063923
+    },
+    "publish_record_ms": {
+      "mean": 28.92154650681833,
+      "median": 28.256571502424777,
+      "p99": 37.65465598553419,
+      "p95": 32.46080502867699,
+      "max": 38.03034999873489
+    },
+    "preview_ms": {
+      "mean": 0.02989801966274778,
+      "median": 0.029183982405811548,
+      "p99": 0.04800001624971628,
+      "p95": 0.037187011912465096,
+      "max": 0.05260802572593093
+    },
+    "total_ms": {
+      "mean": 342.4198100920573,
+      "median": 332.66186199034564,
+      "p99": 499.96949598426,
+      "p95": 439.69375698361546,
+      "max": 511.95219601504505
+    },
+    "raw_copy_ms": {
+      "mean": 2.0235243001176664,
+      "median": 1.94390001706779,
+      "p99": 2.858285093680024,
+      "p95": 2.476060064509511,
+      "max": 3.869825042784214
+    },
+    "raw_disk_ms": {
+      "mean": 24.38589311560564,
+      "median": 23.914527031593025,
+      "p99": 38.463912962470204,
+      "p95": 29.64837005129084,
+      "max": 43.30509901046753
+    },
+    "raw_hash_ms": {
+      "mean": 80.72763626825892,
+      "median": 79.39144349074923,
+      "p99": 100.49461998278275,
+      "p95": 94.99881998635828,
+      "max": 119.03951998101547
+    },
+    "raw_metadata_ms": {
+      "mean": 0.9359539927875934,
+      "median": 0.8835245098453015,
+      "p99": 1.6185339190997183,
+      "p95": 1.2393249780870974,
+      "max": 2.671185997314751
+    },
+    "raw_payload_wall_ms": {
+      "mean": 190.59490134418917,
+      "median": 182.22705050720833,
+      "p99": 344.27520900499076,
+      "p95": 289.372821978759,
+      "max": 346.4754539891146
+    },
+    "raw_index_ms": {
+      "mean": 6.764370901510119,
+      "median": 6.488828512374312,
+      "p99": 14.25131200812757,
+      "p95": 7.323256984818727,
+      "max": 14.88086802419275
+    },
+    "ros_serialize_ms": {
+      "mean": 2.0158710229831436,
+      "median": 1.9724570156540722,
+      "p99": 2.7628488605841994,
+      "p95": 2.436902024783194,
+      "max": 3.3388209412805736
+    },
+    "ros_dds_ms": {
+      "mean": 7.241635690540231,
+      "median": 7.207086076959968,
+      "p99": 8.019031782168895,
+      "p95": 7.596561103127897,
+      "max": 8.613902318757027
+    },
+    "ros_bag_enqueue_ms": {
+      "mean": 0.7240735135079982,
+      "median": 0.6303185946308076,
+      "p99": 1.1068401508964598,
+      "p95": 0.9674059692770243,
+      "max": 1.3300040736794472
+    },
+    "ros_sensor_message_ms": {
+      "mean": 4.182456134650339,
+      "median": 3.9397975197061896,
+      "p99": 7.164907001424581,
+      "p95": 5.5147159728221595,
+      "max": 11.379772971849889
+    },
+    "ros_image_cdr_ms": {
+      "mean": 3.4875888227058263,
+      "median": 3.290671535069123,
+      "p99": 9.92452900391072,
+      "p95": 4.269158991519362,
+      "max": 11.325087049044669
+    },
+    "checkpoint_ms": {
+      "mean": 0.5504101860828491,
+      "median": 0.0194879830814898,
+      "p99": 6.174425012432039,
+      "p95": 5.639952956698835,
+      "max": 47.381829004734755
+    }
+  },
+  "vehicle_distance_m": {
+    "53": 0.0,
+    "52": 0.0,
+    "51": 0.0,
+    "50": 0.0,
+    "49": 0.0,
+    "48": 0.0,
+    "47": 0.0,
+    "46": 0.0,
+    "45": 0.0,
+    "44": 0.0,
+    "43": 0.0,
+    "42": 0.0,
+    "41": 0.0,
+    "40": 0.0,
+    "39": 0.0,
+    "38": 0.0,
+    "37": 0.0,
+    "36": 0.0,
+    "35": 0.0,
+    "34": 0.0,
+    "33": 0.0,
+    "32": 0.0,
+    "31": 0.0,
+    "30": 0.0,
+    "29": 0.0,
+    "28": 44.427992348948464,
+    "27": 0.0,
+    "26": 0.0,
+    "25": 0.0
+  },
+  "verification": {
+    "id": "20261001-172940-fcffae",
+    "checked_at": 1790890447.2284434,
+    "status": "verified",
+    "frames": 361,
+    "sensor_samples": 2527,
+    "rosbag_topic_counts": {
+      "/clock": 361,
+      "/carla/ego_53/odometry": 361,
+      "/carla/ego_53/roof_lidar/points": 361,
+      "/carla/ego_53/roof_lidar/metadata": 361,
+      "/carla/ego_53/front_rgb/image": 361,
+      "/carla/ego_53/front_rgb/metadata": 361,
+      "/carla/ego_53/front_rgb/camera_info": 361,
+      "/carla/ego_53/front_right_rgb/image": 361,
+      "/carla/ego_53/front_right_rgb/metadata": 361,
+      "/carla/ego_53/front_right_rgb/camera_info": 361,
+      "/carla/ego_53/rear_right_rgb/image": 361,
+      "/carla/ego_53/rear_right_rgb/metadata": 361,
+      "/carla/ego_53/rear_right_rgb/camera_info": 361,
+      "/carla/ego_53/rear_rgb/image": 361,
+      "/carla/ego_53/rear_rgb/metadata": 361,
+      "/carla/ego_53/rear_rgb/camera_info": 361,
+      "/carla/ego_53/rear_left_rgb/image": 361,
+      "/carla/ego_53/rear_left_rgb/metadata": 361,
+      "/carla/ego_53/rear_left_rgb/camera_info": 361,
+      "/carla/ego_53/front_left_rgb/image": 361,
+      "/carla/ego_53/front_left_rgb/metadata": 361,
+      "/carla/ego_53/front_left_rgb/camera_info": 361,
+      "/tf": 361,
+      "/carla/traffic_signals": 361
+    },
+    "files_checked": 2537,
+    "errors": [],
+    "warnings": [],
+    "scope": "Stored bytes, frame index, sensor coverage and simulation timestamps; not proof of identical re-simulation"
+  },
+  "native_profiles": [
+    {
+      "worker": "gpu-3",
+      "age_seconds": 0.4,
+      "metrics": {
+        "camera_readback_ready_ms": {
+          "mean": 116.531,
+          "p95": 126.5827,
+          "max": 152.9605,
+          "samples": 120
+        },
+        "camera_copy_gpu_ms": {
+          "mean": 0.3334,
+          "p95": 0.347,
+          "max": 0.631,
+          "samples": 120
+        },
+        "camera_convert_serialize_ms": {
+          "mean": 0.4588,
+          "p95": 0.6583,
+          "max": 2.3075,
+          "samples": 120
+        }
+      }
+    },
+    {
+      "worker": "gpu-2",
+      "age_seconds": 0.0,
+      "metrics": {
+        "camera_readback_ready_ms": {
+          "mean": 143.8225,
+          "p95": 197.0894,
+          "max": 209.2388,
+          "samples": 120
+        },
+        "camera_copy_gpu_ms": {
+          "mean": 0.3315,
+          "p95": 0.386,
+          "max": 0.671,
+          "samples": 120
+        },
+        "camera_convert_serialize_ms": {
+          "mean": 0.4446,
+          "p95": 0.6779,
+          "max": 2.4404,
+          "samples": 120
+        }
+      }
+    },
+    {
+      "worker": "gpu-1",
+      "age_seconds": 1.0,
+      "metrics": {
+        "physical_generate_rays_ms": {
+          "mean": 17.9258,
+          "p95": 20.6272,
+          "max": 34.109,
+          "samples": 120
+        },
+        "collision_snapshot_ms": {
+          "mean": 42.0243,
+          "p95": 58.5492,
+          "max": 59.9001,
+          "samples": 120
+        },
+        "motion_build_workers": {
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "samples": 120
+        },
+        "motion_prepare_ms": {
+          "mean": 0.9985,
+          "p95": 1.3927,
+          "max": 3.6038,
+          "samples": 120
+        },
+        "motion_geometry_ms": {
+          "mean": 0.0004,
+          "p95": 0.0008,
+          "max": 0.0014,
+          "samples": 120
+        },
+        "motion_reused_meshes": {
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "samples": 120
+        },
+        "motion_rebuilt_meshes": {
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "samples": 120
+        },
+        "ray_input_pack_ms": {
+          "mean": 1.7355,
+          "p95": 2.1666,
+          "max": 2.5643,
+          "samples": 120
+        },
+        "motion_gpu_pack_ms": {
+          "mean": 0.0026,
+          "p95": 0.0043,
+          "max": 0.0053,
+          "samples": 120
+        },
+        "motion_geometry_upload_mb": {
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "samples": 120
+        },
+        "ray_render_setup_ms": {
+          "mean": 2.0401,
+          "p95": 2.4607,
+          "max": 2.8802,
+          "samples": 120
+        },
+        "camera_readback_ready_ms": {
+          "mean": 102.2331,
+          "p95": 116.6653,
+          "max": 138.2413,
+          "samples": 120
+        },
+        "camera_copy_gpu_ms": {
+          "mean": 0.3247,
+          "p95": 0.324,
+          "max": 0.425,
+          "samples": 120
+        },
+        "camera_convert_serialize_ms": {
+          "mean": 0.4688,
+          "p95": 0.6718,
+          "max": 2.4975,
+          "samples": 120
+        },
+        "ray_readback_copied_mb": {
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "samples": 120
+        },
+        "ray_readback_copy_ms": {
+          "mean": 0.0118,
+          "p95": 0.0089,
+          "max": 0.1771,
+          "samples": 120
+        },
+        "ray_gpu_ms": {
+          "mean": 0.0045,
+          "p95": 0.005,
+          "max": 0.008,
+          "samples": 120
+        },
+        "ray_queue_ms": {
+          "mean": 78.9916,
+          "p95": 95.1575,
+          "max": 135.6284,
+          "samples": 120
+        },
+        "ray_dispatch_to_readback_ms": {
+          "mean": 100.9062,
+          "p95": 114.2864,
+          "max": 123.7658,
+          "samples": 120
+        },
+        "ray_ready_to_game_ms": {
+          "mean": 1.0486,
+          "p95": 1.0556,
+          "max": 1.1839,
+          "samples": 120
+        },
+        "ray_allocate_hits_ms": {
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "samples": 120
+        },
+        "ray_decode_ms": {
+          "mean": 3.5988,
+          "p95": 5.168,
+          "max": 7.0853,
+          "samples": 120
+        },
+        "physical_receiver_ms": {
+          "mean": 12.3728,
+          "p95": 13.7773,
+          "max": 16.7787,
+          "samples": 120
+        }
+      }
+    },
+    {
+      "worker": "gpu-0",
+      "age_seconds": 0.3,
+      "metrics": {
+        "camera_readback_ready_ms": {
+          "mean": 193.6271,
+          "p95": 242.6928,
+          "max": 268.0047,
+          "samples": 120
+        },
+        "camera_copy_gpu_ms": {
+          "mean": 0.3197,
+          "p95": 0.324,
+          "max": 0.324,
+          "samples": 120
+        },
+        "camera_convert_serialize_ms": {
+          "mean": 0.4332,
+          "p95": 0.59,
+          "max": 2.3897,
+          "samples": 120
+        }
+      }
+    }
+  ],
+  "bag_writer": {
+    "budget_bytes": 67108864,
+    "high_water_bytes": 27271989,
+    "pending_bytes_at_close": 27269382,
+    "drain_seconds": 0.003794534015469253,
+    "written_messages": 8664,
+    "backend": "native_gil_released"
+  },
+  "throughput_target_met": true,
+  "acceptance_scope": "Throughput sample only; full goal also requires independent payload, visual and representative motion checks"
+}

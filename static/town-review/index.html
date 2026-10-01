@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Town geometry review</title>
+<script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+<style>body{margin:0;background:#18252d;color:#e5eff2;font:15px system-ui}header{padding:14px;display:flex;align-items:center;gap:16px}button,select{padding:8px;background:#263d49;color:inherit;border:1px solid #5a7583;border-radius:5px}#view{height:calc(100vh - 100px);position:relative}canvas{position:absolute}.signal-overlay{pointer-events:none}.three-lane-info{position:absolute;bottom:8px;left:12px}#parking-count{padding:0 14px}</style>
+<header><strong>Town geometry review</strong><label>Town <select id="town" aria-label="Review town"></select></label><button id="fit">Fit</button><button id="top">Top down</button><label><input id="parking" type="checkbox" checked>Parking</label><span id="scene-detail-status"></span></header><div id="parking-count"></div><div id="view"></div>
+<script type="module">
+import {SceneView} from '/scene3d.js?v=town-scenes-5';
+const view=new SceneView(document.querySelector('#view')),town=document.querySelector('#town');let map,serial=0;
+for(const name of await (await fetch('towns.json')).json())town.add(new Option(name,name));
+async function load(){const request=++serial,name=town.value;document.querySelector('#scene-detail-status').textContent='Loading '+name+'…';document.querySelector('#parking-count').textContent='Loading parking inventory…';try{const response=await fetch(name+'.json');if(!response.ok)throw Error('Town review data unavailable');const next=await response.json();if(request!==serial)return;map=next;view.setMap(map);view.setParking(map,{},null,document.querySelector('#parking').checked);document.querySelector('#parking-count').textContent=(map.parking_spaces?.length||0)+' mapped positions · Read-only review; live simulation is unchanged.'}catch(error){if(request===serial)document.querySelector('#parking-count').textContent=error.message}}
+town.onchange=load;document.querySelector('#fit').onclick=()=>view.fit();document.querySelector('#top').onclick=()=>view.setTopDown(!view.topDown);document.querySelector('#parking').onchange=e=>view.setParking(map,{},null,e.target.checked);window.onresize=()=>view.resize();await load();
+</script></html>

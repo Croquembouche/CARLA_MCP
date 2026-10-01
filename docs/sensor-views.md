@@ -140,7 +140,7 @@ ray queries execute. Cabin cameras use GPU raster rendering (`use_ray_tracing=fa
 additional ray-traced capture memory that exceeded an 11 GiB card in testing.
 Existing ego camera settings and LiDAR/radar GPU ray queries are unchanged. The native module
 must be rebuilt when carrying this fix to another UE installation. A portable
-patch is preserved in the private [UE5_CARLab_Source archive](https://github.com/Croquembouche/UE5_CARLab_Source/blob/main/carlab/restricted-archives/CARLA_MCP/examples/ue5-small-bar-camera-uploads.patch); Unreal source access is required.
+patch is included in `examples/ue5-small-bar-camera-uploads.patch`.
 
 
 The CARLA worker router includes a fixed per-sensor overhead in addition to pixel

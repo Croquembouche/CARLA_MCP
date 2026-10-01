@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';import {removeSplineInstances} from '../scripts/scene-splines.mjs';
+const t=[1,2,3,0,0,0,1,1,1,1],u=[4,2,3,0,0,0,1,1,1,1],groups={a:{mesh:'a',materials:['m'],transforms:[[...t],[...t],[...u]]},b:{mesh:'b',materials:['m'],transforms:[[...t]]}};
+removeSplineInstances(groups,[{mesh:'a',materials:['m'],transform:t},{mesh:'a',materials:['m'],transform:t.map((v,i)=>i===0?v+.000001:v)}]);
+assert.deepEqual(groups.a.transforms,[u]);assert.equal(groups.b.transforms.length,1);assert.throws(()=>removeSplineInstances(groups,[{mesh:'a',materials:['m'],transform:t}]),/missing/);
+console.log('PASS: spline matching handles duplicate poses, tolerance, unrelated instances and missing components');
+const {bendGeometry}=await import('../scripts/spline.mjs');
+const spline={axis:'SplineMeshAxis.X',boundary:[0,100],bounds:[[0,0,0],[100,100,100]],transform:[0,0,0,0,0,0,1,1,1,1],start_position:[0,0,0],end_position:[100,0,0],start_tangent:[100,0,0],end_tangent:[100,0,0],up:[0,0,1],start_offset:[0,0],end_offset:[0,0],start_roll:0,end_roll:0,start_scale:[1,1],end_scale:[1,1],smooth:false};
+const positions=new Float32Array([0,0,0,.5,0,.2,.5,.1,.3,1,0,0]),normals=new Float32Array([0,1,0,0,1,0,0,1,0,0,1,0]);
+assert.deepEqual(bendGeometry(positions,normals,spline),[positions,normals]);
+const [bent]=bendGeometry(new Float32Array([1,0,0]),new Float32Array([0,1,0]),{...spline,end_position:[100,100,0],end_tangent:[0,100,0]});assert.deepEqual([...bent],[1,0,1]);
+console.log('PASS: shared spline slices preserve lateral offsets, normals and curved endpoints');

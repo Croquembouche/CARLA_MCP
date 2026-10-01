@@ -1,6 +1,8 @@
 /.venv/
 /.mcp-venv/
 /node_modules/
+/_bag_native*.so
+/_bag_native*.so.next
 __pycache__/
 .pytest_cache/
 *.pyc

@@ -1,6 +1,7 @@
 from typing import Literal
 import bootstrap
 import asyncio
+import os
 from contextlib import asynccontextmanager
 import io
 import json
@@ -10,12 +11,13 @@ import time
 from verification import verify_session, compare_sessions
 from pathlib import Path
 from urllib.parse import urlsplit
-from fastapi import FastAPI, Request, HTTPException, Query
+from fastapi import BackgroundTasks, FastAPI, Request, HTTPException, Query
 from sensor_preview import PreviewCache
 from fastapi.responses import FileResponse, JSONResponse, Response, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from PIL import Image
 from controller import Controller, ROOT, DATA
+from towns import available_towns, DEFAULT_TOWN
 from recording import read_frame
 from archive import archive_stream
 
@@ -57,6 +59,12 @@ def status():
         'elapsed_seconds':round(max(0,time.monotonic()-progress.get('started',time.monotonic())),2)}
     return JSONResponse(snapshot)
 
+@app.get('/api/towns')
+def towns():
+    saved=DATA/'runtime-town.json'
+    selected=json.loads(saved.read_text()).get('town') if saved.exists() else DEFAULT_TOWN
+    return {'towns':available_towns(),'selected':(engine.state.get('map') if engine.state.get('phase')=='connected' else None) or engine.state.get('requested_town') or selected}
+
 @app.get('/api/catalog')
 def catalog():return engine.catalog
 
@@ -78,12 +86,22 @@ def xodr():
     if not path.exists():raise HTTPException(404,'Connect to a scene first')
     return FileResponse(path,media_type='application/xml',filename='scene.xodr')
 
+def restart_controller_process():
+    # CARLA's native client and Traffic Manager retain process-global state after
+    # shutdown. A fresh controller process prevents Stop -> Start from reusing
+    # stale native threads; systemd restarts this lightweight service.
+    time.sleep(.25)
+    os._exit(75)
+
+
 @app.post('/api/command/{action}',openapi_extra={'requestBody':{'required':True,'content':{'application/json':{'schema':{'type':'object'},'example':{'id':25,'throttle':0.3,'steer':0.0,'brake':0.0}}}}})
-async def command(action:str,request:Request):
+async def command(action:str,request:Request,background_tasks:BackgroundTasks):
     try:
         payload=await request.json()
         if not isinstance(payload,dict):raise ValueError('Expected a JSON object')
-        return await asyncio.shield(asyncio.wrap_future(engine.submit(action,payload)))
+        result=await asyncio.shield(asyncio.wrap_future(engine.submit(action,payload)))
+        if action=='shutdown':background_tasks.add_task(restart_controller_process)
+        return result
     except (ValueError,KeyError,TypeError) as e:raise HTTPException(400,str(e))
     except RuntimeError as e:raise HTTPException(409,str(e))
 
@@ -183,7 +201,7 @@ async def recover():
     if not path.exists():raise HTTPException(409,'No saved recovery configuration is available')
     config=json.loads(path.read_text())['configuration']
     from recording import dump
-    dump(DATA/'restart-live-request.json',{'gpus':'auto','created':time.time(),'configuration':config})
+    dump(DATA/'restart-live-request.json',{'gpus':getattr(engine,'last_gpus','auto'),'gpu_profile':engine.gpu_profile,'town':config.get('map'),'created':time.time(),'configuration':config})
     engine.running=False;engine.state.update(phase='restarting',running=False,recovery_operation={'stage':'restarting','detail':'Restarting from the saved configuration'})
     threading.Timer(.5,lambda:subprocess.Popen(['systemctl','--user','--no-block','restart','carla-control-center.service'])).start()
     return {'restarting':True,'note':'Restores saved configuration, not an exact mid-frame physics checkpoint'}

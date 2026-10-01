@@ -1,5 +1,7 @@
 import * as THREE from 'three';
-import {sceneMaterial} from './scene-materials.js';
+import {repairUV} from './scene-attributes.js?v=town-scenes-5';
+import {orientTriangles} from './scene-winding.js?v=town-scenes-5';
+import {sceneMaterial,roadPaint} from './scene-materials.js?v=town-scenes-5';
 import {roadArea,overlapsArea} from './scene-area.js';
 export function release(group){const geometries=new Set(),materials=new Set(),textures=new Set();group.traverse(o=>{if(o.geometry)geometries.add(o.geometry);for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[])materials.add(m)});for(const m of materials){for(const t of Object.values(m))if(t?.isTexture)textures.add(t);m.dispose()}for(const g of geometries)g.dispose();for(const t of textures){t.dispose();t.image?.close?.()}group.clear()}
 export function areaPlanes(area){return area?[new THREE.Plane(new THREE.Vector3(1,0,0),-area[0]),new THREE.Plane(new THREE.Vector3(-1,0,0),area[2]),new THREE.Plane(new THREE.Vector3(0,0,1),-area[1]),new THREE.Plane(new THREE.Vector3(0,0,-1),area[3])]:[];}
@@ -12,7 +14,7 @@ export async function fetchLayer(url,signal,onProgress,textureCache=new Map(),ar
  const attribute=(r,type=Float32Array)=>new type(decoded,base+r[0],r[1]);
  const group=new THREE.Group(),geometries=new Map(),materials=new Map(),clippingPlanes=areaPlanes(area);group.name=meta.category;
  try{
- const usedMeshes=new Set(meta.groups.map(g=>g.mesh));for(const [key,m] of Object.entries(meta.meshes).filter(([key])=>usedMeshes.has(key)))geometries.set(key,m.sections.map(s=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(attribute(s.position),3));g.setAttribute('normal',new THREE.BufferAttribute(attribute(s.normal),3));g.setAttribute('uv',new THREE.BufferAttribute(attribute(s.uv),2));g.setIndex(new THREE.BufferAttribute(attribute(s.index,Uint32Array),1));g.computeBoundingSphere();return {geometry:g,slot:s.slot}}));
+ const usedMeshes=new Set(meta.groups.map(g=>g.mesh));for(const [key,m] of Object.entries(meta.meshes).filter(([key])=>usedMeshes.has(key)))geometries.set(key,m.sections.map(s=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(attribute(s.position),3));g.setAttribute('normal',new THREE.BufferAttribute(attribute(s.normal),3));const uv=attribute(s.uv);repairUV(g.attributes.position.array,uv);g.setAttribute('uv',new THREE.BufferAttribute(uv,2));const indices=attribute(s.index,Uint32Array);orientTriangles(g.attributes.position.array,g.attributes.normal.array,indices);g.setIndex(new THREE.BufferAttribute(indices,1));g.computeBoundingSphere();return {geometry:g,slot:s.slot}}));
  let count=0,instances=0,triangles=0;const usedGeometries=new Set(),matrix=new THREE.Matrix4(),object=new THREE.Object3D(),worldBounds=new THREE.Box3();
  for(const batch of meta.groups){
   if(signal.aborted)throw new DOMException('Aborted','AbortError');
@@ -36,7 +38,7 @@ export async function fetchLayer(url,signal,onProgress,textureCache=new Map(),ar
    const materialKey=batch.materials[slot]||meta.category;
    if(!materials.has(materialKey)){
     const info=meta.materials[materialKey];let texture=null;
-    if(info?.web_texture&&!/lanemarking/i.test(info.name)){const path=new URL('textures/'+info.web_texture,new URL(url,location.href)).href;
+    if(info?.web_texture&&!roadPaint(info)){const path=new URL('textures/'+info.web_texture,new URL(url,location.href)).href;
      if(!textureCache.has(path)){const response=await fetch(path,{signal});if(!response.ok)throw Error('Scene texture missing');const bitmap=await createImageBitmap(await response.blob());const t=new THREE.Texture(bitmap);t.colorSpace=THREE.SRGBColorSpace;t.wrapS=t.wrapT=THREE.RepeatWrapping;t.flipY=false;t.anisotropy=4;t.needsUpdate=true;textureCache.set(path,t);}
      texture=textureCache.get(path);
     }
@@ -49,7 +51,7 @@ export async function fetchLayer(url,signal,onProgress,textureCache=new Map(),ar
     if(/\/Parked\/|\/Static\/(?:Motorcycle|Bicycle)\/|SM_CarlaCola\.SM_CarlaCola/i.test(batch.mesh)){
      inst.userData.vehicleInstances=tile.map((t,i)=>{const m=new THREE.Matrix4();inst.getMatrixAt(i,m);const box=localBounds.clone().applyMatrix4(m);return {matrix:m,center:box.getCenter(new THREE.Vector3())}});
     }
-    if(/lanemarking/i.test(meta.materials[materialKey]?.name||''))inst.renderOrder=2;group.add(inst);
+    if(roadPaint(meta.materials[materialKey]))inst.renderOrder=2;group.add(inst);
    }
   }
   if(++count%30===0){onProgress?.();await new Promise(r=>setTimeout(r,0));}
@@ -63,6 +65,7 @@ export class SceneDetail{
  async load(map,force=false){
   const mapName=map.name.split('/').pop();this.map=map;
   if(!force&&this.mapName===mapName&&(this.loading||this.layers.size)){this.view.fallback.visible=!this.enabled||!this.layers.has('roads');return}
+  if(this.mapName!==mapName){this.serial++;this.abort?.abort();release(this.group);this.layers.clear();this.manifest=null;this.loading=false;this.view.node.dataset.sceneLoading='false';this.view.fallback.visible=true}
   this.mapName=mapName;if(!this.enabled){this.status('Lightweight map · select Detailed geometry to load scene objects');return}this.loading=true;this.view.node.dataset.sceneLoading='true';
   const serial=++this.serial;const textureCache=new Map();this.abort?.abort();this.abort=new AbortController();const signal=this.abort.signal,area=this.scope==='road'?roadArea(map):null;release(this.group);this.layers.clear();this.view.fallback.visible=true;this.group.visible=this.enabled;this.status('Loading actual scene geometry…');
   const name=map.name.split('/').pop(),base='/scenes/'+encodeURIComponent(name)+'/';
@@ -75,7 +78,7 @@ export class SceneDetail{
     this.status(`Loading ${layer.category} · ${completed}/${manifest.layers.length} layers`);
     const group=await fetchLayer(base+layer.file,signal,undefined,textureCache,area);
     if(serial!==this.serial){release(group);return}
-    group.visible=!this.hidden.has(layer.category);this.layers.set(layer.category,group);this.group.add(group);this.applyHiddenVehicles();completed++;
+    let category=this.layers.get(layer.category);if(!category){category=new THREE.Group();category.userData={instances:0,triangles:0};category.visible=!this.hidden.has(layer.category);this.layers.set(layer.category,category);this.group.add(category)}category.add(group);category.userData.instances+=group.userData.instances;category.userData.triangles+=group.userData.triangles;this.applyHiddenVehicles();completed++;
     if(layer.category==='roads')this.view.fallback.visible=!this.enabled;
     this.view.render();
    }

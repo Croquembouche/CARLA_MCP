@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-export function roadPaint(info){return /lanemarking/i.test(info?.name||'')}
+export function roadPaint(info){return /lanemarking|markinglane|assets_markings|road_marking|_LM[WY](?:_|$)/i.test(info?.name||'')}
 export function sceneMaterial(info,category,texture,clippingPlanes=[]){
  const name=info?.name||'',paint=roadPaint(info),masked=info?.blend?.includes('MASKED'),glass=/glass/i.test(name)&&!paint,translucent=info?.blend?.includes('TRANSLUCENT');
  let color=new THREE.Color(0xa4b0b5);
- if(paint)color.set(/yellow/i.test(name)?0xe8bd43:0xeee9dc);
+ if(paint)color.set(/yellow|_LMY(?:_|$)/i.test(name)?0xe8bd43:0xeee9dc);
  else if(texture)color.set(0xffffff);
  else{
   const tint=Object.entries(info?.vectors||{}).find(([k,v])=>/^(base.?color|diffuse.?color|color|tint)$/i.test(k)&&v.slice(0,3).some(x=>x>0));

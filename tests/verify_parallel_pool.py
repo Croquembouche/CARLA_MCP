@@ -18,7 +18,7 @@ s=state();assert not s['running'] and not s.get('recording')
 ego=next(int(i) for i,m in s['managed'].items() if m['role']=='ego')
 original=[{k:v for k,v in x.items() if k not in ('id','parent')} for x in s['sensors'] if x['parent']==ego]
 actor_ids=set(s['managed']);report={}
-manifest=max(Path('/mnt/simulations/carla/carlab/host-setup/logs').glob('multigpu-*/processes.json'),key=lambda p:p.stat().st_mtime)
+manifest=max(Path('/media/william/mist1/Simulations/logs').glob('multigpu-*/processes.json'),key=lambda p:p.stat().st_mtime)
 def memory():
  result=[]
  for ch in json.loads(manifest.read_text())['children']:

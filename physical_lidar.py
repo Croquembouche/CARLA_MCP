@@ -9,8 +9,8 @@ ROS_FIELDS=[(name,i*4,7) for i,name in enumerate(FLOAT_FIELDS)]+[('pulse_id_low'
 def is_physical(data):
     return hasattr(data,'scan_start') and hasattr(data,'pulse_count')
 
-def points(data):
-    raw=np.frombuffer(data.raw_data,dtype=DTYPE)
+def points(data,raw=None):
+    raw=np.frombuffer(data.raw_data if raw is None else raw,dtype=DTYPE)
     if np.any(raw['channel']>=data.channels):raise ValueError('Physical LiDAR channel exceeds packet channel count')
     return raw
 
@@ -20,8 +20,8 @@ def xyzi(data):
         return np.column_stack([p[n] for n in ('x','y','z','intensity')])
     return np.frombuffer(data.raw_data,dtype='<f4').reshape(-1,4)
 
-def metadata(data):
-    p=points(data)
+def metadata(data,raw=None):
+    p=points(data,raw)
     return dict(output_format='extended',point_stride=64,schema_version=1,
         point_fields=[dict(name=n,offset=DTYPE.fields[n][1],dtype=DTYPE.fields[n][0].str) for n in DTYPE.names],
         scan_start=data.scan_start,scan_end=data.scan_end,pulse_count=data.pulse_count,

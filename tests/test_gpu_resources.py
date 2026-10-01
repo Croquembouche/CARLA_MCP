@@ -57,3 +57,10 @@ def test_manifest_transient_replace_gap_is_retried():
  with patch('gpu_resources.time.sleep'):
   assert read_manifest(p)=={'ready':True}
  assert p.read_text.call_count==3
+def test_physical_lidar_cost_accounts_for_installed_beam_profile():
+    from gpu_resources import sensor_cost
+    camera={'type':'sensor.camera.rgb','attributes':{'image_size_x':'1280','image_size_y':'800'}}
+    lidar={'type':'sensor.lidar.ray_cast','attributes':{'points_per_second':'400000','physical_model':'true','material_model':'true','physical_profile':'generic'}}
+    assert sensor_cost(lidar)==28
+    assert sensor_cost(lidar)>sensor_cost(camera)
+    assert sensor_cost({'type':lidar['type'],'attributes':{'points_per_second':'400000'}})==4

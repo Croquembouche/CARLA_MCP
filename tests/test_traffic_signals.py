@@ -34,3 +34,23 @@ def test_one_shot_does_not_freeze_or_touch_other_states():
     w,a=world();traffic_signals.apply(w,{'id':8,'operation':'state','state':'Off','hold':False})
     a[0].set_state.assert_called_once_with(carla.TrafficLightState.Off);a[0].freeze_group.assert_not_called()
     for other in a[1:]:other.set_state.assert_not_called()
+
+def test_dormant_signal_does_not_request_unavailable_geometry():
+    actor=SimpleNamespace(id=1,is_dormant=True,get_light_boxes=Mock(side_effect=RuntimeError('unloaded tile')),get_location=lambda:SimpleNamespace(x=0,y=0,z=0),get_opendrive_id=lambda:'7')
+    actor.get_group_traffic_lights=lambda:[actor]
+    meta=traffic_signals.metadata(actor,'Carla/Maps/Town11/Town11')
+    assert meta['dormant'] and meta['heads']==[] and meta['opendrive_id']=='7'
+    actor.get_light_boxes.assert_not_called()
+
+def test_dormant_signal_rejects_controls_before_mutation():
+    w,a=world();a[0].is_dormant=True
+    with pytest.raises(ValueError,match='unloaded map tile'):
+        traffic_signals.apply(w,{'id':8,'operation':'state','state':'Green'})
+    a[0].freeze_group.assert_not_called()
+
+def test_exported_town10_heads_do_not_leak_to_other_towns(monkeypatch):
+    monkeypatch.setattr(traffic_signals,'_HEADS',[{'pose':dict(x=0,y=0,z=0),'heads':[{'x':9}], 'pedestrian_heads':[], 'push_buttons':[]}])
+    actor=SimpleNamespace(id=1,is_dormant=False,get_light_boxes=lambda:[],get_location=lambda:SimpleNamespace(x=0,y=0,z=0),get_opendrive_id=lambda:'7')
+    actor.get_group_traffic_lights=lambda:[actor]
+    assert traffic_signals.metadata(actor,'Carla/Maps/Town02_Opt')['heads']==[]
+    assert traffic_signals.metadata(actor,'Carla/Maps/Town10HD_Opt')['heads']==[{'x':9}]

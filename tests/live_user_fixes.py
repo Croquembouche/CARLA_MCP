@@ -38,7 +38,7 @@ try:
  report['camera_weather_mean_absolute_difference']=float(np.abs(images['day']-images['night']).mean())
  assert report['camera_weather_mean_absolute_difference']>5,report
  print('CAMERA_WEATHER_CHANGED',report['camera_weather_mean_absolute_difference'],flush=True)
- logdir=max(Path('/mnt/simulations/carla/carlab/host-setup/logs').glob('multigpu-*'),key=lambda p:p.stat().st_mtime)
+ logdir=max(Path('/media/william/mist1/Simulations/logs').glob('multigpu-*'),key=lambda p:p.stat().st_mtime)
  report['weather_workers']={}
  for i in range(4):
   log=(logdir/f'gpu-{i}.log').read_text(errors='replace')

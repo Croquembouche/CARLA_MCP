@@ -47,7 +47,8 @@ sudo apt-get install ros-humble-ros-base ros-humble-rosbag2-py \
   ros-humble-rosbag2-storage-default-plugins ros-humble-sensor-msgs \
   ros-humble-nav-msgs ros-humble-geometry-msgs ros-humble-tf2-msgs \
   ros-humble-rosgraph-msgs ros-humble-std-msgs ros-humble-builtin-interfaces \
-  python3.10-venv
+  python3.10-venv python3.10-dev g++ pybind11-dev \
+  ros-humble-rosbag2-cpp ros-humble-rosbag2-storage ros-humble-fastcdr
 ```
 
 Install **Node.js 22 with npm** using [Node's official downloads](https://nodejs.org/en/download). The published lockfile's Playwright packages require Node >=20; Ubuntu 22.04's default Node package is too old. The audit used Node 22.22.3. Confirm `node --version` and `npm --version` work in your terminal. Browser clients do not need Node; it installs the server's local Three.js files and developer tools.
@@ -63,7 +64,7 @@ git lfs pull
 bash scripts/setup-python.sh all
 ```
 
-The helper checks Python, Node, ROS and the native CARLA binding, creates `.mcp-venv` and `.venv`, installs their selected requirements, runs `npm ci`, checks pip dependencies and imports the WebUI. It does not start CARLA. The complete `*-lock.txt`/`*.lock.txt` files are historical environment inventories that include ROS/system packages; use the helper's `requirements-webui.txt` and `mcp_bridge/requirements-install.txt`, not those full inventories as pip requirements.
+The helper checks Python, Node, ROS and the native CARLA binding, creates `.mcp-venv` and `.venv`, installs their selected requirements, runs `npm ci`, checks pip dependencies, builds the native ROS bag/Image binding, and imports the WebUI. Rebuild that binding with `.venv/bin/python scripts/build_bag_native.py` after changing its source or the Python/ROS ABI. It does not start CARLA. The complete `*-lock.txt`/`*.lock.txt` files are historical environment inventories that include ROS/system packages; use the helper's `requirements-webui.txt` and `mcp_bridge/requirements-install.txt`, not those full inventories as pip requirements.
 
 ### Start and verify
 
@@ -106,6 +107,8 @@ Environment=CARLA_WEBUI_PUBLIC_URL=http://SERVER_IP:8095
 Replace `SERVER_IP`, save, then run `systemctl --user daemon-reload` and `systemctl --user restart carla-mcp.service`. For other checkout paths, change both `WorkingDirectory` and `ExecStart`; the full WebUI's native paths still require the layout above.
 
 ### Tests and data
+
+For the validated four-GPU surround recording profile and its startup settings, see [Synchronized surround recording at 2 FPS](surround-2fps.md). Apply its optional service drop-in only after updating and building the matched engine and CARLA source revisions.
 
 After installation, these regression tests do not launch a simulator:
 

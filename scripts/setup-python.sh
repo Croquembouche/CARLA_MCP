@@ -19,5 +19,6 @@ if [[ "$mode" == all ]]; then
  .venv/bin/python -m pip install -r requirements-webui.txt
  npm ci
  .venv/bin/python -m pip check
+ .venv/bin/python scripts/build_bag_native.py
  (set +u; source /opt/ros/humble/setup.bash; .venv/bin/python -c 'import app; print("WebUI imports and browser dependency paths OK")')
 fi

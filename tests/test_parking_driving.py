@@ -64,7 +64,7 @@ def test_failed_planning_preserves_old_destination_and_control():
 @pytest.mark.parametrize('role',['background','ego'])
 def test_running_vehicle_destination_bypasses_scenario_edit_guard(role):
     from controller import Controller
-    c=Controller.__new__(Controller);c.mode='live';c.running=True;c.recording=object();c.world=object()
+    c=Controller.__new__(Controller);c.mode='live';c.running=True;c.recording=object();c.world=object();c.state={'phase':'connected'}
     c.managed={1:dict(role=role,parked=True)};c.parking_driver=Mock();c.require_edit=Mock(side_effect=AssertionError('must not pause'))
     c.command('destination',dict(id=1,point={'parking_space':'P001'}))
     c.parking_driver.assign.assert_called_once_with(1,{'parking_space':'P001'});c.require_edit.assert_not_called()

@@ -58,3 +58,7 @@ This repository is public. See docs/ASSET-NOTICES.md for asset attribution. CARL
 New ordinary LiDAR loadouts default to the generic physical profile and extended return data. The sensor editor exposes installed profiles; Sensor views supports height or intensity coloring. Scene weather can be applied while running or recording, preserving the sensor actors and recording session. Separate LiDAR noise controls have been removed. Set **Fog starts at (m)** to zero for fog surrounding the vehicle.
 
 See [physical model and schema](docs/lidar-physical.md), [optics](docs/lidar-optics.md), and [live weather](docs/lidar-weather.md). This requires the matching rebuilt CARLA native plugin and Python wheel plus the `Content/Carla/Config/Lidar` profiles installed by the CARLA content setup. `CARLA_LIDAR_PROFILE_DIR` overrides the control center profile directory for custom installations. The generic profile is uncalibrated.
+
+## Synchronized surround recording
+
+The October 1 four-GPU implementation sustained 2.874 complete recorded frames/s with six 1280 × 800 ray-traced cameras and a physical 64-channel LiDAR. See the [implementation, startup profile and validation](docs/surround-2fps.md) for the matched revisions, measured workload and limits.

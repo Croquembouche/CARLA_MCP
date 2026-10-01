@@ -8,12 +8,13 @@ import carla
 
 STATES=('Red','Yellow','Green','Off')
 
-def metadata(actor):
+def metadata(actor,map_name=None):
     group=sorted({a.id for a in actor.get_group_traffic_lights() if a is not None}|{actor.id})
-    boxes=actor.get_light_boxes()
+    dormant=bool(getattr(actor,'is_dormant',False))
+    boxes=[] if dormant else actor.get_light_boxes()
     location=actor.get_location()
-    exported=next((h for h in _HEADS if math.dist([location.x,location.y,location.z],[h['pose'][k] for k in ('x','y','z')])<.02),None)
-    return {**({k:exported[k] for k in ('pedestrian_heads','push_buttons')} if exported else {}),'head_source':'Unreal vehicle lamp components' if exported else 'CARLA semantic boxes (unclassified)','group_ids':group,'group_id':min(group),'opendrive_id':actor.get_opendrive_id(),
+    exported=next((h for h in (_HEADS if map_name and map_name.split('/')[-1]=='Town10HD_Opt' else []) if math.dist([location.x,location.y,location.z],[h['pose'][k] for k in ('x','y','z')])<.02),None)
+    return {**({k:exported[k] for k in ('pedestrian_heads','push_buttons')} if exported else {}),'dormant':dormant,'head_source':'Unloaded map tile' if dormant else 'Unreal vehicle lamp components' if exported else 'CARLA semantic boxes (unclassified)','group_ids':group,'group_id':min(group),'opendrive_id':actor.get_opendrive_id(),
             'heads':exported['heads'] if exported else [{'x':b.location.x,'y':b.location.y,'z':b.location.z,'yaw':b.rotation.yaw} for b in boxes]}
 
 def apply(world,p):
@@ -34,8 +35,11 @@ def apply(world,p):
             times[k]=float(v)
     actor=world.get_actor(aid)
     if not actor or not actor.type_id.startswith('traffic.traffic_light'):raise ValueError('Traffic light no longer exists; select a signal on the current map')
+    if getattr(actor,'is_dormant',False):raise ValueError('This signal is in an unloaded map tile; move an ego vehicle nearby first')
     group=[a for a in actor.get_group_traffic_lights() if a is not None]
     if not any(a.id==aid for a in group):group.append(actor)
+    if (op!='state' or p.get('hold',True)) and any(getattr(a,'is_dormant',False) for a in group):
+        raise ValueError('This intersection includes an unloaded map tile; move an ego vehicle nearby first')
     if not hasattr(actor,'freeze_group'):raise RuntimeError('The CARLA client with intersection-specific signal controls is required')
     if op=='state':
         if p.get('hold',True):

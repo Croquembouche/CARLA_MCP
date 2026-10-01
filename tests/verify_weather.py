@@ -33,7 +33,7 @@ try:
  assert report['night_sky_mean']<report['day_sky_mean']*.5,report
  assert report['day_mean']<190,report
  print('CAMERA_WEATHER_CHANGED',report['camera_weather_mean_absolute_difference'],flush=True)
- logdir=max(Path('/mnt/simulations/carla/carlab/host-setup/logs').glob('multigpu-*'),key=lambda p:p.stat().st_mtime)
+ logdir=max(Path('/media/william/mist1/Simulations/logs').glob('multigpu-*'),key=lambda p:p.stat().st_mtime)
  report['weather_workers']={}
  for i in range(4):
   log=(logdir/f'gpu-{i}.log').read_text(errors='replace')
